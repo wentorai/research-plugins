@@ -1,0 +1,17 @@
+{
+  "id": "decipher-research-agent",
+  "name": "Decipher Research Agent",
+  "description": "Turn topics and links into AI research notebooks with structured summaries",
+  "category": "browser",
+  "install": {
+    "runtime": "node",
+    "package": "decipher-research-agent",
+    "command": "npx decipher-research-agent"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["research", "summarize"],
+  "verified": false,
+  "source": "https://github.com/mnemox-ai/decipher-research-agent"
+}

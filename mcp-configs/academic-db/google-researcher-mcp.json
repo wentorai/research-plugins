@@ -1,0 +1,17 @@
+{
+  "id": "google-researcher-mcp",
+  "name": "Google Researcher",
+  "description": "Comprehensive research tools for web, academic, patents",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "google-researcher-mcp",
+    "command": "pip install google-researcher-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["search_web", "search_papers", "search_patents"],
+  "verified": false,
+  "source": "https://github.com/zoharbabin/google-researcher-mcp"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ai-counsel",
+  "name": "AI Counsel",
+  "description": "Multi-round debate between AI models for reaching consensus on complex questions",
+  "category": "ai-platform",
+  "install": {
+    "runtime": "python",
+    "package": "ai-counsel",
+    "command": "pip install ai-counsel"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["debate", "vote", "converge"],
+  "verified": false,
+  "source": "https://github.com/harrison/ai-counsel"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "bgpt-mcp",
+  "name": "BGPT Paper Search",
+  "description": "Search paper data from any AI tool",
+  "category": "academic-db",
+  "install": {
+    "runtime": "node",
+    "package": "bgpt-mcp",
+    "command": "npm install -g bgpt-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["search_papers"],
+  "verified": false,
+  "source": "https://github.com/connerlambden/bgpt-mcp"
+}

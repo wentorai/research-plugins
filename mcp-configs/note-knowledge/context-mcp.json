@@ -1,0 +1,17 @@
+{
+  "id": "context-mcp",
+  "name": "Context MCP",
+  "description": "Self-hosted MCP server for semantic search over documentation collections",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "node",
+    "package": "context-mcp",
+    "command": "npx context-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["index", "search", "retrieve"],
+  "verified": false,
+  "source": "https://github.com/dodopayments/context-mcp"
+}

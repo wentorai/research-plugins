@@ -1,0 +1,17 @@
+{
+  "id": "atlas-mcp-server",
+  "name": "Atlas MCP Server",
+  "description": "Neo4j-powered task management with deep research capabilities for complex projects",
+  "category": "ai-platform",
+  "install": {
+    "runtime": "node",
+    "package": "atlas-mcp-server",
+    "command": "npx atlas-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["create_project", "manage_tasks", "deep_research"],
+  "verified": false,
+  "source": "https://github.com/cyanheads/atlas-mcp-server"
+}

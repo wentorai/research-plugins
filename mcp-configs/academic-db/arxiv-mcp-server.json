@@ -1,0 +1,17 @@
+{
+  "id": "arxiv-mcp-server",
+  "name": "arXiv Search",
+  "description": "Search ArXiv research papers",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "arxiv-mcp-server",
+    "command": "pip install arxiv-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["search_arxiv"],
+  "verified": false,
+  "source": "https://github.com/blazickjp/arxiv-mcp-server"
+}

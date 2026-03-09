@@ -1,0 +1,17 @@
+{
+  "id": "deep-research",
+  "name": "Deep Research",
+  "description": "AI research assistant using Gemini and Google ADK for planning and compiling research",
+  "category": "browser",
+  "install": {
+    "runtime": "python",
+    "package": "deep-research",
+    "command": "pip install deep-research"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["plan_research", "execute", "compile"],
+  "verified": false,
+  "source": "https://github.com/lorenzofavaro/deep-research"
+}

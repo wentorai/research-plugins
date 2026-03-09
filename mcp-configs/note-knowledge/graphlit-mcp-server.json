@@ -1,0 +1,19 @@
+{
+  "id": "graphlit-mcp-server",
+  "name": "Graphlit MCP Server",
+  "description": "Ingest from Slack, Discord, Drive, and GitHub into a RAG-ready knowledge base",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "node",
+    "package": "graphlit-mcp-server",
+    "command": "npx graphlit-mcp-server"
+  },
+  "config": {
+    "env": {
+      "GRAPHLIT_API_KEY": ""
+    }
+  },
+  "tools": ["ingest", "retrieve", "query", "search"],
+  "verified": false,
+  "source": "https://github.com/graphlit/graphlit-mcp-server"
+}

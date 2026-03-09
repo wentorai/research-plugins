@@ -1,0 +1,17 @@
+{
+  "id": "email-mcp",
+  "name": "Email MCP",
+  "description": "Unified email across Gmail, Outlook, iCloud, and IMAP for search, send, and organize",
+  "category": "data-platform",
+  "install": {
+    "runtime": "node",
+    "package": "email-mcp",
+    "command": "npx email-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["search", "send", "organize"],
+  "verified": false,
+  "source": "https://github.com/marlinjai/email-mcp"
+}

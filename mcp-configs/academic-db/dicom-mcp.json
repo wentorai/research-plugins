@@ -1,0 +1,17 @@
+{
+  "id": "dicom-mcp",
+  "name": "DICOM Medical Imaging",
+  "description": "DICOM integration for medical imaging",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "dicom-mcp",
+    "command": "pip install dicom-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["query_studies", "get_images", "move_images"],
+  "verified": false,
+  "source": "https://github.com/ChristianHinge/dicom-mcp"
+}

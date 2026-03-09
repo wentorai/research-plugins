@@ -3,11 +3,11 @@ name: genomics-analysis-guide
 description: "Workflows for RNA-seq, GWAS, and variant calling in genomic research"
 metadata:
   openclaw:
-    emoji: "🧬"
+    emoji: "microscope"
     category: "domains"
     subcategory: "biomedical"
-    keywords: ["genomics", "RNA-seq", "GWAS", "molecular biology", "genetics"]
-    source: "N/A"
+    keywords: ["genomics", "RNA-seq", "GWAS", "molecular biology", "genetics", "bioinformatics"]
+    source: "wentor-research-plugins"
 ---
 
 # Genomics Analysis Guide

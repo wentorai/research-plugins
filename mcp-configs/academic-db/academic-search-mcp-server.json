@@ -1,0 +1,17 @@
+{
+  "id": "academic-search-mcp-server",
+  "name": "Academic Paper Search",
+  "description": "Academic Paper Search MCP for Semantic Scholar and Crossref APIs",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "academic-search-mcp-server",
+    "command": "pip install academic-search-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["search_papers", "fetch_paper_details", "search_by_topic"],
+  "verified": false,
+  "source": "https://github.com/afrise/academic-search-mcp-server"
+}

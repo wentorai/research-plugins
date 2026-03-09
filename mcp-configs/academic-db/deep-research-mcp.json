@@ -1,0 +1,17 @@
+{
+  "id": "deep-research-mcp",
+  "name": "Deep Research",
+  "description": "Deep research via OpenAI or open models",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "deep-research-mcp",
+    "command": "pip install deep-research-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["conduct_research", "analyze_sources", "generate_report"],
+  "verified": false,
+  "source": "https://github.com/pminervini/deep-research-mcp"
+}

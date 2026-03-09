@@ -1,0 +1,17 @@
+{
+  "id": "agent-memory",
+  "name": "Agent Memory",
+  "description": "Three-layer memory system with semantic search and knowledge graph for AI agents",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "python",
+    "package": "agent-memory",
+    "command": "pip install agent-memory"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["save_memory", "recall", "search_graph"],
+  "verified": false,
+  "source": "https://github.com/g1itchbot8888-del/agent-memory"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "fhir-mcp",
+  "name": "FHIR Healthcare API",
+  "description": "FHIR API for healthcare data interoperability",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "fhir-mcp-server",
+    "command": "pip install fhir-mcp-server"
+  },
+  "config": {
+    "env": {
+      "FHIR_SERVER_URL": ""
+    }
+  },
+  "tools": ["search_patients", "get_patient_history", "create_observation"],
+  "verified": false,
+  "source": "https://github.com/wso2/fhir-mcp-server"
+}

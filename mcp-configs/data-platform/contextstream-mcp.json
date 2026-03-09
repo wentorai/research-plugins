@@ -1,0 +1,17 @@
+{
+  "id": "contextstream-mcp",
+  "name": "ContextStream MCP",
+  "description": "Universal persistent memory with semantic code search and change tracking",
+  "category": "data-platform",
+  "install": {
+    "runtime": "node",
+    "package": "contextstream-mcp",
+    "command": "npx contextstream-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["index", "search", "track"],
+  "verified": false,
+  "source": "https://github.com/contextstream/mcp-server"
+}

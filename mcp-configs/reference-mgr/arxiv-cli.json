@@ -1,0 +1,17 @@
+{
+  "id": "arxiv-cli",
+  "name": "arXiv CLI",
+  "description": "AI-ready search and fetch tool for arXiv papers",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "rust",
+    "package": "arxiv-cli",
+    "command": "cargo install arxiv-cli"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["search", "fetch"],
+  "verified": false,
+  "source": "https://github.com/sonesuke/arxiv-cli"
+}

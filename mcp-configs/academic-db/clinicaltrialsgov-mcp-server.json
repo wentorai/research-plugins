@@ -1,0 +1,17 @@
+{
+  "id": "clinicaltrialsgov-mcp-server",
+  "name": "ClinicalTrials.gov",
+  "description": "ClinicalTrials.gov v2 API search and analysis",
+  "category": "academic-db",
+  "install": {
+    "runtime": "node",
+    "package": "clinicaltrialsgov-mcp-server",
+    "command": "npm install -g clinicaltrialsgov-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["search_studies", "get_study", "analyze_trends", "compare_studies", "find_eligible_studies"],
+  "verified": false,
+  "source": "https://github.com/cyanheads/clinicaltrialsgov-mcp-server"
+}

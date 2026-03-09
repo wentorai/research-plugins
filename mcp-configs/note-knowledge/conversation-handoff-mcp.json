@@ -1,0 +1,17 @@
+{
+  "id": "conversation-handoff-mcp",
+  "name": "Conversation Handoff MCP",
+  "description": "Hand off conversation context between Claude Desktop projects seamlessly",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "node",
+    "package": "conversation-handoff-mcp",
+    "command": "npx conversation-handoff-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["handoff", "receive", "clear"],
+  "verified": false,
+  "source": "https://github.com/trust-delta/conversation-handoff-mcp"
+}

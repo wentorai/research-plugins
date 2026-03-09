@@ -1,0 +1,17 @@
+{
+  "id": "devonthink-mcp",
+  "name": "DEVONthink MCP",
+  "description": "DEVONthink with bibliography metadata and AI classification",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "node",
+    "package": "devonthink-mcp",
+    "command": "npm install -g devonthink-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["is_running", "create_record", "search", "get_bib_metadata", "classify"],
+  "verified": false,
+  "source": "https://github.com/TomBener/devonthink-mcp"
+}

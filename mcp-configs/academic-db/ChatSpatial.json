@@ -1,0 +1,17 @@
+{
+  "id": "ChatSpatial",
+  "name": "ChatSpatial",
+  "description": "Spatial transcriptomics analysis via natural language",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "ChatSpatial",
+    "command": "pip install ChatSpatial"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["load_data", "identify_domains", "visualize"],
+  "verified": false,
+  "source": "https://github.com/cafferychen777/ChatSpatial"
+}

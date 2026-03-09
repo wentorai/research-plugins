@@ -1,0 +1,17 @@
+{
+  "id": "easy-obsidian-mcp",
+  "name": "Easy Obsidian MCP",
+  "description": "Interact with Obsidian vaults through MCP for reading, writing, and searching notes",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "python",
+    "package": "easy-obsidian-mcp",
+    "command": "pip install easy-obsidian-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["search", "read", "write", "append"],
+  "verified": false,
+  "source": "https://github.com/louis030195/easy-obsidian-mcp"
+}

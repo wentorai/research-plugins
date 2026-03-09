@@ -1,0 +1,17 @@
+{
+  "id": "fec-mcp-server",
+  "name": "FEC Campaign Finance",
+  "description": "Query FEC campaign finance data",
+  "category": "academic-db",
+  "install": {
+    "runtime": "node",
+    "package": "fec-mcp-server",
+    "command": "npm install -g fec-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["search_candidates", "track_donations"],
+  "verified": false,
+  "source": "https://github.com/sh-patterson/fec-mcp-server"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "4everland-hosting-mcp",
+  "name": "4EVERLAND Hosting MCP",
+  "description": "Deploy AI-generated code to decentralized storage networks for permanent hosting",
+  "category": "data-platform",
+  "install": {
+    "runtime": "node",
+    "package": "4everland-hosting-mcp",
+    "command": "npx 4everland-hosting-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["deploy", "manage"],
+  "verified": false,
+  "source": "https://github.com/4everland/4everland-hosting-mcp"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "devrag",
+  "name": "DevRAG",
+  "description": "Lightweight local RAG for semantic search over markdown files and documentation",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "node",
+    "package": "github:tomohiro-owada/devrag",
+    "command": "go install github.com/tomohiro-owada/devrag@latest"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["index", "search"],
+  "verified": false,
+  "source": "https://github.com/tomohiro-owada/devrag"
+}

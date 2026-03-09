@@ -1,0 +1,17 @@
+{
+  "id": "everything-claude-code",
+  "name": "Everything Claude Code",
+  "description": "Skills, memory, and research-first development workflows for Claude Code enhancement",
+  "category": "browser",
+  "install": {
+    "runtime": "node",
+    "package": "everything-claude-code",
+    "command": "npx everything-claude-code"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["research", "optimize"],
+  "verified": false,
+  "source": "https://github.com/affaan-m/everything-claude-code"
+}

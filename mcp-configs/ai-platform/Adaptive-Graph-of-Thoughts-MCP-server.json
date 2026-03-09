@@ -1,0 +1,17 @@
+{
+  "id": "Adaptive-Graph-of-Thoughts-MCP-server",
+  "name": "Adaptive Graph of Thoughts MCP Server",
+  "description": "LLM reasoning framework for scientific research using adaptive graph-of-thoughts",
+  "category": "ai-platform",
+  "install": {
+    "runtime": "python",
+    "package": "adaptive-graph-of-thoughts-mcp-server",
+    "command": "pip install adaptive-graph-of-thoughts-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["reason", "analyze"],
+  "verified": false,
+  "source": "https://github.com/SaptaDey/Adaptive-Graph-of-Thoughts-MCP-server"
+}

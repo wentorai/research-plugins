@@ -1,0 +1,17 @@
+{
+  "id": "enrichr-mcp-server",
+  "name": "Enrichr Gene Set Analysis",
+  "description": "Gene set enrichment analysis using Enrichr API",
+  "category": "academic-db",
+  "install": {
+    "runtime": "node",
+    "package": "enrichr-mcp-server",
+    "command": "npm install -g enrichr-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["enrichr_analysis", "go_bp_enrichment"],
+  "verified": false,
+  "source": "https://github.com/tianqitang1/enrichr-mcp-server"
+}

@@ -1,5 +1,6 @@
 {
   "version": "1.0.0",
+  "generated": "2026-03-09T15:25:29.810Z",
   "categories": [
     "reference-mgr",
     "note-knowledge",
@@ -14,5 +15,433 @@
     "browser",
     "database"
   ],
-  "configs": []
+  "configs": [
+    {
+      "id": "academia-mcp",
+      "name": "Academia MCP",
+      "description": "Tools for automatic scientific research",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/academia-mcp.json"
+    },
+    {
+      "id": "academic-paper-explorer",
+      "name": "Academic Paper Explorer",
+      "description": "Academic paper discovery via arXiv and Semantic Scholar",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/academic-paper-explorer.json"
+    },
+    {
+      "id": "academic-search-mcp-server",
+      "name": "Academic Paper Search",
+      "description": "Academic Paper Search MCP for Semantic Scholar and Crossref APIs",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/academic-search-mcp-server.json"
+    },
+    {
+      "id": "agentinterviews-mcp",
+      "name": "Agent Interviews",
+      "description": "AI-powered qualitative research interviews at scale",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/agentinterviews-mcp.json"
+    },
+    {
+      "id": "all-in-mcp",
+      "name": "All-in MCP",
+      "description": "Academic paper search and PDF processing",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/all-in-mcp.json"
+    },
+    {
+      "id": "apple-health-mcp",
+      "name": "Apple Health Data",
+      "description": "Access exported Apple Health data with analytics",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/apple-health-mcp.json"
+    },
+    {
+      "id": "arxiv-latex-mcp",
+      "name": "arXiv LaTeX Source",
+      "description": "Access arXiv papers via LaTeX source for better math handling",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/arxiv-latex-mcp.json"
+    },
+    {
+      "id": "arxiv-mcp-server",
+      "name": "arXiv Search",
+      "description": "Search ArXiv research papers",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/arxiv-mcp-server.json"
+    },
+    {
+      "id": "bgpt-mcp",
+      "name": "BGPT Paper Search",
+      "description": "Search paper data from any AI tool",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/bgpt-mcp.json"
+    },
+    {
+      "id": "biomcp",
+      "name": "BioMCP",
+      "description": "Biomedical research MCP for PubMed, ClinicalTrials, and MyVariant",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/biomcp.json"
+    },
+    {
+      "id": "biothings-mcp",
+      "name": "BioThings API",
+      "description": "BioThings API for genes, variants, drugs, and taxonomy",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/biothings-mcp.json"
+    },
+    {
+      "id": "catalysishub-mcp-server",
+      "name": "Catalysis Hub",
+      "description": "Search Catalysis Hub database for computational catalysis",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/catalysishub-mcp-server.json"
+    },
+    {
+      "id": "ChatSpatial",
+      "name": "ChatSpatial",
+      "description": "Spatial transcriptomics analysis via natural language",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/ChatSpatial.json"
+    },
+    {
+      "id": "clinicaltrialsgov-mcp-server",
+      "name": "ClinicalTrials.gov",
+      "description": "ClinicalTrials.gov v2 API search and analysis",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/clinicaltrialsgov-mcp-server.json"
+    },
+    {
+      "id": "deep-research-mcp",
+      "name": "Deep Research",
+      "description": "Deep research via OpenAI or open models",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/deep-research-mcp.json"
+    },
+    {
+      "id": "dicom-mcp",
+      "name": "DICOM Medical Imaging",
+      "description": "DICOM integration for medical imaging",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/dicom-mcp.json"
+    },
+    {
+      "id": "enrichr-mcp-server",
+      "name": "Enrichr Gene Set Analysis",
+      "description": "Gene set enrichment analysis using Enrichr API",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/enrichr-mcp-server.json"
+    },
+    {
+      "id": "fec-mcp-server",
+      "name": "FEC Campaign Finance",
+      "description": "Query FEC campaign finance data",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/fec-mcp-server.json"
+    },
+    {
+      "id": "fhir-mcp",
+      "name": "FHIR Healthcare API",
+      "description": "FHIR API for healthcare data interoperability",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/fhir-mcp.json"
+    },
+    {
+      "id": "fhir-mcp-server-themomentum",
+      "name": "FHIR Patient History",
+      "description": "FHIR server for patient history queries",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/fhir-mcp-server-themomentum.json"
+    },
+    {
+      "id": "gget-mcp",
+      "name": "gget Bioinformatics",
+      "description": "Bioinformatics toolkit for genomics queries",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/gget-mcp.json"
+    },
+    {
+      "id": "google-researcher-mcp",
+      "name": "Google Researcher",
+      "description": "Comprehensive research tools for web, academic, patents",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/google-researcher-mcp.json"
+    },
+    {
+      "id": "idea-reality-mcp",
+      "name": "Idea Reality Check",
+      "description": "Pre-build reality check detecting existing competition",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/idea-reality-mcp.json"
+    },
+    {
+      "id": "legiscan-mcp",
+      "name": "LegiScan",
+      "description": "Access legislative data from 50 US states",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/legiscan-mcp.json"
+    },
+    {
+      "id": "lex",
+      "name": "Lex UK Legal API",
+      "description": "UK legal API for AI agents and researchers",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/lex.json"
+    },
+    {
+      "id": "Adaptive-Graph-of-Thoughts-MCP-server",
+      "name": "Adaptive Graph of Thoughts MCP Server",
+      "description": "LLM reasoning framework for scientific research using adaptive graph-of-thoughts",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/Adaptive-Graph-of-Thoughts-MCP-server.json"
+    },
+    {
+      "id": "ai-counsel",
+      "name": "AI Counsel",
+      "description": "Multi-round debate between AI models for reaching consensus on complex questions",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/ai-counsel.json"
+    },
+    {
+      "id": "atlas-mcp-server",
+      "name": "Atlas MCP Server",
+      "description": "Neo4j-powered task management with deep research capabilities for complex projects",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/atlas-mcp-server.json"
+    },
+    {
+      "id": "counsel-mcp",
+      "name": "Counsel MCP",
+      "description": "Strategic reasoning and multi-perspective analysis for complex decision-making",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/counsel-mcp.json"
+    },
+    {
+      "id": "cross-llm-mcp",
+      "name": "Cross-LLM MCP",
+      "description": "Cross-LLM communication and memory sharing between different AI model instances",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/cross-llm-mcp.json"
+    },
+    {
+      "id": "gptr-mcp",
+      "name": "GPTR MCP",
+      "description": "Deep research via GPT Researcher MCP protocol for automated report generation",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/gptr-mcp.json"
+    },
+    {
+      "id": "decipher-research-agent",
+      "name": "Decipher Research Agent",
+      "description": "Turn topics and links into AI research notebooks with structured summaries",
+      "category": "browser",
+      "path": "mcp-configs/browser/decipher-research-agent.json"
+    },
+    {
+      "id": "deep-research",
+      "name": "Deep Research",
+      "description": "AI research assistant using Gemini and Google ADK for planning and compiling research",
+      "category": "browser",
+      "path": "mcp-configs/browser/deep-research.json"
+    },
+    {
+      "id": "everything-claude-code",
+      "name": "Everything Claude Code",
+      "description": "Skills, memory, and research-first development workflows for Claude Code enhancement",
+      "category": "browser",
+      "path": "mcp-configs/browser/everything-claude-code.json"
+    },
+    {
+      "id": "gpt-researcher",
+      "name": "GPT Researcher",
+      "description": "Autonomous agent for deep research on any topic with comprehensive report generation",
+      "category": "browser",
+      "path": "mcp-configs/browser/gpt-researcher.json"
+    },
+    {
+      "id": "heurist-agent-framework",
+      "name": "Heurist Agent Framework",
+      "description": "Multi-interface AI agent with reasoning and research capabilities across platforms",
+      "category": "browser",
+      "path": "mcp-configs/browser/heurist-agent-framework.json"
+    },
+    {
+      "id": "4everland-hosting-mcp",
+      "name": "4EVERLAND Hosting MCP",
+      "description": "Deploy AI-generated code to decentralized storage networks for permanent hosting",
+      "category": "data-platform",
+      "path": "mcp-configs/data-platform/4everland-hosting-mcp.json"
+    },
+    {
+      "id": "context-keeper",
+      "name": "Context Keeper",
+      "description": "Wide-recall RAG with vector, timeline, and knowledge graph retrieval strategies",
+      "category": "data-platform",
+      "path": "mcp-configs/data-platform/context-keeper.json"
+    },
+    {
+      "id": "context7",
+      "name": "Context7",
+      "description": "Context management for AI agents with cloud sync powered by Upstash",
+      "category": "data-platform",
+      "path": "mcp-configs/data-platform/context7.json"
+    },
+    {
+      "id": "contextstream-mcp",
+      "name": "ContextStream MCP",
+      "description": "Universal persistent memory with semantic code search and change tracking",
+      "category": "data-platform",
+      "path": "mcp-configs/data-platform/contextstream-mcp.json"
+    },
+    {
+      "id": "email-mcp",
+      "name": "Email MCP",
+      "description": "Unified email across Gmail, Outlook, iCloud, and IMAP for search, send, and organize",
+      "category": "data-platform",
+      "path": "mcp-configs/data-platform/email-mcp.json"
+    },
+    {
+      "id": "agent-memory",
+      "name": "Agent Memory",
+      "description": "Three-layer memory system with semantic search and knowledge graph for AI agents",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/agent-memory.json"
+    },
+    {
+      "id": "aimemo",
+      "name": "AIMemo",
+      "description": "Zero-dependency MCP memory server, single binary, 100% local storage and recall",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/aimemo.json"
+    },
+    {
+      "id": "ApeRAG",
+      "name": "ApeRAG",
+      "description": "Production-ready RAG platform with Graph RAG and vector search for knowledge retrieval",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/ApeRAG.json"
+    },
+    {
+      "id": "biel-mcp",
+      "name": "Biel MCP",
+      "description": "Connect IDE to product documentation via Biel.ai RAG for instant knowledge retrieval",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/biel-mcp.json"
+    },
+    {
+      "id": "cognee",
+      "name": "Cognee",
+      "description": "Memory manager using graph and vector stores with 30+ data sources for persistent agent knowledge",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/cognee.json"
+    },
+    {
+      "id": "context-awesome",
+      "name": "Context Awesome",
+      "description": "Query 8500+ curated awesome lists with 1M+ items for discovering tools and resources",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/context-awesome.json"
+    },
+    {
+      "id": "context-mcp",
+      "name": "Context MCP",
+      "description": "Self-hosted MCP server for semantic search over documentation collections",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/context-mcp.json"
+    },
+    {
+      "id": "conversation-handoff-mcp",
+      "name": "Conversation Handoff MCP",
+      "description": "Hand off conversation context between Claude Desktop projects seamlessly",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/conversation-handoff-mcp.json"
+    },
+    {
+      "id": "cortex",
+      "name": "Cortex",
+      "description": "Local-first knowledge graph for developers with query, find, and watch capabilities",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/cortex.json"
+    },
+    {
+      "id": "devrag",
+      "name": "DevRAG",
+      "description": "Lightweight local RAG for semantic search over markdown files and documentation",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/devrag.json"
+    },
+    {
+      "id": "easy-obsidian-mcp",
+      "name": "Easy Obsidian MCP",
+      "description": "Interact with Obsidian vaults through MCP for reading, writing, and searching notes",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/easy-obsidian-mcp.json"
+    },
+    {
+      "id": "engram",
+      "name": "Engram",
+      "description": "Intelligence layer for AI agents with explicit and implicit memory consolidation",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/engram.json"
+    },
+    {
+      "id": "gnosis-mcp",
+      "name": "Gnosis MCP",
+      "description": "Zero-config MCP server for searchable documentation with automatic indexing",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/gnosis-mcp.json"
+    },
+    {
+      "id": "graphlit-mcp-server",
+      "name": "Graphlit MCP Server",
+      "description": "Ingest from Slack, Discord, Drive, and GitHub into a RAG-ready knowledge base",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/graphlit-mcp-server.json"
+    },
+    {
+      "id": "In-Memoria",
+      "name": "In Memoria",
+      "description": "Persistent intelligence with cumulative memory and pattern recognition for AI agents",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/In-Memoria.json"
+    },
+    {
+      "id": "arxiv-cli",
+      "name": "arXiv CLI",
+      "description": "AI-ready search and fetch tool for arXiv papers",
+      "category": "reference-mgr",
+      "path": "mcp-configs/reference-mgr/arxiv-cli.json"
+    },
+    {
+      "id": "arxiv-search-mcp",
+      "name": "arXiv Search MCP",
+      "description": "Search and fetch papers from arXiv.org",
+      "category": "reference-mgr",
+      "path": "mcp-configs/reference-mgr/arxiv-search-mcp.json"
+    },
+    {
+      "id": "chiken",
+      "name": "Chiken",
+      "description": "Zotero, RAG, MCP, and deep research",
+      "category": "reference-mgr",
+      "path": "mcp-configs/reference-mgr/chiken.json"
+    },
+    {
+      "id": "claude-scholar",
+      "name": "Claude Scholar",
+      "description": "Academic research config with Zotero MCP integration",
+      "category": "reference-mgr",
+      "path": "mcp-configs/reference-mgr/claude-scholar.json"
+    },
+    {
+      "id": "devonthink-mcp",
+      "name": "DEVONthink MCP",
+      "description": "DEVONthink with bibliography metadata and AI classification",
+      "category": "reference-mgr",
+      "path": "mcp-configs/reference-mgr/devonthink-mcp.json"
+    }
+  ]
 }

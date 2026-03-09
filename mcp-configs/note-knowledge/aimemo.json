@@ -1,0 +1,17 @@
+{
+  "id": "aimemo",
+  "name": "AIMemo",
+  "description": "Zero-dependency MCP memory server, single binary, 100% local storage and recall",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "node",
+    "package": "github:MyAgentHubs/aimemo",
+    "command": "cargo install aimemo"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["remember", "recall", "store"],
+  "verified": false,
+  "source": "https://github.com/MyAgentHubs/aimemo"
+}

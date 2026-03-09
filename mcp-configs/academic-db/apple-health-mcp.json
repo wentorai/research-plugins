@@ -1,0 +1,17 @@
+{
+  "id": "apple-health-mcp",
+  "name": "Apple Health Data",
+  "description": "Access exported Apple Health data with analytics",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "apple-health-mcp-server",
+    "command": "pip install apple-health-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["read_health_data", "analyze_trends", "export_data"],
+  "verified": false,
+  "source": "https://github.com/the-momentum/apple-health-mcp-server"
+}

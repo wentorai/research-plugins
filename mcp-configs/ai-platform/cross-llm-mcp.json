@@ -1,0 +1,17 @@
+{
+  "id": "cross-llm-mcp",
+  "name": "Cross-LLM MCP",
+  "description": "Cross-LLM communication and memory sharing between different AI model instances",
+  "category": "ai-platform",
+  "install": {
+    "runtime": "node",
+    "package": "cross-llm-mcp",
+    "command": "npx cross-llm-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["share_context", "get_memory", "sync"],
+  "verified": false,
+  "source": "https://github.com/JamesANZ/cross-llm-mcp"
+}

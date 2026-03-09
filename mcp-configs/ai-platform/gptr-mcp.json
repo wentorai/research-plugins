@@ -1,0 +1,17 @@
+{
+  "id": "gptr-mcp",
+  "name": "GPTR MCP",
+  "description": "Deep research via GPT Researcher MCP protocol for automated report generation",
+  "category": "ai-platform",
+  "install": {
+    "runtime": "python",
+    "package": "gptr-mcp",
+    "command": "pip install gptr-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": ["research", "report"],
+  "verified": false,
+  "source": "https://github.com/assafelovic/gptr-mcp"
+}
