@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-      - run: node scripts/sync-registry.ts
+      - run: node --experimental-strip-types scripts/sync-registry.ts
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"

@@ -15,4 +15,4 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-      - run: node scripts/validate.ts
+      - run: node --experimental-strip-types scripts/validate.ts

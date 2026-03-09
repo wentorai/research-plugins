@@ -1,7 +1,8 @@
 {
   "id": "research-plugins",
+  "version": "1.0.0",
   "name": "Research Plugins",
-  "description": "350+ academic research skills & 6 agent tools for Research-Claw",
+  "description": "173 academic research skills, 13 agent tools & 61 MCP configs for Research-Claw",
   "skills": ["./skills"],
   "configSchema": {
     "type": "object",

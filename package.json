@@ -2,7 +2,7 @@
   "name": "@wentorai/research-plugins",
   "version": "1.0.0",
   "type": "module",
-  "description": "350+ academic research skills, MCP configs, and plugins for Research-Claw and AI agents",
+  "description": "173 academic research skills, MCP configs, and agent tools for Research-Claw and AI agents",
   "keywords": [
     "agent-skills",
     "claude",
@@ -28,6 +28,14 @@
     "README.md",
     "LICENSE"
   ],
+  "scripts": {
+    "validate": "node --experimental-strip-types scripts/validate.ts",
+    "catalog": "node --experimental-strip-types scripts/catalog.ts",
+    "sync-registry": "node --experimental-strip-types scripts/sync-registry.ts"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
   "openclaw": {
     "extensions": [
       "./index.ts"
@@ -35,6 +43,14 @@
   },
   "dependencies": {
     "@sinclair/typebox": "0.34.48"
+  },
+  "peerDependencies": {
+    "openclaw": "*"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
   },
   "license": "MIT",
   "homepage": "https://wentor.ai",

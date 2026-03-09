@@ -1,5 +1,5 @@
 ---
-name: academic-translation-guide
+name: multilingual-research-guide
 description: "Strategies for translating academic papers while preserving technical accuracy"
 metadata:
   openclaw:
