@@ -1,15 +1,15 @@
 # @wentorai/research-plugins
 
-350+ academic research skills, MCP configs, and agent tools for [Research-Claw](https://wentor.ai) and AI coding agents.
+174 academic research skills, 61 MCP configs, 14 agent tools, and 6 curated resource lists for [Research-Claw](https://wentor.ai) and AI coding agents.
 
 ## What's Inside
 
 | Component | Count | Description |
 |-----------|-------|-------------|
-| **Skills** | 350+ | SKILL.md files covering literature search, academic writing, data analysis, research methods, domain knowledge, and productivity tools |
-| **Agent Tools** | 6 | TypeScript tools wrapping Semantic Scholar, OpenAlex, CrossRef, arXiv, PubMed, and Unpaywall APIs |
-| **MCP Configs** | 60+ | Ready-to-use MCP server configurations for reference managers, knowledge bases, and more |
-| **Curated Lists** | 30+ | Hand-picked resource lists per category |
+| **Skills** | 174 | SKILL.md files covering literature search, academic writing, data analysis, research methods, 16 domain specialties, and productivity tools |
+| **Agent Tools** | 14 | TypeScript tools wrapping Semantic Scholar, OpenAlex, CrossRef, arXiv, PubMed, and Unpaywall APIs |
+| **MCP Configs** | 61 | Ready-to-use MCP server configurations for reference managers, knowledge bases, research databases, and AI platforms |
+| **Curated Lists** | 6 | Hand-picked resource lists per category |
 
 ## Install
 
