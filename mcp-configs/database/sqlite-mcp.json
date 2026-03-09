@@ -1,0 +1,29 @@
+{
+  "id": "sqlite-mcp",
+  "name": "SQLite MCP",
+  "description": "SQLite database operations — execute queries, inspect schemas, create tables, and manage local SQLite databases for research data storage.",
+  "category": "database",
+  "install": {
+    "runtime": "python",
+    "package": "mcp-server-sqlite",
+    "command": "pip install mcp-server-sqlite"
+  },
+  "config": {
+    "env": {
+      "SQLITE_DB_PATH": {
+        "description": "Path to the SQLite database file",
+        "required": true
+      }
+    }
+  },
+  "tools": [
+    "execute_query",
+    "list_tables",
+    "describe_table",
+    "create_table",
+    "insert_data",
+    "read_query"
+  ],
+  "verified": false,
+  "source": "https://github.com/anthropics/mcp-server-sqlite"
+}

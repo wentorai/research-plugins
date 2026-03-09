@@ -1,0 +1,37 @@
+{
+  "id": "gmail-mcp",
+  "name": "Gmail MCP",
+  "description": "Gmail email integration — search, read, send, and manage emails through Gmail for academic correspondence and collaboration.",
+  "category": "email",
+  "install": {
+    "runtime": "node",
+    "package": "@anthropic/mcp-server-gmail",
+    "command": "npm install @anthropic/mcp-server-gmail"
+  },
+  "config": {
+    "env": {
+      "GOOGLE_CLIENT_ID": {
+        "description": "Google OAuth 2.0 client ID",
+        "required": true
+      },
+      "GOOGLE_CLIENT_SECRET": {
+        "description": "Google OAuth 2.0 client secret",
+        "required": true
+      },
+      "GOOGLE_REFRESH_TOKEN": {
+        "description": "Google OAuth 2.0 refresh token with Gmail scope",
+        "required": true
+      }
+    }
+  },
+  "tools": [
+    "search_emails",
+    "read_email",
+    "send_email",
+    "reply_to_email",
+    "list_labels",
+    "list_threads"
+  ],
+  "verified": false,
+  "source": "https://github.com/anthropics/mcp-server-gmail"
+}

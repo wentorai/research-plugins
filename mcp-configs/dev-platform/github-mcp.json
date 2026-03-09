@@ -1,0 +1,31 @@
+{
+  "id": "github-mcp",
+  "name": "GitHub MCP",
+  "description": "GitHub repository and issue management — create issues, manage pull requests, search repositories, and access code for open-source research projects.",
+  "category": "dev-platform",
+  "install": {
+    "runtime": "node",
+    "package": "@anthropic/mcp-server-github",
+    "command": "npm install @anthropic/mcp-server-github"
+  },
+  "config": {
+    "env": {
+      "GITHUB_TOKEN": {
+        "description": "GitHub personal access token (classic or fine-grained)",
+        "required": true
+      }
+    }
+  },
+  "tools": [
+    "search_repositories",
+    "get_repository",
+    "list_issues",
+    "create_issue",
+    "get_pull_request",
+    "create_pull_request",
+    "get_file_contents",
+    "search_code"
+  ],
+  "verified": false,
+  "source": "https://github.com/anthropics/mcp-server-github"
+}

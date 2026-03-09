@@ -1,0 +1,28 @@
+{
+  "id": "postgres-mcp",
+  "name": "PostgreSQL MCP",
+  "description": "PostgreSQL database integration — run SQL queries, inspect schemas, and manage tables in PostgreSQL databases for structured research data.",
+  "category": "database",
+  "install": {
+    "runtime": "node",
+    "package": "@anthropic/mcp-server-postgres",
+    "command": "npm install @anthropic/mcp-server-postgres"
+  },
+  "config": {
+    "env": {
+      "POSTGRES_CONNECTION_STRING": {
+        "description": "PostgreSQL connection string (e.g. postgresql://user:pass@host:5432/dbname)",
+        "required": true
+      }
+    }
+  },
+  "tools": [
+    "execute_query",
+    "list_tables",
+    "describe_table",
+    "list_schemas",
+    "read_query"
+  ],
+  "verified": false,
+  "source": "https://github.com/anthropics/mcp-server-postgres"
+}

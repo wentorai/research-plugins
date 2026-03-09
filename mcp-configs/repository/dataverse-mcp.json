@@ -1,0 +1,33 @@
+{
+  "id": "dataverse-mcp",
+  "name": "Dataverse MCP",
+  "description": "Dataverse research data repository — search datasets, access metadata, download files, and explore collections in Harvard Dataverse and other installations.",
+  "category": "repository",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-dataverse",
+    "command": "npm install mcp-dataverse"
+  },
+  "config": {
+    "env": {
+      "DATAVERSE_URL": {
+        "description": "Dataverse installation URL (e.g. https://dataverse.harvard.edu)",
+        "required": true
+      },
+      "DATAVERSE_API_TOKEN": {
+        "description": "Dataverse API token for authenticated access",
+        "required": false
+      }
+    }
+  },
+  "tools": [
+    "search_datasets",
+    "get_dataset",
+    "list_files",
+    "download_file",
+    "get_metadata",
+    "list_collections"
+  ],
+  "verified": false,
+  "source": "https://github.com/codeurali/mcp-dataverse"
+}

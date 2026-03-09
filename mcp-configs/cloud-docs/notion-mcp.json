@@ -1,0 +1,29 @@
+{
+  "id": "notion-mcp",
+  "name": "Notion MCP",
+  "description": "Notion integration for AI assistants — search, read, create, and update Notion pages, databases, and blocks directly from your research workflow.",
+  "category": "cloud-docs",
+  "install": {
+    "runtime": "node",
+    "package": "notion-mcp",
+    "command": "npm install notion-mcp"
+  },
+  "config": {
+    "env": {
+      "NOTION_TOKEN": {
+        "description": "Notion internal integration token (starts with ntn_)",
+        "required": true
+      }
+    }
+  },
+  "tools": [
+    "search_pages",
+    "read_page",
+    "create_page",
+    "update_page",
+    "query_database",
+    "list_databases"
+  ],
+  "verified": false,
+  "source": "https://github.com/Badhansen/notion-mcp"
+}

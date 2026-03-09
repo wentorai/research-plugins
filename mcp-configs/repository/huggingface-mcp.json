@@ -1,0 +1,29 @@
+{
+  "id": "huggingface-mcp",
+  "name": "Hugging Face MCP",
+  "description": "Hugging Face Spaces and model access — search models, explore datasets, interact with Spaces, and retrieve model cards for ML research.",
+  "category": "repository",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-hfspace",
+    "command": "npm install mcp-hfspace"
+  },
+  "config": {
+    "env": {
+      "HF_TOKEN": {
+        "description": "Hugging Face access token for authenticated API access",
+        "required": false
+      }
+    }
+  },
+  "tools": [
+    "search_models",
+    "get_model_info",
+    "search_datasets",
+    "get_dataset_info",
+    "list_spaces",
+    "call_space_api"
+  ],
+  "verified": false,
+  "source": "https://github.com/evalstate/mcp-hfspace"
+}

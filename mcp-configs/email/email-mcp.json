@@ -1,0 +1,40 @@
+{
+  "id": "email-mcp",
+  "name": "Email MCP",
+  "description": "Universal IMAP/SMTP email server — connect to any email provider via standard protocols for reading, searching, and sending emails.",
+  "category": "email",
+  "install": {
+    "runtime": "python",
+    "package": "email-mcp",
+    "command": "pip install email-mcp"
+  },
+  "config": {
+    "env": {
+      "IMAP_HOST": {
+        "description": "IMAP server hostname (e.g. imap.gmail.com)",
+        "required": true
+      },
+      "SMTP_HOST": {
+        "description": "SMTP server hostname (e.g. smtp.gmail.com)",
+        "required": true
+      },
+      "EMAIL_USERNAME": {
+        "description": "Email account username or address",
+        "required": true
+      },
+      "EMAIL_PASSWORD": {
+        "description": "Email account password or app-specific password",
+        "required": true
+      }
+    }
+  },
+  "tools": [
+    "search_emails",
+    "read_email",
+    "send_email",
+    "list_folders",
+    "move_email"
+  ],
+  "verified": false,
+  "source": "https://github.com/codefuturist/email-mcp"
+}

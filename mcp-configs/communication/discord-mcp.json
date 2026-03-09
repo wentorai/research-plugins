@@ -1,0 +1,29 @@
+{
+  "id": "discord-mcp",
+  "name": "Discord MCP",
+  "description": "Discord server integration for research teams — send messages, read channels, manage threads, and interact with server members.",
+  "category": "communication",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-discord",
+    "command": "npm install mcp-discord"
+  },
+  "config": {
+    "env": {
+      "DISCORD_BOT_TOKEN": {
+        "description": "Discord bot token from the Developer Portal",
+        "required": true
+      }
+    }
+  },
+  "tools": [
+    "send_message",
+    "read_messages",
+    "list_channels",
+    "list_guilds",
+    "create_thread",
+    "add_reaction"
+  ],
+  "verified": false,
+  "source": "https://github.com/v-3/mcp-discord"
+}

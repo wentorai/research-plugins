@@ -1,0 +1,37 @@
+{
+  "id": "confluence-mcp",
+  "name": "Confluence MCP",
+  "description": "Atlassian Confluence Cloud integration — search, read, and manage wiki pages and spaces for team-based research documentation.",
+  "category": "cloud-docs",
+  "install": {
+    "runtime": "node",
+    "package": "@anthropic/mcp-server-atlassian-confluence",
+    "command": "npm install @anthropic/mcp-server-atlassian-confluence"
+  },
+  "config": {
+    "env": {
+      "CONFLUENCE_URL": {
+        "description": "Confluence Cloud instance URL (e.g. https://yoursite.atlassian.net)",
+        "required": true
+      },
+      "CONFLUENCE_USERNAME": {
+        "description": "Atlassian account email address",
+        "required": true
+      },
+      "CONFLUENCE_API_TOKEN": {
+        "description": "Atlassian API token (generate at id.atlassian.com)",
+        "required": true
+      }
+    }
+  },
+  "tools": [
+    "search_content",
+    "get_page",
+    "create_page",
+    "update_page",
+    "list_spaces",
+    "get_space"
+  ],
+  "verified": false,
+  "source": "https://github.com/aashari/mcp-server-atlassian-confluence"
+}
