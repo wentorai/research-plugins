@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "categories": [
+    "reference-mgr",
+    "note-knowledge",
+    "communication",
+    "email",
+    "cloud-docs",
+    "ai-platform",
+    "data-platform",
+    "dev-platform",
+    "repository",
+    "academic-db",
+    "browser",
+    "database"
+  ],
+  "configs": []
+}

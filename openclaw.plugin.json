@@ -1,0 +1,20 @@
+{
+  "id": "research-plugins",
+  "name": "Research Plugins",
+  "description": "350+ academic research skills & 6 agent tools for Research-Claw",
+  "skills": ["./skills"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "semanticScholarApiKey": { "type": "string" }
+    }
+  },
+  "uiHints": {
+    "semanticScholarApiKey": {
+      "label": "Semantic Scholar API Key (optional)",
+      "help": "Get free key from semanticscholar.org for higher rate limits.",
+      "sensitive": true
+    }
+  }
+}

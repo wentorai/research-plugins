@@ -1,0 +1,28 @@
+node_modules/
+dist/
+*.js
+*.d.ts
+*.js.map
+!scripts/*.ts
+catalog.json
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+*.whl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.npmrc
