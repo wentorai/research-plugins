@@ -6,7 +6,7 @@ import { createArxivTools } from "./src/tools/arxiv.js";
 import { createPubMedTools } from "./src/tools/pubmed.js";
 import { createUnpaywallTools } from "./src/tools/unpaywall.js";
 
-export function activate(api: OpenClawPluginApi) {
+export default function activate(api: OpenClawPluginApi) {
   api.registerTool(
     (ctx) => createSemanticScholarTools(ctx, api),
     { names: ["search_papers", "get_paper", "get_citations"] },
