@@ -1,0 +1,22 @@
+name: Sync MCP Registry
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Weekly Monday 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: node scripts/sync-registry.ts
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet || (git add mcp-configs/ && git commit -m "chore: sync MCP registry" && git push)
