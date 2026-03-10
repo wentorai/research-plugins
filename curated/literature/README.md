@@ -1,11 +1,9 @@
 # Literature — Curated Skills
 
-
 > 50 recommended skills for finding, discovering, and managing academic literature.
 
 
 ## Discovery
-
 
 | Skill | Description |
 |-------|-------------|
@@ -22,22 +20,20 @@
 
 ## Fulltext
 
-
 | Skill | Description |
 |-------|-------------|
 | [core-api-guide](../../skills/literature/fulltext/core-api-guide/) | Search and retrieve open access research papers via CORE aggregator |
 | [doaj-api](../../skills/literature/fulltext/doaj-api/) | Search open access journals and articles in the DOAJ directory |
+| [institutional-repository-guide](../../skills/literature/fulltext/institutional-repository-guide/) | Access papers from institutional and subject repositories at scale |
 | [interlibrary-loan-guide](../../skills/literature/fulltext/interlibrary-loan-guide/) | Access papers through interlibrary loan and document delivery services |
 | [open-access-guide](../../skills/literature/fulltext/open-access-guide/) | Navigate open access policies, repositories, and legal full-text retrieval me... |
 | [open-access-mining-guide](../../skills/literature/fulltext/open-access-mining-guide/) | Mine open access full-text repositories for research data extraction |
 | [pmc-oai-api](../../skills/literature/fulltext/pmc-oai-api/) | PubMed Central OAI-PMH metadata harvesting |
 | [preprint-servers-guide](../../skills/literature/fulltext/preprint-servers-guide/) | Guide to preprint servers across scientific disciplines |
-| [repository-harvesting-guide](../../skills/literature/fulltext/repository-harvesting-guide/) | Harvest papers from institutional and subject repositories at scale |
 | [unpaywall-api](../../skills/literature/fulltext/unpaywall-api/) | Find free legal full-text versions of scholarly articles via Unpaywall |
 
 
 ## Metadata
-
 
 | Skill | Description |
 |-------|-------------|
@@ -56,7 +52,6 @@
 
 
 ## Search
-
 
 | Skill | Description |
 |-------|-------------|

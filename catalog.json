@@ -2259,6 +2259,21 @@
       ]
     },
     {
+      "name": "institutional-repository-guide",
+      "description": "Access papers from institutional and subject repositories at scale",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "path": "skills/literature/fulltext/institutional-repository-guide",
+      "keywords": [
+        "institutional repository",
+        "DSpace",
+        "EPrints",
+        "open access archive",
+        "subject repository",
+        "OpenDOAR"
+      ]
+    },
+    {
       "name": "interlibrary-loan-guide",
       "description": "Access papers through interlibrary loan and document delivery services",
       "category": "literature",
@@ -2327,21 +2342,6 @@
         "arXiv",
         "bioRxiv",
         "open access"
-      ]
-    },
-    {
-      "name": "repository-harvesting-guide",
-      "description": "Harvest papers from institutional and subject repositories at scale",
-      "category": "literature",
-      "subcategory": "fulltext",
-      "path": "skills/literature/fulltext/repository-harvesting-guide",
-      "keywords": [
-        "repository harvesting",
-        "OAI-PMH",
-        "institutional repository",
-        "open access",
-        "metadata harvesting",
-        "preprints"
       ]
     },
     {
