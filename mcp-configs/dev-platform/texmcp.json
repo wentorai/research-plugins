@@ -1,0 +1,20 @@
+{
+  "id": "texmcp",
+  "name": "TexMCP",
+  "description": "FastMCP microservice for LaTeX to PDF rendering",
+  "category": "dev-platform",
+  "install": {
+    "runtime": "python",
+    "package": "texmcp",
+    "command": "pip install texmcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "render",
+    "compile"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/TexMCP"
+}

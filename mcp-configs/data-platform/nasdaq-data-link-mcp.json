@@ -1,0 +1,20 @@
+{
+  "id": "nasdaq-data-link-mcp",
+  "name": "Nasdaq Data Link MCP",
+  "description": "Financial and economic datasets from Nasdaq",
+  "category": "data-platform",
+  "install": {
+    "runtime": "python",
+    "package": "nasdaq-data-link-mcp",
+    "command": "pip install nasdaq-data-link-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "get_dataset",
+    "search"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/nasdaq-data-link-mcp"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "local-faiss-mcp",
+  "name": "Local FAISS MCP",
+  "description": "Local FAISS vector database for RAG with document ingestion",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "python",
+    "package": "local-faiss-mcp",
+    "command": "pip install local-faiss-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "ingest",
+    "search",
+    "delete"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/local_faiss_mcp"
+}

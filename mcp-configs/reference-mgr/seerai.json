@@ -1,0 +1,21 @@
+{
+  "id": "seerai",
+  "name": "SeerAI Zotero MCP",
+  "description": "Zotero AI with OCR, table extraction, and Semantic Scholar",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "python",
+    "package": "seerai",
+    "command": "pip install seerai"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "ocr",
+    "extract_table"
+  ],
+  "verified": false,
+  "source": "https://github.com/seer-ai/seerai"
+}

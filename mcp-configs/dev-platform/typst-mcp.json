@@ -1,0 +1,21 @@
+{
+  "id": "typst-mcp",
+  "name": "Typst MCP",
+  "description": "Typst typesetting: convert LaTeX to Typst, validate, render",
+  "category": "dev-platform",
+  "install": {
+    "runtime": "node",
+    "package": "typst-mcp",
+    "command": "npm install -g typst-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "compile",
+    "convert",
+    "validate"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/typst-mcp"
+}

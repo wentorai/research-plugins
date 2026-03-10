@@ -1,0 +1,20 @@
+{
+  "id": "mcp-simple-arxiv",
+  "name": "Simple arXiv MCP",
+  "description": "Lightweight arXiv search with filtering and full text",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-simple-arxiv",
+    "command": "npm install -g mcp-simple-arxiv"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "get_paper"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/mcp-simple-arxiv"
+}

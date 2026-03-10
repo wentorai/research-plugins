@@ -1,0 +1,20 @@
+{
+  "id": "google-scholar-mcp",
+  "name": "Google Scholar MCP",
+  "description": "Search Google Scholar for academic papers",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "node",
+    "package": "google-scholar-mcp-server",
+    "command": "npm install -g google-scholar-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "cite"
+  ],
+  "verified": false,
+  "source": "https://github.com/oceanuo/Google-Scholar-MCP-Server"
+}

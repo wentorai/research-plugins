@@ -1,0 +1,21 @@
+{
+  "id": "paper-reader",
+  "name": "Paper Reader MCP",
+  "description": "Search, read, and summarize arXiv papers",
+  "category": "ai-platform",
+  "install": {
+    "runtime": "python",
+    "package": "paper-reader",
+    "command": "pip install paper-reader"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "read",
+    "summarize"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/paper_reader"
+}

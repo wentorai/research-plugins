@@ -1,0 +1,20 @@
+{
+  "id": "openedu-mcp",
+  "name": "OpenEdu MCP",
+  "description": "Educational resources from OpenLibrary, Wikipedia, arXiv",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "openedu-mcp",
+    "command": "pip install openedu-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "get_resource"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/openedu-mcp"
+}

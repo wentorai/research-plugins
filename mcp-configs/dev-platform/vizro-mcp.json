@@ -1,0 +1,20 @@
+{
+  "id": "vizro-mcp",
+  "name": "Vizro Dashboard MCP",
+  "description": "McKinsey Vizro validated data charts and dashboards",
+  "category": "dev-platform",
+  "install": {
+    "runtime": "python",
+    "package": "vizro-mcp",
+    "command": "pip install vizro-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "create_dashboard",
+    "create_chart"
+  ],
+  "verified": false,
+  "source": "https://github.com/mckinsey/vizro-mcp"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "mcp-excel-server",
+  "name": "Excel MCP Server",
+  "description": "Natural language interaction with Excel files",
+  "category": "data-platform",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-excel-server",
+    "command": "npm install -g mcp-excel-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "read_sheet",
+    "query",
+    "write"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/mcp-excel-server"
+}

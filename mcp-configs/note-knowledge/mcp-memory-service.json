@@ -1,0 +1,21 @@
+{
+  "id": "mcp-memory-service",
+  "name": "Memory Service MCP",
+  "description": "Universal memory with semantic search and autonomous consolidation",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-memory-service",
+    "command": "npm install -g mcp-memory-service"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "store",
+    "search",
+    "consolidate"
+  ],
+  "verified": false,
+  "source": "https://github.com/doobidoo/mcp-memory-service"
+}

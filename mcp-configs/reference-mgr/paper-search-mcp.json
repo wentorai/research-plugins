@@ -1,0 +1,21 @@
+{
+  "id": "paper-search-mcp",
+  "name": "Paper Search MCP",
+  "description": "Search and download papers from arXiv, PubMed, bioRxiv",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "node",
+    "package": "@openags/paper-search-mcp",
+    "command": "npx @openags/paper-search-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "download",
+    "get_citations"
+  ],
+  "verified": false,
+  "source": "https://github.com/openags/paper-search-mcp"
+}

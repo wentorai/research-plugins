@@ -1,0 +1,21 @@
+{
+  "id": "latex-mcp-server",
+  "name": "LaTeX MCP Server",
+  "description": "Compile LaTeX, download cited papers, run viz scripts",
+  "category": "dev-platform",
+  "install": {
+    "runtime": "python",
+    "package": "latex-mcp-server",
+    "command": "pip install latex-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "compile",
+    "download_papers",
+    "run_viz"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/latex-mcp-server"
+}

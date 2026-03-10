@@ -1,0 +1,20 @@
+{
+  "id": "mcp-echarts",
+  "name": "ECharts MCP",
+  "description": "Generate visual charts using Apache ECharts",
+  "category": "dev-platform",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-echarts",
+    "command": "npm install -g mcp-echarts"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "create_chart",
+    "render"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/mcp-echarts"
+}

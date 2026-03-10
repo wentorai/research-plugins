@@ -1,0 +1,21 @@
+{
+  "id": "medical-mcp",
+  "name": "Medical MCP",
+  "description": "Medical information from FDA, WHO, PubMed drug databases",
+  "category": "academic-db",
+  "install": {
+    "runtime": "node",
+    "package": "medical-mcp",
+    "command": "npm install -g medical-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search_drugs",
+    "get_interactions",
+    "search_conditions"
+  ],
+  "verified": false,
+  "source": "https://github.com/Cicatriiz/medical-mcp"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "openstax-mcp",
+  "name": "OpenStax Textbooks MCP",
+  "description": "OpenStax textbooks with semantic search and practice problems",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "openstax-mcp-server",
+    "command": "pip install openstax-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "get_chapter",
+    "generate_problems"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/openstax-mcp-server"
+}

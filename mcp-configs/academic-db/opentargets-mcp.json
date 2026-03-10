@@ -1,0 +1,21 @@
+{
+  "id": "opentargets-mcp",
+  "name": "Open Targets MCP",
+  "description": "Open Targets Platform GraphQL for drug target discovery",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "opentargets-mcp",
+    "command": "pip install opentargets-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search_targets",
+    "get_associations",
+    "get_drugs"
+  ],
+  "verified": false,
+  "source": "https://github.com/nicosantos-mcp/opentargets-mcp"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "magi-researchers",
+  "name": "MAGI Researchers MCP",
+  "description": "Three AI models cross-verify for multi-perspective research",
+  "category": "ai-platform",
+  "install": {
+    "runtime": "python",
+    "package": "magi-researchers",
+    "command": "pip install magi-researchers"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "research",
+    "verify",
+    "synthesize"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/magi-researchers"
+}

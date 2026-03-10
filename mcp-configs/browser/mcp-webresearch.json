@@ -1,0 +1,20 @@
+{
+  "id": "mcp-webresearch",
+  "name": "Web Research MCP",
+  "description": "Google search and deep web research",
+  "category": "browser",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-webresearch",
+    "command": "npm install -g mcp-webresearch"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "scrape"
+  ],
+  "verified": false,
+  "source": "https://github.com/nicosantos-mcp/mcp-webresearch"
+}

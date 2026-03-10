@@ -1,0 +1,21 @@
+{
+  "id": "mcp-summarizer",
+  "name": "Summarizer MCP",
+  "description": "AI summarization for text, web, PDF, EPUB content",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-summarizer",
+    "command": "npm install -g mcp-summarizer"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "summarize_text",
+    "summarize_url",
+    "summarize_pdf"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/mcp-summarizer"
+}

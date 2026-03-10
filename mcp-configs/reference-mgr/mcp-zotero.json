@@ -1,0 +1,21 @@
+{
+  "id": "mcp-zotero",
+  "name": "Zotero MCP",
+  "description": "Interact with Zotero reference library via MCP",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-zotero",
+    "command": "npm install -g mcp-zotero"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "get_item",
+    "add_item"
+  ],
+  "verified": false,
+  "source": "https://github.com/kylebarron/mcp-zotero"
+}

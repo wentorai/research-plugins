@@ -1,0 +1,21 @@
+{
+  "id": "mcp-paperswithcode",
+  "name": "Papers With Code MCP",
+  "description": "Search PapersWithCode for ML papers with code",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "node",
+    "package": "mcp-paperswithcode",
+    "command": "npm install -g mcp-paperswithcode"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search_papers",
+    "get_paper",
+    "search_datasets"
+  ],
+  "verified": false,
+  "source": "https://github.com/hbg/mcp-paperswithcode"
+}

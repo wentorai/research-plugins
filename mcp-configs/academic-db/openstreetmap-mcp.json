@@ -1,0 +1,21 @@
+{
+  "id": "openstreetmap-mcp",
+  "name": "OpenStreetMap MCP",
+  "description": "OpenStreetMap location services and geospatial data",
+  "category": "academic-db",
+  "install": {
+    "runtime": "node",
+    "package": "open-streetmap-mcp",
+    "command": "npm install -g open-streetmap-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "geocode",
+    "get_map"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/open-streetmap-mcp"
+}

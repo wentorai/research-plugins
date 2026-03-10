@@ -1,0 +1,21 @@
+{
+  "id": "zettelkasten-mcp",
+  "name": "Zettelkasten MCP",
+  "description": "Zettelkasten knowledge management methodology via MCP",
+  "category": "note-knowledge",
+  "install": {
+    "runtime": "node",
+    "package": "zettelkasten-mcp",
+    "command": "npm install -g zettelkasten-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "create_note",
+    "link_notes",
+    "search"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/zettelkasten-mcp"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "smithsonian-mcp",
+  "name": "Smithsonian Open Access MCP",
+  "description": "Smithsonian Institution Open Access museum collections",
+  "category": "academic-db",
+  "install": {
+    "runtime": "node",
+    "package": "smithsonian-mcp",
+    "command": "npm install -g smithsonian-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "get_item"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/smithsonian-mcp"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "m4-clinical-mcp",
+  "name": "M4 Clinical Database MCP",
+  "description": "MIMIC-IV and eICU clinical database with domain knowledge",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "m4",
+    "command": "pip install m4"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "query",
+    "get_patient",
+    "analyze"
+  ],
+  "verified": false,
+  "source": "https://github.com/derrickmo/m4"
+}

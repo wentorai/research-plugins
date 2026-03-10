@@ -1,0 +1,20 @@
+{
+  "id": "onekgpd-mcp",
+  "name": "1000 Genomes MCP",
+  "description": "Real-time access to 1000 Genomes Project dataset",
+  "category": "academic-db",
+  "install": {
+    "runtime": "python",
+    "package": "onekgpd-mcp",
+    "command": "pip install onekgpd-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search_variants",
+    "get_population"
+  ],
+  "verified": false,
+  "source": "https://github.com/nicosantos-mcp/onekgpd-mcp"
+}

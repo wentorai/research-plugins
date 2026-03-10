@@ -1,0 +1,20 @@
+{
+  "id": "academix",
+  "name": "Academix MCP",
+  "description": "Paper search and citation analysis via OpenAlex, DBLP, Semantic Scholar",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "node",
+    "package": "academix",
+    "command": "npm install -g academix"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "analyze_citations"
+  ],
+  "verified": false,
+  "source": "https://github.com/janduplessis883/Academix"
+}

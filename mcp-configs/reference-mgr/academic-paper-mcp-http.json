@@ -1,0 +1,20 @@
+{
+  "id": "academic-paper-mcp-http",
+  "name": "Academic Paper MCP (HTTP)",
+  "description": "HTTP/SSE academic literature search aggregating multiple sources",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "python",
+    "package": "academic-paper-mcp-http",
+    "command": "pip install academic-paper-mcp-http"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "get_paper"
+  ],
+  "verified": false,
+  "source": "https://github.com/lsgrep/academic-paper-mcp-http"
+}

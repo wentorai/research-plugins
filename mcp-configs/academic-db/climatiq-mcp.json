@@ -1,0 +1,20 @@
+{
+  "id": "climatiq-mcp",
+  "name": "Climatiq Carbon MCP",
+  "description": "Carbon emissions calculations via Climatiq API",
+  "category": "academic-db",
+  "install": {
+    "runtime": "node",
+    "package": "climatiq-mcp-server",
+    "command": "npm install -g climatiq-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "estimate",
+    "get_factors"
+  ],
+  "verified": false,
+  "source": "https://github.com/Climatiq/climatiq-mcp-server"
+}

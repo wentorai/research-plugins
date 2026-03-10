@@ -1,0 +1,20 @@
+{
+  "id": "mendeley-mcp",
+  "name": "Mendeley MCP",
+  "description": "Access Mendeley reference database with 100M+ papers",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "node",
+    "package": "mendeley-mcp",
+    "command": "npm install -g mendeley-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "get_paper"
+  ],
+  "verified": false,
+  "source": "https://github.com/tsmdt/mendeley-mcp"
+}

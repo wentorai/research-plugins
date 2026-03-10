@@ -1,0 +1,22 @@
+{
+  "id": "jefferson-stats-mcp",
+  "name": "Jefferson Stats MCP",
+  "description": "40+ statistical analysis tools: hypothesis testing, regression",
+  "category": "data-platform",
+  "install": {
+    "runtime": "python",
+    "package": "jefferson-stats-mcp",
+    "command": "pip install jefferson-stats-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "t_test",
+    "anova",
+    "regression",
+    "chi_square"
+  ],
+  "verified": false,
+  "source": "https://github.com/jjohare/JeffersonStatsMCP"
+}

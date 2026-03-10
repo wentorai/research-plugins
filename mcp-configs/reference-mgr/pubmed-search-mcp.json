@@ -1,0 +1,21 @@
+{
+  "id": "pubmed-search-mcp",
+  "name": "PubMed Search MCP",
+  "description": "Professional PubMed search with 40+ tools and MeSH integration",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "python",
+    "package": "pubmed-search-mcp",
+    "command": "pip install pubmed-search-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "mesh_lookup",
+    "get_fulltext"
+  ],
+  "verified": false,
+  "source": "https://github.com/JackKuo666/pubmed-search-mcp"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "pdb-mcp",
+  "name": "Protein Data Bank MCP",
+  "description": "PDB worldwide 3D protein structure repository",
+  "category": "academic-db",
+  "install": {
+    "runtime": "node",
+    "package": "pdb-mcp-server",
+    "command": "npm install -g pdb-mcp-server"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "get_structure",
+    "get_sequence"
+  ],
+  "verified": false,
+  "source": "https://github.com/ac3xx/PDB-MCP-Server"
+}

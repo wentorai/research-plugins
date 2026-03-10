@@ -1,0 +1,21 @@
+{
+  "id": "scholar-mcp",
+  "name": "ScholarMCP",
+  "description": "Literature search, PDF ingestion, and citation management",
+  "category": "reference-mgr",
+  "install": {
+    "runtime": "python",
+    "package": "scholar-mcp",
+    "command": "pip install scholar-mcp"
+  },
+  "config": {
+    "env": {}
+  },
+  "tools": [
+    "search",
+    "ingest_pdf",
+    "manage_citations"
+  ],
+  "verified": false,
+  "source": "https://github.com/cryingbi/ScholarMCP"
+}
