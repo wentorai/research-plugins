@@ -1,87 +1,88 @@
-# Curated Research Productivity Tools
+# Tools — Curated Skills
 
-> Hand-picked tools for academic researchers covering diagrams, documents, code execution, scraping, knowledge graphs, and OCR/translation.
 
-## Diagrams & Visualization
+> 42 recommended skills for productivity tools for diagrams, documents, code execution, and more.
 
-### Tools & Software
-- **[Mermaid](https://mermaid.js.org/)** — Text-based diagramming tool that renders flowcharts, sequence diagrams, Gantt charts, and more from Markdown-like syntax.
-- **[PlantUML](https://plantuml.com/)** — Open-source tool for creating UML diagrams from plain text; supports sequence, class, activity, and many other diagram types.
-- **[draw.io (diagrams.net)](https://www.drawio.com/)** — Free, open-source diagramming tool with desktop and browser versions; exports to SVG, PNG, PDF.
-- **[Excalidraw](https://excalidraw.com/)** — Virtual whiteboard with a hand-drawn aesthetic; great for informal research diagrams and brainstorming.
-- **[Graphviz](https://graphviz.org/)** — Open-source graph visualization software; the DOT language is a standard for rendering directed and undirected graphs.
-- **[TikZ/PGF (LaTeX)](https://tikz.dev/)** — Programmatic figure drawing in LaTeX; unmatched precision for publication-ready technical diagrams.
 
-### Key References
-- **[Mermaid Live Editor](https://mermaid.live/)** — Browser-based editor for writing and previewing Mermaid diagrams in real time.
-- **[D2 Language](https://d2lang.com/)** — Modern declarative diagramming language; generates clean, readable diagrams from text.
+## Code Exec
 
-## Document Processing
 
-### PDF Tools
-- **[GROBID](https://github.com/kermitt2/grobid)** — ML library for extracting structured metadata and full text from scholarly PDFs; powers many academic tools.
-- **[PyMuPDF (fitz)](https://pymupdf.readthedocs.io/)** — Fast Python binding for MuPDF; extracts text, images, and annotations from PDFs.
-- **[pdfplumber](https://github.com/jsvine/pdfplumber)** — Python library for extracting text, tables, and metadata from PDFs with precise positional data.
-- **[Marker](https://github.com/VikParuchuri/marker)** — Converts PDF to Markdown with high accuracy; handles academic papers, books, and slides.
-- **[Nougat (Meta)](https://github.com/facebookresearch/nougat)** — Neural OCR for academic PDFs; converts scanned papers to structured Markdown with math.
+| Skill | Description |
+|-------|-------------|
+| [google-colab-guide](../../skills/tools/code-exec/google-colab-guide/) | Run and manage Google Colab notebooks for Python and ML research |
+| [jupyter-notebook-guide](../../skills/tools/code-exec/jupyter-notebook-guide/) | Best practices for computational research notebooks with reproducible workflows |
+| [kaggle-api-guide](../../skills/tools/code-exec/kaggle-api-guide/) | Download datasets, manage competitions and notebooks via Kaggle API |
+| [overleaf-cli-guide](../../skills/tools/code-exec/overleaf-cli-guide/) | Sync and manage Overleaf LaTeX projects from the command line |
+| [python-reproducibility-guide](../../skills/tools/code-exec/python-reproducibility-guide/) | Reproducible Python environments, notebooks, and literate programming |
+| [r-reproducibility-guide](../../skills/tools/code-exec/r-reproducibility-guide/) | Create reproducible research workflows with R and RMarkdown/Quarto |
+| [sandbox-execution-guide](../../skills/tools/code-exec/sandbox-execution-guide/) | Secure sandboxed code execution environments for reproducible research computing |
 
-### Format Converters
-- **[Pandoc](https://pandoc.org/)** — Universal document converter: Markdown, LaTeX, DOCX, HTML, EPUB, and 40+ other formats.
-- **[Quarto](https://quarto.org/)** — Next-generation scientific publishing system; combines Jupyter, R Markdown, and Pandoc into one tool.
-- **[nbconvert](https://nbconvert.readthedocs.io/)** — Convert Jupyter notebooks to HTML, PDF, LaTeX, Markdown, and slides.
 
-## Code Execution & Notebooks
+## Diagram
 
-### Notebook Environments
-- **[Jupyter](https://jupyter.org/)** — The standard interactive computing environment; supports Python, R, Julia, and 100+ kernels.
-- **[Google Colab](https://colab.research.google.com/)** — Free cloud-hosted Jupyter notebooks with GPU/TPU access; zero setup required.
-- **[Observable](https://observablehq.com/)** — Reactive JavaScript notebooks for data visualization and exploratory analysis.
-- **[Deepnote](https://deepnote.com/)** — Collaborative data science notebook with real-time editing, SQL integration, and scheduling.
 
-### Sandboxes & Reproducibility
-- **[Binder (mybinder.org)](https://mybinder.org/)** — Turn any Git repo into a collection of interactive notebooks; one-click reproducible environments.
-- **[Docker](https://www.docker.com/)** — Containerization platform for creating reproducible computational environments.
-- **[Pixi](https://pixi.sh/)** — Fast, cross-platform package manager built on conda-forge; reproducible environments from a single lockfile.
-- **[renv (R)](https://rstudio.github.io/renv/)** — Reproducible R environments; records and restores exact package versions per project.
+| Skill | Description |
+|-------|-------------|
+| [code-flow-visualizer](../../skills/tools/diagram/code-flow-visualizer/) | Convert Python, JavaScript, and TypeScript functions into Mermaid flowcharts |
+| [excalidraw-diagram-guide](../../skills/tools/diagram/excalidraw-diagram-guide/) | Generate hand-drawn style Excalidraw diagrams from text descriptions |
+| [json-data-visualizer](../../skills/tools/diagram/json-data-visualizer/) | Guide to JSON Crack for visualizing complex JSON data structures |
+| [mermaid-architect-guide](../../skills/tools/diagram/mermaid-architect-guide/) | Design complex multi-diagram architectures using advanced Mermaid syntax |
+| [mermaid-diagram-guide](../../skills/tools/diagram/mermaid-diagram-guide/) | Create flowcharts, sequence diagrams, and architecture diagrams with Mermaid |
+| [plantuml-guide](../../skills/tools/diagram/plantuml-guide/) | Create UML diagrams and architecture visualizations with PlantUML |
+| [scientific-illustration-guide](../../skills/tools/diagram/scientific-illustration-guide/) | Create graphical abstracts, schematic diagrams, and scientific illustrations |
+| [tldraw-whiteboard-guide](../../skills/tools/diagram/tldraw-whiteboard-guide/) | Guide to tldraw for infinite canvas whiteboarding and diagram creation |
 
-## Web Scraping & APIs
 
-### Scraping Tools
-- **[Scrapy](https://scrapy.org/)** — Fast, high-level Python web crawling and scraping framework.
-- **[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)** — Python library for parsing HTML and XML; simple API for navigating and searching parse trees.
-- **[Playwright](https://playwright.dev/)** — Browser automation library from Microsoft; handles JavaScript-rendered pages in Python, Node, and .NET.
-- **[Selenium](https://www.selenium.dev/)** — Browser automation framework; the established tool for dynamic page scraping and testing.
+## Document
 
-### API Clients & Wrappers
-- **[httpx](https://www.python-httpx.org/)** — Modern async-capable HTTP client for Python; successor to requests.
-- **[Crossref API](https://api.crossref.org/)** — Free REST API for querying 140M+ scholarly metadata records.
-- **[OpenAlex API](https://docs.openalex.org/)** — Fully open API for the global research graph; works, authors, institutions, topics.
-- **[Unpaywall API](https://unpaywall.org/products/api)** — REST API to find open-access copies of papers by DOI.
 
-## Knowledge Graph & RAG
+| Skill | Description |
+|-------|-------------|
+| [anystyle-api](../../skills/tools/document/anystyle-api/) | Citation reference parser using machine learning |
+| [docsgpt-guide](../../skills/tools/document/docsgpt-guide/) | Deploy DocsGPT for private document analysis and research knowledge bases |
+| [grobid-pdf-parsing](../../skills/tools/document/grobid-pdf-parsing/) | Extract structured text, metadata, and references from academic PDFs |
+| [large-document-reader](../../skills/tools/document/large-document-reader/) | Split and read long documents chapter-by-chapter for structured analysis |
+| [markdown-academic-guide](../../skills/tools/document/markdown-academic-guide/) | Write academic papers in Markdown with Pandoc for multi-format output |
+| [paper-parse-guide](../../skills/tools/document/paper-parse-guide/) | Deep dual-mode reading of academic papers from PDF or URL sources |
+| [pdf-extraction-guide](../../skills/tools/document/pdf-extraction-guide/) | PDF parsing, text extraction, and document format conversion |
 
-### Knowledge Graph Tools
-- **[Neo4j](https://neo4j.com/)** — Leading graph database; Cypher query language, free Community Edition.
-- **[NetworkX](https://networkx.org/)** — Python package for creating, manipulating, and analyzing complex networks.
-- **[Gephi](https://gephi.org/)** — Open-source network visualization and analysis platform; handles large graphs with interactive exploration.
-- **[VOSviewer](https://www.vosviewer.com/)** — Free tool for constructing and visualizing bibliometric networks (co-citation, co-authorship, keyword co-occurrence).
 
-### RAG Frameworks
-- **[LlamaIndex](https://www.llamaindex.ai/)** — Data framework for building RAG applications; connects LLMs to external data sources.
-- **[LangChain](https://www.langchain.com/)** — Framework for developing LLM-powered applications with retrieval, agents, and chains.
-- **[ChromaDB](https://www.trychroma.com/)** — Open-source embedding database for building AI applications with semantic search.
-- **[PaperQA2](https://github.com/Future-House/paper-qa)** — Purpose-built RAG for scientific literature; retrieves, reads, and cites full-text papers.
+## Knowledge Graph
 
-## OCR & Translation
 
-### OCR Tools
-- **[Tesseract OCR](https://github.com/tesseract-ocr/tesseract)** — Open-source OCR engine maintained by Google; supports 100+ languages.
-- **[EasyOCR](https://github.com/JaidedAI/EasyOCR)** — Python OCR library with ready-to-use models for 80+ languages; simple API.
-- **[PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)** — High-accuracy multilingual OCR toolkit from Baidu; excels at CJK text and table recognition.
-- **[Mathpix](https://mathpix.com/)** — AI-powered tool for converting handwritten or printed math equations to LaTeX; also handles tables and chemistry.
+| Skill | Description |
+|-------|-------------|
+| [citation-network-builder](../../skills/tools/knowledge-graph/citation-network-builder/) | Build and analyze citation networks from academic reference data |
+| [concept-map-generator](../../skills/tools/knowledge-graph/concept-map-generator/) | Generate structured concept maps from academic texts automatically |
+| [graphiti-guide](../../skills/tools/knowledge-graph/graphiti-guide/) | Build real-time knowledge graphs for AI agents using Graphiti by Zep |
+| [knowledge-graph-construction](../../skills/tools/knowledge-graph/knowledge-graph-construction/) | Build research knowledge graphs for literature synthesis and RAG systems |
+| [ontology-design-guide](../../skills/tools/knowledge-graph/ontology-design-guide/) | Design ontologies and knowledge graphs for research data modeling |
+| [rag-methodology-guide](../../skills/tools/knowledge-graph/rag-methodology-guide/) | RAG architecture for academic knowledge retrieval and synthesis |
 
-### Translation Services
-- **[DeepL](https://www.deepl.com/)** — AI translator known for high-quality European and Asian language translations; API available.
-- **[Google Cloud Translation](https://cloud.google.com/translate)** — Neural machine translation supporting 130+ languages; free tier available.
-- **[Argos Translate](https://www.argosopentech.com/)** — Open-source offline translation library built on OpenNMT; fully self-hostable.
-- **[GT4Sci (Google Translate for Science)](https://translate.google.com/)** — While not science-specific, Google Translate with domain glossary uploads handles technical text reasonably well.
+
+## Ocr Translate
+
+
+| Skill | Description |
+|-------|-------------|
+| [formula-recognition-guide](../../skills/tools/ocr-translate/formula-recognition-guide/) | Math OCR and formula recognition to LaTeX conversion |
+| [handwriting-recognition-guide](../../skills/tools/ocr-translate/handwriting-recognition-guide/) | Apply handwriting OCR to digitize historical and archival documents |
+| [latex-ocr-guide](../../skills/tools/ocr-translate/latex-ocr-guide/) | Extract and convert mathematical formulas from images and PDFs to LaTeX code |
+| [multilingual-research-guide](../../skills/tools/ocr-translate/multilingual-research-guide/) | Strategies for translating academic papers while preserving technical accuracy |
+| [pdf-math-translate-guide](../../skills/tools/ocr-translate/pdf-math-translate-guide/) | Translate scientific PDFs with preserved math formatting via PDFMathTranslate |
+| [zotero-pdf-translate-guide](../../skills/tools/ocr-translate/zotero-pdf-translate-guide/) | Guide to Zotero PDF Translate for multilingual PDF and annotation translation |
+| [zotero-pdf2zh-guide](../../skills/tools/ocr-translate/zotero-pdf2zh-guide/) | PDF Chinese translation plugin for Zotero reference manager |
+
+
+## Scraping
+
+
+| Skill | Description |
+|-------|-------------|
+| [academic-web-scraping](../../skills/tools/scraping/academic-web-scraping/) | Ethical web scraping and API-based data collection for research |
+| [api-data-collection-guide](../../skills/tools/scraping/api-data-collection-guide/) | API-based data collection and web scraping for research |
+| [dataset-finder-guide](../../skills/tools/scraping/dataset-finder-guide/) | Search and download research datasets from Kaggle, HuggingFace, and repos |
+| [easy-spider-guide](../../skills/tools/scraping/easy-spider-guide/) | Guide to EasySpider for visual no-code web data collection |
+| [google-scholar-scraper](../../skills/tools/scraping/google-scholar-scraper/) | Ethical Google Scholar data collection techniques and best practices |
+| [repository-harvesting-guide](../../skills/tools/scraping/repository-harvesting-guide/) | Harvest metadata from open repositories using OAI-PMH protocol |
+| [web-scraping-ethics-guide](../../skills/tools/scraping/web-scraping-ethics-guide/) | Scrape web data ethically and legally for research purposes |

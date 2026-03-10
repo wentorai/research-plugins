@@ -1,0 +1,5372 @@
+{
+  "version": "1.1.0",
+  "generated": "2026-03-10",
+  "stats": {
+    "skills": 349,
+    "agent_tools": 13,
+    "mcp_configs": 76,
+    "curated_lists": 6
+  },
+  "skills": [
+    {
+      "name": "algorithm-visualizer-guide",
+      "description": "Guide to Algorithm Visualizer for interactive algorithm exploration",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/algorithm-visualizer-guide",
+      "keywords": [
+        "algorithm visualization",
+        "interactive learning",
+        "code animation",
+        "computational methods",
+        "data structures",
+        "teaching tools"
+      ]
+    },
+    {
+      "name": "bokeh-visualization-guide",
+      "description": "Guide to Bokeh for interactive browser-based research visualizations",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/bokeh-visualization-guide",
+      "keywords": [
+        "Bokeh",
+        "interactive plots",
+        "Python visualization",
+        "web dashboards",
+        "scientific charts",
+        "data exploration"
+      ]
+    },
+    {
+      "name": "chart-image-generator",
+      "description": "Generate publication-quality chart images from research data",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/chart-image-generator",
+      "keywords": [
+        "chart generation",
+        "data visualization",
+        "matplotlib",
+        "publication figures",
+        "scientific plots",
+        "graph export"
+      ]
+    },
+    {
+      "name": "color-accessibility-guide",
+      "description": "Colorblind-friendly palettes and accessible visualization design",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/color-accessibility-guide",
+      "keywords": [
+        "colorblind-friendly palette",
+        "accessible color scheme",
+        "visualization principles",
+        "data-ink ratio"
+      ]
+    },
+    {
+      "name": "d3-visualization-guide",
+      "description": "Guide to D3.js for building custom interactive data visualizations",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/d3-visualization-guide",
+      "keywords": [
+        "data visualization",
+        "D3.js",
+        "interactive charts",
+        "SVG",
+        "web visualization",
+        "scientific plots"
+      ]
+    },
+    {
+      "name": "echarts-visualization-guide",
+      "description": "Guide to Apache ECharts for interactive research data dashboards",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/echarts-visualization-guide",
+      "keywords": [
+        "ECharts",
+        "interactive charts",
+        "data dashboard",
+        "Apache ECharts",
+        "scientific charts",
+        "research visualization"
+      ]
+    },
+    {
+      "name": "geospatial-viz-guide",
+      "description": "Create maps, choropleths, and spatial data visualizations for research",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/geospatial-viz-guide",
+      "keywords": [
+        "geospatial",
+        "choropleth",
+        "maps",
+        "GIS",
+        "spatial visualization",
+        "geopandas"
+      ]
+    },
+    {
+      "name": "interactive-viz-guide",
+      "description": "Interactive data visualization with Plotly, ECharts, and D3",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/interactive-viz-guide",
+      "keywords": [
+        "interactive visualization",
+        "dynamic chart",
+        "Plotly",
+        "ECharts",
+        "data visualization"
+      ]
+    },
+    {
+      "name": "metabase-analytics-guide",
+      "description": "Guide to Metabase for open-source research data analytics and dashboards",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/metabase-analytics-guide",
+      "keywords": [
+        "Metabase",
+        "business intelligence",
+        "SQL analytics",
+        "data dashboard",
+        "research analytics",
+        "self-hosted BI"
+      ]
+    },
+    {
+      "name": "network-visualization-guide",
+      "description": "Visualize networks, graphs, citation maps, and relational data",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/network-visualization-guide",
+      "keywords": [
+        "network visualization",
+        "graph visualization",
+        "citation network",
+        "NetworkX",
+        "social network",
+        "node-link diagram"
+      ]
+    },
+    {
+      "name": "plotly-interactive-guide",
+      "description": "Guide to Plotly.py for interactive scientific visualizations in Python",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/plotly-interactive-guide",
+      "keywords": [
+        "Plotly",
+        "interactive visualization",
+        "Dash",
+        "Python charts",
+        "scientific plots",
+        "research figures"
+      ]
+    },
+    {
+      "name": "publication-figures-guide",
+      "description": "Create journal-quality scientific figures with proper styling and accessibility",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/publication-figures-guide",
+      "keywords": [
+        "scientific figure creation",
+        "publication quality figure",
+        "figure standards",
+        "colorblind-friendly palette",
+        "data visualization"
+      ]
+    },
+    {
+      "name": "python-dataviz-guide",
+      "description": "Publication-quality data visualization with matplotlib, seaborn, and plotly",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/python-dataviz-guide",
+      "keywords": [
+        "data visualization",
+        "chart design",
+        "Python dataviz",
+        "scientific figure creation",
+        "publication quality figure"
+      ]
+    },
+    {
+      "name": "redash-analytics-guide",
+      "description": "Guide to Redash for SQL-driven research data dashboards and sharing",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "path": "skills/analysis/dataviz/redash-analytics-guide",
+      "keywords": [
+        "Redash",
+        "SQL dashboards",
+        "data visualization",
+        "query tool",
+        "research analytics",
+        "collaborative BI"
+      ]
+    },
+    {
+      "name": "causal-inference-guide",
+      "description": "Causal inference methods including DiD, IV, RDD, and synthetic control",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/causal-inference-guide",
+      "keywords": [
+        "difference-in-differences",
+        "DiD",
+        "causal inference",
+        "instrumental variables",
+        "IV estimation",
+        "regression discontinuity"
+      ]
+    },
+    {
+      "name": "econml-causal-guide",
+      "description": "Apply EconML for causal inference combining machine learning and econometrics",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/econml-causal-guide",
+      "keywords": [
+        "causal-inference",
+        "machine-learning",
+        "treatment-effects",
+        "econometrics",
+        "microsoft",
+        "double-ml"
+      ]
+    },
+    {
+      "name": "iv-regression-guide",
+      "description": "Apply instrumental variables, 2SLS, and address endogeneity issues",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/iv-regression-guide",
+      "keywords": [
+        "instrumental variables",
+        "2SLS",
+        "endogeneity",
+        "IV regression",
+        "causal inference",
+        "econometrics"
+      ]
+    },
+    {
+      "name": "mostly-harmless-guide",
+      "description": "Replication code and guide for Mostly Harmless Econometrics methods",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/mostly-harmless-guide",
+      "keywords": []
+    },
+    {
+      "name": "panel-data-analyst",
+      "description": "Expert panel data regression analysis with fixed effects and GMM",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/panel-data-analyst",
+      "keywords": [
+        "panel data",
+        "fixed effects",
+        "random effects",
+        "GMM",
+        "dynamic panel",
+        "Hausman test"
+      ]
+    },
+    {
+      "name": "panel-data-guide",
+      "description": "Panel data analysis with fixed and random effects models",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/panel-data-guide",
+      "keywords": [
+        "panel data",
+        "fixed effects",
+        "random effects",
+        "Stata commands"
+      ]
+    },
+    {
+      "name": "python-causality-guide",
+      "description": "Learn causal inference with Python using the Brave and True handbook",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/python-causality-guide",
+      "keywords": [
+        "causal-inference",
+        "python",
+        "econometrics",
+        "statistics",
+        "treatment-effects",
+        "observational-studies"
+      ]
+    },
+    {
+      "name": "robustness-checks",
+      "description": "Sequential robustness checks in Stata with confounder blocks",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/robustness-checks",
+      "keywords": [
+        "robustness checks",
+        "sensitivity analysis",
+        "Stata regression",
+        "panel data",
+        "causal inference",
+        "fixed effects"
+      ]
+    },
+    {
+      "name": "stata-accounting-guide",
+      "description": "STATA code for empirical accounting and financial economics research",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/stata-accounting-guide",
+      "keywords": [
+        "Stata",
+        "accounting research",
+        "Compustat",
+        "CRSP",
+        "earnings management",
+        "financial economics"
+      ]
+    },
+    {
+      "name": "stata-analyst-guide",
+      "description": "Stata workflows for publication-ready sociology and social science research",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/stata-analyst-guide",
+      "keywords": [
+        "Stata",
+        "sociology",
+        "social science",
+        "survey data",
+        "regression",
+        "publication tables"
+      ]
+    },
+    {
+      "name": "stata-regression",
+      "description": "Run regression analyses in Stata with publication-ready output",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/stata-regression",
+      "keywords": [
+        "Stata regression",
+        "Stata data cleaning",
+        "Stata commands",
+        "panel data",
+        "fixed effects",
+        "robustness checks"
+      ]
+    },
+    {
+      "name": "time-series-guide",
+      "description": "Apply ARIMA, VAR, cointegration, and time series econometric methods",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "path": "skills/analysis/econometrics/time-series-guide",
+      "keywords": [
+        "time series",
+        "ARIMA",
+        "VAR",
+        "cointegration",
+        "stationarity",
+        "forecasting",
+        "econometrics"
+      ]
+    },
+    {
+      "name": "bayesian-statistics-guide",
+      "description": "Bayesian inference methods including prior selection, MCMC, and model comparison",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/bayesian-statistics-guide",
+      "keywords": [
+        "Bayesian statistics",
+        "Bayesian inference",
+        "MCMC",
+        "sample size calculation",
+        "prior selection"
+      ]
+    },
+    {
+      "name": "data-anomaly-detection",
+      "description": "Detect anomalies and outliers in research data using statistical methods",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/data-anomaly-detection",
+      "keywords": [
+        "anomaly detection",
+        "outlier detection",
+        "data quality",
+        "statistical testing",
+        "robust statistics"
+      ]
+    },
+    {
+      "name": "hypothesis-testing-guide",
+      "description": "Statistical hypothesis testing, power analysis, and significance reporting",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/hypothesis-testing-guide",
+      "keywords": [
+        "hypothesis testing",
+        "significance testing",
+        "t-test",
+        "ANOVA",
+        "sample size calculation",
+        "power analysis"
+      ]
+    },
+    {
+      "name": "meta-analysis-guide",
+      "description": "Conduct systematic meta-analyses with effect size pooling and heterogeneity a...",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/meta-analysis-guide",
+      "keywords": [
+        "meta-analysis",
+        "statistical synthesis",
+        "heterogeneity",
+        "effect size",
+        "forest plot"
+      ]
+    },
+    {
+      "name": "ml-experiment-tracker",
+      "description": "Plan reproducible ML experiment runs with parameters and metrics tracking",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/ml-experiment-tracker",
+      "keywords": [
+        "experiment tracking",
+        "machine learning",
+        "reproducibility",
+        "hyperparameters",
+        "MLflow",
+        "model evaluation"
+      ]
+    },
+    {
+      "name": "nonparametric-tests-guide",
+      "description": "Apply Mann-Whitney, Kruskal-Wallis, and other nonparametric methods",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/nonparametric-tests-guide",
+      "keywords": [
+        "nonparametric tests",
+        "Mann-Whitney",
+        "Kruskal-Wallis",
+        "Wilcoxon",
+        "rank-based tests",
+        "distribution-free"
+      ]
+    },
+    {
+      "name": "power-analysis-guide",
+      "description": "Sample size calculation and statistical power analysis guide",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/power-analysis-guide",
+      "keywords": [
+        "sample size calculation",
+        "power analysis",
+        "effect size",
+        "significance testing"
+      ]
+    },
+    {
+      "name": "pywayne-statistics-guide",
+      "description": "37+ statistical testing methods for rigorous hypothesis testing",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/pywayne-statistics-guide",
+      "keywords": [
+        "hypothesis testing",
+        "statistical tests",
+        "p-value",
+        "parametric tests",
+        "nonparametric tests",
+        "effect size",
+        "multiple comparisons"
+      ]
+    },
+    {
+      "name": "quantitative-methods-guide",
+      "description": "Design and execute statistical analyses with regression modeling",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/quantitative-methods-guide",
+      "keywords": [
+        "regression analysis",
+        "quantitative methods",
+        "research design",
+        "statistical modeling",
+        "OLS",
+        "logistic regression"
+      ]
+    },
+    {
+      "name": "sem-guide",
+      "description": "Structural equation modeling with latent variables guide",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/sem-guide",
+      "keywords": [
+        "structural equation modeling",
+        "SEM",
+        "latent variable model",
+        "multilevel model"
+      ]
+    },
+    {
+      "name": "senior-data-scientist-guide",
+      "description": "Statistical modeling, experimentation design, and causal inference",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/senior-data-scientist-guide",
+      "keywords": [
+        "statistical modeling",
+        "causal inference",
+        "A/B testing",
+        "experimentation",
+        "feature engineering",
+        "data science"
+      ]
+    },
+    {
+      "name": "survival-analysis-guide",
+      "description": "Conduct Kaplan-Meier, Cox regression, and time-to-event analyses",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "path": "skills/analysis/statistics/survival-analysis-guide",
+      "keywords": [
+        "survival analysis",
+        "Kaplan-Meier",
+        "Cox regression",
+        "time-to-event",
+        "hazard ratio",
+        "censoring"
+      ]
+    },
+    {
+      "name": "csv-data-analyzer",
+      "description": "Load, explore, clean, and analyze CSV data with statistical summaries",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "path": "skills/analysis/wrangling/csv-data-analyzer",
+      "keywords": [
+        "CSV analysis",
+        "data exploration",
+        "data cleaning",
+        "statistical summary",
+        "tabular data",
+        "pandas"
+      ]
+    },
+    {
+      "name": "data-cleaning-pipeline",
+      "description": "Systematic data cleaning workflows for research datasets",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "path": "skills/analysis/wrangling/data-cleaning-pipeline",
+      "keywords": [
+        "data cleaning",
+        "data quality",
+        "missing values",
+        "outlier detection",
+        "data validation",
+        "preprocessing"
+      ]
+    },
+    {
+      "name": "data-cog-guide",
+      "description": "Upload messy CSVs with minimal prompting for deep automated analysis",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "path": "skills/analysis/wrangling/data-cog-guide",
+      "keywords": [
+        "automated analysis",
+        "data wrangling",
+        "CSV upload",
+        "data profiling",
+        "smart analysis",
+        "minimal prompting"
+      ]
+    },
+    {
+      "name": "missing-data-handling",
+      "description": "Diagnose missing data patterns and apply appropriate imputation strategies",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "path": "skills/analysis/wrangling/missing-data-handling",
+      "keywords": [
+        "missing value imputation",
+        "missing data handling",
+        "outlier detection",
+        "data cleaning",
+        "multiple imputation"
+      ]
+    },
+    {
+      "name": "pandas-data-wrangling",
+      "description": "Data cleaning, transformation, and exploratory analysis with pandas",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "path": "skills/analysis/wrangling/pandas-data-wrangling",
+      "keywords": [
+        "CSV data analyzer",
+        "pandas",
+        "data wrangling",
+        "exploratory data analysis",
+        "missing value imputation"
+      ]
+    },
+    {
+      "name": "questionnaire-design-guide",
+      "description": "Questionnaire and survey design with Likert scales and coding",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "path": "skills/analysis/wrangling/questionnaire-design-guide",
+      "keywords": [
+        "questionnaire design",
+        "survey design",
+        "Likert scale",
+        "data transformation"
+      ]
+    },
+    {
+      "name": "stata-data-cleaning",
+      "description": "Clean, transform, and validate messy research data using Stata",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "path": "skills/analysis/wrangling/stata-data-cleaning",
+      "keywords": [
+        "Stata",
+        "data cleaning",
+        "data wrangling",
+        "missing values",
+        "recoding",
+        "validation"
+      ]
+    },
+    {
+      "name": "survey-data-processing",
+      "description": "Clean, recode, and prepare survey response data for analysis",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "path": "skills/analysis/wrangling/survey-data-processing",
+      "keywords": [
+        "survey data",
+        "questionnaire coding",
+        "Likert scale",
+        "response validation",
+        "recoding",
+        "survey analysis"
+      ]
+    },
+    {
+      "name": "text-mining-guide",
+      "description": "Apply NLP and text mining techniques to research text data",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "path": "skills/analysis/wrangling/text-mining-guide",
+      "keywords": [
+        "text mining",
+        "NLP",
+        "topic modeling",
+        "sentiment analysis",
+        "text preprocessing",
+        "natural language processing"
+      ]
+    },
+    {
+      "name": "ai-model-benchmarking",
+      "description": "Benchmark AI models across 60+ academic evaluation suites and metrics",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/ai-model-benchmarking",
+      "keywords": [
+        "benchmarking",
+        "evaluation",
+        "LLM",
+        "MMLU",
+        "leaderboard",
+        "metrics",
+        "lm-eval"
+      ]
+    },
+    {
+      "name": "annotated-dl-papers-guide",
+      "description": "Annotated deep learning paper implementations with side-by-side notes",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/annotated-dl-papers-guide",
+      "keywords": [
+        "deep-learning",
+        "paper-implementation",
+        "annotations",
+        "transformer",
+        "gan",
+        "diffusion"
+      ]
+    },
+    {
+      "name": "computer-vision-guide",
+      "description": "Apply computer vision research methods, models, and evaluation tools",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/computer-vision-guide",
+      "keywords": [
+        "computer vision",
+        "image classification",
+        "object detection",
+        "CNN",
+        "vision transformer",
+        "deep learning"
+      ]
+    },
+    {
+      "name": "deep-learning-papers-guide",
+      "description": "Annotated deep learning paper implementations with code walkthroughs",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/deep-learning-papers-guide",
+      "keywords": [
+        "deep learning",
+        "neural network",
+        "Transformer",
+        "CNN",
+        "NLP",
+        "computer vision"
+      ]
+    },
+    {
+      "name": "dl-transformer-finetune",
+      "description": "Build transformer fine-tuning plans for classification and generation",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/dl-transformer-finetune",
+      "keywords": [
+        "transformer",
+        "fine-tuning",
+        "BERT",
+        "LoRA",
+        "PEFT",
+        "transfer learning",
+        "NLP"
+      ]
+    },
+    {
+      "name": "generative-ai-guide",
+      "description": "Curated guide to generative AI covering LLMs and diffusion models",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/generative-ai-guide",
+      "keywords": []
+    },
+    {
+      "name": "huggingface-inference-guide",
+      "description": "Run NLP and CV model inference via Hugging Face free-tier API",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/huggingface-inference-guide",
+      "keywords": [
+        "huggingface",
+        "inference",
+        "nlp",
+        "machine-learning",
+        "transformers",
+        "models"
+      ]
+    },
+    {
+      "name": "keras-deep-learning",
+      "description": "Build and debug deep learning models with Keras and TensorFlow backend",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/keras-deep-learning",
+      "keywords": [
+        "Keras",
+        "deep learning",
+        "neural network",
+        "model training",
+        "TensorFlow",
+        "classification"
+      ]
+    },
+    {
+      "name": "llm-evaluation-guide",
+      "description": "Evaluate and benchmark large language models for research applications",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/llm-evaluation-guide",
+      "keywords": [
+        "LLM evaluation",
+        "benchmarking",
+        "language models",
+        "model evaluation",
+        "NLP metrics",
+        "BLEU",
+        "perplexity"
+      ]
+    },
+    {
+      "name": "llm-from-scratch-guide",
+      "description": "Build a ChatGPT-like LLM from scratch using PyTorch step by step",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/llm-from-scratch-guide",
+      "keywords": [
+        "llm",
+        "pytorch",
+        "transformer",
+        "gpt",
+        "pretraining",
+        "finetuning"
+      ]
+    },
+    {
+      "name": "ml-pipeline-guide",
+      "description": "Build and deploy reproducible production ML pipelines for research",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/ml-pipeline-guide",
+      "keywords": [
+        "MLOps",
+        "pipeline",
+        "deployment",
+        "reproducibility",
+        "feature engineering",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "nlp-toolkit-guide",
+      "description": "NLP analysis with perplexity scoring, burstiness, and entropy metrics",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/nlp-toolkit-guide",
+      "keywords": [
+        "NLP",
+        "perplexity",
+        "burstiness",
+        "entropy",
+        "tokenization",
+        "text analysis"
+      ]
+    },
+    {
+      "name": "prompt-engineering-research",
+      "description": "Systematic prompt engineering methods for AI-assisted academic research workf...",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/prompt-engineering-research",
+      "keywords": [
+        "machine learning",
+        "deep learning",
+        "NLP",
+        "AI coding",
+        "prompt engineering",
+        "LLM"
+      ]
+    },
+    {
+      "name": "pytorch-guide",
+      "description": "Avoid common PyTorch mistakes and apply robust training patterns",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/pytorch-guide",
+      "keywords": [
+        "PyTorch",
+        "deep learning",
+        "training loop",
+        "GPU",
+        "debugging",
+        "autograd"
+      ]
+    },
+    {
+      "name": "pytorch-lightning-guide",
+      "description": "PyTorch Lightning framework for scalable model training and research",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/pytorch-lightning-guide",
+      "keywords": [
+        "pytorch-lightning",
+        "training",
+        "distributed",
+        "finetuning",
+        "scalability",
+        "research"
+      ]
+    },
+    {
+      "name": "reinforcement-learning-guide",
+      "description": "Reinforcement learning fundamentals, algorithms, and research",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/reinforcement-learning-guide",
+      "keywords": [
+        "reinforcement learning",
+        "machine learning",
+        "deep learning",
+        "neural network"
+      ]
+    },
+    {
+      "name": "tensorflow-guide",
+      "description": "TensorFlow best practices for tf.function, GPU memory, and deployment",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/tensorflow-guide",
+      "keywords": [
+        "TensorFlow",
+        "tf.function",
+        "GPU",
+        "SavedModel",
+        "distributed training",
+        "XLA"
+      ]
+    },
+    {
+      "name": "transformer-architecture-guide",
+      "description": "Guide to Transformer architectures for NLP and computer vision",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "path": "skills/domains/ai-ml/transformer-architecture-guide",
+      "keywords": [
+        "Transformer",
+        "neural network",
+        "deep learning",
+        "NLP",
+        "computer vision"
+      ]
+    },
+    {
+      "name": "bioagents-guide",
+      "description": "AI scientist framework for autonomous biological research workflows",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "path": "skills/domains/biomedical/bioagents-guide",
+      "keywords": [
+        "AI scientist",
+        "biological research",
+        "autonomous lab",
+        "drug discovery",
+        "protein design",
+        "bioinformatics"
+      ]
+    },
+    {
+      "name": "clinical-research-guide",
+      "description": "Design clinical studies and report using CONSORT, STROBE guidelines",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "path": "skills/domains/biomedical/clinical-research-guide",
+      "keywords": [
+        "clinical research",
+        "CONSORT",
+        "STROBE",
+        "clinical trial",
+        "study design",
+        "reporting guidelines"
+      ]
+    },
+    {
+      "name": "clinicaltrials-api",
+      "description": "Clinical trial registry database search API",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "path": "skills/domains/biomedical/clinicaltrials-api",
+      "keywords": [
+        "clinical medicine",
+        "epidemiology",
+        "public health",
+        "evidence-based medicine"
+      ]
+    },
+    {
+      "name": "epidemiology-guide",
+      "description": "Epidemiological study designs, measures of association, and public health ana...",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "path": "skills/domains/biomedical/epidemiology-guide",
+      "keywords": [
+        "epidemiology",
+        "public health",
+        "evidence-based medicine",
+        "clinical medicine",
+        "disease surveillance"
+      ]
+    },
+    {
+      "name": "genomics-analysis-guide",
+      "description": "Workflows for RNA-seq, GWAS, and variant calling in genomic research",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "path": "skills/domains/biomedical/genomics-analysis-guide",
+      "keywords": [
+        "genomics",
+        "RNA-seq",
+        "GWAS",
+        "molecular biology",
+        "genetics",
+        "bioinformatics"
+      ]
+    },
+    {
+      "name": "medgeclaw-guide",
+      "description": "AI research assistant for biomedicine, RNA-seq, and drug discovery",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "path": "skills/domains/biomedical/medgeclaw-guide",
+      "keywords": [
+        "biomedicine",
+        "RNA-seq",
+        "drug discovery",
+        "clinical AI",
+        "medical NLP",
+        "bioinformatics"
+      ]
+    },
+    {
+      "name": "medical-imaging-guide",
+      "description": "Medical image analysis with deep learning for research applications",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "path": "skills/domains/biomedical/medical-imaging-guide",
+      "keywords": [
+        "medical imaging",
+        "deep learning",
+        "image segmentation",
+        "radiology AI",
+        "pathology",
+        "convolutional neural networks"
+      ]
+    },
+    {
+      "name": "architecture-design-guide",
+      "description": "Design principles of form, function, sustainability in architecture",
+      "category": "domains",
+      "subcategory": "business",
+      "path": "skills/domains/business/architecture-design-guide",
+      "keywords": [
+        "architecture",
+        "design",
+        "sustainability",
+        "urban planning",
+        "BIM",
+        "parametric design"
+      ]
+    },
+    {
+      "name": "innovation-management-guide",
+      "description": "Innovation metrics, R&D management research, and technology forecasting",
+      "category": "domains",
+      "subcategory": "business",
+      "path": "skills/domains/business/innovation-management-guide",
+      "keywords": [
+        "innovation",
+        "r-and-d",
+        "technology-management",
+        "bibliometrics",
+        "diffusion",
+        "strategy"
+      ]
+    },
+    {
+      "name": "market-analysis-guide",
+      "description": "Structured frameworks for market sizing, competitive analysis, and strategic ...",
+      "category": "domains",
+      "subcategory": "business",
+      "path": "skills/domains/business/market-analysis-guide",
+      "keywords": [
+        "market analysis",
+        "strategic management",
+        "operations management",
+        "competitive analysis",
+        "market sizing"
+      ]
+    },
+    {
+      "name": "operations-research-guide",
+      "description": "Optimization and operations research methods for business and logistics",
+      "category": "domains",
+      "subcategory": "business",
+      "path": "skills/domains/business/operations-research-guide",
+      "keywords": [
+        "optimization",
+        "operations-research",
+        "linear-programming",
+        "scheduling",
+        "supply-chain",
+        "simulation"
+      ]
+    },
+    {
+      "name": "strategic-management-guide",
+      "description": "Frameworks for strategic planning, resource allocation, and organizational an...",
+      "category": "domains",
+      "subcategory": "business",
+      "path": "skills/domains/business/strategic-management-guide",
+      "keywords": [
+        "strategic management",
+        "operations management",
+        "market analysis",
+        "organizational strategy",
+        "resource allocation"
+      ]
+    },
+    {
+      "name": "computational-chemistry-guide",
+      "description": "DFT, molecular simulation, and reaction prediction tools for chemists",
+      "category": "domains",
+      "subcategory": "chemistry",
+      "path": "skills/domains/chemistry/computational-chemistry-guide",
+      "keywords": [
+        "computational chemistry",
+        "DFT",
+        "quantum chemistry",
+        "reaction prediction"
+      ]
+    },
+    {
+      "name": "molecular-dynamics-guide",
+      "description": "Molecular dynamics simulation setup, execution, and trajectory analysis",
+      "category": "domains",
+      "subcategory": "chemistry",
+      "path": "skills/domains/chemistry/molecular-dynamics-guide",
+      "keywords": [
+        "molecular-dynamics",
+        "simulation",
+        "gromacs",
+        "openmm",
+        "force-field",
+        "trajectory"
+      ]
+    },
+    {
+      "name": "pubchem-api-guide",
+      "description": "Search PubChem for chemical compounds, structures, and bioassay data",
+      "category": "domains",
+      "subcategory": "chemistry",
+      "path": "skills/domains/chemistry/pubchem-api-guide",
+      "keywords": [
+        "pubchem",
+        "chemistry",
+        "compounds",
+        "structures",
+        "bioassay",
+        "pharmacology"
+      ]
+    },
+    {
+      "name": "retrosynthesis-guide",
+      "description": "Retrosynthetic analysis and computational reaction prediction",
+      "category": "domains",
+      "subcategory": "chemistry",
+      "path": "skills/domains/chemistry/retrosynthesis-guide",
+      "keywords": [
+        "retrosynthesis",
+        "reaction prediction",
+        "organic chemistry",
+        "computational chemistry"
+      ]
+    },
+    {
+      "name": "spectroscopy-analysis-guide",
+      "description": "Spectral data analysis for NMR, IR, mass spectrometry, and UV-Vis",
+      "category": "domains",
+      "subcategory": "chemistry",
+      "path": "skills/domains/chemistry/spectroscopy-analysis-guide",
+      "keywords": [
+        "spectroscopy",
+        "nmr",
+        "mass-spectrometry",
+        "infrared",
+        "uv-vis",
+        "analytical-chemistry"
+      ]
+    },
+    {
+      "name": "algorithms-complexity-guide",
+      "description": "Analyze algorithm complexity and computational efficiency for research",
+      "category": "domains",
+      "subcategory": "cs",
+      "path": "skills/domains/cs/algorithms-complexity-guide",
+      "keywords": [
+        "algorithms",
+        "computational complexity",
+        "Big-O",
+        "NP-hard",
+        "optimization",
+        "data structures"
+      ]
+    },
+    {
+      "name": "dblp-api",
+      "description": "Search computer science publications, authors, and venues via DBLP",
+      "category": "domains",
+      "subcategory": "cs",
+      "path": "skills/domains/cs/dblp-api",
+      "keywords": [
+        "algorithms",
+        "data structures",
+        "software engineering",
+        "database",
+        "academic database search"
+      ]
+    },
+    {
+      "name": "distributed-systems-guide",
+      "description": "Distributed systems design patterns and analysis for CS research",
+      "category": "domains",
+      "subcategory": "cs",
+      "path": "skills/domains/cs/distributed-systems-guide",
+      "keywords": [
+        "distributed-systems",
+        "consensus",
+        "replication",
+        "fault-tolerance",
+        "scalability",
+        "cap-theorem"
+      ]
+    },
+    {
+      "name": "formal-verification-guide",
+      "description": "Formal methods, theorem proving, and model checking for CS research",
+      "category": "domains",
+      "subcategory": "cs",
+      "path": "skills/domains/cs/formal-verification-guide",
+      "keywords": [
+        "formal-verification",
+        "theorem-proving",
+        "model-checking",
+        "tla-plus",
+        "coq",
+        "isabelle"
+      ]
+    },
+    {
+      "name": "software-engineering-research",
+      "description": "Guide to software engineering research topics and methodologies",
+      "category": "domains",
+      "subcategory": "cs",
+      "path": "skills/domains/cs/software-engineering-research",
+      "keywords": [
+        "software engineering",
+        "distributed systems",
+        "cybersecurity",
+        "HCI"
+      ]
+    },
+    {
+      "name": "biodiversity-data-guide",
+      "description": "Biodiversity data access, species occurrence, and ecological tools",
+      "category": "domains",
+      "subcategory": "ecology",
+      "path": "skills/domains/ecology/biodiversity-data-guide",
+      "keywords": [
+        "biodiversity",
+        "taxonomy",
+        "ecology",
+        "evolutionary biology"
+      ]
+    },
+    {
+      "name": "conservation-biology-guide",
+      "description": "Apply conservation biology methods, databases, and assessment tools",
+      "category": "domains",
+      "subcategory": "ecology",
+      "path": "skills/domains/ecology/conservation-biology-guide",
+      "keywords": [
+        "conservation biology",
+        "biodiversity",
+        "IUCN Red List",
+        "species assessment",
+        "habitat modeling",
+        "wildlife"
+      ]
+    },
+    {
+      "name": "gbif-api",
+      "description": "Global biodiversity data API for species occurrences and datasets",
+      "category": "domains",
+      "subcategory": "ecology",
+      "path": "skills/domains/ecology/gbif-api",
+      "keywords": [
+        "ecology",
+        "biodiversity",
+        "taxonomy",
+        "environmental science"
+      ]
+    },
+    {
+      "name": "inaturalist-api",
+      "description": "Citizen science platform API for biodiversity observations",
+      "category": "domains",
+      "subcategory": "ecology",
+      "path": "skills/domains/ecology/inaturalist-api",
+      "keywords": [
+        "ecology",
+        "biodiversity",
+        "taxonomy",
+        "evolutionary biology"
+      ]
+    },
+    {
+      "name": "species-distribution-guide",
+      "description": "Species distribution modeling with MaxEnt, SDM methods, and GBIF data",
+      "category": "domains",
+      "subcategory": "ecology",
+      "path": "skills/domains/ecology/species-distribution-guide",
+      "keywords": [
+        "species-distribution",
+        "maxent",
+        "sdm",
+        "gbif",
+        "ecological-niche",
+        "biodiversity",
+        "habitat"
+      ]
+    },
+    {
+      "name": "behavioral-economics-guide",
+      "description": "Behavioral economics research methods and key frameworks",
+      "category": "domains",
+      "subcategory": "economics",
+      "path": "skills/domains/economics/behavioral-economics-guide",
+      "keywords": [
+        "behavioral economics",
+        "microeconomics",
+        "development economics"
+      ]
+    },
+    {
+      "name": "development-economics-guide",
+      "description": "Apply development economics research methods and data sources",
+      "category": "domains",
+      "subcategory": "economics",
+      "path": "skills/domains/economics/development-economics-guide",
+      "keywords": [
+        "development economics",
+        "RCT",
+        "impact evaluation",
+        "poverty",
+        "causal inference",
+        "field experiments"
+      ]
+    },
+    {
+      "name": "fred-api",
+      "description": "Federal Reserve Economic Data API for US economic indicators",
+      "category": "domains",
+      "subcategory": "economics",
+      "path": "skills/domains/economics/fred-api",
+      "keywords": [
+        "microeconomics",
+        "macroeconomics",
+        "econometrics",
+        "development economics"
+      ]
+    },
+    {
+      "name": "imf-data-api-guide",
+      "description": "Retrieve IMF economic indicators, exchange rates, and country data",
+      "category": "domains",
+      "subcategory": "economics",
+      "path": "skills/domains/economics/imf-data-api-guide",
+      "keywords": [
+        "imf",
+        "economics",
+        "macroeconomics",
+        "indicators",
+        "exchange-rates",
+        "gdp"
+      ]
+    },
+    {
+      "name": "post-labor-economics",
+      "description": "Post-labor economies with automation, UBI, and wealth distribution",
+      "category": "domains",
+      "subcategory": "economics",
+      "path": "skills/domains/economics/post-labor-economics",
+      "keywords": [
+        "automation",
+        "UBI",
+        "post-labor",
+        "technological unemployment",
+        "income distribution",
+        "AI economics"
+      ]
+    },
+    {
+      "name": "pricing-psychology-guide",
+      "description": "Behavioral economics in pricing strategies and consumer decisions",
+      "category": "domains",
+      "subcategory": "economics",
+      "path": "skills/domains/economics/pricing-psychology-guide",
+      "keywords": [
+        "pricing",
+        "behavioral economics",
+        "consumer behavior",
+        "anchoring",
+        "framing",
+        "willingness to pay"
+      ]
+    },
+    {
+      "name": "world-bank-data-guide",
+      "description": "Access World Bank development indicators and country statistics",
+      "category": "domains",
+      "subcategory": "economics",
+      "path": "skills/domains/economics/world-bank-data-guide",
+      "keywords": [
+        "world-bank",
+        "development",
+        "indicators",
+        "poverty",
+        "economics",
+        "statistics"
+      ]
+    },
+    {
+      "name": "assessment-design-guide",
+      "description": "Psychometrics and educational assessment design for researchers",
+      "category": "domains",
+      "subcategory": "education",
+      "path": "skills/domains/education/assessment-design-guide",
+      "keywords": [
+        "psychometrics",
+        "assessment",
+        "item-response-theory",
+        "test-design",
+        "validity",
+        "reliability"
+      ]
+    },
+    {
+      "name": "curriculum-design-guide",
+      "description": "Systematic approaches to curriculum design using backward design and alignment",
+      "category": "domains",
+      "subcategory": "education",
+      "path": "skills/domains/education/curriculum-design-guide",
+      "keywords": [
+        "curriculum design",
+        "pedagogy",
+        "education",
+        "study methods",
+        "backward design"
+      ]
+    },
+    {
+      "name": "educational-research-methods",
+      "description": "Quantitative and qualitative research methods for education studies",
+      "category": "domains",
+      "subcategory": "education",
+      "path": "skills/domains/education/educational-research-methods",
+      "keywords": [
+        "education",
+        "research-methods",
+        "qualitative",
+        "quantitative",
+        "survey-design",
+        "classroom-research"
+      ]
+    },
+    {
+      "name": "learning-science-guide",
+      "description": "Evidence-based learning science principles for educational research and practice",
+      "category": "domains",
+      "subcategory": "education",
+      "path": "skills/domains/education/learning-science-guide",
+      "keywords": [
+        "education",
+        "pedagogy",
+        "learning science",
+        "curriculum design",
+        "study methods",
+        "cognitive load"
+      ]
+    },
+    {
+      "name": "mooc-analytics-guide",
+      "description": "Analyzing MOOC data, learning analytics, and online education metrics",
+      "category": "domains",
+      "subcategory": "education",
+      "path": "skills/domains/education/mooc-analytics-guide",
+      "keywords": [
+        "mooc",
+        "learning-analytics",
+        "online-education",
+        "edx",
+        "coursera",
+        "clickstream"
+      ]
+    },
+    {
+      "name": "financial-data-analysis",
+      "description": "Methods for acquiring, cleaning, and analyzing financial datasets for research",
+      "category": "domains",
+      "subcategory": "finance",
+      "path": "skills/domains/finance/financial-data-analysis",
+      "keywords": [
+        "financial data",
+        "stock analysis",
+        "quantitative finance",
+        "data pipeline",
+        "financial API"
+      ]
+    },
+    {
+      "name": "portfolio-optimization-guide",
+      "description": "Portfolio theory, optimization algorithms, and asset allocation methods",
+      "category": "domains",
+      "subcategory": "finance",
+      "path": "skills/domains/finance/portfolio-optimization-guide",
+      "keywords": [
+        "portfolio",
+        "optimization",
+        "markowitz",
+        "asset-allocation",
+        "mean-variance",
+        "black-litterman"
+      ]
+    },
+    {
+      "name": "quantitative-finance-guide",
+      "description": "Quantitative methods for financial modeling, derivatives pricing, and risk an...",
+      "category": "domains",
+      "subcategory": "finance",
+      "path": "skills/domains/finance/quantitative-finance-guide",
+      "keywords": [
+        "quantitative finance",
+        "financial data",
+        "stock analysis",
+        "pricing psychology",
+        "derivatives pricing"
+      ]
+    },
+    {
+      "name": "risk-modeling-guide",
+      "description": "Financial risk modeling including VaR, stress testing, and credit risk",
+      "category": "domains",
+      "subcategory": "finance",
+      "path": "skills/domains/finance/risk-modeling-guide",
+      "keywords": [
+        "risk-modeling",
+        "var",
+        "stress-testing",
+        "credit-risk",
+        "monte-carlo",
+        "basel"
+      ]
+    },
+    {
+      "name": "stata-accounting-research",
+      "description": "STATA code patterns for empirical accounting and finance research",
+      "category": "domains",
+      "subcategory": "finance",
+      "path": "skills/domains/finance/stata-accounting-research",
+      "keywords": [
+        "STATA",
+        "accounting",
+        "empirical finance",
+        "panel data",
+        "earnings management",
+        "audit"
+      ]
+    },
+    {
+      "name": "climate-modeling-guide",
+      "description": "Climate simulation, modeling tools, and climate data analysis methods",
+      "category": "domains",
+      "subcategory": "geoscience",
+      "path": "skills/domains/geoscience/climate-modeling-guide",
+      "keywords": [
+        "climate",
+        "modeling",
+        "simulation",
+        "netcdf",
+        "cmip",
+        "atmosphere",
+        "global-warming"
+      ]
+    },
+    {
+      "name": "climate-science-guide",
+      "description": "Climate data analysis, modeling workflows, and carbon neutrality research met...",
+      "category": "domains",
+      "subcategory": "geoscience",
+      "path": "skills/domains/geoscience/climate-science-guide",
+      "keywords": [
+        "climate change",
+        "carbon neutrality",
+        "atmospheric science",
+        "climatology",
+        "climate modeling"
+      ]
+    },
+    {
+      "name": "gis-remote-sensing-guide",
+      "description": "GIS analysis and remote sensing workflows for geospatial research applications",
+      "category": "domains",
+      "subcategory": "geoscience",
+      "path": "skills/domains/geoscience/gis-remote-sensing-guide",
+      "keywords": [
+        "GIS",
+        "remote sensing",
+        "geology",
+        "atmospheric science",
+        "climatology",
+        "geospatial analysis"
+      ]
+    },
+    {
+      "name": "satellite-remote-sensing",
+      "description": "Satellite imagery analysis and remote sensing for earth science research",
+      "category": "domains",
+      "subcategory": "geoscience",
+      "path": "skills/domains/geoscience/satellite-remote-sensing",
+      "keywords": [
+        "remote-sensing",
+        "satellite",
+        "geospatial",
+        "landsat",
+        "sentinel",
+        "gis",
+        "earth-observation"
+      ]
+    },
+    {
+      "name": "seismology-data-guide",
+      "description": "Earthquake data analysis, seismogram processing, and seismic research",
+      "category": "domains",
+      "subcategory": "geoscience",
+      "path": "skills/domains/geoscience/seismology-data-guide",
+      "keywords": [
+        "seismology",
+        "earthquake",
+        "seismogram",
+        "obspy",
+        "waveform",
+        "geophysics"
+      ]
+    },
+    {
+      "name": "digital-humanities-guide",
+      "description": "Computational methods for humanities research including text mining and netwo...",
+      "category": "domains",
+      "subcategory": "humanities",
+      "path": "skills/domains/humanities/digital-humanities-guide",
+      "keywords": [
+        "digital humanities",
+        "philosophy",
+        "literary studies",
+        "art history",
+        "linguistics",
+        "text mining"
+      ]
+    },
+    {
+      "name": "ethical-philosophy-guide",
+      "description": "Applied ethics research methods and major ethical frameworks",
+      "category": "domains",
+      "subcategory": "humanities",
+      "path": "skills/domains/humanities/ethical-philosophy-guide",
+      "keywords": [
+        "ethics",
+        "applied ethics",
+        "moral philosophy",
+        "bioethics",
+        "AI ethics",
+        "normative theory"
+      ]
+    },
+    {
+      "name": "history-research-guide",
+      "description": "Historical research from primary sources to scholarly analysis",
+      "category": "domains",
+      "subcategory": "humanities",
+      "path": "skills/domains/humanities/history-research-guide",
+      "keywords": [
+        "history",
+        "primary sources",
+        "archives",
+        "historiography",
+        "digital humanities",
+        "periodization"
+      ]
+    },
+    {
+      "name": "philosophy-research-guide",
+      "description": "Research methods and analytical frameworks for philosophical inquiry and scho...",
+      "category": "domains",
+      "subcategory": "humanities",
+      "path": "skills/domains/humanities/philosophy-research-guide",
+      "keywords": [
+        "philosophy",
+        "ethics",
+        "epistemology",
+        "history",
+        "logic",
+        "argumentation"
+      ]
+    },
+    {
+      "name": "political-history-guide",
+      "description": "Chinese and European political struggle history and comparative analysis",
+      "category": "domains",
+      "subcategory": "humanities",
+      "path": "skills/domains/humanities/political-history-guide",
+      "keywords": [
+        "political history",
+        "comparative politics",
+        "Chinese history",
+        "European history",
+        "state formation",
+        "revolution"
+      ]
+    },
+    {
+      "name": "courtlistener-api",
+      "description": "Legal case law database with PACER data and judge profiles",
+      "category": "domains",
+      "subcategory": "law",
+      "path": "skills/domains/law/courtlistener-api",
+      "keywords": [
+        "law",
+        "case law",
+        "legal theory",
+        "compliance analysis",
+        "jurisprudence"
+      ]
+    },
+    {
+      "name": "legal-nlp-guide",
+      "description": "NLP techniques for legal text analysis, case law mining, and contracts",
+      "category": "domains",
+      "subcategory": "law",
+      "path": "skills/domains/law/legal-nlp-guide",
+      "keywords": [
+        "legal-nlp",
+        "text-mining",
+        "case-law",
+        "contract-analysis",
+        "named-entity",
+        "classification"
+      ]
+    },
+    {
+      "name": "legal-research-guide",
+      "description": "Legal research methods, case law analysis, and compliance tools",
+      "category": "domains",
+      "subcategory": "law",
+      "path": "skills/domains/law/legal-research-guide",
+      "keywords": [
+        "law",
+        "jurisprudence",
+        "case law",
+        "compliance analysis"
+      ]
+    },
+    {
+      "name": "patent-analysis-guide",
+      "description": "Patent search, classification, landscape analysis, and prior art mining",
+      "category": "domains",
+      "subcategory": "law",
+      "path": "skills/domains/law/patent-analysis-guide",
+      "keywords": [
+        "patent",
+        "intellectual-property",
+        "prior-art",
+        "cpc",
+        "patent-landscape",
+        "citation-analysis"
+      ]
+    },
+    {
+      "name": "regulatory-compliance-guide",
+      "description": "Regulatory text mining, compliance research, and policy analysis tools",
+      "category": "domains",
+      "subcategory": "law",
+      "path": "skills/domains/law/regulatory-compliance-guide",
+      "keywords": [
+        "regulation",
+        "compliance",
+        "policy-analysis",
+        "text-mining",
+        "federal-register",
+        "rulemaking"
+      ]
+    },
+    {
+      "name": "linear-algebra-applications",
+      "description": "Apply linear algebra concepts to research computing and data analysis",
+      "category": "domains",
+      "subcategory": "math",
+      "path": "skills/domains/math/linear-algebra-applications",
+      "keywords": [
+        "linear algebra",
+        "matrix decomposition",
+        "SVD",
+        "eigenvalues",
+        "PCA",
+        "numerical computing"
+      ]
+    },
+    {
+      "name": "numerical-methods-guide",
+      "description": "Apply numerical methods and scientific computing techniques",
+      "category": "domains",
+      "subcategory": "math",
+      "path": "skills/domains/math/numerical-methods-guide",
+      "keywords": [
+        "numerical methods",
+        "scientific computing",
+        "ODE solver",
+        "optimization",
+        "interpolation",
+        "finite differences"
+      ]
+    },
+    {
+      "name": "oeis-api",
+      "description": "On-Line Encyclopedia of Integer Sequences API",
+      "category": "domains",
+      "subcategory": "math",
+      "path": "skills/domains/math/oeis-api",
+      "keywords": [
+        "number theory",
+        "algebra",
+        "probability theory",
+        "applied mathematics"
+      ]
+    },
+    {
+      "name": "symbolic-computation-guide",
+      "description": "Computer algebra systems: SymPy, SageMath, and Mathematica for research",
+      "category": "domains",
+      "subcategory": "math",
+      "path": "skills/domains/math/symbolic-computation-guide",
+      "keywords": [
+        "symbolic-computation",
+        "computer-algebra",
+        "sympy",
+        "sagemath",
+        "mathematica",
+        "calculus"
+      ]
+    },
+    {
+      "name": "topology-data-analysis",
+      "description": "Topological data analysis: persistent homology, Mapper, and TDA tools",
+      "category": "domains",
+      "subcategory": "math",
+      "path": "skills/domains/math/topology-data-analysis",
+      "keywords": [
+        "topology",
+        "persistent-homology",
+        "tda",
+        "mapper",
+        "betti-numbers",
+        "point-cloud"
+      ]
+    },
+    {
+      "name": "clinical-pharmacology-guide",
+      "description": "Clinical pharmacology principles for dosing, drug interactions, and patient s...",
+      "category": "domains",
+      "subcategory": "pharma",
+      "path": "skills/domains/pharma/clinical-pharmacology-guide",
+      "keywords": [
+        "drug development",
+        "pharmacokinetics",
+        "clinical trial",
+        "nursing",
+        "pharmacodynamics",
+        "drug interactions"
+      ]
+    },
+    {
+      "name": "clinical-trial-design-guide",
+      "description": "Clinical trial methodology, biostatistics, and study design guidance",
+      "category": "domains",
+      "subcategory": "pharma",
+      "path": "skills/domains/pharma/clinical-trial-design-guide",
+      "keywords": [
+        "clinical-trial",
+        "biostatistics",
+        "randomization",
+        "sample-size",
+        "survival-analysis",
+        "rct"
+      ]
+    },
+    {
+      "name": "drug-development-guide",
+      "description": "End-to-end drug development pipeline from target identification to regulatory...",
+      "category": "domains",
+      "subcategory": "pharma",
+      "path": "skills/domains/pharma/drug-development-guide",
+      "keywords": [
+        "drug development",
+        "pharmacokinetics",
+        "clinical trial",
+        "drug discovery",
+        "lead optimization"
+      ]
+    },
+    {
+      "name": "drug-target-interaction",
+      "description": "Computational drug-target interaction prediction and virtual screening",
+      "category": "domains",
+      "subcategory": "pharma",
+      "path": "skills/domains/pharma/drug-target-interaction",
+      "keywords": [
+        "drug-target",
+        "virtual-screening",
+        "molecular-docking",
+        "binding-affinity",
+        "cheminformatics"
+      ]
+    },
+    {
+      "name": "pharmacovigilance-guide",
+      "description": "Adverse drug event detection, safety signal mining, and drug monitoring",
+      "category": "domains",
+      "subcategory": "pharma",
+      "path": "skills/domains/pharma/pharmacovigilance-guide",
+      "keywords": [
+        "pharmacovigilance",
+        "adverse-events",
+        "drug-safety",
+        "faers",
+        "signal-detection",
+        "disproportionality"
+      ]
+    },
+    {
+      "name": "astrophysics-data-guide",
+      "description": "Astronomical data processing with Astropy, FITS files, and sky surveys",
+      "category": "domains",
+      "subcategory": "physics",
+      "path": "skills/domains/physics/astrophysics-data-guide",
+      "keywords": [
+        "astrophysics",
+        "astronomy",
+        "astropy",
+        "fits",
+        "photometry",
+        "spectroscopy",
+        "sky-survey"
+      ]
+    },
+    {
+      "name": "computational-physics-guide",
+      "description": "Computational physics methods, simulations, and research tools",
+      "category": "domains",
+      "subcategory": "physics",
+      "path": "skills/domains/physics/computational-physics-guide",
+      "keywords": [
+        "computational physics",
+        "quantum mechanics",
+        "statistical physics",
+        "condensed matter"
+      ]
+    },
+    {
+      "name": "nasa-ads-api",
+      "description": "Search astrophysics and physics literature via NASA ADS bibliographic database",
+      "category": "domains",
+      "subcategory": "physics",
+      "path": "skills/domains/physics/nasa-ads-api",
+      "keywords": [
+        "astrophysics",
+        "observational astronomy",
+        "cosmology",
+        "high energy physics"
+      ]
+    },
+    {
+      "name": "particle-physics-guide",
+      "description": "Particle physics data analysis with ROOT, HEPData, and event processing",
+      "category": "domains",
+      "subcategory": "physics",
+      "path": "skills/domains/physics/particle-physics-guide",
+      "keywords": [
+        "particle-physics",
+        "root",
+        "hepdata",
+        "collider",
+        "event-analysis",
+        "high-energy-physics"
+      ]
+    },
+    {
+      "name": "quantum-computing-guide",
+      "description": "Explore quantum computing research with Qiskit and Cirq frameworks",
+      "category": "domains",
+      "subcategory": "physics",
+      "path": "skills/domains/physics/quantum-computing-guide",
+      "keywords": [
+        "quantum computing",
+        "Qiskit",
+        "Cirq",
+        "quantum circuits",
+        "qubit",
+        "quantum algorithms"
+      ]
+    },
+    {
+      "name": "network-analysis-guide",
+      "description": "Social network analysis methods, metrics, and visualization tools",
+      "category": "domains",
+      "subcategory": "social-science",
+      "path": "skills/domains/social-science/network-analysis-guide",
+      "keywords": [
+        "social network analysis",
+        "graph theory",
+        "centrality",
+        "community detection",
+        "network visualization",
+        "SNA"
+      ]
+    },
+    {
+      "name": "psychology-research-guide",
+      "description": "Psychological research methods, experimental design, and analysis",
+      "category": "domains",
+      "subcategory": "social-science",
+      "path": "skills/domains/social-science/psychology-research-guide",
+      "keywords": [
+        "psychology",
+        "experimental design",
+        "cognitive science",
+        "psychometrics",
+        "replication",
+        "effect size"
+      ]
+    },
+    {
+      "name": "social-research-methods",
+      "description": "Core methods for empirical social science research including surveys and expe...",
+      "category": "domains",
+      "subcategory": "social-science",
+      "path": "skills/domains/social-science/social-research-methods",
+      "keywords": [
+        "sociology",
+        "political science",
+        "cognitive psychology",
+        "social psychology",
+        "research methodology"
+      ]
+    },
+    {
+      "name": "sociology-research-guide",
+      "description": "Sociological thinking from observations to rigorous research design",
+      "category": "domains",
+      "subcategory": "social-science",
+      "path": "skills/domains/social-science/sociology-research-guide",
+      "keywords": [
+        "sociology",
+        "social theory",
+        "qualitative research",
+        "ethnography",
+        "social stratification",
+        "institutions"
+      ]
+    },
+    {
+      "name": "survey-research-guide",
+      "description": "Design, deploy, and analyze surveys for social science and organizational res...",
+      "category": "domains",
+      "subcategory": "social-science",
+      "path": "skills/domains/social-science/survey-research-guide",
+      "keywords": [
+        "communication studies",
+        "anthropology",
+        "management",
+        "sociology",
+        "survey design",
+        "questionnaire"
+      ]
+    },
+    {
+      "name": "citation-alert-guide",
+      "description": "Set up citation alerts and track new papers citing key references",
+      "category": "literature",
+      "subcategory": "discovery",
+      "path": "skills/literature/discovery/citation-alert-guide",
+      "keywords": [
+        "citation alerts",
+        "paper tracking",
+        "Google Scholar alerts",
+        "new citations",
+        "literature monitoring"
+      ]
+    },
+    {
+      "name": "conference-proceedings-guide",
+      "description": "Find, access, and cite conference papers and proceedings effectively",
+      "category": "literature",
+      "subcategory": "discovery",
+      "path": "skills/literature/discovery/conference-proceedings-guide",
+      "keywords": [
+        "conference papers",
+        "proceedings",
+        "ACM",
+        "IEEE",
+        "academic conferences",
+        "workshop papers"
+      ]
+    },
+    {
+      "name": "literature-mapping-guide",
+      "description": "Visual literature mapping and connected papers exploration",
+      "category": "literature",
+      "subcategory": "discovery",
+      "path": "skills/literature/discovery/literature-mapping-guide",
+      "keywords": [
+        "literature map",
+        "reference graph",
+        "citation network",
+        "related papers"
+      ]
+    },
+    {
+      "name": "paper-recommendation-guide",
+      "description": "Systematic paper recommendation and discovery using multiple methods",
+      "category": "literature",
+      "subcategory": "discovery",
+      "path": "skills/literature/discovery/paper-recommendation-guide",
+      "keywords": [
+        "paper recommendation",
+        "literature discovery",
+        "related papers",
+        "reading list",
+        "citation-based",
+        "algorithmic discovery"
+      ]
+    },
+    {
+      "name": "paper-tracking-guide",
+      "description": "Track new publications via RSS, alerts, and citation notifications",
+      "category": "literature",
+      "subcategory": "discovery",
+      "path": "skills/literature/discovery/paper-tracking-guide",
+      "keywords": [
+        "literature alert",
+        "citation notification",
+        "RSS feed",
+        "new publication tracking",
+        "related papers"
+      ]
+    },
+    {
+      "name": "rss-paper-feeds",
+      "description": "Set up RSS feeds and alerts to track new publications in your research area",
+      "category": "literature",
+      "subcategory": "discovery",
+      "path": "skills/literature/discovery/rss-paper-feeds",
+      "keywords": [
+        "RSS feed",
+        "new publication tracking",
+        "literature alert",
+        "citation notification",
+        "research monitoring"
+      ]
+    },
+    {
+      "name": "semantic-paper-radar",
+      "description": "Semantic literature discovery and synthesis using embeddings",
+      "category": "literature",
+      "subcategory": "discovery",
+      "path": "skills/literature/discovery/semantic-paper-radar",
+      "keywords": [
+        "semantic search",
+        "embeddings",
+        "literature synthesis",
+        "paper discovery",
+        "vector search",
+        "knowledge mapping"
+      ]
+    },
+    {
+      "name": "semantic-scholar-recs-guide",
+      "description": "Using Semantic Scholar recommendations API for paper discovery",
+      "category": "literature",
+      "subcategory": "discovery",
+      "path": "skills/literature/discovery/semantic-scholar-recs-guide",
+      "keywords": [
+        "related papers",
+        "literature recommendation",
+        "paper discovery",
+        "citation network"
+      ]
+    },
+    {
+      "name": "zotero-arxiv-daily-guide",
+      "description": "Guide to Zotero arXiv Daily for personalized daily paper recommendations",
+      "category": "literature",
+      "subcategory": "discovery",
+      "path": "skills/literature/discovery/zotero-arxiv-daily-guide",
+      "keywords": [
+        "zotero",
+        "arxiv",
+        "daily-papers",
+        "recommendations",
+        "preprint",
+        "discovery"
+      ]
+    },
+    {
+      "name": "core-api-guide",
+      "description": "Search and retrieve open access research papers via CORE aggregator",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "path": "skills/literature/fulltext/core-api-guide",
+      "keywords": [
+        "open-access",
+        "fulltext",
+        "research-papers",
+        "aggregator",
+        "CORE"
+      ]
+    },
+    {
+      "name": "doaj-api",
+      "description": "Search open access journals and articles in the DOAJ directory",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "path": "skills/literature/fulltext/doaj-api",
+      "keywords": [
+        "full-text retrieval",
+        "open access",
+        "open access rights",
+        "scholarly database"
+      ]
+    },
+    {
+      "name": "interlibrary-loan-guide",
+      "description": "Access papers through interlibrary loan and document delivery services",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "path": "skills/literature/fulltext/interlibrary-loan-guide",
+      "keywords": [
+        "interlibrary loan",
+        "ILL",
+        "document delivery",
+        "full text access",
+        "library services"
+      ]
+    },
+    {
+      "name": "open-access-guide",
+      "description": "Navigate open access policies, repositories, and legal full-text retrieval me...",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "path": "skills/literature/fulltext/open-access-guide",
+      "keywords": [
+        "open access",
+        "full-text retrieval",
+        "journal copyright policy",
+        "self-archiving",
+        "open access rights"
+      ]
+    },
+    {
+      "name": "open-access-mining-guide",
+      "description": "Mine open access full-text repositories for research data extraction",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "path": "skills/literature/fulltext/open-access-mining-guide",
+      "keywords": [
+        "open access",
+        "text mining",
+        "full text",
+        "PubMed Central",
+        "CORE",
+        "content mining",
+        "TDM"
+      ]
+    },
+    {
+      "name": "pmc-oai-api",
+      "description": "PubMed Central OAI-PMH metadata harvesting",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "path": "skills/literature/fulltext/pmc-oai-api",
+      "keywords": [
+        "full-text retrieval",
+        "open access",
+        "PDF download",
+        "preprint server"
+      ]
+    },
+    {
+      "name": "preprint-servers-guide",
+      "description": "Guide to preprint servers across scientific disciplines",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "path": "skills/literature/fulltext/preprint-servers-guide",
+      "keywords": [
+        "preprint server",
+        "preprint submission",
+        "arXiv",
+        "bioRxiv",
+        "open access"
+      ]
+    },
+    {
+      "name": "repository-harvesting-guide",
+      "description": "Harvest papers from institutional and subject repositories at scale",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "path": "skills/literature/fulltext/repository-harvesting-guide",
+      "keywords": [
+        "repository harvesting",
+        "OAI-PMH",
+        "institutional repository",
+        "open access",
+        "metadata harvesting",
+        "preprints"
+      ]
+    },
+    {
+      "name": "unpaywall-api",
+      "description": "Find free legal full-text versions of scholarly articles via Unpaywall",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "path": "skills/literature/fulltext/unpaywall-api",
+      "keywords": [
+        "full-text retrieval",
+        "open access",
+        "journal copyright policy",
+        "self-archiving"
+      ]
+    },
+    {
+      "name": "academic-paper-summarizer",
+      "description": "Summarize academic papers with structured extraction of key elements",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/academic-paper-summarizer",
+      "keywords": [
+        "paper summary",
+        "structured extraction",
+        "abstract",
+        "key findings",
+        "research synthesis",
+        "literature review"
+      ]
+    },
+    {
+      "name": "altmetrics-guide",
+      "description": "Guide to altmetrics and research impact beyond traditional citations",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/altmetrics-guide",
+      "keywords": [
+        "altmetrics",
+        "attention score",
+        "social impact",
+        "online mentions",
+        "academic metrics"
+      ]
+    },
+    {
+      "name": "citation-network-guide",
+      "description": "Analyze citation networks, impact metrics, and bibliometric patterns",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/citation-network-guide",
+      "keywords": [
+        "citation statistics",
+        "citation tracking",
+        "citation analysis",
+        "citation network",
+        "altmetrics"
+      ]
+    },
+    {
+      "name": "crossref-api",
+      "description": "Resolve DOIs and retrieve publication metadata from CrossRef registry",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/crossref-api",
+      "keywords": [
+        "DOI resolution",
+        "digital object identifier",
+        "CrossRef",
+        "citation statistics",
+        "citation tracking"
+      ]
+    },
+    {
+      "name": "datacite-api",
+      "description": "Resolve dataset DOIs and query research data metadata via DataCite",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/datacite-api",
+      "keywords": [
+        "DOI resolution",
+        "digital object identifier",
+        "FAIR data principles",
+        "data sharing"
+      ]
+    },
+    {
+      "name": "doi-resolution-guide",
+      "description": "DOI content negotiation and metadata retrieval techniques",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/doi-resolution-guide",
+      "keywords": [
+        "DOI resolution",
+        "digital object identifier",
+        "citation statistics"
+      ]
+    },
+    {
+      "name": "h-index-guide",
+      "description": "Understanding and calculating research impact metrics",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/h-index-guide",
+      "keywords": [
+        "h-index",
+        "impact factor",
+        "bibliometrics",
+        "academic metrics",
+        "citation statistics"
+      ]
+    },
+    {
+      "name": "journal-metrics-guide",
+      "description": "Understand journal impact factors, h5-index, CiteScore, and SJR",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/journal-metrics-guide",
+      "keywords": [
+        "impact factor",
+        "journal metrics",
+        "h5-index",
+        "CiteScore",
+        "SJR",
+        "journal ranking"
+      ]
+    },
+    {
+      "name": "opencitations-api",
+      "description": "Query open citation data and reference networks via OpenCitations",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/opencitations-api",
+      "keywords": [
+        "citation statistics",
+        "citation tracking",
+        "citation analysis",
+        "bibliometrics",
+        "citation network"
+      ]
+    },
+    {
+      "name": "orcid-api",
+      "description": "Look up researcher profiles and academic identities via the ORCID registry",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/orcid-api",
+      "keywords": [
+        "researcher ID",
+        "ORCID",
+        "academic identity",
+        "academic metrics"
+      ]
+    },
+    {
+      "name": "orcid-integration-guide",
+      "description": "Set up and leverage ORCID for researcher identification and profiles",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/orcid-integration-guide",
+      "keywords": [
+        "ORCID",
+        "researcher ID",
+        "author disambiguation",
+        "scholarly identity",
+        "publication profile"
+      ]
+    },
+    {
+      "name": "wikidata-api-guide",
+      "description": "Query Wikidata SPARQL for scholarly metadata, authors, and entities",
+      "category": "literature",
+      "subcategory": "metadata",
+      "path": "skills/literature/metadata/wikidata-api-guide",
+      "keywords": [
+        "wikidata",
+        "sparql",
+        "linked-data",
+        "metadata",
+        "knowledge-graph",
+        "scholarly"
+      ]
+    },
+    {
+      "name": "arxiv-api",
+      "description": "Search and retrieve preprints from the arXiv open-access repository",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/arxiv-api",
+      "keywords": [
+        "academic database search",
+        "literature search",
+        "scholarly database",
+        "semantic search",
+        "preprint server"
+      ]
+    },
+    {
+      "name": "arxiv-batch-reporting",
+      "description": "Batch search and report generation from arXiv preprint repository",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/arxiv-batch-reporting",
+      "keywords": [
+        "arxiv",
+        "batch search",
+        "preprint",
+        "report generation",
+        "literature monitoring",
+        "research trends"
+      ]
+    },
+    {
+      "name": "arxiv-paper-processor",
+      "description": "Process and analyze arXiv papers systematically for research workflows",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/arxiv-paper-processor",
+      "keywords": [
+        "arxiv",
+        "paper processing",
+        "PDF parsing",
+        "metadata extraction",
+        "preprint analysis",
+        "research pipeline"
+      ]
+    },
+    {
+      "name": "baidu-scholar-guide",
+      "description": "Using Baidu Scholar for Chinese and English academic literature search",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/baidu-scholar-guide",
+      "keywords": [
+        "baidu scholar",
+        "chinese literature",
+        "academic search",
+        "CNKI",
+        "bilingual research",
+        "chinese journals"
+      ]
+    },
+    {
+      "name": "biorxiv-api",
+      "description": "Preprint server API for biology and medicine papers",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/biorxiv-api",
+      "keywords": [
+        "preprint server",
+        "literature search",
+        "academic database search",
+        "full-text retrieval"
+      ]
+    },
+    {
+      "name": "boolean-search-guide",
+      "description": "Master Boolean operators and advanced search syntax for academic databases",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/boolean-search-guide",
+      "keywords": [
+        "boolean search",
+        "search operators",
+        "database search",
+        "PubMed",
+        "Web of Science",
+        "search strategy"
+      ]
+    },
+    {
+      "name": "chatpaper-guide",
+      "description": "Use ChatPaper to summarize and search arXiv papers with LLM assistance",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/chatpaper-guide",
+      "keywords": [
+        "arxiv",
+        "paper-summarization",
+        "literature-search",
+        "chatgpt",
+        "research-acceleration"
+      ]
+    },
+    {
+      "name": "citation-chaining-guide",
+      "description": "Forward and backward citation chaining techniques for literature search",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/citation-chaining-guide",
+      "keywords": [
+        "citation tracking",
+        "advanced search",
+        "search strategy",
+        "literature search"
+      ]
+    },
+    {
+      "name": "database-comparison-guide",
+      "description": "Compare major academic databases and when to use each for research",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/database-comparison-guide",
+      "keywords": [
+        "academic database search",
+        "scholarly database",
+        "search strategy",
+        "field-specific search"
+      ]
+    },
+    {
+      "name": "deep-literature-search",
+      "description": "Multi-source exhaustive literature search across academic databases",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/deep-literature-search",
+      "keywords": [
+        "exhaustive search",
+        "systematic search",
+        "multi-database",
+        "literature review",
+        "search strategy",
+        "PRISMA"
+      ]
+    },
+    {
+      "name": "deepgit-search-guide",
+      "description": "Deep research tool for discovering academic code in Git repositories",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/deepgit-search-guide",
+      "keywords": []
+    },
+    {
+      "name": "europe-pmc-api",
+      "description": "Search biomedical and life sciences literature via Europe PMC",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/europe-pmc-api",
+      "keywords": [
+        "academic database search",
+        "literature search",
+        "citation tracking",
+        "field-specific search"
+      ]
+    },
+    {
+      "name": "google-scholar-guide",
+      "description": "Advanced Google Scholar search techniques for comprehensive literature discovery",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/google-scholar-guide",
+      "keywords": [
+        "academic database search",
+        "search strategy",
+        "Boolean search",
+        "advanced search",
+        "Google Scholar"
+      ]
+    },
+    {
+      "name": "mesh-terms-guide",
+      "description": "Navigate MeSH vocabulary for precise PubMed and MEDLINE searches",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/mesh-terms-guide",
+      "keywords": [
+        "MeSH terms",
+        "PubMed",
+        "MEDLINE",
+        "controlled vocabulary",
+        "medical subject headings",
+        "literature search"
+      ]
+    },
+    {
+      "name": "openalex-api",
+      "description": "Query the OpenAlex catalog of scholarly works, authors, and institutions",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/openalex-api",
+      "keywords": [
+        "academic database search",
+        "literature search",
+        "citation statistics",
+        "academic metrics",
+        "bibliometrics"
+      ]
+    },
+    {
+      "name": "pasa-paper-search-guide",
+      "description": "Advanced paper search agent powered by LLMs for literature discovery",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/pasa-paper-search-guide",
+      "keywords": []
+    },
+    {
+      "name": "pubmed-api",
+      "description": "Search biomedical literature and retrieve records via PubMed E-utilities",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/pubmed-api",
+      "keywords": [
+        "academic database search",
+        "literature search",
+        "scholarly database",
+        "field-specific search"
+      ]
+    },
+    {
+      "name": "scientify-literature-survey",
+      "description": "Search, filter, download and cluster academic papers on a topic",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/scientify-literature-survey",
+      "keywords": [
+        "academic database search",
+        "literature search",
+        "search strategy",
+        "semantic search",
+        "citation tracking"
+      ]
+    },
+    {
+      "name": "semantic-scholar-api",
+      "description": "Search papers and analyze citation graphs via Semantic Scholar",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/semantic-scholar-api",
+      "keywords": [
+        "academic database search",
+        "semantic search",
+        "AI-powered literature search",
+        "citation analysis",
+        "citation network"
+      ]
+    },
+    {
+      "name": "systematic-search-strategy",
+      "description": "Construct rigorous systematic search strategies for literature reviews",
+      "category": "literature",
+      "subcategory": "search",
+      "path": "skills/literature/search/systematic-search-strategy",
+      "keywords": [
+        "search strategy",
+        "Boolean search",
+        "search string construction",
+        "advanced search",
+        "systematic review"
+      ]
+    },
+    {
+      "name": "ai-scientist-guide",
+      "description": "End-to-end automated scientific discovery with AI Scientist v2",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/ai-scientist-guide",
+      "keywords": [
+        "ai-scientist",
+        "research automation",
+        "scientific workflow",
+        "AI experiment design"
+      ]
+    },
+    {
+      "name": "ai-scientist-v2-guide",
+      "description": "Automated scientific discovery via agentic tree search by Sakana AI",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/ai-scientist-v2-guide",
+      "keywords": [
+        "scientific-discovery",
+        "automation",
+        "tree-search",
+        "paper-generation",
+        "experiment-design",
+        "sakana-ai"
+      ]
+    },
+    {
+      "name": "aim-experiment-guide",
+      "description": "Track and compare research experiments with Aim experiment tracker",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/aim-experiment-guide",
+      "keywords": [
+        "experiment-tracking",
+        "visualization",
+        "mlops",
+        "reproducibility",
+        "metrics",
+        "hyperparameters"
+      ]
+    },
+    {
+      "name": "data-collection-automation",
+      "description": "Automate survey deployment, data collection, and pipeline management",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/data-collection-automation",
+      "keywords": [
+        "data collection",
+        "survey automation",
+        "pipeline",
+        "Qualtrics API",
+        "research automation",
+        "ETL"
+      ]
+    },
+    {
+      "name": "datagen-research-guide",
+      "description": "AI-driven multi-agent research assistant for end-to-end studies",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/datagen-research-guide",
+      "keywords": []
+    },
+    {
+      "name": "kedro-pipeline-guide",
+      "description": "Build reproducible data science pipelines with Kedro for research projects",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/kedro-pipeline-guide",
+      "keywords": [
+        "pipeline",
+        "reproducibility",
+        "data-science",
+        "workflow",
+        "automation",
+        "mlops"
+      ]
+    },
+    {
+      "name": "mle-agent-guide",
+      "description": "Intelligent companion for ML engineering with arXiv integration",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/mle-agent-guide",
+      "keywords": []
+    },
+    {
+      "name": "paper-to-agent-guide",
+      "description": "Transform research papers into interactive AI agents for exploration",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/paper-to-agent-guide",
+      "keywords": []
+    },
+    {
+      "name": "rd-agent-guide",
+      "description": "Microsoft AI-driven R&D agent for automated data and model development",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/rd-agent-guide",
+      "keywords": [
+        "r-and-d",
+        "microsoft",
+        "automation",
+        "model-development",
+        "data-science",
+        "experiment-automation"
+      ]
+    },
+    {
+      "name": "research-paper-orchestrator",
+      "description": "Master orchestrator coordinating 10 specialized subagents for papers",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/research-paper-orchestrator",
+      "keywords": [
+        "research orchestration",
+        "multi-agent",
+        "automated research",
+        "paper production",
+        "workflow automation",
+        "agent coordination"
+      ]
+    },
+    {
+      "name": "research-workflow-automation",
+      "description": "Automate repetitive research tasks with pipelines, schedulers, and scripting",
+      "category": "research",
+      "subcategory": "automation",
+      "path": "skills/research/automation/research-workflow-automation",
+      "keywords": [
+        "workflow management",
+        "pipeline scheduler",
+        "research automation",
+        "scientific workflow",
+        "task automation"
+      ]
+    },
+    {
+      "name": "academic-deep-research",
+      "description": "Multi-cycle exhaustive investigation framework for academic topics",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/academic-deep-research",
+      "keywords": [
+        "deep research",
+        "exhaustive search",
+        "multi-cycle investigation",
+        "literature synthesis",
+        "comprehensive review"
+      ]
+    },
+    {
+      "name": "auto-deep-research-guide",
+      "description": "Automated deep research tool for thorough topic investigation",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/auto-deep-research-guide",
+      "keywords": []
+    },
+    {
+      "name": "deep-research-pro",
+      "description": "Multi-source deep research agent with verification and synthesis",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/deep-research-pro",
+      "keywords": [
+        "deep research",
+        "multi-source",
+        "source verification",
+        "research agent",
+        "evidence synthesis",
+        "fact checking"
+      ]
+    },
+    {
+      "name": "deep-research-work",
+      "description": "Combine web search, content analysis, and source verification",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/deep-research-work",
+      "keywords": [
+        "web research",
+        "content analysis",
+        "source verification",
+        "information extraction",
+        "research workflow",
+        "web scraping"
+      ]
+    },
+    {
+      "name": "deep-searcher-guide",
+      "description": "Open deep research alternative for private data with vector search",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/deep-searcher-guide",
+      "keywords": [
+        "deep-search",
+        "private-data",
+        "milvus",
+        "vector-search",
+        "rag",
+        "document-retrieval"
+      ]
+    },
+    {
+      "name": "gpt-researcher-guide",
+      "description": "Autonomous agent for comprehensive deep research on any topic",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/gpt-researcher-guide",
+      "keywords": [
+        "deep-research",
+        "autonomous-agent",
+        "web-search",
+        "report-generation",
+        "literature-review"
+      ]
+    },
+    {
+      "name": "khoj-research-guide",
+      "description": "AI second brain for deep research and personal knowledge management",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/khoj-research-guide",
+      "keywords": [
+        "second-brain",
+        "knowledge-management",
+        "document-analysis",
+        "rag",
+        "self-hosted",
+        "research-assistant"
+      ]
+    },
+    {
+      "name": "local-deep-research-guide",
+      "description": "Deep research agent searching 10+ sources with local or cloud LLMs",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/local-deep-research-guide",
+      "keywords": [
+        "local-llm",
+        "deep-research",
+        "multi-source",
+        "ollama",
+        "privacy",
+        "academic-search"
+      ]
+    },
+    {
+      "name": "meta-synthesis-guide",
+      "description": "Conduct qualitative meta-synthesis and evidence synthesis methods",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/meta-synthesis-guide",
+      "keywords": [
+        "meta-synthesis",
+        "qualitative evidence synthesis",
+        "meta-ethnography",
+        "thematic synthesis",
+        "systematic review"
+      ]
+    },
+    {
+      "name": "research-cog",
+      "description": "Deep research powered by CellCog for comprehensive investigations",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/research-cog",
+      "keywords": [
+        "deep research",
+        "multi-source investigation",
+        "AI literature review",
+        "automated literature synthesis"
+      ]
+    },
+    {
+      "name": "scoping-review-guide",
+      "description": "Scoping review methodology for broad evidence mapping",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/scoping-review-guide",
+      "keywords": [
+        "scoping review",
+        "scoping study",
+        "rapid review",
+        "umbrella review"
+      ]
+    },
+    {
+      "name": "systematic-review-guide",
+      "description": "Systematic review methodology with PRISMA and evidence synthesis",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/systematic-review-guide",
+      "keywords": [
+        "systematic review methodology",
+        "evidence synthesis",
+        "PRISMA flowchart",
+        "risk of bias assessment"
+      ]
+    },
+    {
+      "name": "tongyi-deep-research-guide",
+      "description": "Open-source deep research agent by Alibaba for scholarly research",
+      "category": "research",
+      "subcategory": "deep-research",
+      "path": "skills/research/deep-research/tongyi-deep-research-guide",
+      "keywords": [
+        "deep-research",
+        "alibaba",
+        "tongyi",
+        "agentic-rag",
+        "scholarly-search",
+        "open-source"
+      ]
+    },
+    {
+      "name": "eu-horizon-guide",
+      "description": "Navigate EU Horizon Europe funding programs and proposal writing",
+      "category": "research",
+      "subcategory": "funding",
+      "path": "skills/research/funding/eu-horizon-guide",
+      "keywords": [
+        "Horizon Europe",
+        "EU funding",
+        "ERC grants",
+        "MSCA",
+        "proposal writing",
+        "European research",
+        "consortium"
+      ]
+    },
+    {
+      "name": "figshare-api",
+      "description": "Research data sharing and repository",
+      "category": "research",
+      "subcategory": "funding",
+      "path": "skills/research/funding/figshare-api",
+      "keywords": [
+        "open data",
+        "data sharing",
+        "data archiving",
+        "FAIR data principles",
+        "open source code"
+      ]
+    },
+    {
+      "name": "grant-budget-guide",
+      "description": "Prepare and justify research grant budgets across funding agencies",
+      "category": "research",
+      "subcategory": "funding",
+      "path": "skills/research/funding/grant-budget-guide",
+      "keywords": [
+        "grant budget",
+        "budget justification",
+        "cost estimation",
+        "indirect costs",
+        "personnel costs",
+        "funding agencies"
+      ]
+    },
+    {
+      "name": "grant-writing-guide",
+      "description": "Write competitive research proposals with clear objectives and budgets",
+      "category": "research",
+      "subcategory": "funding",
+      "path": "skills/research/funding/grant-writing-guide",
+      "keywords": [
+        "research proposal writing",
+        "grant proposal",
+        "grant writing",
+        "budget planning",
+        "funding application"
+      ]
+    },
+    {
+      "name": "nih-reporter-api-guide",
+      "description": "Search NIH-funded grants and research projects via RePORTER API",
+      "category": "research",
+      "subcategory": "funding",
+      "path": "skills/research/funding/nih-reporter-api-guide",
+      "keywords": [
+        "nih",
+        "grants",
+        "biomedical",
+        "funding",
+        "reporter",
+        "health-research"
+      ]
+    },
+    {
+      "name": "nsf-award-api-guide",
+      "description": "Search NSF awards and grants with free public API, no auth required",
+      "category": "research",
+      "subcategory": "funding",
+      "path": "skills/research/funding/nsf-award-api-guide",
+      "keywords": [
+        "nsf",
+        "grants",
+        "funding",
+        "awards",
+        "national-science-foundation"
+      ]
+    },
+    {
+      "name": "nsf-grant-guide",
+      "description": "Navigate NSF grant applications, program selection, and strategies",
+      "category": "research",
+      "subcategory": "funding",
+      "path": "skills/research/funding/nsf-grant-guide",
+      "keywords": [
+        "NSF grant",
+        "grant writing",
+        "funding",
+        "research proposal",
+        "broader impacts",
+        "NSF program"
+      ]
+    },
+    {
+      "name": "open-science-guide",
+      "description": "Pre-registration, open data, and FAIR principles for research",
+      "category": "research",
+      "subcategory": "funding",
+      "path": "skills/research/funding/open-science-guide",
+      "keywords": [
+        "pre-registration",
+        "registered report",
+        "open science framework",
+        "FAIR data principles",
+        "open data"
+      ]
+    },
+    {
+      "name": "zenodo-api",
+      "description": "Open research repository for all disciplines",
+      "category": "research",
+      "subcategory": "funding",
+      "path": "skills/research/funding/zenodo-api",
+      "keywords": [
+        "open data",
+        "data sharing",
+        "data archiving",
+        "FAIR data principles"
+      ]
+    },
+    {
+      "name": "academic-mentor-guide",
+      "description": "AI research advisor for graduate students navigating academic careers",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/academic-mentor-guide",
+      "keywords": [
+        "academic mentoring",
+        "graduate research",
+        "PhD guidance",
+        "research strategy",
+        "academic career",
+        "thesis advising"
+      ]
+    },
+    {
+      "name": "action-research-guide",
+      "description": "Design and conduct action research and participatory studies",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/action-research-guide",
+      "keywords": [
+        "action research",
+        "participatory research",
+        "PAR",
+        "community-based research",
+        "practitioner research"
+      ]
+    },
+    {
+      "name": "claude-scientific-guide",
+      "description": "Ready-to-use agent skills for scientific research and engineering",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/claude-scientific-guide",
+      "keywords": []
+    },
+    {
+      "name": "deep-innovator-guide",
+      "description": "AI research for idea generation and scientific discovery methods",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/deep-innovator-guide",
+      "keywords": [
+        "idea generation",
+        "scientific discovery",
+        "innovation",
+        "research ideation",
+        "creative research",
+        "hypothesis generation"
+      ]
+    },
+    {
+      "name": "experimental-design-guide",
+      "description": "Design rigorous experiments using DOE, factorial designs, and response surfaces",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/experimental-design-guide",
+      "keywords": [
+        "design of experiments",
+        "DOE",
+        "factorial design",
+        "response surface methodology",
+        "experimental design"
+      ]
+    },
+    {
+      "name": "grad-school-guide",
+      "description": "Practical advice for thriving in PhD programs and academic research",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/grad-school-guide",
+      "keywords": [
+        "research question formulation",
+        "hypothesis formulation",
+        "theoretical framework",
+        "conceptual model"
+      ]
+    },
+    {
+      "name": "grounded-theory-guide",
+      "description": "Apply grounded theory methodology to develop theory from data",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/grounded-theory-guide",
+      "keywords": [
+        "grounded theory",
+        "qualitative methodology",
+        "theoretical sampling",
+        "constant comparison",
+        "coding"
+      ]
+    },
+    {
+      "name": "mixed-methods-guide",
+      "description": "Guide to designing and conducting mixed methods research",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/mixed-methods-guide",
+      "keywords": [
+        "mixed methods research",
+        "multimethod design",
+        "quantitative research design"
+      ]
+    },
+    {
+      "name": "osf-api-guide",
+      "description": "Access Open Science Framework for preregistrations, preprints, and data",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/osf-api-guide",
+      "keywords": [
+        "osf",
+        "open-science",
+        "preregistration",
+        "preprints",
+        "reproducibility",
+        "collaboration"
+      ]
+    },
+    {
+      "name": "qualitative-research-guide",
+      "description": "Design and conduct qualitative research using grounded theory, case studies, ...",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/qualitative-research-guide",
+      "keywords": [
+        "qualitative research design",
+        "case study",
+        "grounded theory",
+        "phenomenology",
+        "thematic analysis"
+      ]
+    },
+    {
+      "name": "research-paper-kb",
+      "description": "Build a persistent cross-session knowledge base from academic papers",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/research-paper-kb",
+      "keywords": [
+        "knowledge base",
+        "paper notes",
+        "literature management",
+        "cross-session",
+        "research memory"
+      ]
+    },
+    {
+      "name": "research-town-guide",
+      "description": "Simulate human research communities with multi-agent AI collaboration",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/research-town-guide",
+      "keywords": [
+        "multi-agent",
+        "simulation",
+        "research community",
+        "AI agents",
+        "peer review",
+        "collaboration"
+      ]
+    },
+    {
+      "name": "scientify-idea-generation",
+      "description": "Generate research ideas from collected papers with gap analysis",
+      "category": "research",
+      "subcategory": "methodology",
+      "path": "skills/research/methodology/scientify-idea-generation",
+      "keywords": [
+        "research question formulation",
+        "hypothesis formulation",
+        "research hypothesis",
+        "conceptual model",
+        "theoretical framework"
+      ]
+    },
+    {
+      "name": "automated-review-guide",
+      "description": "AI-assisted peer review tools, workflows, and quality standards",
+      "category": "research",
+      "subcategory": "paper-review",
+      "path": "skills/research/paper-review/automated-review-guide",
+      "keywords": [
+        "automated review",
+        "AI peer review",
+        "LLM review",
+        "review quality",
+        "manuscript screening",
+        "editorial workflow"
+      ]
+    },
+    {
+      "name": "paper-compare-guide",
+      "description": "Compare research papers side-by-side on methodology and findings",
+      "category": "research",
+      "subcategory": "paper-review",
+      "path": "skills/research/paper-review/paper-compare-guide",
+      "keywords": [
+        "paper comparison",
+        "side-by-side analysis",
+        "methodology comparison",
+        "research synthesis",
+        "critical analysis"
+      ]
+    },
+    {
+      "name": "paper-digest-guide",
+      "description": "Fetch paper and spawn sub-agents to read citations recursively",
+      "category": "research",
+      "subcategory": "paper-review",
+      "path": "skills/research/paper-review/paper-digest-guide",
+      "keywords": [
+        "citation analysis",
+        "recursive reading",
+        "paper digestion",
+        "citation graph",
+        "reference mining",
+        "snowball search"
+      ]
+    },
+    {
+      "name": "paper-reading-assistant",
+      "description": "AI-assisted paper reading, PDF Q&A, and summarization workflows",
+      "category": "research",
+      "subcategory": "paper-review",
+      "path": "skills/research/paper-review/paper-reading-assistant",
+      "keywords": [
+        "paper reading assistant",
+        "PDF Q&A",
+        "document understanding",
+        "paper summarization"
+      ]
+    },
+    {
+      "name": "paper-research-assistant",
+      "description": "Read papers, generate structured reports, find code and datasets",
+      "category": "research",
+      "subcategory": "paper-review",
+      "path": "skills/research/paper-review/paper-research-assistant",
+      "keywords": [
+        "paper reading",
+        "research report",
+        "code extraction",
+        "dataset discovery",
+        "paper analysis",
+        "structured summary"
+      ]
+    },
+    {
+      "name": "peer-review-guide",
+      "description": "Conduct thorough, constructive peer reviews and evaluate research papers crit...",
+      "category": "research",
+      "subcategory": "paper-review",
+      "path": "skills/research/paper-review/peer-review-guide",
+      "keywords": [
+        "peer review",
+        "reviewer comments",
+        "paper evaluation",
+        "paper reading assistant",
+        "manuscript assessment"
+      ]
+    },
+    {
+      "name": "rebuttal-writing-guide",
+      "description": "Write effective rebuttals to reviewer comments for journal submissions",
+      "category": "research",
+      "subcategory": "paper-review",
+      "path": "skills/research/paper-review/rebuttal-writing-guide",
+      "keywords": [
+        "rebuttal letter",
+        "reviewer response",
+        "revision",
+        "peer review",
+        "manuscript revision",
+        "author response"
+      ]
+    },
+    {
+      "name": "research-quality-filter",
+      "description": "Filter and assess research paper quality using structured criteria",
+      "category": "research",
+      "subcategory": "paper-review",
+      "path": "skills/research/paper-review/research-quality-filter",
+      "keywords": [
+        "quality assessment",
+        "paper filtering",
+        "evidence grading",
+        "critical appraisal",
+        "study quality",
+        "screening"
+      ]
+    },
+    {
+      "name": "review-response-guide",
+      "description": "Craft effective point-by-point reviewer response letters",
+      "category": "research",
+      "subcategory": "paper-review",
+      "path": "skills/research/paper-review/review-response-guide",
+      "keywords": [
+        "reviewer response",
+        "response letter",
+        "revision strategy",
+        "author reply",
+        "manuscript revision",
+        "editorial decision"
+      ]
+    },
+    {
+      "name": "scientify-write-review-paper",
+      "description": "Write literature reviews and survey papers from collected papers",
+      "category": "research",
+      "subcategory": "paper-review",
+      "path": "skills/research/paper-review/scientify-write-review-paper",
+      "keywords": [
+        "paper summarization",
+        "paper comparison",
+        "research gap analysis",
+        "narrative review",
+        "systematic review methodology"
+      ]
+    },
+    {
+      "name": "google-colab-guide",
+      "description": "Run and manage Google Colab notebooks for Python and ML research",
+      "category": "tools",
+      "subcategory": "code-exec",
+      "path": "skills/tools/code-exec/google-colab-guide",
+      "keywords": [
+        "Google Colab",
+        "Jupyter",
+        "GPU",
+        "machine learning",
+        "Python",
+        "cloud computing"
+      ]
+    },
+    {
+      "name": "jupyter-notebook-guide",
+      "description": "Best practices for computational research notebooks with reproducible workflows",
+      "category": "tools",
+      "subcategory": "code-exec",
+      "path": "skills/tools/code-exec/jupyter-notebook-guide",
+      "keywords": [
+        "sandbox execution",
+        "code runner",
+        "Jupyter notebook",
+        "computational notebook",
+        "reproducible research"
+      ]
+    },
+    {
+      "name": "kaggle-api-guide",
+      "description": "Download datasets, manage competitions and notebooks via Kaggle API",
+      "category": "tools",
+      "subcategory": "code-exec",
+      "path": "skills/tools/code-exec/kaggle-api-guide",
+      "keywords": [
+        "kaggle",
+        "datasets",
+        "competitions",
+        "notebooks",
+        "data-science",
+        "machine-learning"
+      ]
+    },
+    {
+      "name": "overleaf-cli-guide",
+      "description": "Sync and manage Overleaf LaTeX projects from the command line",
+      "category": "tools",
+      "subcategory": "code-exec",
+      "path": "skills/tools/code-exec/overleaf-cli-guide",
+      "keywords": [
+        "Overleaf",
+        "LaTeX",
+        "CLI",
+        "sync",
+        "git",
+        "collaboration",
+        "academic writing"
+      ]
+    },
+    {
+      "name": "python-reproducibility-guide",
+      "description": "Reproducible Python environments, notebooks, and literate programming",
+      "category": "tools",
+      "subcategory": "code-exec",
+      "path": "skills/tools/code-exec/python-reproducibility-guide",
+      "keywords": [
+        "sandbox execution",
+        "Jupyter notebook",
+        "computational notebook",
+        "literate programming"
+      ]
+    },
+    {
+      "name": "r-reproducibility-guide",
+      "description": "Create reproducible research workflows with R and RMarkdown/Quarto",
+      "category": "tools",
+      "subcategory": "code-exec",
+      "path": "skills/tools/code-exec/r-reproducibility-guide",
+      "keywords": [
+        "R programming",
+        "RMarkdown",
+        "reproducibility",
+        "Quarto",
+        "renv",
+        "computational reproducibility"
+      ]
+    },
+    {
+      "name": "sandbox-execution-guide",
+      "description": "Secure sandboxed code execution environments for reproducible research computing",
+      "category": "tools",
+      "subcategory": "code-exec",
+      "path": "skills/tools/code-exec/sandbox-execution-guide",
+      "keywords": [
+        "sandbox execution",
+        "code runner",
+        "literate programming",
+        "containerization",
+        "reproducible computing"
+      ]
+    },
+    {
+      "name": "code-flow-visualizer",
+      "description": "Convert Python, JavaScript, and TypeScript functions into Mermaid flowcharts",
+      "category": "tools",
+      "subcategory": "diagram",
+      "path": "skills/tools/diagram/code-flow-visualizer",
+      "keywords": [
+        "code visualization",
+        "flowchart",
+        "Mermaid",
+        "Python",
+        "control flow",
+        "AST"
+      ]
+    },
+    {
+      "name": "excalidraw-diagram-guide",
+      "description": "Generate hand-drawn style Excalidraw diagrams from text descriptions",
+      "category": "tools",
+      "subcategory": "diagram",
+      "path": "skills/tools/diagram/excalidraw-diagram-guide",
+      "keywords": [
+        "Excalidraw",
+        "diagram",
+        "whiteboard",
+        "hand-drawn",
+        "sketch",
+        "visual"
+      ]
+    },
+    {
+      "name": "json-data-visualizer",
+      "description": "Guide to JSON Crack for visualizing complex JSON data structures",
+      "category": "tools",
+      "subcategory": "diagram",
+      "path": "skills/tools/diagram/json-data-visualizer",
+      "keywords": [
+        "JSON visualization",
+        "data structure diagram",
+        "tree visualization",
+        "API response viewer",
+        "schema explorer"
+      ]
+    },
+    {
+      "name": "mermaid-architect-guide",
+      "description": "Design complex multi-diagram architectures using advanced Mermaid syntax",
+      "category": "tools",
+      "subcategory": "diagram",
+      "path": "skills/tools/diagram/mermaid-architect-guide",
+      "keywords": [
+        "Mermaid",
+        "architecture",
+        "system design",
+        "C4 model",
+        "diagram",
+        "hand-drawn"
+      ]
+    },
+    {
+      "name": "mermaid-diagram-guide",
+      "description": "Create flowcharts, sequence diagrams, and architecture diagrams with Mermaid",
+      "category": "tools",
+      "subcategory": "diagram",
+      "path": "skills/tools/diagram/mermaid-diagram-guide",
+      "keywords": [
+        "flow chart",
+        "architecture diagram",
+        "Mermaid",
+        "UML diagram",
+        "graphical abstract"
+      ]
+    },
+    {
+      "name": "plantuml-guide",
+      "description": "Create UML diagrams and architecture visualizations with PlantUML",
+      "category": "tools",
+      "subcategory": "diagram",
+      "path": "skills/tools/diagram/plantuml-guide",
+      "keywords": [
+        "UML diagram",
+        "PlantUML",
+        "architecture diagram",
+        "flow chart"
+      ]
+    },
+    {
+      "name": "scientific-illustration-guide",
+      "description": "Create graphical abstracts, schematic diagrams, and scientific illustrations",
+      "category": "tools",
+      "subcategory": "diagram",
+      "path": "skills/tools/diagram/scientific-illustration-guide",
+      "keywords": [
+        "scientific illustration",
+        "graphical abstract",
+        "schematic diagram",
+        "architecture diagram",
+        "vector graphics"
+      ]
+    },
+    {
+      "name": "tldraw-whiteboard-guide",
+      "description": "Guide to tldraw for infinite canvas whiteboarding and diagram creation",
+      "category": "tools",
+      "subcategory": "diagram",
+      "path": "skills/tools/diagram/tldraw-whiteboard-guide",
+      "keywords": [
+        "whiteboard",
+        "infinite canvas",
+        "diagram SDK",
+        "collaborative drawing",
+        "research diagrams",
+        "visual thinking"
+      ]
+    },
+    {
+      "name": "anystyle-api",
+      "description": "Citation reference parser using machine learning",
+      "category": "tools",
+      "subcategory": "document",
+      "path": "skills/tools/document/anystyle-api",
+      "keywords": [
+        "PDF parsing",
+        "document chunking",
+        "format conversion",
+        "PDF extraction"
+      ]
+    },
+    {
+      "name": "docsgpt-guide",
+      "description": "Deploy DocsGPT for private document analysis and research knowledge bases",
+      "category": "tools",
+      "subcategory": "document",
+      "path": "skills/tools/document/docsgpt-guide",
+      "keywords": [
+        "document-analysis",
+        "knowledge-base",
+        "rag",
+        "private-ai",
+        "enterprise-search",
+        "question-answering"
+      ]
+    },
+    {
+      "name": "grobid-pdf-parsing",
+      "description": "Extract structured text, metadata, and references from academic PDFs",
+      "category": "tools",
+      "subcategory": "document",
+      "path": "skills/tools/document/grobid-pdf-parsing",
+      "keywords": [
+        "PDF parsing",
+        "PDF extraction",
+        "document chunking",
+        "format conversion"
+      ]
+    },
+    {
+      "name": "large-document-reader",
+      "description": "Split and read long documents chapter-by-chapter for structured analysis",
+      "category": "tools",
+      "subcategory": "document",
+      "path": "skills/tools/document/large-document-reader",
+      "keywords": [
+        "document reading",
+        "chunking",
+        "long document",
+        "chapter splitting",
+        "structured reading"
+      ]
+    },
+    {
+      "name": "markdown-academic-guide",
+      "description": "Write academic papers in Markdown with Pandoc for multi-format output",
+      "category": "tools",
+      "subcategory": "document",
+      "path": "skills/tools/document/markdown-academic-guide",
+      "keywords": [
+        "Markdown",
+        "Pandoc",
+        "academic writing",
+        "document conversion",
+        "scholarly Markdown",
+        "plain text"
+      ]
+    },
+    {
+      "name": "paper-parse-guide",
+      "description": "Deep dual-mode reading of academic papers from PDF or URL sources",
+      "category": "tools",
+      "subcategory": "document",
+      "path": "skills/tools/document/paper-parse-guide",
+      "keywords": [
+        "paper reading",
+        "PDF parsing",
+        "academic paper",
+        "deep reading",
+        "annotation",
+        "GROBID"
+      ]
+    },
+    {
+      "name": "pdf-extraction-guide",
+      "description": "PDF parsing, text extraction, and document format conversion",
+      "category": "tools",
+      "subcategory": "document",
+      "path": "skills/tools/document/pdf-extraction-guide",
+      "keywords": [
+        "PDF parsing",
+        "PDF extraction",
+        "document chunking",
+        "format conversion",
+        "md2pdf"
+      ]
+    },
+    {
+      "name": "citation-network-builder",
+      "description": "Build and analyze citation networks from academic reference data",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "path": "skills/tools/knowledge-graph/citation-network-builder",
+      "keywords": [
+        "citation network",
+        "bibliometrics",
+        "graph analysis",
+        "co-citation",
+        "bibliographic coupling",
+        "network visualization"
+      ]
+    },
+    {
+      "name": "concept-map-generator",
+      "description": "Generate structured concept maps from academic texts automatically",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "path": "skills/tools/knowledge-graph/concept-map-generator",
+      "keywords": [
+        "concept map",
+        "knowledge representation",
+        "text mining",
+        "ontology",
+        "semantic extraction",
+        "mind map"
+      ]
+    },
+    {
+      "name": "graphiti-guide",
+      "description": "Build real-time knowledge graphs for AI agents using Graphiti by Zep",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "path": "skills/tools/knowledge-graph/graphiti-guide",
+      "keywords": [
+        "knowledge-graph",
+        "ai-agents",
+        "temporal-graphs",
+        "neo4j",
+        "memory",
+        "entity-extraction"
+      ]
+    },
+    {
+      "name": "knowledge-graph-construction",
+      "description": "Build research knowledge graphs for literature synthesis and RAG systems",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "path": "skills/tools/knowledge-graph/knowledge-graph-construction",
+      "keywords": [
+        "knowledge graph",
+        "knowledge modeling",
+        "ontology",
+        "RAG",
+        "retrieval augmented generation"
+      ]
+    },
+    {
+      "name": "ontology-design-guide",
+      "description": "Design ontologies and knowledge graphs for research data modeling",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "path": "skills/tools/knowledge-graph/ontology-design-guide",
+      "keywords": [
+        "ontology",
+        "knowledge graph",
+        "RDF",
+        "OWL",
+        "semantic web",
+        "data modeling",
+        "linked data"
+      ]
+    },
+    {
+      "name": "rag-methodology-guide",
+      "description": "RAG architecture for academic knowledge retrieval and synthesis",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "path": "skills/tools/knowledge-graph/rag-methodology-guide",
+      "keywords": [
+        "RAG",
+        "retrieval augmented generation",
+        "academic knowledge graph",
+        "knowledge modeling"
+      ]
+    },
+    {
+      "name": "formula-recognition-guide",
+      "description": "Math OCR and formula recognition to LaTeX conversion",
+      "category": "tools",
+      "subcategory": "ocr-translate",
+      "path": "skills/tools/ocr-translate/formula-recognition-guide",
+      "keywords": [
+        "math OCR",
+        "formula recognition",
+        "LaTeX OCR"
+      ]
+    },
+    {
+      "name": "handwriting-recognition-guide",
+      "description": "Apply handwriting OCR to digitize historical and archival documents",
+      "category": "tools",
+      "subcategory": "ocr-translate",
+      "path": "skills/tools/ocr-translate/handwriting-recognition-guide",
+      "keywords": [
+        "handwriting recognition",
+        "HTR",
+        "OCR",
+        "historical documents",
+        "digitization",
+        "manuscript transcription"
+      ]
+    },
+    {
+      "name": "latex-ocr-guide",
+      "description": "Extract and convert mathematical formulas from images and PDFs to LaTeX code",
+      "category": "tools",
+      "subcategory": "ocr-translate",
+      "path": "skills/tools/ocr-translate/latex-ocr-guide",
+      "keywords": [
+        "math OCR",
+        "formula recognition",
+        "LaTeX OCR",
+        "document OCR",
+        "equation extraction"
+      ]
+    },
+    {
+      "name": "multilingual-research-guide",
+      "description": "Strategies for translating academic papers while preserving technical accuracy",
+      "category": "tools",
+      "subcategory": "ocr-translate",
+      "path": "skills/tools/ocr-translate/multilingual-research-guide",
+      "keywords": [
+        "translation strategies",
+        "document OCR",
+        "math OCR",
+        "academic writing",
+        "multilingual research"
+      ]
+    },
+    {
+      "name": "pdf-math-translate-guide",
+      "description": "Translate scientific PDFs with preserved math formatting via PDFMathTranslate",
+      "category": "tools",
+      "subcategory": "ocr-translate",
+      "path": "skills/tools/ocr-translate/pdf-math-translate-guide",
+      "keywords": [
+        "pdf-translation",
+        "math-formatting",
+        "scientific-papers",
+        "multilingual",
+        "latex-preservation"
+      ]
+    },
+    {
+      "name": "zotero-pdf-translate-guide",
+      "description": "Guide to Zotero PDF Translate for multilingual PDF and annotation translation",
+      "category": "tools",
+      "subcategory": "ocr-translate",
+      "path": "skills/tools/ocr-translate/zotero-pdf-translate-guide",
+      "keywords": [
+        "zotero",
+        "pdf-translate",
+        "multilingual",
+        "annotation",
+        "academic-translation"
+      ]
+    },
+    {
+      "name": "zotero-pdf2zh-guide",
+      "description": "PDF Chinese translation plugin for Zotero reference manager",
+      "category": "tools",
+      "subcategory": "ocr-translate",
+      "path": "skills/tools/ocr-translate/zotero-pdf2zh-guide",
+      "keywords": []
+    },
+    {
+      "name": "academic-web-scraping",
+      "description": "Ethical web scraping and API-based data collection for research",
+      "category": "tools",
+      "subcategory": "scraping",
+      "path": "skills/tools/scraping/academic-web-scraping",
+      "keywords": [
+        "web scraping",
+        "API data collection",
+        "web search strategies",
+        "data extraction"
+      ]
+    },
+    {
+      "name": "api-data-collection-guide",
+      "description": "API-based data collection and web scraping for research",
+      "category": "tools",
+      "subcategory": "scraping",
+      "path": "skills/tools/scraping/api-data-collection-guide",
+      "keywords": [
+        "API data collection",
+        "web search strategies",
+        "data extraction",
+        "web scraping"
+      ]
+    },
+    {
+      "name": "dataset-finder-guide",
+      "description": "Search and download research datasets from Kaggle, HuggingFace, and repos",
+      "category": "tools",
+      "subcategory": "scraping",
+      "path": "skills/tools/scraping/dataset-finder-guide",
+      "keywords": [
+        "dataset",
+        "Kaggle",
+        "data download",
+        "HuggingFace",
+        "data repository",
+        "open data"
+      ]
+    },
+    {
+      "name": "easy-spider-guide",
+      "description": "Guide to EasySpider for visual no-code web data collection",
+      "category": "tools",
+      "subcategory": "scraping",
+      "path": "skills/tools/scraping/easy-spider-guide",
+      "keywords": [
+        "web scraping",
+        "visual crawler",
+        "no-code scraping",
+        "data collection",
+        "research data",
+        "web automation"
+      ]
+    },
+    {
+      "name": "google-scholar-scraper",
+      "description": "Ethical Google Scholar data collection techniques and best practices",
+      "category": "tools",
+      "subcategory": "scraping",
+      "path": "skills/tools/scraping/google-scholar-scraper",
+      "keywords": [
+        "Google Scholar",
+        "web scraping",
+        "bibliometrics",
+        "citation data",
+        "scholarly search",
+        "rate limiting"
+      ]
+    },
+    {
+      "name": "repository-harvesting-guide",
+      "description": "Harvest metadata from open repositories using OAI-PMH protocol",
+      "category": "tools",
+      "subcategory": "scraping",
+      "path": "skills/tools/scraping/repository-harvesting-guide",
+      "keywords": [
+        "OAI-PMH",
+        "metadata harvesting",
+        "open repositories",
+        "Dublin Core",
+        "institutional repositories",
+        "data providers"
+      ]
+    },
+    {
+      "name": "web-scraping-ethics-guide",
+      "description": "Scrape web data ethically and legally for research purposes",
+      "category": "tools",
+      "subcategory": "scraping",
+      "path": "skills/tools/scraping/web-scraping-ethics-guide",
+      "keywords": [
+        "web scraping",
+        "ethical scraping",
+        "robots.txt",
+        "rate limiting",
+        "research data collection",
+        "crawling"
+      ]
+    },
+    {
+      "name": "academic-citation-manager",
+      "description": "Manage academic citations across BibTeX, APA, MLA, and Chicago formats",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/academic-citation-manager",
+      "keywords": [
+        "citation",
+        "BibTeX",
+        "APA",
+        "reference management",
+        "bibliography",
+        "formatting"
+      ]
+    },
+    {
+      "name": "bibtex-management-guide",
+      "description": "Clean, format, deduplicate, and manage BibTeX bibliography files for LaTeX",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/bibtex-management-guide",
+      "keywords": [
+        "BibTeX formatting",
+        "BibTeX conversion",
+        "bibliography cleanup",
+        "reference deduplication",
+        "citation management"
+      ]
+    },
+    {
+      "name": "citation-style-guide",
+      "description": "APA, MLA, Chicago citation format guide with CSL configuration",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/citation-style-guide",
+      "keywords": [
+        "citation formatting",
+        "CSL",
+        "citation style",
+        "reference management"
+      ]
+    },
+    {
+      "name": "jabref-reference-guide",
+      "description": "Guide to JabRef open-source BibTeX and BibLaTeX reference manager",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/jabref-reference-guide",
+      "keywords": [
+        "jabref",
+        "bibtex",
+        "biblatex",
+        "reference-manager",
+        "latex",
+        "bibliography"
+      ]
+    },
+    {
+      "name": "jasminum-zotero-guide",
+      "description": "Guide to Jasminum for retrieving CNKI Chinese academic metadata in Zotero",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/jasminum-zotero-guide",
+      "keywords": [
+        "zotero",
+        "cnki",
+        "chinese-academic",
+        "jasminum",
+        "metadata",
+        "bibliography"
+      ]
+    },
+    {
+      "name": "obsidian-citation-guide",
+      "description": "Citation plugin for Obsidian note-taking with BibTeX support",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/obsidian-citation-guide",
+      "keywords": []
+    },
+    {
+      "name": "obsidian-zotero-guide",
+      "description": "Insert citations and notes from Zotero into Obsidian knowledge bases",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/obsidian-zotero-guide",
+      "keywords": []
+    },
+    {
+      "name": "papersgpt-zotero-guide",
+      "description": "AI plugin for Zotero with ChatGPT, Claude, and DeepSeek support",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/papersgpt-zotero-guide",
+      "keywords": []
+    },
+    {
+      "name": "papis-cli-guide",
+      "description": "Guide to Papis command-line document and bibliography manager for researchers",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/papis-cli-guide",
+      "keywords": [
+        "papis",
+        "cli",
+        "bibliography",
+        "document-manager",
+        "terminal",
+        "command-line"
+      ]
+    },
+    {
+      "name": "reference-manager-comparison",
+      "description": "Compare Zotero, Mendeley, EndNote, and Paperpile for research use",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/reference-manager-comparison",
+      "keywords": [
+        "reference manager",
+        "Zotero",
+        "Mendeley",
+        "EndNote",
+        "Paperpile",
+        "citation management"
+      ]
+    },
+    {
+      "name": "zotero-api",
+      "description": "Reference management library and collections API",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/zotero-api",
+      "keywords": [
+        "reference management",
+        "citation management",
+        "bibliography organization",
+        "literature import"
+      ]
+    },
+    {
+      "name": "zotero-better-bibtex-guide",
+      "description": "Guide to Better BibTeX for Zotero for LaTeX and BibTeX workflows",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/zotero-better-bibtex-guide",
+      "keywords": [
+        "zotero",
+        "bibtex",
+        "latex",
+        "citation-keys",
+        "better-bibtex",
+        "bibliography"
+      ]
+    },
+    {
+      "name": "zotero-better-notes-guide",
+      "description": "Guide to Zotero Better Notes for comprehensive note-taking in research",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/zotero-better-notes-guide",
+      "keywords": [
+        "zotero",
+        "note-taking",
+        "better-notes",
+        "research-notes",
+        "knowledge-management"
+      ]
+    },
+    {
+      "name": "zotero-gpt-guide",
+      "description": "Guide to Zotero GPT for AI-powered research assistance within Zotero",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/zotero-gpt-guide",
+      "keywords": [
+        "zotero",
+        "gpt",
+        "ai-assistant",
+        "research-ai",
+        "paper-analysis"
+      ]
+    },
+    {
+      "name": "zotero-mcp-guide",
+      "description": "Guide to Zotero MCP for connecting Zotero library with AI assistants",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/zotero-mcp-guide",
+      "keywords": [
+        "zotero",
+        "mcp",
+        "claude",
+        "ai-assistant",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "name": "zotero-mdnotes-guide",
+      "description": "Export Zotero items and annotations to Markdown note files",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/zotero-mdnotes-guide",
+      "keywords": []
+    },
+    {
+      "name": "zotero-reference-guide",
+      "description": "PDF references add-on for enriching Zotero library metadata",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/zotero-reference-guide",
+      "keywords": []
+    },
+    {
+      "name": "zotero-scholar-guide",
+      "description": "Save papers with metadata to Zotero via its API programmatically",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/zotero-scholar-guide",
+      "keywords": [
+        "zotero",
+        "reference manager",
+        "citation management",
+        "API",
+        "metadata",
+        "bibliography",
+        "paper organization"
+      ]
+    },
+    {
+      "name": "zotfile-attachment-guide",
+      "description": "Guide to ZotFile for Zotero attachment management, renaming, and syncing",
+      "category": "writing",
+      "subcategory": "citation",
+      "path": "skills/writing/citation/zotfile-attachment-guide",
+      "keywords": [
+        "zotero",
+        "zotfile",
+        "attachment",
+        "pdf-management",
+        "file-organization",
+        "sync"
+      ]
+    },
+    {
+      "name": "abstract-writing-guide",
+      "description": "Craft structured research abstracts that maximize clarity and journal acceptance",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/abstract-writing-guide",
+      "keywords": [
+        "abstract writing",
+        "summary writing",
+        "research abstract",
+        "paper title writing",
+        "structured abstract"
+      ]
+    },
+    {
+      "name": "discussion-writing-guide",
+      "description": "Write effective discussion sections that interpret results and impact",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/discussion-writing-guide",
+      "keywords": [
+        "discussion section",
+        "academic writing",
+        "results interpretation",
+        "paper structure",
+        "research implications"
+      ]
+    },
+    {
+      "name": "introduction-writing-guide",
+      "description": "Guide to writing effective research paper introductions",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/introduction-writing-guide",
+      "keywords": [
+        "introduction writing",
+        "research background",
+        "literature gap"
+      ]
+    },
+    {
+      "name": "literature-review-writing",
+      "description": "Structure and write comprehensive literature reviews for any field",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/literature-review-writing",
+      "keywords": [
+        "literature review",
+        "systematic review",
+        "narrative review",
+        "synthesis",
+        "academic writing",
+        "review paper"
+      ]
+    },
+    {
+      "name": "methods-section-guide",
+      "description": "Guide to writing clear and reproducible methodology sections",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/methods-section-guide",
+      "keywords": [
+        "methods writing",
+        "methodology section",
+        "reproducible methods"
+      ]
+    },
+    {
+      "name": "ml-paper-writing",
+      "description": "Write ML/AI research papers targeting NeurIPS, ICML, and ICLR venues",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/ml-paper-writing",
+      "keywords": [
+        "machine learning",
+        "NeurIPS",
+        "ICML",
+        "ICLR",
+        "AI paper",
+        "deep learning",
+        "conference paper"
+      ]
+    },
+    {
+      "name": "paper-debugger-guide",
+      "description": "Multi-agent system for academic writing review and improvement",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/paper-debugger-guide",
+      "keywords": []
+    },
+    {
+      "name": "response-to-reviewers",
+      "description": "Write effective point-by-point responses to peer reviewer comments for revisions",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/response-to-reviewers",
+      "keywords": [
+        "response to reviewers",
+        "revision letter",
+        "point-by-point response",
+        "cover letter writing",
+        "manuscript revision"
+      ]
+    },
+    {
+      "name": "scientific-writing-guide",
+      "description": "Curated tools and techniques for scientific writing beyond LaTeX",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/scientific-writing-guide",
+      "keywords": [
+        "academic writing style",
+        "scientific writing",
+        "formal English",
+        "paper title writing",
+        "abstract writing"
+      ]
+    },
+    {
+      "name": "scientific-writing-resources",
+      "description": "Curated tools and resources for effective scientific writing",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/scientific-writing-resources",
+      "keywords": []
+    },
+    {
+      "name": "scientific-writing-wrapper",
+      "description": "AI-powered scientific writing workflow from outline to polished draft",
+      "category": "writing",
+      "subcategory": "composition",
+      "path": "skills/writing/composition/scientific-writing-wrapper",
+      "keywords": [
+        "scientific writing",
+        "AI writing",
+        "draft generation",
+        "writing workflow",
+        "paper composition",
+        "manuscript"
+      ]
+    },
+    {
+      "name": "bibliography-management-guide",
+      "description": "Manage references with BibLaTeX, natbib, and LaTeX bibliography styles",
+      "category": "writing",
+      "subcategory": "latex",
+      "path": "skills/writing/latex/bibliography-management-guide",
+      "keywords": [
+        "BibLaTeX",
+        "natbib",
+        "bibliography",
+        "BibTeX",
+        "citation styles",
+        "reference management"
+      ]
+    },
+    {
+      "name": "latex-drawing-collection",
+      "description": "LaTeX drawing examples for Bayesian networks, tensors, and diagrams",
+      "category": "writing",
+      "subcategory": "latex",
+      "path": "skills/writing/latex/latex-drawing-collection",
+      "keywords": []
+    },
+    {
+      "name": "latex-drawing-guide",
+      "description": "TikZ and PGFPlots techniques for publication-quality scientific figures",
+      "category": "writing",
+      "subcategory": "latex",
+      "path": "skills/writing/latex/latex-drawing-guide",
+      "keywords": [
+        "LaTeX typesetting",
+        "LaTeX figure insertion",
+        "LaTeX custom style",
+        "scientific figure creation"
+      ]
+    },
+    {
+      "name": "latex-ecosystem-guide",
+      "description": "Comprehensive guide to LaTeX editors, packages, and typesetting workflows",
+      "category": "writing",
+      "subcategory": "latex",
+      "path": "skills/writing/latex/latex-ecosystem-guide",
+      "keywords": [
+        "LaTeX typesetting",
+        "LaTeX template",
+        "LaTeX package management",
+        "online LaTeX editor"
+      ]
+    },
+    {
+      "name": "latex-templates-collection",
+      "description": "Collection of LaTeX templates for papers, presentations, and CVs",
+      "category": "writing",
+      "subcategory": "latex",
+      "path": "skills/writing/latex/latex-templates-collection",
+      "keywords": []
+    },
+    {
+      "name": "math-typesetting-guide",
+      "description": "LaTeX math typesetting, equation formatting, and cross-referencing",
+      "category": "writing",
+      "subcategory": "latex",
+      "path": "skills/writing/latex/math-typesetting-guide",
+      "keywords": [
+        "LaTeX math typesetting",
+        "equation formatting",
+        "mathematical notation",
+        "cross-reference"
+      ]
+    },
+    {
+      "name": "md-to-pdf-academic",
+      "description": "Convert Markdown to publication-quality PDF with LaTeX math rendering",
+      "category": "writing",
+      "subcategory": "latex",
+      "path": "skills/writing/latex/md-to-pdf-academic",
+      "keywords": [
+        "markdown",
+        "PDF",
+        "pandoc",
+        "LaTeX rendering",
+        "document conversion",
+        "academic formatting"
+      ]
+    },
+    {
+      "name": "overleaf-collaboration-guide",
+      "description": "Guide to collaborative LaTeX editing with Overleaf",
+      "category": "writing",
+      "subcategory": "latex",
+      "path": "skills/writing/latex/overleaf-collaboration-guide",
+      "keywords": [
+        "online LaTeX editor",
+        "collaborative LaTeX",
+        "Overleaf",
+        "LaTeX environment setup"
+      ]
+    },
+    {
+      "name": "tex-render-guide",
+      "description": "Render LaTeX math expressions to images in PNG, JPEG, and SVG",
+      "category": "writing",
+      "subcategory": "latex",
+      "path": "skills/writing/latex/tex-render-guide",
+      "keywords": [
+        "LaTeX rendering",
+        "math images",
+        "equation rendering",
+        "SVG math",
+        "KaTeX",
+        "MathJax"
+      ]
+    },
+    {
+      "name": "tikz-diagrams-guide",
+      "description": "Create publication-quality scientific diagrams with TikZ in LaTeX",
+      "category": "writing",
+      "subcategory": "latex",
+      "path": "skills/writing/latex/tikz-diagrams-guide",
+      "keywords": [
+        "TikZ",
+        "LaTeX diagrams",
+        "scientific figures",
+        "flowcharts",
+        "PGFplots",
+        "vector graphics"
+      ]
+    },
+    {
+      "name": "academic-tone-guide",
+      "description": "Adjust writing tone and register for academic audiences and venues",
+      "category": "writing",
+      "subcategory": "polish",
+      "path": "skills/writing/polish/academic-tone-guide",
+      "keywords": [
+        "academic tone",
+        "register",
+        "formal writing",
+        "scholarly voice",
+        "hedging",
+        "disciplinary conventions"
+      ]
+    },
+    {
+      "name": "academic-translation-guide",
+      "description": "Academic translation, post-editing, and Chinglish correction guide",
+      "category": "writing",
+      "subcategory": "polish",
+      "path": "skills/writing/polish/academic-translation-guide",
+      "keywords": [
+        "academic translation",
+        "machine translation",
+        "post-editing",
+        "Chinglish correction"
+      ]
+    },
+    {
+      "name": "academic-writing-refiner",
+      "description": "Checklist-driven academic English polishing and Chinglish correction",
+      "category": "writing",
+      "subcategory": "polish",
+      "path": "skills/writing/polish/academic-writing-refiner",
+      "keywords": [
+        "academic English grammar check",
+        "readability improvement",
+        "academic writing style",
+        "Chinglish correction"
+      ]
+    },
+    {
+      "name": "ai-writing-humanizer",
+      "description": "Remove AI-generated patterns to produce natural, authentic academic writing",
+      "category": "writing",
+      "subcategory": "polish",
+      "path": "skills/writing/polish/ai-writing-humanizer",
+      "keywords": [
+        "humanize",
+        "AI pattern removal",
+        "natural writing",
+        "AI-assisted writing",
+        "writing style"
+      ]
+    },
+    {
+      "name": "conciseness-editing-guide",
+      "description": "Eliminate wordiness and redundancy in academic prose for clarity",
+      "category": "writing",
+      "subcategory": "polish",
+      "path": "skills/writing/polish/conciseness-editing-guide",
+      "keywords": [
+        "conciseness",
+        "wordiness",
+        "academic editing",
+        "prose clarity",
+        "redundancy",
+        "word count reduction"
+      ]
+    },
+    {
+      "name": "grammar-checker-guide",
+      "description": "Use grammar and style checking tools to polish academic manuscripts",
+      "category": "writing",
+      "subcategory": "polish",
+      "path": "skills/writing/polish/grammar-checker-guide",
+      "keywords": [
+        "grammar checker",
+        "academic style",
+        "proofreading",
+        "writing tools",
+        "language editing"
+      ]
+    },
+    {
+      "name": "paper-polish-guide",
+      "description": "Review and polish LaTeX research papers for clarity and style",
+      "category": "writing",
+      "subcategory": "polish",
+      "path": "skills/writing/polish/paper-polish-guide",
+      "keywords": [
+        "paper polishing",
+        "academic editing",
+        "LaTeX review",
+        "writing quality",
+        "style guide",
+        "proofreading"
+      ]
+    },
+    {
+      "name": "plagiarism-detection-guide",
+      "description": "Use plagiarism detection tools and ensure manuscript originality",
+      "category": "writing",
+      "subcategory": "polish",
+      "path": "skills/writing/polish/plagiarism-detection-guide",
+      "keywords": [
+        "plagiarism detection",
+        "originality check",
+        "Turnitin",
+        "iThenticate",
+        "self-plagiarism",
+        "text similarity"
+      ]
+    },
+    {
+      "name": "beamer-presentation-guide",
+      "description": "Guide to creating academic presentations with LaTeX Beamer",
+      "category": "writing",
+      "subcategory": "templates",
+      "path": "skills/writing/templates/beamer-presentation-guide",
+      "keywords": [
+        "Beamer presentation",
+        "LaTeX slides",
+        "conference paper template"
+      ]
+    },
+    {
+      "name": "conference-paper-template",
+      "description": "Templates and formatting guides for major academic conference submissions",
+      "category": "writing",
+      "subcategory": "templates",
+      "path": "skills/writing/templates/conference-paper-template",
+      "keywords": [
+        "conference paper template",
+        "proceedings format",
+        "camera-ready",
+        "journal formatting requirements",
+        "LaTeX template"
+      ]
+    },
+    {
+      "name": "graphical-abstract-guide",
+      "description": "Create SVG graphical abstracts for journal paper submissions",
+      "category": "writing",
+      "subcategory": "templates",
+      "path": "skills/writing/templates/graphical-abstract-guide",
+      "keywords": [
+        "graphical abstract",
+        "SVG",
+        "paper submission",
+        "visual summary",
+        "journal figure",
+        "scientific illustration"
+      ]
+    },
+    {
+      "name": "novathesis-guide",
+      "description": "LaTeX thesis template supporting multiple universities and formats",
+      "category": "writing",
+      "subcategory": "templates",
+      "path": "skills/writing/templates/novathesis-guide",
+      "keywords": []
+    },
+    {
+      "name": "scientific-article-pdf",
+      "description": "Generate publication-ready scientific article PDFs from templates",
+      "category": "writing",
+      "subcategory": "templates",
+      "path": "skills/writing/templates/scientific-article-pdf",
+      "keywords": [
+        "PDF generation",
+        "article template",
+        "publication-ready",
+        "journal format",
+        "LaTeX template",
+        "manuscript"
+      ]
+    },
+    {
+      "name": "sjtuthesis-guide",
+      "description": "Write SJTU theses using the SJTUThesis LaTeX template with full compliance",
+      "category": "writing",
+      "subcategory": "templates",
+      "path": "skills/writing/templates/sjtuthesis-guide",
+      "keywords": [
+        "latex",
+        "thesis",
+        "sjtu",
+        "template",
+        "academic-writing",
+        "shanghai-jiaotong"
+      ]
+    },
+    {
+      "name": "thesis-template-guide",
+      "description": "Set up LaTeX templates for PhD and Master's thesis documents",
+      "category": "writing",
+      "subcategory": "templates",
+      "path": "skills/writing/templates/thesis-template-guide",
+      "keywords": [
+        "thesis template",
+        "dissertation",
+        "LaTeX thesis",
+        "PhD writing",
+        "graduate thesis",
+        "document class"
+      ]
+    },
+    {
+      "name": "thesis-writing-guide",
+      "description": "Templates, formatting rules, and strategies for thesis and dissertation writing",
+      "category": "writing",
+      "subcategory": "templates",
+      "path": "skills/writing/templates/thesis-writing-guide",
+      "keywords": [
+        "thesis template",
+        "dissertation formatting",
+        "journal formatting requirements",
+        "page limit"
+      ]
+    },
+    {
+      "name": "thuthesis-guide",
+      "description": "Write Tsinghua University theses using the ThuThesis LaTeX template",
+      "category": "writing",
+      "subcategory": "templates",
+      "path": "skills/writing/templates/thuthesis-guide",
+      "keywords": [
+        "latex",
+        "thesis",
+        "tsinghua",
+        "template",
+        "academic-writing",
+        "typesetting"
+      ]
+    }
+  ],
+  "mcp_configs": [
+    {
+      "id": "ChatSpatial",
+      "name": "ChatSpatial",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/ChatSpatial.json"
+    },
+    {
+      "id": "academia-mcp",
+      "name": "Academia MCP",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/academia-mcp.json"
+    },
+    {
+      "id": "academic-paper-explorer",
+      "name": "Academic Paper Explorer",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/academic-paper-explorer.json"
+    },
+    {
+      "id": "academic-search-mcp-server",
+      "name": "Academic Paper Search",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/academic-search-mcp-server.json"
+    },
+    {
+      "id": "agentinterviews-mcp",
+      "name": "Agent Interviews",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/agentinterviews-mcp.json"
+    },
+    {
+      "id": "all-in-mcp",
+      "name": "All-in MCP",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/all-in-mcp.json"
+    },
+    {
+      "id": "apple-health-mcp",
+      "name": "Apple Health Data",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/apple-health-mcp.json"
+    },
+    {
+      "id": "arxiv-latex-mcp",
+      "name": "arXiv LaTeX Source",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/arxiv-latex-mcp.json"
+    },
+    {
+      "id": "arxiv-mcp-server",
+      "name": "arXiv Search",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/arxiv-mcp-server.json"
+    },
+    {
+      "id": "bgpt-mcp",
+      "name": "BGPT Paper Search",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/bgpt-mcp.json"
+    },
+    {
+      "id": "biomcp",
+      "name": "BioMCP",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/biomcp.json"
+    },
+    {
+      "id": "biothings-mcp",
+      "name": "BioThings API",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/biothings-mcp.json"
+    },
+    {
+      "id": "catalysishub-mcp-server",
+      "name": "Catalysis Hub",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/catalysishub-mcp-server.json"
+    },
+    {
+      "id": "clinicaltrialsgov-mcp-server",
+      "name": "ClinicalTrials.gov",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/clinicaltrialsgov-mcp-server.json"
+    },
+    {
+      "id": "deep-research-mcp",
+      "name": "Deep Research",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/deep-research-mcp.json"
+    },
+    {
+      "id": "dicom-mcp",
+      "name": "DICOM Medical Imaging",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/dicom-mcp.json"
+    },
+    {
+      "id": "enrichr-mcp-server",
+      "name": "Enrichr Gene Set Analysis",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/enrichr-mcp-server.json"
+    },
+    {
+      "id": "fec-mcp-server",
+      "name": "FEC Campaign Finance",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/fec-mcp-server.json"
+    },
+    {
+      "id": "fhir-mcp",
+      "name": "FHIR Healthcare API",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/fhir-mcp.json"
+    },
+    {
+      "id": "fhir-mcp-server-themomentum",
+      "name": "FHIR Patient History",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/fhir-mcp-server-themomentum.json"
+    },
+    {
+      "id": "gget-mcp",
+      "name": "gget Bioinformatics",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/gget-mcp.json"
+    },
+    {
+      "id": "google-researcher-mcp",
+      "name": "Google Researcher",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/google-researcher-mcp.json"
+    },
+    {
+      "id": "idea-reality-mcp",
+      "name": "Idea Reality Check",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/idea-reality-mcp.json"
+    },
+    {
+      "id": "legiscan-mcp",
+      "name": "LegiScan",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/legiscan-mcp.json"
+    },
+    {
+      "id": "lex",
+      "name": "Lex UK Legal API",
+      "category": "academic-db",
+      "path": "mcp-configs/academic-db/lex.json"
+    },
+    {
+      "id": "Adaptive-Graph-of-Thoughts-MCP-server",
+      "name": "Adaptive Graph of Thoughts MCP Server",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/Adaptive-Graph-of-Thoughts-MCP-server.json"
+    },
+    {
+      "id": "ai-counsel",
+      "name": "AI Counsel",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/ai-counsel.json"
+    },
+    {
+      "id": "atlas-mcp-server",
+      "name": "Atlas MCP Server",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/atlas-mcp-server.json"
+    },
+    {
+      "id": "counsel-mcp",
+      "name": "Counsel MCP",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/counsel-mcp.json"
+    },
+    {
+      "id": "cross-llm-mcp",
+      "name": "Cross-LLM MCP",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/cross-llm-mcp.json"
+    },
+    {
+      "id": "gptr-mcp",
+      "name": "GPTR MCP",
+      "category": "ai-platform",
+      "path": "mcp-configs/ai-platform/gptr-mcp.json"
+    },
+    {
+      "id": "decipher-research-agent",
+      "name": "Decipher Research Agent",
+      "category": "browser",
+      "path": "mcp-configs/browser/decipher-research-agent.json"
+    },
+    {
+      "id": "deep-research",
+      "name": "Deep Research",
+      "category": "browser",
+      "path": "mcp-configs/browser/deep-research.json"
+    },
+    {
+      "id": "everything-claude-code",
+      "name": "Everything Claude Code",
+      "category": "browser",
+      "path": "mcp-configs/browser/everything-claude-code.json"
+    },
+    {
+      "id": "gpt-researcher",
+      "name": "GPT Researcher",
+      "category": "browser",
+      "path": "mcp-configs/browser/gpt-researcher.json"
+    },
+    {
+      "id": "heurist-agent-framework",
+      "name": "Heurist Agent Framework",
+      "category": "browser",
+      "path": "mcp-configs/browser/heurist-agent-framework.json"
+    },
+    {
+      "id": "confluence-mcp",
+      "name": "Confluence MCP",
+      "category": "cloud-docs",
+      "path": "mcp-configs/cloud-docs/confluence-mcp.json"
+    },
+    {
+      "id": "google-drive-mcp",
+      "name": "Google Drive MCP",
+      "category": "cloud-docs",
+      "path": "mcp-configs/cloud-docs/google-drive-mcp.json"
+    },
+    {
+      "id": "notion-mcp",
+      "name": "Notion MCP",
+      "category": "cloud-docs",
+      "path": "mcp-configs/cloud-docs/notion-mcp.json"
+    },
+    {
+      "id": "discord-mcp",
+      "name": "Discord MCP",
+      "category": "communication",
+      "path": "mcp-configs/communication/discord-mcp.json"
+    },
+    {
+      "id": "slack-mcp",
+      "name": "Slack MCP",
+      "category": "communication",
+      "path": "mcp-configs/communication/slack-mcp.json"
+    },
+    {
+      "id": "telegram-mcp",
+      "name": "Telegram MCP",
+      "category": "communication",
+      "path": "mcp-configs/communication/telegram-mcp.json"
+    },
+    {
+      "id": "4everland-hosting-mcp",
+      "name": "4EVERLAND Hosting MCP",
+      "category": "data-platform",
+      "path": "mcp-configs/data-platform/4everland-hosting-mcp.json"
+    },
+    {
+      "id": "context-keeper",
+      "name": "Context Keeper",
+      "category": "data-platform",
+      "path": "mcp-configs/data-platform/context-keeper.json"
+    },
+    {
+      "id": "context7",
+      "name": "Context7",
+      "category": "data-platform",
+      "path": "mcp-configs/data-platform/context7.json"
+    },
+    {
+      "id": "contextstream-mcp",
+      "name": "ContextStream MCP",
+      "category": "data-platform",
+      "path": "mcp-configs/data-platform/contextstream-mcp.json"
+    },
+    {
+      "id": "email-mcp",
+      "name": "Email MCP",
+      "category": "data-platform",
+      "path": "mcp-configs/data-platform/email-mcp.json"
+    },
+    {
+      "id": "neo4j-mcp",
+      "name": "Neo4j MCP",
+      "category": "database",
+      "path": "mcp-configs/database/neo4j-mcp.json"
+    },
+    {
+      "id": "postgres-mcp",
+      "name": "PostgreSQL MCP",
+      "category": "database",
+      "path": "mcp-configs/database/postgres-mcp.json"
+    },
+    {
+      "id": "sqlite-mcp",
+      "name": "SQLite MCP",
+      "category": "database",
+      "path": "mcp-configs/database/sqlite-mcp.json"
+    },
+    {
+      "id": "github-mcp",
+      "name": "GitHub MCP",
+      "category": "dev-platform",
+      "path": "mcp-configs/dev-platform/github-mcp.json"
+    },
+    {
+      "id": "gitlab-mcp",
+      "name": "GitLab MCP",
+      "category": "dev-platform",
+      "path": "mcp-configs/dev-platform/gitlab-mcp.json"
+    },
+    {
+      "id": "email-mcp",
+      "name": "Email MCP",
+      "category": "email",
+      "path": "mcp-configs/email/email-mcp.json"
+    },
+    {
+      "id": "gmail-mcp",
+      "name": "Gmail MCP",
+      "category": "email",
+      "path": "mcp-configs/email/gmail-mcp.json"
+    },
+    {
+      "id": "ApeRAG",
+      "name": "ApeRAG",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/ApeRAG.json"
+    },
+    {
+      "id": "In-Memoria",
+      "name": "In Memoria",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/In-Memoria.json"
+    },
+    {
+      "id": "agent-memory",
+      "name": "Agent Memory",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/agent-memory.json"
+    },
+    {
+      "id": "aimemo",
+      "name": "AIMemo",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/aimemo.json"
+    },
+    {
+      "id": "biel-mcp",
+      "name": "Biel MCP",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/biel-mcp.json"
+    },
+    {
+      "id": "cognee",
+      "name": "Cognee",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/cognee.json"
+    },
+    {
+      "id": "context-awesome",
+      "name": "Context Awesome",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/context-awesome.json"
+    },
+    {
+      "id": "context-mcp",
+      "name": "Context MCP",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/context-mcp.json"
+    },
+    {
+      "id": "conversation-handoff-mcp",
+      "name": "Conversation Handoff MCP",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/conversation-handoff-mcp.json"
+    },
+    {
+      "id": "cortex",
+      "name": "Cortex",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/cortex.json"
+    },
+    {
+      "id": "devrag",
+      "name": "DevRAG",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/devrag.json"
+    },
+    {
+      "id": "easy-obsidian-mcp",
+      "name": "Easy Obsidian MCP",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/easy-obsidian-mcp.json"
+    },
+    {
+      "id": "engram",
+      "name": "Engram",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/engram.json"
+    },
+    {
+      "id": "gnosis-mcp",
+      "name": "Gnosis MCP",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/gnosis-mcp.json"
+    },
+    {
+      "id": "graphlit-mcp-server",
+      "name": "Graphlit MCP Server",
+      "category": "note-knowledge",
+      "path": "mcp-configs/note-knowledge/graphlit-mcp-server.json"
+    },
+    {
+      "id": "arxiv-cli",
+      "name": "arXiv CLI",
+      "category": "reference-mgr",
+      "path": "mcp-configs/reference-mgr/arxiv-cli.json"
+    },
+    {
+      "id": "arxiv-search-mcp",
+      "name": "arXiv Search MCP",
+      "category": "reference-mgr",
+      "path": "mcp-configs/reference-mgr/arxiv-search-mcp.json"
+    },
+    {
+      "id": "chiken",
+      "name": "Chiken",
+      "category": "reference-mgr",
+      "path": "mcp-configs/reference-mgr/chiken.json"
+    },
+    {
+      "id": "claude-scholar",
+      "name": "Claude Scholar",
+      "category": "reference-mgr",
+      "path": "mcp-configs/reference-mgr/claude-scholar.json"
+    },
+    {
+      "id": "devonthink-mcp",
+      "name": "DEVONthink MCP",
+      "category": "reference-mgr",
+      "path": "mcp-configs/reference-mgr/devonthink-mcp.json"
+    },
+    {
+      "id": "dataverse-mcp",
+      "name": "Dataverse MCP",
+      "category": "repository",
+      "path": "mcp-configs/repository/dataverse-mcp.json"
+    },
+    {
+      "id": "huggingface-mcp",
+      "name": "Hugging Face MCP",
+      "category": "repository",
+      "path": "mcp-configs/repository/huggingface-mcp.json"
+    }
+  ]
+}
