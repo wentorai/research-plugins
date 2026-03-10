@@ -1,7 +1,8 @@
 # Writing — Curated Skills
 
 
-> 57 recommended skills for academic writing, citation management, and document preparation.
+> 68 recommended skills for academic writing, citation management, and document preparation.
+
 
 
 ## Citation
@@ -10,12 +11,16 @@
 | Skill | Description |
 |-------|-------------|
 | [academic-citation-manager](../../skills/writing/citation/academic-citation-manager/) | Manage academic citations across BibTeX, APA, MLA, and Chicago formats |
+| [academic-citation-manager-guide](../../skills/writing/citation/academic-citation-manager-guide/) | Comparison and workflow guide for academic citation management tools |
 | [bibtex-management-guide](../../skills/writing/citation/bibtex-management-guide/) | Clean, format, deduplicate, and manage BibTeX bibliography files for LaTeX |
+| [citation-assistant-skill](../../skills/writing/citation/citation-assistant-skill/) | Claude Code skill for citation workflow via Semantic Scholar |
 | [citation-style-guide](../../skills/writing/citation/citation-style-guide/) | APA, MLA, Chicago citation format guide with CSL configuration |
 | [jabref-reference-guide](../../skills/writing/citation/jabref-reference-guide/) | Guide to JabRef open-source BibTeX and BibLaTeX reference manager |
 | [jasminum-zotero-guide](../../skills/writing/citation/jasminum-zotero-guide/) | Guide to Jasminum for retrieving CNKI Chinese academic metadata in Zotero |
+| [mendeley-api](../../skills/writing/citation/mendeley-api/) | Manage references and search Mendeley's catalog via REST API |
 | [obsidian-citation-guide](../../skills/writing/citation/obsidian-citation-guide/) | Citation plugin for Obsidian note-taking with BibTeX support |
 | [obsidian-zotero-guide](../../skills/writing/citation/obsidian-zotero-guide/) | Insert citations and notes from Zotero into Obsidian knowledge bases |
+| [onecite-reference-guide](../../skills/writing/citation/onecite-reference-guide/) | AI toolkit to parse, complete, and format academic references |
 | [papersgpt-zotero-guide](../../skills/writing/citation/papersgpt-zotero-guide/) | AI plugin for Zotero with ChatGPT, Claude, and DeepSeek support |
 | [papis-cli-guide](../../skills/writing/citation/papis-cli-guide/) | Guide to Papis command-line document and bibliography manager for researchers |
 | [reference-manager-comparison](../../skills/writing/citation/reference-manager-comparison/) | Compare Zotero, Mendeley, EndNote, and Paperpile for research use |
@@ -41,7 +46,10 @@
 | [literature-review-writing](../../skills/writing/composition/literature-review-writing/) | Structure and write comprehensive literature reviews for any field |
 | [methods-section-guide](../../skills/writing/composition/methods-section-guide/) | Guide to writing clear and reproducible methodology sections |
 | [ml-paper-writing](../../skills/writing/composition/ml-paper-writing/) | Write ML/AI research papers targeting NeurIPS, ICML, and ICLR venues |
+| [opendraft-thesis-guide](../../skills/writing/composition/opendraft-thesis-guide/) | AI thesis writer with specialized agents and verified citations |
 | [paper-debugger-guide](../../skills/writing/composition/paper-debugger-guide/) | Multi-agent system for academic writing review and improvement |
+| [paperforge-guide](../../skills/writing/composition/paperforge-guide/) | AI-assisted academic paper drafting and structuring tool |
+| [research-paper-writer](../../skills/writing/composition/research-paper-writer/) | Guide for writing formal academic papers following IEEE and ACM standards |
 | [response-to-reviewers](../../skills/writing/composition/response-to-reviewers/) | Write effective point-by-point responses to peer reviewer comments for revisions |
 | [scientific-writing-guide](../../skills/writing/composition/scientific-writing-guide/) | Curated tools and techniques for scientific writing beyond LaTeX |
 | [scientific-writing-resources](../../skills/writing/composition/scientific-writing-resources/) | Curated tools and resources for effective scientific writing |
@@ -53,6 +61,7 @@
 
 | Skill | Description |
 |-------|-------------|
+| [academic-writing-latex](../../skills/writing/latex/academic-writing-latex/) | LaTeX-based academic writing assistant for thesis and paper templates |
 | [bibliography-management-guide](../../skills/writing/latex/bibliography-management-guide/) | Manage references with BibLaTeX, natbib, and LaTeX bibliography styles |
 | [latex-drawing-collection](../../skills/writing/latex/latex-drawing-collection/) | LaTeX drawing examples for Bayesian networks, tensors, and diagrams |
 | [latex-drawing-guide](../../skills/writing/latex/latex-drawing-guide/) | TikZ and PGFPlots techniques for publication-quality scientific figures |
@@ -74,6 +83,7 @@
 | [academic-translation-guide](../../skills/writing/polish/academic-translation-guide/) | Academic translation, post-editing, and Chinglish correction guide |
 | [academic-writing-refiner](../../skills/writing/polish/academic-writing-refiner/) | Checklist-driven academic English polishing and Chinglish correction |
 | [ai-writing-humanizer](../../skills/writing/polish/ai-writing-humanizer/) | Remove AI-generated patterns to produce natural, authentic academic writing |
+| [chinese-text-humanizer](../../skills/writing/polish/chinese-text-humanizer/) | Transform AI-generated Chinese text into natural academic writing style |
 | [conciseness-editing-guide](../../skills/writing/polish/conciseness-editing-guide/) | Eliminate wordiness and redundancy in academic prose for clarity |
 | [grammar-checker-guide](../../skills/writing/polish/grammar-checker-guide/) | Use grammar and style checking tools to polish academic manuscripts |
 | [paper-polish-guide](../../skills/writing/polish/paper-polish-guide/) | Review and polish LaTeX research papers for clarity and style |
@@ -85,8 +95,10 @@
 
 | Skill | Description |
 |-------|-------------|
+| [arxiv-preprint-template](../../skills/writing/templates/arxiv-preprint-template/) | LaTeX template for arXiv preprints in NIPS/NeurIPS style format |
 | [beamer-presentation-guide](../../skills/writing/templates/beamer-presentation-guide/) | Guide to creating academic presentations with LaTeX Beamer |
 | [conference-paper-template](../../skills/writing/templates/conference-paper-template/) | Templates and formatting guides for major academic conference submissions |
+| [elegant-paper-template](../../skills/writing/templates/elegant-paper-template/) | Beautiful LaTeX template for working papers and technical reports |
 | [graphical-abstract-guide](../../skills/writing/templates/graphical-abstract-guide/) | Create SVG graphical abstracts for journal paper submissions |
 | [novathesis-guide](../../skills/writing/templates/novathesis-guide/) | LaTeX thesis template supporting multiple universities and formats |
 | [scientific-article-pdf](../../skills/writing/templates/scientific-article-pdf/) | Generate publication-ready scientific article PDFs from templates |

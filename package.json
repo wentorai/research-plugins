@@ -2,7 +2,7 @@
   "name": "@wentorai/research-plugins",
   "version": "1.1.0",
   "type": "module",
-  "description": "407 academic research skills, 76 MCP configs, and 13 agent tools for Research-Claw and AI agents",
+  "description": "487 academic research skills, 150 MCP configs, and 13 agent tools for Research-Claw and AI agents",
   "keywords": [
     "agent-skills",
     "claude",
