@@ -1,6 +1,6 @@
 {
-  "id": "email-mcp",
-  "name": "Email MCP",
+  "id": "imap-smtp-mcp",
+  "name": "IMAP/SMTP Email MCP",
   "description": "Universal IMAP/SMTP email server — connect to any email provider via standard protocols for reading, searching, and sending emails.",
   "category": "email",
   "install": {

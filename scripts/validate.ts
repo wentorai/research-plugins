@@ -480,15 +480,53 @@ function main() {
   let allErrors: ValidationError[] = [];
 
   // Validate skills
+  const skillNames = new Map<string, string>(); // name → first file path
   for (const file of skillFiles) {
     const errors = validateSkill(file, rootDir);
     allErrors.push(...errors);
+
+    // Collect names for cross-file duplicate check
+    const content = readFileSync(file, "utf-8");
+    const { meta } = parseFrontmatter(content);
+    if (meta && typeof meta.name === "string") {
+      const rel = relative(rootDir, file);
+      const existing = skillNames.get(meta.name);
+      if (existing) {
+        allErrors.push({
+          file: rel,
+          check: "unique-name",
+          message: `Duplicate skill name "${meta.name}" (also in ${existing})`,
+        });
+      } else {
+        skillNames.set(meta.name, rel);
+      }
+    }
   }
 
   // Validate MCP configs
+  const mcpIds = new Map<string, string>();
   for (const file of mcpFiles) {
     const errors = validateMcpConfig(file, rootDir);
     allErrors.push(...errors);
+
+    // Cross-file duplicate id check
+    try {
+      const content = readFileSync(file, "utf-8");
+      const config = JSON.parse(content);
+      if (typeof config.id === "string") {
+        const rel = relative(rootDir, file);
+        const existing = mcpIds.get(config.id);
+        if (existing) {
+          allErrors.push({
+            file: rel,
+            check: "unique-id",
+            message: `Duplicate MCP id "${config.id}" (also in ${existing})`,
+          });
+        } else {
+          mcpIds.set(config.id, rel);
+        }
+      }
+    } catch { /* parse errors already caught by validateMcpConfig */ }
   }
 
   // Report

@@ -5225,16 +5225,16 @@
       "path": "mcp-configs/dev-platform/gitlab-mcp.json"
     },
     {
-      "id": "email-mcp",
-      "name": "Email MCP",
-      "category": "email",
-      "path": "mcp-configs/email/email-mcp.json"
-    },
-    {
       "id": "gmail-mcp",
       "name": "Gmail MCP",
       "category": "email",
       "path": "mcp-configs/email/gmail-mcp.json"
+    },
+    {
+      "id": "imap-smtp-mcp",
+      "name": "IMAP/SMTP Email MCP",
+      "category": "email",
+      "path": "mcp-configs/email/email-mcp.json"
     },
     {
       "id": "ApeRAG",
