@@ -1,84 +1,295 @@
 #!/usr/bin/env node
 
 /**
- * catalog.ts — Generate catalog.json from skills/, mcp-configs/, curated/
+ * catalog.ts — Generate catalog.json with unified `items[]` array.
  *
- * Run: node scripts/catalog.ts
+ * Collects all 4 artifact types:
+ *   - skill      → skills/{cat}/{subcat}/{name}/SKILL.md  (YAML frontmatter)
+ *   - mcp_config → mcp-configs/{cat}/{id}.json
+ *   - curated    → curated/{cat}/README.md
+ *   - agent_tool → parsed from index.ts registerTool() calls
+ *
+ * Run: node --experimental-strip-types scripts/catalog.ts
  */
 
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { join, relative, sep } from "node:path";
+import { readFileSync, readdirSync, writeFileSync, statSync } from "node:fs";
+import { join, relative, basename, dirname } from "node:path";
 
-interface SkillEntry {
+/* ---- Types ---- */
+
+interface CatalogItem {
+  id: string;
+  type: "skill" | "mcp_config" | "curated" | "agent_tool";
   name: string;
   description: string;
   category: string;
   subcategory: string;
   keywords: string[];
   path: string;
+  source: string;
+  tools?: string[];          // mcp_config / agent_tool: registered tool names
+  install?: unknown;         // mcp_config: install instructions
 }
 
-function collectFiles(dir: string, ext: string): string[] {
+/* ---- Helpers ---- */
+
+function collectFiles(dir: string, match: (name: string) => boolean): string[] {
   const files: string[] = [];
   try {
-    const entries = readdirSync(dir, { withFileTypes: true });
-    for (const entry of entries) {
-      const fullPath = join(dir, entry.name);
-      if (entry.isDirectory()) {
-        files.push(...collectFiles(fullPath, ext));
-      } else if (entry.name.endsWith(ext)) {
-        files.push(fullPath);
-      }
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      const full = join(dir, entry.name);
+      if (entry.isDirectory()) files.push(...collectFiles(full, match));
+      else if (match(entry.name)) files.push(full);
     }
-  } catch {
-    // ignore
-  }
+  } catch { /* dir doesn't exist */ }
   return files;
 }
 
-function parseFrontmatter(content: string): Record<string, unknown> | null {
-  const match = content.match(/^---\n([\s\S]*?)\n---/);
-  if (!match) return null;
-  // Reuse simple YAML parser from validate.ts
-  // For catalog, we only need top-level fields
-  try {
-    const lines = match[1].split("\n");
-    const result: Record<string, unknown> = {};
-    // Simplified: just extract name and description
-    for (const line of lines) {
-      const m = line.match(/^(\w+):\s*"?(.+?)"?\s*$/);
-      if (m) result[m[1]] = m[2];
+/**
+ * Parse SKILL.md YAML frontmatter.
+ * Handles the nested `metadata.openclaw` structure.
+ */
+function parseSkillFrontmatter(content: string): Record<string, unknown> | null {
+  const m = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!m) return null;
+
+  const result: Record<string, unknown> = {};
+  let inOpenclaw = false;
+  let inKeywords = false;
+  const keywords: string[] = [];
+
+  for (const raw of m[1].split("\n")) {
+    const line = raw.trimEnd();
+
+    // Top-level scalar fields: name, description
+    const top = line.match(/^(\w+):\s*"?(.+?)"?\s*$/);
+    if (top && !inOpenclaw) {
+      result[top[1]] = top[2];
+      continue;
     }
-    return result;
-  } catch {
-    return null;
+
+    if (line.trim() === "openclaw:") { inOpenclaw = true; continue; }
+    if (line.trim() === "metadata:") continue;
+
+    if (inOpenclaw) {
+      // keywords array (inline or multi-line)
+      if (line.match(/^\s+keywords:\s*\[/)) {
+        const inline = line.match(/\[([^\]]*)\]/);
+        if (inline) {
+          for (const k of inline[1].split(",")) {
+            const cleaned = k.trim().replace(/^["']|["']$/g, "");
+            if (cleaned) keywords.push(cleaned);
+          }
+        } else {
+          inKeywords = true;
+        }
+        continue;
+      }
+      if (inKeywords) {
+        if (line.match(/^\s+-\s/)) {
+          keywords.push(line.replace(/^\s+-\s*"?/, "").replace(/"?\s*$/, ""));
+          continue;
+        }
+        if (line.match(/\]/)) { inKeywords = false; continue; }
+      }
+      // Scalar fields inside openclaw
+      const nested = line.match(/^\s+(\w+):\s*"?(.+?)"?\s*$/);
+      if (nested) {
+        result[nested[1]] = nested[2];
+      }
+    }
   }
+
+  if (keywords.length > 0) result.keywords = keywords;
+  return result;
 }
+
+/* ---- Collectors ---- */
+
+function collectSkills(rootDir: string): CatalogItem[] {
+  const files = collectFiles(join(rootDir, "skills"), (n) => n === "SKILL.md");
+  const items: CatalogItem[] = [];
+
+  for (const f of files) {
+    const content = readFileSync(f, "utf-8");
+    const fm = parseSkillFrontmatter(content);
+    if (!fm) continue;
+
+    const relPath = relative(rootDir, dirname(f));  // skills/analysis/dataviz/name
+    const parts = relPath.split("/");               // ["skills","analysis","dataviz","name"]
+
+    items.push({
+      id: (fm.name as string) || basename(dirname(f)),
+      type: "skill",
+      name: (fm.name as string) || basename(dirname(f)),
+      description: (fm.description as string) || "",
+      category: (fm.category as string) || parts[1] || "",
+      subcategory: (fm.subcategory as string) || parts[2] || "",
+      keywords: (fm.keywords as string[]) || [],
+      path: relPath,
+      source: (fm.source as string) || "",
+    });
+  }
+
+  return items;
+}
+
+function collectMcpConfigs(rootDir: string): CatalogItem[] {
+  const files = collectFiles(
+    join(rootDir, "mcp-configs"),
+    (n) => n.endsWith(".json") && n !== "registry.json",
+  );
+  const items: CatalogItem[] = [];
+
+  for (const f of files) {
+    try {
+      const data = JSON.parse(readFileSync(f, "utf-8"));
+      const relPath = relative(rootDir, f);            // mcp-configs/academic-db/foo.json
+      const parts = relPath.split("/");                // ["mcp-configs","academic-db","foo.json"]
+
+      items.push({
+        id: data.id || basename(f, ".json"),
+        type: "mcp_config",
+        name: data.name || data.id || basename(f, ".json"),
+        description: data.description || "",
+        category: data.category || parts[1] || "integrations",
+        subcategory: data.category || parts[1] || "",   // MCP category IS the subcategory under integrations
+        keywords: [],
+        path: relPath,
+        source: data.source || "",
+        tools: data.tools,
+        install: data.install,
+      });
+    } catch { /* skip invalid JSON */ }
+  }
+
+  return items;
+}
+
+function collectCurated(rootDir: string): CatalogItem[] {
+  const files = collectFiles(join(rootDir, "curated"), (n) => n.endsWith(".md"));
+  const items: CatalogItem[] = [];
+
+  for (const f of files) {
+    const content = readFileSync(f, "utf-8");
+    const relPath = relative(rootDir, f);              // curated/analysis/README.md
+    const parts = relPath.split("/");                  // ["curated","analysis","README.md"]
+    const category = parts[1] || "";
+
+    // Extract title from first H1 line
+    const titleMatch = content.match(/^#\s+(.+)/m);
+    const title = titleMatch ? titleMatch[1].trim() : `${category} curated list`;
+
+    // Extract description from blockquote after title
+    const descMatch = content.match(/^>\s*(.+)/m);
+    const description = descMatch ? descMatch[1].trim() : "";
+
+    items.push({
+      id: `curated-${category}`,
+      type: "curated",
+      name: title,
+      description,
+      category,
+      subcategory: "",
+      keywords: [],
+      path: relPath,
+      source: "",
+    });
+  }
+
+  return items;
+}
+
+function collectAgentTools(rootDir: string): CatalogItem[] {
+  // Parse index.ts to extract registerTool calls with tool names
+  const indexPath = join(rootDir, "index.ts");
+  let indexContent: string;
+  try {
+    indexContent = readFileSync(indexPath, "utf-8");
+  } catch {
+    return [];
+  }
+
+  const items: CatalogItem[] = [];
+
+  // Match: import { createXxxTools } from "./src/tools/foo.js";
+  // Then:  api.registerTool(..., { names: ["a", "b"] });
+  const importMap = new Map<string, string>(); // factory name → source file
+  for (const m of indexContent.matchAll(
+    /import\s+\{\s*(\w+)\s*\}\s*from\s*"\.\/src\/tools\/(.+?)\.js"/g,
+  )) {
+    importMap.set(m[1], m[2]);
+  }
+
+  for (const m of indexContent.matchAll(
+    /(\w+)\(ctx.*?\),\s*\{\s*names:\s*\[([^\]]+)\]/g,
+  )) {
+    const factoryName = m[1];
+    const toolNames = m[2]
+      .split(",")
+      .map((s) => s.trim().replace(/['"]/g, ""))
+      .filter(Boolean);
+
+    const sourceFile = importMap.get(factoryName) || factoryName;
+    const srcPath = `src/tools/${sourceFile}.ts`;
+
+    // Read source file for description
+    let description = "";
+    try {
+      const src = readFileSync(join(rootDir, srcPath), "utf-8");
+      const descMatch = src.match(/\/\*\*\s*\n\s*\*\s*(.+)/);
+      if (descMatch) description = descMatch[1].trim();
+    } catch { /* skip */ }
+
+    items.push({
+      id: `agent-tool-${sourceFile}`,
+      type: "agent_tool",
+      name: sourceFile.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+      description: description || `Agent tools: ${toolNames.join(", ")}`,
+      category: "integrations",
+      subcategory: "academic-db",
+      keywords: toolNames,
+      path: srcPath,
+      source: `https://github.com/wentorai/research-plugins/blob/main/${srcPath}`,
+      tools: toolNames,
+    });
+  }
+
+  return items;
+}
+
+/* ---- Main ---- */
 
 function main() {
   const rootDir = join(import.meta.dirname ?? ".", "..");
-  const skillFiles = collectFiles(join(rootDir, "skills"), "SKILL.md");
-  const mcpFiles = collectFiles(join(rootDir, "mcp-configs"), ".json").filter(
-    (f) => !f.endsWith("registry.json"),
-  );
-  const curatedFiles = collectFiles(join(rootDir, "curated"), ".md");
+
+  const skills = collectSkills(rootDir);
+  const mcpConfigs = collectMcpConfigs(rootDir);
+  const curated = collectCurated(rootDir);
+  const agentTools = collectAgentTools(rootDir);
+
+  const items = [...skills, ...mcpConfigs, ...curated, ...agentTools];
 
   const catalog = {
-    version: "1.0.0",
-    generated: new Date().toISOString(),
-    counts: {
-      skills: skillFiles.length,
-      mcpConfigs: mcpFiles.length,
-      curated: curatedFiles.length,
+    version: "1.1.0",
+    generated: new Date().toISOString().slice(0, 10),
+    stats: {
+      skills: skills.length,
+      agent_tools: agentTools.reduce((n, t) => n + (t.tools?.length ?? 0), 0),
+      mcp_configs: mcpConfigs.length,
+      curated_lists: curated.length,
+      total: items.length,
     },
-    skills: skillFiles.map((f) => relative(rootDir, f)),
-    mcpConfigs: mcpFiles.map((f) => relative(rootDir, f)),
-    curated: curatedFiles.map((f) => relative(rootDir, f)),
+    items,
   };
 
   const outPath = join(rootDir, "catalog.json");
   writeFileSync(outPath, JSON.stringify(catalog, null, 2) + "\n");
-  console.log(`Wrote catalog.json: ${catalog.counts.skills} skills, ${catalog.counts.mcpConfigs} MCP configs, ${catalog.counts.curated} curated lists`);
+  console.log(
+    `catalog.json: ${skills.length} skills, ${mcpConfigs.length} MCPs, ` +
+    `${curated.length} curated, ${agentTools.length} agent tool groups ` +
+    `(${catalog.stats.agent_tools} tools) — ${items.length} total items`,
+  );
 }
 
 main();
