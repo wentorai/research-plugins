@@ -2,11 +2,11 @@
   "version": "1.1.0",
   "generated": "2026-03-10",
   "stats": {
-    "skills": 349,
+    "skills": 372,
     "agent_tools": 13,
     "mcp_configs": 76,
     "curated_lists": 6,
-    "total": 437
+    "total": 460
   },
   "items": [
     {
@@ -96,6 +96,24 @@
       ],
       "path": "skills/analysis/dataviz/d3-visualization-guide",
       "source": "https://github.com/d3/d3"
+    },
+    {
+      "id": "data-visualization-principles",
+      "type": "skill",
+      "name": "data-visualization-principles",
+      "description": "Design principles for creating effective and honest data visualizations",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "keywords": [
+        "data visualization",
+        "chart design",
+        "visual encoding",
+        "chart selection",
+        "color theory",
+        "publication figures"
+      ],
+      "path": "skills/analysis/dataviz/data-visualization-principles",
+      "source": "https://clawhub.ai/data-visualization"
     },
     {
       "id": "echarts-visualization-guide",
@@ -293,6 +311,24 @@
       "source": "https://github.com/py-why/EconML"
     },
     {
+      "id": "empirical-paper-analysis",
+      "type": "skill",
+      "name": "empirical-paper-analysis",
+      "description": "Systematic framework for analyzing empirical law and economics papers",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "keywords": [
+        "empirical analysis",
+        "law and economics",
+        "identification strategy",
+        "causal inference",
+        "robustness checks",
+        "research methodology"
+      ],
+      "path": "skills/analysis/econometrics/empirical-paper-analysis",
+      "source": "https://clawhub.ai/zhouziyue233/empirical-paper-analysis-skill"
+    },
+    {
       "id": "iv-regression-guide",
       "type": "skill",
       "name": "iv-regression-guide",
@@ -354,6 +390,24 @@
       ],
       "path": "skills/analysis/econometrics/panel-data-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "panel-data-regression-workflow",
+      "type": "skill",
+      "name": "panel-data-regression-workflow",
+      "description": "Reproducible panel data regression workflow in Python and Stata",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "keywords": [
+        "panel data",
+        "fixed effects",
+        "regression workflow",
+        "python econometrics",
+        "stata",
+        "reproducible research"
+      ],
+      "path": "skills/analysis/econometrics/panel-data-regression-workflow",
+      "source": "https://skillsmp.com/skills/panel-data-regression-analyst"
     },
     {
       "id": "python-causality-guide",
@@ -428,6 +482,25 @@
       "source": "https://www.stata.com"
     },
     {
+      "id": "stata-reference-guide",
+      "type": "skill",
+      "name": "stata-reference-guide",
+      "description": "Comprehensive Stata reference covering syntax, econometrics, and 20+ packages",
+      "category": "analysis",
+      "subcategory": "econometrics",
+      "keywords": [
+        "stata",
+        "econometrics",
+        "panel data",
+        "causal inference",
+        "community packages",
+        "data management",
+        "regression"
+      ],
+      "path": "skills/analysis/econometrics/stata-reference-guide",
+      "source": "https://github.com/dylantmoore/stata-skill"
+    },
+    {
       "id": "stata-regression",
       "type": "skill",
       "name": "stata-regression",
@@ -497,6 +570,24 @@
       ],
       "path": "skills/analysis/statistics/data-anomaly-detection",
       "source": "https://github.com/AcademicSkills/data-anomaly-detection"
+    },
+    {
+      "id": "general-statistics-guide",
+      "type": "skill",
+      "name": "general-statistics-guide",
+      "description": "Conceptual foundations of statistical inference for empirical research",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "keywords": [
+        "statistical inference",
+        "hypothesis testing",
+        "probability",
+        "regression",
+        "confidence intervals",
+        "statistical thinking"
+      ],
+      "path": "skills/analysis/statistics/general-statistics-guide",
+      "source": "https://clawhub.com/ivangdavila/statistics"
     },
     {
       "id": "hypothesis-testing-guide",
@@ -1740,6 +1831,24 @@
       "source": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api"
     },
     {
+      "id": "academic-study-methods",
+      "type": "skill",
+      "name": "academic-study-methods",
+      "description": "Evidence-based study techniques for academic learning and retention",
+      "category": "domains",
+      "subcategory": "education",
+      "keywords": [
+        "study methods",
+        "learning techniques",
+        "spaced repetition",
+        "active recall",
+        "academic performance",
+        "metacognition"
+      ],
+      "path": "skills/domains/education/academic-study-methods",
+      "source": "https://clawhub.ai/ivangdavila/studying"
+    },
+    {
       "id": "assessment-design-guide",
       "type": "skill",
       "name": "assessment-design-guide",
@@ -1827,6 +1936,24 @@
       ],
       "path": "skills/domains/education/mooc-analytics-guide",
       "source": "wentor"
+    },
+    {
+      "id": "akshare-finance-data",
+      "type": "skill",
+      "name": "akshare-finance-data",
+      "description": "Access Chinese and global financial data using the AkShare Python library",
+      "category": "domains",
+      "subcategory": "finance",
+      "keywords": [
+        "akshare",
+        "financial data",
+        "chinese stocks",
+        "market data",
+        "economic indicators",
+        "quantitative finance"
+      ],
+      "path": "skills/domains/finance/akshare-finance-data",
+      "source": "https://clawhub.ai/akshare/akshare-finance"
     },
     {
       "id": "financial-data-analysis",
@@ -2026,6 +2153,24 @@
       "source": "wentor"
     },
     {
+      "id": "digital-humanities-methods",
+      "type": "skill",
+      "name": "digital-humanities-methods",
+      "description": "Computational methods for humanities research with text and network analysis",
+      "category": "domains",
+      "subcategory": "humanities",
+      "keywords": [
+        "digital humanities",
+        "text analysis",
+        "corpus linguistics",
+        "network analysis",
+        "cultural analytics",
+        "computational methods"
+      ],
+      "path": "skills/domains/humanities/digital-humanities-methods",
+      "source": "https://clawhub.ai/digital-humanities"
+    },
+    {
       "id": "ethical-philosophy-guide",
       "type": "skill",
       "name": "ethical-philosophy-guide",
@@ -2147,6 +2292,24 @@
       ],
       "path": "skills/domains/law/legal-research-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "legal-research-methods",
+      "type": "skill",
+      "name": "legal-research-methods",
+      "description": "Systematic legal research methods for case law, statutes, and regulations",
+      "category": "domains",
+      "subcategory": "law",
+      "keywords": [
+        "legal research",
+        "case law",
+        "statute analysis",
+        "legal databases",
+        "regulatory analysis",
+        "legal methodology"
+      ],
+      "path": "skills/domains/law/legal-research-methods",
+      "source": "https://clawhub.ai/legal-research"
     },
     {
       "id": "patent-analysis-guide",
@@ -2519,6 +2682,24 @@
       "source": "https://github.com/scolladon/sociological-research-methods"
     },
     {
+      "id": "sociology-research-methods",
+      "type": "skill",
+      "name": "sociology-research-methods",
+      "description": "Sociological research methods from observation to quantitative analysis",
+      "category": "domains",
+      "subcategory": "social-science",
+      "keywords": [
+        "sociology",
+        "social research",
+        "qualitative methods",
+        "survey research",
+        "ethnography",
+        "social theory"
+      ],
+      "path": "skills/domains/social-science/sociology-research-methods",
+      "source": "https://clawhub.ai/ivangdavila/sociology"
+    },
+    {
       "id": "survey-research-guide",
       "type": "skill",
       "name": "survey-research-guide",
@@ -2535,6 +2716,24 @@
       ],
       "path": "skills/domains/social-science/survey-research-guide",
       "source": "wentor"
+    },
+    {
+      "id": "arxiv-paper-monitoring",
+      "type": "skill",
+      "name": "arxiv-paper-monitoring",
+      "description": "Set up automated monitoring for new arXiv papers in your research area",
+      "category": "literature",
+      "subcategory": "discovery",
+      "keywords": [
+        "arxiv monitoring",
+        "paper alerts",
+        "research tracking",
+        "new papers",
+        "literature monitoring",
+        "RSS feeds"
+      ],
+      "path": "skills/literature/discovery/arxiv-paper-monitoring",
+      "source": "https://clawhub.ai/arxiv-watcher"
     },
     {
       "id": "citation-alert-guide",
@@ -3083,6 +3282,42 @@
       "source": "https://github.com/sspaeti/arxiv-batch-search"
     },
     {
+      "id": "arxiv-cli-tools",
+      "type": "skill",
+      "name": "arxiv-cli-tools",
+      "description": "Command-line tools for searching and batch-downloading arXiv papers",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "arxiv",
+        "command line",
+        "paper download",
+        "preprint search",
+        "batch download",
+        "literature retrieval"
+      ],
+      "path": "skills/literature/search/arxiv-cli-tools",
+      "source": "https://pypi.org/project/arxiv-cli-tools/"
+    },
+    {
+      "id": "arxiv-osiris",
+      "type": "skill",
+      "name": "arxiv-osiris",
+      "description": "Search and download arXiv papers via Python and PowerShell scripts",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "arxiv",
+        "paper download",
+        "preprint search",
+        "python script",
+        "powershell",
+        "literature retrieval"
+      ],
+      "path": "skills/literature/search/arxiv-osiris",
+      "source": "https://clawhub.com/kostaskyq/arxiv-osiris"
+    },
+    {
       "id": "arxiv-paper-processor",
       "type": "skill",
       "name": "arxiv-paper-processor",
@@ -3280,6 +3515,24 @@
       ],
       "path": "skills/literature/search/mesh-terms-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "multi-database-literature-search",
+      "type": "skill",
+      "name": "multi-database-literature-search",
+      "description": "Conduct comprehensive literature searches across multiple academic databases",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "multi-database search",
+        "systematic review",
+        "literature search",
+        "academic databases",
+        "cross-database",
+        "search strategy"
+      ],
+      "path": "skills/literature/search/multi-database-literature-search",
+      "source": "https://clawhub.ai/jpjy/literature-search"
     },
     {
       "id": "openalex-api",
@@ -3648,6 +3901,24 @@
       ],
       "path": "skills/research/deep-research/gpt-researcher-guide",
       "source": "https://github.com/assafelovic/gpt-researcher"
+    },
+    {
+      "id": "in-depth-research-guide",
+      "type": "skill",
+      "name": "in-depth-research-guide",
+      "description": "Structured methodology for conducting exhaustive multi-source investigations",
+      "category": "research",
+      "subcategory": "deep-research",
+      "keywords": [
+        "deep research",
+        "systematic investigation",
+        "multi-source research",
+        "evidence synthesis",
+        "research methodology",
+        "source evaluation"
+      ],
+      "path": "skills/research/deep-research/in-depth-research-guide",
+      "source": "https://clawhub.ai/ivangdavila/in-depth-research"
     },
     {
       "id": "khoj-research-guide",
@@ -4177,6 +4448,24 @@
       "source": "https://github.com/AcademicSkills/paper-compare-guide"
     },
     {
+      "id": "paper-critique-framework",
+      "type": "skill",
+      "name": "paper-critique-framework",
+      "description": "Structured framework for writing peer review reports and paper critiques",
+      "category": "research",
+      "subcategory": "paper-review",
+      "keywords": [
+        "peer review",
+        "paper critique",
+        "referee report",
+        "academic review",
+        "manuscript evaluation",
+        "constructive feedback"
+      ],
+      "path": "skills/research/paper-review/paper-critique-framework",
+      "source": "https://clawhub.ai/peer-reviewer"
+    },
+    {
       "id": "paper-digest-guide",
       "type": "skill",
       "name": "paper-digest-guide",
@@ -4544,6 +4833,24 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "scientific-graphical-abstract",
+      "type": "skill",
+      "name": "scientific-graphical-abstract",
+      "description": "Design effective graphical abstracts and scientific figures for papers",
+      "category": "tools",
+      "subcategory": "diagram",
+      "keywords": [
+        "graphical abstract",
+        "scientific illustration",
+        "figure design",
+        "paper figures",
+        "visual abstract",
+        "publication graphics"
+      ],
+      "path": "skills/tools/diagram/scientific-graphical-abstract",
+      "source": "https://clawhub.ai/scientific-graphical-abstract"
+    },
+    {
       "id": "scientific-illustration-guide",
       "type": "skill",
       "name": "scientific-illustration-guide",
@@ -4662,6 +4969,24 @@
       ],
       "path": "skills/tools/document/markdown-academic-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "md2pdf-xelatex",
+      "type": "skill",
+      "name": "md2pdf-xelatex",
+      "description": "Convert Markdown to publication-ready PDF with LaTeX math and CJK support",
+      "category": "tools",
+      "subcategory": "document",
+      "keywords": [
+        "markdown to pdf",
+        "xelatex",
+        "document conversion",
+        "CJK support",
+        "math rendering",
+        "pandoc"
+      ],
+      "path": "skills/tools/document/md2pdf-xelatex",
+      "source": "https://clawhub.ai/huaruoji/md2pdf-xelatex"
     },
     {
       "id": "paper-parse-guide",
@@ -4853,6 +5178,24 @@
       ],
       "path": "skills/tools/ocr-translate/latex-ocr-guide",
       "source": "wentor"
+    },
+    {
+      "id": "math-equation-renderer",
+      "type": "skill",
+      "name": "math-equation-renderer",
+      "description": "Render LaTeX math equations as publication-ready PNG and SVG images",
+      "category": "tools",
+      "subcategory": "ocr-translate",
+      "keywords": [
+        "latex math",
+        "equation rendering",
+        "math images",
+        "formula to png",
+        "math typesetting",
+        "tex rendering"
+      ],
+      "path": "skills/tools/ocr-translate/math-equation-renderer",
+      "source": "https://clawhub.ai/huaruoji/math-images"
     },
     {
       "id": "multilingual-research-guide",
@@ -5055,6 +5398,24 @@
       ],
       "path": "skills/writing/citation/academic-citation-manager",
       "source": "https://github.com/wentor-ai/research-plugins"
+    },
+    {
+      "id": "academic-citation-manager-guide",
+      "type": "skill",
+      "name": "academic-citation-manager-guide",
+      "description": "Comparison and workflow guide for academic citation management tools",
+      "category": "writing",
+      "subcategory": "citation",
+      "keywords": [
+        "citation management",
+        "reference manager",
+        "zotero",
+        "mendeley",
+        "bibliography",
+        "bibtex"
+      ],
+      "path": "skills/writing/citation/academic-citation-manager-guide",
+      "source": "https://clawhub.com/YouStudyeveryday/academic-citation-manager"
     },
     {
       "id": "bibtex-management-guide",
@@ -5451,6 +5812,24 @@
       "source": "https://github.com/PaperDebugger/paperdebugger"
     },
     {
+      "id": "research-paper-writer",
+      "type": "skill",
+      "name": "research-paper-writer",
+      "description": "Guide for writing formal academic papers following IEEE and ACM standards",
+      "category": "writing",
+      "subcategory": "composition",
+      "keywords": [
+        "academic writing",
+        "IEEE format",
+        "ACM format",
+        "paper structure",
+        "manuscript preparation",
+        "citation formatting"
+      ],
+      "path": "skills/writing/composition/research-paper-writer",
+      "source": "https://clawhub.ai/Veeramanikandanr48/research-paper-writer"
+    },
+    {
       "id": "response-to-reviewers",
       "type": "skill",
       "name": "response-to-reviewers",
@@ -5512,6 +5891,24 @@
       ],
       "path": "skills/writing/composition/scientific-writing-wrapper",
       "source": "https://github.com/papercopilot/papercopilot"
+    },
+    {
+      "id": "academic-writing-latex",
+      "type": "skill",
+      "name": "academic-writing-latex",
+      "description": "LaTeX-based academic writing assistant for thesis and paper templates",
+      "category": "writing",
+      "subcategory": "latex",
+      "keywords": [
+        "latex",
+        "thesis writing",
+        "paper template",
+        "academic writing",
+        "document structure",
+        "overleaf"
+      ],
+      "path": "skills/writing/latex/academic-writing-latex",
+      "source": "https://clawhub.ai/dayunyan/academic-writer"
     },
     {
       "id": "bibliography-management-guide",
@@ -5737,6 +6134,24 @@
       ],
       "path": "skills/writing/polish/ai-writing-humanizer",
       "source": "wentor"
+    },
+    {
+      "id": "chinese-text-humanizer",
+      "type": "skill",
+      "name": "chinese-text-humanizer",
+      "description": "Transform AI-generated Chinese text into natural academic writing style",
+      "category": "writing",
+      "subcategory": "polish",
+      "keywords": [
+        "chinese writing",
+        "AI detection",
+        "text humanization",
+        "academic style",
+        "natural language",
+        "chinese academic"
+      ],
+      "path": "skills/writing/polish/chinese-text-humanizer",
+      "source": "https://clawhub.ai/anisafifi/chinese-humanizer"
     },
     {
       "id": "conciseness-editing-guide",
