@@ -2,11 +2,11 @@
   "version": "1.1.0",
   "generated": "2026-03-10",
   "stats": {
-    "skills": 427,
+    "skills": 487,
     "agent_tools": 13,
     "mcp_configs": 76,
     "curated_lists": 6,
-    "total": 515
+    "total": 575
   },
   "items": [
     {
@@ -62,6 +62,24 @@
       ],
       "path": "skills/analysis/dataviz/chart-image-generator",
       "source": "https://github.com/AcademicSkills/chart-image-generator"
+    },
+    {
+      "id": "citation-map-guide",
+      "type": "skill",
+      "name": "citation-map-guide",
+      "description": "Generate citation world maps from Google Scholar profiles",
+      "category": "analysis",
+      "subcategory": "dataviz",
+      "keywords": [
+        "citation map",
+        "Google Scholar",
+        "geospatial",
+        "academic impact",
+        "visualization",
+        "world map"
+      ],
+      "path": "skills/analysis/dataviz/citation-map-guide",
+      "source": "https://github.com/ChenLiu-1996/CitationMap"
     },
     {
       "id": "color-accessibility-guide",
@@ -608,6 +626,24 @@
       "source": "N/A"
     },
     {
+      "id": "infiagent-benchmark-guide",
+      "type": "skill",
+      "name": "infiagent-benchmark-guide",
+      "description": "Agent benchmark for data analysis evaluation (ICML 2024)",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "keywords": [
+        "InfiAgent",
+        "benchmark",
+        "data analysis",
+        "agent evaluation",
+        "ICML",
+        "DABench"
+      ],
+      "path": "skills/analysis/statistics/infiagent-benchmark-guide",
+      "source": "https://github.com/InfiAgent/InfiAgent"
+    },
+    {
       "id": "meta-analysis-guide",
       "type": "skill",
       "name": "meta-analysis-guide",
@@ -766,6 +802,24 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "claude-data-analysis-guide",
+      "type": "skill",
+      "name": "claude-data-analysis-guide",
+      "description": "Claude Code-based conversational data analysis agent",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "keywords": [
+        "Claude Code",
+        "data analysis",
+        "conversational",
+        "pandas",
+        "visualization",
+        "interactive"
+      ],
+      "path": "skills/analysis/wrangling/claude-data-analysis-guide",
+      "source": "https://github.com/liangdabiao/claude-data-analysis"
+    },
+    {
       "id": "csv-data-analyzer",
       "type": "skill",
       "name": "csv-data-analyzer",
@@ -906,6 +960,24 @@
       "source": "https://www.stata.com/manuals/d.pdf"
     },
     {
+      "id": "streamline-analyst-guide",
+      "type": "skill",
+      "name": "streamline-analyst-guide",
+      "description": "End-to-end data analysis AI agent with Streamlit UI",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "keywords": [
+        "data analysis",
+        "Streamlit",
+        "automated EDA",
+        "machine learning",
+        "data science",
+        "AI analyst"
+      ],
+      "path": "skills/analysis/wrangling/streamline-analyst-guide",
+      "source": "https://github.com/Wilson-ZheLin/Streamline-Analyst"
+    },
+    {
       "id": "survey-data-processing",
       "type": "skill",
       "name": "survey-data-processing",
@@ -940,6 +1012,24 @@
       ],
       "path": "skills/analysis/wrangling/text-mining-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "ai-agent-papers-guide",
+      "type": "skill",
+      "name": "ai-agent-papers-guide",
+      "description": "Curated 2024-2026 AI agent research papers collection",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "keywords": [
+        "AI agents",
+        "agent papers",
+        "2024 research",
+        "LLM agents",
+        "agent frameworks",
+        "survey"
+      ],
+      "path": "skills/domains/ai-ml/ai-agent-papers-guide",
+      "source": "https://github.com/VoltAgent/awesome-ai-agent-papers"
     },
     {
       "id": "ai-model-benchmarking",
@@ -977,6 +1067,42 @@
       ],
       "path": "skills/domains/ai-ml/annotated-dl-papers-guide",
       "source": "https://github.com/labmlai/annotated_deep_learning_paper_implementations"
+    },
+    {
+      "id": "anomaly-detection-papers-guide",
+      "type": "skill",
+      "name": "anomaly-detection-papers-guide",
+      "description": "Industrial anomaly detection methods and benchmark papers",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "keywords": [
+        "anomaly detection",
+        "industrial inspection",
+        "defect detection",
+        "MVTec",
+        "unsupervised AD",
+        "visual inspection"
+      ],
+      "path": "skills/domains/ai-ml/anomaly-detection-papers-guide",
+      "source": "https://github.com/M-3LAB/awesome-industrial-anomaly-detection"
+    },
+    {
+      "id": "autonomous-agents-papers-guide",
+      "type": "skill",
+      "name": "autonomous-agents-papers-guide",
+      "description": "Daily-updated collection of autonomous AI agent papers",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "keywords": [
+        "autonomous agents",
+        "AI agents",
+        "LLM agents",
+        "agent papers",
+        "planning",
+        "tool use"
+      ],
+      "path": "skills/domains/ai-ml/autonomous-agents-papers-guide",
+      "source": "https://github.com/tmgthb/Autonomous-Agents"
     },
     {
       "id": "computer-vision-guide",
@@ -1034,6 +1160,24 @@
       "source": "https://github.com/huggingface/peft"
     },
     {
+      "id": "domain-adaptation-papers-guide",
+      "type": "skill",
+      "name": "domain-adaptation-papers-guide",
+      "description": "Comprehensive collection of domain adaptation research papers",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "keywords": [
+        "domain adaptation",
+        "transfer learning",
+        "distribution shift",
+        "domain gap",
+        "UDA",
+        "domain generalization"
+      ],
+      "path": "skills/domains/ai-ml/domain-adaptation-papers-guide",
+      "source": "https://github.com/zhaoxin94/awesome-domain-adaptation"
+    },
+    {
       "id": "generative-ai-guide",
       "type": "skill",
       "name": "generative-ai-guide",
@@ -1043,6 +1187,24 @@
       "keywords": [],
       "path": "skills/domains/ai-ml/generative-ai-guide",
       "source": "https://github.com/aishwaryanr/awesome-generative-ai-guide"
+    },
+    {
+      "id": "graph-learning-papers-guide",
+      "type": "skill",
+      "name": "graph-learning-papers-guide",
+      "description": "Conference papers on graph neural networks and graph learning",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "keywords": [
+        "graph neural network",
+        "GNN",
+        "graph learning",
+        "graph transformer",
+        "message passing",
+        "node classification"
+      ],
+      "path": "skills/domains/ai-ml/graph-learning-papers-guide",
+      "source": "https://github.com/doujiang-zheng/Awesome-Graph-Learning-Papers-List"
     },
     {
       "id": "huggingface-inference-guide",
@@ -1079,6 +1241,24 @@
       ],
       "path": "skills/domains/ai-ml/keras-deep-learning",
       "source": "https://github.com/fchollet/deep-learning-with-python-notebooks"
+    },
+    {
+      "id": "kolmogorov-arnold-networks-guide",
+      "type": "skill",
+      "name": "kolmogorov-arnold-networks-guide",
+      "description": "Papers and tutorials on KAN learnable activation networks",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "keywords": [
+        "KAN",
+        "Kolmogorov-Arnold",
+        "learnable activations",
+        "spline networks",
+        "neural architecture",
+        "interpretability"
+      ],
+      "path": "skills/domains/ai-ml/kolmogorov-arnold-networks-guide",
+      "source": "https://github.com/mintisan/awesome-kan"
     },
     {
       "id": "llm-evaluation-guide",
@@ -1154,6 +1334,24 @@
       "source": "https://github.com/huggingface/transformers"
     },
     {
+      "id": "npcpy-research-guide",
+      "type": "skill",
+      "name": "npcpy-research-guide",
+      "description": "All-in-one Python library for NLP, agents, and knowledge graphs",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "keywords": [
+        "npcpy",
+        "NLP",
+        "agents",
+        "knowledge graph",
+        "all-in-one",
+        "Python library"
+      ],
+      "path": "skills/domains/ai-ml/npcpy-research-guide",
+      "source": "https://github.com/NPC-Worldwide/npcpy"
+    },
+    {
       "id": "prompt-engineering-research",
       "type": "skill",
       "name": "prompt-engineering-research",
@@ -1224,6 +1422,24 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "responsible-ai-guide",
+      "type": "skill",
+      "name": "responsible-ai-guide",
+      "description": "Resources for trustworthy, fair, and ethical AI research",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "keywords": [
+        "responsible AI",
+        "AI ethics",
+        "fairness",
+        "trustworthy AI",
+        "AI safety",
+        "bias"
+      ],
+      "path": "skills/domains/ai-ml/responsible-ai-guide",
+      "source": "https://github.com/AthenaCore/AwesomeResponsibleAI"
+    },
+    {
       "id": "tensorflow-guide",
       "type": "skill",
       "name": "tensorflow-guide",
@@ -1259,6 +1475,24 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "vmas-simulator-guide",
+      "type": "skill",
+      "name": "vmas-simulator-guide",
+      "description": "Vectorized multi-agent reinforcement learning simulator",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "keywords": [
+        "multi-agent RL",
+        "VMAS",
+        "simulator",
+        "reinforcement learning",
+        "vectorized",
+        "cooperative"
+      ],
+      "path": "skills/domains/ai-ml/vmas-simulator-guide",
+      "source": "https://github.com/proroklab/VectorizedMultiAgentSimulator"
+    },
+    {
       "id": "bioagents-guide",
       "type": "skill",
       "name": "bioagents-guide",
@@ -1275,6 +1509,42 @@
       ],
       "path": "skills/domains/biomedical/bioagents-guide",
       "source": "https://github.com/SakanaAI/AI-Scientist"
+    },
+    {
+      "id": "clawbio-guide",
+      "type": "skill",
+      "name": "clawbio-guide",
+      "description": "OpenClaw bioinformatics skill library for genomics pipelines",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "ClawBio",
+        "bioinformatics",
+        "OpenClaw",
+        "genomics",
+        "pipeline",
+        "biological analysis"
+      ],
+      "path": "skills/domains/biomedical/clawbio-guide",
+      "source": "https://github.com/ClawBio/ClawBio"
+    },
+    {
+      "id": "clinical-dialogue-agents-guide",
+      "type": "skill",
+      "name": "clinical-dialogue-agents-guide",
+      "description": "Papers on AI agents for clinical dialogue and medical QA",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "clinical dialogue",
+        "medical QA",
+        "patient interaction",
+        "clinical agents",
+        "healthcare AI",
+        "diagnosis"
+      ],
+      "path": "skills/domains/biomedical/clinical-dialogue-agents-guide",
+      "source": "https://github.com/xqz614/Awesome-Agentic-Clinical-Dialogue"
     },
     {
       "id": "clinical-research-guide",
@@ -1382,6 +1652,24 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "genotex-benchmark-guide",
+      "type": "skill",
+      "name": "genotex-benchmark-guide",
+      "description": "Benchmark for LLM agents on gene expression data analysis",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "GenoTEX",
+        "gene expression",
+        "benchmark",
+        "LLM agent",
+        "bioinformatics",
+        "GEO"
+      ],
+      "path": "skills/domains/biomedical/genotex-benchmark-guide",
+      "source": "https://github.com/Liu-Hy/GenoTEX"
+    },
+    {
       "id": "med-researcher-guide",
       "type": "skill",
       "name": "med-researcher-guide",
@@ -1398,6 +1686,24 @@
       ],
       "path": "skills/domains/biomedical/med-researcher-guide",
       "source": "https://github.com/mao1207/Med-Researcher"
+    },
+    {
+      "id": "med-researcher-r1-guide",
+      "type": "skill",
+      "name": "med-researcher-r1-guide",
+      "description": "Medical deep research agent with reasoning chain analysis",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "medical research",
+        "deep research",
+        "clinical reasoning",
+        "PubMed",
+        "medical agent",
+        "evidence-based"
+      ],
+      "path": "skills/domains/biomedical/med-researcher-r1-guide",
+      "source": "https://github.com/AQ-MedAI/MedResearcher-R1"
     },
     {
       "id": "medgeclaw-guide",
@@ -1578,6 +1884,60 @@
       "source": "wentor"
     },
     {
+      "id": "xpert-bi-guide",
+      "type": "skill",
+      "name": "xpert-bi-guide",
+      "description": "AI business intelligence agent with NL-to-SQL and dashboards",
+      "category": "domains",
+      "subcategory": "business",
+      "keywords": [
+        "business intelligence",
+        "NL-to-SQL",
+        "dashboard",
+        "data analysis",
+        "BI agent",
+        "analytics"
+      ],
+      "path": "skills/domains/business/xpert-bi-guide",
+      "source": "https://github.com/xpert-ai/xpert"
+    },
+    {
+      "id": "cactus-cheminformatics-guide",
+      "type": "skill",
+      "name": "cactus-cheminformatics-guide",
+      "description": "PNNL cheminformatics LLM agent for molecular analysis",
+      "category": "domains",
+      "subcategory": "chemistry",
+      "keywords": [
+        "CACTUS",
+        "cheminformatics",
+        "PNNL",
+        "molecular analysis",
+        "LLM chemistry",
+        "chemical agent"
+      ],
+      "path": "skills/domains/chemistry/cactus-cheminformatics-guide",
+      "source": "https://github.com/pnnl/cactus"
+    },
+    {
+      "id": "chemeagle-guide",
+      "type": "skill",
+      "name": "chemeagle-guide",
+      "description": "Multi-agent system for chemical literature information extraction",
+      "category": "domains",
+      "subcategory": "chemistry",
+      "keywords": [
+        "ChemEagle",
+        "chemical extraction",
+        "literature mining",
+        "reaction extraction",
+        "chemistry NLP",
+        "multi-agent"
+      ],
+      "path": "skills/domains/chemistry/chemeagle-guide",
+      "source": "https://github.com/CYF2000127/ChemEagle"
+    },
+    {
       "id": "chemgraph-agent-guide",
       "type": "skill",
       "name": "chemgraph-agent-guide",
@@ -1682,6 +2042,25 @@
       "source": "wentor"
     },
     {
+      "id": "ai-security-papers-guide",
+      "type": "skill",
+      "name": "ai-security-papers-guide",
+      "description": "AI security papers from top-4 security conferences",
+      "category": "domains",
+      "subcategory": "cs",
+      "keywords": [
+        "AI security",
+        "adversarial ML",
+        "model attacks",
+        "S&P",
+        "CCS",
+        "USENIX",
+        "NDSS"
+      ],
+      "path": "skills/domains/cs/ai-security-papers-guide",
+      "source": "https://github.com/Zhou-Zi7/Awesome-AI-Security-BIG4"
+    },
+    {
       "id": "algorithms-complexity-guide",
       "type": "skill",
       "name": "algorithms-complexity-guide",
@@ -1698,6 +2077,24 @@
       ],
       "path": "skills/domains/cs/algorithms-complexity-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "code-llm-papers-guide",
+      "type": "skill",
+      "name": "code-llm-papers-guide",
+      "description": "Survey and paper collection on LLMs for code generation",
+      "category": "domains",
+      "subcategory": "cs",
+      "keywords": [
+        "Code LLM",
+        "code generation",
+        "program synthesis",
+        "Codex",
+        "code intelligence",
+        "software engineering"
+      ],
+      "path": "skills/domains/cs/code-llm-papers-guide",
+      "source": "https://github.com/codefuse-ai/Awesome-Code-LLM"
     },
     {
       "id": "dblp-api",
@@ -1751,6 +2148,42 @@
       ],
       "path": "skills/domains/cs/formal-verification-guide",
       "source": "wentor"
+    },
+    {
+      "id": "gaussian-splatting-papers-guide",
+      "type": "skill",
+      "name": "gaussian-splatting-papers-guide",
+      "description": "Curated papers and resources for 3D Gaussian Splatting",
+      "category": "domains",
+      "subcategory": "cs",
+      "keywords": [
+        "3D Gaussian Splatting",
+        "3DGS",
+        "neural rendering",
+        "NeRF",
+        "novel view synthesis",
+        "point cloud"
+      ],
+      "path": "skills/domains/cs/gaussian-splatting-papers-guide",
+      "source": "https://github.com/MrNeRF/awesome-3D-gaussian-splatting"
+    },
+    {
+      "id": "llm-aiops-guide",
+      "type": "skill",
+      "name": "llm-aiops-guide",
+      "description": "Papers on LLMs for IT operations and AIOps research",
+      "category": "domains",
+      "subcategory": "cs",
+      "keywords": [
+        "AIOps",
+        "LLM operations",
+        "IT automation",
+        "log analysis",
+        "incident management",
+        "DevOps AI"
+      ],
+      "path": "skills/domains/cs/llm-aiops-guide",
+      "source": "https://github.com/Jun-jie-Huang/awesome-LLM-AIOps"
     },
     {
       "id": "software-engineering-research",
@@ -2100,6 +2533,24 @@
       "source": "wentor"
     },
     {
+      "id": "edumcp-guide",
+      "type": "skill",
+      "name": "edumcp-guide",
+      "description": "MCP server for educational content and learning management",
+      "category": "domains",
+      "subcategory": "education",
+      "keywords": [
+        "education MCP",
+        "learning management",
+        "course content",
+        "educational AI",
+        "tutoring",
+        "assessment"
+      ],
+      "path": "skills/domains/education/edumcp-guide",
+      "source": "https://github.com/edumcp/edumcp"
+    },
+    {
       "id": "learning-science-guide",
       "type": "skill",
       "name": "learning-science-guide",
@@ -2205,6 +2656,24 @@
       ],
       "path": "skills/domains/finance/finsight-research-guide",
       "source": "https://github.com/RUC-NLPIR/FinSight"
+    },
+    {
+      "id": "options-analytics-agent-guide",
+      "type": "skill",
+      "name": "options-analytics-agent-guide",
+      "description": "AI agent for options pricing, Greeks, and strategy analysis",
+      "category": "domains",
+      "subcategory": "finance",
+      "keywords": [
+        "options analytics",
+        "derivatives",
+        "Greeks",
+        "Black-Scholes",
+        "strategy analysis",
+        "financial agent"
+      ],
+      "path": "skills/domains/finance/options-analytics-agent-guide",
+      "source": "https://github.com/options-analytics/options-agent"
     },
     {
       "id": "portfolio-optimization-guide",
@@ -2530,6 +2999,24 @@
       "source": "https://www.courtlistener.com/api/rest-info/"
     },
     {
+      "id": "legal-agent-skills-guide",
+      "type": "skill",
+      "name": "legal-agent-skills-guide",
+      "description": "Agent skills collection for legal research and automation",
+      "category": "domains",
+      "subcategory": "law",
+      "keywords": [
+        "legal AI",
+        "legal automation",
+        "legal research",
+        "agent skills",
+        "contract analysis",
+        "case law"
+      ],
+      "path": "skills/domains/law/legal-agent-skills-guide",
+      "source": "https://github.com/lawvable/awesome-legal-skills"
+    },
+    {
       "id": "legal-nlp-guide",
       "type": "skill",
       "name": "legal-nlp-guide",
@@ -2582,6 +3069,24 @@
       "source": "https://clawhub.ai/legal-research"
     },
     {
+      "id": "opencontracts-guide",
+      "type": "skill",
+      "name": "opencontracts-guide",
+      "description": "Legal document annotation, versioning, and analysis platform",
+      "category": "domains",
+      "subcategory": "law",
+      "keywords": [
+        "legal documents",
+        "contract annotation",
+        "document versioning",
+        "legal AI",
+        "NLP legal",
+        "MCP"
+      ],
+      "path": "skills/domains/law/opencontracts-guide",
+      "source": "https://github.com/Open-Source-Legal/OpenContracts"
+    },
+    {
       "id": "patent-analysis-guide",
       "type": "skill",
       "name": "patent-analysis-guide",
@@ -2616,6 +3121,24 @@
       ],
       "path": "skills/domains/law/regulatory-compliance-guide",
       "source": "wentor"
+    },
+    {
+      "id": "lean-theorem-proving-guide",
+      "type": "skill",
+      "name": "lean-theorem-proving-guide",
+      "description": "LLM agent for formal theorem proving in Lean 4",
+      "category": "domains",
+      "subcategory": "math",
+      "keywords": [
+        "Lean 4",
+        "theorem proving",
+        "formal verification",
+        "LLM math",
+        "proof assistant",
+        "LeanAgent"
+      ],
+      "path": "skills/domains/math/lean-theorem-proving-guide",
+      "source": "https://github.com/lean-dojo/LeanAgent"
     },
     {
       "id": "linear-algebra-applications",
@@ -2774,6 +3297,24 @@
       ],
       "path": "skills/domains/pharma/drug-target-interaction",
       "source": "wentor"
+    },
+    {
+      "id": "madd-drug-discovery-guide",
+      "type": "skill",
+      "name": "madd-drug-discovery-guide",
+      "description": "Multi-agent system for automated drug discovery pipelines",
+      "category": "domains",
+      "subcategory": "pharma",
+      "keywords": [
+        "drug discovery",
+        "multi-agent",
+        "molecular design",
+        "ADMET",
+        "virtual screening",
+        "pharma AI"
+      ],
+      "path": "skills/domains/pharma/madd-drug-discovery-guide",
+      "source": "https://github.com/sb-ai-lab/MADD"
     },
     {
       "id": "pharmacovigilance-guide",
@@ -3110,6 +3651,24 @@
       "source": "N/A"
     },
     {
+      "id": "papers-we-love-guide",
+      "type": "skill",
+      "name": "papers-we-love-guide",
+      "description": "Community-curated directory of influential CS research papers",
+      "category": "literature",
+      "subcategory": "discovery",
+      "keywords": [
+        "papers we love",
+        "CS papers",
+        "reading groups",
+        "classic papers",
+        "paper recommendations",
+        "curated list"
+      ],
+      "path": "skills/literature/discovery/papers-we-love-guide",
+      "source": "https://github.com/papers-we-love/papers-we-love"
+    },
+    {
       "id": "rss-paper-feeds",
       "type": "skill",
       "name": "rss-paper-feeds",
@@ -3422,6 +3981,42 @@
       "source": "https://unpaywall.org/products/api"
     },
     {
+      "id": "zotero-ai-butler-guide",
+      "type": "skill",
+      "name": "zotero-ai-butler-guide",
+      "description": "AI-powered paper summarization plugin for Zotero",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "keywords": [
+        "Zotero",
+        "AI summary",
+        "paper summarization",
+        "LLM",
+        "abstract generation",
+        "reading assistant"
+      ],
+      "path": "skills/literature/fulltext/zotero-ai-butler-guide",
+      "source": "https://github.com/steven-jianhao-li/zotero-AI-Butler"
+    },
+    {
+      "id": "zotero-scihub-guide",
+      "type": "skill",
+      "name": "zotero-scihub-guide",
+      "description": "Zotero plugin for automatic PDF retrieval from Sci-Hub",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "keywords": [
+        "Zotero",
+        "Sci-Hub",
+        "PDF download",
+        "open access",
+        "full text",
+        "paper retrieval"
+      ],
+      "path": "skills/literature/fulltext/zotero-scihub-guide",
+      "source": "https://github.com/ethanwillis/zotero-scihub"
+    },
+    {
       "id": "academic-paper-summarizer",
       "type": "skill",
       "name": "academic-paper-summarizer",
@@ -3715,6 +4310,24 @@
       "source": "https://ror.org/"
     },
     {
+      "id": "sophosia-reference-guide",
+      "type": "skill",
+      "name": "sophosia-reference-guide",
+      "description": "Reference manager with PDF viewer and Markdown note support",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "reference manager",
+        "PDF viewer",
+        "Markdown notes",
+        "Excalidraw",
+        "paper organization",
+        "open source"
+      ],
+      "path": "skills/literature/metadata/sophosia-reference-guide",
+      "source": "https://github.com/sophosia/sophosia"
+    },
+    {
       "id": "viaf-authority-api",
       "type": "skill",
       "name": "viaf-authority-api",
@@ -3749,6 +4362,77 @@
       ],
       "path": "skills/literature/metadata/wikidata-api-guide",
       "source": "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service"
+    },
+    {
+      "id": "zoplicate-dedup-guide",
+      "type": "skill",
+      "name": "zoplicate-dedup-guide",
+      "description": "Detect and manage duplicate items in Zotero libraries",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "Zotero",
+        "deduplication",
+        "duplicate detection",
+        "library cleanup",
+        "metadata merge"
+      ],
+      "path": "skills/literature/metadata/zoplicate-dedup-guide",
+      "source": "https://github.com/ChenglongMa/zoplicate"
+    },
+    {
+      "id": "zotero-actions-tags-guide",
+      "type": "skill",
+      "name": "zotero-actions-tags-guide",
+      "description": "Zotero workflow automation with custom actions and tags",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "Zotero",
+        "automation",
+        "tags",
+        "workflow",
+        "actions",
+        "productivity"
+      ],
+      "path": "skills/literature/metadata/zotero-actions-tags-guide",
+      "source": "https://github.com/windingwind/zotero-actions-tags"
+    },
+    {
+      "id": "zotmoov-guide",
+      "type": "skill",
+      "name": "zotmoov-guide",
+      "description": "Zotero plugin for automatic attachment file organization",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "Zotero",
+        "file management",
+        "attachment",
+        "auto-move",
+        "organization",
+        "linked files"
+      ],
+      "path": "skills/literature/metadata/zotmoov-guide",
+      "source": "https://github.com/wileyyugioh/zotmoov"
+    },
+    {
+      "id": "zutilo-guide",
+      "type": "skill",
+      "name": "zutilo-guide",
+      "description": "Zotero utility plugin for keyboard shortcuts and batch editing",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "Zotero",
+        "shortcuts",
+        "batch editing",
+        "utility",
+        "productivity",
+        "copy paste"
+      ],
+      "path": "skills/literature/metadata/zutilo-guide",
+      "source": "https://github.com/wshanks/Zutilo"
     },
     {
       "id": "arxiv-api",
@@ -4166,6 +4850,24 @@
       "source": "https://openlibrary.org/"
     },
     {
+      "id": "open-semantic-search-guide",
+      "type": "skill",
+      "name": "open-semantic-search-guide",
+      "description": "Self-hosted semantic search and text mining platform",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "semantic search",
+        "text mining",
+        "self-hosted",
+        "Solr",
+        "NLP",
+        "entity extraction"
+      ],
+      "path": "skills/literature/search/open-semantic-search-guide",
+      "source": "https://github.com/opensemanticsearch/open-semantic-search"
+    },
+    {
       "id": "openaire-api",
       "type": "skill",
       "name": "openaire-api",
@@ -4199,6 +4901,24 @@
       ],
       "path": "skills/literature/search/openalex-api",
       "source": "https://docs.openalex.org/"
+    },
+    {
+      "id": "paper-search-mcp-guide",
+      "type": "skill",
+      "name": "paper-search-mcp-guide",
+      "description": "MCP server for searching papers across arXiv, PubMed, bioRxiv",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "paper search",
+        "MCP",
+        "arXiv",
+        "PubMed",
+        "bioRxiv",
+        "multi-database"
+      ],
+      "path": "skills/literature/search/paper-search-mcp-guide",
+      "source": "https://github.com/openags/paper-search-mcp"
     },
     {
       "id": "papers-chat-guide",
@@ -4419,6 +5139,42 @@
       ],
       "path": "skills/research/automation/aim-experiment-guide",
       "source": "https://github.com/aimhubio/aim"
+    },
+    {
+      "id": "claude-academic-workflow-guide",
+      "type": "skill",
+      "name": "claude-academic-workflow-guide",
+      "description": "Claude Code template for LaTeX, Beamer, and R research workflows",
+      "category": "research",
+      "subcategory": "automation",
+      "keywords": [
+        "Claude Code",
+        "academic workflow",
+        "LaTeX",
+        "Beamer",
+        "R",
+        "multi-agent review"
+      ],
+      "path": "skills/research/automation/claude-academic-workflow-guide",
+      "source": "https://github.com/pedrohcgs/claude-code-my-workflow"
+    },
+    {
+      "id": "coexist-ai-guide",
+      "type": "skill",
+      "name": "coexist-ai-guide",
+      "description": "Modular MCP-based research assistant framework",
+      "category": "research",
+      "subcategory": "automation",
+      "keywords": [
+        "CoexistAI",
+        "MCP",
+        "research assistant",
+        "modular agents",
+        "academic workflow",
+        "framework"
+      ],
+      "path": "skills/research/automation/coexist-ai-guide",
+      "source": "https://github.com/SPThole/CoexistAI"
     },
     {
       "id": "data-collection-automation",
@@ -4730,6 +5486,42 @@
       ],
       "path": "skills/research/deep-research/khoj-research-guide",
       "source": "https://github.com/khoj-ai/khoj"
+    },
+    {
+      "id": "kosmos-scientist-guide",
+      "type": "skill",
+      "name": "kosmos-scientist-guide",
+      "description": "Claude Code-driven autonomous AI Scientist for discovery",
+      "category": "research",
+      "subcategory": "deep-research",
+      "keywords": [
+        "AI Scientist",
+        "autonomous discovery",
+        "Claude Code",
+        "research automation",
+        "scientific method",
+        "experiment"
+      ],
+      "path": "skills/research/deep-research/kosmos-scientist-guide",
+      "source": "https://github.com/jimmc414/Kosmos"
+    },
+    {
+      "id": "llm-scientific-discovery-guide",
+      "type": "skill",
+      "name": "llm-scientific-discovery-guide",
+      "description": "Survey of LLM agents for biomedical scientific discovery",
+      "category": "research",
+      "subcategory": "deep-research",
+      "keywords": [
+        "LLM agents",
+        "scientific discovery",
+        "biomedical AI",
+        "drug discovery",
+        "hypothesis generation",
+        "lab automation"
+      ],
+      "path": "skills/research/deep-research/llm-scientific-discovery-guide",
+      "source": "https://github.com/zjlrock777/Awesome-LLM-Agents-Scientific-Discovery"
     },
     {
       "id": "local-deep-research-guide",
@@ -5207,6 +5999,24 @@
       "source": "https://github.com/wentor-ai/research-plugins"
     },
     {
+      "id": "research-pipeline-units-guide",
+      "type": "skill",
+      "name": "research-pipeline-units-guide",
+      "description": "Evidence-first semantic research pipeline methodology",
+      "category": "research",
+      "subcategory": "methodology",
+      "keywords": [
+        "research pipeline",
+        "evidence-first",
+        "semantic units",
+        "methodology",
+        "research workflow",
+        "structured inquiry"
+      ],
+      "path": "skills/research/methodology/research-pipeline-units-guide",
+      "source": "https://github.com/WILLOSCAR/research-units-pipeline-skills"
+    },
+    {
       "id": "research-town-guide",
       "type": "skill",
       "name": "research-town-guide",
@@ -5471,6 +6281,24 @@
       "source": "https://github.com/scientify-ai/skills"
     },
     {
+      "id": "contextplus-mcp-guide",
+      "type": "skill",
+      "name": "contextplus-mcp-guide",
+      "description": "Semantic code search MCP with Tree-sitter AST and RAG",
+      "category": "tools",
+      "subcategory": "code-exec",
+      "keywords": [
+        "semantic search",
+        "code search",
+        "Tree-sitter",
+        "AST",
+        "MCP",
+        "RAG"
+      ],
+      "path": "skills/tools/code-exec/contextplus-mcp-guide",
+      "source": "https://github.com/ForLoopCodes/contextplus"
+    },
+    {
       "id": "google-colab-guide",
       "type": "skill",
       "name": "google-colab-guide",
@@ -5592,6 +6420,24 @@
       ],
       "path": "skills/tools/code-exec/sandbox-execution-guide",
       "source": "wentor"
+    },
+    {
+      "id": "clawphd-guide",
+      "type": "skill",
+      "name": "clawphd-guide",
+      "description": "Agent for converting papers to diagrams, posters, and videos",
+      "category": "tools",
+      "subcategory": "diagram",
+      "keywords": [
+        "paper visualization",
+        "poster generation",
+        "research video",
+        "diagram agent",
+        "visual abstract",
+        "presentation"
+      ],
+      "path": "skills/tools/diagram/clawphd-guide",
+      "source": "https://github.com/ZhihaoAIRobotic/ClawPhD"
     },
     {
       "id": "code-flow-visualizer",
@@ -5925,6 +6771,77 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "weknora-guide",
+      "type": "skill",
+      "name": "weknora-guide",
+      "description": "Tencent document understanding engine with RAG capabilities",
+      "category": "tools",
+      "subcategory": "document",
+      "keywords": [
+        "WeKnora",
+        "document understanding",
+        "RAG",
+        "text mining",
+        "Tencent",
+        "knowledge extraction"
+      ],
+      "path": "skills/tools/document/weknora-guide",
+      "source": "https://github.com/Tencent/WeKnora"
+    },
+    {
+      "id": "zotero-addon-market-guide",
+      "type": "skill",
+      "name": "zotero-addon-market-guide",
+      "description": "Plugin marketplace and discovery platform for Zotero",
+      "category": "tools",
+      "subcategory": "document",
+      "keywords": [
+        "Zotero",
+        "plugin marketplace",
+        "add-ons",
+        "plugin discovery",
+        "extension manager"
+      ],
+      "path": "skills/tools/document/zotero-addon-market-guide",
+      "source": "https://github.com/syt2/zotero-addons"
+    },
+    {
+      "id": "zotero-night-theme-guide",
+      "type": "skill",
+      "name": "zotero-night-theme-guide",
+      "description": "Dark mode theme plugin for Zotero reference manager",
+      "category": "tools",
+      "subcategory": "document",
+      "keywords": [
+        "Zotero",
+        "dark mode",
+        "theme",
+        "night mode",
+        "UI customization",
+        "eye comfort"
+      ],
+      "path": "skills/tools/document/zotero-night-theme-guide",
+      "source": "https://github.com/tefkah/zotero-night"
+    },
+    {
+      "id": "zotero-style-guide",
+      "type": "skill",
+      "name": "zotero-style-guide",
+      "description": "Feature-rich Zotero plugin for UI customization and styling",
+      "category": "tools",
+      "subcategory": "document",
+      "keywords": [
+        "Zotero",
+        "styling",
+        "UI customization",
+        "reading progress",
+        "tags",
+        "columns"
+      ],
+      "path": "skills/tools/document/zotero-style-guide",
+      "source": "https://github.com/MuiseDestiny/zotero-style"
+    },
+    {
       "id": "citation-network-builder",
       "type": "skill",
       "name": "citation-network-builder",
@@ -5996,6 +6913,42 @@
       "source": "N/A"
     },
     {
+      "id": "mimir-memory-guide",
+      "type": "skill",
+      "name": "mimir-memory-guide",
+      "description": "Semantic vector search memory bank for AI agents",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "keywords": [
+        "agent memory",
+        "vector search",
+        "semantic memory",
+        "MCP",
+        "knowledge persistence",
+        "embedding"
+      ],
+      "path": "skills/tools/knowledge-graph/mimir-memory-guide",
+      "source": "https://github.com/orneryd/Mimir"
+    },
+    {
+      "id": "notero-zotero-notion-guide",
+      "type": "skill",
+      "name": "notero-zotero-notion-guide",
+      "description": "Sync Zotero references and annotations to Notion databases",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "keywords": [
+        "Zotero",
+        "Notion",
+        "sync",
+        "reference management",
+        "knowledge base",
+        "annotations"
+      ],
+      "path": "skills/tools/knowledge-graph/notero-zotero-notion-guide",
+      "source": "https://github.com/dvanoni/notero"
+    },
+    {
       "id": "ontology-design-guide",
       "type": "skill",
       "name": "ontology-design-guide",
@@ -6015,6 +6968,60 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "open-webui-tools-guide",
+      "type": "skill",
+      "name": "open-webui-tools-guide",
+      "description": "Academic research tools for Open WebUI chat interface",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "keywords": [
+        "Open WebUI",
+        "research tools",
+        "chat interface",
+        "paper search",
+        "academic tools",
+        "LLM UI"
+      ],
+      "path": "skills/tools/knowledge-graph/open-webui-tools-guide",
+      "source": "https://github.com/Haervwe/open-webui-tools"
+    },
+    {
+      "id": "openspg-guide",
+      "type": "skill",
+      "name": "openspg-guide",
+      "description": "Ant Group knowledge graph engine with SPG and KAG framework",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "keywords": [
+        "OpenSPG",
+        "knowledge graph",
+        "SPG",
+        "KAG",
+        "Ant Group",
+        "semantic reasoning"
+      ],
+      "path": "skills/tools/knowledge-graph/openspg-guide",
+      "source": "https://github.com/OpenSPG/openspg"
+    },
+    {
+      "id": "paperpile-notion-guide",
+      "type": "skill",
+      "name": "paperpile-notion-guide",
+      "description": "Sync Paperpile references and annotations to Notion",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "keywords": [
+        "Paperpile",
+        "Notion",
+        "sync",
+        "reference management",
+        "annotations",
+        "integration"
+      ],
+      "path": "skills/tools/knowledge-graph/paperpile-notion-guide",
+      "source": "https://github.com/gsarti/paperpile-notion"
+    },
+    {
       "id": "rag-methodology-guide",
       "type": "skill",
       "name": "rag-methodology-guide",
@@ -6029,6 +7036,24 @@
       ],
       "path": "skills/tools/knowledge-graph/rag-methodology-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "zotero-markdb-connect-guide",
+      "type": "skill",
+      "name": "zotero-markdb-connect-guide",
+      "description": "Sync Zotero references to Obsidian and Logseq markdown",
+      "category": "tools",
+      "subcategory": "knowledge-graph",
+      "keywords": [
+        "Zotero",
+        "Obsidian",
+        "Logseq",
+        "markdown",
+        "PKM",
+        "literature notes"
+      ],
+      "path": "skills/tools/knowledge-graph/zotero-markdb-connect-guide",
+      "source": "https://github.com/daeh/zotero-markdb-connect"
     },
     {
       "id": "formula-recognition-guide",
@@ -6353,6 +7378,23 @@
       "source": "wentor"
     },
     {
+      "id": "citation-assistant-skill",
+      "type": "skill",
+      "name": "citation-assistant-skill",
+      "description": "Claude Code skill for citation workflow via Semantic Scholar",
+      "category": "writing",
+      "subcategory": "citation",
+      "keywords": [
+        "citation assistant",
+        "Semantic Scholar",
+        "Claude Code skill",
+        "reference lookup",
+        "academic citation"
+      ],
+      "path": "skills/writing/citation/citation-assistant-skill",
+      "source": "https://github.com/ZhangNy301/citation-assistant"
+    },
+    {
       "id": "citation-style-guide",
       "type": "skill",
       "name": "citation-style-guide",
@@ -6443,6 +7485,24 @@
       "keywords": [],
       "path": "skills/writing/citation/obsidian-zotero-guide",
       "source": "https://github.com/mgmeyers/obsidian-zotero-integration"
+    },
+    {
+      "id": "onecite-reference-guide",
+      "type": "skill",
+      "name": "onecite-reference-guide",
+      "description": "AI toolkit to parse, complete, and format academic references",
+      "category": "writing",
+      "subcategory": "citation",
+      "keywords": [
+        "OneCite",
+        "reference formatting",
+        "citation parser",
+        "BibTeX",
+        "metadata completion",
+        "MCP"
+      ],
+      "path": "skills/writing/citation/onecite-reference-guide",
+      "source": "https://github.com/HzaCode/OneCite"
     },
     {
       "id": "papersgpt-zotero-guide",
@@ -6735,6 +7795,24 @@
       ],
       "path": "skills/writing/composition/ml-paper-writing",
       "source": "https://github.com/karpathy/arxiv-sanity-lite"
+    },
+    {
+      "id": "opendraft-thesis-guide",
+      "type": "skill",
+      "name": "opendraft-thesis-guide",
+      "description": "AI thesis writer with specialized agents and verified citations",
+      "category": "writing",
+      "subcategory": "composition",
+      "keywords": [
+        "thesis writing",
+        "AI writer",
+        "multi-agent",
+        "dissertation",
+        "academic writing",
+        "verified citations"
+      ],
+      "path": "skills/writing/composition/opendraft-thesis-guide",
+      "source": "https://github.com/federicodeponte/opendraft"
     },
     {
       "id": "paper-debugger-guide",
