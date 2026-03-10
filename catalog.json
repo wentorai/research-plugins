@@ -2,11 +2,11 @@
   "version": "1.1.0",
   "generated": "2026-03-10",
   "stats": {
-    "skills": 407,
+    "skills": 427,
     "agent_tools": 13,
     "mcp_configs": 76,
     "curated_lists": 6,
-    "total": 495
+    "total": 515
   },
   "items": [
     {
@@ -837,6 +837,24 @@
       "source": "wentor"
     },
     {
+      "id": "open-data-scientist-guide",
+      "type": "skill",
+      "name": "open-data-scientist-guide",
+      "description": "AI agent that performs end-to-end data science workflows",
+      "category": "analysis",
+      "subcategory": "wrangling",
+      "keywords": [
+        "data science",
+        "automated analysis",
+        "EDA",
+        "feature engineering",
+        "data wrangling",
+        "AI agent"
+      ],
+      "path": "skills/analysis/wrangling/open-data-scientist-guide",
+      "source": "https://github.com/Open-Data-Scientist/open-data-scientist"
+    },
+    {
       "id": "pandas-data-wrangling",
       "type": "skill",
       "name": "pandas-data-wrangling",
@@ -1328,6 +1346,24 @@
       "source": "wentor"
     },
     {
+      "id": "genomas-guide",
+      "type": "skill",
+      "name": "genomas-guide",
+      "description": "Automate gene expression analysis with the GenoMAS multi-agent system",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "GenoMAS",
+        "gene expression",
+        "multi-agent",
+        "bioinformatics",
+        "RNA-seq",
+        "genomics automation"
+      ],
+      "path": "skills/domains/biomedical/genomas-guide",
+      "source": "https://github.com/futianfan/GenoMAS"
+    },
+    {
       "id": "genomics-analysis-guide",
       "type": "skill",
       "name": "genomics-analysis-guide",
@@ -1344,6 +1380,24 @@
       ],
       "path": "skills/domains/biomedical/genomics-analysis-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "med-researcher-guide",
+      "type": "skill",
+      "name": "med-researcher-guide",
+      "description": "Multi-agent system for biomedical literature review and synthesis",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "medical research",
+        "biomedical agent",
+        "clinical literature",
+        "PubMed agent",
+        "medical AI",
+        "evidence synthesis"
+      ],
+      "path": "skills/domains/biomedical/med-researcher-guide",
+      "source": "https://github.com/mao1207/Med-Researcher"
     },
     {
       "id": "medgeclaw-guide",
@@ -1522,6 +1576,24 @@
       ],
       "path": "skills/domains/business/strategic-management-guide",
       "source": "wentor"
+    },
+    {
+      "id": "chemgraph-agent-guide",
+      "type": "skill",
+      "name": "chemgraph-agent-guide",
+      "description": "Automate molecular simulations with the ChemGraph agentic framework",
+      "category": "domains",
+      "subcategory": "chemistry",
+      "keywords": [
+        "ChemGraph",
+        "molecular simulation",
+        "computational chemistry",
+        "DFT",
+        "LangGraph",
+        "ASE"
+      ],
+      "path": "skills/domains/chemistry/chemgraph-agent-guide",
+      "source": "https://github.com/argonne-lcf/ChemGraph"
     },
     {
       "id": "computational-chemistry-guide",
@@ -2115,6 +2187,24 @@
       ],
       "path": "skills/domains/finance/financial-data-analysis",
       "source": "wentor"
+    },
+    {
+      "id": "finsight-research-guide",
+      "type": "skill",
+      "name": "finsight-research-guide",
+      "description": "Deep financial research with the FinSight multi-agent system",
+      "category": "domains",
+      "subcategory": "finance",
+      "keywords": [
+        "FinSight",
+        "financial analysis",
+        "deep research",
+        "market analysis",
+        "financial reports",
+        "multi-agent"
+      ],
+      "path": "skills/domains/finance/finsight-research-guide",
+      "source": "https://github.com/RUC-NLPIR/FinSight"
     },
     {
       "id": "portfolio-optimization-guide",
@@ -3367,6 +3457,24 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "bibliometrix-guide",
+      "type": "skill",
+      "name": "bibliometrix-guide",
+      "description": "Perform science mapping and bibliometric analysis with R bibliometrix",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "bibliometrix",
+        "bibliometrics",
+        "science mapping",
+        "R",
+        "citation analysis",
+        "research trends"
+      ],
+      "path": "skills/literature/metadata/bibliometrix-guide",
+      "source": "https://github.com/massimoaria/bibliometrix"
+    },
+    {
       "id": "citation-network-guide",
       "type": "skill",
       "name": "citation-network-guide",
@@ -3932,6 +4040,25 @@
       "source": "https://europepmc.org/RestfulWebService"
     },
     {
+      "id": "findpapers-guide",
+      "type": "skill",
+      "name": "findpapers-guide",
+      "description": "Search multiple academic databases simultaneously with Findpapers",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "Findpapers",
+        "multi-database search",
+        "systematic review",
+        "arXiv",
+        "PubMed",
+        "Scopus",
+        "IEEE"
+      ],
+      "path": "skills/literature/search/findpapers-guide",
+      "source": "https://github.com/jonatasgrosman/findpapers"
+    },
+    {
       "id": "google-scholar-guide",
       "type": "skill",
       "name": "google-scholar-guide",
@@ -4072,6 +4199,24 @@
       ],
       "path": "skills/literature/search/openalex-api",
       "source": "https://docs.openalex.org/"
+    },
+    {
+      "id": "papers-chat-guide",
+      "type": "skill",
+      "name": "papers-chat-guide",
+      "description": "Conversational interface for querying and discussing papers",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "paper chat",
+        "conversational search",
+        "paper QA",
+        "document QA",
+        "RAG papers",
+        "literature chat"
+      ],
+      "path": "skills/literature/search/papers-chat-guide",
+      "source": "https://github.com/paperswithcode/galai"
     },
     {
       "id": "pasa-paper-search-guide",
@@ -4305,6 +4450,24 @@
       "source": "https://github.com/DATAGEN-AI/DATAGEN"
     },
     {
+      "id": "foam-agent-guide",
+      "type": "skill",
+      "name": "foam-agent-guide",
+      "description": "Agent for automated knowledge graph building from research notes",
+      "category": "research",
+      "subcategory": "automation",
+      "keywords": [
+        "Foam",
+        "knowledge graph",
+        "Zettelkasten",
+        "research notes",
+        "linked notes",
+        "PKM agent"
+      ],
+      "path": "skills/research/automation/foam-agent-guide",
+      "source": "https://github.com/foambubble/foam"
+    },
+    {
       "id": "kedro-pipeline-guide",
       "type": "skill",
       "name": "kedro-pipeline-guide",
@@ -4424,6 +4587,42 @@
       "keywords": [],
       "path": "skills/research/deep-research/auto-deep-research-guide",
       "source": "https://github.com/Auto-Deep-Research/Auto-Deep-Research"
+    },
+    {
+      "id": "cognitive-kernel-guide",
+      "type": "skill",
+      "name": "cognitive-kernel-guide",
+      "description": "Autonomous agent with long-term memory for deep research tasks",
+      "category": "research",
+      "subcategory": "deep-research",
+      "keywords": [
+        "Cognitive Kernel",
+        "autonomous agent",
+        "long-term memory",
+        "deep research",
+        "reasoning",
+        "knowledge accumulation"
+      ],
+      "path": "skills/research/deep-research/cognitive-kernel-guide",
+      "source": "https://github.com/Cognitive-Kernel/cognitive-kernel"
+    },
+    {
+      "id": "corvus-research-guide",
+      "type": "skill",
+      "name": "corvus-research-guide",
+      "description": "Multi-agent AI research with semantic search and citation snowballing",
+      "category": "research",
+      "subcategory": "deep-research",
+      "keywords": [
+        "Corvus",
+        "multi-agent",
+        "semantic search",
+        "citation snowballing",
+        "research synthesis",
+        "AI research"
+      ],
+      "path": "skills/research/deep-research/corvus-research-guide",
+      "source": "https://github.com/corvus-research/corvus"
     },
     {
       "id": "deep-research-pro",
@@ -4566,6 +4765,24 @@
       ],
       "path": "skills/research/deep-research/meta-synthesis-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "open-researcher-guide",
+      "type": "skill",
+      "name": "open-researcher-guide",
+      "description": "Open pipeline for generating deep research trajectories with LLMs",
+      "category": "research",
+      "subcategory": "deep-research",
+      "keywords": [
+        "OpenResearcher",
+        "deep research",
+        "research trajectory",
+        "open pipeline",
+        "literature synthesis",
+        "LLM research"
+      ],
+      "path": "skills/research/deep-research/open-researcher-guide",
+      "source": "https://github.com/GAIR-NLP/OpenResearcher"
     },
     {
       "id": "research-cog",
@@ -4938,6 +5155,24 @@
       "source": "https://developer.osf.io/"
     },
     {
+      "id": "parsifal-slr-guide",
+      "type": "skill",
+      "name": "parsifal-slr-guide",
+      "description": "Plan and manage systematic literature reviews with Parsifal platform",
+      "category": "research",
+      "subcategory": "methodology",
+      "keywords": [
+        "Parsifal",
+        "systematic review",
+        "SLR",
+        "review protocol",
+        "PICO",
+        "research methodology"
+      ],
+      "path": "skills/research/methodology/parsifal-slr-guide",
+      "source": "https://github.com/vitorfs/parsifal"
+    },
+    {
       "id": "qualitative-research-guide",
       "type": "skill",
       "name": "qualitative-research-guide",
@@ -5007,6 +5242,24 @@
       "source": "https://github.com/scientify-ai/skills"
     },
     {
+      "id": "slr-automation-guide",
+      "type": "skill",
+      "name": "slr-automation-guide",
+      "description": "Tools and pipelines for automating systematic literature reviews",
+      "category": "research",
+      "subcategory": "methodology",
+      "keywords": [
+        "systematic review",
+        "SLR",
+        "automation",
+        "screening",
+        "PRISMA",
+        "evidence synthesis"
+      ],
+      "path": "skills/research/methodology/slr-automation-guide",
+      "source": "https://github.com/asreview/asreview"
+    },
+    {
       "id": "automated-review-guide",
       "type": "skill",
       "name": "automated-review-guide",
@@ -5023,6 +5276,24 @@
       ],
       "path": "skills/research/paper-review/automated-review-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "latte-review-guide",
+      "type": "skill",
+      "name": "latte-review-guide",
+      "description": "Automate systematic literature reviews with LatteReview AI agents",
+      "category": "research",
+      "subcategory": "paper-review",
+      "keywords": [
+        "LatteReview",
+        "systematic review",
+        "literature screening",
+        "AI review",
+        "title screening",
+        "PRISMA"
+      ],
+      "path": "skills/research/paper-review/latte-review-guide",
+      "source": "https://github.com/PouriaRouzrokh/LatteReview"
     },
     {
       "id": "paper-compare-guide",
@@ -5601,6 +5872,24 @@
       "source": "https://clawhub.ai/huaruoji/md2pdf-xelatex"
     },
     {
+      "id": "openpaper-guide",
+      "type": "skill",
+      "name": "openpaper-guide",
+      "description": "Open-source tool for organizing and annotating research papers",
+      "category": "tools",
+      "subcategory": "document",
+      "keywords": [
+        "paper management",
+        "PDF annotation",
+        "research organizer",
+        "paper reader",
+        "document viewer",
+        "open source"
+      ],
+      "path": "skills/tools/document/openpaper-guide",
+      "source": "https://github.com/nicehash/openpaper"
+    },
+    {
       "id": "paper-parse-guide",
       "type": "skill",
       "name": "paper-parse-guide",
@@ -5790,6 +6079,23 @@
       ],
       "path": "skills/tools/ocr-translate/latex-ocr-guide",
       "source": "wentor"
+    },
+    {
+      "id": "latex-translation-guide",
+      "type": "skill",
+      "name": "latex-translation-guide",
+      "description": "Translate LaTeX documents preserving math formulas and structure",
+      "category": "tools",
+      "subcategory": "ocr-translate",
+      "keywords": [
+        "LaTeX translation",
+        "document translation",
+        "multilingual",
+        "math preservation",
+        "academic translation"
+      ],
+      "path": "skills/tools/ocr-translate/latex-translation-guide",
+      "source": "https://github.com/SUSYUSTC/MathTranslate"
     },
     {
       "id": "math-equation-renderer",
@@ -6442,6 +6748,24 @@
       "source": "https://github.com/PaperDebugger/paperdebugger"
     },
     {
+      "id": "paperforge-guide",
+      "type": "skill",
+      "name": "paperforge-guide",
+      "description": "AI-assisted academic paper drafting and structuring tool",
+      "category": "writing",
+      "subcategory": "composition",
+      "keywords": [
+        "paper writing",
+        "academic drafting",
+        "paper generation",
+        "manuscript",
+        "structured writing",
+        "AI writing"
+      ],
+      "path": "skills/writing/composition/paperforge-guide",
+      "source": "https://github.com/paperforge/paperforge"
+    },
+    {
       "id": "research-paper-writer",
       "type": "skill",
       "name": "research-paper-writer",
@@ -6855,6 +7179,24 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "arxiv-preprint-template",
+      "type": "skill",
+      "name": "arxiv-preprint-template",
+      "description": "LaTeX template for arXiv preprints in NIPS/NeurIPS style format",
+      "category": "writing",
+      "subcategory": "templates",
+      "keywords": [
+        "arXiv",
+        "preprint",
+        "NIPS style",
+        "LaTeX template",
+        "NeurIPS",
+        "manuscript"
+      ],
+      "path": "skills/writing/templates/arxiv-preprint-template",
+      "source": "https://github.com/kourgeorge/arxiv-style"
+    },
+    {
       "id": "beamer-presentation-guide",
       "type": "skill",
       "name": "beamer-presentation-guide",
@@ -6885,6 +7227,24 @@
       ],
       "path": "skills/writing/templates/conference-paper-template",
       "source": "wentor"
+    },
+    {
+      "id": "elegant-paper-template",
+      "type": "skill",
+      "name": "elegant-paper-template",
+      "description": "Beautiful LaTeX template for working papers and technical reports",
+      "category": "writing",
+      "subcategory": "templates",
+      "keywords": [
+        "ElegantPaper",
+        "LaTeX template",
+        "working paper",
+        "technical report",
+        "elegant design",
+        "academic paper"
+      ],
+      "path": "skills/writing/templates/elegant-paper-template",
+      "source": "https://github.com/ElegantLaTeX/ElegantPaper"
     },
     {
       "id": "graphical-abstract-guide",
