@@ -2,11 +2,11 @@
   "version": "1.1.0",
   "generated": "2026-03-10",
   "stats": {
-    "skills": 372,
+    "skills": 407,
     "agent_tools": 13,
     "mcp_configs": 76,
     "curated_lists": 6,
-    "total": 460
+    "total": 495
   },
   "items": [
     {
@@ -1293,6 +1293,24 @@
       "source": "https://clinicaltrials.gov/api/"
     },
     {
+      "id": "ena-sequence-api",
+      "type": "skill",
+      "name": "ena-sequence-api",
+      "description": "Access nucleotide sequence data from the European Nucleotide Archive",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "ENA",
+        "nucleotide sequences",
+        "genomics",
+        "EMBL-EBI",
+        "sequencing data",
+        "NGS"
+      ],
+      "path": "skills/domains/biomedical/ena-sequence-api",
+      "source": "https://www.ebi.ac.uk/ena/"
+    },
+    {
       "id": "epidemiology-guide",
       "type": "skill",
       "name": "epidemiology-guide",
@@ -1362,6 +1380,60 @@
       ],
       "path": "skills/domains/biomedical/medical-imaging-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "ncbi-blast-api",
+      "type": "skill",
+      "name": "ncbi-blast-api",
+      "description": "Run sequence similarity searches via the NCBI BLAST REST API",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "BLAST",
+        "sequence alignment",
+        "NCBI",
+        "homology search",
+        "protein similarity",
+        "nucleotide search"
+      ],
+      "path": "skills/domains/biomedical/ncbi-blast-api",
+      "source": "https://blast.ncbi.nlm.nih.gov/"
+    },
+    {
+      "id": "ncbi-datasets-api",
+      "type": "skill",
+      "name": "ncbi-datasets-api",
+      "description": "Access genomes, genes, and taxonomy data via NCBI Datasets v2 API",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "NCBI",
+        "genome data",
+        "gene data",
+        "taxonomy",
+        "RefSeq",
+        "GenBank"
+      ],
+      "path": "skills/domains/biomedical/ncbi-datasets-api",
+      "source": "https://www.ncbi.nlm.nih.gov/datasets/"
+    },
+    {
+      "id": "quickgo-api",
+      "type": "skill",
+      "name": "quickgo-api",
+      "description": "Browse and search Gene Ontology annotations via the QuickGO API",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "Gene Ontology",
+        "GO annotations",
+        "protein function",
+        "QuickGO",
+        "EBI",
+        "functional genomics"
+      ],
+      "path": "skills/domains/biomedical/quickgo-api",
+      "source": "https://www.ebi.ac.uk/QuickGO/"
     },
     {
       "id": "architecture-design-guide",
@@ -1625,6 +1697,24 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "software-heritage-api",
+      "type": "skill",
+      "name": "software-heritage-api",
+      "description": "Archive and retrieve source code history via Software Heritage API",
+      "category": "domains",
+      "subcategory": "cs",
+      "keywords": [
+        "Software Heritage",
+        "code archive",
+        "source code preservation",
+        "SWHID",
+        "code provenance",
+        "open source"
+      ],
+      "path": "skills/domains/cs/software-heritage-api",
+      "source": "https://www.softwareheritage.org/"
+    },
+    {
       "id": "biodiversity-data-guide",
       "type": "skill",
       "name": "biodiversity-data-guide",
@@ -1777,6 +1867,24 @@
       "source": "https://datahelp.imf.org/knowledgebase/articles/667681-using-json-restful-web-service"
     },
     {
+      "id": "nber-working-papers-api",
+      "type": "skill",
+      "name": "nber-working-papers-api",
+      "description": "Access NBER working papers and economic research datasets",
+      "category": "domains",
+      "subcategory": "economics",
+      "keywords": [
+        "NBER",
+        "working papers",
+        "economics research",
+        "macroeconomics",
+        "economic policy",
+        "recession dating"
+      ],
+      "path": "skills/domains/economics/nber-working-papers-api",
+      "source": "https://www.nber.org/"
+    },
+    {
       "id": "post-labor-economics",
       "type": "skill",
       "name": "post-labor-economics",
@@ -1811,6 +1919,24 @@
       ],
       "path": "skills/domains/economics/pricing-psychology-guide",
       "source": "https://github.com/pricing-research/resources"
+    },
+    {
+      "id": "repec-economics-api",
+      "type": "skill",
+      "name": "repec-economics-api",
+      "description": "Access 4M+ economics working papers and articles via RePEc API",
+      "category": "domains",
+      "subcategory": "economics",
+      "keywords": [
+        "RePEc",
+        "economics papers",
+        "working papers",
+        "IDEAS",
+        "EconPapers",
+        "economic research"
+      ],
+      "path": "skills/domains/economics/repec-economics-api",
+      "source": "https://ideas.repec.org/"
     },
     {
       "id": "world-bank-data-guide",
@@ -1936,6 +2062,24 @@
       ],
       "path": "skills/domains/education/mooc-analytics-guide",
       "source": "wentor"
+    },
+    {
+      "id": "open-syllabus-api",
+      "type": "skill",
+      "name": "open-syllabus-api",
+      "description": "Analyze most-taught books and texts via Open Syllabus analytics",
+      "category": "domains",
+      "subcategory": "education",
+      "keywords": [
+        "Open Syllabus",
+        "syllabi analytics",
+        "teaching data",
+        "textbook rankings",
+        "curriculum analysis",
+        "higher education"
+      ],
+      "path": "skills/domains/education/open-syllabus-api",
+      "source": "https://opensyllabus.org/"
     },
     {
       "id": "akshare-finance-data",
@@ -2098,6 +2242,24 @@
       "source": "wentor"
     },
     {
+      "id": "pangaea-data-api",
+      "type": "skill",
+      "name": "pangaea-data-api",
+      "description": "Access earth and environmental science datasets via PANGAEA API",
+      "category": "domains",
+      "subcategory": "geoscience",
+      "keywords": [
+        "PANGAEA",
+        "earth science data",
+        "oceanography",
+        "paleoclimate",
+        "environmental data",
+        "geoscience repository"
+      ],
+      "path": "skills/domains/geoscience/pangaea-data-api",
+      "source": "https://www.pangaea.de/"
+    },
+    {
       "id": "satellite-remote-sensing",
       "type": "skill",
       "name": "satellite-remote-sensing",
@@ -2241,6 +2403,24 @@
       ],
       "path": "skills/domains/humanities/political-history-guide",
       "source": "https://plato.stanford.edu/entries/political-history/"
+    },
+    {
+      "id": "caselaw-access-api",
+      "type": "skill",
+      "name": "caselaw-access-api",
+      "description": "Query 360+ years of US case law via the Harvard Caselaw Access Project",
+      "category": "domains",
+      "subcategory": "law",
+      "keywords": [
+        "case law",
+        "legal database",
+        "court opinions",
+        "Harvard law",
+        "judicial data",
+        "legal research"
+      ],
+      "path": "skills/domains/law/caselaw-access-api",
+      "source": "https://case.law/"
     },
     {
       "id": "courtlistener-api",
@@ -2611,6 +2791,24 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "ipums-microdata-api",
+      "type": "skill",
+      "name": "ipums-microdata-api",
+      "description": "Access harmonized census and survey microdata via the IPUMS API",
+      "category": "domains",
+      "subcategory": "social-science",
+      "keywords": [
+        "IPUMS",
+        "census data",
+        "microdata",
+        "survey data",
+        "demographics",
+        "social science data"
+      ],
+      "path": "skills/domains/social-science/ipums-microdata-api",
+      "source": "https://www.ipums.org/"
+    },
+    {
       "id": "network-analysis-guide",
       "type": "skill",
       "name": "network-analysis-guide",
@@ -2891,6 +3089,24 @@
       "source": "https://github.com/TechPenguineer/zotero-arxiv-daily"
     },
     {
+      "id": "bioc-pmc-api",
+      "type": "skill",
+      "name": "bioc-pmc-api",
+      "description": "Access PMC Open Access articles in BioC format for text mining",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "keywords": [
+        "bioc",
+        "pmc",
+        "text mining",
+        "biomedical nlp",
+        "full text",
+        "pubmed central"
+      ],
+      "path": "skills/literature/fulltext/bioc-pmc-api",
+      "source": "https://www.ncbi.nlm.nih.gov/research/bionlp/APIs/BioC-PMC/"
+    },
+    {
       "id": "core-api-guide",
       "type": "skill",
       "name": "core-api-guide",
@@ -2908,6 +3124,24 @@
       "source": "https://core.ac.uk/documentation/api"
     },
     {
+      "id": "dataverse-api",
+      "type": "skill",
+      "name": "dataverse-api",
+      "description": "Deposit and discover research datasets via Harvard Dataverse API",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "keywords": [
+        "Dataverse",
+        "research data",
+        "data repository",
+        "Harvard",
+        "dataset deposit",
+        "data sharing"
+      ],
+      "path": "skills/literature/fulltext/dataverse-api",
+      "source": "https://dataverse.org/"
+    },
+    {
       "id": "doaj-api",
       "type": "skill",
       "name": "doaj-api",
@@ -2922,6 +3156,24 @@
       ],
       "path": "skills/literature/fulltext/doaj-api",
       "source": "https://doaj.org/api/docs"
+    },
+    {
+      "id": "hal-archive-api",
+      "type": "skill",
+      "name": "hal-archive-api",
+      "description": "Access French and European research via the HAL open archive API",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "keywords": [
+        "HAL",
+        "French research",
+        "open archive",
+        "CNRS",
+        "European research",
+        "institutional repository"
+      ],
+      "path": "skills/literature/fulltext/hal-archive-api",
+      "source": "https://api.archives-ouvertes.fr/"
     },
     {
       "id": "institutional-repository-guide",
@@ -2993,6 +3245,42 @@
       ],
       "path": "skills/literature/fulltext/open-access-mining-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "osf-api",
+      "type": "skill",
+      "name": "osf-api",
+      "description": "Manage open science projects and preprints via the OSF REST API",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "keywords": [
+        "OSF",
+        "Open Science Framework",
+        "preprints",
+        "open data",
+        "reproducibility",
+        "COS"
+      ],
+      "path": "skills/literature/fulltext/osf-api",
+      "source": "https://osf.io/"
+    },
+    {
+      "id": "pmc-ftp-bulk-download",
+      "type": "skill",
+      "name": "pmc-ftp-bulk-download",
+      "description": "Bulk download PMC Open Access articles via FTP for large-scale mining",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "keywords": [
+        "pmc",
+        "bulk download",
+        "ftp",
+        "text mining",
+        "open access",
+        "pubmed central"
+      ],
+      "path": "skills/literature/fulltext/pmc-ftp-bulk-download",
+      "source": "https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/"
     },
     {
       "id": "pmc-oai-api",
@@ -3113,6 +3401,24 @@
       "source": "https://api.crossref.org"
     },
     {
+      "id": "crossref-event-data-api",
+      "type": "skill",
+      "name": "crossref-event-data-api",
+      "description": "Track scholarly mentions across the web via Crossref Event Data",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "Crossref",
+        "event data",
+        "altmetrics",
+        "social media mentions",
+        "scholarly impact",
+        "web mentions"
+      ],
+      "path": "skills/literature/metadata/crossref-event-data-api",
+      "source": "https://www.eventdata.crossref.org/"
+    },
+    {
       "id": "datacite-api",
       "type": "skill",
       "name": "datacite-api",
@@ -3127,6 +3433,24 @@
       ],
       "path": "skills/literature/metadata/datacite-api",
       "source": "https://support.datacite.org/docs/api"
+    },
+    {
+      "id": "doi-content-negotiation",
+      "type": "skill",
+      "name": "doi-content-negotiation",
+      "description": "Retrieve structured metadata from any DOI via HTTP content negotiation",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "DOI",
+        "content negotiation",
+        "metadata retrieval",
+        "BibTeX",
+        "citation metadata",
+        "linked data"
+      ],
+      "path": "skills/literature/metadata/doi-content-negotiation",
+      "source": "https://citation.crosscite.org/"
     },
     {
       "id": "doi-resolution-guide",
@@ -3227,6 +3551,78 @@
       ],
       "path": "skills/literature/metadata/orcid-integration-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "orkg-api",
+      "type": "skill",
+      "name": "orkg-api",
+      "description": "Query the Open Research Knowledge Graph for structured research data",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "knowledge graph",
+        "research data",
+        "structured research",
+        "ORKG",
+        "research contributions",
+        "scholarly graph"
+      ],
+      "path": "skills/literature/metadata/orkg-api",
+      "source": "https://orkg.org/"
+    },
+    {
+      "id": "plumx-metrics-api",
+      "type": "skill",
+      "name": "plumx-metrics-api",
+      "description": "Track research impact beyond citations via PlumX altmetrics API",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "PlumX",
+        "altmetrics",
+        "research impact",
+        "social media metrics",
+        "usage statistics",
+        "scholarly metrics"
+      ],
+      "path": "skills/literature/metadata/plumx-metrics-api",
+      "source": "https://plumanalytics.com/"
+    },
+    {
+      "id": "ror-organization-api",
+      "type": "skill",
+      "name": "ror-organization-api",
+      "description": "Identify and link research organizations via the ROR registry API",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "ROR",
+        "research organizations",
+        "institution registry",
+        "affiliation",
+        "organization identifiers",
+        "ISNI"
+      ],
+      "path": "skills/literature/metadata/ror-organization-api",
+      "source": "https://ror.org/"
+    },
+    {
+      "id": "viaf-authority-api",
+      "type": "skill",
+      "name": "viaf-authority-api",
+      "description": "Disambiguate author identities via the VIAF authority file API",
+      "category": "literature",
+      "subcategory": "metadata",
+      "keywords": [
+        "VIAF",
+        "authority control",
+        "author disambiguation",
+        "name authority",
+        "OCLC",
+        "library catalog"
+      ],
+      "path": "skills/literature/metadata/viaf-authority-api",
+      "source": "https://viaf.org/"
     },
     {
       "id": "wikidata-api-guide",
@@ -3354,6 +3750,24 @@
       "source": "https://xueshu.baidu.com"
     },
     {
+      "id": "base-academic-search",
+      "type": "skill",
+      "name": "base-academic-search",
+      "description": "Search 400M+ open access documents via the BASE search engine API",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "BASE",
+        "academic search",
+        "open access",
+        "Bielefeld",
+        "OAI-PMH",
+        "repository aggregator"
+      ],
+      "path": "skills/literature/search/base-academic-search",
+      "source": "https://www.base-search.net/"
+    },
+    {
       "id": "biorxiv-api",
       "type": "skill",
       "name": "biorxiv-api",
@@ -3421,6 +3835,24 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "citeseerx-api",
+      "type": "skill",
+      "name": "citeseerx-api",
+      "description": "Search computer science literature via the CiteSeerX digital library",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "CiteSeerX",
+        "computer science",
+        "citation index",
+        "academic search",
+        "CS literature",
+        "autonomous citation"
+      ],
+      "path": "skills/literature/search/citeseerx-api",
+      "source": "https://citeseerx.ist.psu.edu/"
+    },
+    {
       "id": "database-comparison-guide",
       "type": "skill",
       "name": "database-comparison-guide",
@@ -3466,6 +3898,24 @@
       "source": "https://github.com/DeepGit/DeepGit"
     },
     {
+      "id": "eric-education-api",
+      "type": "skill",
+      "name": "eric-education-api",
+      "description": "Search 2M+ education research records via the ERIC database API",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "ERIC",
+        "education research",
+        "IES",
+        "pedagogy",
+        "teaching",
+        "educational technology"
+      ],
+      "path": "skills/literature/search/eric-education-api",
+      "source": "https://eric.ed.gov/"
+    },
+    {
       "id": "europe-pmc-api",
       "type": "skill",
       "name": "europe-pmc-api",
@@ -3497,6 +3947,42 @@
       ],
       "path": "skills/literature/search/google-scholar-guide",
       "source": "wentor"
+    },
+    {
+      "id": "ieee-xplore-api",
+      "type": "skill",
+      "name": "ieee-xplore-api",
+      "description": "Search IEEE's 6M+ engineering and CS publications via the Xplore API",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "ieee",
+        "engineering literature",
+        "computer science",
+        "technical standards",
+        "conference papers",
+        "xplore"
+      ],
+      "path": "skills/literature/search/ieee-xplore-api",
+      "source": "https://developer.ieee.org/"
+    },
+    {
+      "id": "lens-scholarly-api",
+      "type": "skill",
+      "name": "lens-scholarly-api",
+      "description": "Search 300M+ scholarly and patent records via the Lens.org API",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "Lens.org",
+        "patent search",
+        "scholarly search",
+        "citation linking",
+        "innovation",
+        "prior art"
+      ],
+      "path": "skills/literature/search/lens-scholarly-api",
+      "source": "https://www.lens.org/"
     },
     {
       "id": "mesh-terms-guide",
@@ -3535,6 +4021,42 @@
       "source": "https://clawhub.ai/jpjy/literature-search"
     },
     {
+      "id": "open-library-api",
+      "type": "skill",
+      "name": "open-library-api",
+      "description": "Search and access book metadata via the Open Library API",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "Open Library",
+        "book search",
+        "ISBN lookup",
+        "Internet Archive",
+        "book metadata",
+        "digital library"
+      ],
+      "path": "skills/literature/search/open-library-api",
+      "source": "https://openlibrary.org/"
+    },
+    {
+      "id": "openaire-api",
+      "type": "skill",
+      "name": "openaire-api",
+      "description": "Search EU-funded research outputs via the OpenAIRE Graph API",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "openaire",
+        "european research",
+        "open science",
+        "EU funding",
+        "research outputs",
+        "open access"
+      ],
+      "path": "skills/literature/search/openaire-api",
+      "source": "https://develop.openaire.eu/"
+    },
+    {
       "id": "openalex-api",
       "type": "skill",
       "name": "openalex-api",
@@ -3563,6 +4085,24 @@
       "source": "https://github.com/pasa-agent/pasa"
     },
     {
+      "id": "plos-open-access-api",
+      "type": "skill",
+      "name": "plos-open-access-api",
+      "description": "Search PLOS open access journals with full-text Solr-powered API",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "PLOS",
+        "open access",
+        "biomedical",
+        "Solr search",
+        "full text",
+        "peer reviewed"
+      ],
+      "path": "skills/literature/search/plos-open-access-api",
+      "source": "https://api.plos.org/"
+    },
+    {
       "id": "pubmed-api",
       "type": "skill",
       "name": "pubmed-api",
@@ -3577,6 +4117,24 @@
       ],
       "path": "skills/literature/search/pubmed-api",
       "source": "https://www.ncbi.nlm.nih.gov/books/NBK25501/"
+    },
+    {
+      "id": "scielo-api",
+      "type": "skill",
+      "name": "scielo-api",
+      "description": "Access Latin American and developing world research via SciELO API",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "SciELO",
+        "Latin America",
+        "open access journals",
+        "developing countries",
+        "Brazilian research",
+        "Spanish research"
+      ],
+      "path": "skills/literature/search/scielo-api",
+      "source": "https://wiki.scielo.org/"
     },
     {
       "id": "scientify-literature-survey",
@@ -3613,6 +4171,24 @@
       "source": "https://api.semanticscholar.org/"
     },
     {
+      "id": "share-research-api",
+      "type": "skill",
+      "name": "share-research-api",
+      "description": "Discover open access research outputs via the SHARE notification API",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "SHARE",
+        "open access",
+        "research notification",
+        "COS",
+        "repository aggregator",
+        "preprints"
+      ],
+      "path": "skills/literature/search/share-research-api",
+      "source": "https://share.osf.io/"
+    },
+    {
       "id": "systematic-search-strategy",
       "type": "skill",
       "name": "systematic-search-strategy",
@@ -3628,6 +4204,24 @@
       ],
       "path": "skills/literature/search/systematic-search-strategy",
       "source": "wentor"
+    },
+    {
+      "id": "worldcat-search-api",
+      "type": "skill",
+      "name": "worldcat-search-api",
+      "description": "Search the world's largest library catalog via OCLC WorldCat API",
+      "category": "literature",
+      "subcategory": "search",
+      "keywords": [
+        "worldcat",
+        "library catalog",
+        "OCLC",
+        "book search",
+        "holdings",
+        "interlibrary loan"
+      ],
+      "path": "skills/literature/search/worldcat-search-api",
+      "source": "https://developer.api.oclc.org/"
     },
     {
       "id": "ai-scientist-guide",
@@ -4782,6 +5376,24 @@
       "source": "https://github.com/AykutSarac/jsoncrack.com"
     },
     {
+      "id": "kroki-diagram-api",
+      "type": "skill",
+      "name": "kroki-diagram-api",
+      "description": "Generate diagrams from text via Kroki's multi-format rendering API",
+      "category": "tools",
+      "subcategory": "diagram",
+      "keywords": [
+        "Kroki",
+        "diagram generation",
+        "text-to-diagram",
+        "Graphviz",
+        "PlantUML",
+        "Mermaid"
+      ],
+      "path": "skills/tools/diagram/kroki-diagram-api",
+      "source": "https://kroki.io/"
+    },
+    {
       "id": "mermaid-architect-guide",
       "type": "skill",
       "name": "mermaid-architect-guide",
@@ -5485,6 +6097,24 @@
       ],
       "path": "skills/writing/citation/jasminum-zotero-guide",
       "source": "https://github.com/l0o0/jasminum"
+    },
+    {
+      "id": "mendeley-api",
+      "type": "skill",
+      "name": "mendeley-api",
+      "description": "Manage references and search Mendeley's catalog via REST API",
+      "category": "writing",
+      "subcategory": "citation",
+      "keywords": [
+        "mendeley",
+        "reference manager",
+        "bibliography",
+        "catalog search",
+        "research library",
+        "citations"
+      ],
+      "path": "skills/writing/citation/mendeley-api",
+      "source": "https://dev.elsevier.com/mendeley.html"
     },
     {
       "id": "obsidian-citation-guide",
