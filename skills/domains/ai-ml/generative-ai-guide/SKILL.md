@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/aishwaryanr/awesome-generative-ai-guide
 metadata:
   openclaw:
-    category: domains
-    subcategory: ai-ml
+    category: "domains"
+    subcategory: "ai-ml"
     keywords:
       - generative-ai
       - large-language-models

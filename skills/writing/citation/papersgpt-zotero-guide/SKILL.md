@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/papersgpt/papersgpt-for-zotero
 metadata:
   openclaw:
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords:
       - zotero
       - ai-assistant

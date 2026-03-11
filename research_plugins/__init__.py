@@ -1,3 +1,3 @@
-"""Research Plugins — 350+ academic research skills for AI agents."""
+"""Research Plugins — 487 academic research skills, 150 MCP configs & 13 agent tools for AI agents."""
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"

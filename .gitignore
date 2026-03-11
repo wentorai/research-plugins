@@ -4,7 +4,6 @@ dist/
 *.d.ts
 *.js.map
 !scripts/*.ts
-catalog.json
 
 # Python
 __pycache__/
@@ -22,6 +21,9 @@ dist/
 # OS
 .DS_Store
 Thumbs.db
+
+# Dev artifacts
+status.html
 
 # Secrets
 .env

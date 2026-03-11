@@ -4,8 +4,8 @@ description: "Guide to Zotero arXiv Daily for personalized daily paper recommend
 metadata:
   openclaw:
     emoji: "📰"
-    category: literature
-    subcategory: discovery
+    category: "literature"
+    subcategory: "discovery"
     keywords: ["zotero", "arxiv", "daily-papers", "recommendations", "preprint", "discovery"]
     source: "https://github.com/TechPenguineer/zotero-arxiv-daily"
 ---

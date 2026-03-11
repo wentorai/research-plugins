@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/vikjam/mostly-harmless-replication
 metadata:
   openclaw:
-    category: analysis
-    subcategory: econometrics
+    category: "analysis"
+    subcategory: "econometrics"
     keywords:
       - econometrics
       - causal-inference

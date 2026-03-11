@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/MuiseDestiny/zotero-reference
 metadata:
   openclaw:
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords:
       - zotero
       - references

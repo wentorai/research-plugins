@@ -4,8 +4,8 @@ description: "Use ChatPaper to summarize and search arXiv papers with LLM assist
 metadata:
   openclaw:
     emoji: "📑"
-    category: literature
-    subcategory: search
+    category: "literature"
+    subcategory: "search"
     keywords: ["arxiv", "paper-summarization", "literature-search", "chatgpt", "research-acceleration"]
     source: "https://github.com/kaixindelele/ChatPaper"
 ---

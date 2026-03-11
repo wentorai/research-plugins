@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/guaguastandup/zotero-pdf2zh
 metadata:
   openclaw:
-    category: tools
-    subcategory: ocr-translate
+    category: "tools"
+    subcategory: "ocr-translate"
     keywords:
       - pdf-translation
       - zotero-plugin

@@ -4,8 +4,8 @@ description: "Write Tsinghua University theses using the ThuThesis LaTeX templat
 metadata:
   openclaw:
     emoji: "🎓"
-    category: writing
-    subcategory: templates
+    category: "writing"
+    subcategory: "templates"
     keywords: ["latex", "thesis", "tsinghua", "template", "academic-writing", "typesetting"]
     source: "https://github.com/tuna/thuthesis"
 ---

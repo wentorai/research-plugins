@@ -4,8 +4,8 @@ description: "Guide to ZotFile for Zotero attachment management, renaming, and s
 metadata:
   openclaw:
     emoji: "📂"
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords: ["zotero", "zotfile", "attachment", "pdf-management", "file-organization", "sync"]
     source: "https://github.com/jlegewie/zotfile"
 ---

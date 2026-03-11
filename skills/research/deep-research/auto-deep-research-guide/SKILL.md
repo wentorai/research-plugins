@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/Auto-Deep-Research/Auto-Deep-Research
 metadata:
   openclaw:
-    category: research
-    subcategory: deep-research
+    category: "research"
+    subcategory: "deep-research"
     keywords:
       - deep-research
       - automated-investigation

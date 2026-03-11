@@ -53,6 +53,18 @@ Create a JSON file in `mcp-configs/{category}/`:
 }
 ```
 
+### MCP `verified` Field
+
+All MCP configs ship with `"verified": false` by default. This field indicates whether
+the MCP server has been tested end-to-end in a Research-Claw environment. Contributors
+and maintainers may set `"verified": true` after confirming:
+
+1. The `install.package` installs successfully and the server starts
+2. At least one tool listed in `tools[]` responds to a valid request
+3. The `config.env` variable names match the server's actual expectations
+
+The `verified` field is informational and does not affect plugin loading.
+
 ## Running Validation
 
 ```bash

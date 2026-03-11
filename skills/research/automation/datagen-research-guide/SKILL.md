@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/DATAGEN-AI/DATAGEN
 metadata:
   openclaw:
-    category: research
-    subcategory: automation
+    category: "research"
+    subcategory: "automation"
     keywords:
       - multi-agent
       - research-assistant

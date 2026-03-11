@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/joaomlourenco/novathesis
 metadata:
   openclaw:
-    category: writing
-    subcategory: templates
+    category: "writing"
+    subcategory: "templates"
     keywords:
       - thesis-template
       - latex-thesis

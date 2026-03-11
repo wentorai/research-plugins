@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/mgmeyers/obsidian-zotero-integration
 metadata:
   openclaw:
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords:
       - obsidian
       - zotero

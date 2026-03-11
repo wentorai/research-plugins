@@ -28,7 +28,7 @@ def cmd_info(args: argparse.Namespace) -> None:
     catalog = root / "catalog.json"
     if catalog.exists():
         data = json.loads(catalog.read_text())
-        print(json.dumps(data["counts"], indent=2))
+        print(json.dumps(data["stats"], indent=2))
     else:
         print("Run 'node scripts/catalog.ts' first to generate catalog.json")
 

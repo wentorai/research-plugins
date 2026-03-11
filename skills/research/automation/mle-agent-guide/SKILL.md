@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/MLSys-Tools/MLE-agent
 metadata:
   openclaw:
-    category: research
-    subcategory: automation
+    category: "research"
+    subcategory: "automation"
     keywords:
       - machine-learning
       - ml-engineering

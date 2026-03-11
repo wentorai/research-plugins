@@ -4,8 +4,8 @@ description: "Learn causal inference with Python using the Brave and True handbo
 metadata:
   openclaw:
     emoji: "📊"
-    category: analysis
-    subcategory: econometrics
+    category: "analysis"
+    subcategory: "econometrics"
     keywords: ["causal-inference", "python", "econometrics", "statistics", "treatment-effects", "observational-studies"]
     source: "https://github.com/matheusfacure/python-causality-handbook"
 ---

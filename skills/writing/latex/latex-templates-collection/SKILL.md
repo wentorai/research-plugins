@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/deedydas/latex-templates
 metadata:
   openclaw:
-    category: writing
-    subcategory: latex
+    category: "writing"
+    subcategory: "latex"
     keywords:
       - latex-templates
       - paper-templates

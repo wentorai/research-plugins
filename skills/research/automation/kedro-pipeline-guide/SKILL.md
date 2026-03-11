@@ -4,8 +4,8 @@ description: "Build reproducible data science pipelines with Kedro for research 
 metadata:
   openclaw:
     emoji: "🔧"
-    category: research
-    subcategory: automation
+    category: "research"
+    subcategory: "automation"
     keywords: ["pipeline", "reproducibility", "data-science", "workflow", "automation", "mlops"]
     source: "https://github.com/kedro-org/kedro"
 ---

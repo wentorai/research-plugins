@@ -4,8 +4,8 @@ description: "Write SJTU theses using the SJTUThesis LaTeX template with full co
 metadata:
   openclaw:
     emoji: "🎓"
-    category: writing
-    subcategory: templates
+    category: "writing"
+    subcategory: "templates"
     keywords: ["latex", "thesis", "sjtu", "template", "academic-writing", "shanghai-jiaotong"]
     source: "https://github.com/sjtug/SJTUThesis"
 ---

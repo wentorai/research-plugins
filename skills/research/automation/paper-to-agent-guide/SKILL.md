@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/paper2agent/Paper2Agent
 metadata:
   openclaw:
-    category: research
-    subcategory: automation
+    category: "research"
+    subcategory: "automation"
     keywords:
       - paper-parsing
       - agent-generation

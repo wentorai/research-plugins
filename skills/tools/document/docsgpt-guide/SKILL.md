@@ -4,8 +4,8 @@ description: "Deploy DocsGPT for private document analysis and research knowledg
 metadata:
   openclaw:
     emoji: "📚"
-    category: tools
-    subcategory: document
+    category: "tools"
+    subcategory: "document"
     keywords: ["document-analysis", "knowledge-base", "rag", "private-ai", "enterprise-search", "question-answering"]
     source: "https://github.com/arc53/DocsGPT"
 ---

@@ -4,8 +4,8 @@ description: "Guide to Better BibTeX for Zotero for LaTeX and BibTeX workflows"
 metadata:
   openclaw:
     emoji: "📚"
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords: ["zotero", "bibtex", "latex", "citation-keys", "better-bibtex", "bibliography"]
     source: "https://github.com/retorquere/zotero-better-bibtex"
 ---

@@ -4,8 +4,8 @@ description: "Guide to Zotero PDF Translate for multilingual PDF and annotation 
 metadata:
   openclaw:
     emoji: "🌐"
-    category: tools
-    subcategory: ocr-translate
+    category: "tools"
+    subcategory: "ocr-translate"
     keywords: ["zotero", "pdf-translate", "multilingual", "annotation", "academic-translation"]
     source: "https://github.com/windingwind/zotero-pdf-translate"
 ---

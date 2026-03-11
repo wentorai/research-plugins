@@ -4,8 +4,8 @@ description: "Translate scientific PDFs with preserved math formatting via PDFMa
 metadata:
   openclaw:
     emoji: "📄"
-    category: tools
-    subcategory: ocr-translate
+    category: "tools"
+    subcategory: "ocr-translate"
     keywords: ["pdf-translation", "math-formatting", "scientific-papers", "multilingual", "latex-preservation"]
     source: "https://github.com/Byaidu/PDFMathTranslate"
 ---

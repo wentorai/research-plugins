@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/pasa-agent/pasa
 metadata:
   openclaw:
-    category: literature
-    subcategory: search
+    category: "literature"
+    subcategory: "search"
     keywords:
       - paper-search
       - literature-discovery

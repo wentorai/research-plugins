@@ -4,8 +4,8 @@ description: "Guide to Zotero MCP for connecting Zotero library with AI assistan
 metadata:
   openclaw:
     emoji: "🔗"
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords: ["zotero", "mcp", "claude", "ai-assistant", "model-context-protocol"]
     source: "https://github.com/54yyyu/zotero-mcp"
 ---

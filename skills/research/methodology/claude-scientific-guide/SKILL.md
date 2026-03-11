@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/zyphlar/claude-scientific-skills
 metadata:
   openclaw:
-    category: research
-    subcategory: methodology
+    category: "research"
+    subcategory: "methodology"
     keywords:
       - scientific-method
       - research-skills

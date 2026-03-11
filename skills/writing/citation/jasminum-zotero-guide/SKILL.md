@@ -4,8 +4,8 @@ description: "Guide to Jasminum for retrieving CNKI Chinese academic metadata in
 metadata:
   openclaw:
     emoji: "🌸"
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords: ["zotero", "cnki", "chinese-academic", "jasminum", "metadata", "bibliography"]
     source: "https://github.com/l0o0/jasminum"
 ---

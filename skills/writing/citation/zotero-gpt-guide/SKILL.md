@@ -4,8 +4,8 @@ description: "Guide to Zotero GPT for AI-powered research assistance within Zote
 metadata:
   openclaw:
     emoji: "🤖"
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords: ["zotero", "gpt", "ai-assistant", "research-ai", "paper-analysis"]
     source: "https://github.com/MuiseDestiny/zotero-gpt"
 ---

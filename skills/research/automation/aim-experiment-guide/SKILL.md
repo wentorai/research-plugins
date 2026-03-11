@@ -4,8 +4,8 @@ description: "Track and compare research experiments with Aim experiment tracker
 metadata:
   openclaw:
     emoji: "🎯"
-    category: research
-    subcategory: automation
+    category: "research"
+    subcategory: "automation"
     keywords: ["experiment-tracking", "visualization", "mlops", "reproducibility", "metrics", "hyperparameters"]
     source: "https://github.com/aimhubio/aim"
 ---

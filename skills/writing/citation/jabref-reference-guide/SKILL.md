@@ -4,8 +4,8 @@ description: "Guide to JabRef open-source BibTeX and BibLaTeX reference manager"
 metadata:
   openclaw:
     emoji: "📖"
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords: ["jabref", "bibtex", "biblatex", "reference-manager", "latex", "bibliography"]
     source: "https://github.com/JabRef/jabref"
 ---

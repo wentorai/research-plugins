@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/DeepGit/DeepGit
 metadata:
   openclaw:
-    category: literature
-    subcategory: search
+    category: "literature"
+    subcategory: "search"
     keywords:
       - git-search
       - code-discovery

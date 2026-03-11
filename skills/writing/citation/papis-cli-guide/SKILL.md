@@ -4,8 +4,8 @@ description: "Guide to Papis command-line document and bibliography manager for 
 metadata:
   openclaw:
     emoji: "💻"
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords: ["papis", "cli", "bibliography", "document-manager", "terminal", "command-line"]
     source: "https://github.com/papis/papis"
 ---

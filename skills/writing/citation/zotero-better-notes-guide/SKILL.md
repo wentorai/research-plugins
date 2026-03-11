@@ -4,8 +4,8 @@ description: "Guide to Zotero Better Notes for comprehensive note-taking in rese
 metadata:
   openclaw:
     emoji: "📝"
-    category: writing
-    subcategory: citation
+    category: "writing"
+    subcategory: "citation"
     keywords: ["zotero", "note-taking", "better-notes", "research-notes", "knowledge-management"]
     source: "https://github.com/windingwind/zotero-better-notes"
 ---

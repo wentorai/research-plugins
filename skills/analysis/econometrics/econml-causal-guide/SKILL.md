@@ -4,8 +4,8 @@ description: "Apply EconML for causal inference combining machine learning and e
 metadata:
   openclaw:
     emoji: "🔬"
-    category: analysis
-    subcategory: econometrics
+    category: "analysis"
+    subcategory: "econometrics"
     keywords: ["causal-inference", "machine-learning", "treatment-effects", "econometrics", "microsoft", "double-ml"]
     source: "https://github.com/py-why/EconML"
 ---

@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/PaperDebugger/paperdebugger
 metadata:
   openclaw:
-    category: writing
-    subcategory: composition
+    category: "writing"
+    subcategory: "composition"
     keywords:
       - paper-review
       - academic-writing

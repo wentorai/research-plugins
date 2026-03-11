@@ -6,8 +6,8 @@ author: wentor-community
 source: https://github.com/xinychen/awesome-latex-drawing
 metadata:
   openclaw:
-    category: writing
-    subcategory: latex
+    category: "writing"
+    subcategory: "latex"
     keywords:
       - latex-drawing
       - tikz

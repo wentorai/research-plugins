@@ -8,7 +8,7 @@
 
 ## Research Plugins for Research-Claw
 
-An open-source collection of **349 academic research skills**, **76 MCP configs**, **13 agent tools**, and **6 curated resource lists** for [Research-Claw](https://wentor.ai) and other AI coding agents.
+An open-source collection of **487 academic research skills**, **150 MCP configs**, **13 agent tools**, and **6 curated resource lists** for [Research-Claw](https://wentor.ai) and other AI coding agents.
 
 Built by [Wentor AI](https://wentor.ai) for the global research community.
 
@@ -16,9 +16,9 @@ Built by [Wentor AI](https://wentor.ai) for the global research community.
 
 | Component | Count | Description |
 |-----------|-------|-------------|
-| **Skills** | 349 | Practical SKILL.md guides covering literature search, academic writing, data analysis, research methods, 16 domain specialties, and productivity tools |
+| **Skills** | 487 | Practical SKILL.md guides covering literature search, academic writing, data analysis, research methods, 16 domain specialties, and productivity tools |
 | **Agent Tools** | 13 | TypeScript API wrappers for Semantic Scholar, OpenAlex, CrossRef, arXiv, PubMed, and Unpaywall |
-| **MCP Configs** | 76 | Ready-to-use MCP server configurations for reference managers, knowledge bases, research databases, and AI platforms |
+| **MCP Configs** | 150 | Ready-to-use MCP server configurations for reference managers, knowledge bases, research databases, and AI platforms |
 | **Curated Lists** | 6 | Hand-picked resource collections for each skill category |
 
 ### Taxonomy
@@ -27,12 +27,12 @@ Skills are organized into **6 categories** with **40 subcategories**:
 
 | Category | Subcategories | Skills | Description |
 |----------|---------------|--------|-------------|
-| **literature** | search, discovery, fulltext, metadata | 50 | Paper search, citation tracking, open access |
-| **writing** | composition, polish, latex, templates, citation | 57 | Academic writing, LaTeX, reference management |
-| **analysis** | statistics, econometrics, wrangling, dataviz | 47 | Statistical methods, data cleaning, visualization |
-| **research** | methodology, deep-research, paper-review, automation, funding | 56 | Research design, systematic reviews, grant writing |
-| **domains** | 16 disciplines (CS, AI/ML, biomedical, chemistry, economics, finance, law, physics, math, ecology, etc.) | 97 | Domain-specific research methods and tools |
-| **tools** | diagram, document, code-exec, scraping, knowledge-graph, ocr-translate | 42 | Diagrams, PDF parsing, reproducible code, OCR |
+| **literature** | search, discovery, fulltext, metadata | 89 | Paper search, citation tracking, open access |
+| **writing** | composition, polish, latex, templates, citation | 68 | Academic writing, LaTeX, reference management |
+| **analysis** | statistics, econometrics, wrangling, dataviz | 57 | Statistical methods, data cleaning, visualization |
+| **research** | methodology, deep-research, paper-review, automation, funding | 70 | Research design, systematic reviews, grant writing |
+| **domains** | 16 disciplines (CS, AI/ML, biomedical, chemistry, economics, finance, law, physics, math, ecology, etc.) | 143 | Domain-specific research methods and tools |
+| **tools** | diagram, document, code-exec, scraping, knowledge-graph, ocr-translate | 60 | Diagrams, PDF parsing, reproducible code, OCR |
 
 ### Install
 
@@ -115,7 +115,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, MCP conf
 
 ## Research-Claw 科研插件集
 
-一个开源的学术科研资源集合，包含 **349 个科研技能**、**76 个 MCP 服务器配置**、**13 个智能体工具** 和 **6 个精选资源列表**，为 [Research-Claw (科研龙虾)](https://wentor.ai) 及其他 AI 编程助手而构建。
+一个开源的学术科研资源集合，包含 **487 个科研技能**、**150 个 MCP 服务器配置**、**13 个智能体工具** 和 **6 个精选资源列表**，为 [Research-Claw (科研龙虾)](https://wentor.ai) 及其他 AI 编程助手而构建。
 
 由 [Wentor AI](https://wentor.ai) 为全球科研社区打造。
 
@@ -123,9 +123,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, MCP conf
 
 | 组件 | 数量 | 说明 |
 |------|------|------|
-| **技能 (Skills)** | 349 | 涵盖文献检索、学术写作、数据分析、研究方法、16 个学科领域及生产力工具的实用指南 |
+| **技能 (Skills)** | 487 | 涵盖文献检索、学术写作、数据分析、研究方法、16 个学科领域及生产力工具的实用指南 |
 | **智能体工具** | 13 | 封装 Semantic Scholar、OpenAlex、CrossRef、arXiv、PubMed、Unpaywall 六大学术 API 的 TypeScript 工具 |
-| **MCP 配置** | 76 | 即用型 MCP 服务器配置，涵盖文献管理、知识库、学术数据库、AI 平台等 |
+| **MCP 配置** | 150 | 即用型 MCP 服务器配置，涵盖文献管理、知识库、学术数据库、AI 平台等 |
 | **精选列表** | 6 | 按分类整理的优质资源推荐 |
 
 ### 分类体系
@@ -134,12 +134,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, MCP conf
 
 | 类别 | 子分类 | 技能数 | 覆盖范围 |
 |------|--------|--------|---------|
-| **文献 (literature)** | 检索、发现、全文获取、元数据 | 50 | 论文搜索、引文追踪、开放获取 |
-| **写作 (writing)** | 写作、润色、LaTeX、模板、引用 | 57 | 学术写作、LaTeX 排版、参考文献管理 |
-| **分析 (analysis)** | 统计、计量经济、数据处理、可视化 | 47 | 统计方法、数据清洗、图表制作 |
-| **研究 (research)** | 方法论、深度研究、论文评审、自动化、基金 | 56 | 研究设计、系统综述、基金申请 |
-| **学科 (domains)** | 16 个学科方向 | 97 | 各学科专属研究方法与工具 |
-| **工具 (tools)** | 图表、文档、代码执行、爬虫、知识图谱、OCR | 42 | 流程图、PDF 解析、可复现代码、OCR 翻译 |
+| **文献 (literature)** | 检索、发现、全文获取、元数据 | 89 | 论文搜索、引文追踪、开放获取 |
+| **写作 (writing)** | 写作、润色、LaTeX、模板、引用 | 68 | 学术写作、LaTeX 排版、参考文献管理 |
+| **分析 (analysis)** | 统计、计量经济、数据处理、可视化 | 57 | 统计方法、数据清洗、图表制作 |
+| **研究 (research)** | 方法论、深度研究、论文评审、自动化、基金 | 70 | 研究设计、系统综述、基金申请 |
+| **学科 (domains)** | 16 个学科方向 | 143 | 各学科专属研究方法与工具 |
+| **工具 (tools)** | 图表、文档、代码执行、爬虫、知识图谱、OCR | 60 | 流程图、PDF 解析、可复现代码、OCR 翻译 |
 
 ### 安装方式
 

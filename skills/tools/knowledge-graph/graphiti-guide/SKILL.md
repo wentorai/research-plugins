@@ -4,8 +4,8 @@ description: "Build real-time knowledge graphs for AI agents using Graphiti by Z
 metadata:
   openclaw:
     emoji: "🕸"
-    category: tools
-    subcategory: knowledge-graph
+    category: "tools"
+    subcategory: "knowledge-graph"
     keywords: ["knowledge-graph", "ai-agents", "temporal-graphs", "neo4j", "memory", "entity-extraction"]
     source: "https://github.com/getzep/graphiti"
 ---
