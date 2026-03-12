@@ -3,6 +3,11 @@ import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plug
 
 const BASE = "https://api.crossref.org";
 
+function toolResult(data: unknown) {
+  const text = JSON.stringify(data, null, 2);
+  return { content: [{ type: "text" as const, text }] };
+}
+
 export function createCrossRefTools(
   _ctx: OpenClawPluginToolContext,
   _api: OpenClawPluginApi,
@@ -14,22 +19,23 @@ export function createCrossRefTools(
   return [
     {
       name: "resolve_doi",
+      label: "Resolve DOI (CrossRef)",
       description:
         "Resolve a DOI to get full bibliographic metadata from CrossRef (title, authors, journal, dates, references).",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         doi: Type.String({
           description: "DOI to resolve, e.g. '10.1038/nature12373'",
         }),
       }),
-      handler: async (input: { doi: string }) => {
+      execute: async (input: { doi: string }) => {
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
         const res = await fetch(`${BASE}/works/${encodeURIComponent(doi)}`, {
           headers,
         });
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
         const data = await res.json();
         const w = data.message;
-        return {
+        return toolResult({
           doi: w.DOI,
           title: w.title?.[0],
           authors: w.author?.map(
@@ -44,14 +50,15 @@ export function createCrossRefTools(
           url: w.URL,
           abstract: w.abstract,
           license: w.license?.[0]?.URL,
-        };
+        });
       },
     },
     {
       name: "search_crossref",
+      label: "Search Works (CrossRef)",
       description:
         "Search CrossRef for scholarly works by query. Covers 150M+ DOIs across all publishers.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         query: Type.String({ description: "Search query" }),
         limit: Type.Optional(
           Type.Number({ description: "Max results (default 10, max 100)" }),
@@ -71,7 +78,7 @@ export function createCrossRefTools(
           }),
         ),
       }),
-      handler: async (input: {
+      execute: async (input: {
         query: string;
         limit?: number;
         from_year?: number;
@@ -89,9 +96,9 @@ export function createCrossRefTools(
         if (input.sort) params.set("sort", input.sort);
 
         const res = await fetch(`${BASE}/works?${params}`, { headers });
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
         const data = await res.json();
-        return {
+        return toolResult({
           total_results: data.message?.["total-results"],
           items: data.message?.items?.map((w: Record<string, unknown>) => ({
             doi: w.DOI,
@@ -105,7 +112,7 @@ export function createCrossRefTools(
             type: w.type,
             cited_by: w["is-referenced-by-count"],
           })),
-        };
+        });
       },
     },
   ];

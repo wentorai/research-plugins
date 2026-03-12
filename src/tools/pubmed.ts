@@ -3,6 +3,11 @@ import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plug
 
 const EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils";
 
+function toolResult(data: unknown) {
+  const text = JSON.stringify(data, null, 2);
+  return { content: [{ type: "text" as const, text }] };
+}
+
 export function createPubMedTools(
   _ctx: OpenClawPluginToolContext,
   _api: OpenClawPluginApi,
@@ -10,9 +15,10 @@ export function createPubMedTools(
   return [
     {
       name: "search_pubmed",
+      label: "Search Articles (PubMed)",
       description:
         "Search PubMed biomedical literature database. Covers 36M+ citations from MEDLINE, life science journals, and online books.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         query: Type.String({
           description:
             "PubMed search query. Supports MeSH terms and field tags, e.g. 'CRISPR[Title] AND 2024[PDAT]'",
@@ -32,7 +38,7 @@ export function createPubMedTools(
           Type.String({ description: "Max publication date (YYYY/MM/DD)" }),
         ),
       }),
-      handler: async (input: {
+      execute: async (input: {
         query: string;
         max_results?: number;
         sort?: string;
@@ -53,11 +59,11 @@ export function createPubMedTools(
 
         const searchRes = await fetch(`${EUTILS}/esearch.fcgi?${searchParams}`);
         if (!searchRes.ok)
-          return { error: `Search error: ${searchRes.status} ${searchRes.statusText}` };
+          return toolResult({ error: `Search error: ${searchRes.status} ${searchRes.statusText}` });
         const searchData = await searchRes.json();
         const ids: string[] = searchData.esearchresult?.idlist ?? [];
 
-        if (ids.length === 0) return { total_count: searchData.esearchresult?.count ?? 0, articles: [] };
+        if (ids.length === 0) return toolResult({ total_count: searchData.esearchresult?.count ?? 0, articles: [] });
 
         const summaryParams = new URLSearchParams({
           db: "pubmed",
@@ -66,7 +72,7 @@ export function createPubMedTools(
         });
         const summaryRes = await fetch(`${EUTILS}/esummary.fcgi?${summaryParams}`);
         if (!summaryRes.ok)
-          return { error: `Summary error: ${summaryRes.status} ${summaryRes.statusText}` };
+          return toolResult({ error: `Summary error: ${summaryRes.status} ${summaryRes.statusText}` });
         const summaryData = await summaryRes.json();
 
         const articles = ids.map((id) => {
@@ -87,27 +93,28 @@ export function createPubMedTools(
           };
         });
 
-        return {
+        return toolResult({
           total_count: parseInt(searchData.esearchresult?.count ?? "0", 10),
           articles,
-        };
+        });
       },
     },
     {
       name: "get_article",
+      label: "Get Article Details (PubMed)",
       description:
         "Get detailed article metadata from PubMed by PMID, including abstract.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         pmid: Type.String({ description: "PubMed ID (numeric string)" }),
       }),
-      handler: async (input: { pmid: string }) => {
+      execute: async (input: { pmid: string }) => {
         const params = new URLSearchParams({
           db: "pubmed",
           id: input.pmid,
           retmode: "xml",
         });
         const res = await fetch(`${EUTILS}/efetch.fcgi?${params}`);
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
         const xml = await res.text();
 
         const getText = (tag: string) => {
@@ -148,7 +155,7 @@ export function createPubMedTools(
           xml.match(/<ArticleId IdType="pmc">([\s\S]*?)<\/ArticleId>/)?.[1]?.trim() ??
           "";
 
-        return {
+        return toolResult({
           pmid: input.pmid,
           title: getText("ArticleTitle"),
           abstract: getAbstract(),
@@ -159,7 +166,7 @@ export function createPubMedTools(
           pmc,
           mesh_terms: getMesh(),
           url: `https://pubmed.ncbi.nlm.nih.gov/${input.pmid}/`,
-        };
+        });
       },
     },
   ];

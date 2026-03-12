@@ -3,6 +3,11 @@ import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plug
 
 const BASE = "https://api.semanticscholar.org/graph/v1";
 
+function toolResult(data: unknown) {
+  const text = JSON.stringify(data, null, 2);
+  return { content: [{ type: "text" as const, text }] };
+}
+
 export function createSemanticScholarTools(
   ctx: OpenClawPluginToolContext,
   api: OpenClawPluginApi,
@@ -15,9 +20,10 @@ export function createSemanticScholarTools(
   return [
     {
       name: "search_papers",
+      label: "Search Papers (Semantic Scholar)",
       description:
         "Search academic papers on Semantic Scholar. Returns titles, abstracts, authors, citation counts.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         query: Type.String({ description: "Search query keywords" }),
         limit: Type.Optional(
           Type.Number({ description: "Max results to return (default 10, max 100)" }),
@@ -35,7 +41,7 @@ export function createSemanticScholarTools(
           Type.Boolean({ description: "Only return open access papers" }),
         ),
       }),
-      handler: async (input: {
+      execute: async (input: {
         query: string;
         limit?: number;
         year?: string;
@@ -54,36 +60,38 @@ export function createSemanticScholarTools(
         if (input.open_access_only) params.set("openAccessPdf", "");
 
         const res = await fetch(`${BASE}/paper/search?${params}`, { headers });
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
-        return res.json();
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
+        return toolResult(await res.json());
       },
     },
     {
       name: "get_paper",
+      label: "Get Paper Details (Semantic Scholar)",
       description:
         "Get detailed information about a specific paper by its Semantic Scholar ID, DOI, or ArXiv ID.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         paper_id: Type.String({
           description:
             "Paper identifier: Semantic Scholar ID, DOI (e.g. '10.1234/...'), or ArXiv ID (e.g. 'arXiv:2301.00001')",
         }),
       }),
-      handler: async (input: { paper_id: string }) => {
+      execute: async (input: { paper_id: string }) => {
         const fields =
           "title,abstract,authors,year,citationCount,referenceCount,tldr,url,venue,isOpenAccess,openAccessPdf,fieldsOfStudy,publicationDate";
         const res = await fetch(
           `${BASE}/paper/${encodeURIComponent(input.paper_id)}?fields=${fields}`,
           { headers },
         );
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
-        return res.json();
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
+        return toolResult(await res.json());
       },
     },
     {
       name: "get_citations",
+      label: "Get Citations (Semantic Scholar)",
       description:
         "Get papers that cite a given paper. Useful for forward citation tracking.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         paper_id: Type.String({ description: "Paper identifier (S2 ID, DOI, or ArXiv ID)" }),
         limit: Type.Optional(
           Type.Number({ description: "Max citations to return (default 20, max 100)" }),
@@ -92,7 +100,7 @@ export function createSemanticScholarTools(
           Type.Number({ description: "Pagination offset" }),
         ),
       }),
-      handler: async (input: { paper_id: string; limit?: number; offset?: number }) => {
+      execute: async (input: { paper_id: string; limit?: number; offset?: number }) => {
         const fields = "title,authors,year,citationCount,url,abstract";
         const limit = Math.min(input.limit ?? 20, 100);
         const offset = input.offset ?? 0;
@@ -100,8 +108,8 @@ export function createSemanticScholarTools(
           `${BASE}/paper/${encodeURIComponent(input.paper_id)}/citations?fields=${fields}&limit=${limit}&offset=${offset}`,
           { headers },
         );
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
-        return res.json();
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
+        return toolResult(await res.json());
       },
     },
   ];

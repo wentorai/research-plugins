@@ -3,6 +3,11 @@ import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plug
 
 const BASE = "https://export.arxiv.org/api/query";
 
+function toolResult(data: unknown) {
+  const text = JSON.stringify(data, null, 2);
+  return { content: [{ type: "text" as const, text }] };
+}
+
 function parseArxivXml(xml: string) {
   const entries: Record<string, unknown>[] = [];
   const entryBlocks = xml.split("<entry>").slice(1);
@@ -59,9 +64,10 @@ export function createArxivTools(
   return [
     {
       name: "search_arxiv",
+      label: "Search Papers (arXiv)",
       description:
         "Search arXiv preprint repository. Covers physics, math, CS, biology, quantitative finance, statistics, and more.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         query: Type.String({
           description:
             "Search query. Supports field prefixes: ti: (title), au: (author), abs: (abstract), cat: (category). E.g. 'ti:transformer AND cat:cs.CL'",
@@ -79,7 +85,7 @@ export function createArxivTools(
           Type.String({ description: "Sort order: 'ascending' or 'descending'" }),
         ),
       }),
-      handler: async (input: {
+      execute: async (input: {
         query: string;
         max_results?: number;
         sort_by?: string;
@@ -93,7 +99,7 @@ export function createArxivTools(
         });
 
         const res = await fetch(`${BASE}?${params}`);
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
         const xml = await res.text();
 
         const totalMatch = xml.match(
@@ -101,30 +107,31 @@ export function createArxivTools(
         );
         const total = totalMatch ? parseInt(totalMatch[1], 10) : 0;
 
-        return {
+        return toolResult({
           total_results: total,
           papers: parseArxivXml(xml),
-        };
+        });
       },
     },
     {
       name: "get_arxiv_paper",
+      label: "Get Paper Details (arXiv)",
       description:
         "Get detailed information about a specific arXiv paper by its ID.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         arxiv_id: Type.String({
           description: "arXiv paper ID, e.g. '2301.00001' or '2301.00001v2'",
         }),
       }),
-      handler: async (input: { arxiv_id: string }) => {
+      execute: async (input: { arxiv_id: string }) => {
         const id = input.arxiv_id.replace("arXiv:", "");
         const params = new URLSearchParams({ id_list: id });
         const res = await fetch(`${BASE}?${params}`);
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
         const xml = await res.text();
         const papers = parseArxivXml(xml);
-        if (papers.length === 0) return { error: "Paper not found" };
-        return papers[0];
+        if (papers.length === 0) return toolResult({ error: "Paper not found" });
+        return toolResult(papers[0]);
       },
     },
   ];

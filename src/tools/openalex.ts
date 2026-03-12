@@ -3,6 +3,11 @@ import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plug
 
 const BASE = "https://api.openalex.org";
 
+function toolResult(data: unknown) {
+  const text = JSON.stringify(data, null, 2);
+  return { content: [{ type: "text" as const, text }] };
+}
+
 export function createOpenAlexTools(
   _ctx: OpenClawPluginToolContext,
   _api: OpenClawPluginApi,
@@ -14,9 +19,10 @@ export function createOpenAlexTools(
   return [
     {
       name: "search_openalex",
+      label: "Search Works (OpenAlex)",
       description:
         "Search academic works via OpenAlex (free, no key required). Covers 250M+ works across all disciplines.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         query: Type.String({ description: "Search query for works" }),
         limit: Type.Optional(
           Type.Number({ description: "Max results (default 10, max 200)" }),
@@ -36,7 +42,7 @@ export function createOpenAlexTools(
           }),
         ),
       }),
-      handler: async (input: {
+      execute: async (input: {
         query: string;
         limit?: number;
         from_year?: number;
@@ -57,9 +63,9 @@ export function createOpenAlexTools(
         if (input.sort_by) params.set("sort", input.sort_by);
 
         const res = await fetch(`${BASE}/works?${params}`, { headers });
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
         const data = await res.json();
-        return {
+        return toolResult({
           total_count: data.meta?.count,
           results: data.results?.map((w: Record<string, unknown>) => ({
             id: w.id,
@@ -76,29 +82,30 @@ export function createOpenAlexTools(
                 )
               : [],
           })),
-        };
+        });
       },
     },
     {
       name: "get_work",
+      label: "Get Work Details (OpenAlex)",
       description:
         "Get full details of a work by its OpenAlex ID, DOI, or other identifier.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         work_id: Type.String({
           description:
             "Work identifier: OpenAlex ID (e.g. 'W2741809807'), DOI URL, or PMID",
         }),
       }),
-      handler: async (input: { work_id: string }) => {
+      execute: async (input: { work_id: string }) => {
         const id = input.work_id.startsWith("10.")
           ? `https://doi.org/${input.work_id}`
           : input.work_id;
         const res = await fetch(`${BASE}/works/${encodeURIComponent(id)}`, {
           headers,
         });
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
         const w = await res.json();
-        return {
+        return toolResult({
           id: w.id,
           doi: w.doi,
           title: w.title,
@@ -117,20 +124,21 @@ export function createOpenAlexTools(
             ?.slice(0, 10)
             .map((c: Record<string, unknown>) => c.display_name),
           referenced_works_count: w.referenced_works?.length,
-        };
+        });
       },
     },
     {
       name: "get_author_openalex",
+      label: "Get Author (OpenAlex)",
       description:
         "Get author information from OpenAlex including publications, h-index, and affiliations.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         author_id: Type.String({
           description:
             "Author identifier: OpenAlex ID (e.g. 'A5023888391'), ORCID, or name search",
         }),
       }),
-      handler: async (input: { author_id: string }) => {
+      execute: async (input: { author_id: string }) => {
         let url: string;
         if (
           input.author_id.startsWith("A") ||
@@ -145,14 +153,14 @@ export function createOpenAlexTools(
             per_page: "5",
           });
           const res = await fetch(`${BASE}/authors?${params}`, { headers });
-          if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
-          return res.json();
+          if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
+          return toolResult(await res.json());
         }
 
         const res = await fetch(url, { headers });
-        if (!res.ok) return { error: `API error: ${res.status} ${res.statusText}` };
+        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
         const a = await res.json();
-        return {
+        return toolResult({
           id: a.id,
           display_name: a.display_name,
           orcid: a.orcid,
@@ -167,7 +175,7 @@ export function createOpenAlexTools(
           top_concepts: a.x_concepts
             ?.slice(0, 5)
             .map((c: Record<string, unknown>) => c.display_name),
-        };
+        });
       },
     },
   ];

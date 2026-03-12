@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "research-plugins"
-version = "1.2.0"
+version = "1.2.1"
 description = "487 academic research skills, 150 MCP configs, 13 agent tools, and 6 curated lists for Research-Claw and AI agents"
 readme = "README.md"
 license = {text = "MIT"}

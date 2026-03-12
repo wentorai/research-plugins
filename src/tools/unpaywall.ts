@@ -3,6 +3,11 @@ import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plug
 
 const BASE = "https://api.unpaywall.org/v2";
 
+function toolResult(data: unknown) {
+  const text = JSON.stringify(data, null, 2);
+  return { content: [{ type: "text" as const, text }] };
+}
+
 export function createUnpaywallTools(
   _ctx: OpenClawPluginToolContext,
   _api: OpenClawPluginApi,
@@ -12,21 +17,22 @@ export function createUnpaywallTools(
   return [
     {
       name: "find_oa_version",
+      label: "Find Open Access Version (Unpaywall)",
       description:
         "Find open access versions of a paper by DOI using Unpaywall. Returns free PDF links from repositories, preprint servers, and publisher OA pages.",
-      inputSchema: Type.Object({
+      parameters: Type.Object({
         doi: Type.String({
           description: "DOI of the paper, e.g. '10.1038/nature12373'",
         }),
       }),
-      handler: async (input: { doi: string }) => {
+      execute: async (input: { doi: string }) => {
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
         const res = await fetch(
           `${BASE}/${encodeURIComponent(doi)}?email=${email}`,
         );
         if (!res.ok) {
-          if (res.status === 404) return { error: "DOI not found in Unpaywall" };
-          return { error: `API error: ${res.status} ${res.statusText}` };
+          if (res.status === 404) return toolResult({ error: "DOI not found in Unpaywall" });
+          return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
         }
         const data = await res.json();
 
@@ -40,7 +46,7 @@ export function createUnpaywallTools(
           version: loc.version,
         }));
 
-        return {
+        return toolResult({
           doi: data.doi,
           title: data.title,
           is_oa: data.is_oa,
@@ -51,7 +57,7 @@ export function createUnpaywallTools(
           publisher: data.publisher,
           published_date: data.published_date,
           oa_locations: oaLocations,
-        };
+        });
       },
     },
   ];
