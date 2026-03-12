@@ -1,12 +1,8 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
+import { toolResult } from "./util.js";
 
 const BASE = "https://api.crossref.org";
-
-function toolResult(data: unknown) {
-  const text = JSON.stringify(data, null, 2);
-  return { content: [{ type: "text" as const, text }] };
-}
 
 export function createCrossRefTools(
   _ctx: OpenClawPluginToolContext,
