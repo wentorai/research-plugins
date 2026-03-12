@@ -65,6 +65,60 @@ and maintainers may set `"verified": true` after confirming:
 
 The `verified` field is informational and does not affect plugin loading.
 
+## Adding or Modifying Agent Tools
+
+Agent tools live in `src/tools/*.ts` and are registered via `index.ts`.
+Each tool **must** conform to the OpenClaw `AgentTool` interface:
+
+```typescript
+{
+  name: "tool_name",                          // snake_case identifier
+  label: "Human-Readable Label (Source)",     // shown in UI tool lists
+  description: "What this tool does...",      // injected into model prompt
+  parameters: Type.Object({ ... }),           // @sinclair/typebox schema
+  execute: async (input) => {                 // async handler
+    // ... do work ...
+    return toolResult(data);                  // MUST use toolResult()
+  },
+}
+```
+
+### Common mistakes to avoid
+
+| Mistake | Correct | Notes |
+|---------|---------|-------|
+| `inputSchema` | `parameters` | OpenClaw reads `tool.parameters.properties` |
+| `handler` | `execute` | OpenClaw calls `tool.execute(input)` |
+| Missing `label` | Add `label` | Displayed in tool picker UI |
+| `return data` | `return toolResult(data)` | Must wrap in `{ content, details }` |
+
+### Return format
+
+All tools must return the standard OpenClaw tool result shape via `toolResult()` from `src/tools/util.ts`:
+
+```typescript
+import { toolResult } from "./util.js";
+
+// toolResult(data) returns:
+// {
+//   content: [{ type: "text", text: JSON.stringify(data, null, 2) }],
+//   details: data   // structured data for programmatic access
+// }
+```
+
+**Never return raw JSON directly** — missing `content` or `details` will cause
+OpenClaw to crash or silently drop tool output.
+
+### Checklist for new tools
+
+- [ ] Uses `parameters` (not `inputSchema`)
+- [ ] Uses `execute` (not `handler`)
+- [ ] Has `label` field
+- [ ] Returns via `toolResult()` (includes both `content` and `details`)
+- [ ] Imported `toolResult` from `./util.js`
+- [ ] Registered in `index.ts` via `api.registerTool()`
+- [ ] Error paths also return `toolResult({ error: "..." })`
+
 ## Running Validation
 
 ```bash
