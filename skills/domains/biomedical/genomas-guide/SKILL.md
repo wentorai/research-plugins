@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "biomedical"
     keywords: ["GenoMAS", "gene expression", "multi-agent", "bioinformatics", "RNA-seq", "genomics automation"]
-    source: "https://github.com/futianfan/GenoMAS"
+    source: "wentor-research-plugins"
 ---
 
 # GenoMAS Guide

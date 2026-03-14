@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "finance"
     keywords: ["STATA", "accounting", "empirical finance", "panel data", "earnings management", "audit"]
-    source: "https://github.com/stata-accounting/resources"
+    source: "wentor-research-plugins"
 ---
 
 # STATA Accounting Research Guide

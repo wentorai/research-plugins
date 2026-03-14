@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "finance"
     keywords: ["akshare", "financial data", "chinese stocks", "market data", "economic indicators", "quantitative finance"]
-    source: "https://clawhub.ai/akshare/akshare-finance"
+    source: "https://github.com/akfamily/akshare"
 ---
 
 # AkShare Financial Data Guide

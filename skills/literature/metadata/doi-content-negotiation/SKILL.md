@@ -200,3 +200,7 @@ with open("references.bib", "w") as f:
 - [DOI Content Negotiation](https://citation.crosscite.org/docs.html)
 - [Crossref Content Negotiation](https://www.crossref.org/documentation/retrieve-metadata/content-negotiation/)
 - [CSL Style Repository](https://github.com/citation-style-language/styles)
+
+## See Also
+
+- [doi-resolution-guide](../doi-resolution-guide/SKILL.md) -- Conceptual overview of DOI resolution, validation, normalization, and CrossRef API usage.

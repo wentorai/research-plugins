@@ -7,7 +7,7 @@ metadata:
     category: "writing"
     subcategory: "templates"
     keywords: ["PDF generation", "article template", "publication-ready", "journal format", "LaTeX template", "manuscript"]
-    source: "https://github.com/elunez/eladmin"
+    source: "wentor-research-plugins"
 ---
 
 # Scientific Article PDF

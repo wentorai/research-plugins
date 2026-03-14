@@ -7,7 +7,7 @@
  * Run: node scripts/validate.ts
  */
 
-import { readFileSync, readdirSync, statSync } from "node:fs";
+import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, relative, sep } from "node:path";
 
 // ── Constants ──────────────────────────────────────────────────────────
@@ -211,6 +211,59 @@ function collectFiles(dir: string, ext: string): string[] {
 }
 
 // ── Skill Validation ──────────────────────────────────────────────────
+
+function isIndexSkill(filePath: string, rootDir: string): boolean {
+  // Index skills are at skills/{category}/{subcategory}/SKILL.md (4 parts)
+  // Regular skills are at skills/{category}/{subcategory}/{name}/SKILL.md (5 parts)
+  const rel = relative(rootDir, filePath);
+  const parts = rel.split(sep);
+  return parts.length === 4; // skills/{cat}/{subcat}/SKILL.md
+}
+
+function validateIndexSkill(filePath: string, rootDir: string): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const rel = relative(rootDir, filePath);
+  const content = readFileSync(filePath, "utf-8");
+
+  const { meta } = parseFrontmatter(content);
+  if (!meta) {
+    errors.push({ file: rel, check: "frontmatter", message: "Missing or invalid YAML frontmatter" });
+    return errors;
+  }
+
+  // name: must end with -skills
+  const name = meta.name as string | undefined;
+  if (!name || typeof name !== "string") {
+    errors.push({ file: rel, check: "name", message: "Missing `name` field" });
+  } else if (!name.endsWith("-skills")) {
+    errors.push({ file: rel, check: "name", message: `Index skill name "${name}" must end with "-skills"` });
+  }
+
+  // description: required, longer allowed (up to 1024 for OC)
+  const description = meta.description as string | undefined;
+  if (!description || typeof description !== "string") {
+    errors.push({ file: rel, check: "description", message: "Missing `description` field" });
+  } else if (description.length > 1024) {
+    errors.push({ file: rel, check: "description", message: `description is ${description.length} chars (max 1024)` });
+  }
+
+  // Must contain a markdown table
+  if (!content.includes("| Skill | Description |")) {
+    errors.push({ file: rel, check: "table", message: "Missing skills table (| Skill | Description |)" });
+  }
+
+  // Relative paths must resolve
+  const links = [...content.matchAll(/\]\(\.\/([^)]+)\/SKILL\.md\)/g)];
+  const dir = filePath.replace(/\/SKILL\.md$/, "");
+  for (const [, skillName] of links) {
+    const resolved = join(dir, skillName, "SKILL.md");
+    if (!existsSync(resolved)) {
+      errors.push({ file: rel, check: "broken-link", message: `Relative path ./${skillName}/SKILL.md not found` });
+    }
+  }
+
+  return errors;
+}
 
 function validateSkill(filePath: string, rootDir: string): ValidationError[] {
   const errors: ValidationError[] = [];
@@ -479,9 +532,30 @@ function main() {
 
   let allErrors: ValidationError[] = [];
 
-  // Validate skills
+  // Validate skills (separate index skills from regular skills)
+  const indexFiles = skillFiles.filter((f) => isIndexSkill(f, rootDir));
+  const regularFiles = skillFiles.filter((f) => !isIndexSkill(f, rootDir));
+
+  console.log(`  Index skills: ${indexFiles.length}`);
+  console.log(`  Regular skills: ${regularFiles.length}\n`);
+
   const skillNames = new Map<string, string>(); // name → first file path
-  for (const file of skillFiles) {
+
+  // Validate index skills
+  for (const file of indexFiles) {
+    const errors = validateIndexSkill(file, rootDir);
+    allErrors.push(...errors);
+
+    const content = readFileSync(file, "utf-8");
+    const { meta } = parseFrontmatter(content);
+    if (meta && typeof meta.name === "string") {
+      const rel = relative(rootDir, file);
+      skillNames.set(meta.name, rel);
+    }
+  }
+
+  // Validate regular skills
+  for (const file of regularFiles) {
     const errors = validateSkill(file, rootDir);
     allErrors.push(...errors);
 

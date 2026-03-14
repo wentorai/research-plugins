@@ -12,6 +12,8 @@ metadata:
 
 # ZotFile Attachment Management Guide
 
+**WARNING: ZotFile is NOT compatible with Zotero 7.** For Zotero 7, use the built-in attachment management or the [Attanger](https://github.com/MuiseDestiny/zotero-attanger) plugin as a replacement.
+
 ## Overview
 
 ZotFile is one of the most established Zotero plugins with over 4,000 GitHub stars, providing advanced file management capabilities for PDF attachments and other documents linked to your Zotero library. It handles the critical but often neglected task of organizing, renaming, and synchronizing the actual files that make up a research library.

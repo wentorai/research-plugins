@@ -7,7 +7,7 @@ metadata:
     category: "research"
     subcategory: "deep-research"
     keywords: ["deep research", "systematic investigation", "multi-source research", "evidence synthesis", "research methodology", "source evaluation"]
-    source: "https://clawhub.ai/ivangdavila/in-depth-research"
+    source: "wentor-research-plugins"
 ---
 
 # In-Depth Research Methodology

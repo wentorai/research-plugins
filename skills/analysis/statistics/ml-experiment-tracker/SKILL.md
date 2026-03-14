@@ -7,7 +7,7 @@ metadata:
     category: "analysis"
     subcategory: "statistics"
     keywords: ["experiment tracking", "machine learning", "reproducibility", "hyperparameters", "MLflow", "model evaluation"]
-    source: "https://github.com/AcademicSkills/ml-experiment-tracker"
+    source: "wentor-research-plugins"
 ---
 
 # ML Experiment Tracker

@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "education"
     keywords: ["education MCP", "learning management", "course content", "educational AI", "tutoring", "assessment"]
-    source: "https://github.com/edumcp/edumcp"
+    source: "wentor-research-plugins"
 ---
 
 # EduMCP Guide

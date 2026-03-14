@@ -3,7 +3,7 @@ name: auto-deep-research-guide
 description: "Automated deep research tool for thorough topic investigation"
 version: 1.0.0
 author: wentor-community
-source: https://github.com/Auto-Deep-Research/Auto-Deep-Research
+source: "wentor-research-plugins"
 metadata:
   openclaw:
     category: "research"

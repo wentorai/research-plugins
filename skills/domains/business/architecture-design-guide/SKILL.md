@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "business"
     keywords: ["architecture", "design", "sustainability", "urban planning", "BIM", "parametric design"]
-    source: "https://github.com/architecture-research/resources"
+    source: "wentor-research-plugins"
 ---
 
 # Architecture Design Guide

@@ -67,7 +67,7 @@ Nodes are the building blocks of most scientific diagrams:
 
   \draw[arrow] (input) -- (process);
   \draw[arrow] (process) -- (output);
-\end{tikzpicture>
+\end{tikzpicture}
 ```
 
 ## Neural Network Diagrams

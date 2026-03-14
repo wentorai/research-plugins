@@ -166,3 +166,7 @@ normalize_doi("See paper at doi.org/10.1038/s41586-021-03819-2 for details")  # 
 - **Handle redirects**: Always use `allow_redirects=True` (or `-L` in curl) as DOIs redirect through the resolver.
 - **Caching**: DOI metadata rarely changes. Cache resolved metadata locally to avoid redundant API calls.
 - **Rate limits**: CrossRef allows 50 requests/second in the polite pool. For bulk operations, use their data dumps instead.
+
+## See Also
+
+- [doi-content-negotiation](../doi-content-negotiation/SKILL.md) -- Detailed API reference for retrieving metadata in multiple formats via HTTP content negotiation.

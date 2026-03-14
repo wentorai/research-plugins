@@ -42,6 +42,8 @@ Challenges specific to historical documents:
 
 ### Transkribus (State of the Art for Historical Documents)
 
+**Pricing note:** Transkribus uses a credit-based pricing model. A limited free tier is available, but processing large volumes of pages requires purchasing credits.
+
 ```
 Transkribus is the leading platform for historical HTR.
 

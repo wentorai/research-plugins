@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "economics"
     keywords: ["automation", "UBI", "post-labor", "technological unemployment", "income distribution", "AI economics"]
-    source: "https://github.com/automationeconomics/resources"
+    source: "wentor-research-plugins"
 ---
 
 # Post-Labor Economics Guide

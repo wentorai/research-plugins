@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "chemistry"
     keywords: ["computational chemistry", "DFT", "quantum chemistry", "reaction prediction"]
-    source: "N/A"
+    source: "wentor-research-plugins"
 ---
 
 # Computational Chemistry Guide

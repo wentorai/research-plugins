@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "humanities"
     keywords: ["history", "primary sources", "archives", "historiography", "digital humanities", "periodization"]
-    source: "https://github.com/historicalsources"
+    source: "wentor-research-plugins"
 ---
 
 # History Research Guide

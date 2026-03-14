@@ -7,7 +7,7 @@ metadata:
     category: "writing"
     subcategory: "polish"
     keywords: ["chinese writing", "AI detection", "text humanization", "academic style", "natural language", "chinese academic"]
-    source: "https://clawhub.ai/anisafifi/chinese-humanizer"
+    source: "wentor-research-plugins"
 ---
 
 # Chinese Academic Text Humanizer

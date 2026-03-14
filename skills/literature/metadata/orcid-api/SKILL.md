@@ -134,3 +134,7 @@ curl -H "Authorization: Bearer YOUR_TOKEN" \
 - Official documentation: https://info.orcid.org/documentation/api-tutorial/
 - API reference: https://pub.orcid.org/v3.0/
 - ORCID integration guide: https://info.orcid.org/documentation/integration-guide/
+
+## See Also
+
+- [orcid-integration-guide](../orcid-integration-guide/SKILL.md) -- Setting up your ORCID profile, publisher/funder integrations, and best practices for maintaining your record.

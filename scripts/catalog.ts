@@ -118,6 +118,10 @@ function collectSkills(rootDir: string): CatalogItem[] {
     const relPath = relative(rootDir, dirname(f));  // skills/analysis/dataviz/name
     const parts = relPath.split("/");               // ["skills","analysis","dataviz","name"]
 
+    // Skip subcategory index files (depth 3: skills/{cat}/{subcat}/SKILL.md)
+    // Only include concrete skills (depth 4: skills/{cat}/{subcat}/{name}/SKILL.md)
+    if (parts.length < 4) continue;
+
     items.push({
       id: (fm.name as string) || basename(dirname(f)),
       type: "skill",
@@ -152,8 +156,8 @@ function collectMcpConfigs(rootDir: string): CatalogItem[] {
         type: "mcp_config",
         name: data.name || data.id || basename(f, ".json"),
         description: data.description || "",
-        category: data.category || parts[1] || "integrations",
-        subcategory: data.category || parts[1] || "",   // MCP category IS the subcategory under integrations
+        category: "integrations",
+        subcategory: parts[1] || "",                     // directory name = subcategory under integrations
         keywords: [],
         path: relPath,
         source: data.source || "",
@@ -275,7 +279,7 @@ function main() {
     generated: new Date().toISOString().slice(0, 10),
     stats: {
       skills: skills.length,
-      agent_tools: agentTools.reduce((n, t) => n + (t.tools?.length ?? 0), 0),
+      agent_tools: agentTools.length,
       mcp_configs: mcpConfigs.length,
       curated_lists: curated.length,
       total: items.length,

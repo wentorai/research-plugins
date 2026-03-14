@@ -7,7 +7,7 @@ metadata:
     category: "analysis"
     subcategory: "statistics"
     keywords: ["anomaly detection", "outlier detection", "data quality", "statistical testing", "robust statistics"]
-    source: "https://github.com/AcademicSkills/data-anomaly-detection"
+    source: "wentor-research-plugins"
 ---
 
 # Data Anomaly Detection

@@ -7,7 +7,7 @@ metadata:
     category: "analysis"
     subcategory: "econometrics"
     keywords: ["robustness checks", "sensitivity analysis", "Stata regression", "panel data", "causal inference", "fixed effects"]
-    source: "https://github.com/awesome-econ-ai/academic-skills"
+    source: "wentor-research-plugins"
 ---
 
 # Robustness Checks

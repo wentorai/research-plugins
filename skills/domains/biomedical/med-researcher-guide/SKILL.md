@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "biomedical"
     keywords: ["medical research", "biomedical agent", "clinical literature", "PubMed agent", "medical AI", "evidence synthesis"]
-    source: "https://github.com/mao1207/Med-Researcher"
+    source: "wentor-research-plugins"
 ---
 
 # Med-Researcher Guide

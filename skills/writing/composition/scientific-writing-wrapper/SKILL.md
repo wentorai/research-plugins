@@ -7,7 +7,7 @@ metadata:
     category: "writing"
     subcategory: "composition"
     keywords: ["scientific writing", "AI writing", "draft generation", "writing workflow", "paper composition", "manuscript"]
-    source: "https://github.com/papercopilot/papercopilot"
+    source: "wentor-research-plugins"
 ---
 
 # Scientific Writing Wrapper

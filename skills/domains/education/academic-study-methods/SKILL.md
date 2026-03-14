@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "education"
     keywords: ["study methods", "learning techniques", "spaced repetition", "active recall", "academic performance", "metacognition"]
-    source: "https://clawhub.ai/ivangdavila/studying"
+    source: "wentor-research-plugins"
 ---
 
 # Evidence-Based Academic Study Methods

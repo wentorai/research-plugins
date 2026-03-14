@@ -7,7 +7,7 @@ metadata:
     category: "literature"
     subcategory: "search"
     keywords: ["paper search", "MCP", "arXiv", "PubMed", "bioRxiv", "multi-database"]
-    source: "https://github.com/openags/paper-search-mcp"
+    source: "wentor-research-plugins"
 ---
 
 # Paper Search MCP Guide

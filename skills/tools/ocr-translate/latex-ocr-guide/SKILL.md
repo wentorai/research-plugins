@@ -154,6 +154,8 @@ def preprocess_handwritten(image_path: str) -> Image.Image:
 
 ## Using Mathpix API
 
+**Pricing note:** Mathpix is a paid service (starting at $5/month). For free open-source alternatives, use pix2tex/LaTeX-OCR or Nougat (Meta), both MIT-licensed and capable of running locally.
+
 For production-quality results, the Mathpix API provides the highest accuracy:
 
 ```python

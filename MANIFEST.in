@@ -1,4 +1,0 @@
-recursive-include skills *.md
-recursive-include mcp-configs *.json
-recursive-include curated *.md
-include LICENSE README.md

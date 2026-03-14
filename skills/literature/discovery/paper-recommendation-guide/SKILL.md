@@ -7,7 +7,7 @@ metadata:
     category: "literature"
     subcategory: "discovery"
     keywords: ["paper recommendation", "literature discovery", "related papers", "reading list", "citation-based", "algorithmic discovery"]
-    source: "https://github.com/pengzhenghao/paper-recommendation"
+    source: "wentor-research-plugins"
 ---
 
 # Paper Recommendation Guide

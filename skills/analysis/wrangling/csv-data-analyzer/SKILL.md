@@ -7,7 +7,7 @@ metadata:
     category: "analysis"
     subcategory: "wrangling"
     keywords: ["CSV analysis", "data exploration", "data cleaning", "statistical summary", "tabular data", "pandas"]
-    source: "https://github.com/AcademicSkills/csv-data-analyzer"
+    source: "wentor-research-plugins"
 ---
 
 # CSV Data Analyzer

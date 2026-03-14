@@ -176,3 +176,7 @@ def get_orcid_works(orcid_id: str) -> list:
 - Include peer review activity (via Publons/Web of Science integration)
 - Use your ORCID iD in email signatures, CVs, and personal websites
 - Format as a full URL: https://orcid.org/0000-0002-1825-0097
+
+## See Also
+
+- [orcid-api](../orcid-api/SKILL.md) -- Detailed ORCID Public API reference with endpoints, authentication, rate limits, and query examples.

@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "economics"
     keywords: ["pricing", "behavioral economics", "consumer behavior", "anchoring", "framing", "willingness to pay"]
-    source: "https://github.com/pricing-research/resources"
+    source: "wentor-research-plugins"
 ---
 
 # Pricing Psychology Guide

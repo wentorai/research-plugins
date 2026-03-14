@@ -7,7 +7,7 @@ metadata:
     category: "writing"
     subcategory: "composition"
     keywords: ["academic writing", "IEEE format", "ACM format", "paper structure", "manuscript preparation", "citation formatting"]
-    source: "https://clawhub.ai/Veeramanikandanr48/research-paper-writer"
+    source: "wentor-research-plugins"
 ---
 
 # Research Paper Writer — IEEE/ACM Standards Guide

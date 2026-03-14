@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "humanities"
     keywords: ["political history", "comparative politics", "Chinese history", "European history", "state formation", "revolution"]
-    source: "https://plato.stanford.edu/entries/political-history/"
+    source: "wentor-research-plugins"
 ---
 
 # Political History Guide

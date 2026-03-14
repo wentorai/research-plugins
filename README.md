@@ -8,7 +8,7 @@
 
 ## Research Plugins for Research-Claw
 
-An open-source collection of **487 academic research skills**, **150 MCP configs**, **13 agent tools**, and **6 curated resource lists** for [Research-Claw](https://wentor.ai) and other AI coding agents.
+An open-source collection of **488 academic research skills**, **150 MCP configs**, **13 agent tools**, and **6 curated resource lists** for [Research-Claw](https://wentor.ai) and other AI coding agents.
 
 Built by [Wentor AI](https://wentor.ai) for the global research community.
 
@@ -16,7 +16,7 @@ Built by [Wentor AI](https://wentor.ai) for the global research community.
 
 | Component | Count | Description |
 |-----------|-------|-------------|
-| **Skills** | 487 | Practical SKILL.md guides covering literature search, academic writing, data analysis, research methods, 16 domain specialties, and productivity tools |
+| **Skills** | 488 | Practical SKILL.md guides covering literature search, academic writing, data analysis, research methods, 16 domain specialties, and productivity tools |
 | **Agent Tools** | 13 | TypeScript API wrappers for Semantic Scholar, OpenAlex, CrossRef, arXiv, PubMed, and Unpaywall |
 | **MCP Configs** | 150 | Ready-to-use MCP server configurations for reference managers, knowledge bases, research databases, and AI platforms |
 | **Curated Lists** | 6 | Hand-picked resource collections for each skill category |
@@ -32,15 +32,19 @@ Skills are organized into **6 categories** with **40 subcategories**:
 | **analysis** | statistics, econometrics, wrangling, dataviz | 57 | Statistical methods, data cleaning, visualization |
 | **research** | methodology, deep-research, paper-review, automation, funding | 70 | Research design, systematic reviews, grant writing |
 | **domains** | 16 disciplines (CS, AI/ML, biomedical, chemistry, economics, finance, law, physics, math, ecology, etc.) | 143 | Domain-specific research methods and tools |
-| **tools** | diagram, document, code-exec, scraping, knowledge-graph, ocr-translate | 60 | Diagrams, PDF parsing, reproducible code, OCR |
+| **tools** | diagram, document, code-exec, scraping, knowledge-graph, ocr-translate | 61 | Diagrams, PDF parsing, reproducible code, OCR |
 
 ### Install
 
-#### As OpenClaw Plugin
+#### As OpenClaw Plugin (Recommended)
 
 ```bash
 openclaw plugins install @wentorai/research-plugins
 ```
+
+This installs the plugin to `~/.openclaw/extensions/` where OpenClaw auto-discovers it. Skills and agent tools are loaded automatically.
+
+> **Note for satellite/pnpm projects:** Do not add this package as a `pnpm` dependency and load it from `node_modules` via `plugins.load.paths`. pnpm's content-addressable store uses hardlinks, which OpenClaw's security validator rejects (`unsafe plugin manifest path`). Always use `openclaw plugins install` instead.
 
 #### As Skills Collection (Claude Code, Cursor, Windsurf, OpenCode)
 
@@ -115,7 +119,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, MCP conf
 
 ## Research-Claw 科研插件集
 
-一个开源的学术科研资源集合，包含 **487 个科研技能**、**150 个 MCP 服务器配置**、**13 个智能体工具** 和 **6 个精选资源列表**，为 [Research-Claw (科研龙虾)](https://wentor.ai) 及其他 AI 编程助手而构建。
+一个开源的学术科研资源集合，包含 **488 个科研技能**、**150 个 MCP 服务器配置**、**13 个智能体工具** 和 **6 个精选资源列表**，为 [Research-Claw (科研龙虾)](https://wentor.ai) 及其他 AI 编程助手而构建。
 
 由 [Wentor AI](https://wentor.ai) 为全球科研社区打造。
 
@@ -123,7 +127,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, MCP conf
 
 | 组件 | 数量 | 说明 |
 |------|------|------|
-| **技能 (Skills)** | 487 | 涵盖文献检索、学术写作、数据分析、研究方法、16 个学科领域及生产力工具的实用指南 |
+| **技能 (Skills)** | 488 | 涵盖文献检索、学术写作、数据分析、研究方法、16 个学科领域及生产力工具的实用指南 |
 | **智能体工具** | 13 | 封装 Semantic Scholar、OpenAlex、CrossRef、arXiv、PubMed、Unpaywall 六大学术 API 的 TypeScript 工具 |
 | **MCP 配置** | 150 | 即用型 MCP 服务器配置，涵盖文献管理、知识库、学术数据库、AI 平台等 |
 | **精选列表** | 6 | 按分类整理的优质资源推荐 |
@@ -139,15 +143,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, MCP conf
 | **分析 (analysis)** | 统计、计量经济、数据处理、可视化 | 57 | 统计方法、数据清洗、图表制作 |
 | **研究 (research)** | 方法论、深度研究、论文评审、自动化、基金 | 70 | 研究设计、系统综述、基金申请 |
 | **学科 (domains)** | 16 个学科方向 | 143 | 各学科专属研究方法与工具 |
-| **工具 (tools)** | 图表、文档、代码执行、爬虫、知识图谱、OCR | 60 | 流程图、PDF 解析、可复现代码、OCR 翻译 |
+| **工具 (tools)** | 图表、文档、代码执行、爬虫、知识图谱、OCR | 61 | 流程图、PDF 解析、可复现代码、OCR 翻译 |
 
 ### 安装方式
 
-#### 作为 OpenClaw 插件
+#### 作为 OpenClaw 插件（推荐）
 
 ```bash
 openclaw plugins install @wentorai/research-plugins
 ```
+
+插件会安装到 `~/.openclaw/extensions/`，OpenClaw 自动发现并加载所有技能和工具。
+
+> **pnpm 项目注意**：请勿将本包作为 `pnpm` 依赖并通过 `plugins.load.paths` 从 `node_modules` 加载。pnpm 的内容寻址存储使用硬链接 (nlink > 1)，会被 OpenClaw 安全校验拒绝 (`unsafe plugin manifest path`)。请始终使用 `openclaw plugins install`。
 
 #### 作为技能集合 (Claude Code, Cursor, Windsurf, OpenCode)
 

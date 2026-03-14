@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "biomedical"
     keywords: ["biomedicine", "RNA-seq", "drug discovery", "clinical AI", "medical NLP", "bioinformatics"]
-    source: "https://github.com/biomedical-ai/resources"
+    source: "wentor-research-plugins"
 ---
 
 # MedgeClaw Guide

@@ -7,7 +7,7 @@ metadata:
     category: "writing"
     subcategory: "latex"
     keywords: ["latex", "thesis writing", "paper template", "academic writing", "document structure", "overleaf"]
-    source: "https://clawhub.ai/dayunyan/academic-writer"
+    source: "wentor-research-plugins"
 ---
 
 # Academic Writing with LaTeX Templates

@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "finance"
     keywords: ["options analytics", "derivatives", "Greeks", "Black-Scholes", "strategy analysis", "financial agent"]
-    source: "https://github.com/options-analytics/options-agent"
+    source: "wentor-research-plugins"
 ---
 
 # Options Analytics Agent Guide

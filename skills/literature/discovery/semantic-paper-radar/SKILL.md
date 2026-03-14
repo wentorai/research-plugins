@@ -7,7 +7,7 @@ metadata:
     category: "literature"
     subcategory: "discovery"
     keywords: ["semantic search", "embeddings", "literature synthesis", "paper discovery", "vector search", "knowledge mapping"]
-    source: "https://github.com/mukulpatnaik/researchgpt"
+    source: "wentor-research-plugins"
 ---
 
 # Semantic Paper Radar

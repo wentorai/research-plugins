@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "social-science"
     keywords: ["sociology", "social research", "qualitative methods", "survey research", "ethnography", "social theory"]
-    source: "https://clawhub.ai/ivangdavila/sociology"
+    source: "wentor-research-plugins"
 ---
 
 # Sociological Research Methods

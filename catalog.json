@@ -1,12 +1,12 @@
 {
   "version": "1.1.0",
-  "generated": "2026-03-11",
+  "generated": "2026-03-14",
   "stats": {
-    "skills": 487,
-    "agent_tools": 13,
+    "skills": 431,
+    "agent_tools": 6,
     "mcp_configs": 150,
     "curated_lists": 6,
-    "total": 649
+    "total": 593
   },
   "items": [
     {
@@ -61,25 +61,7 @@
         "graph export"
       ],
       "path": "skills/analysis/dataviz/chart-image-generator",
-      "source": "https://github.com/AcademicSkills/chart-image-generator"
-    },
-    {
-      "id": "citation-map-guide",
-      "type": "skill",
-      "name": "citation-map-guide",
-      "description": "Generate citation world maps from Google Scholar profiles",
-      "category": "analysis",
-      "subcategory": "dataviz",
-      "keywords": [
-        "citation map",
-        "Google Scholar",
-        "geospatial",
-        "academic impact",
-        "visualization",
-        "world map"
-      ],
-      "path": "skills/analysis/dataviz/citation-map-guide",
-      "source": "https://github.com/ChenLiu-1996/CitationMap"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "color-accessibility-guide",
@@ -114,24 +96,6 @@
       ],
       "path": "skills/analysis/dataviz/d3-visualization-guide",
       "source": "https://github.com/d3/d3"
-    },
-    {
-      "id": "data-visualization-principles",
-      "type": "skill",
-      "name": "data-visualization-principles",
-      "description": "Design principles for creating effective and honest data visualizations",
-      "category": "analysis",
-      "subcategory": "dataviz",
-      "keywords": [
-        "data visualization",
-        "chart design",
-        "visual encoding",
-        "chart selection",
-        "color theory",
-        "publication figures"
-      ],
-      "path": "skills/analysis/dataviz/data-visualization-principles",
-      "source": "https://clawhub.ai/data-visualization"
     },
     {
       "id": "echarts-visualization-guide",
@@ -329,24 +293,6 @@
       "source": "https://github.com/py-why/EconML"
     },
     {
-      "id": "empirical-paper-analysis",
-      "type": "skill",
-      "name": "empirical-paper-analysis",
-      "description": "Systematic framework for analyzing empirical law and economics papers",
-      "category": "analysis",
-      "subcategory": "econometrics",
-      "keywords": [
-        "empirical analysis",
-        "law and economics",
-        "identification strategy",
-        "causal inference",
-        "robustness checks",
-        "research methodology"
-      ],
-      "path": "skills/analysis/econometrics/empirical-paper-analysis",
-      "source": "https://clawhub.ai/zhouziyue233/empirical-paper-analysis-skill"
-    },
-    {
       "id": "iv-regression-guide",
       "type": "skill",
       "name": "iv-regression-guide",
@@ -410,24 +356,6 @@
       "source": "wentor-research-plugins"
     },
     {
-      "id": "panel-data-regression-workflow",
-      "type": "skill",
-      "name": "panel-data-regression-workflow",
-      "description": "Reproducible panel data regression workflow in Python and Stata",
-      "category": "analysis",
-      "subcategory": "econometrics",
-      "keywords": [
-        "panel data",
-        "fixed effects",
-        "regression workflow",
-        "python econometrics",
-        "stata",
-        "reproducible research"
-      ],
-      "path": "skills/analysis/econometrics/panel-data-regression-workflow",
-      "source": "https://skillsmp.com/skills/panel-data-regression-analyst"
-    },
-    {
       "id": "python-causality-guide",
       "type": "skill",
       "name": "python-causality-guide",
@@ -461,7 +389,7 @@
         "fixed effects"
       ],
       "path": "skills/analysis/econometrics/robustness-checks",
-      "source": "https://github.com/awesome-econ-ai/academic-skills"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "stata-accounting-guide",
@@ -519,24 +447,6 @@
       "source": "https://github.com/dylantmoore/stata-skill"
     },
     {
-      "id": "stata-regression",
-      "type": "skill",
-      "name": "stata-regression",
-      "description": "Run regression analyses in Stata with publication-ready output",
-      "category": "analysis",
-      "subcategory": "econometrics",
-      "keywords": [
-        "Stata regression",
-        "Stata data cleaning",
-        "Stata commands",
-        "panel data",
-        "fixed effects",
-        "robustness checks"
-      ],
-      "path": "skills/analysis/econometrics/stata-regression",
-      "source": "https://github.com/awesome-econ-ai/academic-skills"
-    },
-    {
       "id": "time-series-guide",
       "type": "skill",
       "name": "time-series-guide",
@@ -587,25 +497,7 @@
         "robust statistics"
       ],
       "path": "skills/analysis/statistics/data-anomaly-detection",
-      "source": "https://github.com/AcademicSkills/data-anomaly-detection"
-    },
-    {
-      "id": "general-statistics-guide",
-      "type": "skill",
-      "name": "general-statistics-guide",
-      "description": "Conceptual foundations of statistical inference for empirical research",
-      "category": "analysis",
-      "subcategory": "statistics",
-      "keywords": [
-        "statistical inference",
-        "hypothesis testing",
-        "probability",
-        "regression",
-        "confidence intervals",
-        "statistical thinking"
-      ],
-      "path": "skills/analysis/statistics/general-statistics-guide",
-      "source": "https://clawhub.com/ivangdavila/statistics"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "hypothesis-testing-guide",
@@ -624,24 +516,6 @@
       ],
       "path": "skills/analysis/statistics/hypothesis-testing-guide",
       "source": "N/A"
-    },
-    {
-      "id": "infiagent-benchmark-guide",
-      "type": "skill",
-      "name": "infiagent-benchmark-guide",
-      "description": "Agent benchmark for data analysis evaluation (ICML 2024)",
-      "category": "analysis",
-      "subcategory": "statistics",
-      "keywords": [
-        "InfiAgent",
-        "benchmark",
-        "data analysis",
-        "agent evaluation",
-        "ICML",
-        "DABench"
-      ],
-      "path": "skills/analysis/statistics/infiagent-benchmark-guide",
-      "source": "https://github.com/InfiAgent/InfiAgent"
     },
     {
       "id": "meta-analysis-guide",
@@ -676,7 +550,25 @@
         "model evaluation"
       ],
       "path": "skills/analysis/statistics/ml-experiment-tracker",
-      "source": "https://github.com/AcademicSkills/ml-experiment-tracker"
+      "source": "wentor-research-plugins"
+    },
+    {
+      "id": "modeling-strategy-guide",
+      "type": "skill",
+      "name": "modeling-strategy-guide",
+      "description": "Strategic statistical modeling, experimentation, and causal inference",
+      "category": "analysis",
+      "subcategory": "statistics",
+      "keywords": [
+        "statistical modeling",
+        "causal inference",
+        "A/B testing",
+        "experimentation",
+        "feature engineering",
+        "data science"
+      ],
+      "path": "skills/analysis/statistics/modeling-strategy-guide",
+      "source": "wentor-research-plugins"
     },
     {
       "id": "nonparametric-tests-guide",
@@ -713,43 +605,6 @@
       "source": "wentor-research-plugins"
     },
     {
-      "id": "pywayne-statistics-guide",
-      "type": "skill",
-      "name": "pywayne-statistics-guide",
-      "description": "37+ statistical testing methods for rigorous hypothesis testing",
-      "category": "analysis",
-      "subcategory": "statistics",
-      "keywords": [
-        "hypothesis testing",
-        "statistical tests",
-        "p-value",
-        "parametric tests",
-        "nonparametric tests",
-        "effect size",
-        "multiple comparisons"
-      ],
-      "path": "skills/analysis/statistics/pywayne-statistics-guide",
-      "source": "https://github.com/AcademicSkills/pywayne-statistics-guide"
-    },
-    {
-      "id": "quantitative-methods-guide",
-      "type": "skill",
-      "name": "quantitative-methods-guide",
-      "description": "Design and execute statistical analyses with regression modeling",
-      "category": "analysis",
-      "subcategory": "statistics",
-      "keywords": [
-        "regression analysis",
-        "quantitative methods",
-        "research design",
-        "statistical modeling",
-        "OLS",
-        "logistic regression"
-      ],
-      "path": "skills/analysis/statistics/quantitative-methods-guide",
-      "source": "https://github.com/AcademicSkills/quantitative-methods-guide"
-    },
-    {
       "id": "sem-guide",
       "type": "skill",
       "name": "sem-guide",
@@ -764,24 +619,6 @@
       ],
       "path": "skills/analysis/statistics/sem-guide",
       "source": "wentor-research-plugins"
-    },
-    {
-      "id": "senior-data-scientist-guide",
-      "type": "skill",
-      "name": "senior-data-scientist-guide",
-      "description": "Statistical modeling, experimentation design, and causal inference",
-      "category": "analysis",
-      "subcategory": "statistics",
-      "keywords": [
-        "statistical modeling",
-        "causal inference",
-        "A/B testing",
-        "experimentation",
-        "feature engineering",
-        "data science"
-      ],
-      "path": "skills/analysis/statistics/senior-data-scientist-guide",
-      "source": "https://github.com/AcademicSkills/senior-data-scientist-guide"
     },
     {
       "id": "survival-analysis-guide",
@@ -802,24 +639,6 @@
       "source": "wentor-research-plugins"
     },
     {
-      "id": "claude-data-analysis-guide",
-      "type": "skill",
-      "name": "claude-data-analysis-guide",
-      "description": "Claude Code-based conversational data analysis agent",
-      "category": "analysis",
-      "subcategory": "wrangling",
-      "keywords": [
-        "Claude Code",
-        "data analysis",
-        "conversational",
-        "pandas",
-        "visualization",
-        "interactive"
-      ],
-      "path": "skills/analysis/wrangling/claude-data-analysis-guide",
-      "source": "https://github.com/liangdabiao/claude-data-analysis"
-    },
-    {
       "id": "csv-data-analyzer",
       "type": "skill",
       "name": "csv-data-analyzer",
@@ -835,7 +654,7 @@
         "pandas"
       ],
       "path": "skills/analysis/wrangling/csv-data-analyzer",
-      "source": "https://github.com/AcademicSkills/csv-data-analyzer"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "data-cleaning-pipeline",
@@ -871,7 +690,7 @@
         "minimal prompting"
       ],
       "path": "skills/analysis/wrangling/data-cog-guide",
-      "source": "https://github.com/AcademicSkills/data-cog-guide"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "missing-data-handling",
@@ -889,24 +708,6 @@
       ],
       "path": "skills/analysis/wrangling/missing-data-handling",
       "source": "wentor"
-    },
-    {
-      "id": "open-data-scientist-guide",
-      "type": "skill",
-      "name": "open-data-scientist-guide",
-      "description": "AI agent that performs end-to-end data science workflows",
-      "category": "analysis",
-      "subcategory": "wrangling",
-      "keywords": [
-        "data science",
-        "automated analysis",
-        "EDA",
-        "feature engineering",
-        "data wrangling",
-        "AI agent"
-      ],
-      "path": "skills/analysis/wrangling/open-data-scientist-guide",
-      "source": "https://github.com/Open-Data-Scientist/open-data-scientist"
     },
     {
       "id": "pandas-data-wrangling",
@@ -1049,24 +850,6 @@
       ],
       "path": "skills/domains/ai-ml/ai-model-benchmarking",
       "source": "https://github.com/EleutherAI/lm-evaluation-harness"
-    },
-    {
-      "id": "annotated-dl-papers-guide",
-      "type": "skill",
-      "name": "annotated-dl-papers-guide",
-      "description": "Annotated deep learning paper implementations with side-by-side notes",
-      "category": "domains",
-      "subcategory": "ai-ml",
-      "keywords": [
-        "deep-learning",
-        "paper-implementation",
-        "annotations",
-        "transformer",
-        "gan",
-        "diffusion"
-      ],
-      "path": "skills/domains/ai-ml/annotated-dl-papers-guide",
-      "source": "https://github.com/labmlai/annotated_deep_learning_paper_implementations"
     },
     {
       "id": "anomaly-detection-papers-guide",
@@ -1631,7 +1414,7 @@
         "genomics automation"
       ],
       "path": "skills/domains/biomedical/genomas-guide",
-      "source": "https://github.com/futianfan/GenoMAS"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "genomics-analysis-guide",
@@ -1685,7 +1468,7 @@
         "evidence synthesis"
       ],
       "path": "skills/domains/biomedical/med-researcher-guide",
-      "source": "https://github.com/mao1207/Med-Researcher"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "med-researcher-r1-guide",
@@ -1721,7 +1504,7 @@
         "bioinformatics"
       ],
       "path": "skills/domains/biomedical/medgeclaw-guide",
-      "source": "https://github.com/biomedical-ai/resources"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "medical-imaging-guide",
@@ -1811,7 +1594,7 @@
         "parametric design"
       ],
       "path": "skills/domains/business/architecture-design-guide",
-      "source": "https://github.com/architecture-research/resources"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "innovation-management-guide",
@@ -1969,7 +1752,7 @@
         "reaction prediction"
       ],
       "path": "skills/domains/chemistry/computational-chemistry-guide",
-      "source": "N/A"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "molecular-dynamics-guide",
@@ -2405,7 +2188,7 @@
         "AI economics"
       ],
       "path": "skills/domains/economics/post-labor-economics",
-      "source": "https://github.com/automationeconomics/resources"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "pricing-psychology-guide",
@@ -2423,7 +2206,7 @@
         "willingness to pay"
       ],
       "path": "skills/domains/economics/pricing-psychology-guide",
-      "source": "https://github.com/pricing-research/resources"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "repec-economics-api",
@@ -2477,7 +2260,7 @@
         "metacognition"
       ],
       "path": "skills/domains/education/academic-study-methods",
-      "source": "https://clawhub.ai/ivangdavila/studying"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "assessment-design-guide",
@@ -2548,7 +2331,7 @@
         "assessment"
       ],
       "path": "skills/domains/education/edumcp-guide",
-      "source": "https://github.com/edumcp/edumcp"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "learning-science-guide",
@@ -2620,7 +2403,7 @@
         "quantitative finance"
       ],
       "path": "skills/domains/finance/akshare-finance-data",
-      "source": "https://clawhub.ai/akshare/akshare-finance"
+      "source": "https://github.com/akfamily/akshare"
     },
     {
       "id": "financial-data-analysis",
@@ -2673,7 +2456,7 @@
         "financial agent"
       ],
       "path": "skills/domains/finance/options-analytics-agent-guide",
-      "source": "https://github.com/options-analytics/options-agent"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "portfolio-optimization-guide",
@@ -2744,7 +2527,7 @@
         "audit"
       ],
       "path": "skills/domains/finance/stata-accounting-research",
-      "source": "https://github.com/stata-accounting/resources"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "climate-modeling-guide",
@@ -2874,24 +2657,6 @@
       "source": "wentor"
     },
     {
-      "id": "digital-humanities-methods",
-      "type": "skill",
-      "name": "digital-humanities-methods",
-      "description": "Computational methods for humanities research with text and network analysis",
-      "category": "domains",
-      "subcategory": "humanities",
-      "keywords": [
-        "digital humanities",
-        "text analysis",
-        "corpus linguistics",
-        "network analysis",
-        "cultural analytics",
-        "computational methods"
-      ],
-      "path": "skills/domains/humanities/digital-humanities-methods",
-      "source": "https://clawhub.ai/digital-humanities"
-    },
-    {
       "id": "ethical-philosophy-guide",
       "type": "skill",
       "name": "ethical-philosophy-guide",
@@ -2925,7 +2690,7 @@
         "periodization"
       ],
       "path": "skills/domains/humanities/history-research-guide",
-      "source": "https://github.com/historicalsources"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "philosophy-research-guide",
@@ -2961,7 +2726,7 @@
         "revolution"
       ],
       "path": "skills/domains/humanities/political-history-guide",
-      "source": "https://plato.stanford.edu/entries/political-history/"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "caselaw-access-api",
@@ -3049,24 +2814,6 @@
       ],
       "path": "skills/domains/law/legal-research-guide",
       "source": "wentor-research-plugins"
-    },
-    {
-      "id": "legal-research-methods",
-      "type": "skill",
-      "name": "legal-research-methods",
-      "description": "Systematic legal research methods for case law, statutes, and regulations",
-      "category": "domains",
-      "subcategory": "law",
-      "keywords": [
-        "legal research",
-        "case law",
-        "statute analysis",
-        "legal databases",
-        "regulatory analysis",
-        "legal methodology"
-      ],
-      "path": "skills/domains/law/legal-research-methods",
-      "source": "https://clawhub.ai/legal-research"
     },
     {
       "id": "opencontracts-guide",
@@ -3493,24 +3240,6 @@
       "source": "wentor"
     },
     {
-      "id": "sociology-research-guide",
-      "type": "skill",
-      "name": "sociology-research-guide",
-      "description": "Sociological thinking from observations to rigorous research design",
-      "category": "domains",
-      "subcategory": "social-science",
-      "keywords": [
-        "sociology",
-        "social theory",
-        "qualitative research",
-        "ethnography",
-        "social stratification",
-        "institutions"
-      ],
-      "path": "skills/domains/social-science/sociology-research-guide",
-      "source": "https://github.com/scolladon/sociological-research-methods"
-    },
-    {
       "id": "sociology-research-methods",
       "type": "skill",
       "name": "sociology-research-methods",
@@ -3526,7 +3255,7 @@
         "social theory"
       ],
       "path": "skills/domains/social-science/sociology-research-methods",
-      "source": "https://clawhub.ai/ivangdavila/sociology"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "survey-research-guide",
@@ -3545,24 +3274,6 @@
       ],
       "path": "skills/domains/social-science/survey-research-guide",
       "source": "wentor"
-    },
-    {
-      "id": "arxiv-paper-monitoring",
-      "type": "skill",
-      "name": "arxiv-paper-monitoring",
-      "description": "Set up automated monitoring for new arXiv papers in your research area",
-      "category": "literature",
-      "subcategory": "discovery",
-      "keywords": [
-        "arxiv monitoring",
-        "paper alerts",
-        "research tracking",
-        "new papers",
-        "literature monitoring",
-        "RSS feeds"
-      ],
-      "path": "skills/literature/discovery/arxiv-paper-monitoring",
-      "source": "https://clawhub.ai/arxiv-watcher"
     },
     {
       "id": "citation-alert-guide",
@@ -3631,24 +3342,7 @@
         "algorithmic discovery"
       ],
       "path": "skills/literature/discovery/paper-recommendation-guide",
-      "source": "https://github.com/pengzhenghao/paper-recommendation"
-    },
-    {
-      "id": "paper-tracking-guide",
-      "type": "skill",
-      "name": "paper-tracking-guide",
-      "description": "Track new publications via RSS, alerts, and citation notifications",
-      "category": "literature",
-      "subcategory": "discovery",
-      "keywords": [
-        "literature alert",
-        "citation notification",
-        "RSS feed",
-        "new publication tracking",
-        "related papers"
-      ],
-      "path": "skills/literature/discovery/paper-tracking-guide",
-      "source": "N/A"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "papers-we-love-guide",
@@ -3701,7 +3395,7 @@
         "knowledge mapping"
       ],
       "path": "skills/literature/discovery/semantic-paper-radar",
-      "source": "https://github.com/mukulpatnaik/researchgpt"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "semantic-scholar-recs-guide",
@@ -3997,24 +3691,6 @@
       ],
       "path": "skills/literature/fulltext/zotero-ai-butler-guide",
       "source": "https://github.com/steven-jianhao-li/zotero-AI-Butler"
-    },
-    {
-      "id": "zotero-scihub-guide",
-      "type": "skill",
-      "name": "zotero-scihub-guide",
-      "description": "Zotero plugin for automatic PDF retrieval from Sci-Hub",
-      "category": "literature",
-      "subcategory": "fulltext",
-      "keywords": [
-        "Zotero",
-        "Sci-Hub",
-        "PDF download",
-        "open access",
-        "full text",
-        "paper retrieval"
-      ],
-      "path": "skills/literature/fulltext/zotero-scihub-guide",
-      "source": "https://github.com/ethanwillis/zotero-scihub"
     },
     {
       "id": "academic-paper-summarizer",
@@ -4488,24 +4164,6 @@
       "source": "https://pypi.org/project/arxiv-cli-tools/"
     },
     {
-      "id": "arxiv-osiris",
-      "type": "skill",
-      "name": "arxiv-osiris",
-      "description": "Search and download arXiv papers via Python and PowerShell scripts",
-      "category": "literature",
-      "subcategory": "search",
-      "keywords": [
-        "arxiv",
-        "paper download",
-        "preprint search",
-        "python script",
-        "powershell",
-        "literature retrieval"
-      ],
-      "path": "skills/literature/search/arxiv-osiris",
-      "source": "https://clawhub.com/kostaskyq/arxiv-osiris"
-    },
-    {
       "id": "arxiv-paper-processor",
       "type": "skill",
       "name": "arxiv-paper-processor",
@@ -4679,17 +4337,6 @@
       "source": "https://github.com/utilityfog/Literature-Search"
     },
     {
-      "id": "deepgit-search-guide",
-      "type": "skill",
-      "name": "deepgit-search-guide",
-      "description": "Deep research tool for discovering academic code in Git repositories",
-      "category": "literature",
-      "subcategory": "search",
-      "keywords": [],
-      "path": "skills/literature/search/deepgit-search-guide",
-      "source": "https://github.com/DeepGit/DeepGit"
-    },
-    {
       "id": "eric-education-api",
       "type": "skill",
       "name": "eric-education-api",
@@ -4814,24 +4461,6 @@
       "source": "wentor-research-plugins"
     },
     {
-      "id": "multi-database-literature-search",
-      "type": "skill",
-      "name": "multi-database-literature-search",
-      "description": "Conduct comprehensive literature searches across multiple academic databases",
-      "category": "literature",
-      "subcategory": "search",
-      "keywords": [
-        "multi-database search",
-        "systematic review",
-        "literature search",
-        "academic databases",
-        "cross-database",
-        "search strategy"
-      ],
-      "path": "skills/literature/search/multi-database-literature-search",
-      "source": "https://clawhub.ai/jpjy/literature-search"
-    },
-    {
       "id": "open-library-api",
       "type": "skill",
       "name": "open-library-api",
@@ -4918,36 +4547,7 @@
         "multi-database"
       ],
       "path": "skills/literature/search/paper-search-mcp-guide",
-      "source": "https://github.com/openags/paper-search-mcp"
-    },
-    {
-      "id": "papers-chat-guide",
-      "type": "skill",
-      "name": "papers-chat-guide",
-      "description": "Conversational interface for querying and discussing papers",
-      "category": "literature",
-      "subcategory": "search",
-      "keywords": [
-        "paper chat",
-        "conversational search",
-        "paper QA",
-        "document QA",
-        "RAG papers",
-        "literature chat"
-      ],
-      "path": "skills/literature/search/papers-chat-guide",
-      "source": "https://github.com/paperswithcode/galai"
-    },
-    {
-      "id": "pasa-paper-search-guide",
-      "type": "skill",
-      "name": "pasa-paper-search-guide",
-      "description": "Advanced paper search agent powered by LLMs for literature discovery",
-      "category": "literature",
-      "subcategory": "search",
-      "keywords": [],
-      "path": "skills/literature/search/pasa-paper-search-guide",
-      "source": "https://github.com/pasa-agent/pasa"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "plos-open-access-api",
@@ -5000,23 +4600,6 @@
       ],
       "path": "skills/literature/search/scielo-api",
       "source": "https://wiki.scielo.org/"
-    },
-    {
-      "id": "scientify-literature-survey",
-      "type": "skill",
-      "name": "scientify-literature-survey",
-      "description": "Search, filter, download and cluster academic papers on a topic",
-      "category": "literature",
-      "subcategory": "search",
-      "keywords": [
-        "academic database search",
-        "literature search",
-        "search strategy",
-        "semantic search",
-        "citation tracking"
-      ],
-      "path": "skills/literature/search/scientify-literature-survey",
-      "source": "https://github.com/scientify-ai/skills"
     },
     {
       "id": "semantic-scholar-api",
@@ -5089,22 +4672,6 @@
       "source": "https://developer.api.oclc.org/"
     },
     {
-      "id": "ai-scientist-guide",
-      "type": "skill",
-      "name": "ai-scientist-guide",
-      "description": "End-to-end automated scientific discovery with AI Scientist v2",
-      "category": "research",
-      "subcategory": "automation",
-      "keywords": [
-        "ai-scientist",
-        "research automation",
-        "scientific workflow",
-        "AI experiment design"
-      ],
-      "path": "skills/research/automation/ai-scientist-guide",
-      "source": "https://github.com/SakanaAI/AI-Scientist-v2"
-    },
-    {
       "id": "ai-scientist-v2-guide",
       "type": "skill",
       "name": "ai-scientist-v2-guide",
@@ -5159,24 +4726,6 @@
       "source": "https://github.com/pedrohcgs/claude-code-my-workflow"
     },
     {
-      "id": "coexist-ai-guide",
-      "type": "skill",
-      "name": "coexist-ai-guide",
-      "description": "Modular MCP-based research assistant framework",
-      "category": "research",
-      "subcategory": "automation",
-      "keywords": [
-        "CoexistAI",
-        "MCP",
-        "research assistant",
-        "modular agents",
-        "academic workflow",
-        "framework"
-      ],
-      "path": "skills/research/automation/coexist-ai-guide",
-      "source": "https://github.com/SPThole/CoexistAI"
-    },
-    {
       "id": "data-collection-automation",
       "type": "skill",
       "name": "data-collection-automation",
@@ -5204,24 +4753,6 @@
       "keywords": [],
       "path": "skills/research/automation/datagen-research-guide",
       "source": "https://github.com/DATAGEN-AI/DATAGEN"
-    },
-    {
-      "id": "foam-agent-guide",
-      "type": "skill",
-      "name": "foam-agent-guide",
-      "description": "Agent for automated knowledge graph building from research notes",
-      "category": "research",
-      "subcategory": "automation",
-      "keywords": [
-        "Foam",
-        "knowledge graph",
-        "Zettelkasten",
-        "research notes",
-        "linked notes",
-        "PKM agent"
-      ],
-      "path": "skills/research/automation/foam-agent-guide",
-      "source": "https://github.com/foambubble/foam"
     },
     {
       "id": "kedro-pipeline-guide",
@@ -5282,24 +4813,6 @@
       "source": "https://github.com/microsoft/RD-Agent"
     },
     {
-      "id": "research-paper-orchestrator",
-      "type": "skill",
-      "name": "research-paper-orchestrator",
-      "description": "Master orchestrator coordinating 10 specialized subagents for papers",
-      "category": "research",
-      "subcategory": "automation",
-      "keywords": [
-        "research orchestration",
-        "multi-agent",
-        "automated research",
-        "paper production",
-        "workflow automation",
-        "agent coordination"
-      ],
-      "path": "skills/research/automation/research-paper-orchestrator",
-      "source": "https://github.com/AcademicSkills/research-paper-orchestrator"
-    },
-    {
       "id": "research-workflow-automation",
       "type": "skill",
       "name": "research-workflow-automation",
@@ -5317,23 +4830,6 @@
       "source": "wentor"
     },
     {
-      "id": "academic-deep-research",
-      "type": "skill",
-      "name": "academic-deep-research",
-      "description": "Multi-cycle exhaustive investigation framework for academic topics",
-      "category": "research",
-      "subcategory": "deep-research",
-      "keywords": [
-        "deep research",
-        "exhaustive search",
-        "multi-cycle investigation",
-        "literature synthesis",
-        "comprehensive review"
-      ],
-      "path": "skills/research/deep-research/academic-deep-research",
-      "source": "https://github.com/AcademicSkills/academic-deep-research"
-    },
-    {
       "id": "auto-deep-research-guide",
       "type": "skill",
       "name": "auto-deep-research-guide",
@@ -5342,79 +4838,7 @@
       "subcategory": "deep-research",
       "keywords": [],
       "path": "skills/research/deep-research/auto-deep-research-guide",
-      "source": "https://github.com/Auto-Deep-Research/Auto-Deep-Research"
-    },
-    {
-      "id": "cognitive-kernel-guide",
-      "type": "skill",
-      "name": "cognitive-kernel-guide",
-      "description": "Autonomous agent with long-term memory for deep research tasks",
-      "category": "research",
-      "subcategory": "deep-research",
-      "keywords": [
-        "Cognitive Kernel",
-        "autonomous agent",
-        "long-term memory",
-        "deep research",
-        "reasoning",
-        "knowledge accumulation"
-      ],
-      "path": "skills/research/deep-research/cognitive-kernel-guide",
-      "source": "https://github.com/Cognitive-Kernel/cognitive-kernel"
-    },
-    {
-      "id": "corvus-research-guide",
-      "type": "skill",
-      "name": "corvus-research-guide",
-      "description": "Multi-agent AI research with semantic search and citation snowballing",
-      "category": "research",
-      "subcategory": "deep-research",
-      "keywords": [
-        "Corvus",
-        "multi-agent",
-        "semantic search",
-        "citation snowballing",
-        "research synthesis",
-        "AI research"
-      ],
-      "path": "skills/research/deep-research/corvus-research-guide",
-      "source": "https://github.com/corvus-research/corvus"
-    },
-    {
-      "id": "deep-research-pro",
-      "type": "skill",
-      "name": "deep-research-pro",
-      "description": "Multi-source deep research agent with verification and synthesis",
-      "category": "research",
-      "subcategory": "deep-research",
-      "keywords": [
-        "deep research",
-        "multi-source",
-        "source verification",
-        "research agent",
-        "evidence synthesis",
-        "fact checking"
-      ],
-      "path": "skills/research/deep-research/deep-research-pro",
-      "source": "https://github.com/AcademicSkills/deep-research-pro"
-    },
-    {
-      "id": "deep-research-work",
-      "type": "skill",
-      "name": "deep-research-work",
-      "description": "Combine web search, content analysis, and source verification",
-      "category": "research",
-      "subcategory": "deep-research",
-      "keywords": [
-        "web research",
-        "content analysis",
-        "source verification",
-        "information extraction",
-        "research workflow",
-        "web scraping"
-      ],
-      "path": "skills/research/deep-research/deep-research-work",
-      "source": "https://github.com/AcademicSkills/deep-research-work"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "deep-searcher-guide",
@@ -5467,7 +4891,7 @@
         "source evaluation"
       ],
       "path": "skills/research/deep-research/in-depth-research-guide",
-      "source": "https://clawhub.ai/ivangdavila/in-depth-research"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "khoj-research-guide",
@@ -5575,22 +4999,6 @@
       ],
       "path": "skills/research/deep-research/open-researcher-guide",
       "source": "https://github.com/GAIR-NLP/OpenResearcher"
-    },
-    {
-      "id": "research-cog",
-      "type": "skill",
-      "name": "research-cog",
-      "description": "Deep research powered by CellCog for comprehensive investigations",
-      "category": "research",
-      "subcategory": "deep-research",
-      "keywords": [
-        "deep research",
-        "multi-source investigation",
-        "AI literature review",
-        "automated literature synthesis"
-      ],
-      "path": "skills/research/deep-research/research-cog",
-      "source": "https://github.com/cellcog/research-cog"
     },
     {
       "id": "scoping-review-guide",
@@ -5800,24 +5208,6 @@
       "source": "https://developers.zenodo.org/"
     },
     {
-      "id": "academic-mentor-guide",
-      "type": "skill",
-      "name": "academic-mentor-guide",
-      "description": "AI research advisor for graduate students navigating academic careers",
-      "category": "research",
-      "subcategory": "methodology",
-      "keywords": [
-        "academic mentoring",
-        "graduate research",
-        "PhD guidance",
-        "research strategy",
-        "academic career",
-        "thesis advising"
-      ],
-      "path": "skills/research/methodology/academic-mentor-guide",
-      "source": "https://github.com/AcademicSkills/academic-mentor-guide"
-    },
-    {
       "id": "action-research-guide",
       "type": "skill",
       "name": "action-research-guide",
@@ -5844,24 +5234,6 @@
       "keywords": [],
       "path": "skills/research/methodology/claude-scientific-guide",
       "source": "https://github.com/zyphlar/claude-scientific-skills"
-    },
-    {
-      "id": "deep-innovator-guide",
-      "type": "skill",
-      "name": "deep-innovator-guide",
-      "description": "AI research for idea generation and scientific discovery methods",
-      "category": "research",
-      "subcategory": "methodology",
-      "keywords": [
-        "idea generation",
-        "scientific discovery",
-        "innovation",
-        "research ideation",
-        "creative research",
-        "hypothesis generation"
-      ],
-      "path": "skills/research/methodology/deep-innovator-guide",
-      "source": "https://github.com/AcademicSkills/deep-innovator-guide"
     },
     {
       "id": "experimental-design-guide",
@@ -5999,24 +5371,6 @@
       "source": "https://github.com/wentor-ai/research-plugins"
     },
     {
-      "id": "research-pipeline-units-guide",
-      "type": "skill",
-      "name": "research-pipeline-units-guide",
-      "description": "Evidence-first semantic research pipeline methodology",
-      "category": "research",
-      "subcategory": "methodology",
-      "keywords": [
-        "research pipeline",
-        "evidence-first",
-        "semantic units",
-        "methodology",
-        "research workflow",
-        "structured inquiry"
-      ],
-      "path": "skills/research/methodology/research-pipeline-units-guide",
-      "source": "https://github.com/WILLOSCAR/research-units-pipeline-skills"
-    },
-    {
       "id": "research-town-guide",
       "type": "skill",
       "name": "research-town-guide",
@@ -6106,23 +5460,6 @@
       "source": "https://github.com/PouriaRouzrokh/LatteReview"
     },
     {
-      "id": "paper-compare-guide",
-      "type": "skill",
-      "name": "paper-compare-guide",
-      "description": "Compare research papers side-by-side on methodology and findings",
-      "category": "research",
-      "subcategory": "paper-review",
-      "keywords": [
-        "paper comparison",
-        "side-by-side analysis",
-        "methodology comparison",
-        "research synthesis",
-        "critical analysis"
-      ],
-      "path": "skills/research/paper-review/paper-compare-guide",
-      "source": "https://github.com/AcademicSkills/paper-compare-guide"
-    },
-    {
       "id": "paper-critique-framework",
       "type": "skill",
       "name": "paper-critique-framework",
@@ -6138,25 +5475,7 @@
         "constructive feedback"
       ],
       "path": "skills/research/paper-review/paper-critique-framework",
-      "source": "https://clawhub.ai/peer-reviewer"
-    },
-    {
-      "id": "paper-digest-guide",
-      "type": "skill",
-      "name": "paper-digest-guide",
-      "description": "Fetch paper and spawn sub-agents to read citations recursively",
-      "category": "research",
-      "subcategory": "paper-review",
-      "keywords": [
-        "citation analysis",
-        "recursive reading",
-        "paper digestion",
-        "citation graph",
-        "reference mining",
-        "snowball search"
-      ],
-      "path": "skills/research/paper-review/paper-digest-guide",
-      "source": "https://github.com/AcademicSkills/paper-digest-guide"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "paper-reading-assistant",
@@ -6173,24 +5492,6 @@
       ],
       "path": "skills/research/paper-review/paper-reading-assistant",
       "source": "wentor-research-plugins"
-    },
-    {
-      "id": "paper-research-assistant",
-      "type": "skill",
-      "name": "paper-research-assistant",
-      "description": "Read papers, generate structured reports, find code and datasets",
-      "category": "research",
-      "subcategory": "paper-review",
-      "keywords": [
-        "paper reading",
-        "research report",
-        "code extraction",
-        "dataset discovery",
-        "paper analysis",
-        "structured summary"
-      ],
-      "path": "skills/research/paper-review/paper-research-assistant",
-      "source": "https://github.com/AcademicSkills/paper-research-assistant"
     },
     {
       "id": "peer-review-guide",
@@ -6228,24 +5529,6 @@
       "source": "wentor-research-plugins"
     },
     {
-      "id": "research-quality-filter",
-      "type": "skill",
-      "name": "research-quality-filter",
-      "description": "Filter and assess research paper quality using structured criteria",
-      "category": "research",
-      "subcategory": "paper-review",
-      "keywords": [
-        "quality assessment",
-        "paper filtering",
-        "evidence grading",
-        "critical appraisal",
-        "study quality",
-        "screening"
-      ],
-      "path": "skills/research/paper-review/research-quality-filter",
-      "source": "https://github.com/AcademicSkills/research-quality-filter"
-    },
-    {
       "id": "review-response-guide",
       "type": "skill",
       "name": "review-response-guide",
@@ -6279,24 +5562,6 @@
       ],
       "path": "skills/research/paper-review/scientify-write-review-paper",
       "source": "https://github.com/scientify-ai/skills"
-    },
-    {
-      "id": "contextplus-mcp-guide",
-      "type": "skill",
-      "name": "contextplus-mcp-guide",
-      "description": "Semantic code search MCP with Tree-sitter AST and RAG",
-      "category": "tools",
-      "subcategory": "code-exec",
-      "keywords": [
-        "semantic search",
-        "code search",
-        "Tree-sitter",
-        "AST",
-        "MCP",
-        "RAG"
-      ],
-      "path": "skills/tools/code-exec/contextplus-mcp-guide",
-      "source": "https://github.com/ForLoopCodes/contextplus"
     },
     {
       "id": "google-colab-guide",
@@ -6422,24 +5687,6 @@
       "source": "wentor"
     },
     {
-      "id": "clawphd-guide",
-      "type": "skill",
-      "name": "clawphd-guide",
-      "description": "Agent for converting papers to diagrams, posters, and videos",
-      "category": "tools",
-      "subcategory": "diagram",
-      "keywords": [
-        "paper visualization",
-        "poster generation",
-        "research video",
-        "diagram agent",
-        "visual abstract",
-        "presentation"
-      ],
-      "path": "skills/tools/diagram/clawphd-guide",
-      "source": "https://github.com/ZhihaoAIRobotic/ClawPhD"
-    },
-    {
       "id": "code-flow-visualizer",
       "type": "skill",
       "name": "code-flow-visualizer",
@@ -6562,24 +5809,6 @@
       "source": "wentor-research-plugins"
     },
     {
-      "id": "scientific-graphical-abstract",
-      "type": "skill",
-      "name": "scientific-graphical-abstract",
-      "description": "Design effective graphical abstracts and scientific figures for papers",
-      "category": "tools",
-      "subcategory": "diagram",
-      "keywords": [
-        "graphical abstract",
-        "scientific illustration",
-        "figure design",
-        "paper figures",
-        "visual abstract",
-        "publication graphics"
-      ],
-      "path": "skills/tools/diagram/scientific-graphical-abstract",
-      "source": "https://clawhub.ai/scientific-graphical-abstract"
-    },
-    {
       "id": "scientific-illustration-guide",
       "type": "skill",
       "name": "scientific-illustration-guide",
@@ -6700,42 +5929,6 @@
       "source": "wentor-research-plugins"
     },
     {
-      "id": "md2pdf-xelatex",
-      "type": "skill",
-      "name": "md2pdf-xelatex",
-      "description": "Convert Markdown to publication-ready PDF with LaTeX math and CJK support",
-      "category": "tools",
-      "subcategory": "document",
-      "keywords": [
-        "markdown to pdf",
-        "xelatex",
-        "document conversion",
-        "CJK support",
-        "math rendering",
-        "pandoc"
-      ],
-      "path": "skills/tools/document/md2pdf-xelatex",
-      "source": "https://clawhub.ai/huaruoji/md2pdf-xelatex"
-    },
-    {
-      "id": "openpaper-guide",
-      "type": "skill",
-      "name": "openpaper-guide",
-      "description": "Open-source tool for organizing and annotating research papers",
-      "category": "tools",
-      "subcategory": "document",
-      "keywords": [
-        "paper management",
-        "PDF annotation",
-        "research organizer",
-        "paper reader",
-        "document viewer",
-        "open source"
-      ],
-      "path": "skills/tools/document/openpaper-guide",
-      "source": "https://github.com/nicehash/openpaper"
-    },
-    {
       "id": "paper-parse-guide",
       "type": "skill",
       "name": "paper-parse-guide",
@@ -6769,24 +5962,6 @@
       ],
       "path": "skills/tools/document/pdf-extraction-guide",
       "source": "wentor-research-plugins"
-    },
-    {
-      "id": "weknora-guide",
-      "type": "skill",
-      "name": "weknora-guide",
-      "description": "Tencent document understanding engine with RAG capabilities",
-      "category": "tools",
-      "subcategory": "document",
-      "keywords": [
-        "WeKnora",
-        "document understanding",
-        "RAG",
-        "text mining",
-        "Tencent",
-        "knowledge extraction"
-      ],
-      "path": "skills/tools/document/weknora-guide",
-      "source": "https://github.com/Tencent/WeKnora"
     },
     {
       "id": "zotero-addon-market-guide",
@@ -6913,24 +6088,6 @@
       "source": "N/A"
     },
     {
-      "id": "mimir-memory-guide",
-      "type": "skill",
-      "name": "mimir-memory-guide",
-      "description": "Semantic vector search memory bank for AI agents",
-      "category": "tools",
-      "subcategory": "knowledge-graph",
-      "keywords": [
-        "agent memory",
-        "vector search",
-        "semantic memory",
-        "MCP",
-        "knowledge persistence",
-        "embedding"
-      ],
-      "path": "skills/tools/knowledge-graph/mimir-memory-guide",
-      "source": "https://github.com/orneryd/Mimir"
-    },
-    {
       "id": "notero-zotero-notion-guide",
       "type": "skill",
       "name": "notero-zotero-notion-guide",
@@ -6966,24 +6123,6 @@
       ],
       "path": "skills/tools/knowledge-graph/ontology-design-guide",
       "source": "wentor-research-plugins"
-    },
-    {
-      "id": "open-webui-tools-guide",
-      "type": "skill",
-      "name": "open-webui-tools-guide",
-      "description": "Academic research tools for Open WebUI chat interface",
-      "category": "tools",
-      "subcategory": "knowledge-graph",
-      "keywords": [
-        "Open WebUI",
-        "research tools",
-        "chat interface",
-        "paper search",
-        "academic tools",
-        "LLM UI"
-      ],
-      "path": "skills/tools/knowledge-graph/open-webui-tools-guide",
-      "source": "https://github.com/Haervwe/open-webui-tools"
     },
     {
       "id": "openspg-guide",
@@ -7056,21 +6195,6 @@
       "source": "https://github.com/daeh/zotero-markdb-connect"
     },
     {
-      "id": "formula-recognition-guide",
-      "type": "skill",
-      "name": "formula-recognition-guide",
-      "description": "Math OCR and formula recognition to LaTeX conversion",
-      "category": "tools",
-      "subcategory": "ocr-translate",
-      "keywords": [
-        "math OCR",
-        "formula recognition",
-        "LaTeX OCR"
-      ],
-      "path": "skills/tools/ocr-translate/formula-recognition-guide",
-      "source": "wentor-research-plugins"
-    },
-    {
       "id": "handwriting-recognition-guide",
       "type": "skill",
       "name": "handwriting-recognition-guide",
@@ -7121,24 +6245,6 @@
       ],
       "path": "skills/tools/ocr-translate/latex-translation-guide",
       "source": "https://github.com/SUSYUSTC/MathTranslate"
-    },
-    {
-      "id": "math-equation-renderer",
-      "type": "skill",
-      "name": "math-equation-renderer",
-      "description": "Render LaTeX math equations as publication-ready PNG and SVG images",
-      "category": "tools",
-      "subcategory": "ocr-translate",
-      "keywords": [
-        "latex math",
-        "equation rendering",
-        "math images",
-        "formula to png",
-        "math typesetting",
-        "tex rendering"
-      ],
-      "path": "skills/tools/ocr-translate/math-equation-renderer",
-      "source": "https://clawhub.ai/huaruoji/math-images"
     },
     {
       "id": "multilingual-research-guide",
@@ -7217,22 +6323,6 @@
       ],
       "path": "skills/tools/scraping/academic-web-scraping",
       "source": "N/A"
-    },
-    {
-      "id": "api-data-collection-guide",
-      "type": "skill",
-      "name": "api-data-collection-guide",
-      "description": "API-based data collection and web scraping for research",
-      "category": "tools",
-      "subcategory": "scraping",
-      "keywords": [
-        "API data collection",
-        "web search strategies",
-        "data extraction",
-        "web scraping"
-      ],
-      "path": "skills/tools/scraping/api-data-collection-guide",
-      "source": "wentor-research-plugins"
     },
     {
       "id": "dataset-finder-guide",
@@ -7341,24 +6431,6 @@
       ],
       "path": "skills/writing/citation/academic-citation-manager",
       "source": "https://github.com/wentor-ai/research-plugins"
-    },
-    {
-      "id": "academic-citation-manager-guide",
-      "type": "skill",
-      "name": "academic-citation-manager-guide",
-      "description": "Comparison and workflow guide for academic citation management tools",
-      "category": "writing",
-      "subcategory": "citation",
-      "keywords": [
-        "citation management",
-        "reference manager",
-        "zotero",
-        "mendeley",
-        "bibliography",
-        "bibtex"
-      ],
-      "path": "skills/writing/citation/academic-citation-manager-guide",
-      "source": "https://clawhub.com/YouStudyeveryday/academic-citation-manager"
     },
     {
       "id": "bibtex-management-guide",
@@ -7797,53 +6869,6 @@
       "source": "https://github.com/karpathy/arxiv-sanity-lite"
     },
     {
-      "id": "opendraft-thesis-guide",
-      "type": "skill",
-      "name": "opendraft-thesis-guide",
-      "description": "AI thesis writer with specialized agents and verified citations",
-      "category": "writing",
-      "subcategory": "composition",
-      "keywords": [
-        "thesis writing",
-        "AI writer",
-        "multi-agent",
-        "dissertation",
-        "academic writing",
-        "verified citations"
-      ],
-      "path": "skills/writing/composition/opendraft-thesis-guide",
-      "source": "https://github.com/federicodeponte/opendraft"
-    },
-    {
-      "id": "paper-debugger-guide",
-      "type": "skill",
-      "name": "paper-debugger-guide",
-      "description": "Multi-agent system for academic writing review and improvement",
-      "category": "writing",
-      "subcategory": "composition",
-      "keywords": [],
-      "path": "skills/writing/composition/paper-debugger-guide",
-      "source": "https://github.com/PaperDebugger/paperdebugger"
-    },
-    {
-      "id": "paperforge-guide",
-      "type": "skill",
-      "name": "paperforge-guide",
-      "description": "AI-assisted academic paper drafting and structuring tool",
-      "category": "writing",
-      "subcategory": "composition",
-      "keywords": [
-        "paper writing",
-        "academic drafting",
-        "paper generation",
-        "manuscript",
-        "structured writing",
-        "AI writing"
-      ],
-      "path": "skills/writing/composition/paperforge-guide",
-      "source": "https://github.com/paperforge/paperforge"
-    },
-    {
       "id": "research-paper-writer",
       "type": "skill",
       "name": "research-paper-writer",
@@ -7859,7 +6884,7 @@
         "citation formatting"
       ],
       "path": "skills/writing/composition/research-paper-writer",
-      "source": "https://clawhub.ai/Veeramanikandanr48/research-paper-writer"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "response-to-reviewers",
@@ -7922,7 +6947,7 @@
         "manuscript"
       ],
       "path": "skills/writing/composition/scientific-writing-wrapper",
-      "source": "https://github.com/papercopilot/papercopilot"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "academic-writing-latex",
@@ -7940,7 +6965,7 @@
         "overleaf"
       ],
       "path": "skills/writing/latex/academic-writing-latex",
-      "source": "https://clawhub.ai/dayunyan/academic-writer"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "bibliography-management-guide",
@@ -8183,7 +7208,7 @@
         "chinese academic"
       ],
       "path": "skills/writing/polish/chinese-text-humanizer",
-      "source": "https://clawhub.ai/anisafifi/chinese-humanizer"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "conciseness-editing-guide",
@@ -8369,7 +7394,7 @@
         "manuscript"
       ],
       "path": "skills/writing/templates/scientific-article-pdf",
-      "source": "https://github.com/elunez/eladmin"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "sjtuthesis-guide",
@@ -8446,7 +7471,7 @@
       "type": "mcp_config",
       "name": "ChatSpatial",
       "description": "Spatial transcriptomics analysis via natural language",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/ChatSpatial.json",
@@ -8467,7 +7492,7 @@
       "type": "mcp_config",
       "name": "Academia MCP",
       "description": "Tools for automatic scientific research",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/academia-mcp.json",
@@ -8487,7 +7512,7 @@
       "type": "mcp_config",
       "name": "Academic Paper Explorer",
       "description": "Academic paper discovery via arXiv and Semantic Scholar",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/academic-paper-explorer.json",
@@ -8508,7 +7533,7 @@
       "type": "mcp_config",
       "name": "Academic Paper Search",
       "description": "Academic Paper Search MCP for Semantic Scholar and Crossref APIs",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/academic-search-mcp-server.json",
@@ -8529,7 +7554,7 @@
       "type": "mcp_config",
       "name": "Agent Interviews",
       "description": "AI-powered qualitative research interviews at scale",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/agentinterviews-mcp.json",
@@ -8550,7 +7575,7 @@
       "type": "mcp_config",
       "name": "All-in MCP",
       "description": "Academic paper search and PDF processing",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/all-in-mcp.json",
@@ -8570,7 +7595,7 @@
       "type": "mcp_config",
       "name": "AlphaFold MCP",
       "description": "AlphaFold Protein Structure Database for structure prediction",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/alphafold-mcp.json",
@@ -8590,7 +7615,7 @@
       "type": "mcp_config",
       "name": "Apple Health Data",
       "description": "Access exported Apple Health data with analytics",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/apple-health-mcp.json",
@@ -8611,7 +7636,7 @@
       "type": "mcp_config",
       "name": "arXiv LaTeX Source",
       "description": "Access arXiv papers via LaTeX source for better math handling",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/arxiv-latex-mcp.json",
@@ -8633,7 +7658,7 @@
       "type": "mcp_config",
       "name": "arXiv Search",
       "description": "Search ArXiv research papers",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/arxiv-mcp-server.json",
@@ -8652,7 +7677,7 @@
       "type": "mcp_config",
       "name": "BGPT Paper Search",
       "description": "Search paper data from any AI tool",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/bgpt-mcp.json",
@@ -8671,7 +7696,7 @@
       "type": "mcp_config",
       "name": "BioMCP",
       "description": "Biomedical research MCP for PubMed, ClinicalTrials, and MyVariant",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/biomcp.json",
@@ -8692,7 +7717,7 @@
       "type": "mcp_config",
       "name": "BioThings API",
       "description": "BioThings API for genes, variants, drugs, and taxonomy",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/biothings-mcp.json",
@@ -8713,7 +7738,7 @@
       "type": "mcp_config",
       "name": "Brightspace LMS MCP",
       "description": "D2L Brightspace LMS: grades, assignments, announcements",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/brightspace-mcp.json",
@@ -8734,7 +7759,7 @@
       "type": "mcp_config",
       "name": "Catalysis Hub",
       "description": "Search Catalysis Hub database for computational catalysis",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/catalysishub-mcp-server.json",
@@ -8754,7 +7779,7 @@
       "type": "mcp_config",
       "name": "Climatiq Carbon MCP",
       "description": "Carbon emissions calculations via Climatiq API",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/climatiq-mcp.json",
@@ -8774,7 +7799,7 @@
       "type": "mcp_config",
       "name": "ClinicalTrials.gov",
       "description": "ClinicalTrials.gov v2 API search and analysis",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/clinicaltrialsgov-mcp-server.json",
@@ -8797,7 +7822,7 @@
       "type": "mcp_config",
       "name": "Deep Research",
       "description": "Deep research via OpenAI or open models",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/deep-research-mcp.json",
@@ -8818,7 +7843,7 @@
       "type": "mcp_config",
       "name": "DICOM Medical Imaging",
       "description": "DICOM integration for medical imaging",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/dicom-mcp.json",
@@ -8839,7 +7864,7 @@
       "type": "mcp_config",
       "name": "Enrichr Gene Set Analysis",
       "description": "Gene set enrichment analysis using Enrichr API",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/enrichr-mcp-server.json",
@@ -8859,7 +7884,7 @@
       "type": "mcp_config",
       "name": "FEC Campaign Finance",
       "description": "Query FEC campaign finance data",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/fec-mcp-server.json",
@@ -8879,7 +7904,7 @@
       "type": "mcp_config",
       "name": "FHIR Patient History",
       "description": "FHIR server for patient history queries",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/fhir-mcp-server-themomentum.json",
@@ -8900,7 +7925,7 @@
       "type": "mcp_config",
       "name": "FHIR Healthcare API",
       "description": "FHIR API for healthcare data interoperability",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/fhir-mcp.json",
@@ -8921,7 +7946,7 @@
       "type": "mcp_config",
       "name": "gget Bioinformatics",
       "description": "Bioinformatics toolkit for genomics queries",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/gget-mcp.json",
@@ -8943,7 +7968,7 @@
       "type": "mcp_config",
       "name": "GIBS Regulatory MCP",
       "description": "Regulatory compliance search (AI Act, GDPR, DORA) with citations",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/gibs-mcp.json",
@@ -8963,7 +7988,7 @@
       "type": "mcp_config",
       "name": "GIS MCP Server",
       "description": "Geocoding, routing, elevation, spatial analysis, Shapefile/GeoJSON",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/gis-mcp-server.json",
@@ -8985,7 +8010,7 @@
       "type": "mcp_config",
       "name": "Google Earth Engine MCP",
       "description": "Query Google Earth Engine with natural language",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/google-earth-engine-mcp.json",
@@ -9006,7 +8031,7 @@
       "type": "mcp_config",
       "name": "Google Researcher",
       "description": "Comprehensive research tools for web, academic, patents",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/google-researcher-mcp.json",
@@ -9027,7 +8052,7 @@
       "type": "mcp_config",
       "name": "Idea Reality Check",
       "description": "Pre-build reality check detecting existing competition",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/idea-reality-mcp.json",
@@ -9048,7 +8073,7 @@
       "type": "mcp_config",
       "name": "LegiScan",
       "description": "Access legislative data from 50 US states",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/legiscan-mcp.json",
@@ -9069,7 +8094,7 @@
       "type": "mcp_config",
       "name": "Lex UK Legal API",
       "description": "UK legal API for AI agents and researchers",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/lex.json",
@@ -9088,7 +8113,7 @@
       "type": "mcp_config",
       "name": "M4 Clinical Database MCP",
       "description": "MIMIC-IV and eICU clinical database with domain knowledge",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/m4-clinical-mcp.json",
@@ -9109,7 +8134,7 @@
       "type": "mcp_config",
       "name": "Medical MCP",
       "description": "Medical information from FDA, WHO, PubMed drug databases",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/medical-mcp.json",
@@ -9130,7 +8155,7 @@
       "type": "mcp_config",
       "name": "NexOnco MCP",
       "description": "Clinical evidence data for precision medicine and oncology",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/nexonco-mcp.json",
@@ -9150,7 +8175,7 @@
       "type": "mcp_config",
       "name": "OMOP Concept MCP",
       "description": "Map clinical terminology to OMOP concepts for healthcare data",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/omop-mcp.json",
@@ -9170,7 +8195,7 @@
       "type": "mcp_config",
       "name": "1000 Genomes MCP",
       "description": "Real-time access to 1000 Genomes Project dataset",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/onekgpd-mcp.json",
@@ -9190,7 +8215,7 @@
       "type": "mcp_config",
       "name": "OpenEdu MCP",
       "description": "Educational resources from OpenLibrary, Wikipedia, arXiv",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/openedu-mcp.json",
@@ -9210,7 +8235,7 @@
       "type": "mcp_config",
       "name": "OpenGenes MCP",
       "description": "Aging and longevity research gene database",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/opengenes-mcp.json",
@@ -9230,7 +8255,7 @@
       "type": "mcp_config",
       "name": "OpenStax Textbooks MCP",
       "description": "OpenStax textbooks with semantic search and practice problems",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/openstax-mcp.json",
@@ -9251,7 +8276,7 @@
       "type": "mcp_config",
       "name": "OpenStreetMap MCP",
       "description": "OpenStreetMap location services and geospatial data",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/openstreetmap-mcp.json",
@@ -9272,7 +8297,7 @@
       "type": "mcp_config",
       "name": "Open Targets MCP",
       "description": "Open Targets Platform GraphQL for drug target discovery",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/opentargets-mcp.json",
@@ -9293,7 +8318,7 @@
       "type": "mcp_config",
       "name": "Protein Data Bank MCP",
       "description": "PDB worldwide 3D protein structure repository",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/pdb-mcp.json",
@@ -9314,7 +8339,7 @@
       "type": "mcp_config",
       "name": "Smithsonian Open Access MCP",
       "description": "Smithsonian Institution Open Access museum collections",
-      "category": "academic-db",
+      "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [],
       "path": "mcp-configs/academic-db/smithsonian-mcp.json",
@@ -9334,7 +8359,7 @@
       "type": "mcp_config",
       "name": "Adaptive Graph of Thoughts MCP Server",
       "description": "LLM reasoning framework for scientific research using adaptive graph-of-thoughts",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/Adaptive-Graph-of-Thoughts-MCP-server.json",
@@ -9354,7 +8379,7 @@
       "type": "mcp_config",
       "name": "AI Counsel",
       "description": "Multi-round debate between AI models for reaching consensus on complex questions",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/ai-counsel.json",
@@ -9375,7 +8400,7 @@
       "type": "mcp_config",
       "name": "Atlas MCP Server",
       "description": "Neo4j-powered task management with deep research capabilities for complex projects",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/atlas-mcp-server.json",
@@ -9396,7 +8421,7 @@
       "type": "mcp_config",
       "name": "Counsel MCP",
       "description": "Strategic reasoning and multi-perspective analysis for complex decision-making",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/counsel-mcp.json",
@@ -9417,7 +8442,7 @@
       "type": "mcp_config",
       "name": "Cross-LLM MCP",
       "description": "Cross-LLM communication and memory sharing between different AI model instances",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/cross-llm-mcp.json",
@@ -9438,7 +8463,7 @@
       "type": "mcp_config",
       "name": "GPTR MCP",
       "description": "Deep research via GPT Researcher MCP protocol for automated report generation",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/gptr-mcp.json",
@@ -9458,7 +8483,7 @@
       "type": "mcp_config",
       "name": "MAGI Researchers MCP",
       "description": "Three AI models cross-verify for multi-perspective research",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/magi-researchers.json",
@@ -9479,7 +8504,7 @@
       "type": "mcp_config",
       "name": "Academic Researcher MCP",
       "description": "Full-stack research assistant with papers, notes, citations",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/mcp-academic-researcher.json",
@@ -9501,7 +8526,7 @@
       "type": "mcp_config",
       "name": "Open Paper Machine MCP",
       "description": "Autonomous agent for full academic paper pipeline",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/open-paper-machine.json",
@@ -9522,7 +8547,7 @@
       "type": "mcp_config",
       "name": "Paper Intelligence MCP",
       "description": "PDF management with RAG capabilities",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/paper-intelligence.json",
@@ -9543,7 +8568,7 @@
       "type": "mcp_config",
       "name": "Paper Reader MCP",
       "description": "Search, read, and summarize arXiv papers",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/paper-reader.json",
@@ -9564,7 +8589,7 @@
       "type": "mcp_config",
       "name": "PaperDebugger MCP",
       "description": "Multi-agent system for in-editor academic writing",
-      "category": "ai-platform",
+      "category": "integrations",
       "subcategory": "ai-platform",
       "keywords": [],
       "path": "mcp-configs/ai-platform/paperdebugger.json",
@@ -9585,7 +8610,7 @@
       "type": "mcp_config",
       "name": "Decipher Research Agent",
       "description": "Turn topics and links into AI research notebooks with structured summaries",
-      "category": "browser",
+      "category": "integrations",
       "subcategory": "browser",
       "keywords": [],
       "path": "mcp-configs/browser/decipher-research-agent.json",
@@ -9605,7 +8630,7 @@
       "type": "mcp_config",
       "name": "Deep Research",
       "description": "AI research assistant using Gemini and Google ADK for planning and compiling research",
-      "category": "browser",
+      "category": "integrations",
       "subcategory": "browser",
       "keywords": [],
       "path": "mcp-configs/browser/deep-research.json",
@@ -9626,7 +8651,7 @@
       "type": "mcp_config",
       "name": "Everything Claude Code",
       "description": "Skills, memory, and research-first development workflows for Claude Code enhancement",
-      "category": "browser",
+      "category": "integrations",
       "subcategory": "browser",
       "keywords": [],
       "path": "mcp-configs/browser/everything-claude-code.json",
@@ -9646,7 +8671,7 @@
       "type": "mcp_config",
       "name": "Exa AI Search MCP",
       "description": "Exa semantic web search for research",
-      "category": "browser",
+      "category": "integrations",
       "subcategory": "browser",
       "keywords": [],
       "path": "mcp-configs/browser/exa-mcp.json",
@@ -9666,7 +8691,7 @@
       "type": "mcp_config",
       "name": "GPT Researcher",
       "description": "Autonomous agent for deep research on any topic with comprehensive report generation",
-      "category": "browser",
+      "category": "integrations",
       "subcategory": "browser",
       "keywords": [],
       "path": "mcp-configs/browser/gpt-researcher.json",
@@ -9686,7 +8711,7 @@
       "type": "mcp_config",
       "name": "Heurist Agent Framework",
       "description": "Multi-interface AI agent with reasoning and research capabilities across platforms",
-      "category": "browser",
+      "category": "integrations",
       "subcategory": "browser",
       "keywords": [],
       "path": "mcp-configs/browser/heurist-agent-framework.json",
@@ -9707,7 +8732,7 @@
       "type": "mcp_config",
       "name": "SearXNG MCP",
       "description": "SearXNG privacy-focused metasearch engine",
-      "category": "browser",
+      "category": "integrations",
       "subcategory": "browser",
       "keywords": [],
       "path": "mcp-configs/browser/mcp-searxng.json",
@@ -9726,7 +8751,7 @@
       "type": "mcp_config",
       "name": "Web Research MCP",
       "description": "Google search and deep web research",
-      "category": "browser",
+      "category": "integrations",
       "subcategory": "browser",
       "keywords": [],
       "path": "mcp-configs/browser/mcp-webresearch.json",
@@ -9746,7 +8771,7 @@
       "type": "mcp_config",
       "name": "Confluence MCP",
       "description": "Atlassian Confluence Cloud integration — search, read, and manage wiki pages and spaces for team-based research documentation.",
-      "category": "cloud-docs",
+      "category": "integrations",
       "subcategory": "cloud-docs",
       "keywords": [],
       "path": "mcp-configs/cloud-docs/confluence-mcp.json",
@@ -9770,7 +8795,7 @@
       "type": "mcp_config",
       "name": "Google Drive MCP",
       "description": "Google Drive document access for AI — search, read, and list files across Google Docs, Sheets, Slides, and PDFs stored in Drive.",
-      "category": "cloud-docs",
+      "category": "integrations",
       "subcategory": "cloud-docs",
       "keywords": [],
       "path": "mcp-configs/cloud-docs/google-drive-mcp.json",
@@ -9792,7 +8817,7 @@
       "type": "mcp_config",
       "name": "Notion MCP",
       "description": "Notion integration for AI assistants — search, read, create, and update Notion pages, databases, and blocks directly from your research workflow.",
-      "category": "cloud-docs",
+      "category": "integrations",
       "subcategory": "cloud-docs",
       "keywords": [],
       "path": "mcp-configs/cloud-docs/notion-mcp.json",
@@ -9816,7 +8841,7 @@
       "type": "mcp_config",
       "name": "Discord MCP",
       "description": "Discord server integration for research teams — send messages, read channels, manage threads, and interact with server members.",
-      "category": "communication",
+      "category": "integrations",
       "subcategory": "communication",
       "keywords": [],
       "path": "mcp-configs/communication/discord-mcp.json",
@@ -9840,7 +8865,7 @@
       "type": "mcp_config",
       "name": "Discourse Forum MCP",
       "description": "Official Discourse forum integration for academic communities",
-      "category": "communication",
+      "category": "integrations",
       "subcategory": "communication",
       "keywords": [],
       "path": "mcp-configs/communication/discourse-mcp.json",
@@ -9861,7 +8886,7 @@
       "type": "mcp_config",
       "name": "Slack MCP",
       "description": "Slack workspace integration — send messages, search conversations, list channels, and manage threads for research team communication.",
-      "category": "communication",
+      "category": "integrations",
       "subcategory": "communication",
       "keywords": [],
       "path": "mcp-configs/communication/slack-mcp.json",
@@ -9885,7 +8910,7 @@
       "type": "mcp_config",
       "name": "Telegram MCP",
       "description": "Telegram bot integration — send and receive messages, manage groups, and share files through Telegram for research collaboration.",
-      "category": "communication",
+      "category": "integrations",
       "subcategory": "communication",
       "keywords": [],
       "path": "mcp-configs/communication/telegram-mcp.json",
@@ -9908,7 +8933,7 @@
       "type": "mcp_config",
       "name": "4EVERLAND Hosting MCP",
       "description": "Deploy AI-generated code to decentralized storage networks for permanent hosting",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/4everland-hosting-mcp.json",
@@ -9928,7 +8953,7 @@
       "type": "mcp_config",
       "name": "AutoML Stats MCP",
       "description": "AI-powered statistical analysis and AutoML platform",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/automl-stat-mcp.json",
@@ -9949,7 +8974,7 @@
       "type": "mcp_config",
       "name": "Context Keeper",
       "description": "Wide-recall RAG with vector, timeline, and knowledge graph retrieval strategies",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/context-keeper.json",
@@ -9970,7 +8995,7 @@
       "type": "mcp_config",
       "name": "Context7",
       "description": "Context management for AI agents with cloud sync powered by Upstash",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/context7.json",
@@ -9991,7 +9016,7 @@
       "type": "mcp_config",
       "name": "ContextStream MCP",
       "description": "Universal persistent memory with semantic code search and change tracking",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/contextstream-mcp.json",
@@ -10012,7 +9037,7 @@
       "type": "mcp_config",
       "name": "Email MCP",
       "description": "Unified email across Gmail, Outlook, iCloud, and IMAP for search, send, and organize",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/email-mcp.json",
@@ -10033,7 +9058,7 @@
       "type": "mcp_config",
       "name": "Jefferson Stats MCP",
       "description": "40+ statistical analysis tools: hypothesis testing, regression",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/jefferson-stats-mcp.json",
@@ -10055,7 +9080,7 @@
       "type": "mcp_config",
       "name": "Excel MCP Server",
       "description": "Natural language interaction with Excel files",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/mcp-excel-server.json",
@@ -10076,7 +9101,7 @@
       "type": "mcp_config",
       "name": "Stata MCP",
       "description": "Execute Stata commands and inspect data via MCP",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/mcp-stata.json",
@@ -10097,7 +9122,7 @@
       "type": "mcp_config",
       "name": "Jupyter MCP Stack",
       "description": "Jupyter Notebook reproducible analysis via MCP",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/mcpstack-jupyter.json",
@@ -10118,7 +9143,7 @@
       "type": "mcp_config",
       "name": "ML Training MCP",
       "description": "ML model training, fine-tuning, and experimentation",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/ml-mcp.json",
@@ -10139,7 +9164,7 @@
       "type": "mcp_config",
       "name": "Nasdaq Data Link MCP",
       "description": "Financial and economic datasets from Nasdaq",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/nasdaq-data-link-mcp.json",
@@ -10159,7 +9184,7 @@
       "type": "mcp_config",
       "name": "NumPy MCP",
       "description": "Numerical computations with NumPy via MCP",
-      "category": "data-platform",
+      "category": "integrations",
       "subcategory": "data-platform",
       "keywords": [],
       "path": "mcp-configs/data-platform/numpy-mcp.json",
@@ -10180,7 +9205,7 @@
       "type": "mcp_config",
       "name": "Neo4j MCP",
       "description": "Neo4j graph database for knowledge graphs — run Cypher queries, traverse relationships, and build citation or concept graphs for research.",
-      "category": "database",
+      "category": "integrations",
       "subcategory": "database",
       "keywords": [],
       "path": "mcp-configs/database/neo4j-mcp.json",
@@ -10204,7 +9229,7 @@
       "type": "mcp_config",
       "name": "PostgreSQL MCP",
       "description": "PostgreSQL database integration — run SQL queries, inspect schemas, and manage tables in PostgreSQL databases for structured research data.",
-      "category": "database",
+      "category": "integrations",
       "subcategory": "database",
       "keywords": [],
       "path": "mcp-configs/database/postgres-mcp.json",
@@ -10227,7 +9252,7 @@
       "type": "mcp_config",
       "name": "SQLite MCP",
       "description": "SQLite database operations — execute queries, inspect schemas, create tables, and manage local SQLite databases for research data storage.",
-      "category": "database",
+      "category": "integrations",
       "subcategory": "database",
       "keywords": [],
       "path": "mcp-configs/database/sqlite-mcp.json",
@@ -10251,7 +9276,7 @@
       "type": "mcp_config",
       "name": "GeoGebra MCP",
       "description": "GeoGebra geometric construction, plotting, CAS",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/geogebra-mcp.json",
@@ -10272,7 +9297,7 @@
       "type": "mcp_config",
       "name": "GitHub MCP",
       "description": "GitHub repository and issue management — create issues, manage pull requests, search repositories, and access code for open-source research projects.",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/github-mcp.json",
@@ -10298,7 +9323,7 @@
       "type": "mcp_config",
       "name": "GitLab MCP",
       "description": "GitLab project management — manage repositories, issues, merge requests, and CI/CD pipelines for research software development.",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/gitlab-mcp.json",
@@ -10323,7 +9348,7 @@
       "type": "mcp_config",
       "name": "LaTeX MCP Server",
       "description": "Compile LaTeX, download cited papers, run viz scripts",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/latex-mcp-server.json",
@@ -10344,7 +9369,7 @@
       "type": "mcp_config",
       "name": "Manim Animation MCP",
       "description": "Manim animation generation for math/science presentations",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/manim-mcp.json",
@@ -10364,7 +9389,7 @@
       "type": "mcp_config",
       "name": "ECharts MCP",
       "description": "Generate visual charts using Apache ECharts",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/mcp-echarts.json",
@@ -10384,7 +9409,7 @@
       "type": "mcp_config",
       "name": "Panel Viz MCP",
       "description": "Interactive HoloViz visualizations inline in AI chat",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/panel-viz-mcp.json",
@@ -10404,7 +9429,7 @@
       "type": "mcp_config",
       "name": "PaperBanana MCP",
       "description": "Automated academic figures and research visuals",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/paperbanana.json",
@@ -10424,7 +9449,7 @@
       "type": "mcp_config",
       "name": "TeXFlow MCP",
       "description": "LaTeX document compiler with MCP interface",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/texflow-mcp.json",
@@ -10444,7 +9469,7 @@
       "type": "mcp_config",
       "name": "TexMCP",
       "description": "FastMCP microservice for LaTeX to PDF rendering",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/texmcp.json",
@@ -10464,7 +9489,7 @@
       "type": "mcp_config",
       "name": "Typst MCP",
       "description": "Typst typesetting: convert LaTeX to Typst, validate, render",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/typst-mcp.json",
@@ -10485,7 +9510,7 @@
       "type": "mcp_config",
       "name": "Vizro Dashboard MCP",
       "description": "McKinsey Vizro validated data charts and dashboards",
-      "category": "dev-platform",
+      "category": "integrations",
       "subcategory": "dev-platform",
       "keywords": [],
       "path": "mcp-configs/dev-platform/vizro-mcp.json",
@@ -10505,7 +9530,7 @@
       "type": "mcp_config",
       "name": "IMAP/SMTP Email MCP",
       "description": "Universal IMAP/SMTP email server — connect to any email provider via standard protocols for reading, searching, and sending emails.",
-      "category": "email",
+      "category": "integrations",
       "subcategory": "email",
       "keywords": [],
       "path": "mcp-configs/email/email-mcp.json",
@@ -10528,7 +9553,7 @@
       "type": "mcp_config",
       "name": "Gmail MCP",
       "description": "Gmail email integration — search, read, send, and manage emails through Gmail for academic correspondence and collaboration.",
-      "category": "email",
+      "category": "integrations",
       "subcategory": "email",
       "keywords": [],
       "path": "mcp-configs/email/gmail-mcp.json",
@@ -10552,7 +9577,7 @@
       "type": "mcp_config",
       "name": "ApeRAG",
       "description": "Production-ready RAG platform with Graph RAG and vector search for knowledge retrieval",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/ApeRAG.json",
@@ -10573,7 +9598,7 @@
       "type": "mcp_config",
       "name": "In Memoria",
       "description": "Persistent intelligence with cumulative memory and pattern recognition for AI agents",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/In-Memoria.json",
@@ -10594,7 +9619,7 @@
       "type": "mcp_config",
       "name": "Agent Memory",
       "description": "Three-layer memory system with semantic search and knowledge graph for AI agents",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/agent-memory.json",
@@ -10615,7 +9640,7 @@
       "type": "mcp_config",
       "name": "AIMemo",
       "description": "Zero-dependency MCP memory server, single binary, 100% local storage and recall",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/aimemo.json",
@@ -10636,7 +9661,7 @@
       "type": "mcp_config",
       "name": "Biel MCP",
       "description": "Connect IDE to product documentation via Biel.ai RAG for instant knowledge retrieval",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/biel-mcp.json",
@@ -10656,7 +9681,7 @@
       "type": "mcp_config",
       "name": "Cognee",
       "description": "Memory manager using graph and vector stores with 30+ data sources for persistent agent knowledge",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/cognee.json",
@@ -10677,7 +9702,7 @@
       "type": "mcp_config",
       "name": "Context Awesome",
       "description": "Query 8500+ curated awesome lists with 1M+ items for discovering tools and resources",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/context-awesome.json",
@@ -10697,7 +9722,7 @@
       "type": "mcp_config",
       "name": "Context MCP",
       "description": "Self-hosted MCP server for semantic search over documentation collections",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/context-mcp.json",
@@ -10718,7 +9743,7 @@
       "type": "mcp_config",
       "name": "Conversation Handoff MCP",
       "description": "Hand off conversation context between Claude Desktop projects seamlessly",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/conversation-handoff-mcp.json",
@@ -10739,7 +9764,7 @@
       "type": "mcp_config",
       "name": "Cortex",
       "description": "Local-first knowledge graph for developers with query, find, and watch capabilities",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/cortex.json",
@@ -10760,7 +9785,7 @@
       "type": "mcp_config",
       "name": "DevRAG",
       "description": "Lightweight local RAG for semantic search over markdown files and documentation",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/devrag.json",
@@ -10780,7 +9805,7 @@
       "type": "mcp_config",
       "name": "Easy Obsidian MCP",
       "description": "Interact with Obsidian vaults through MCP for reading, writing, and searching notes",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/easy-obsidian-mcp.json",
@@ -10802,7 +9827,7 @@
       "type": "mcp_config",
       "name": "Engram",
       "description": "Intelligence layer for AI agents with explicit and implicit memory consolidation",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/engram.json",
@@ -10824,7 +9849,7 @@
       "type": "mcp_config",
       "name": "Gnosis MCP",
       "description": "Zero-config MCP server for searchable documentation with automatic indexing",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/gnosis-mcp.json",
@@ -10845,7 +9870,7 @@
       "type": "mcp_config",
       "name": "Graphlit MCP Server",
       "description": "Ingest from Slack, Discord, Drive, and GitHub into a RAG-ready knowledge base",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/graphlit-mcp-server.json",
@@ -10867,7 +9892,7 @@
       "type": "mcp_config",
       "name": "Local FAISS MCP",
       "description": "Local FAISS vector database for RAG with document ingestion",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/local-faiss-mcp.json",
@@ -10888,7 +9913,7 @@
       "type": "mcp_config",
       "name": "Memory Service MCP",
       "description": "Universal memory with semantic search and autonomous consolidation",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/mcp-memory-service.json",
@@ -10909,7 +9934,7 @@
       "type": "mcp_config",
       "name": "Obsidian Vault MCP",
       "description": "Read and search Markdown notes in Obsidian vaults",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/mcp-obsidian.json",
@@ -10930,7 +9955,7 @@
       "type": "mcp_config",
       "name": "RAG Docs MCP",
       "description": "Documentation retrieval through vector search",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/mcp-ragdocs.json",
@@ -10950,7 +9975,7 @@
       "type": "mcp_config",
       "name": "Summarizer MCP",
       "description": "AI summarization for text, web, PDF, EPUB content",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/mcp-summarizer.json",
@@ -10971,7 +9996,7 @@
       "type": "mcp_config",
       "name": "MediaWiki MCP",
       "description": "Connect to any MediaWiki wiki including Wikipedia",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/mediawiki-mcp.json",
@@ -10992,7 +10017,7 @@
       "type": "mcp_config",
       "name": "OpenZIM Offline Knowledge MCP",
       "description": "ZIM format knowledge bases offline (Wikipedia, educational)",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/openzim-mcp.json",
@@ -11012,7 +10037,7 @@
       "type": "mcp_config",
       "name": "Zettelkasten MCP",
       "description": "Zettelkasten knowledge management methodology via MCP",
-      "category": "note-knowledge",
+      "category": "integrations",
       "subcategory": "note-knowledge",
       "keywords": [],
       "path": "mcp-configs/note-knowledge/zettelkasten-mcp.json",
@@ -11033,7 +10058,7 @@
       "type": "mcp_config",
       "name": "Academic Paper MCP (HTTP)",
       "description": "HTTP/SSE academic literature search aggregating multiple sources",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/academic-paper-mcp-http.json",
@@ -11053,7 +10078,7 @@
       "type": "mcp_config",
       "name": "Academix MCP",
       "description": "Paper search and citation analysis via OpenAlex, DBLP, Semantic Scholar",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/academix.json",
@@ -11073,7 +10098,7 @@
       "type": "mcp_config",
       "name": "arXiv CLI",
       "description": "AI-ready search and fetch tool for arXiv papers",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/arxiv-cli.json",
@@ -11093,7 +10118,7 @@
       "type": "mcp_config",
       "name": "arXiv Research MCP",
       "description": "AI-powered arXiv search with ranking, full-text, and caching",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/arxiv-research-mcp.json",
@@ -11114,7 +10139,7 @@
       "type": "mcp_config",
       "name": "arXiv Search MCP",
       "description": "Search and fetch papers from arXiv.org",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/arxiv-search-mcp.json",
@@ -11134,7 +10159,7 @@
       "type": "mcp_config",
       "name": "Chiken",
       "description": "Zotero, RAG, MCP, and deep research",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/chiken.json",
@@ -11154,7 +10179,7 @@
       "type": "mcp_config",
       "name": "Claude Scholar",
       "description": "Academic research config with Zotero MCP integration",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/claude-scholar.json",
@@ -11174,7 +10199,7 @@
       "type": "mcp_config",
       "name": "DEVONthink MCP",
       "description": "DEVONthink with bibliography metadata and AI classification",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/devonthink-mcp.json",
@@ -11197,7 +10222,7 @@
       "type": "mcp_config",
       "name": "Google Scholar Abstract MCP",
       "description": "Google Scholar search filtering only complete abstracts",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/google-scholar-abstract-mcp.json",
@@ -11216,7 +10241,7 @@
       "type": "mcp_config",
       "name": "Google Scholar MCP",
       "description": "Search Google Scholar for academic papers",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/google-scholar-mcp.json",
@@ -11236,7 +10261,7 @@
       "type": "mcp_config",
       "name": "Papers With Code MCP",
       "description": "Search PapersWithCode for ML papers with code",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/mcp-paperswithcode.json",
@@ -11257,7 +10282,7 @@
       "type": "mcp_config",
       "name": "Scholarly MCP",
       "description": "Search for accurate academic articles across sources",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/mcp-scholarly.json",
@@ -11277,7 +10302,7 @@
       "type": "mcp_config",
       "name": "Simple arXiv MCP",
       "description": "Lightweight arXiv search with filtering and full text",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/mcp-simple-arxiv.json",
@@ -11297,7 +10322,7 @@
       "type": "mcp_config",
       "name": "Simple PubMed MCP",
       "description": "Search and read medical papers from PubMed",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/mcp-simple-pubmed.json",
@@ -11317,7 +10342,7 @@
       "type": "mcp_config",
       "name": "Zotero MCP",
       "description": "Interact with Zotero reference library via MCP",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/mcp-zotero.json",
@@ -11338,7 +10363,7 @@
       "type": "mcp_config",
       "name": "Mendeley MCP",
       "description": "Access Mendeley reference database with 100M+ papers",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/mendeley-mcp.json",
@@ -11358,7 +10383,7 @@
       "type": "mcp_config",
       "name": "NCBI MCP Server",
       "description": "NCBI/PubMed with analytics, MeSH, and batch processing",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/ncbi-mcp-server.json",
@@ -11380,7 +10405,7 @@
       "type": "mcp_config",
       "name": "OneCite MCP",
       "description": "Intelligent reference parsing and citation formatting",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/onecite.json",
@@ -11401,7 +10426,7 @@
       "type": "mcp_config",
       "name": "Paper Search MCP",
       "description": "Search and download papers from arXiv, PubMed, bioRxiv",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/paper-search-mcp.json",
@@ -11422,7 +10447,7 @@
       "type": "mcp_config",
       "name": "PubMed Search MCP",
       "description": "Professional PubMed search with 40+ tools and MeSH integration",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/pubmed-search-mcp.json",
@@ -11443,7 +10468,7 @@
       "type": "mcp_config",
       "name": "ScholarMCP",
       "description": "Literature search, PDF ingestion, and citation management",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/scholar-mcp.json",
@@ -11464,7 +10489,7 @@
       "type": "mcp_config",
       "name": "Scholar Multi-Source MCP",
       "description": "Search arXiv, Semantic Scholar, Crossref, Scopus, and ADS",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/scholar-multi-mcp.json",
@@ -11485,7 +10510,7 @@
       "type": "mcp_config",
       "name": "SeerAI Zotero MCP",
       "description": "Zotero AI with OCR, table extraction, and Semantic Scholar",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/seerai.json",
@@ -11506,7 +10531,7 @@
       "type": "mcp_config",
       "name": "Semantic Scholar FastMCP",
       "description": "FastMCP server for Semantic Scholar citation networks",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/semantic-scholar-fastmcp.json",
@@ -11527,7 +10552,7 @@
       "type": "mcp_config",
       "name": "SourceLibrary MCP",
       "description": "Search and cite rare historical texts with DOI-backed citations",
-      "category": "reference-mgr",
+      "category": "integrations",
       "subcategory": "reference-mgr",
       "keywords": [],
       "path": "mcp-configs/reference-mgr/sourcelibrary.json",
@@ -11547,7 +10572,7 @@
       "type": "mcp_config",
       "name": "Dataverse MCP",
       "description": "Dataverse research data repository — search datasets, access metadata, download files, and explore collections in Harvard Dataverse and other installations.",
-      "category": "repository",
+      "category": "integrations",
       "subcategory": "repository",
       "keywords": [],
       "path": "mcp-configs/repository/dataverse-mcp.json",
@@ -11571,7 +10596,7 @@
       "type": "mcp_config",
       "name": "Hugging Face MCP",
       "description": "Hugging Face Spaces and model access — search models, explore datasets, interact with Spaces, and retrieve model cards for ML research.",
-      "category": "repository",
+      "category": "integrations",
       "subcategory": "repository",
       "keywords": [],
       "path": "mcp-configs/repository/huggingface-mcp.json",

@@ -143,7 +143,7 @@ Create professional academic presentations using LaTeX Beamer with themes, anima
     \includegraphics[width=0.85\textwidth]{figures/results-comparison.pdf}
     \caption{Our method (blue) outperforms baselines across all benchmarks.}
   \end{figure}
-\end{frame>
+\end{frame}
 ```
 
 ### Table Slide

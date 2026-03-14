@@ -7,7 +7,7 @@ metadata:
     category: "research"
     subcategory: "paper-review"
     keywords: ["peer review", "paper critique", "referee report", "academic review", "manuscript evaluation", "constructive feedback"]
-    source: "https://clawhub.ai/peer-reviewer"
+    source: "wentor-research-plugins"
 ---
 
 # Paper Critique and Peer Review Framework

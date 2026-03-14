@@ -7,7 +7,7 @@ metadata:
     category: "analysis"
     subcategory: "wrangling"
     keywords: ["automated analysis", "data wrangling", "CSV upload", "data profiling", "smart analysis", "minimal prompting"]
-    source: "https://github.com/AcademicSkills/data-cog-guide"
+    source: "wentor-research-plugins"
 ---
 
 # Data Cog Guide

@@ -7,7 +7,7 @@ metadata:
     category: "analysis"
     subcategory: "dataviz"
     keywords: ["chart generation", "data visualization", "matplotlib", "publication figures", "scientific plots", "graph export"]
-    source: "https://github.com/AcademicSkills/chart-image-generator"
+    source: "wentor-research-plugins"
 ---
 
 # Chart Image Generator
