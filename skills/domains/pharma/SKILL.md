@@ -1,6 +1,6 @@
 ---
 name: pharma-skills
-description: "6 pharmaceutical research skills (clinical-pharmacology, clinical-trial-design, drug-development, drug-target-interaction...). Trigger: drug discovery, pharmacology, clinical trial design, regulatory filing. Design: end-to-end pipeline from target identification to clinical trials."
+description: "6 pharmaceutical research skills. Trigger: drug discovery, pharmacology, clinical trial design, regulatory filing. Design: end-to-end pipeline from target identification to clinical trials."
 ---
 
 # Pharmaceutical Research — 6 Skills

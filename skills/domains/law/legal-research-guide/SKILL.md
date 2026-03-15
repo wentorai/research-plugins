@@ -3,7 +3,7 @@ name: legal-research-guide
 description: "Legal research methods, case law analysis, and compliance tools"
 metadata:
   openclaw:
-    emoji: "scales"
+    emoji: "⚖️"
     category: "domains"
     subcategory: "law"
     keywords: ["law", "jurisprudence", "case law", "compliance analysis"]

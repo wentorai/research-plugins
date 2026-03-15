@@ -3,7 +3,7 @@ name: financial-data-analysis
 description: "Methods for acquiring, cleaning, and analyzing financial datasets for research"
 metadata:
   openclaw:
-    emoji: "money_with_wings"
+    emoji: "💸"
     category: "domains"
     subcategory: "finance"
     keywords: ["financial data", "stock analysis", "quantitative finance", "data pipeline", "financial API"]

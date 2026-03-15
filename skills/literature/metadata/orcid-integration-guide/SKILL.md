@@ -3,7 +3,7 @@ name: orcid-integration-guide
 description: "Set up and leverage ORCID for researcher identification and profiles"
 metadata:
   openclaw:
-    emoji: "id"
+    emoji: "🪪"
     category: "literature"
     subcategory: "metadata"
     keywords: ["ORCID", "researcher ID", "author disambiguation", "scholarly identity", "publication profile"]

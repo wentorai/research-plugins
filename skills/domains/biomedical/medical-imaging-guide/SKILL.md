@@ -3,7 +3,7 @@ name: medical-imaging-guide
 description: "Medical image analysis with deep learning for research applications"
 metadata:
   openclaw:
-    emoji: "microscope"
+    emoji: "🔬"
     category: "domains"
     subcategory: "biomedical"
     keywords: ["medical imaging", "deep learning", "image segmentation", "radiology AI", "pathology", "convolutional neural networks"]

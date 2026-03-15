@@ -3,7 +3,7 @@ name: ontology-design-guide
 description: "Design ontologies and knowledge graphs for research data modeling"
 metadata:
   openclaw:
-    emoji: "link"
+    emoji: "🔗"
     category: "tools"
     subcategory: "knowledge-graph"
     keywords: ["ontology", "knowledge graph", "RDF", "OWL", "semantic web", "data modeling", "linked data"]

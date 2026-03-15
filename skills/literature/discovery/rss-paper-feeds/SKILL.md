@@ -3,7 +3,7 @@ name: rss-paper-feeds
 description: "Set up RSS feeds and alerts to track new publications in your research area"
 metadata:
   openclaw:
-    emoji: "bell"
+    emoji: "🔔"
     category: "literature"
     subcategory: "discovery"
     keywords: ["RSS feed", "new publication tracking", "literature alert", "citation notification", "research monitoring"]

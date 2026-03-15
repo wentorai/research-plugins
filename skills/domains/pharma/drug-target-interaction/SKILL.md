@@ -3,7 +3,7 @@ name: drug-target-interaction
 description: "Computational drug-target interaction prediction and virtual screening"
 metadata:
   openclaw:
-    emoji: "pill"
+    emoji: "💊"
     category: "domains"
     subcategory: "pharma"
     keywords: ["drug-target", "virtual-screening", "molecular-docking", "binding-affinity", "cheminformatics"]

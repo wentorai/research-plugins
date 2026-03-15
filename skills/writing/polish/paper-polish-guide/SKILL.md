@@ -7,7 +7,7 @@ metadata:
     category: "writing"
     subcategory: "polish"
     keywords: ["paper polishing", "academic editing", "LaTeX review", "writing quality", "style guide", "proofreading"]
-    source: "https://github.com/yzhao062/writing-style"
+    source: "wentor-research-plugins"
 ---
 
 # Paper Polish Guide
@@ -154,7 +154,7 @@ Before declaring the paper polished:
 
 ## References
 
-- Writing Style Guide: https://github.com/yzhao062/writing-style
+- Writing Style Guide: wentor-research-plugins
 - Strunk, W. & White, E.B. "The Elements of Style"
 - Zobel, J. "Writing for Computer Science" (Springer)
 - Chktex LaTeX linter: https://www.nongnu.org/chktex/

@@ -3,7 +3,7 @@ name: data-cleaning-pipeline
 description: "Systematic data cleaning workflows for research datasets"
 metadata:
   openclaw:
-    emoji: "broom"
+    emoji: "🧹"
     category: "analysis"
     subcategory: "wrangling"
     keywords: ["data cleaning", "data quality", "missing values", "outlier detection", "data validation", "preprocessing"]

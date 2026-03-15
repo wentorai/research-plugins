@@ -3,7 +3,7 @@ name: quantum-computing-guide
 description: "Explore quantum computing research with Qiskit and Cirq frameworks"
 metadata:
   openclaw:
-    emoji: "atom_symbol"
+    emoji: "⚛️"
     category: "domains"
     subcategory: "physics"
     keywords: ["quantum computing", "Qiskit", "Cirq", "quantum circuits", "qubit", "quantum algorithms"]

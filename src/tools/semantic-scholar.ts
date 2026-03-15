@@ -15,52 +15,6 @@ export function createSemanticScholarTools(
 
   return [
     {
-      name: "search_papers",
-      label: "Search Papers (Semantic Scholar)",
-      description:
-        "Search academic papers on Semantic Scholar. Returns titles, abstracts, authors, citation counts.",
-      parameters: Type.Object({
-        query: Type.String({ description: "Search query keywords" }),
-        limit: Type.Optional(
-          Type.Number({ description: "Max results to return (default 10, max 100)" }),
-        ),
-        year: Type.Optional(
-          Type.String({ description: "Year filter, e.g. '2024' or '2020-2024'" }),
-        ),
-        fields_of_study: Type.Optional(
-          Type.String({
-            description:
-              "Comma-separated fields, e.g. 'Computer Science,Mathematics'",
-          }),
-        ),
-        open_access_only: Type.Optional(
-          Type.Boolean({ description: "Only return open access papers" }),
-        ),
-      }),
-      execute: async (input: {
-        query: string;
-        limit?: number;
-        year?: string;
-        fields_of_study?: string;
-        open_access_only?: boolean;
-      }) => {
-        const params = new URLSearchParams({
-          query: input.query,
-          limit: String(Math.min(input.limit ?? 10, 100)),
-          fields:
-            "title,abstract,authors,year,citationCount,referenceCount,url,isOpenAccess,openAccessPdf",
-        });
-        if (input.year) params.set("year", input.year);
-        if (input.fields_of_study)
-          params.set("fieldsOfStudy", input.fields_of_study);
-        if (input.open_access_only) params.set("openAccessPdf", "");
-
-        const res = await fetch(`${BASE}/paper/search?${params}`, { headers });
-        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
-        return toolResult(await res.json());
-      },
-    },
-    {
       name: "get_paper",
       label: "Get Paper Details (Semantic Scholar)",
       description:

@@ -3,11 +3,11 @@ name: academic-citation-manager
 description: "Manage academic citations across BibTeX, APA, MLA, and Chicago formats"
 metadata:
   openclaw:
-    emoji: "bookmark"
+    emoji: "🔖"
     category: "writing"
     subcategory: "citation"
     keywords: ["citation", "BibTeX", "APA", "reference management", "bibliography", "formatting"]
-    source: "https://github.com/wentor-ai/research-plugins"
+    source: "wentor-research-plugins"
 ---
 
 # Academic Citation Manager

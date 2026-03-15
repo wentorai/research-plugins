@@ -1,6 +1,6 @@
 ---
 name: math-skills
-description: "6 mathematics skills (lean-theorem-proving, linear-algebra-applications, numerical-methods, oeis...). Trigger: mathematical proofs, theorem proving, numerical methods, linear algebra. Design: formal verification tools and computational mathematics guides."
+description: "6 mathematics skills. Trigger: mathematical proofs, theorem proving, numerical methods, linear algebra. Design: formal verification tools and computational mathematics guides."
 ---
 
 # Mathematics — 6 Skills

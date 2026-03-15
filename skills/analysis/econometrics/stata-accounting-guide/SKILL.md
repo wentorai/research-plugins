@@ -3,7 +3,7 @@ name: stata-accounting-guide
 description: "STATA code for empirical accounting and financial economics research"
 metadata:
   openclaw:
-    emoji: "ledger"
+    emoji: "📒"
     category: "analysis"
     subcategory: "econometrics"
     keywords: ["Stata", "accounting research", "Compustat", "CRSP", "earnings management", "financial economics"]

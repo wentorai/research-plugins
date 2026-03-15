@@ -1,6 +1,6 @@
 ---
 name: search-skills
-description: "32 database search skills (arxiv, arxiv-batch-reporting, arxiv-cli-tools, arxiv-paper-processor...). Trigger: finding papers, search strategies, querying academic databases. Design: one skill per database/tool with API details, query syntax, and rate limits."
+description: "32 database search skills. Trigger: finding papers, search strategies, querying academic databases. Design: one skill per database/tool with API details, query syntax, and rate limits."
 ---
 
 # Database Search — 32 Skills

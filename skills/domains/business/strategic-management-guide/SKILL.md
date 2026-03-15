@@ -3,7 +3,7 @@ name: strategic-management-guide
 description: "Frameworks for strategic planning, resource allocation, and organizational an..."
 metadata:
   openclaw:
-    emoji: "chess_pawn"
+    emoji: "♟️"
     category: "domains"
     subcategory: "business"
     keywords: ["strategic management", "operations management", "market analysis", "organizational strategy", "resource allocation"]

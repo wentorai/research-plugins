@@ -3,7 +3,7 @@ name: peer-review-guide
 description: "Conduct thorough, constructive peer reviews and evaluate research papers crit..."
 metadata:
   openclaw:
-    emoji: "detective"
+    emoji: "🕵️"
     category: "research"
     subcategory: "paper-review"
     keywords: ["peer review", "reviewer comments", "paper evaluation", "paper reading assistant", "manuscript assessment"]

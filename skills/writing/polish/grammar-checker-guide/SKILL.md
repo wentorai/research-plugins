@@ -3,7 +3,7 @@ name: grammar-checker-guide
 description: "Use grammar and style checking tools to polish academic manuscripts"
 metadata:
   openclaw:
-    emoji: "pencil2"
+    emoji: "✏️"
     category: "writing"
     subcategory: "polish"
     keywords: ["grammar checker", "academic style", "proofreading", "writing tools", "language editing"]

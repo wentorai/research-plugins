@@ -3,7 +3,7 @@ name: topology-data-analysis
 description: "Topological data analysis: persistent homology, Mapper, and TDA tools"
 metadata:
   openclaw:
-    emoji: "linked-paperclips"
+    emoji: "🖇️"
     category: "domains"
     subcategory: "math"
     keywords: ["topology", "persistent-homology", "tda", "mapper", "betti-numbers", "point-cloud"]

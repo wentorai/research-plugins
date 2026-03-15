@@ -3,7 +3,7 @@ name: rag-methodology-guide
 description: "RAG architecture for academic knowledge retrieval and synthesis"
 metadata:
   openclaw:
-    emoji: "brain"
+    emoji: "🧠"
     category: "tools"
     subcategory: "knowledge-graph"
     keywords: ["RAG", "retrieval augmented generation", "academic knowledge graph", "knowledge modeling"]

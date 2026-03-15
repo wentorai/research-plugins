@@ -3,7 +3,7 @@ name: questionnaire-design-guide
 description: "Questionnaire and survey design with Likert scales and coding"
 metadata:
   openclaw:
-    emoji: "clipboard"
+    emoji: "📋"
     category: "analysis"
     subcategory: "wrangling"
     keywords: ["questionnaire design", "survey design", "Likert scale", "data transformation"]

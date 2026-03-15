@@ -3,7 +3,7 @@ name: abstract-writing-guide
 description: "Craft structured research abstracts that maximize clarity and journal acceptance"
 metadata:
   openclaw:
-    emoji: "memo"
+    emoji: "📝"
     category: "writing"
     subcategory: "composition"
     keywords: ["abstract writing", "summary writing", "research abstract", "paper title writing", "structured abstract"]

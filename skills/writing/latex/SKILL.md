@@ -1,6 +1,6 @@
 ---
 name: latex-skills
-description: "11 latex skills (academic-writing-latex, bibliography-management, latex-drawing-collection, latex-drawing...). Trigger: LaTeX typesetting, formatting papers, mathematical notation, Beamer. Design: template-based guides with package recommendations and compilation tips."
+description: "11 latex skills. Trigger: LaTeX typesetting, formatting papers, mathematical notation, Beamer. Design: template-based guides with package recommendations and compilation tips."
 ---
 
 # LaTeX — 11 Skills

@@ -3,7 +3,7 @@ name: bayesian-statistics-guide
 description: "Bayesian inference methods including prior selection, MCMC, and model comparison"
 metadata:
   openclaw:
-    emoji: "triangular_ruler"
+    emoji: "📐"
     category: "analysis"
     subcategory: "statistics"
     keywords: ["Bayesian statistics", "Bayesian inference", "MCMC", "sample size calculation", "prior selection"]

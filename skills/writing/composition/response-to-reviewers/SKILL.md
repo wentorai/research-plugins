@@ -3,7 +3,7 @@ name: response-to-reviewers
 description: "Write effective point-by-point responses to peer reviewer comments for revisions"
 metadata:
   openclaw:
-    emoji: "envelope"
+    emoji: "✉️"
     category: "writing"
     subcategory: "composition"
     keywords: ["response to reviewers", "revision letter", "point-by-point response", "cover letter writing", "manuscript revision"]

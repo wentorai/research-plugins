@@ -3,7 +3,7 @@ name: risk-modeling-guide
 description: "Financial risk modeling including VaR, stress testing, and credit risk"
 metadata:
   openclaw:
-    emoji: "chart-decreasing"
+    emoji: "📉"
     category: "domains"
     subcategory: "finance"
     keywords: ["risk-modeling", "var", "stress-testing", "credit-risk", "monte-carlo", "basel"]

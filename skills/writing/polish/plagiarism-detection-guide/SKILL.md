@@ -3,7 +3,7 @@ name: plagiarism-detection-guide
 description: "Use plagiarism detection tools and ensure manuscript originality"
 metadata:
   openclaw:
-    emoji: "shield"
+    emoji: "🛡️"
     category: "writing"
     subcategory: "polish"
     keywords: ["plagiarism detection", "originality check", "Turnitin", "iThenticate", "self-plagiarism", "text similarity"]

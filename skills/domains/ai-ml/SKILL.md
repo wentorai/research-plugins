@@ -1,6 +1,6 @@
 ---
 name: ai-ml-skills
-description: "26 ai & machine learning skills (ai-agent-papers, ai-model-benchmarking, anomaly-detection-papers, autonomous-agents-papers...). Trigger: ML experiments, model training, deep learning, NLP, computer vision. Design: covers frameworks, benchmarks, paper reproduction, and AI research workflows."
+description: "26 ai & machine learning skills. Trigger: ML experiments, model training, deep learning, NLP, computer vision. Design: covers frameworks, benchmarks, paper reproduction, and AI research workflows."
 ---
 
 # AI & Machine Learning — 26 Skills

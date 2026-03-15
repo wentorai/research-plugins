@@ -3,7 +3,7 @@ name: power-analysis-guide
 description: "Sample size calculation and statistical power analysis guide"
 metadata:
   openclaw:
-    emoji: "target"
+    emoji: "🎯"
     category: "analysis"
     subcategory: "statistics"
     keywords: ["sample size calculation", "power analysis", "effect size", "significance testing"]

@@ -3,7 +3,7 @@ name: systematic-search-strategy
 description: "Construct rigorous systematic search strategies for literature reviews"
 metadata:
   openclaw:
-    emoji: "dart"
+    emoji: "🎯"
     category: "literature"
     subcategory: "search"
     keywords: ["search strategy", "Boolean search", "search string construction", "advanced search", "systematic review"]

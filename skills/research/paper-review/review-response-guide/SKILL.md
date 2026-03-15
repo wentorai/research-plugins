@@ -3,7 +3,7 @@ name: review-response-guide
 description: "Craft effective point-by-point reviewer response letters"
 metadata:
   openclaw:
-    emoji: "envelope"
+    emoji: "✉️"
     category: "research"
     subcategory: "paper-review"
     keywords: ["reviewer response", "response letter", "revision strategy", "author reply", "manuscript revision", "editorial decision"]

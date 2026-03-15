@@ -3,7 +3,7 @@ name: portfolio-optimization-guide
 description: "Portfolio theory, optimization algorithms, and asset allocation methods"
 metadata:
   openclaw:
-    emoji: "briefcase"
+    emoji: "💼"
     category: "domains"
     subcategory: "finance"
     keywords: ["portfolio", "optimization", "markowitz", "asset-allocation", "mean-variance", "black-litterman"]

@@ -3,7 +3,7 @@ name: geospatial-viz-guide
 description: "Create maps, choropleths, and spatial data visualizations for research"
 metadata:
   openclaw:
-    emoji: "world_map"
+    emoji: "🗺️"
     category: "analysis"
     subcategory: "dataviz"
     keywords: ["geospatial", "choropleth", "maps", "GIS", "spatial visualization", "geopandas"]

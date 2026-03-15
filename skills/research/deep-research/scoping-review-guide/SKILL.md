@@ -3,7 +3,7 @@ name: scoping-review-guide
 description: "Scoping review methodology for broad evidence mapping"
 metadata:
   openclaw:
-    emoji: "scope"
+    emoji: "🔭"
     category: "research"
     subcategory: "deep-research"
     keywords: ["scoping review", "scoping study", "rapid review", "umbrella review"]

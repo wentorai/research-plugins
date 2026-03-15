@@ -3,7 +3,7 @@ name: prompt-engineering-research
 description: "Systematic prompt engineering methods for AI-assisted academic research workf..."
 metadata:
   openclaw:
-    emoji: "robot"
+    emoji: "🤖"
     category: "domains"
     subcategory: "ai-ml"
     keywords: ["machine learning", "deep learning", "NLP", "AI coding", "prompt engineering", "LLM"]

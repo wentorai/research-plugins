@@ -3,7 +3,7 @@ name: overleaf-collaboration-guide
 description: "Guide to collaborative LaTeX editing with Overleaf"
 metadata:
   openclaw:
-    emoji: "team"
+    emoji: "👥"
     category: "writing"
     subcategory: "latex"
     keywords: ["online LaTeX editor", "collaborative LaTeX", "Overleaf", "LaTeX environment setup"]

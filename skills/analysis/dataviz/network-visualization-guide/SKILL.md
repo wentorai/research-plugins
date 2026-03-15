@@ -3,7 +3,7 @@ name: network-visualization-guide
 description: "Visualize networks, graphs, citation maps, and relational data"
 metadata:
   openclaw:
-    emoji: "spider_web"
+    emoji: "🕸️"
     category: "analysis"
     subcategory: "dataviz"
     keywords: ["network visualization", "graph visualization", "citation network", "NetworkX", "social network", "node-link diagram"]

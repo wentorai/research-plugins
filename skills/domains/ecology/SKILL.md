@@ -1,6 +1,6 @@
 ---
 name: ecology-skills
-description: "5 ecology & environmental science skills (biodiversity-data, conservation-biology, gbif, inaturalist...). Trigger: biodiversity surveys, species data, environmental monitoring. Design: field data collection, spatial analysis, and conservation biology workflows."
+description: "5 ecology & environmental science skills. Trigger: biodiversity surveys, species data, environmental monitoring. Design: field data collection, spatial analysis, and conservation biology workflows."
 ---
 
 # Ecology & Environmental Science — 5 Skills

@@ -3,7 +3,7 @@ name: text-mining-guide
 description: "Apply NLP and text mining techniques to research text data"
 metadata:
   openclaw:
-    emoji: "mag"
+    emoji: "🔍"
     category: "analysis"
     subcategory: "wrangling"
     keywords: ["text mining", "NLP", "topic modeling", "sentiment analysis", "text preprocessing", "natural language processing"]

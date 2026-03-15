@@ -3,7 +3,7 @@ name: retrosynthesis-guide
 description: "Retrosynthetic analysis and computational reaction prediction"
 metadata:
   openclaw:
-    emoji: "flask"
+    emoji: "🧪"
     category: "domains"
     subcategory: "chemistry"
     keywords: ["retrosynthesis", "reaction prediction", "organic chemistry", "computational chemistry"]

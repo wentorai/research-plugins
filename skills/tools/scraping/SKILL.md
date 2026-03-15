@@ -1,6 +1,6 @@
 ---
 name: scraping-skills
-description: "6 web scraping & data collection skills (academic-web-scraping, dataset-finder, easy-spider, google-scholar-scraper...). Trigger: collecting web data, finding datasets, API access for research. Design: ethical scraping methods with rate limiting and data quality checks."
+description: "6 web scraping & data collection skills. Trigger: collecting web data, finding datasets, API access for research. Design: ethical scraping methods with rate limiting and data quality checks."
 ---
 
 # Web Scraping & Data Collection — 6 Skills

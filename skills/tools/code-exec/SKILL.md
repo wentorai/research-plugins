@@ -1,6 +1,6 @@
 ---
 name: code-exec-skills
-description: "7 code execution skills (google-colab, jupyter-notebook, kaggle, overleaf-cli...). Trigger: running code, interactive notebooks, Jupyter, Colab, sandboxed execution. Design: execution environment guides with setup instructions and best practices."
+description: "7 code execution skills. Trigger: running code, interactive notebooks, Jupyter, Colab, sandboxed execution. Design: execution environment guides with setup instructions and best practices."
 ---
 
 # Code Execution — 7 Skills

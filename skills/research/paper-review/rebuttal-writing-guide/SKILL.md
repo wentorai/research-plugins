@@ -3,7 +3,7 @@ name: rebuttal-writing-guide
 description: "Write effective rebuttals to reviewer comments for journal submissions"
 metadata:
   openclaw:
-    emoji: "memo"
+    emoji: "📝"
     category: "research"
     subcategory: "paper-review"
     keywords: ["rebuttal letter", "reviewer response", "revision", "peer review", "manuscript revision", "author response"]

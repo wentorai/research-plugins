@@ -3,7 +3,7 @@ name: reinforcement-learning-guide
 description: "Reinforcement learning fundamentals, algorithms, and research"
 metadata:
   openclaw:
-    emoji: "robot"
+    emoji: "🤖"
     category: "domains"
     subcategory: "ai-ml"
     keywords: ["reinforcement learning", "machine learning", "deep learning", "neural network"]

@@ -3,7 +3,7 @@ name: conference-proceedings-guide
 description: "Find, access, and cite conference papers and proceedings effectively"
 metadata:
   openclaw:
-    emoji: "speech_balloon"
+    emoji: "💬"
     category: "literature"
     subcategory: "discovery"
     keywords: ["conference papers", "proceedings", "ACM", "IEEE", "academic conferences", "workshop papers"]

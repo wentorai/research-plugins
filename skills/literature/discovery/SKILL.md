@@ -1,6 +1,6 @@
 ---
 name: discovery-skills
-description: "9 paper discovery skills (citation-alert, conference-proceedings, literature-mapping, paper-recommendation...). Trigger: finding new relevant papers, tracking citations, staying current. Design: automated monitoring, recommendation engines, and alert setup guides."
+description: "9 paper discovery skills. Trigger: finding new relevant papers, tracking citations, staying current. Design: automated monitoring, recommendation engines, and alert setup guides."
 ---
 
 # Paper Discovery — 9 Skills

@@ -3,7 +3,7 @@ name: mixed-methods-guide
 description: "Guide to designing and conducting mixed methods research"
 metadata:
   openclaw:
-    emoji: "blend"
+    emoji: "🔀"
     category: "research"
     subcategory: "methodology"
     keywords: ["mixed methods research", "multimethod design", "quantitative research design"]

@@ -3,7 +3,7 @@ name: conservation-biology-guide
 description: "Apply conservation biology methods, databases, and assessment tools"
 metadata:
   openclaw:
-    emoji: "deciduous_tree"
+    emoji: "🌳"
     category: "domains"
     subcategory: "ecology"
     keywords: ["conservation biology", "biodiversity", "IUCN Red List", "species assessment", "habitat modeling", "wildlife"]

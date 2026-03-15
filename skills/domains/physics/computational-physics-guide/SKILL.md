@@ -3,7 +3,7 @@ name: computational-physics-guide
 description: "Computational physics methods, simulations, and research tools"
 metadata:
   openclaw:
-    emoji: "atom"
+    emoji: "⚛️"
     category: "domains"
     subcategory: "physics"
     keywords: ["computational physics", "quantum mechanics", "statistical physics", "condensed matter"]

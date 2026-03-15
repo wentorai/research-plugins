@@ -3,7 +3,7 @@ name: species-distribution-guide
 description: "Species distribution modeling with MaxEnt, SDM methods, and GBIF data"
 metadata:
   openclaw:
-    emoji: "paw-prints"
+    emoji: "🐾"
     category: "domains"
     subcategory: "ecology"
     keywords: ["species-distribution", "maxent", "sdm", "gbif", "ecological-niche", "biodiversity", "habitat"]

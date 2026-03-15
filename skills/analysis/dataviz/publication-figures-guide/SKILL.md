@@ -3,7 +3,7 @@ name: publication-figures-guide
 description: "Create journal-quality scientific figures with proper styling and accessibility"
 metadata:
   openclaw:
-    emoji: "art"
+    emoji: "🎨"
     category: "analysis"
     subcategory: "dataviz"
     keywords: ["scientific figure creation", "publication quality figure", "figure standards", "colorblind-friendly palette", "data visualization"]

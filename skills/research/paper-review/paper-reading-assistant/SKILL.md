@@ -3,7 +3,7 @@ name: paper-reading-assistant
 description: "AI-assisted paper reading, PDF Q&A, and summarization workflows"
 metadata:
   openclaw:
-    emoji: "reader"
+    emoji: "📖"
     category: "research"
     subcategory: "paper-review"
     keywords: ["paper reading assistant", "PDF Q&A", "document understanding", "paper summarization"]

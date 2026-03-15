@@ -3,7 +3,7 @@ name: qualitative-research-guide
 description: "Design and conduct qualitative research using grounded theory, case studies, ..."
 metadata:
   openclaw:
-    emoji: "mag"
+    emoji: "🔍"
     category: "research"
     subcategory: "methodology"
     keywords: ["qualitative research design", "case study", "grounded theory", "phenomenology", "thematic analysis"]

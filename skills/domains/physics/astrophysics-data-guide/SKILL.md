@@ -3,7 +3,7 @@ name: astrophysics-data-guide
 description: "Astronomical data processing with Astropy, FITS files, and sky surveys"
 metadata:
   openclaw:
-    emoji: "telescope"
+    emoji: "🔭"
     category: "domains"
     subcategory: "physics"
     keywords: ["astrophysics", "astronomy", "astropy", "fits", "photometry", "spectroscopy", "sky-survey"]

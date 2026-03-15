@@ -3,7 +3,7 @@ name: eu-horizon-guide
 description: "Navigate EU Horizon Europe funding programs and proposal writing"
 metadata:
   openclaw:
-    emoji: "eu"
+    emoji: "🇪🇺"
     category: "research"
     subcategory: "funding"
     keywords: ["Horizon Europe", "EU funding", "ERC grants", "MSCA", "proposal writing", "European research", "consortium"]

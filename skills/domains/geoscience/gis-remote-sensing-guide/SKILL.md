@@ -3,7 +3,7 @@ name: gis-remote-sensing-guide
 description: "GIS analysis and remote sensing workflows for geospatial research applications"
 metadata:
   openclaw:
-    emoji: "earth_americas"
+    emoji: "🌎"
     category: "domains"
     subcategory: "geoscience"
     keywords: ["GIS", "remote sensing", "geology", "atmospheric science", "climatology", "geospatial analysis"]

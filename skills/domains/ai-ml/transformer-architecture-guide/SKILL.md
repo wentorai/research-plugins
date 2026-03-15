@@ -3,7 +3,7 @@ name: transformer-architecture-guide
 description: "Guide to Transformer architectures for NLP and computer vision"
 metadata:
   openclaw:
-    emoji: "brain"
+    emoji: "🧠"
     category: "domains"
     subcategory: "ai-ml"
     keywords: ["Transformer", "neural network", "deep learning", "NLP", "computer vision"]

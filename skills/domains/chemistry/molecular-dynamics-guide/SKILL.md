@@ -3,7 +3,7 @@ name: molecular-dynamics-guide
 description: "Molecular dynamics simulation setup, execution, and trajectory analysis"
 metadata:
   openclaw:
-    emoji: "atom-symbol"
+    emoji: "⚛️"
     category: "domains"
     subcategory: "chemistry"
     keywords: ["molecular-dynamics", "simulation", "gromacs", "openmm", "force-field", "trajectory"]

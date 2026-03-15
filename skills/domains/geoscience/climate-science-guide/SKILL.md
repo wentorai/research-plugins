@@ -3,7 +3,7 @@ name: climate-science-guide
 description: "Climate data analysis, modeling workflows, and carbon neutrality research met..."
 metadata:
   openclaw:
-    emoji: "cloud"
+    emoji: "☁️"
     category: "domains"
     subcategory: "geoscience"
     keywords: ["climate change", "carbon neutrality", "atmospheric science", "climatology", "climate modeling"]

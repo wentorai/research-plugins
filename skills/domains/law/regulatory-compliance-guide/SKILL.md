@@ -3,7 +3,7 @@ name: regulatory-compliance-guide
 description: "Regulatory text mining, compliance research, and policy analysis tools"
 metadata:
   openclaw:
-    emoji: "scroll"
+    emoji: "📜"
     category: "domains"
     subcategory: "law"
     keywords: ["regulation", "compliance", "policy-analysis", "text-mining", "federal-register", "rulemaking"]

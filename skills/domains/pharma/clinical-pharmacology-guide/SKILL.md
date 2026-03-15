@@ -3,7 +3,7 @@ name: clinical-pharmacology-guide
 description: "Clinical pharmacology principles for dosing, drug interactions, and patient s..."
 metadata:
   openclaw:
-    emoji: "syringe"
+    emoji: "💉"
     category: "domains"
     subcategory: "pharma"
     keywords: ["drug development", "pharmacokinetics", "clinical trial", "nursing", "pharmacodynamics", "drug interactions"]

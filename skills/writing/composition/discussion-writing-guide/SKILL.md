@@ -3,7 +3,7 @@ name: discussion-writing-guide
 description: "Write effective discussion sections that interpret results and impact"
 metadata:
   openclaw:
-    emoji: "thought_balloon"
+    emoji: "💭"
     category: "writing"
     subcategory: "composition"
     keywords: ["discussion section", "academic writing", "results interpretation", "paper structure", "research implications"]

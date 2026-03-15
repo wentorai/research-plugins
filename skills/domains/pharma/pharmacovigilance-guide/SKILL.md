@@ -3,7 +3,7 @@ name: pharmacovigilance-guide
 description: "Adverse drug event detection, safety signal mining, and drug monitoring"
 metadata:
   openclaw:
-    emoji: "warning"
+    emoji: "⚠️"
     category: "domains"
     subcategory: "pharma"
     keywords: ["pharmacovigilance", "adverse-events", "drug-safety", "faers", "signal-detection", "disproportionality"]

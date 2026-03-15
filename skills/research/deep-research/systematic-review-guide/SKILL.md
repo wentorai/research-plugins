@@ -3,7 +3,7 @@ name: systematic-review-guide
 description: "Systematic review methodology with PRISMA and evidence synthesis"
 metadata:
   openclaw:
-    emoji: "magnify"
+    emoji: "🔍"
     category: "research"
     subcategory: "deep-research"
     keywords: ["systematic review methodology", "evidence synthesis", "PRISMA flowchart", "risk of bias assessment"]

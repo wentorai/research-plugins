@@ -7,7 +7,7 @@ metadata:
     category: "domains"
     subcategory: "humanities"
     keywords: ["ethics", "applied ethics", "moral philosophy", "bioethics", "AI ethics", "normative theory"]
-    source: "https://plato.stanford.edu/entries/ethics-applied/"
+    source: "wentor-research-plugins"
 ---
 
 # Applied Ethics Research Guide

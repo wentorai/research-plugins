@@ -3,7 +3,7 @@ name: handwriting-recognition-guide
 description: "Apply handwriting OCR to digitize historical and archival documents"
 metadata:
   openclaw:
-    emoji: "fountain_pen"
+    emoji: "🖋️"
     category: "tools"
     subcategory: "ocr-translate"
     keywords: ["handwriting recognition", "HTR", "OCR", "historical documents", "digitization", "manuscript transcription"]

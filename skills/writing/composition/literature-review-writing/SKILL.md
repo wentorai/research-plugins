@@ -3,7 +3,7 @@ name: literature-review-writing
 description: "Structure and write comprehensive literature reviews for any field"
 metadata:
   openclaw:
-    emoji: "scroll"
+    emoji: "📜"
     category: "writing"
     subcategory: "composition"
     keywords: ["literature review", "systematic review", "narrative review", "synthesis", "academic writing", "review paper"]

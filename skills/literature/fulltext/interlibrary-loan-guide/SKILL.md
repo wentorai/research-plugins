@@ -3,7 +3,7 @@ name: interlibrary-loan-guide
 description: "Access papers through interlibrary loan and document delivery services"
 metadata:
   openclaw:
-    emoji: "books"
+    emoji: "📚"
     category: "literature"
     subcategory: "fulltext"
     keywords: ["interlibrary loan", "ILL", "document delivery", "full text access", "library services"]

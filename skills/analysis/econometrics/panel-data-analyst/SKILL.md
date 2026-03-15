@@ -3,7 +3,7 @@ name: panel-data-analyst
 description: "Expert panel data regression analysis with fixed effects and GMM"
 metadata:
   openclaw:
-    emoji: "grid"
+    emoji: "📊"
     category: "analysis"
     subcategory: "econometrics"
     keywords: ["panel data", "fixed effects", "random effects", "GMM", "dynamic panel", "Hausman test"]

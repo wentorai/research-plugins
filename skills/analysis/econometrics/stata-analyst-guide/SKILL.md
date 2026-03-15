@@ -3,7 +3,7 @@ name: stata-analyst-guide
 description: "Stata workflows for publication-ready sociology and social science research"
 metadata:
   openclaw:
-    emoji: "survey"
+    emoji: "📋"
     category: "analysis"
     subcategory: "econometrics"
     keywords: ["Stata", "sociology", "social science", "survey data", "regression", "publication tables"]

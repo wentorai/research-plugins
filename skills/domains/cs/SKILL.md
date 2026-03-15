@@ -1,6 +1,6 @@
 ---
 name: cs-skills
-description: "10 computer science skills (ai-security-papers, algorithms-complexity, code-llm-papers, dblp...). Trigger: algorithms, systems research, software engineering, security papers. Design: theory, complexity analysis, code-centric research, and security methods."
+description: "10 computer science skills. Trigger: algorithms, systems research, software engineering, security papers. Design: theory, complexity analysis, code-centric research, and security methods."
 ---
 
 # Computer Science — 10 Skills

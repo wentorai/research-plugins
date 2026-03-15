@@ -1,6 +1,6 @@
 ---
 name: education-skills
-description: "8 education research skills (academic-study-methods, assessment-design, curriculum-design, educational-research-methods...). Trigger: pedagogical research, course design, learning analytics, assessment. Design: evidence-based teaching methods and educational measurement tools."
+description: "8 education research skills. Trigger: pedagogical research, course design, learning analytics, assessment. Design: evidence-based teaching methods and educational measurement tools."
 ---
 
 # Education Research — 8 Skills

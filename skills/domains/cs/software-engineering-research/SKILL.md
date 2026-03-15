@@ -3,7 +3,7 @@ name: software-engineering-research
 description: "Guide to software engineering research topics and methodologies"
 metadata:
   openclaw:
-    emoji: "code"
+    emoji: "💻"
     category: "domains"
     subcategory: "cs"
     keywords: ["software engineering", "distributed systems", "cybersecurity", "HCI"]

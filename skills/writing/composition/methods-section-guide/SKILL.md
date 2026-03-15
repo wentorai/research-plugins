@@ -3,7 +3,7 @@ name: methods-section-guide
 description: "Guide to writing clear and reproducible methodology sections"
 metadata:
   openclaw:
-    emoji: "gear"
+    emoji: "⚙️"
     category: "writing"
     subcategory: "composition"
     keywords: ["methods writing", "methodology section", "reproducible methods"]

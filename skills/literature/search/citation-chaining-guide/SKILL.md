@@ -3,7 +3,7 @@ name: citation-chaining-guide
 description: "Forward and backward citation chaining techniques for literature search"
 metadata:
   openclaw:
-    emoji: "chain"
+    emoji: "🔗"
     category: "literature"
     subcategory: "search"
     keywords: ["citation tracking", "advanced search", "search strategy", "literature search"]

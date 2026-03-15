@@ -3,7 +3,7 @@ name: jupyter-notebook-guide
 description: "Best practices for computational research notebooks with reproducible workflows"
 metadata:
   openclaw:
-    emoji: "notebook"
+    emoji: "📓"
     category: "tools"
     subcategory: "code-exec"
     keywords: ["sandbox execution", "code runner", "Jupyter notebook", "computational notebook", "reproducible research"]

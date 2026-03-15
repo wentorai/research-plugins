@@ -3,7 +3,7 @@ name: markdown-academic-guide
 description: "Write academic papers in Markdown with Pandoc for multi-format output"
 metadata:
   openclaw:
-    emoji: "page_facing_up"
+    emoji: "📄"
     category: "tools"
     subcategory: "document"
     keywords: ["Markdown", "Pandoc", "academic writing", "document conversion", "scholarly Markdown", "plain text"]

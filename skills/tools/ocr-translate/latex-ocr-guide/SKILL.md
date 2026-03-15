@@ -3,7 +3,7 @@ name: latex-ocr-guide
 description: "Extract and convert mathematical formulas from images and PDFs to LaTeX code"
 metadata:
   openclaw:
-    emoji: "mag"
+    emoji: "🔍"
     category: "tools"
     subcategory: "ocr-translate"
     keywords: ["math OCR", "formula recognition", "LaTeX OCR", "document OCR", "equation extraction"]

@@ -3,7 +3,7 @@ name: doi-resolution-guide
 description: "DOI content negotiation and metadata retrieval techniques"
 metadata:
   openclaw:
-    emoji: "link"
+    emoji: "🔗"
     category: "literature"
     subcategory: "metadata"
     keywords: ["DOI resolution", "digital object identifier", "citation statistics"]

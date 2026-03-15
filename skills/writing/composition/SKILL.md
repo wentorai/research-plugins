@@ -1,6 +1,6 @@
 ---
 name: composition-skills
-description: "11 academic writing skills (abstract-writing, discussion-writing, introduction-writing, literature-review-writing...). Trigger: writing paper sections, structuring arguments, academic prose. Design: section-by-section guides (abstract, intro, methods, discussion) with templates."
+description: "11 academic writing skills. Trigger: writing paper sections, structuring arguments, academic prose. Design: section-by-section guides (abstract, intro, methods, discussion) with templates."
 ---
 
 # Academic Writing — 11 Skills

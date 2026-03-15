@@ -3,7 +3,7 @@ name: mesh-terms-guide
 description: "Navigate MeSH vocabulary for precise PubMed and MEDLINE searches"
 metadata:
   openclaw:
-    emoji: "dna"
+    emoji: "🧬"
     category: "literature"
     subcategory: "search"
     keywords: ["MeSH terms", "PubMed", "MEDLINE", "controlled vocabulary", "medical subject headings", "literature search"]

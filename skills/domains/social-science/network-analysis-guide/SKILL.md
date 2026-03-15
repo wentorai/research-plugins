@@ -3,7 +3,7 @@ name: network-analysis-guide
 description: "Social network analysis methods, metrics, and visualization tools"
 metadata:
   openclaw:
-    emoji: "globe_with_meridians"
+    emoji: "🌐"
     category: "domains"
     subcategory: "social-science"
     keywords: ["social network analysis", "graph theory", "centrality", "community detection", "network visualization", "SNA"]

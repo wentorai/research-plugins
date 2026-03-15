@@ -3,7 +3,7 @@ name: open-science-guide
 description: "Pre-registration, open data, and FAIR principles for research"
 metadata:
   openclaw:
-    emoji: "unlock"
+    emoji: "🔓"
     category: "research"
     subcategory: "funding"
     keywords: ["pre-registration", "registered report", "open science framework", "FAIR data principles", "open data"]

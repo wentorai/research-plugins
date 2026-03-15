@@ -1,6 +1,6 @@
 ---
 name: geoscience-skills
-description: "6 geoscience & climate skills (climate-modeling, climate-science, gis-remote-sensing, pangaea-data...). Trigger: earth science data, GIS, remote sensing, climate modeling. Design: geospatial tools, satellite data processing, and environmental models."
+description: "6 geoscience & climate skills. Trigger: earth science data, GIS, remote sensing, climate modeling. Design: geospatial tools, satellite data processing, and environmental models."
 ---
 
 # Geoscience & Climate — 6 Skills

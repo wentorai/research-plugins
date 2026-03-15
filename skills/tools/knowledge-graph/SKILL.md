@@ -1,6 +1,6 @@
 ---
 name: knowledge-graph-skills
-description: "10 knowledge graphs skills (citation-network-builder, concept-map-generator, graphiti, knowledge-graph-construction...). Trigger: building knowledge graphs, connecting concepts, ontology design. Design: graph construction, traversal, and visualization for research knowledge."
+description: "10 knowledge graphs skills. Trigger: building knowledge graphs, connecting concepts, ontology design. Design: graph construction, traversal, and visualization for research knowledge."
 ---
 
 # Knowledge Graphs — 10 Skills

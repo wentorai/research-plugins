@@ -313,15 +313,11 @@ function main() {
     const title = SUBCATEGORY_TITLES[subcategory] ?? subcategory;
     const count = items.length;
 
-    // Build key examples from first few skill names (simplified)
-    const examples = items
-      .slice(0, 4)
-      .map((i) => i.name.replace(/-guide$/, "").replace(/-api$/, ""))
-      .join(", ");
-
     // Build description (appears in LLM prompt as <description>)
+    // Keep concise — no skill name examples (the index table has them).
+    // Budget: aim for <200 chars to conserve prompt token space.
     const description =
-      `${count} ${title.toLowerCase()} skills (${examples}...). ` +
+      `${count} ${title.toLowerCase()} skills. ` +
       `Trigger: ${meta.trigger}. ` +
       `Design: ${meta.design}.`;
 

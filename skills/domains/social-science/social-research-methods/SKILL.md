@@ -3,7 +3,7 @@ name: social-research-methods
 description: "Core methods for empirical social science research including surveys and expe..."
 metadata:
   openclaw:
-    emoji: "busts_in_silhouette"
+    emoji: "👥"
     category: "domains"
     subcategory: "social-science"
     keywords: ["sociology", "political science", "cognitive psychology", "social psychology", "research methodology"]

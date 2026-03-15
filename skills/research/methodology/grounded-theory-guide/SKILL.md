@@ -3,7 +3,7 @@ name: grounded-theory-guide
 description: "Apply grounded theory methodology to develop theory from data"
 metadata:
   openclaw:
-    emoji: "seedling"
+    emoji: "🌱"
     category: "research"
     subcategory: "methodology"
     keywords: ["grounded theory", "qualitative methodology", "theoretical sampling", "constant comparison", "coding"]

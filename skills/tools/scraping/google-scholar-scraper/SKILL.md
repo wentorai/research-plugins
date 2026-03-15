@@ -3,7 +3,7 @@ name: google-scholar-scraper
 description: "Ethical Google Scholar data collection techniques and best practices"
 metadata:
   openclaw:
-    emoji: "mag"
+    emoji: "🔍"
     category: "tools"
     subcategory: "scraping"
     keywords: ["Google Scholar", "web scraping", "bibliometrics", "citation data", "scholarly search", "rate limiting"]

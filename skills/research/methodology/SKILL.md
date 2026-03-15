@@ -1,6 +1,6 @@
 ---
 name: methodology-skills
-description: "13 research methodology skills (action-research, claude-scientific, experimental-design, grad-school...). Trigger: study design, methodology selection, scientific reasoning, mentoring. Design: rigorous methods frameworks covering qualitative, quantitative, and mixed approaches."
+description: "13 research methodology skills. Trigger: study design, methodology selection, scientific reasoning, mentoring. Design: rigorous methods frameworks covering qualitative, quantitative, and mixed approaches."
 ---
 
 # Research Methodology — 13 Skills

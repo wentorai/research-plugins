@@ -7,7 +7,7 @@ metadata:
     category: "writing"
     subcategory: "latex"
     keywords: ["LaTeX rendering", "math images", "equation rendering", "SVG math", "KaTeX", "MathJax"]
-    source: "https://github.com/nicolewhite/latex2image"
+    source: "wentor-research-plugins"
 ---
 
 # TeX Render Guide
@@ -239,5 +239,5 @@ $\displaystyle \textcolor{blue}{\nabla} \times \textcolor{red}{\mathbf{E}} = -\f
 - MathJax: https://www.mathjax.org
 - dvipng documentation: https://ctan.org/pkg/dvipng
 - dvisvgm: https://dvisvgm.de
-- latex2image: https://github.com/nicolewhite/latex2image
+- latex2image: wentor-research-plugins
 - CodeCogs equation editor: https://latex.codecogs.com

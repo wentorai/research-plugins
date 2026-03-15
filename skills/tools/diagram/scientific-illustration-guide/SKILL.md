@@ -3,7 +3,7 @@ name: scientific-illustration-guide
 description: "Create graphical abstracts, schematic diagrams, and scientific illustrations"
 metadata:
   openclaw:
-    emoji: "crayon"
+    emoji: "🖍️"
     category: "tools"
     subcategory: "diagram"
     keywords: ["scientific illustration", "graphical abstract", "schematic diagram", "architecture diagram", "vector graphics"]

@@ -3,7 +3,7 @@ name: sem-guide
 description: "Structural equation modeling with latent variables guide"
 metadata:
   openclaw:
-    emoji: "network"
+    emoji: "🌐"
     category: "analysis"
     subcategory: "statistics"
     keywords: ["structural equation modeling", "SEM", "latent variable model", "multilevel model"]

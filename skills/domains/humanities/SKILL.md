@@ -1,6 +1,6 @@
 ---
 name: humanities-skills
-description: "5 humanities skills (digital-humanities, ethical-philosophy, history-research, philosophy-research...). Trigger: textual analysis, archival research, digital humanities, philosophy. Design: digital tools and qualitative methods for humanities scholarship."
+description: "5 humanities skills. Trigger: textual analysis, archival research, digital humanities, philosophy. Design: digital tools and qualitative methods for humanities scholarship."
 ---
 
 # Humanities — 5 Skills

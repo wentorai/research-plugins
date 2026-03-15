@@ -7,7 +7,7 @@ metadata:
     category: "writing"
     subcategory: "citation"
     keywords: ["mendeley", "reference manager", "bibliography", "catalog search", "research library", "citations"]
-    source: "https://dev.elsevier.com/mendeley.html"
+    source: "wentor-research-plugins"
 ---
 
 # Mendeley REST API
@@ -226,6 +226,6 @@ def get_popular_papers(topic: str, limit: int = 10) -> list:
 
 ## References
 
-- [Mendeley API Documentation](https://dev.elsevier.com/mendeley.html)
+- [Mendeley API Documentation](wentor-research-plugins)
 - [Mendeley Developer Portal](https://dev.elsevier.com/)
 - [Mendeley API Reference](https://api.mendeley.com/apidocs/)

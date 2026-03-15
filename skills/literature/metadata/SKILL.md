@@ -1,6 +1,6 @@
 ---
 name: metadata-skills
-description: "24 metadata & bibliometrics skills (academic-paper-summarizer, altmetrics, bibliometrix, citation-network...). Trigger: DOI resolution, citation metrics, author disambiguation, bibliometrics. Design: metadata APIs and bibliometric analysis tools for scholarly records."
+description: "24 metadata & bibliometrics skills. Trigger: DOI resolution, citation metrics, author disambiguation, bibliometrics. Design: metadata APIs and bibliometric analysis tools for scholarly records."
 ---
 
 # Metadata & Bibliometrics — 24 Skills

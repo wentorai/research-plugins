@@ -3,7 +3,7 @@ name: epidemiology-guide
 description: "Epidemiological study designs, measures of association, and public health ana..."
 metadata:
   openclaw:
-    emoji: "microscope"
+    emoji: "🔬"
     category: "domains"
     subcategory: "biomedical"
     keywords: ["epidemiology", "public health", "evidence-based medicine", "clinical medicine", "disease surveillance"]

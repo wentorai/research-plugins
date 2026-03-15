@@ -3,7 +3,7 @@ name: digital-humanities-guide
 description: "Computational methods for humanities research including text mining and netwo..."
 metadata:
   openclaw:
-    emoji: "scroll"
+    emoji: "📜"
     category: "domains"
     subcategory: "humanities"
     keywords: ["digital humanities", "philosophy", "literary studies", "art history", "linguistics", "text mining"]

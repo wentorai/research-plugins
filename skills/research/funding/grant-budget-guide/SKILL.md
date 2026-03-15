@@ -3,7 +3,7 @@ name: grant-budget-guide
 description: "Prepare and justify research grant budgets across funding agencies"
 metadata:
   openclaw:
-    emoji: "money_with_wings"
+    emoji: "💸"
     category: "research"
     subcategory: "funding"
     keywords: ["grant budget", "budget justification", "cost estimation", "indirect costs", "personnel costs", "funding agencies"]

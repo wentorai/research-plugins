@@ -1,6 +1,6 @@
 ---
 name: wrangling-skills
-description: "10 data wrangling skills (csv-data-analyzer, data-cleaning-pipeline, data-cog, missing-data-handling...). Trigger: messy data, format conversion, missing values, data reshaping. Design: pipeline-oriented recipes for common data cleaning and transformation tasks."
+description: "10 data wrangling skills. Trigger: messy data, format conversion, missing values, data reshaping. Design: pipeline-oriented recipes for common data cleaning and transformation tasks."
 ---
 
 # Data Wrangling — 10 Skills

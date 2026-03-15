@@ -3,7 +3,7 @@ name: color-accessibility-guide
 description: "Colorblind-friendly palettes and accessible visualization design"
 metadata:
   openclaw:
-    emoji: "palette"
+    emoji: "🎨"
     category: "analysis"
     subcategory: "dataviz"
     keywords: ["colorblind-friendly palette", "accessible color scheme", "visualization principles", "data-ink ratio"]

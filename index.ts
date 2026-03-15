@@ -9,7 +9,7 @@ import { createUnpaywallTools } from "./src/tools/unpaywall.js";
 export default function activate(api: OpenClawPluginApi) {
   api.registerTool(
     (ctx) => createSemanticScholarTools(ctx, api),
-    { names: ["search_papers", "get_paper", "get_citations"] },
+    { names: ["get_paper", "get_citations"] },
   );
 
   api.registerTool(

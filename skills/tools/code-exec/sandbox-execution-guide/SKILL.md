@@ -3,7 +3,7 @@ name: sandbox-execution-guide
 description: "Secure sandboxed code execution environments for reproducible research computing"
 metadata:
   openclaw:
-    emoji: "shield"
+    emoji: "🛡️"
     category: "tools"
     subcategory: "code-exec"
     keywords: ["sandbox execution", "code runner", "literate programming", "containerization", "reproducible computing"]

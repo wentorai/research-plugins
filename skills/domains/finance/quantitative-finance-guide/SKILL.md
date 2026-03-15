@@ -3,7 +3,7 @@ name: quantitative-finance-guide
 description: "Quantitative methods for financial modeling, derivatives pricing, and risk an..."
 metadata:
   openclaw:
-    emoji: "bar_chart"
+    emoji: "📊"
     category: "domains"
     subcategory: "finance"
     keywords: ["quantitative finance", "financial data", "stock analysis", "pricing psychology", "derivatives pricing"]

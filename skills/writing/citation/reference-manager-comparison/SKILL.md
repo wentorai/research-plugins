@@ -3,7 +3,7 @@ name: reference-manager-comparison
 description: "Compare Zotero, Mendeley, EndNote, and Paperpile for research use"
 metadata:
   openclaw:
-    emoji: "card_index_dividers"
+    emoji: "🗂️"
     category: "writing"
     subcategory: "citation"
     keywords: ["reference manager", "Zotero", "Mendeley", "EndNote", "Paperpile", "citation management"]

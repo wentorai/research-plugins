@@ -3,7 +3,7 @@ name: beamer-presentation-guide
 description: "Guide to creating academic presentations with LaTeX Beamer"
 metadata:
   openclaw:
-    emoji: "slides"
+    emoji: "📊"
     category: "writing"
     subcategory: "templates"
     keywords: ["Beamer presentation", "LaTeX slides", "conference paper template"]

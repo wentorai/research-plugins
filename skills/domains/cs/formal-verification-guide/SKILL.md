@@ -3,7 +3,7 @@ name: formal-verification-guide
 description: "Formal methods, theorem proving, and model checking for CS research"
 metadata:
   openclaw:
-    emoji: "check-mark"
+    emoji: "✅"
     category: "domains"
     subcategory: "cs"
     keywords: ["formal-verification", "theorem-proving", "model-checking", "tla-plus", "coq", "isabelle"]

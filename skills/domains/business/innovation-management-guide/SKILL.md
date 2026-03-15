@@ -3,7 +3,7 @@ name: innovation-management-guide
 description: "Innovation metrics, R&D management research, and technology forecasting"
 metadata:
   openclaw:
-    emoji: "light-bulb"
+    emoji: "💡"
     category: "domains"
     subcategory: "business"
     keywords: ["innovation", "r-and-d", "technology-management", "bibliometrics", "diffusion", "strategy"]

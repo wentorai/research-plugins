@@ -3,11 +3,11 @@ name: dataset-finder-guide
 description: "Search and download research datasets from Kaggle, HuggingFace, and repos"
 metadata:
   openclaw:
-    emoji: "database"
+    emoji: "🗄️"
     category: "tools"
     subcategory: "scraping"
     keywords: ["dataset", "Kaggle", "data download", "HuggingFace", "data repository", "open data"]
-    source: "https://github.com/wentor-ai/research-plugins"
+    source: "wentor-research-plugins"
 ---
 
 # Dataset Finder Guide

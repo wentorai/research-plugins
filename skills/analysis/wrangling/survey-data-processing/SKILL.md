@@ -3,7 +3,7 @@ name: survey-data-processing
 description: "Clean, recode, and prepare survey response data for analysis"
 metadata:
   openclaw:
-    emoji: "clipboard"
+    emoji: "📋"
     category: "analysis"
     subcategory: "wrangling"
     keywords: ["survey data", "questionnaire coding", "Likert scale", "response validation", "recoding", "survey analysis"]

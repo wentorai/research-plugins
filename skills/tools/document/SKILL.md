@@ -1,6 +1,6 @@
 ---
 name: document-skills
-description: "10 document processing skills (anystyle, docsgpt, grobid-pdf-parsing, large-document-reader...). Trigger: extracting text from PDFs, parsing references, document Q&A. Design: parsing pipelines (GROBID, marker) and structured extraction tools."
+description: "10 document processing skills. Trigger: extracting text from PDFs, parsing references, document Q&A. Design: parsing pipelines (GROBID, marker) and structured extraction tools."
 ---
 
 # Document Processing — 10 Skills

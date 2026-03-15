@@ -3,7 +3,7 @@ name: panel-data-guide
 description: "Panel data analysis with fixed and random effects models"
 metadata:
   openclaw:
-    emoji: "table"
+    emoji: "📋"
     category: "analysis"
     subcategory: "econometrics"
     keywords: ["panel data", "fixed effects", "random effects", "Stata commands"]

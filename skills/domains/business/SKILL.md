@@ -1,6 +1,6 @@
 ---
 name: business-skills
-description: "6 business research skills (architecture-design, innovation-management, market-analysis, operations-research...). Trigger: business strategy, market analysis, competitive intelligence. Design: analytical frameworks and methods for management and innovation research."
+description: "6 business research skills. Trigger: business strategy, market analysis, competitive intelligence. Design: analytical frameworks and methods for management and innovation research."
 ---
 
 # Business Research — 6 Skills

@@ -3,7 +3,7 @@ name: multilingual-research-guide
 description: "Strategies for translating academic papers while preserving technical accuracy"
 metadata:
   openclaw:
-    emoji: "globe_with_meridians"
+    emoji: "🌐"
     category: "tools"
     subcategory: "ocr-translate"
     keywords: ["translation strategies", "document OCR", "math OCR", "academic writing", "multilingual research"]

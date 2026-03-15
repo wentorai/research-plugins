@@ -1,6 +1,6 @@
 ---
 name: diagram-skills
-description: "9 diagrams & visuals skills (code-flow-visualizer, excalidraw-diagram, json-data-visualizer, kroki-diagram...). Trigger: creating diagrams, flowcharts, architecture visuals, LaTeX drawings. Design: tool-specific guides (Mermaid, Excalidraw, TikZ) with academic conventions."
+description: "9 diagrams & visuals skills. Trigger: creating diagrams, flowcharts, architecture visuals, LaTeX drawings. Design: tool-specific guides (Mermaid, Excalidraw, TikZ) with academic conventions."
 ---
 
 # Diagrams & Visuals — 9 Skills

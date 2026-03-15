@@ -1,6 +1,6 @@
 ---
 name: fulltext-skills
-description: "15 full-text access skills (bioc-pmc, core, dataverse, doaj...). Trigger: accessing paper PDFs, bulk downloading, open access, text mining. Design: legal full-text retrieval from open repositories, archives, and preprint servers."
+description: "15 full-text access skills. Trigger: accessing paper PDFs, bulk downloading, open access, text mining. Design: legal full-text retrieval from open repositories, archives, and preprint servers."
 ---
 
 # Full-Text Access — 15 Skills

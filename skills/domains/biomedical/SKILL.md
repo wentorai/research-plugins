@@ -1,6 +1,6 @@
 ---
 name: biomedical-skills
-description: "17 biomedical research skills (bioagents, clawbio, clinical-dialogue-agents, clinical-research...). Trigger: medical research, clinical trials, genomics, bioinformatics. Design: domain databases, wet-lab/dry-lab methods, and ethical compliance guides."
+description: "17 biomedical research skills. Trigger: medical research, clinical trials, genomics, bioinformatics. Design: domain databases, wet-lab/dry-lab methods, and ethical compliance guides."
 ---
 
 # Biomedical Research — 17 Skills

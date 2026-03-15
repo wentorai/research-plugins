@@ -3,11 +3,11 @@ name: research-paper-kb
 description: "Build a persistent cross-session knowledge base from academic papers"
 metadata:
   openclaw:
-    emoji: "brain"
+    emoji: "🧠"
     category: "research"
     subcategory: "methodology"
     keywords: ["knowledge base", "paper notes", "literature management", "cross-session", "research memory"]
-    source: "https://github.com/wentor-ai/research-plugins"
+    source: "wentor-research-plugins"
 ---
 
 # Research Paper Knowledge Base

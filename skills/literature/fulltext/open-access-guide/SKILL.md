@@ -3,7 +3,7 @@ name: open-access-guide
 description: "Navigate open access policies, repositories, and legal full-text retrieval me..."
 metadata:
   openclaw:
-    emoji: "unlock"
+    emoji: "🔓"
     category: "literature"
     subcategory: "fulltext"
     keywords: ["open access", "full-text retrieval", "journal copyright policy", "self-archiving", "open access rights"]

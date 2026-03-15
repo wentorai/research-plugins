@@ -3,7 +3,7 @@ name: concept-map-generator
 description: "Generate structured concept maps from academic texts automatically"
 metadata:
   openclaw:
-    emoji: "brain"
+    emoji: "🧠"
     category: "tools"
     subcategory: "knowledge-graph"
     keywords: ["concept map", "knowledge representation", "text mining", "ontology", "semantic extraction", "mind map"]

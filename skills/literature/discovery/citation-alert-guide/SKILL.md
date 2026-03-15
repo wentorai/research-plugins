@@ -3,7 +3,7 @@ name: citation-alert-guide
 description: "Set up citation alerts and track new papers citing key references"
 metadata:
   openclaw:
-    emoji: "bell"
+    emoji: "🔔"
     category: "literature"
     subcategory: "discovery"
     keywords: ["citation alerts", "paper tracking", "Google Scholar alerts", "new citations", "literature monitoring"]

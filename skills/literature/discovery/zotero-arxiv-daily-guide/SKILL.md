@@ -7,7 +7,7 @@ metadata:
     category: "literature"
     subcategory: "discovery"
     keywords: ["zotero", "arxiv", "daily-papers", "recommendations", "preprint", "discovery"]
-    source: "https://github.com/TechPenguineer/zotero-arxiv-daily"
+    source: "wentor-research-plugins"
 ---
 
 # Zotero arXiv Daily Guide
@@ -24,7 +24,7 @@ The plugin integrates naturally into the Zotero workflow. Recommended papers app
 
 Install Zotero arXiv Daily through the standard Zotero plugin process:
 
-1. Download the latest `.xpi` release from https://github.com/TechPenguineer/zotero-arxiv-daily/releases
+1. Download the latest `.xpi` release from wentor-research-plugins/releases
 2. In Zotero, go to Tools > Add-ons > gear icon > Install Add-on From File
 3. Select the `.xpi` file and restart Zotero
 
@@ -88,7 +88,7 @@ For researchers who find the default recommendation volume too high, set a highe
 
 ## References
 
-- GitHub Repository: https://github.com/TechPenguineer/zotero-arxiv-daily
+- GitHub Repository: wentor-research-plugins
 - arXiv API Documentation: https://info.arxiv.org/help/api
 - Zotero Plugin Directory: https://www.zotero.org/support/plugins
 - arXiv Category Taxonomy: https://arxiv.org/category_taxonomy

@@ -3,7 +3,7 @@ name: market-analysis-guide
 description: "Structured frameworks for market sizing, competitive analysis, and strategic ..."
 metadata:
   openclaw:
-    emoji: "chart_with_upwards_trend"
+    emoji: "📈"
     category: "domains"
     subcategory: "business"
     keywords: ["market analysis", "strategic management", "operations management", "competitive analysis", "market sizing"]

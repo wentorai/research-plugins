@@ -3,7 +3,7 @@ name: nsf-grant-guide
 description: "Navigate NSF grant applications, program selection, and strategies"
 metadata:
   openclaw:
-    emoji: "moneybag"
+    emoji: "💰"
     category: "research"
     subcategory: "funding"
     keywords: ["NSF grant", "grant writing", "funding", "research proposal", "broader impacts", "NSF program"]

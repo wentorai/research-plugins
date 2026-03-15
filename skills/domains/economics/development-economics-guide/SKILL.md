@@ -3,7 +3,7 @@ name: development-economics-guide
 description: "Apply development economics research methods and data sources"
 metadata:
   openclaw:
-    emoji: "earth_africa"
+    emoji: "🌍"
     category: "domains"
     subcategory: "economics"
     keywords: ["development economics", "RCT", "impact evaluation", "poverty", "causal inference", "field experiments"]

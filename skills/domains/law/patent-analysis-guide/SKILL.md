@@ -3,7 +3,7 @@ name: patent-analysis-guide
 description: "Patent search, classification, landscape analysis, and prior art mining"
 metadata:
   openclaw:
-    emoji: "page-with-curl"
+    emoji: "📃"
     category: "domains"
     subcategory: "law"
     keywords: ["patent", "intellectual-property", "prior-art", "cpc", "patent-landscape", "citation-analysis"]

@@ -3,7 +3,7 @@ name: data-collection-automation
 description: "Automate survey deployment, data collection, and pipeline management"
 metadata:
   openclaw:
-    emoji: "robot"
+    emoji: "🤖"
     category: "research"
     subcategory: "automation"
     keywords: ["data collection", "survey automation", "pipeline", "Qualtrics API", "research automation", "ETL"]

@@ -1,6 +1,6 @@
 ---
 name: econometrics-skills
-description: "12 econometrics skills (causal-inference, econml-causal, iv-regression, mostly-harmless...). Trigger: causal analysis, regression models, treatment effects, panel data. Design: method-centric guides with R/Python code and diagnostic tests."
+description: "12 econometrics skills. Trigger: causal analysis, regression models, treatment effects, panel data. Design: method-centric guides with R/Python code and diagnostic tests."
 ---
 
 # Econometrics — 12 Skills

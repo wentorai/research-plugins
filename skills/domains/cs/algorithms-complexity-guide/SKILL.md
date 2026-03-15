@@ -3,7 +3,7 @@ name: algorithms-complexity-guide
 description: "Analyze algorithm complexity and computational efficiency for research"
 metadata:
   openclaw:
-    emoji: "gear"
+    emoji: "⚙️"
     category: "domains"
     subcategory: "cs"
     keywords: ["algorithms", "computational complexity", "Big-O", "NP-hard", "optimization", "data structures"]

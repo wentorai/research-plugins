@@ -3,7 +3,7 @@ name: symbolic-computation-guide
 description: "Computer algebra systems: SymPy, SageMath, and Mathematica for research"
 metadata:
   openclaw:
-    emoji: "abacus"
+    emoji: "🧮"
     category: "domains"
     subcategory: "math"
     keywords: ["symbolic-computation", "computer-algebra", "sympy", "sagemath", "mathematica", "calculus"]

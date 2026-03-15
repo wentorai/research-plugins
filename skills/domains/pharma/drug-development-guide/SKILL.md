@@ -3,7 +3,7 @@ name: drug-development-guide
 description: "End-to-end drug development pipeline from target identification to regulatory..."
 metadata:
   openclaw:
-    emoji: "pill"
+    emoji: "💊"
     category: "domains"
     subcategory: "pharma"
     keywords: ["drug development", "pharmacokinetics", "clinical trial", "drug discovery", "lead optimization"]

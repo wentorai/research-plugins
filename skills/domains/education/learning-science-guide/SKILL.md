@@ -3,7 +3,7 @@ name: learning-science-guide
 description: "Evidence-based learning science principles for educational research and practice"
 metadata:
   openclaw:
-    emoji: "brain"
+    emoji: "🧠"
     category: "domains"
     subcategory: "education"
     keywords: ["education", "pedagogy", "learning science", "curriculum design", "study methods", "cognitive load"]

@@ -3,7 +3,7 @@ name: citation-style-guide
 description: "APA, MLA, Chicago citation format guide with CSL configuration"
 metadata:
   openclaw:
-    emoji: "book"
+    emoji: "📖"
     category: "writing"
     subcategory: "citation"
     keywords: ["citation formatting", "CSL", "citation style", "reference management"]

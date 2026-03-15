@@ -7,7 +7,7 @@ metadata:
     category: "research"
     subcategory: "paper-review"
     keywords: ["paper summarization", "paper comparison", "research gap analysis", "narrative review", "systematic review methodology"]
-    source: "https://github.com/scientify-ai/skills"
+    source: "wentor-research-plugins"
 ---
 
 # Literature Review Writing

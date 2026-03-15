@@ -1,6 +1,6 @@
 ---
 name: statistics-skills
-description: "10 statistical analysis skills (bayesian-statistics, data-anomaly-detection, hypothesis-testing, meta-analysis...). Trigger: statistical tests, Bayesian analysis, hypothesis testing, sampling. Design: method guides covering assumptions, code, and result interpretation."
+description: "10 statistical analysis skills. Trigger: statistical tests, Bayesian analysis, hypothesis testing, sampling. Design: method guides covering assumptions, code, and result interpretation."
 ---
 
 # Statistical Analysis — 10 Skills

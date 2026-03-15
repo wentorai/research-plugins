@@ -3,7 +3,7 @@ name: semantic-scholar-recs-guide
 description: "Using Semantic Scholar recommendations API for paper discovery"
 metadata:
   openclaw:
-    emoji: "ai"
+    emoji: "🤖"
     category: "literature"
     subcategory: "discovery"
     keywords: ["related papers", "literature recommendation", "paper discovery", "citation network"]

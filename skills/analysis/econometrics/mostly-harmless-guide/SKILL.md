@@ -1,20 +1,13 @@
 ---
 name: mostly-harmless-guide
 description: "Replication code and guide for Mostly Harmless Econometrics methods"
-version: 1.0.0
-author: wentor-community
-source: https://github.com/vikjam/mostly-harmless-replication
 metadata:
   openclaw:
+    emoji: "📘"
     category: "analysis"
     subcategory: "econometrics"
-    keywords:
-      - econometrics
-      - causal-inference
-      - replication
-      - regression
-      - instrumental-variables
-      - difference-in-differences
+    keywords: ["econometrics", "causal-inference", "replication", "regression", "instrumental-variables", "difference-in-differences"]
+    source: "https://github.com/vikjam/mostly-harmless-replication"
 ---
 
 # Mostly Harmless Econometrics Guide

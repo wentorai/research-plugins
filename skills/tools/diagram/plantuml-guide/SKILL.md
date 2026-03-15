@@ -3,7 +3,7 @@ name: plantuml-guide
 description: "Create UML diagrams and architecture visualizations with PlantUML"
 metadata:
   openclaw:
-    emoji: "diagram"
+    emoji: "📊"
     category: "tools"
     subcategory: "diagram"
     keywords: ["UML diagram", "PlantUML", "architecture diagram", "flow chart"]

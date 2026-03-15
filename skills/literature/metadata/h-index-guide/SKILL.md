@@ -3,7 +3,7 @@ name: h-index-guide
 description: "Understanding and calculating research impact metrics"
 metadata:
   openclaw:
-    emoji: "medal"
+    emoji: "🏅"
     category: "literature"
     subcategory: "metadata"
     keywords: ["h-index", "impact factor", "bibliometrics", "academic metrics", "citation statistics"]

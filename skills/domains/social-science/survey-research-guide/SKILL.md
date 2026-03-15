@@ -3,7 +3,7 @@ name: survey-research-guide
 description: "Design, deploy, and analyze surveys for social science and organizational res..."
 metadata:
   openclaw:
-    emoji: "clipboard"
+    emoji: "📋"
     category: "domains"
     subcategory: "social-science"
     keywords: ["communication studies", "anthropology", "management", "sociology", "survey design", "questionnaire"]

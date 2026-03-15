@@ -3,7 +3,7 @@ name: google-colab-guide
 description: "Run and manage Google Colab notebooks for Python and ML research"
 metadata:
   openclaw:
-    emoji: "gpu"
+    emoji: "🖥️"
     category: "tools"
     subcategory: "code-exec"
     keywords: ["Google Colab", "Jupyter", "GPU", "machine learning", "Python", "cloud computing"]

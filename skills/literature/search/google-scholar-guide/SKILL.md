@@ -3,7 +3,7 @@ name: google-scholar-guide
 description: "Advanced Google Scholar search techniques for comprehensive literature discovery"
 metadata:
   openclaw:
-    emoji: "mag_right"
+    emoji: "🔎"
     category: "literature"
     subcategory: "search"
     keywords: ["academic database search", "search strategy", "Boolean search", "advanced search", "Google Scholar"]

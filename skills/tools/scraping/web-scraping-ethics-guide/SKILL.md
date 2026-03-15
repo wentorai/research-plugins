@@ -3,7 +3,7 @@ name: web-scraping-ethics-guide
 description: "Scrape web data ethically and legally for research purposes"
 metadata:
   openclaw:
-    emoji: "globe_with_meridians"
+    emoji: "🌐"
     category: "tools"
     subcategory: "scraping"
     keywords: ["web scraping", "ethical scraping", "robots.txt", "rate limiting", "research data collection", "crawling"]

@@ -3,7 +3,7 @@ name: curriculum-design-guide
 description: "Systematic approaches to curriculum design using backward design and alignment"
 metadata:
   openclaw:
-    emoji: "books"
+    emoji: "📚"
     category: "domains"
     subcategory: "education"
     keywords: ["curriculum design", "pedagogy", "education", "study methods", "backward design"]

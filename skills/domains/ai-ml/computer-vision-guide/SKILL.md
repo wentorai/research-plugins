@@ -3,7 +3,7 @@ name: computer-vision-guide
 description: "Apply computer vision research methods, models, and evaluation tools"
 metadata:
   openclaw:
-    emoji: "eye"
+    emoji: "👁️"
     category: "domains"
     subcategory: "ai-ml"
     keywords: ["computer vision", "image classification", "object detection", "CNN", "vision transformer", "deep learning"]

@@ -3,7 +3,7 @@ name: satellite-remote-sensing
 description: "Satellite imagery analysis and remote sensing for earth science research"
 metadata:
   openclaw:
-    emoji: "satellite"
+    emoji: "🛰️"
     category: "domains"
     subcategory: "geoscience"
     keywords: ["remote-sensing", "satellite", "geospatial", "landsat", "sentinel", "gis", "earth-observation"]

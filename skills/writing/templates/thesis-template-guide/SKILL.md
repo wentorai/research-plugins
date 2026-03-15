@@ -3,7 +3,7 @@ name: thesis-template-guide
 description: "Set up LaTeX templates for PhD and Master's thesis documents"
 metadata:
   openclaw:
-    emoji: "mortar_board"
+    emoji: "🎓"
     category: "writing"
     subcategory: "templates"
     keywords: ["thesis template", "dissertation", "LaTeX thesis", "PhD writing", "graduate thesis", "document class"]

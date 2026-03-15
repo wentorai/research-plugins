@@ -3,7 +3,7 @@ name: nonparametric-tests-guide
 description: "Apply Mann-Whitney, Kruskal-Wallis, and other nonparametric methods"
 metadata:
   openclaw:
-    emoji: "chart_with_upwards_trend"
+    emoji: "📈"
     category: "analysis"
     subcategory: "statistics"
     keywords: ["nonparametric tests", "Mann-Whitney", "Kruskal-Wallis", "Wilcoxon", "rank-based tests", "distribution-free"]

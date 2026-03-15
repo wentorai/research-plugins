@@ -3,7 +3,7 @@ name: survival-analysis-guide
 description: "Conduct Kaplan-Meier, Cox regression, and time-to-event analyses"
 metadata:
   openclaw:
-    emoji: "hourglass_flowing_sand"
+    emoji: "⏳"
     category: "analysis"
     subcategory: "statistics"
     keywords: ["survival analysis", "Kaplan-Meier", "Cox regression", "time-to-event", "hazard ratio", "censoring"]

@@ -3,7 +3,7 @@ name: numerical-methods-guide
 description: "Apply numerical methods and scientific computing techniques"
 metadata:
   openclaw:
-    emoji: "abacus"
+    emoji: "🧮"
     category: "domains"
     subcategory: "math"
     keywords: ["numerical methods", "scientific computing", "ODE solver", "optimization", "interpolation", "finite differences"]

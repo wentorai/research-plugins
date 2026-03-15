@@ -1,6 +1,6 @@
 ---
 name: law-skills
-description: "8 legal research skills (caselaw-access, courtlistener, legal-agent-skills, legal-nlp...). Trigger: legal research, case law analysis, regulatory compliance. Design: legal databases, citation networks, and judicial analytics tools."
+description: "8 legal research skills. Trigger: legal research, case law analysis, regulatory compliance. Design: legal databases, citation networks, and judicial analytics tools."
 ---
 
 # Legal Research — 8 Skills

@@ -3,7 +3,7 @@ name: biodiversity-data-guide
 description: "Biodiversity data access, species occurrence, and ecological tools"
 metadata:
   openclaw:
-    emoji: "leaf"
+    emoji: "🍃"
     category: "domains"
     subcategory: "ecology"
     keywords: ["biodiversity", "taxonomy", "ecology", "evolutionary biology"]

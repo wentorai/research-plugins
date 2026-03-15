@@ -3,7 +3,7 @@ name: causal-inference-guide
 description: "Causal inference methods including DiD, IV, RDD, and synthetic control"
 metadata:
   openclaw:
-    emoji: "link"
+    emoji: "🔗"
     category: "analysis"
     subcategory: "econometrics"
     keywords: ["difference-in-differences", "DiD", "causal inference", "instrumental variables", "IV estimation", "regression discontinuity"]

@@ -3,7 +3,7 @@ name: pdf-extraction-guide
 description: "PDF parsing, text extraction, and document format conversion"
 metadata:
   openclaw:
-    emoji: "doc"
+    emoji: "📄"
     category: "tools"
     subcategory: "document"
     keywords: ["PDF parsing", "PDF extraction", "document chunking", "format conversion", "md2pdf"]

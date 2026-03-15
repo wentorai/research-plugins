@@ -1,6 +1,6 @@
 ---
 name: polish-skills
-description: "9 editing & proofreading skills (academic-tone, academic-translation, academic-writing-refiner, ai-writing-humanizer...). Trigger: polishing drafts, academic tone, proofreading, translation. Design: style checkers and editing workflows for clear, concise academic English."
+description: "9 editing & proofreading skills. Trigger: polishing drafts, academic tone, proofreading, translation. Design: style checkers and editing workflows for clear, concise academic English."
 ---
 
 # Editing & Proofreading — 9 Skills

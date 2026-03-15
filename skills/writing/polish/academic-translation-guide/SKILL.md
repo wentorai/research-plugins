@@ -3,7 +3,7 @@ name: academic-translation-guide
 description: "Academic translation, post-editing, and Chinglish correction guide"
 metadata:
   openclaw:
-    emoji: "globe"
+    emoji: "🌐"
     category: "writing"
     subcategory: "polish"
     keywords: ["academic translation", "machine translation", "post-editing", "Chinglish correction"]

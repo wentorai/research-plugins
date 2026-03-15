@@ -3,11 +3,11 @@ name: paper-parse-guide
 description: "Deep dual-mode reading of academic papers from PDF or URL sources"
 metadata:
   openclaw:
-    emoji: "microscope"
+    emoji: "🔬"
     category: "tools"
     subcategory: "document"
     keywords: ["paper reading", "PDF parsing", "academic paper", "deep reading", "annotation", "GROBID"]
-    source: "https://github.com/wentor-ai/research-plugins"
+    source: "wentor-research-plugins"
 ---
 
 # Paper Parse Guide

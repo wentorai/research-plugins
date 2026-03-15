@@ -3,7 +3,7 @@ name: meta-analysis-guide
 description: "Conduct systematic meta-analyses with effect size pooling and heterogeneity a..."
 metadata:
   openclaw:
-    emoji: "balance_scale"
+    emoji: "⚖️"
     category: "analysis"
     subcategory: "statistics"
     keywords: ["meta-analysis", "statistical synthesis", "heterogeneity", "effect size", "forest plot"]

@@ -3,7 +3,7 @@ name: overleaf-cli-guide
 description: "Sync and manage Overleaf LaTeX projects from the command line"
 metadata:
   openclaw:
-    emoji: "terminal"
+    emoji: "💻"
     category: "tools"
     subcategory: "code-exec"
     keywords: ["Overleaf", "LaTeX", "CLI", "sync", "git", "collaboration", "academic writing"]

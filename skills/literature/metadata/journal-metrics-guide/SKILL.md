@@ -3,7 +3,7 @@ name: journal-metrics-guide
 description: "Understand journal impact factors, h5-index, CiteScore, and SJR"
 metadata:
   openclaw:
-    emoji: "bar_chart"
+    emoji: "📊"
     category: "literature"
     subcategory: "metadata"
     keywords: ["impact factor", "journal metrics", "h5-index", "CiteScore", "SJR", "journal ranking"]

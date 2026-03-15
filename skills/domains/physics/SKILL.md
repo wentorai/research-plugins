@@ -1,6 +1,6 @@
 ---
 name: physics-skills
-description: "5 physics & astrophysics skills (astrophysics-data, computational-physics, nasa-ads, particle-physics...). Trigger: physics simulations, astronomical data, computational physics. Design: domain databases (NASA ADS, arXiv) and simulation tool guides."
+description: "5 physics & astrophysics skills. Trigger: physics simulations, astronomical data, computational physics. Design: domain databases (NASA ADS, arXiv) and simulation tool guides."
 ---
 
 # Physics & Astrophysics — 5 Skills

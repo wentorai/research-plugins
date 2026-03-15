@@ -7,7 +7,7 @@ metadata:
     category: "literature"
     subcategory: "search"
     keywords: ["arxiv", "batch search", "preprint", "report generation", "literature monitoring", "research trends"]
-    source: "https://github.com/sspaeti/arxiv-batch-search"
+    source: "wentor-research-plugins"
 ---
 
 # arXiv Batch Reporting
@@ -130,4 +130,4 @@ reports/
 
 - arXiv API documentation: https://info.arxiv.org/help/api/index.html
 - arXiv category taxonomy: https://arxiv.org/category_taxonomy
-- arXiv Batch Search: https://github.com/sspaeti/arxiv-batch-search
+- arXiv Batch Search: wentor-research-plugins

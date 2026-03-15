@@ -1,6 +1,6 @@
 ---
 name: economics-skills
-description: "9 economics skills (behavioral-economics, development-economics, fred, imf-data...). Trigger: economic modeling, policy analysis, macroeconomic data, FRED. Design: theory plus empirical methods with standard economics databases."
+description: "9 economics skills. Trigger: economic modeling, policy analysis, macroeconomic data, FRED. Design: theory plus empirical methods with standard economics databases."
 ---
 
 # Economics — 9 Skills

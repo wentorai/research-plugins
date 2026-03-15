@@ -1,12 +1,12 @@
 {
-  "version": "1.3.1",
-  "generated": "2026-03-14",
+  "version": "1.1.0",
+  "generated": "2026-03-15",
   "stats": {
-    "skills": 431,
+    "skills": 432,
     "agent_tools": 6,
     "mcp_configs": 150,
     "curated_lists": 6,
-    "total": 593
+    "total": 594
   },
   "items": [
     {
@@ -317,7 +317,14 @@
       "description": "Replication code and guide for Mostly Harmless Econometrics methods",
       "category": "analysis",
       "subcategory": "econometrics",
-      "keywords": [],
+      "keywords": [
+        "econometrics",
+        "causal-inference",
+        "replication",
+        "regression",
+        "instrumental-variables",
+        "difference-in-differences"
+      ],
       "path": "skills/analysis/econometrics/mostly-harmless-guide",
       "source": "https://github.com/vikjam/mostly-harmless-replication"
     },
@@ -2672,7 +2679,7 @@
         "normative theory"
       ],
       "path": "skills/domains/humanities/ethical-philosophy-guide",
-      "source": "https://plato.stanford.edu/entries/ethics-applied/"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "history-research-guide",
@@ -3429,7 +3436,7 @@
         "discovery"
       ],
       "path": "skills/literature/discovery/zotero-arxiv-daily-guide",
-      "source": "https://github.com/TechPenguineer/zotero-arxiv-daily"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "bioc-pmc-api",
@@ -4143,7 +4150,7 @@
         "research trends"
       ],
       "path": "skills/literature/search/arxiv-batch-reporting",
-      "source": "https://github.com/sspaeti/arxiv-batch-search"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "arxiv-cli-tools",
@@ -4334,7 +4341,7 @@
         "PRISMA"
       ],
       "path": "skills/literature/search/deep-literature-search",
-      "source": "https://github.com/utilityfog/Literature-Search"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "eric-education-api",
@@ -4771,6 +4778,24 @@
       ],
       "path": "skills/research/automation/kedro-pipeline-guide",
       "source": "https://github.com/kedro-org/kedro"
+    },
+    {
+      "id": "mcp-server-guide",
+      "type": "skill",
+      "name": "mcp-server-guide",
+      "description": "Index of 150 MCP server configs bundled with research-plugins",
+      "category": "research",
+      "subcategory": "automation",
+      "keywords": [
+        "MCP",
+        "model-context-protocol",
+        "mcp-server",
+        "tool-integration",
+        "external-services",
+        "research-automation"
+      ],
+      "path": "skills/research/automation/mcp-server-guide",
+      "source": "wentor-research-plugins"
     },
     {
       "id": "mle-agent-guide",
@@ -5368,7 +5393,7 @@
         "research memory"
       ],
       "path": "skills/research/methodology/research-paper-kb",
-      "source": "https://github.com/wentor-ai/research-plugins"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "research-town-guide",
@@ -5386,7 +5411,7 @@
         "collaboration"
       ],
       "path": "skills/research/methodology/research-town-guide",
-      "source": "https://github.com/hiyouga/ResearchTown"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "scientify-idea-generation",
@@ -5403,7 +5428,7 @@
         "theoretical framework"
       ],
       "path": "skills/research/methodology/scientify-idea-generation",
-      "source": "https://github.com/scientify-ai/skills"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "slr-automation-guide",
@@ -5561,7 +5586,7 @@
         "systematic review methodology"
       ],
       "path": "skills/research/paper-review/scientify-write-review-paper",
-      "source": "https://github.com/scientify-ai/skills"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "google-colab-guide",
@@ -5908,7 +5933,7 @@
         "structured reading"
       ],
       "path": "skills/tools/document/large-document-reader",
-      "source": "https://github.com/wentor-ai/research-plugins"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "markdown-academic-guide",
@@ -5944,7 +5969,7 @@
         "GROBID"
       ],
       "path": "skills/tools/document/paper-parse-guide",
-      "source": "https://github.com/wentor-ai/research-plugins"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "pdf-extraction-guide",
@@ -6340,7 +6365,7 @@
         "open data"
       ],
       "path": "skills/tools/scraping/dataset-finder-guide",
-      "source": "https://github.com/wentor-ai/research-plugins"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "easy-spider-guide",
@@ -6430,7 +6455,7 @@
         "formatting"
       ],
       "path": "skills/writing/citation/academic-citation-manager",
-      "source": "https://github.com/wentor-ai/research-plugins"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "bibtex-management-guide",
@@ -6534,7 +6559,7 @@
         "citations"
       ],
       "path": "skills/writing/citation/mendeley-api",
-      "source": "https://dev.elsevier.com/mendeley.html"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "obsidian-citation-guide",
@@ -7105,7 +7130,7 @@
         "MathJax"
       ],
       "path": "skills/writing/latex/tex-render-guide",
-      "source": "https://github.com/nicolewhite/latex2image"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "tikz-diagrams-guide",
@@ -7261,7 +7286,7 @@
         "proofreading"
       ],
       "path": "skills/writing/polish/paper-polish-guide",
-      "source": "https://github.com/yzhao062/writing-style"
+      "source": "wentor-research-plugins"
     },
     {
       "id": "plagiarism-detection-guide",
@@ -10685,18 +10710,16 @@
       "id": "agent-tool-semantic-scholar",
       "type": "agent_tool",
       "name": "Semantic Scholar",
-      "description": "Agent tools: search_papers, get_paper, get_citations",
+      "description": "Agent tools: get_paper, get_citations",
       "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [
-        "search_papers",
         "get_paper",
         "get_citations"
       ],
       "path": "src/tools/semantic-scholar.ts",
       "source": "https://github.com/wentorai/research-plugins/blob/main/src/tools/semantic-scholar.ts",
       "tools": [
-        "search_papers",
         "get_paper",
         "get_citations"
       ]

@@ -3,7 +3,7 @@ name: climate-modeling-guide
 description: "Climate simulation, modeling tools, and climate data analysis methods"
 metadata:
   openclaw:
-    emoji: "cloud"
+    emoji: "☁️"
     category: "domains"
     subcategory: "geoscience"
     keywords: ["climate", "modeling", "simulation", "netcdf", "cmip", "atmosphere", "global-warming"]

@@ -3,7 +3,7 @@ name: ai-writing-humanizer
 description: "Remove AI-generated patterns to produce natural, authentic academic writing"
 metadata:
   openclaw:
-    emoji: "pencil2"
+    emoji: "✏️"
     category: "writing"
     subcategory: "polish"
     keywords: ["humanize", "AI pattern removal", "natural writing", "AI-assisted writing", "writing style"]

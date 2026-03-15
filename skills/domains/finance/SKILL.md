@@ -1,6 +1,6 @@
 ---
 name: finance-skills
-description: "8 finance skills (akshare-finance-data, financial-data-analysis, finsight-research, options-analytics-agent...). Trigger: financial modeling, market data, risk analysis, quantitative finance. Design: data sources, quantitative methods, and regulatory frameworks."
+description: "8 finance skills. Trigger: financial modeling, market data, risk analysis, quantitative finance. Design: data sources, quantitative methods, and regulatory frameworks."
 ---
 
 # Finance — 8 Skills

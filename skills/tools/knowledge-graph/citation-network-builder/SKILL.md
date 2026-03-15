@@ -3,7 +3,7 @@ name: citation-network-builder
 description: "Build and analyze citation networks from academic reference data"
 metadata:
   openclaw:
-    emoji: "spider_web"
+    emoji: "🕸️"
     category: "tools"
     subcategory: "knowledge-graph"
     keywords: ["citation network", "bibliometrics", "graph analysis", "co-citation", "bibliographic coupling", "network visualization"]

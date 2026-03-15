@@ -1,6 +1,6 @@
 ---
 name: ocr-translate-skills
-description: "7 ocr & translation skills (handwriting-recognition, latex-ocr, latex-translation, multilingual-research...). Trigger: scanning documents, recognizing formulas, translating academic papers. Design: specialized OCR (LaTeX, handwriting) and translation for scholarly content."
+description: "7 ocr & translation skills. Trigger: scanning documents, recognizing formulas, translating academic papers. Design: specialized OCR (LaTeX, handwriting) and translation for scholarly content."
 ---
 
 # OCR & Translation — 7 Skills

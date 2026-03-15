@@ -3,7 +3,7 @@ name: assessment-design-guide
 description: "Psychometrics and educational assessment design for researchers"
 metadata:
   openclaw:
-    emoji: "clipboard"
+    emoji: "📋"
     category: "domains"
     subcategory: "education"
     keywords: ["psychometrics", "assessment", "item-response-theory", "test-design", "validity", "reliability"]

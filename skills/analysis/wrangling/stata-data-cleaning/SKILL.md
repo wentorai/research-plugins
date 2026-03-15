@@ -3,7 +3,7 @@ name: stata-data-cleaning
 description: "Clean, transform, and validate messy research data using Stata"
 metadata:
   openclaw:
-    emoji: "broom"
+    emoji: "🧹"
     category: "analysis"
     subcategory: "wrangling"
     keywords: ["Stata", "data cleaning", "data wrangling", "missing values", "recoding", "validation"]

@@ -3,7 +3,7 @@ name: llm-evaluation-guide
 description: "Evaluate and benchmark large language models for research applications"
 metadata:
   openclaw:
-    emoji: "brain"
+    emoji: "🧠"
     category: "domains"
     subcategory: "ai-ml"
     keywords: ["LLM evaluation", "benchmarking", "language models", "model evaluation", "NLP metrics", "BLEU", "perplexity"]

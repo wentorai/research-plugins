@@ -3,11 +3,11 @@ name: large-document-reader
 description: "Split and read long documents chapter-by-chapter for structured analysis"
 metadata:
   openclaw:
-    emoji: "book"
+    emoji: "📖"
     category: "tools"
     subcategory: "document"
     keywords: ["document reading", "chunking", "long document", "chapter splitting", "structured reading"]
-    source: "https://github.com/wentor-ai/research-plugins"
+    source: "wentor-research-plugins"
 ---
 
 # Large Document Reader

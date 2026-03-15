@@ -3,7 +3,7 @@ name: preprint-servers-guide
 description: "Guide to preprint servers across scientific disciplines"
 metadata:
   openclaw:
-    emoji: "paper"
+    emoji: "📄"
     category: "literature"
     subcategory: "fulltext"
     keywords: ["preprint server", "preprint submission", "arXiv", "bioRxiv", "open access"]

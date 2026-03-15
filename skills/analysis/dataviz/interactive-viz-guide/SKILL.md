@@ -3,7 +3,7 @@ name: interactive-viz-guide
 description: "Interactive data visualization with Plotly, ECharts, and D3"
 metadata:
   openclaw:
-    emoji: "sparkle"
+    emoji: "✨"
     category: "analysis"
     subcategory: "dataviz"
     keywords: ["interactive visualization", "dynamic chart", "Plotly", "ECharts", "data visualization"]

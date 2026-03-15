@@ -3,7 +3,7 @@ name: meta-synthesis-guide
 description: "Conduct qualitative meta-synthesis and evidence synthesis methods"
 metadata:
   openclaw:
-    emoji: "chains"
+    emoji: "⛓️"
     category: "research"
     subcategory: "deep-research"
     keywords: ["meta-synthesis", "qualitative evidence synthesis", "meta-ethnography", "thematic synthesis", "systematic review"]

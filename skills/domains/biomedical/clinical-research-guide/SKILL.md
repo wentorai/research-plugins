@@ -3,7 +3,7 @@ name: clinical-research-guide
 description: "Design clinical studies and report using CONSORT, STROBE guidelines"
 metadata:
   openclaw:
-    emoji: "hospital"
+    emoji: "🏥"
     category: "domains"
     subcategory: "biomedical"
     keywords: ["clinical research", "CONSORT", "STROBE", "clinical trial", "study design", "reporting guidelines"]

@@ -3,7 +3,7 @@ name: conference-paper-template
 description: "Templates and formatting guides for major academic conference submissions"
 metadata:
   openclaw:
-    emoji: "page_facing_up"
+    emoji: "📄"
     category: "writing"
     subcategory: "templates"
     keywords: ["conference paper template", "proceedings format", "camera-ready", "journal formatting requirements", "LaTeX template"]

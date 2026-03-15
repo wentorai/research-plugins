@@ -3,7 +3,7 @@ name: grant-writing-guide
 description: "Write competitive research proposals with clear objectives and budgets"
 metadata:
   openclaw:
-    emoji: "moneybag"
+    emoji: "💰"
     category: "research"
     subcategory: "funding"
     keywords: ["research proposal writing", "grant proposal", "grant writing", "budget planning", "funding application"]

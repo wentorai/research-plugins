@@ -7,7 +7,7 @@ metadata:
     category: "literature"
     subcategory: "search"
     keywords: ["exhaustive search", "systematic search", "multi-database", "literature review", "search strategy", "PRISMA"]
-    source: "https://github.com/utilityfog/Literature-Search"
+    source: "wentor-research-plugins"
 ---
 
 # Deep Literature Search
@@ -145,5 +145,5 @@ Save your complete search strategies (exact query strings, dates, result counts 
 
 - PRISMA 2020 Statement: https://www.prisma-statement.org
 - Cochrane Handbook, Ch. 4 (Searching for studies): https://training.cochrane.org/handbook
-- Literature Search tool: https://github.com/utilityfog/Literature-Search
+- Literature Search tool: wentor-research-plugins
 - Bramer, W.M. et al. (2017). "De-duplication of database search results." BMC Medical Research Methodology.

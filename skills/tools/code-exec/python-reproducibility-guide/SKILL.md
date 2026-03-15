@@ -3,7 +3,7 @@ name: python-reproducibility-guide
 description: "Reproducible Python environments, notebooks, and literate programming"
 metadata:
   openclaw:
-    emoji: "snake"
+    emoji: "🐍"
     category: "tools"
     subcategory: "code-exec"
     keywords: ["sandbox execution", "Jupyter notebook", "computational notebook", "literate programming"]

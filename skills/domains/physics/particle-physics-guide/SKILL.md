@@ -3,7 +3,7 @@ name: particle-physics-guide
 description: "Particle physics data analysis with ROOT, HEPData, and event processing"
 metadata:
   openclaw:
-    emoji: "cyclone"
+    emoji: "🌀"
     category: "domains"
     subcategory: "physics"
     keywords: ["particle-physics", "root", "hepdata", "collider", "event-analysis", "high-energy-physics"]

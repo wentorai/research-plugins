@@ -3,7 +3,7 @@ name: behavioral-economics-guide
 description: "Behavioral economics research methods and key frameworks"
 metadata:
   openclaw:
-    emoji: "brain"
+    emoji: "🧠"
     category: "domains"
     subcategory: "economics"
     keywords: ["behavioral economics", "microeconomics", "development economics"]

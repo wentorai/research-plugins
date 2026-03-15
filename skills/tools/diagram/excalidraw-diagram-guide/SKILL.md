@@ -3,7 +3,7 @@ name: excalidraw-diagram-guide
 description: "Generate hand-drawn style Excalidraw diagrams from text descriptions"
 metadata:
   openclaw:
-    emoji: "sketch"
+    emoji: "✏️"
     category: "tools"
     subcategory: "diagram"
     keywords: ["Excalidraw", "diagram", "whiteboard", "hand-drawn", "sketch", "visual"]

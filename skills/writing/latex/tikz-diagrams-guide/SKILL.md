@@ -3,7 +3,7 @@ name: tikz-diagrams-guide
 description: "Create publication-quality scientific diagrams with TikZ in LaTeX"
 metadata:
   openclaw:
-    emoji: "triangular_ruler"
+    emoji: "📐"
     category: "writing"
     subcategory: "latex"
     keywords: ["TikZ", "LaTeX diagrams", "scientific figures", "flowcharts", "PGFplots", "vector graphics"]

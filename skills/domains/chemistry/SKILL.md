@@ -1,6 +1,6 @@
 ---
 name: chemistry-skills
-description: "8 chemistry skills (cactus-cheminformatics, chemeagle, chemgraph-agent, computational-chemistry...). Trigger: chemical structure analysis, reaction prediction, molecular modeling. Design: computational chemistry tools and cheminformatics workflows."
+description: "8 chemistry skills. Trigger: chemical structure analysis, reaction prediction, molecular modeling. Design: computational chemistry tools and cheminformatics workflows."
 ---
 
 # Chemistry — 8 Skills

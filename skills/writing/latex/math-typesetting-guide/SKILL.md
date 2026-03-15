@@ -3,7 +3,7 @@ name: math-typesetting-guide
 description: "LaTeX math typesetting, equation formatting, and cross-referencing"
 metadata:
   openclaw:
-    emoji: "sigma"
+    emoji: "∑"
     category: "writing"
     subcategory: "latex"
     keywords: ["LaTeX math typesetting", "equation formatting", "mathematical notation", "cross-reference"]

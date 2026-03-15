@@ -3,7 +3,7 @@ name: action-research-guide
 description: "Design and conduct action research and participatory studies"
 metadata:
   openclaw:
-    emoji: "handshake"
+    emoji: "🤝"
     category: "research"
     subcategory: "methodology"
     keywords: ["action research", "participatory research", "PAR", "community-based research", "practitioner research"]

@@ -3,7 +3,7 @@ name: bibliography-management-guide
 description: "Manage references with BibLaTeX, natbib, and LaTeX bibliography styles"
 metadata:
   openclaw:
-    emoji: "bookmark_tabs"
+    emoji: "📑"
     category: "writing"
     subcategory: "latex"
     keywords: ["BibLaTeX", "natbib", "bibliography", "BibTeX", "citation styles", "reference management"]

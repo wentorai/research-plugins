@@ -3,7 +3,7 @@ name: code-flow-visualizer
 description: "Convert Python, JavaScript, and TypeScript functions into Mermaid flowcharts"
 metadata:
   openclaw:
-    emoji: "flow"
+    emoji: "🔄"
     category: "tools"
     subcategory: "diagram"
     keywords: ["code visualization", "flowchart", "Mermaid", "Python", "control flow", "AST"]

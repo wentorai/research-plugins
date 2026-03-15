@@ -1,6 +1,6 @@
 ---
 name: deep-research-skills
-description: "13 deep research & systematic reviews skills (auto-deep-research, deep-searcher, gpt-researcher, in-depth-research...). Trigger: systematic reviews, multi-source synthesis, comprehensive literature surveys. Design: multi-step research protocols with quality assessment and evidence grading."
+description: "13 deep research & systematic reviews skills. Trigger: systematic reviews, multi-source synthesis, comprehensive literature surveys. Design: multi-step research protocols with quality assessment and evidence grading."
 ---
 
 # Deep Research & Systematic Reviews — 13 Skills

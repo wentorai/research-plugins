@@ -1,6 +1,6 @@
 ---
 name: citation-skills
-description: "22 citation management skills (academic-citation-manager, bibtex-management, citation-assistant-skill, citation-style...). Trigger: managing references, formatting citations, BibTeX, bibliographies. Design: reference manager integrations and citation style guides (APA, IEEE, etc.)."
+description: "22 citation management skills. Trigger: managing references, formatting citations, BibTeX, bibliographies. Design: reference manager integrations and citation style guides (APA, IEEE, etc.)."
 ---
 
 # Citation Management — 22 Skills

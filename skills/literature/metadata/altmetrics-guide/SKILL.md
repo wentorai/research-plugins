@@ -3,7 +3,7 @@ name: altmetrics-guide
 description: "Guide to altmetrics and research impact beyond traditional citations"
 metadata:
   openclaw:
-    emoji: "chart"
+    emoji: "📊"
     category: "literature"
     subcategory: "metadata"
     keywords: ["altmetrics", "attention score", "social impact", "online mentions", "academic metrics"]

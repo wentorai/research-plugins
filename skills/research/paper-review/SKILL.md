@@ -1,6 +1,6 @@
 ---
 name: paper-review-skills
-description: "8 peer review skills (automated-review, latte-review, paper-critique-framework, paper-reading-assistant...). Trigger: reviewing manuscripts, comparing papers, quality assessment. Design: systematic review criteria, evaluation rubrics, and automated review tools."
+description: "8 peer review skills. Trigger: reviewing manuscripts, comparing papers, quality assessment. Design: systematic review criteria, evaluation rubrics, and automated review tools."
 ---
 
 # Peer Review — 8 Skills

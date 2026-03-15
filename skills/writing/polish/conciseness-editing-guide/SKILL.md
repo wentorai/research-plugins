@@ -3,7 +3,7 @@ name: conciseness-editing-guide
 description: "Eliminate wordiness and redundancy in academic prose for clarity"
 metadata:
   openclaw:
-    emoji: "scissors"
+    emoji: "✂️"
     category: "writing"
     subcategory: "polish"
     keywords: ["conciseness", "wordiness", "academic editing", "prose clarity", "redundancy", "word count reduction"]

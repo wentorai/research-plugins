@@ -3,7 +3,7 @@ name: database-comparison-guide
 description: "Compare major academic databases and when to use each for research"
 metadata:
   openclaw:
-    emoji: "db"
+    emoji: "🗄️"
     category: "literature"
     subcategory: "search"
     keywords: ["academic database search", "scholarly database", "search strategy", "field-specific search"]

@@ -3,7 +3,7 @@ name: literature-mapping-guide
 description: "Visual literature mapping and connected papers exploration"
 metadata:
   openclaw:
-    emoji: "map"
+    emoji: "🗺️"
     category: "literature"
     subcategory: "discovery"
     keywords: ["literature map", "reference graph", "citation network", "related papers"]

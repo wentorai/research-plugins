@@ -1,6 +1,6 @@
 ---
 name: funding-skills
-description: "9 grants & funding skills (eu-horizon, figshare, grant-budget, grant-writing...). Trigger: grant applications, funding search, budget planning, data repositories. Design: funder-specific guides with eligibility, submission requirements, and timelines."
+description: "9 grants & funding skills. Trigger: grant applications, funding search, budget planning, data repositories. Design: funder-specific guides with eligibility, submission requirements, and timelines."
 ---
 
 # Grants & Funding — 9 Skills

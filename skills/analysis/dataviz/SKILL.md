@@ -1,6 +1,6 @@
 ---
 name: dataviz-skills
-description: "14 data visualization skills (algorithm-visualizer, bokeh-visualization, chart-image-generator, color-accessibility...). Trigger: charts, plots, figures, publication-quality graphics. Design: one skill per tool with code templates and academic formatting conventions."
+description: "14 data visualization skills. Trigger: charts, plots, figures, publication-quality graphics. Design: one skill per tool with code templates and academic formatting conventions."
 ---
 
 # Data Visualization — 14 Skills

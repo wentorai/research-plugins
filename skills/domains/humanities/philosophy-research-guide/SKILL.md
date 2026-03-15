@@ -3,7 +3,7 @@ name: philosophy-research-guide
 description: "Research methods and analytical frameworks for philosophical inquiry and scho..."
 metadata:
   openclaw:
-    emoji: "owl"
+    emoji: "🦉"
     category: "domains"
     subcategory: "humanities"
     keywords: ["philosophy", "ethics", "epistemology", "history", "logic", "argumentation"]

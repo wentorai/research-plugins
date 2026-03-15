@@ -3,7 +3,7 @@ name: iv-regression-guide
 description: "Apply instrumental variables, 2SLS, and address endogeneity issues"
 metadata:
   openclaw:
-    emoji: "wrench"
+    emoji: "🔧"
     category: "analysis"
     subcategory: "econometrics"
     keywords: ["instrumental variables", "2SLS", "endogeneity", "IV regression", "causal inference", "econometrics"]

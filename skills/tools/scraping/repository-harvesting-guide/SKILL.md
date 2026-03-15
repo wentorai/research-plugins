@@ -3,7 +3,7 @@ name: repository-harvesting-guide
 description: "Harvest metadata from open repositories using OAI-PMH protocol"
 metadata:
   openclaw:
-    emoji: "tractor"
+    emoji: "🚜"
     category: "tools"
     subcategory: "scraping"
     keywords: ["OAI-PMH", "metadata harvesting", "open repositories", "Dublin Core", "institutional repositories", "data providers"]

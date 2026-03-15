@@ -3,7 +3,7 @@ name: legal-nlp-guide
 description: "NLP techniques for legal text analysis, case law mining, and contracts"
 metadata:
   openclaw:
-    emoji: "balance-scale"
+    emoji: "⚖️"
     category: "domains"
     subcategory: "law"
     keywords: ["legal-nlp", "text-mining", "case-law", "contract-analysis", "named-entity", "classification"]

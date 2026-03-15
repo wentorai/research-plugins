@@ -3,7 +3,7 @@ name: operations-research-guide
 description: "Optimization and operations research methods for business and logistics"
 metadata:
   openclaw:
-    emoji: "gear"
+    emoji: "⚙️"
     category: "domains"
     subcategory: "business"
     keywords: ["optimization", "operations-research", "linear-programming", "scheduling", "supply-chain", "simulation"]

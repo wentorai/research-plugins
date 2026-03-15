@@ -3,7 +3,7 @@ name: automated-review-guide
 description: "AI-assisted peer review tools, workflows, and quality standards"
 metadata:
   openclaw:
-    emoji: "robot"
+    emoji: "🤖"
     category: "research"
     subcategory: "paper-review"
     keywords: ["automated review", "AI peer review", "LLM review", "review quality", "manuscript screening", "editorial workflow"]

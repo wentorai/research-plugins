@@ -3,7 +3,7 @@ name: introduction-writing-guide
 description: "Guide to writing effective research paper introductions"
 metadata:
   openclaw:
-    emoji: "pen"
+    emoji: "🖊️"
     category: "writing"
     subcategory: "composition"
     keywords: ["introduction writing", "research background", "literature gap"]

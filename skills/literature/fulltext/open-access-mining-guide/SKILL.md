@@ -3,7 +3,7 @@ name: open-access-mining-guide
 description: "Mine open access full-text repositories for research data extraction"
 metadata:
   openclaw:
-    emoji: "unlock"
+    emoji: "🔓"
     category: "literature"
     subcategory: "fulltext"
     keywords: ["open access", "text mining", "full text", "PubMed Central", "CORE", "content mining", "TDM"]

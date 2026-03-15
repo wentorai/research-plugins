@@ -3,7 +3,7 @@ name: educational-research-methods
 description: "Quantitative and qualitative research methods for education studies"
 metadata:
   openclaw:
-    emoji: "books"
+    emoji: "📚"
     category: "domains"
     subcategory: "education"
     keywords: ["education", "research-methods", "qualitative", "quantitative", "survey-design", "classroom-research"]

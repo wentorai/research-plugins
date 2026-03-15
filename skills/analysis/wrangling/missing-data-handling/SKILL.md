@@ -3,7 +3,7 @@ name: missing-data-handling
 description: "Diagnose missing data patterns and apply appropriate imputation strategies"
 metadata:
   openclaw:
-    emoji: "jigsaw"
+    emoji: "🧩"
     category: "analysis"
     subcategory: "wrangling"
     keywords: ["missing value imputation", "missing data handling", "outlier detection", "data cleaning", "multiple imputation"]

@@ -3,7 +3,7 @@ name: seismology-data-guide
 description: "Earthquake data analysis, seismogram processing, and seismic research"
 metadata:
   openclaw:
-    emoji: "globe-showing-asia-australia"
+    emoji: "🌏"
     category: "domains"
     subcategory: "geoscience"
     keywords: ["seismology", "earthquake", "seismogram", "obspy", "waveform", "geophysics"]

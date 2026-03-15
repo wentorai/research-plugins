@@ -3,7 +3,7 @@ name: mooc-analytics-guide
 description: "Analyzing MOOC data, learning analytics, and online education metrics"
 metadata:
   openclaw:
-    emoji: "chart-increasing"
+    emoji: "📈"
     category: "domains"
     subcategory: "education"
     keywords: ["mooc", "learning-analytics", "online-education", "edx", "coursera", "clickstream"]

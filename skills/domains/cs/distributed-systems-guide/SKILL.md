@@ -3,7 +3,7 @@ name: distributed-systems-guide
 description: "Distributed systems design patterns and analysis for CS research"
 metadata:
   openclaw:
-    emoji: "globe-with-meridians"
+    emoji: "🌐"
     category: "domains"
     subcategory: "cs"
     keywords: ["distributed-systems", "consensus", "replication", "fault-tolerance", "scalability", "cap-theorem"]

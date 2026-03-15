@@ -1,6 +1,6 @@
 ---
 name: social-science-skills
-description: "6 social science skills (ipums-microdata, network-analysis, psychology-research, social-research-methods...). Trigger: survey research, social networks, psychology, behavioral studies. Design: quantitative and qualitative methods for social science research."
+description: "6 social science skills. Trigger: survey research, social networks, psychology, behavioral studies. Design: quantitative and qualitative methods for social science research."
 ---
 
 # Social Science — 6 Skills

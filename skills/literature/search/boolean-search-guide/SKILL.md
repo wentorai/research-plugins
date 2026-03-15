@@ -3,7 +3,7 @@ name: boolean-search-guide
 description: "Master Boolean operators and advanced search syntax for academic databases"
 metadata:
   openclaw:
-    emoji: "mag_right"
+    emoji: "🔎"
     category: "literature"
     subcategory: "search"
     keywords: ["boolean search", "search operators", "database search", "PubMed", "Web of Science", "search strategy"]

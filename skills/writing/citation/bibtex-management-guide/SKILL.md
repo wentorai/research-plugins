@@ -3,7 +3,7 @@ name: bibtex-management-guide
 description: "Clean, format, deduplicate, and manage BibTeX bibliography files for LaTeX"
 metadata:
   openclaw:
-    emoji: "card_file_box"
+    emoji: "🗃️"
     category: "writing"
     subcategory: "citation"
     keywords: ["BibTeX formatting", "BibTeX conversion", "bibliography cleanup", "reference deduplication", "citation management"]

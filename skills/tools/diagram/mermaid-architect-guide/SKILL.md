@@ -3,7 +3,7 @@ name: mermaid-architect-guide
 description: "Design complex multi-diagram architectures using advanced Mermaid syntax"
 metadata:
   openclaw:
-    emoji: "blueprint"
+    emoji: "📐"
     category: "tools"
     subcategory: "diagram"
     keywords: ["Mermaid", "architecture", "system design", "C4 model", "diagram", "hand-drawn"]

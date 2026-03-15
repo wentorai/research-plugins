@@ -3,7 +3,7 @@ name: time-series-guide
 description: "Apply ARIMA, VAR, cointegration, and time series econometric methods"
 metadata:
   openclaw:
-    emoji: "chart_with_downwards_trend"
+    emoji: "📉"
     category: "analysis"
     subcategory: "econometrics"
     keywords: ["time series", "ARIMA", "VAR", "cointegration", "stationarity", "forecasting", "econometrics"]

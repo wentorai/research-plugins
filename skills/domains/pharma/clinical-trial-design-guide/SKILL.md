@@ -3,7 +3,7 @@ name: clinical-trial-design-guide
 description: "Clinical trial methodology, biostatistics, and study design guidance"
 metadata:
   openclaw:
-    emoji: "test-tube"
+    emoji: "🧪"
     category: "domains"
     subcategory: "pharma"
     keywords: ["clinical-trial", "biostatistics", "randomization", "sample-size", "survival-analysis", "rct"]

@@ -3,7 +3,7 @@ name: r-reproducibility-guide
 description: "Create reproducible research workflows with R and RMarkdown/Quarto"
 metadata:
   openclaw:
-    emoji: "repeat"
+    emoji: "🔁"
     category: "tools"
     subcategory: "code-exec"
     keywords: ["R programming", "RMarkdown", "reproducibility", "Quarto", "renv", "computational reproducibility"]

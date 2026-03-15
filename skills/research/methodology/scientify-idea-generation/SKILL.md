@@ -7,7 +7,7 @@ metadata:
     category: "research"
     subcategory: "methodology"
     keywords: ["research question formulation", "hypothesis formulation", "research hypothesis", "conceptual model", "theoretical framework"]
-    source: "https://github.com/scientify-ai/skills"
+    source: "wentor-research-plugins"
     requires:
       bins: ["git"]
 ---

@@ -3,7 +3,7 @@ name: experimental-design-guide
 description: "Design rigorous experiments using DOE, factorial designs, and response surfaces"
 metadata:
   openclaw:
-    emoji: "test_tube"
+    emoji: "🧪"
     category: "research"
     subcategory: "methodology"
     keywords: ["design of experiments", "DOE", "factorial design", "response surface methodology", "experimental design"]

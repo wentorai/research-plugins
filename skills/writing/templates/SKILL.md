@@ -1,6 +1,6 @@
 ---
 name: templates-skills
-description: "11 paper templates skills (arxiv-preprint-template, beamer-presentation, conference-paper-template, elegant-paper-template...). Trigger: starting a new paper, formatting for submission, venue-specific layouts. Design: ready-to-use templates for arXiv preprint, conferences, thesis, and posters."
+description: "11 paper templates skills. Trigger: starting a new paper, formatting for submission, venue-specific layouts. Design: ready-to-use templates for arXiv preprint, conferences, thesis, and posters."
 ---
 
 # Paper Templates — 11 Skills

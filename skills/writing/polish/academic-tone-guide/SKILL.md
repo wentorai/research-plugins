@@ -3,7 +3,7 @@ name: academic-tone-guide
 description: "Adjust writing tone and register for academic audiences and venues"
 metadata:
   openclaw:
-    emoji: "mortar_board"
+    emoji: "🎓"
     category: "writing"
     subcategory: "polish"
     keywords: ["academic tone", "register", "formal writing", "scholarly voice", "hedging", "disciplinary conventions"]

@@ -3,7 +3,7 @@ name: research-workflow-automation
 description: "Automate repetitive research tasks with pipelines, schedulers, and scripting"
 metadata:
   openclaw:
-    emoji: "gear"
+    emoji: "⚙️"
     category: "research"
     subcategory: "automation"
     keywords: ["workflow management", "pipeline scheduler", "research automation", "scientific workflow", "task automation"]

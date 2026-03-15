@@ -3,11 +3,11 @@ name: research-town-guide
 description: "Simulate human research communities with multi-agent AI collaboration"
 metadata:
   openclaw:
-    emoji: "town"
+    emoji: "🏘️"
     category: "research"
     subcategory: "methodology"
     keywords: ["multi-agent", "simulation", "research community", "AI agents", "peer review", "collaboration"]
-    source: "https://github.com/hiyouga/ResearchTown"
+    source: "wentor-research-plugins"
 ---
 
 # Research Town Guide
@@ -256,7 +256,7 @@ Iterate on grant proposals by having agents role-play as review panel members wi
 
 ## References
 
-- Research Town: https://github.com/hiyouga/ResearchTown
+- Research Town: wentor-research-plugins
 - The AI Scientist (Sakana AI): https://github.com/SakanaAI/AI-Scientist
 - AutoGen multi-agent framework: https://github.com/microsoft/autogen
 - CrewAI agent framework: https://github.com/joaomdmoura/crewAI

@@ -3,7 +3,7 @@ name: spectroscopy-analysis-guide
 description: "Spectral data analysis for NMR, IR, mass spectrometry, and UV-Vis"
 metadata:
   openclaw:
-    emoji: "microscope"
+    emoji: "🔬"
     category: "domains"
     subcategory: "chemistry"
     keywords: ["spectroscopy", "nmr", "mass-spectrometry", "infrared", "uv-vis", "analytical-chemistry"]
