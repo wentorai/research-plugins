@@ -1,7 +1,7 @@
 # Literature — Curated Skills
 
 
-> 89 recommended skills for finding, discovering, and managing academic literature.
+> 80 recommended skills for finding, discovering, and managing academic literature.
 
 
 
@@ -10,12 +10,10 @@
 
 | Skill | Description |
 |-------|-------------|
-| [arxiv-paper-monitoring](../../skills/literature/discovery/arxiv-paper-monitoring/) | Set up automated monitoring for new arXiv papers in your research area |
 | [citation-alert-guide](../../skills/literature/discovery/citation-alert-guide/) | Set up citation alerts and track new papers citing key references |
 | [conference-proceedings-guide](../../skills/literature/discovery/conference-proceedings-guide/) | Find, access, and cite conference papers and proceedings effectively |
 | [literature-mapping-guide](../../skills/literature/discovery/literature-mapping-guide/) | Visual literature mapping and connected papers exploration |
 | [paper-recommendation-guide](../../skills/literature/discovery/paper-recommendation-guide/) | Systematic paper recommendation and discovery using multiple methods |
-| [paper-tracking-guide](../../skills/literature/discovery/paper-tracking-guide/) | Track new publications via RSS, alerts, and citation notifications |
 | [papers-we-love-guide](../../skills/literature/discovery/papers-we-love-guide/) | Community-curated directory of influential CS research papers |
 | [rss-paper-feeds](../../skills/literature/discovery/rss-paper-feeds/) | Set up RSS feeds and alerts to track new publications in your research area |
 | [semantic-paper-radar](../../skills/literature/discovery/semantic-paper-radar/) | Semantic literature discovery and synthesis using embeddings |
@@ -43,7 +41,6 @@
 | [preprint-servers-guide](../../skills/literature/fulltext/preprint-servers-guide/) | Guide to preprint servers across scientific disciplines |
 | [unpaywall-api](../../skills/literature/fulltext/unpaywall-api/) | Find free legal full-text versions of scholarly articles via Unpaywall |
 | [zotero-ai-butler-guide](../../skills/literature/fulltext/zotero-ai-butler-guide/) | AI-powered paper summarization plugin for Zotero |
-| [zotero-scihub-guide](../../skills/literature/fulltext/zotero-scihub-guide/) | Zotero plugin for automatic PDF retrieval from Sci-Hub |
 
 
 ## Metadata
@@ -85,7 +82,6 @@
 | [arxiv-api](../../skills/literature/search/arxiv-api/) | Search and retrieve preprints from the arXiv open-access repository |
 | [arxiv-batch-reporting](../../skills/literature/search/arxiv-batch-reporting/) | Batch search and report generation from arXiv preprint repository |
 | [arxiv-cli-tools](../../skills/literature/search/arxiv-cli-tools/) | Command-line tools for searching and batch-downloading arXiv papers |
-| [arxiv-osiris](../../skills/literature/search/arxiv-osiris/) | Search and download arXiv papers via Python and PowerShell scripts |
 | [arxiv-paper-processor](../../skills/literature/search/arxiv-paper-processor/) | Process and analyze arXiv papers systematically for research workflows |
 | [baidu-scholar-guide](../../skills/literature/search/baidu-scholar-guide/) | Using Baidu Scholar for Chinese and English academic literature search |
 | [base-academic-search](../../skills/literature/search/base-academic-search/) | Search 400M+ open access documents via the BASE search engine API |
@@ -96,7 +92,6 @@
 | [citeseerx-api](../../skills/literature/search/citeseerx-api/) | Search computer science literature via the CiteSeerX digital library |
 | [database-comparison-guide](../../skills/literature/search/database-comparison-guide/) | Compare major academic databases and when to use each for research |
 | [deep-literature-search](../../skills/literature/search/deep-literature-search/) | Multi-source exhaustive literature search across academic databases |
-| [deepgit-search-guide](../../skills/literature/search/deepgit-search-guide/) | Deep research tool for discovering academic code in Git repositories |
 | [eric-education-api](../../skills/literature/search/eric-education-api/) | Search 2M+ education research records via the ERIC database API |
 | [europe-pmc-api](../../skills/literature/search/europe-pmc-api/) | Search biomedical and life sciences literature via Europe PMC |
 | [findpapers-guide](../../skills/literature/search/findpapers-guide/) | Search multiple academic databases simultaneously with Findpapers |
@@ -104,18 +99,14 @@
 | [ieee-xplore-api](../../skills/literature/search/ieee-xplore-api/) | Search IEEE's 6M+ engineering and CS publications via the Xplore API |
 | [lens-scholarly-api](../../skills/literature/search/lens-scholarly-api/) | Search 300M+ scholarly and patent records via the Lens.org API |
 | [mesh-terms-guide](../../skills/literature/search/mesh-terms-guide/) | Navigate MeSH vocabulary for precise PubMed and MEDLINE searches |
-| [multi-database-literature-search](../../skills/literature/search/multi-database-literature-search/) | Conduct comprehensive literature searches across multiple academic databases |
 | [open-library-api](../../skills/literature/search/open-library-api/) | Search and access book metadata via the Open Library API |
 | [open-semantic-search-guide](../../skills/literature/search/open-semantic-search-guide/) | Self-hosted semantic search and text mining platform |
 | [openaire-api](../../skills/literature/search/openaire-api/) | Search EU-funded research outputs via the OpenAIRE Graph API |
 | [openalex-api](../../skills/literature/search/openalex-api/) | Query the OpenAlex catalog of scholarly works, authors, and institutions |
 | [paper-search-mcp-guide](../../skills/literature/search/paper-search-mcp-guide/) | MCP server for searching papers across arXiv, PubMed, bioRxiv |
-| [papers-chat-guide](../../skills/literature/search/papers-chat-guide/) | Conversational interface for querying and discussing papers |
-| [pasa-paper-search-guide](../../skills/literature/search/pasa-paper-search-guide/) | Advanced paper search agent powered by LLMs for literature discovery |
 | [plos-open-access-api](../../skills/literature/search/plos-open-access-api/) | Search PLOS open access journals with full-text Solr-powered API |
 | [pubmed-api](../../skills/literature/search/pubmed-api/) | Search biomedical literature and retrieve records via PubMed E-utilities |
 | [scielo-api](../../skills/literature/search/scielo-api/) | Access Latin American and developing world research via SciELO API |
-| [scientify-literature-survey](../../skills/literature/search/scientify-literature-survey/) | Search, filter, download and cluster academic papers on a topic |
 | [semantic-scholar-api](../../skills/literature/search/semantic-scholar-api/) | Search papers and analyze citation graphs via Semantic Scholar |
 | [share-research-api](../../skills/literature/search/share-research-api/) | Discover open access research outputs via the SHARE notification API |
 | [systematic-search-strategy](../../skills/literature/search/systematic-search-strategy/) | Construct rigorous systematic search strategies for literature reviews |

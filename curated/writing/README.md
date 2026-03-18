@@ -1,7 +1,7 @@
 # Writing — Curated Skills
 
 
-> 68 recommended skills for academic writing, citation management, and document preparation.
+> 64 recommended skills for academic writing, citation management, and document preparation.
 
 
 
@@ -11,7 +11,6 @@
 | Skill | Description |
 |-------|-------------|
 | [academic-citation-manager](../../skills/writing/citation/academic-citation-manager/) | Manage academic citations across BibTeX, APA, MLA, and Chicago formats |
-| [academic-citation-manager-guide](../../skills/writing/citation/academic-citation-manager-guide/) | Comparison and workflow guide for academic citation management tools |
 | [bibtex-management-guide](../../skills/writing/citation/bibtex-management-guide/) | Clean, format, deduplicate, and manage BibTeX bibliography files for LaTeX |
 | [citation-assistant-skill](../../skills/writing/citation/citation-assistant-skill/) | Claude Code skill for citation workflow via Semantic Scholar |
 | [citation-style-guide](../../skills/writing/citation/citation-style-guide/) | APA, MLA, Chicago citation format guide with CSL configuration |
@@ -46,9 +45,6 @@
 | [literature-review-writing](../../skills/writing/composition/literature-review-writing/) | Structure and write comprehensive literature reviews for any field |
 | [methods-section-guide](../../skills/writing/composition/methods-section-guide/) | Guide to writing clear and reproducible methodology sections |
 | [ml-paper-writing](../../skills/writing/composition/ml-paper-writing/) | Write ML/AI research papers targeting NeurIPS, ICML, and ICLR venues |
-| [opendraft-thesis-guide](../../skills/writing/composition/opendraft-thesis-guide/) | AI thesis writer with specialized agents and verified citations |
-| [paper-debugger-guide](../../skills/writing/composition/paper-debugger-guide/) | Multi-agent system for academic writing review and improvement |
-| [paperforge-guide](../../skills/writing/composition/paperforge-guide/) | AI-assisted academic paper drafting and structuring tool |
 | [research-paper-writer](../../skills/writing/composition/research-paper-writer/) | Guide for writing formal academic papers following IEEE and ACM standards |
 | [response-to-reviewers](../../skills/writing/composition/response-to-reviewers/) | Write effective point-by-point responses to peer reviewer comments for revisions |
 | [scientific-writing-guide](../../skills/writing/composition/scientific-writing-guide/) | Curated tools and techniques for scientific writing beyond LaTeX |

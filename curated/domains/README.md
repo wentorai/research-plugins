@@ -1,7 +1,7 @@
 # Domains — Curated Skills
 
 
-> 143 recommended skills for domain-specific research across academic disciplines.
+> 139 recommended skills for domain-specific research across academic disciplines.
 
 
 
@@ -12,7 +12,6 @@
 |-------|-------------|
 | [ai-agent-papers-guide](../../skills/domains/ai-ml/ai-agent-papers-guide/) | Curated 2024-2026 AI agent research papers collection |
 | [ai-model-benchmarking](../../skills/domains/ai-ml/ai-model-benchmarking/) | Benchmark AI models across 60+ academic evaluation suites and metrics |
-| [annotated-dl-papers-guide](../../skills/domains/ai-ml/annotated-dl-papers-guide/) | Annotated deep learning paper implementations with side-by-side notes |
 | [anomaly-detection-papers-guide](../../skills/domains/ai-ml/anomaly-detection-papers-guide/) | Industrial anomaly detection methods and benchmark papers |
 | [autonomous-agents-papers-guide](../../skills/domains/ai-ml/autonomous-agents-papers-guide/) | Daily-updated collection of autonomous AI agent papers |
 | [computer-vision-guide](../../skills/domains/ai-ml/computer-vision-guide/) | Apply computer vision research methods, models, and evaluation tools |
@@ -185,7 +184,6 @@
 | Skill | Description |
 |-------|-------------|
 | [digital-humanities-guide](../../skills/domains/humanities/digital-humanities-guide/) | Computational methods for humanities research including text mining and netwo... |
-| [digital-humanities-methods](../../skills/domains/humanities/digital-humanities-methods/) | Computational methods for humanities research with text and network analysis |
 | [ethical-philosophy-guide](../../skills/domains/humanities/ethical-philosophy-guide/) | Applied ethics research methods and major ethical frameworks |
 | [history-research-guide](../../skills/domains/humanities/history-research-guide/) | Historical research from primary sources to scholarly analysis |
 | [philosophy-research-guide](../../skills/domains/humanities/philosophy-research-guide/) | Research methods and analytical frameworks for philosophical inquiry and scho... |
@@ -202,7 +200,6 @@
 | [legal-agent-skills-guide](../../skills/domains/law/legal-agent-skills-guide/) | Agent skills collection for legal research and automation |
 | [legal-nlp-guide](../../skills/domains/law/legal-nlp-guide/) | NLP techniques for legal text analysis, case law mining, and contracts |
 | [legal-research-guide](../../skills/domains/law/legal-research-guide/) | Legal research methods, case law analysis, and compliance tools |
-| [legal-research-methods](../../skills/domains/law/legal-research-methods/) | Systematic legal research methods for case law, statutes, and regulations |
 | [opencontracts-guide](../../skills/domains/law/opencontracts-guide/) | Legal document annotation, versioning, and analysis platform |
 | [patent-analysis-guide](../../skills/domains/law/patent-analysis-guide/) | Patent search, classification, landscape analysis, and prior art mining |
 | [regulatory-compliance-guide](../../skills/domains/law/regulatory-compliance-guide/) | Regulatory text mining, compliance research, and policy analysis tools |
@@ -255,6 +252,5 @@
 | [network-analysis-guide](../../skills/domains/social-science/network-analysis-guide/) | Social network analysis methods, metrics, and visualization tools |
 | [psychology-research-guide](../../skills/domains/social-science/psychology-research-guide/) | Psychological research methods, experimental design, and analysis |
 | [social-research-methods](../../skills/domains/social-science/social-research-methods/) | Core methods for empirical social science research including surveys and expe... |
-| [sociology-research-guide](../../skills/domains/social-science/sociology-research-guide/) | Sociological thinking from observations to rigorous research design |
 | [sociology-research-methods](../../skills/domains/social-science/sociology-research-methods/) | Sociological research methods from observation to quantitative analysis |
 | [survey-research-guide](../../skills/domains/social-science/survey-research-guide/) | Design, deploy, and analyze surveys for social science and organizational res... |
