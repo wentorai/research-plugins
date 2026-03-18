@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError } from "./util.js";
 
 const BASE = "https://api.crossref.org";
 
@@ -25,11 +25,9 @@ export function createCrossRefTools(
       }),
       execute: async (input: { doi: string }) => {
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
-        const res = await fetch(`${BASE}/works/${encodeURIComponent(doi)}`, {
-          headers,
-        });
-        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
-        const data = await res.json();
+        const tracked = await trackedFetch("crossref", `${BASE}/works/${encodeURIComponent(doi)}`, { headers });
+        if (isTrackedError(tracked)) return tracked;
+        const data = await tracked.res.json();
         const w = data.message;
         return toolResult({
           doi: w.DOI,
@@ -46,6 +44,7 @@ export function createCrossRefTools(
           url: w.URL,
           abstract: w.abstract,
           license: w.license?.[0]?.URL,
+          _source_health: { source: "crossref", latency_ms: tracked.latency_ms },
         });
       },
     },
@@ -53,47 +52,82 @@ export function createCrossRefTools(
       name: "search_crossref",
       label: "Search Works (CrossRef)",
       description:
-        "Search CrossRef for scholarly works by query. Covers 150M+ DOIs across all publishers.",
+        "Search CrossRef for scholarly works. Covers 150M+ DOIs across ALL publishers and disciplines. Supports journal/ISSN filtering, year range, work type, and citation-count sorting. Best general-purpose academic search tool.",
       parameters: Type.Object({
-        query: Type.String({ description: "Search query" }),
-        limit: Type.Optional(
-          Type.Number({ description: "Max results (default 10, max 100)" }),
+        query: Type.String({ description: "Search query (keywords)" }),
+        journal: Type.Optional(
+          Type.String({
+            description:
+              "Journal name filter (container-title). E.g. 'Nature', 'American Economic Review', 'The Lancet'",
+          }),
+        ),
+        issn: Type.Optional(
+          Type.String({
+            description: "Journal ISSN filter. E.g. '0028-0836' for Nature, '0002-8282' for AER",
+          }),
         ),
         from_year: Type.Optional(
-          Type.Number({ description: "Published from this year onward" }),
+          Type.Number({ description: "Published from this year onward (inclusive)" }),
+        ),
+        until_year: Type.Optional(
+          Type.Number({ description: "Published until this year (inclusive)" }),
         ),
         type: Type.Optional(
           Type.String({
             description:
-              "Work type filter: 'journal-article', 'book-chapter', 'proceedings-article', etc.",
+              "Work type: 'journal-article', 'book-chapter', 'proceedings-article', 'posted-content' (preprint), 'dissertation'",
           }),
+        ),
+        has_abstract: Type.Optional(
+          Type.Boolean({ description: "Only results with abstracts" }),
         ),
         sort: Type.Optional(
           Type.String({
-            description: "Sort by: 'relevance', 'published', 'is-referenced-by-count'",
+            description:
+              "Sort by: 'relevance' (default), 'published' (newest first), 'is-referenced-by-count' (most cited)",
           }),
+        ),
+        limit: Type.Optional(
+          Type.Number({ description: "Max results (default 10, max 100)" }),
         ),
       }),
       execute: async (input: {
         query: string;
-        limit?: number;
+        journal?: string;
+        issn?: string;
         from_year?: number;
+        until_year?: number;
         type?: string;
+        has_abstract?: boolean;
         sort?: string;
+        limit?: number;
       }) => {
         const params = new URLSearchParams({
           query: input.query,
           rows: String(Math.min(input.limit ?? 10, 100)),
         });
+
+        // Build filter chain
         const filters: string[] = [];
         if (input.from_year) filters.push(`from-pub-date:${input.from_year}`);
+        if (input.until_year) filters.push(`until-pub-date:${input.until_year}`);
         if (input.type) filters.push(`type:${input.type}`);
+        if (input.has_abstract) filters.push("has-abstract:true");
+        if (input.issn) filters.push(`issn:${input.issn}`);
         if (filters.length > 0) params.set("filter", filters.join(","));
-        if (input.sort) params.set("sort", input.sort);
 
-        const res = await fetch(`${BASE}/works?${params}`, { headers });
-        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
-        const data = await res.json();
+        // Journal name as query.container-title (separate from filter)
+        if (input.journal) params.set("query.container-title", input.journal);
+
+        if (input.sort) {
+          params.set("sort", input.sort);
+          params.set("order", "desc");
+        }
+
+        const tracked = await trackedFetch("crossref", `${BASE}/works?${params}`, { headers });
+        if (isTrackedError(tracked)) return tracked;
+        const data = await tracked.res.json();
+
         return toolResult({
           total_results: data.message?.["total-results"],
           items: data.message?.items?.map((w: Record<string, unknown>) => ({
@@ -107,7 +141,11 @@ export function createCrossRefTools(
               (w.published as Record<string, unknown>)?.["date-parts"],
             type: w.type,
             cited_by: w["is-referenced-by-count"],
+            abstract: typeof w.abstract === "string"
+              ? (w.abstract as string).replace(/<[^>]*>/g, "").slice(0, 300)
+              : undefined,
           })),
+          _source_health: { source: "crossref", latency_ms: tracked.latency_ms },
         });
       },
     },

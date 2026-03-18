@@ -1,43 +1,65 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError } from "./util.js";
 
 const BASE = "https://export.arxiv.org/api/query";
 
-function parseArxivXml(xml: string) {
-  const entries: Record<string, unknown>[] = [];
-  const entryBlocks = xml.split("<entry>").slice(1);
+/**
+ * Parse arXiv Atom XML response into structured paper objects.
+ *
+ * Uses regex-based extraction (arXiv returns Atom 1.0 XML).
+ * Handles edge cases: namespace prefixes, missing fields, HTML error pages.
+ */
+function parseArxivXml(xml: string): Record<string, unknown>[] {
+  // Guard: if arXiv returned an error page (HTML) or empty response
+  if (!xml || !xml.includes("<entry>")) return [];
 
-  for (const block of entryBlocks) {
-    const getText = (tag: string) => {
+  const entries: Record<string, unknown>[] = [];
+
+  // Use regex to extract <entry>...</entry> blocks robustly
+  const entryRegex = /<entry>([\s\S]*?)<\/entry>/g;
+  let entryMatch: RegExpExecArray | null;
+
+  while ((entryMatch = entryRegex.exec(xml)) !== null) {
+    const block = entryMatch[1];
+
+    const getText = (tag: string): string => {
+      // Match tags with or without namespace prefixes and attributes
       const m = block.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`));
       return m ? m[1].trim() : "";
     };
 
-    const getAll = (tag: string) => {
+    const getAll = (tag: string): string[] => {
       const results: string[] = [];
       const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, "g");
-      let m;
+      let m: RegExpExecArray | null;
       while ((m = re.exec(block)) !== null) results.push(m[1].trim());
       return results;
     };
 
-    const getAttr = (tag: string, attr: string) => {
-      const m = block.match(new RegExp(`<${tag}[^>]*${attr}="([^"]*)"[^>]*/?>`, "g"));
-      return m
-        ? m.map((s) => {
-            const am = s.match(new RegExp(`${attr}="([^"]*)"`));
-            return am ? am[1] : "";
-          })
-        : [];
+    const getAttr = (tag: string, attr: string): string[] => {
+      const results: string[] = [];
+      const re = new RegExp(`<${tag}[^>]*?${attr}="([^"]*)"[^>]*/?>`, "g");
+      let m: RegExpExecArray | null;
+      while ((m = re.exec(block)) !== null) {
+        if (m[1]) results.push(m[1]);
+      }
+      return results;
     };
 
-    const id = getText("id");
-    const arxivId = id.replace("http://arxiv.org/abs/", "").replace(/v\d+$/, "");
+    const rawId = getText("id");
+    if (!rawId) continue; // skip malformed entries
+
+    const arxivId = rawId
+      .replace(/https?:\/\/arxiv\.org\/abs\//, "")
+      .replace(/v\d+$/, "");
+
+    const title = getText("title").replace(/\s+/g, " ");
+    if (!title) continue; // skip entries without title
 
     entries.push({
       arxiv_id: arxivId,
-      title: getText("title").replace(/\s+/g, " "),
+      title,
       summary: getText("summary").replace(/\s+/g, " "),
       authors: getAll("name"),
       published: getText("published"),
@@ -45,8 +67,8 @@ function parseArxivXml(xml: string) {
       categories: getAttr("category", "term"),
       pdf_url: `https://arxiv.org/pdf/${arxivId}`,
       abs_url: `https://arxiv.org/abs/${arxivId}`,
-      doi: getText("arxiv:doi"),
-      comment: getText("arxiv:comment"),
+      doi: getText("arxiv:doi") || undefined,
+      comment: getText("arxiv:comment") || undefined,
     });
   }
 
@@ -62,7 +84,7 @@ export function createArxivTools(
       name: "search_arxiv",
       label: "Search Papers (arXiv)",
       description:
-        "Search arXiv preprint repository. Covers physics, math, CS, biology, quantitative finance, statistics, and more.",
+        "Search arXiv preprint repository. Covers physics, math, CS, biology, quantitative finance, statistics, and more. All results are open access.",
       parameters: Type.Object({
         query: Type.String({
           description:
@@ -94,9 +116,17 @@ export function createArxivTools(
           sortOrder: input.sort_order ?? "descending",
         });
 
-        const res = await fetch(`${BASE}?${params}`);
-        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
-        const xml = await res.text();
+        const tracked = await trackedFetch("arxiv", `${BASE}?${params}`, undefined, 15_000);
+        if (isTrackedError(tracked)) return tracked;
+        const xml = await tracked.res.text();
+
+        // Check if response is actually XML (not HTML error page)
+        if (!xml.includes("<feed")) {
+          return toolResult({
+            error: "arXiv returned non-XML response (possibly rate-limited or error page)",
+            _source_health: { source: "arxiv", latency_ms: tracked.latency_ms },
+          });
+        }
 
         const totalMatch = xml.match(
           /<opensearch:totalResults[^>]*>(\d+)<\/opensearch:totalResults>/,
@@ -106,6 +136,7 @@ export function createArxivTools(
         return toolResult({
           total_results: total,
           papers: parseArxivXml(xml),
+          _source_health: { source: "arxiv", latency_ms: tracked.latency_ms },
         });
       },
     },
@@ -120,14 +151,31 @@ export function createArxivTools(
         }),
       }),
       execute: async (input: { arxiv_id: string }) => {
-        const id = input.arxiv_id.replace("arXiv:", "");
+        const id = input.arxiv_id.replace("arXiv:", "").replace(/https?:\/\/arxiv\.org\/abs\//, "");
         const params = new URLSearchParams({ id_list: id });
-        const res = await fetch(`${BASE}?${params}`);
-        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
-        const xml = await res.text();
+
+        const tracked = await trackedFetch("arxiv", `${BASE}?${params}`, undefined, 15_000);
+        if (isTrackedError(tracked)) return tracked;
+        const xml = await tracked.res.text();
+
+        if (!xml.includes("<feed")) {
+          return toolResult({
+            error: "arXiv returned non-XML response",
+            _source_health: { source: "arxiv", latency_ms: tracked.latency_ms },
+          });
+        }
+
         const papers = parseArxivXml(xml);
-        if (papers.length === 0) return toolResult({ error: "Paper not found" });
-        return toolResult(papers[0]);
+        if (papers.length === 0) {
+          return toolResult({
+            error: `Paper not found: ${id}`,
+            _source_health: { source: "arxiv", latency_ms: tracked.latency_ms },
+          });
+        }
+        return toolResult({
+          ...papers[0],
+          _source_health: { source: "arxiv", latency_ms: tracked.latency_ms },
+        });
       },
     },
   ];

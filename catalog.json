@@ -7598,7 +7598,7 @@
       "id": "agent-tool-arxiv",
       "type": "agent_tool",
       "name": "Arxiv",
-      "description": "Agent tools: search_arxiv, get_arxiv_paper",
+      "description": "Parse arXiv Atom XML response into structured paper objects.",
       "category": "integrations",
       "subcategory": "academic-db",
       "keywords": [
