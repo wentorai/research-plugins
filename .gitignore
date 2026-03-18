@@ -17,6 +17,10 @@ Thumbs.db
 # Dev artifacts
 status.html
 
+# Archived audit items (MCP configs, skills)
+# Reference copies only — recoverable from git history
+archived/
+
 # Secrets
 .env
 .npmrc
