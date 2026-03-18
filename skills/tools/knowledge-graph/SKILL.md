@@ -1,9 +1,9 @@
 ---
 name: knowledge-graph-skills
-description: "10 knowledge graphs skills. Trigger: building knowledge graphs, connecting concepts, ontology design. Design: graph construction, traversal, and visualization for research knowledge."
+description: "9 knowledge graphs skills. Trigger: building knowledge graphs, connecting concepts, ontology design. Design: graph construction, traversal, and visualization for research knowledge."
 ---
 
-# Knowledge Graphs — 10 Skills
+# Knowledge Graphs — 9 Skills
 
 Select the skill matching the user's need, then `read` its SKILL.md.
 
@@ -16,6 +16,5 @@ Select the skill matching the user's need, then `read` its SKILL.md.
 | [notero-zotero-notion-guide](./notero-zotero-notion-guide/SKILL.md) | Sync Zotero references and annotations to Notion databases |
 | [ontology-design-guide](./ontology-design-guide/SKILL.md) | Design ontologies and knowledge graphs for research data modeling |
 | [openspg-guide](./openspg-guide/SKILL.md) | Ant Group knowledge graph engine with SPG and KAG framework |
-| [paperpile-notion-guide](./paperpile-notion-guide/SKILL.md) | Sync Paperpile references and annotations to Notion |
 | [rag-methodology-guide](./rag-methodology-guide/SKILL.md) | RAG architecture for academic knowledge retrieval and synthesis |
 | [zotero-markdb-connect-guide](./zotero-markdb-connect-guide/SKILL.md) | Sync Zotero references to Obsidian and Logseq markdown |

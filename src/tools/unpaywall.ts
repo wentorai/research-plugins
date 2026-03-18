@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError } from "./util.js";
 
 const BASE = "https://api.unpaywall.org/v2";
 
@@ -23,14 +23,19 @@ export function createUnpaywallTools(
       }),
       execute: async (input: { doi: string }) => {
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
-        const res = await fetch(
+        const tracked = await trackedFetch(
+          "unpaywall",
           `${BASE}/${encodeURIComponent(doi)}?email=${email}`,
         );
-        if (!res.ok) {
-          if (res.status === 404) return toolResult({ error: "DOI not found in Unpaywall" });
-          return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
+        if (isTrackedError(tracked)) {
+          // Special handling for 404 (DOI not found)
+          if (tracked.details && typeof tracked.details === "object" && "error" in (tracked.details as Record<string, unknown>)) {
+            const errMsg = String((tracked.details as Record<string, string>).error);
+            if (errMsg.includes("404")) return toolResult({ error: "DOI not found in Unpaywall" });
+          }
+          return tracked;
         }
-        const data = await res.json();
+        const data = await tracked.res.json();
 
         const oaLocations = (
           data.oa_locations as Record<string, unknown>[] | undefined
@@ -53,6 +58,7 @@ export function createUnpaywallTools(
           publisher: data.publisher,
           published_date: data.published_date,
           oa_locations: oaLocations,
+          _source_health: { source: "unpaywall", latency_ms: tracked.latency_ms },
         });
       },
     },

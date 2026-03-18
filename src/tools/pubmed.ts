@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError } from "./util.js";
 
 const EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils";
 
@@ -53,23 +53,27 @@ export function createPubMedTools(
         if (input.max_date) searchParams.set("maxdate", input.max_date);
         if (input.min_date || input.max_date) searchParams.set("datetype", "pdat");
 
-        const searchRes = await fetch(`${EUTILS}/esearch.fcgi?${searchParams}`);
-        if (!searchRes.ok)
-          return toolResult({ error: `Search error: ${searchRes.status} ${searchRes.statusText}` });
-        const searchData = await searchRes.json();
+        const searchTracked = await trackedFetch("pubmed", `${EUTILS}/esearch.fcgi?${searchParams}`);
+        if (isTrackedError(searchTracked)) return searchTracked;
+        const searchData = await searchTracked.res.json();
         const ids: string[] = searchData.esearchresult?.idlist ?? [];
 
-        if (ids.length === 0) return toolResult({ total_count: searchData.esearchresult?.count ?? 0, articles: [] });
+        if (ids.length === 0) {
+          return toolResult({
+            total_count: searchData.esearchresult?.count ?? 0,
+            articles: [],
+            _source_health: { source: "pubmed", latency_ms: searchTracked.latency_ms },
+          });
+        }
 
         const summaryParams = new URLSearchParams({
           db: "pubmed",
           id: ids.join(","),
           retmode: "json",
         });
-        const summaryRes = await fetch(`${EUTILS}/esummary.fcgi?${summaryParams}`);
-        if (!summaryRes.ok)
-          return toolResult({ error: `Summary error: ${summaryRes.status} ${summaryRes.statusText}` });
-        const summaryData = await summaryRes.json();
+        const summaryTracked = await trackedFetch("pubmed", `${EUTILS}/esummary.fcgi?${summaryParams}`);
+        if (isTrackedError(summaryTracked)) return summaryTracked;
+        const summaryData = await summaryTracked.res.json();
 
         const articles = ids.map((id) => {
           const doc = summaryData.result?.[id];
@@ -92,6 +96,7 @@ export function createPubMedTools(
         return toolResult({
           total_count: parseInt(searchData.esearchresult?.count ?? "0", 10),
           articles,
+          _source_health: { source: "pubmed", latency_ms: summaryTracked.latency_ms },
         });
       },
     },
@@ -109,9 +114,9 @@ export function createPubMedTools(
           id: input.pmid,
           retmode: "xml",
         });
-        const res = await fetch(`${EUTILS}/efetch.fcgi?${params}`);
-        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
-        const xml = await res.text();
+        const tracked = await trackedFetch("pubmed", `${EUTILS}/efetch.fcgi?${params}`);
+        if (isTrackedError(tracked)) return tracked;
+        const xml = await tracked.res.text();
 
         const getText = (tag: string) => {
           const m = xml.match(new RegExp(`<${tag}>([\\s\\S]*?)</${tag}>`));
@@ -162,6 +167,7 @@ export function createPubMedTools(
           pmc,
           mesh_terms: getMesh(),
           url: `https://pubmed.ncbi.nlm.nih.gov/${input.pmid}/`,
+          _source_health: { source: "pubmed", latency_ms: tracked.latency_ms },
         });
       },
     },

@@ -1,9 +1,9 @@
 ---
 name: business-skills
-description: "6 business research skills. Trigger: business strategy, market analysis, competitive intelligence. Design: analytical frameworks and methods for management and innovation research."
+description: "5 business research skills. Trigger: business strategy, market analysis, competitive intelligence. Design: analytical frameworks and methods for management and innovation research."
 ---
 
-# Business Research — 6 Skills
+# Business Research — 5 Skills
 
 Select the skill matching the user's need, then `read` its SKILL.md.
 
@@ -14,4 +14,3 @@ Select the skill matching the user's need, then `read` its SKILL.md.
 | [market-analysis-guide](./market-analysis-guide/SKILL.md) | Structured frameworks for market sizing, competitive analysis, and strategic ... |
 | [operations-research-guide](./operations-research-guide/SKILL.md) | Optimization and operations research methods for business and logistics |
 | [strategic-management-guide](./strategic-management-guide/SKILL.md) | Frameworks for strategic planning, resource allocation, and organizational an... |
-| [xpert-bi-guide](./xpert-bi-guide/SKILL.md) | AI business intelligence agent with NL-to-SQL and dashboards |

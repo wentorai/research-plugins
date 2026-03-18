@@ -1,6 +1,6 @@
 ---
 name: peer-review-guide
-description: "Conduct thorough, constructive peer reviews and evaluate research papers crit..."
+description: "Conduct thorough, constructive peer reviews and evaluate research papers"
 metadata:
   openclaw:
     emoji: "🕵️"

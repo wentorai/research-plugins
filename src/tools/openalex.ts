@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError } from "./util.js";
 
 const BASE = "https://api.openalex.org";
 
@@ -58,9 +58,9 @@ export function createOpenAlexTools(
         if (filters.length > 0) params.set("filter", filters.join(","));
         if (input.sort_by) params.set("sort", input.sort_by);
 
-        const res = await fetch(`${BASE}/works?${params}`, { headers });
-        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
-        const data = await res.json();
+        const tracked = await trackedFetch("openalex", `${BASE}/works?${params}`, { headers });
+        if (isTrackedError(tracked)) return tracked;
+        const data = await tracked.res.json();
         return toolResult({
           total_count: data.meta?.count,
           results: data.results?.map((w: Record<string, unknown>) => ({
@@ -78,6 +78,7 @@ export function createOpenAlexTools(
                 )
               : [],
           })),
+          _source_health: { source: "openalex", latency_ms: tracked.latency_ms },
         });
       },
     },
@@ -96,11 +97,9 @@ export function createOpenAlexTools(
         const id = input.work_id.startsWith("10.")
           ? `https://doi.org/${input.work_id}`
           : input.work_id;
-        const res = await fetch(`${BASE}/works/${encodeURIComponent(id)}`, {
-          headers,
-        });
-        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
-        const w = await res.json();
+        const tracked = await trackedFetch("openalex", `${BASE}/works/${encodeURIComponent(id)}`, { headers });
+        if (isTrackedError(tracked)) return tracked;
+        const w = await tracked.res.json();
         return toolResult({
           id: w.id,
           doi: w.doi,
@@ -120,6 +119,7 @@ export function createOpenAlexTools(
             ?.slice(0, 10)
             .map((c: Record<string, unknown>) => c.display_name),
           referenced_works_count: w.referenced_works?.length,
+          _source_health: { source: "openalex", latency_ms: tracked.latency_ms },
         });
       },
     },
@@ -148,14 +148,18 @@ export function createOpenAlexTools(
             search: input.author_id,
             per_page: "5",
           });
-          const res = await fetch(`${BASE}/authors?${params}`, { headers });
-          if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
-          return toolResult(await res.json());
+          const tracked = await trackedFetch("openalex", `${BASE}/authors?${params}`, { headers });
+          if (isTrackedError(tracked)) return tracked;
+          const data = await tracked.res.json();
+          return toolResult({
+            ...data,
+            _source_health: { source: "openalex", latency_ms: tracked.latency_ms },
+          });
         }
 
-        const res = await fetch(url, { headers });
-        if (!res.ok) return toolResult({ error: `API error: ${res.status} ${res.statusText}` });
-        const a = await res.json();
+        const tracked = await trackedFetch("openalex", url, { headers });
+        if (isTrackedError(tracked)) return tracked;
+        const a = await tracked.res.json();
         return toolResult({
           id: a.id,
           display_name: a.display_name,
@@ -171,6 +175,7 @@ export function createOpenAlexTools(
           top_concepts: a.x_concepts
             ?.slice(0, 5)
             .map((c: Record<string, unknown>) => c.display_name),
+          _source_health: { source: "openalex", latency_ms: tracked.latency_ms },
         });
       },
     },

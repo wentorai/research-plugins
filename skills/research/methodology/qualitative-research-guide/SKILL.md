@@ -1,6 +1,6 @@
 ---
 name: qualitative-research-guide
-description: "Design and conduct qualitative research using grounded theory, case studies, ..."
+description: "Design and conduct qualitative research using grounded theory and case studies"
 metadata:
   openclaw:
     emoji: "🔍"

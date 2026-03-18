@@ -2,10 +2,10 @@
   "version": "2.0.0",
   "generated": "2026-03-18",
   "stats": {
-    "skills": 431,
+    "skills": 427,
     "agent_tools": 18,
     "curated_lists": 6,
-    "total": 455
+    "total": 451
   },
   "items": [
     {
@@ -527,7 +527,7 @@
       "id": "meta-analysis-guide",
       "type": "skill",
       "name": "meta-analysis-guide",
-      "description": "Conduct systematic meta-analyses with effect size pooling and heterogeneity a...",
+      "description": "Conduct systematic meta-analyses with effect size pooling and heterogeneity",
       "category": "analysis",
       "subcategory": "statistics",
       "keywords": [
@@ -1673,24 +1673,6 @@
       "source": "wentor"
     },
     {
-      "id": "xpert-bi-guide",
-      "type": "skill",
-      "name": "xpert-bi-guide",
-      "description": "AI business intelligence agent with NL-to-SQL and dashboards",
-      "category": "domains",
-      "subcategory": "business",
-      "keywords": [
-        "business intelligence",
-        "NL-to-SQL",
-        "dashboard",
-        "data analysis",
-        "BI agent",
-        "analytics"
-      ],
-      "path": "skills/domains/business/xpert-bi-guide",
-      "source": "https://github.com/xpert-ai/xpert"
-    },
-    {
       "id": "cactus-cheminformatics-guide",
       "type": "skill",
       "name": "cactus-cheminformatics-guide",
@@ -2320,24 +2302,6 @@
       ],
       "path": "skills/domains/education/educational-research-methods",
       "source": "wentor"
-    },
-    {
-      "id": "edumcp-guide",
-      "type": "skill",
-      "name": "edumcp-guide",
-      "description": "MCP server for educational content and learning management",
-      "category": "domains",
-      "subcategory": "education",
-      "keywords": [
-        "education MCP",
-        "learning management",
-        "course content",
-        "educational AI",
-        "tutoring",
-        "assessment"
-      ],
-      "path": "skills/domains/education/edumcp-guide",
-      "source": "wentor-research-plugins"
     },
     {
       "id": "learning-science-guide",
@@ -4538,24 +4502,6 @@
       "source": "https://docs.openalex.org/"
     },
     {
-      "id": "paper-search-mcp-guide",
-      "type": "skill",
-      "name": "paper-search-mcp-guide",
-      "description": "MCP server for searching papers across arXiv, PubMed, bioRxiv",
-      "category": "literature",
-      "subcategory": "search",
-      "keywords": [
-        "paper search",
-        "MCP",
-        "arXiv",
-        "PubMed",
-        "bioRxiv",
-        "multi-database"
-      ],
-      "path": "skills/literature/search/paper-search-mcp-guide",
-      "source": "wentor-research-plugins"
-    },
-    {
       "id": "plos-open-access-api",
       "type": "skill",
       "name": "plos-open-access-api",
@@ -5346,7 +5292,7 @@
       "id": "qualitative-research-guide",
       "type": "skill",
       "name": "qualitative-research-guide",
-      "description": "Design and conduct qualitative research using grounded theory, case studies, ...",
+      "description": "Design and conduct qualitative research using grounded theory and case studies",
       "category": "research",
       "subcategory": "methodology",
       "keywords": [
@@ -5503,7 +5449,7 @@
       "id": "peer-review-guide",
       "type": "skill",
       "name": "peer-review-guide",
-      "description": "Conduct thorough, constructive peer reviews and evaluate research papers crit...",
+      "description": "Conduct thorough, constructive peer reviews and evaluate research papers",
       "category": "research",
       "subcategory": "paper-review",
       "keywords": [
@@ -6147,24 +6093,6 @@
       ],
       "path": "skills/tools/knowledge-graph/openspg-guide",
       "source": "https://github.com/OpenSPG/openspg"
-    },
-    {
-      "id": "paperpile-notion-guide",
-      "type": "skill",
-      "name": "paperpile-notion-guide",
-      "description": "Sync Paperpile references and annotations to Notion",
-      "category": "tools",
-      "subcategory": "knowledge-graph",
-      "keywords": [
-        "Paperpile",
-        "Notion",
-        "sync",
-        "reference management",
-        "annotations",
-        "integration"
-      ],
-      "path": "skills/tools/knowledge-graph/paperpile-notion-guide",
-      "source": "https://github.com/gsarti/paperpile-notion"
     },
     {
       "id": "rag-methodology-guide",

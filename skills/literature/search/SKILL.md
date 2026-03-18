@@ -1,9 +1,9 @@
 ---
 name: search-skills
-description: "32 database search skills. Trigger: finding papers, search strategies, querying academic databases. Design: one skill per database/tool with API details, query syntax, and rate limits."
+description: "31 database search skills. Trigger: finding papers, search strategies, querying academic databases. Design: one skill per database/tool with API details, query syntax, and rate limits."
 ---
 
-# Database Search — 32 Skills
+# Database Search — 31 Skills
 
 Select the skill matching the user's need, then `read` its SKILL.md.
 
@@ -33,7 +33,6 @@ Select the skill matching the user's need, then `read` its SKILL.md.
 | [open-semantic-search-guide](./open-semantic-search-guide/SKILL.md) | Self-hosted semantic search and text mining platform |
 | [openaire-api](./openaire-api/SKILL.md) | Search EU-funded research outputs via the OpenAIRE Graph API |
 | [openalex-api](./openalex-api/SKILL.md) | Query the OpenAlex catalog of scholarly works, authors, and institutions |
-| [paper-search-mcp-guide](./paper-search-mcp-guide/SKILL.md) | MCP server for searching papers across arXiv, PubMed, bioRxiv |
 | [plos-open-access-api](./plos-open-access-api/SKILL.md) | Search PLOS open access journals with full-text Solr-powered API |
 | [pubmed-api](./pubmed-api/SKILL.md) | Search biomedical literature and retrieve records via PubMed E-utilities |
 | [scielo-api](./scielo-api/SKILL.md) | Access Latin American and developing world research via SciELO API |

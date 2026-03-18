@@ -1,6 +1,6 @@
 ---
 name: meta-analysis-guide
-description: "Conduct systematic meta-analyses with effect size pooling and heterogeneity a..."
+description: "Conduct systematic meta-analyses with effect size pooling and heterogeneity"
 metadata:
   openclaw:
     emoji: "⚖️"

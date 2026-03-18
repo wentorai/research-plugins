@@ -17,7 +17,7 @@ Select the skill matching the user's need, then `read` its SKILL.md.
 | [mixed-methods-guide](./mixed-methods-guide/SKILL.md) | Guide to designing and conducting mixed methods research |
 | [osf-api-guide](./osf-api-guide/SKILL.md) | Access Open Science Framework for preregistrations, preprints, and data |
 | [parsifal-slr-guide](./parsifal-slr-guide/SKILL.md) | Plan and manage systematic literature reviews with Parsifal platform |
-| [qualitative-research-guide](./qualitative-research-guide/SKILL.md) | Design and conduct qualitative research using grounded theory, case studies, ... |
+| [qualitative-research-guide](./qualitative-research-guide/SKILL.md) | Design and conduct qualitative research using grounded theory and case studies |
 | [research-paper-kb](./research-paper-kb/SKILL.md) | Build a persistent cross-session knowledge base from academic papers |
 | [research-town-guide](./research-town-guide/SKILL.md) | Simulate human research communities with multi-agent AI collaboration |
 | [scientify-idea-generation](./scientify-idea-generation/SKILL.md) | Generate research ideas from collected papers with gap analysis |
