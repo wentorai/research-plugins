@@ -36,7 +36,7 @@ Strategy 1 - Search by conference name:
   DBLP: Browse conference page -> search within proceedings
 
 Strategy 2 - Search by topic across all venues:
-  Semantic Scholar: Filter by "Conference Paper" venue type
+  OpenAlex: Filter by type "proceedings-article"
   Google Scholar: Use keywords, then check venue names in results
 
 Strategy 3 - Track specific conferences:
@@ -101,7 +101,7 @@ Tiers vary by subfield. Always check the ranking relevant to your specific area.
 3. OpenReview: NeurIPS, ICLR, and others host papers with reviews
 4. Institutional repository: Check the authors' university repository
 5. Conference website: Some conferences offer free proceedings
-6. Semantic Scholar: Aggregates PDFs from multiple open sources
+6. OpenAlex: Aggregates metadata and OA links from multiple sources
 ```
 
 ### Workshop Papers vs. Main Conference

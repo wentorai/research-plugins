@@ -94,6 +94,9 @@ export function createOpenAlexTools(
         }),
       }),
       execute: async (input: { work_id: string }) => {
+        if (!input?.work_id) {
+          return toolResult({ error: 'work_id parameter is required (e.g., "W2741809807" or a DOI like "10.1234/example")' });
+        }
         const id = input.work_id.startsWith("10.")
           ? `https://doi.org/${input.work_id}`
           : input.work_id;
@@ -135,6 +138,9 @@ export function createOpenAlexTools(
         }),
       }),
       execute: async (input: { author_id: string }) => {
+        if (!input?.author_id) {
+          return toolResult({ error: 'author_id parameter is required (OpenAlex ID e.g. "A5023888391", ORCID, or author name)' });
+        }
         let url: string;
         if (
           input.author_id.startsWith("A") ||

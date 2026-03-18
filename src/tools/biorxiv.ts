@@ -13,17 +13,24 @@ export function createBiorxivTools(
       name: "search_biorxiv",
       label: "Search Preprints (bioRxiv)",
       description:
-        "Get recent bioRxiv preprints by date range. Covers biology preprints (300K+). Use date range (e.g. '2026-03-01/2026-03-18'), recent count (e.g. '50'), or recent days (e.g. '7d').",
+        "Get recent bioRxiv preprints by date range. Covers biology preprints (300K+). Use a date range like '2026-03-01/2026-03-18'. Returns up to 100 preprints per page.",
       parameters: Type.Object({
         interval: Type.String({
           description:
-            "Date range 'YYYY-MM-DD/YYYY-MM-DD', recent count '50', or recent days '7d'",
+            "Date range in YYYY-MM-DD/YYYY-MM-DD format (e.g. '2026-03-01/2026-03-18'). Use today's date for most recent.",
         }),
         cursor: Type.Optional(
           Type.Number({ description: "Pagination offset (default 0, each page returns up to 100)" }),
         ),
       }),
       execute: async (input: { interval: string; cursor?: number }) => {
+        if (!input?.interval) {
+          return toolResult({ error: 'interval parameter is required (date range in YYYY-MM-DD/YYYY-MM-DD format, e.g. "2026-03-01/2026-03-18")' });
+        }
+        // Validate date range format — bioRxiv API only accepts YYYY-MM-DD/YYYY-MM-DD
+        if (!/^\d{4}-\d{2}-\d{2}\/\d{4}-\d{2}-\d{2}$/.test(input.interval)) {
+          return toolResult({ error: `Invalid interval format "${input.interval}". Must be YYYY-MM-DD/YYYY-MM-DD (e.g. "2026-03-01/2026-03-18")` });
+        }
         const cursor = input.cursor ?? 0;
         const tracked = await trackedFetch("biorxiv", `${BASE}/details/biorxiv/${input.interval}/${cursor}/json`, undefined, 30_000);
         if (isTrackedError(tracked)) return tracked;
@@ -63,13 +70,19 @@ export function createBiorxivTools(
       parameters: Type.Object({
         interval: Type.String({
           description:
-            "Date range 'YYYY-MM-DD/YYYY-MM-DD', recent count '50', or recent days '7d'",
+            "Date range in YYYY-MM-DD/YYYY-MM-DD format (e.g. '2026-03-01/2026-03-18'). Use today's date for most recent.",
         }),
         cursor: Type.Optional(
           Type.Number({ description: "Pagination offset (default 0)" }),
         ),
       }),
       execute: async (input: { interval: string; cursor?: number }) => {
+        if (!input?.interval) {
+          return toolResult({ error: 'interval parameter is required (date range in YYYY-MM-DD/YYYY-MM-DD format, e.g. "2026-03-01/2026-03-18")' });
+        }
+        if (!/^\d{4}-\d{2}-\d{2}\/\d{4}-\d{2}-\d{2}$/.test(input.interval)) {
+          return toolResult({ error: `Invalid interval format "${input.interval}". Must be YYYY-MM-DD/YYYY-MM-DD (e.g. "2026-03-01/2026-03-18")` });
+        }
         const cursor = input.cursor ?? 0;
         const tracked = await trackedFetch("medrxiv", `${BASE}/details/medrxiv/${input.interval}/${cursor}/json`, undefined, 30_000);
         if (isTrackedError(tracked)) return tracked;
@@ -112,6 +125,9 @@ export function createBiorxivTools(
         ),
       }),
       execute: async (input: { doi: string; server?: string }) => {
+        if (!input?.doi) {
+          return toolResult({ error: 'doi parameter is required (e.g., "10.1101/2024.01.15.575123")' });
+        }
         const server = input.server ?? "biorxiv";
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
         const tracked = await trackedFetch(server, `${BASE}/details/${server}/${doi}/na/json`, undefined, 15_000);

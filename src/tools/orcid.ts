@@ -72,6 +72,9 @@ export function createOrcidTools(
         }),
       }),
       execute: async (input: { orcid: string }) => {
+        if (!input?.orcid) {
+          return toolResult({ error: 'orcid parameter is required (e.g., "0000-0002-1825-0097")' });
+        }
         const orcid = input.orcid.replace(/^https?:\/\/orcid\.org\//, "");
 
         const result = await trackedFetch(

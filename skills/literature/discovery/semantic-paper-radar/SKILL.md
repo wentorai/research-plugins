@@ -31,16 +31,16 @@ Key components:
 - **Vector database**: Stores and indexes embeddings for fast similarity search. Options include ChromaDB (local), Qdrant, Pinecone, or Weaviate.
 - **Similarity metric**: Cosine similarity is standard for comparing text embeddings.
 
-### Using Semantic Scholar's Embedding Search
+### Using OpenAlex's Search API
 
-Semantic Scholar provides pre-computed SPECTER embeddings for millions of papers. You can use their search API for semantic queries:
+OpenAlex indexes 250M+ works and supports search queries across all disciplines:
 
 ```bash
-# Semantic search via the Semantic Scholar API
-curl "https://api.semanticscholar.org/graph/v1/paper/search?query=attention+mechanisms+for+graph+neural+networks&fields=title,abstract,year,citationCount&limit=20"
+# Search works via the OpenAlex API
+curl "https://api.openalex.org/works?search=attention+mechanisms+for+graph+neural+networks&per_page=20"
 ```
 
-The search endpoint uses semantic matching, not just keyword matching. A query like "methods for handling missing values in longitudinal studies" will find papers about imputation techniques, dropout analysis, and panel data methods even if they do not use the phrase "missing values."
+The search endpoint uses relevance-ranked matching. Combine with concept filters and citation data for more targeted discovery. For true semantic matching, build a local embedding index (see below).
 
 ### Building a Personal Semantic Index
 
@@ -84,7 +84,7 @@ This local index lets you search across all papers you have collected using natu
 Use semantic search to expand your awareness beyond your current reading:
 
 1. **Seed**: Take the abstract of your current paper (or a paragraph describing your research question).
-2. **Search**: Run it as a semantic query against a large corpus (Semantic Scholar, OpenAlex, or your local index).
+2. **Search**: Run it as a semantic query against a large corpus (OpenAlex, CrossRef, or your local index).
 3. **Filter**: Remove papers you have already read. Sort by a combination of semantic similarity and recency.
 4. **Cluster**: Group the top 50 results into thematic clusters using k-means or HDBSCAN on their embeddings.
 5. **Explore clusters**: Each cluster represents a related subtopic. Read the most-cited paper in each cluster to understand the connection to your work.
@@ -103,7 +103,7 @@ Semantic search excels at finding papers from other fields that address similar 
 Set up periodic semantic searches to detect new papers in your area:
 
 1. Define 3-5 "concept vectors" by encoding descriptions of your core research interests.
-2. Weekly, search against newly published papers (last 7 days) from arXiv or Semantic Scholar.
+2. Weekly, search against newly published papers (last 7 days) from arXiv or OpenAlex.
 3. Rank new papers by maximum similarity to any of your concept vectors.
 4. Papers above your similarity threshold enter your reading queue automatically.
 
@@ -137,7 +137,7 @@ Compare your research question against the semantic landscape of existing work. 
 
 ## References
 
-- Semantic Scholar API: https://api.semanticscholar.org
+- OpenAlex API: https://api.openalex.org
 - SPECTER2 model: https://huggingface.co/allenai/specter2
 - ChromaDB: https://www.trychroma.com
 - ResearchGPT: https://github.com/mukulpatnaik/researchgpt

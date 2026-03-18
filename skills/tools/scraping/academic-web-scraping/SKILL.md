@@ -28,7 +28,6 @@ APIs are always preferable to scraping when available. They provide structured d
 
 | API | Data | Rate Limit | Auth |
 |-----|------|-----------|------|
-| Semantic Scholar | Papers, authors, citations | 100 req/sec (with key) | API key (free) |
 | OpenAlex | Papers, authors, venues, concepts | 100K req/day | Email in header |
 | Crossref | DOI metadata | 50 req/sec (polite pool) | Email in header |
 | PubMed (Entrez) | Biomedical literature | 10 req/sec (with key) | API key (free) |
@@ -319,7 +318,7 @@ class DataCollector:
 ## References
 
 - [OpenAlex API Documentation](https://docs.openalex.org/) -- Open bibliographic data API
-- [Semantic Scholar API](https://api.semanticscholar.org/) -- Paper and author data
+- [CrossRef API](https://api.crossref.org/) -- DOI resolution and metadata
 - [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) -- HTML parsing
 - [Scrapy Documentation](https://docs.scrapy.org/) -- Web scraping framework
 - [Playwright Documentation](https://playwright.dev/python/) -- Browser automation

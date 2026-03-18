@@ -22,22 +22,16 @@ Whether you are entering a new field and need foundational papers, tracking the 
 
 ## Algorithmic Recommendation Services
 
-### Semantic Scholar Recommendations
+### OpenAlex Related Works
 
-Semantic Scholar provides a free recommendation API that suggests papers based on a set of seed papers you provide:
+OpenAlex provides concept-based and citation-based discovery for 250M+ works across all disciplines:
 
 ```bash
-# Get recommendations based on positive and negative example papers
-curl -X POST "https://api.semanticscholar.org/recommendations/v1/papers/" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "positivePaperIds": ["CorpusId:12345", "CorpusId:67890"],
-    "negativePaperIds": ["CorpusId:11111"],
-    "fields": "title,authors,year,citationCount,url"
-  }'
+# Find works related to a specific paper via its concepts and citations
+curl "https://api.openalex.org/works?filter=cites:W2741809807&sort=cited_by_count:desc&per_page=10"
 ```
 
-The positive/negative seed approach lets you steer recommendations toward the specific intersection of topics you care about. Start with 3-5 highly relevant papers as positive seeds and 1-2 off-topic papers as negative seeds.
+Use OpenAlex's concept graph to find related work by browsing papers tagged with the same research concepts, or trace citation networks to find derivative and foundational papers.
 
 ### Connected Papers
 
@@ -70,7 +64,7 @@ Research Rabbit (researchrabbitapp.com) lets you build collections of papers and
 When algorithmic tools are insufficient, manual citation-based techniques remain powerful:
 
 ### Forward Citation Chaining
-Start with a foundational paper. Find all papers that cite it (using Google Scholar, Semantic Scholar, or Web of Science). Screen these citing papers by title and abstract to find relevant descendants. Repeat for the most important descendants.
+Start with a foundational paper. Find all papers that cite it (using Google Scholar, OpenAlex, or Web of Science). Screen these citing papers by title and abstract to find relevant descendants. Repeat for the most important descendants.
 
 ### Backward Citation Mining
 Read the reference list of a key paper. Identify and retrieve the most important cited works. This traces the intellectual lineage of ideas and helps you find the seminal papers in a subfield.
@@ -89,7 +83,7 @@ A sustainable paper discovery practice requires more than one-off searches. Buil
 
 1. **Check preprint alerts**: Review your arXiv, bioRxiv, or SSRN email alerts or RSS feeds (15 min).
 2. **Scan citation alerts**: Review Google Scholar citation alerts for new papers citing your key references (10 min).
-3. **Process recommendation queue**: Review suggestions from Semantic Scholar, Research Rabbit, or Connected Papers for any recently added seed papers (10 min).
+3. **Process recommendation queue**: Review suggestions from OpenAlex, Research Rabbit, or Connected Papers for any recently added seed papers (10 min).
 4. **Social signals**: Scan academic Twitter/Mastodon, relevant subreddits, or lab group Slack channels for shared papers (10 min).
 5. **Triage and queue**: Add promising papers to your "to read" queue with a priority tag (high/medium/low) and the reason you flagged them.
 
@@ -113,7 +107,7 @@ Finding papers outside your primary field is particularly challenging because yo
 
 ## References
 
-- Semantic Scholar API: https://api.semanticscholar.org
+- OpenAlex API: https://api.openalex.org
 - Connected Papers: https://www.connectedpapers.com
 - Research Rabbit: https://www.researchrabbitapp.com
 - Paper Recommendation: https://github.com/pengzhenghao/paper-recommendation

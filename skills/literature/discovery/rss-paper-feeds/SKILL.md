@@ -95,34 +95,40 @@ Recommended: Set alerts for:
 - Key competitor or collaborator publications
 ```
 
-### Semantic Scholar Alerts API
+### OpenAlex Citation Tracking
 
 ```python
 import requests
 
-def setup_semantic_scholar_alert(paper_id: str, email: str) -> dict:
+def track_citations_openalex(work_id: str) -> dict:
     """
-    Monitor citations for a specific paper via Semantic Scholar.
+    Monitor citations for a specific paper via OpenAlex.
 
     Args:
-        paper_id: Semantic Scholar paper ID or DOI
-        email: Email for notifications
+        work_id: OpenAlex work ID (e.g., 'W2741809807') or DOI
     """
-    # Fetch current citation count for baseline
+    headers = {"User-Agent": "ResearchPlugins/1.0 (https://wentor.ai)"}
     response = requests.get(
-        f"https://api.semanticscholar.org/graph/v1/paper/{paper_id}",
-        params={'fields': 'title,citationCount,citations.title,citations.year'}
+        f"https://api.openalex.org/works/{work_id}",
+        headers=headers
     )
     data = response.json()
 
+    # Get recent citing works
+    citing_resp = requests.get(
+        "https://api.openalex.org/works",
+        params={"filter": f"cites:{work_id}", "sort": "publication_date:desc", "per_page": 10},
+        headers=headers
+    )
+    citing = citing_resp.json().get("results", [])
+
     return {
         'paper': data.get('title', ''),
-        'current_citations': data.get('citationCount', 0),
-        'recent_citations': [
-            c for c in data.get('citations', [])
-            if c.get('year', 0) >= datetime.now().year - 1
-        ][:10],
-        'alert_email': email,
+        'current_citations': data.get('cited_by_count', 0),
+        'recent_citing_works': [
+            {'title': c.get('title'), 'year': c.get('publication_year')}
+            for c in citing
+        ],
         'status': 'configured'
     }
 ```

@@ -56,7 +56,7 @@ C4Context
 
     System(platform, "Wentor Platform", "AI-powered research assistant ecosystem")
 
-    System_Ext(scholar, "Semantic Scholar", "Academic paper database")
+    System_Ext(scholar, "OpenAlex", "Academic paper database")
     System_Ext(crossref, "CrossRef", "DOI resolution and metadata")
     System_Ext(github, "GitHub", "Code and skill repositories")
 

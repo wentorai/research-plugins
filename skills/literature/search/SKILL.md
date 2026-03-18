@@ -36,7 +36,7 @@ Select the skill matching the user's need, then `read` its SKILL.md.
 | [plos-open-access-api](./plos-open-access-api/SKILL.md) | Search PLOS open access journals with full-text Solr-powered API |
 | [pubmed-api](./pubmed-api/SKILL.md) | Search biomedical literature and retrieve records via PubMed E-utilities |
 | [scielo-api](./scielo-api/SKILL.md) | Access Latin American and developing world research via SciELO API |
-| [semantic-scholar-api](./semantic-scholar-api/SKILL.md) | Search papers and analyze citation graphs via Semantic Scholar |
+| [semantic-scholar-api](./semantic-scholar-api/SKILL.md) | Search papers and analyze citation graphs via OpenAlex and CrossRef APIs |
 | [share-research-api](./share-research-api/SKILL.md) | Discover open access research outputs via the SHARE notification API |
 | [systematic-search-strategy](./systematic-search-strategy/SKILL.md) | Construct rigorous systematic search strategies for literature reviews |
 | [worldcat-search-api](./worldcat-search-api/SKILL.md) | Search the world's largest library catalog via OCLC WorldCat API |

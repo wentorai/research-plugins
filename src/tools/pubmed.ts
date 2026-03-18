@@ -109,6 +109,9 @@ export function createPubMedTools(
         pmid: Type.String({ description: "PubMed ID (numeric string)" }),
       }),
       execute: async (input: { pmid: string }) => {
+        if (!input?.pmid) {
+          return toolResult({ error: 'pmid parameter is required (numeric PubMed ID, e.g., "33116299")' });
+        }
         const params = new URLSearchParams({
           db: "pubmed",
           id: input.pmid,

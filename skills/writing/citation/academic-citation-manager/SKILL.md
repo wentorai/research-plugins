@@ -18,7 +18,7 @@ Manage academic citations across multiple formats (BibTeX, APA 7th, MLA 9th, Chi
 
 Citation management is a persistent friction point in academic writing. Researchers collect references from multiple sources (databases, PDFs, colleagues, web pages), store them in different formats, and must output them in the specific style required by each target journal. Errors in citations -- misspelled author names, incorrect years, broken DOIs, inconsistent formatting -- are among the most common reasons for desk rejection and reviewer criticism.
 
-This skill provides a comprehensive citation management workflow that goes beyond what GUI reference managers offer. It can retrieve complete metadata from a DOI in seconds, convert between any citation format, detect and merge duplicate entries, validate entries against CrossRef and Semantic Scholar databases, and generate properly formatted bibliographies for any major citation style.
+This skill provides a comprehensive citation management workflow that goes beyond what GUI reference managers offer. It can retrieve complete metadata from a DOI in seconds, convert between any citation format, detect and merge duplicate entries, validate entries against CrossRef and OpenAlex databases, and generate properly formatted bibliographies for any major citation style.
 
 The approach is text-based and scriptable, making it ideal for integration with LaTeX workflows, Markdown writing pipelines, and automated document generation. All citation data is stored in standard BibTeX format as the canonical source, with on-demand conversion to other formats for specific manuscript requirements.
 
@@ -52,33 +52,36 @@ print(bibtex)
 # }
 ```
 
-### From Semantic Scholar
+### From OpenAlex
 
 ```python
-def get_citation_from_s2(paper_id):
-    """Retrieve citation data from Semantic Scholar API."""
-    url = f"https://api.semanticscholar.org/graph/v1/paper/{paper_id}"
-    params = {"fields": "title,authors,year,venue,doi,citationCount,externalIds"}
-    response = requests.get(url, params=params)
+def get_citation_from_openalex(work_id):
+    """Retrieve citation data from OpenAlex API."""
+    url = f"https://api.openalex.org/works/{work_id}"
+    headers = {"User-Agent": "ResearchPlugins/1.0 (https://wentor.ai)"}
+    response = requests.get(url, headers=headers)
     if response.status_code == 200:
         data = response.json()
         return format_as_bibtex(data)
     return None
 
-def format_as_bibtex(s2_data):
-    """Convert Semantic Scholar data to BibTeX."""
-    authors = s2_data.get("authors", [])
-    author_str = " and ".join(a["name"] for a in authors)
-    first_author = authors[0]["name"].split()[-1] if authors else "Unknown"
-    year = s2_data.get("year", "")
+def format_as_bibtex(oa_data):
+    """Convert OpenAlex data to BibTeX."""
+    authorships = oa_data.get("authorships", [])
+    author_str = " and ".join(a["author"]["display_name"] for a in authorships)
+    first_author = authorships[0]["author"]["display_name"].split()[-1] if authorships else "Unknown"
+    year = str(oa_data.get("publication_year", ""))
     key = f"{first_author}_{year}"
 
+    venue = oa_data.get("primary_location", {}) or {}
+    journal = (venue.get("source") or {}).get("display_name", "")
+
     return f"""@article{{{key},
-  title={{{s2_data.get('title', '')}}},
+  title={{{oa_data.get('title', '')}}},
   author={{{author_str}}},
   year={{{year}}},
-  journal={{{s2_data.get('venue', '')}}},
-  doi={{{s2_data.get('doi', '')}}}
+  journal={{{journal}}},
+  doi={{{oa_data.get('doi', '')}}}
 }}"""
 ```
 
@@ -308,7 +311,7 @@ pandoc paper.md --citeproc --bibliography=references.bib \
 ## References
 
 - CrossRef API: https://api.crossref.org
-- Semantic Scholar API: https://api.semanticscholar.org
+- OpenAlex API: https://api.openalex.org
 - APA 7th Edition Manual: https://apastyle.apa.org/products/publication-manual-7th-edition
 - BibTeX documentation: http://www.bibtex.org
 - CSL styles repository: https://github.com/citation-style-language/styles

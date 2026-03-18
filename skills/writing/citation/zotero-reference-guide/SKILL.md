@@ -38,7 +38,7 @@ The plugin is particularly powerful for literature reviews, where you need to sy
 - Identifies DOIs, arXiv IDs, and other persistent identifiers within references
 
 **Database Matching**
-- Matches parsed references against Crossref, Semantic Scholar, and other academic databases
+- Matches parsed references against Crossref, OpenAlex, and other academic databases
 - Retrieves complete metadata for matched references (abstract, keywords, citation count)
 - Displays match confidence to help users verify correct identification
 - Supports manual correction when automatic matching fails

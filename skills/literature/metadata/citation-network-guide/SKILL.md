@@ -49,7 +49,7 @@ Whether you are conducting a systematic literature review, mapping a new researc
 
 | Source | Coverage | API | Cost |
 |--------|----------|-----|------|
-| Semantic Scholar | 200M+ papers, CS/biomed focus | REST API, free | Free (rate limited) |
+| OpenAlex | 250M+ works, all disciplines | REST API, free | Free (no key required) |
 | OpenAlex | 250M+ works, all disciplines | REST API, free | Free |
 | Crossref | 140M+ DOIs | REST API | Free |
 | Web of Science | Curated, multi-disciplinary | Institutional | Licensed |
@@ -219,7 +219,7 @@ Traditional citations take years to accumulate. Altmetrics capture immediate att
 
 ## Best Practices
 
-- **Combine multiple data sources.** No single database has complete coverage. Merge OpenAlex and Semantic Scholar for best results.
+- **Combine multiple data sources.** No single database has complete coverage. Merge OpenAlex and CrossRef for best results.
 - **Normalize by field and age.** A 2024 paper in biology and a 2024 paper in mathematics have very different citation rate baselines.
 - **Use relative indicators.** Field-Weighted Citation Impact (FWCI) accounts for disciplinary differences.
 - **Do not equate citations with quality.** Retracted papers sometimes have high citation counts. Controversial papers accumulate criticism citations.
@@ -229,7 +229,7 @@ Traditional citations take years to accumulate. Altmetrics capture immediate att
 ## References
 
 - [OpenAlex API](https://docs.openalex.org/) -- Free, open bibliographic data
-- [Semantic Scholar API](https://api.semanticscholar.org/) -- AI-powered paper data
+- [CrossRef API](https://api.crossref.org/) -- DOI resolution and metadata
 - [VOSviewer](https://www.vosviewer.com/) -- Bibliometric visualization tool
 - [bibliometrix R package](https://www.bibliometrix.org/) -- Comprehensive bibliometric analysis
 - [Altmetric](https://www.altmetric.com/) -- Alternative impact metrics

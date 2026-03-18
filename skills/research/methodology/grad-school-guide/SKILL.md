@@ -30,7 +30,7 @@ A strong research question is the foundation of any good paper. It should be spe
 |-----------|-------------|---------------|
 | **F**easible | Can be answered with available resources | Do you have the data, compute, and time? |
 | **I**nteresting | Engages the research community | Would peers read this at a top venue? |
-| **N**ovel | Not already answered | Has Semantic Scholar search been done? |
+| **N**ovel | Not already answered | Has OpenAlex/CrossRef search been done? |
 | **E**thical | Follows research ethics standards | Does it require IRB approval? |
 | **R**elevant | Advances the field meaningfully | Does it connect to open problems? |
 

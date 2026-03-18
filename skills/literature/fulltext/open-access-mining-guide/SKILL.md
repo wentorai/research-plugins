@@ -93,11 +93,11 @@ Unpaywall / OpenAlex:
   - Use: Find OA versions of any DOI
   - Best for: Locating freely available versions of papers
 
-Semantic Scholar:
-  - Coverage: 200M+ papers, abstracts + some full text
-  - Access: Free API, bulk datasets
-  - Features: TLDR summaries, citation intents, S2ORC corpus
-  - Best for: NLP research on scientific text
+OpenAlex:
+  - Coverage: 250M+ works, all disciplines
+  - Access: Free API, no key required
+  - Features: Concepts, citation counts, author profiles, institution data
+  - Best for: Cross-disciplinary metadata and OA discovery
 ```
 
 ## Full-Text Retrieval and Parsing

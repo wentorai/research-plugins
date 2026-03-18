@@ -115,33 +115,6 @@ for source in results:
 
 Google Scholar profiles automatically display h-index and i10-index. No calculation needed, but coverage is the broadest (includes non-peer-reviewed sources).
 
-### From Semantic Scholar API
-
-```python
-def get_author_h_index(author_name):
-    """Calculate h-index for an author using Semantic Scholar."""
-    # Search for author
-    search_resp = requests.get(
-        "https://api.semanticscholar.org/graph/v1/author/search",
-        params={"query": author_name, "limit": 1}
-    )
-    authors = search_resp.json().get("data", [])
-    if not authors:
-        return None
-
-    author_id = authors[0]["authorId"]
-
-    # Get all papers with citation counts
-    papers_resp = requests.get(
-        f"https://api.semanticscholar.org/graph/v1/author/{author_id}/papers",
-        params={"fields": "citationCount", "limit": 1000}
-    )
-    papers = papers_resp.json().get("data", [])
-    citation_counts = [p.get("citationCount", 0) for p in papers]
-
-    return calculate_h_index(citation_counts)
-```
-
 ### From OpenAlex
 
 ```python

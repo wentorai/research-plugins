@@ -119,12 +119,12 @@ DeepResearch integrates with multiple search providers to cast a wide net:
 - **Tavily**: AI-optimized search API designed for research agents
 - **Serper**: Fast Google search results API
 - **SearXNG**: Self-hosted meta-search engine for privacy-focused deployments
-- **Semantic Scholar API**: Direct academic paper search (no API key required for basic access)
+- **OpenAlex API**: Direct academic paper search (free, no API key required)
 
 ```python
 # Configure multiple search backends for comprehensive coverage
 agent = DeepResearch(
-    search_engines=["bing", "semantic_scholar"],
+    search_engines=["bing", "openalex"],
     search_strategy="parallel",  # Search all engines simultaneously
 )
 ```
@@ -151,7 +151,7 @@ Create research profiles optimized for specific academic domains:
 # Biomedical research profile
 bio_config = {
     "preferred_sources": ["pubmed", "biorxiv", "nature", "science"],
-    "search_engines": ["semantic_scholar", "bing"],
+    "search_engines": ["openalex", "bing"],
     "terminology_mode": "technical",
     "citation_format": "apa",
 }
@@ -214,4 +214,4 @@ The trace includes all search queries, retrieved documents, LLM prompts and resp
 - Repository: https://github.com/Alibaba-NLP/DeepResearch
 - Qwen model family: https://github.com/QwenLM/Qwen
 - Alibaba NLP group: https://github.com/Alibaba-NLP
-- Semantic Scholar API: https://api.semanticscholar.org/
+- OpenAlex API: https://api.openalex.org/

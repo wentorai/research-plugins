@@ -43,14 +43,14 @@ result = researcher.research(
 
 ```python
 # Each sub-question triggers:
-# - Academic search (Semantic Scholar, arXiv)
+# - Academic search (OpenAlex, arXiv)
 # - Paper reading (abstract + key sections)
 # - Evidence extraction
 # - Follow-up question generation
 
 # Configuration
 researcher = OpenResearcher(
-    search_backends=["semantic_scholar", "arxiv"],
+    search_backends=["openalex", "arxiv"],
     max_iterations=5,           # Research rounds per sub-question
     papers_per_iteration=10,    # Papers to read per round
     follow_up_questions=True,   # Generate follow-up questions
@@ -96,7 +96,7 @@ researcher = OpenResearcher(
     llm_provider="anthropic",
     model="claude-sonnet-4-20250514",
     search_config={
-        "backends": ["semantic_scholar", "arxiv"],
+        "backends": ["openalex", "arxiv"],
         "max_results_per_query": 20,
     },
     reading_config={

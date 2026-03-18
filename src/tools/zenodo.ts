@@ -103,6 +103,9 @@ export function createZenodoTools(
         }),
       }),
       execute: async (input: { record_id: string }) => {
+        if (!input?.record_id) {
+          return toolResult({ error: 'record_id parameter is required (e.g., "1234567")' });
+        }
         const id = input.record_id.replace(/\D/g, "");
         const result = await trackedFetch("zenodo", `${BASE}/records/${id}`, undefined, 10_000);
         if (isTrackedError(result)) return result;

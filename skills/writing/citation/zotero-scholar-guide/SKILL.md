@@ -16,7 +16,7 @@ metadata:
 
 Zotero is the most widely used open-source reference manager in academia, offering a powerful combination of local storage, cloud sync, browser integration, and a comprehensive API. While most researchers use Zotero through its desktop application and browser connector, the Zotero API enables programmatic access that is essential for automated research workflows—saving papers from scripts, batch-importing search results, organizing libraries algorithmically, and integrating reference management into custom research pipelines.
 
-This skill covers using the Zotero Web API to create, read, update, and organize library items programmatically. It is designed for researchers who want to automate parts of their reference management workflow: importing papers from arXiv or Semantic Scholar searches directly into Zotero, auto-tagging papers based on content analysis, organizing collections programmatically, and exporting citations in various formats.
+This skill covers using the Zotero Web API to create, read, update, and organize library items programmatically. It is designed for researchers who want to automate parts of their reference management workflow: importing papers from arXiv or OpenAlex searches directly into Zotero, auto-tagging papers based on content analysis, organizing collections programmatically, and exporting citations in various formats.
 
 The skill complements the existing `zotero-api` skill by focusing specifically on practical scholar workflows—the common patterns a researcher uses when integrating Zotero into their daily literature management.
 

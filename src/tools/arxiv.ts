@@ -151,6 +151,9 @@ export function createArxivTools(
         }),
       }),
       execute: async (input: { arxiv_id: string }) => {
+        if (!input?.arxiv_id) {
+          return toolResult({ error: 'arxiv_id parameter is required (e.g., "2301.00001" or "2301.00001v2")' });
+        }
         const id = input.arxiv_id.replace("arXiv:", "").replace(/https?:\/\/arxiv\.org\/abs\//, "");
         const params = new URLSearchParams({ id_list: id });
 

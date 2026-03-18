@@ -51,7 +51,7 @@ How to use:
 Litmaps (litmaps.com) creates dynamic, multi-seed citation maps that update as new papers are published.
 
 Workflow:
-1. Add one or more seed papers via DOI, title, or Semantic Scholar ID
+1. Add one or more seed papers via DOI, title, or OpenAlex ID
 2. The tool builds a citation graph showing how the papers are connected
 3. Add "discover" nodes to expand the map with algorithmically suggested papers
 4. Create "collections" to organize maps by topic

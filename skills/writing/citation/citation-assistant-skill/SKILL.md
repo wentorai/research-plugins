@@ -1,12 +1,12 @@
 ---
 name: citation-assistant-skill
-description: "Claude Code skill for citation workflow via Semantic Scholar"
+description: "Claude Code skill for citation workflow via OpenAlex and CrossRef"
 metadata:
   openclaw:
     emoji: "📎"
     category: "writing"
     subcategory: "citation"
-    keywords: ["citation assistant", "Semantic Scholar", "Claude Code skill", "reference lookup", "academic citation"]
+    keywords: ["citation assistant", "OpenAlex", "Claude Code skill", "reference lookup", "academic citation"]
     source: "https://github.com/ZhangNy301/citation-assistant"
 ---
 
@@ -14,7 +14,7 @@ metadata:
 
 ## Overview
 
-Citation Assistant is a Claude Code skill that integrates Semantic Scholar API into the coding workflow for instant paper lookup, citation formatting, and reference management. Search for papers by title or keyword, get formatted BibTeX entries, find related works, and insert citations — all without leaving the terminal. Designed for researchers writing papers in LaTeX or Markdown.
+Citation Assistant is a Claude Code skill that integrates OpenAlex and CrossRef APIs into the coding workflow for instant paper lookup, citation formatting, and reference management. Search for papers by title or keyword, get formatted BibTeX entries, find related works, and insert citations — all without leaving the terminal. Designed for researchers writing papers in LaTeX or Markdown.
 
 ## Installation
 
@@ -32,106 +32,118 @@ openclaw skills install citation-assistant
 ```python
 import requests
 
-S2_API = "https://api.semanticscholar.org/graph/v1"
+OA_API = "https://api.openalex.org"
 
 def search_papers(query, limit=5):
-    """Search Semantic Scholar for papers."""
+    """Search OpenAlex for papers."""
     resp = requests.get(
-        f"{S2_API}/paper/search",
+        f"{OA_API}/works",
         params={
-            "query": query,
-            "limit": limit,
-            "fields": "title,authors,year,citationCount,"
-                      "externalIds,abstract,venue",
+            "search": query,
+            "per_page": limit,
         },
+        headers={"User-Agent": "ResearchPlugins/1.0 (https://wentor.ai)"},
     )
-    return resp.json().get("data", [])
+    return resp.json().get("results", [])
 
 papers = search_papers("attention mechanism transformer")
 for p in papers:
-    authors = ", ".join(a["name"] for a in p["authors"][:3])
-    print(f"[{p['year']}] {p['title']}")
-    print(f"  {authors} — Citations: {p['citationCount']}")
-    print(f"  DOI: {p.get('externalIds', {}).get('DOI', 'N/A')}")
+    authors = [a["author"]["display_name"] for a in p.get("authorships", [])[:3]]
+    print(f"[{p.get('publication_year')}] {p.get('title')}")
+    print(f"  {', '.join(authors)} — Citations: {p.get('cited_by_count')}")
+    print(f"  DOI: {p.get('doi', 'N/A')}")
 ```
 
 ### BibTeX Generation
 
 ```python
-def get_bibtex(paper_id):
-    """Get BibTeX for a Semantic Scholar paper."""
+def get_bibtex(doi):
+    """Get BibTeX for a paper via CrossRef DOI resolution."""
     resp = requests.get(
-        f"{S2_API}/paper/{paper_id}",
-        params={
-            "fields": "title,authors,year,venue,externalIds,"
-                      "journal,publicationTypes",
-        },
+        f"https://api.crossref.org/works/{doi}",
+        headers={"User-Agent": "ResearchPlugins/1.0 (https://wentor.ai; mailto:dev@wentor.ai)"},
     )
-    paper = resp.json()
+    msg = resp.json().get("message", {})
 
     # Generate citation key
-    first_author = paper["authors"][0]["name"].split()[-1].lower()
-    key = f"{first_author}{paper['year']}"
+    authors = msg.get("author", [])
+    first_author = authors[0].get("family", "unknown").lower() if authors else "unknown"
+    year = str(msg.get("published", {}).get("date-parts", [[""]])[0][0])
+    key = f"{first_author}{year}"
 
     # Build BibTeX
-    authors_str = " and ".join(a["name"] for a in paper["authors"])
-    doi = paper.get("externalIds", {}).get("DOI", "")
+    authors_str = " and ".join(f"{a.get('given', '')} {a.get('family', '')}".strip() for a in authors)
+    doi_str = msg.get("DOI", "")
+
+    title = msg.get("title", [""])[0] if isinstance(msg.get("title"), list) else msg.get("title", "")
+    journal = msg.get("container-title", [""])[0] if msg.get("container-title") else ""
 
     bibtex = f"""@article{{{key},
-  title = {{{paper['title']}}},
+  title = {{{title}}},
   author = {{{authors_str}}},
-  year = {{{paper['year']}}},
-  journal = {{{paper.get('venue', '')}}},
-  doi = {{{doi}}},
+  year = {{{year}}},
+  journal = {{{journal}}},
+  doi = {{{doi_str}}},
 }}"""
     return bibtex
 
 # Example
-bibtex = get_bibtex("204e3073870fae3d05bcbc2f6a8e263d9b72e776")
+bibtex = get_bibtex("10.18653/v1/N19-1423")
 print(bibtex)
 ```
 
 ### Citation Context
 
 ```python
-def get_citation_context(paper_id, limit=10):
-    """Get papers that cite this work with context."""
+def get_citing_works(openalex_id, limit=10):
+    """Get papers that cite this work via OpenAlex."""
     resp = requests.get(
-        f"{S2_API}/paper/{paper_id}/citations",
+        f"{OA_API}/works",
         params={
-            "fields": "title,year,contexts,intents",
-            "limit": limit,
+            "filter": f"cites:{openalex_id}",
+            "per_page": limit,
+            "sort": "cited_by_count:desc",
         },
+        headers={"User-Agent": "ResearchPlugins/1.0 (https://wentor.ai)"},
     )
-    citations = resp.json().get("data", [])
+    results = resp.json().get("results", [])
 
-    for cit in citations:
-        paper = cit["citingPaper"]
-        print(f"\n{paper['title']} ({paper.get('year', '?')})")
-        for ctx in cit.get("contexts", [])[:2]:
-            print(f"  Context: ...{ctx[:100]}...")
-        print(f"  Intent: {cit.get('intents', ['unknown'])}")
+    for paper in results:
+        authors = [a["author"]["display_name"] for a in paper.get("authorships", [])[:3]]
+        print(f"\n{paper.get('title')} ({paper.get('publication_year', '?')})")
+        print(f"  Authors: {', '.join(authors)}")
+        print(f"  Citations: {paper.get('cited_by_count', 0)}")
 
-get_citation_context("204e3073870fae3d05bcbc2f6a8e263d9b72e776")
+get_citing_works("W2741809807")
 ```
 
 ### Related Paper Discovery
 
 ```python
-def find_related(paper_id, limit=10):
-    """Find papers related to a given paper."""
+def find_related(openalex_id, limit=10):
+    """Find papers related to a given paper via OpenAlex."""
+    # Get the paper's concepts, then search for similar works
     resp = requests.get(
-        f"{S2_API}/paper/{paper_id}/recommendations",
-        params={
-            "fields": "title,authors,year,citationCount",
-            "limit": limit,
-        },
+        f"{OA_API}/works/{openalex_id}",
+        headers={"User-Agent": "ResearchPlugins/1.0 (https://wentor.ai)"},
     )
-    return resp.json().get("recommendedPapers", [])
+    paper = resp.json()
+    concepts = [c["display_name"] for c in paper.get("concepts", [])[:3]]
 
-related = find_related("204e3073870fae3d05bcbc2f6a8e263d9b72e776")
+    related_resp = requests.get(
+        f"{OA_API}/works",
+        params={
+            "search": " ".join(concepts),
+            "per_page": limit,
+            "sort": "cited_by_count:desc",
+        },
+        headers={"User-Agent": "ResearchPlugins/1.0 (https://wentor.ai)"},
+    )
+    return related_resp.json().get("results", [])
+
+related = find_related("W2741809807")
 for p in related:
-    print(f"[{p['year']}] {p['title']} ({p['citationCount']} cites)")
+    print(f"[{p.get('publication_year')}] {p.get('title')} ({p.get('cited_by_count')} cites)")
 ```
 
 ## Workflow Integration
@@ -161,10 +173,11 @@ def build_bibliography(queries, output_file="refs.bib"):
     for query in queries:
         papers = search_papers(query, limit=3)
         for paper in papers:
-            pid = paper.get("paperId")
-            if pid and pid not in seen_ids:
-                seen_ids.add(pid)
-                bibtex = get_bibtex(pid)
+            doi = paper.get("doi")
+            if doi and doi not in seen_ids:
+                seen_ids.add(doi)
+                bibtex = get_bibtex(doi.replace("https://doi.org/", ""))
+
                 all_bibtex.append(bibtex)
 
     with open(output_file, "w") as f:
@@ -189,4 +202,5 @@ build_bibliography([
 ## References
 
 - [Citation Assistant GitHub](https://github.com/ZhangNy301/citation-assistant)
-- [Semantic Scholar API](https://api.semanticscholar.org/)
+- [OpenAlex API](https://api.openalex.org/)
+- [CrossRef API](https://api.crossref.org/)

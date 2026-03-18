@@ -84,7 +84,7 @@ else:
 | SSRN | Preprint server | Social sciences, law, economics | ssrn.com |
 | Zenodo | Repository | All disciplines | zenodo.org |
 | CORE | Aggregator | 300M+ papers from repositories | core.ac.uk |
-| Semantic Scholar | Search + OA links | Cross-disciplinary | semanticscholar.org |
+| OpenAlex | Search + OA links | Cross-disciplinary | openalex.org |
 | BASE (Bielefeld) | Aggregator | 400M+ documents | base-search.net |
 
 ### Batch OA Lookup

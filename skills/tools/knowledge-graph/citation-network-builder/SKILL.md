@@ -44,12 +44,12 @@ OpenAlex (free):
   - Limits: Reference linking less complete than WoS
   - Best for: Large-scale analysis, reproducible research
 
-Semantic Scholar (free):
+CrossRef (free):
   - Format: JSON via REST API
-  - Coverage: ~200M papers, strong in CS/Biomed
-  - Strengths: Free, citation context, citation intents
-  - Limits: Weaker coverage in humanities and social sciences
-  - Best for: CS/AI-focused networks, citation intent analysis
+  - Coverage: ~150M DOIs across all publishers
+  - Strengths: Free, authoritative DOI metadata, reference linking
+  - Limits: No abstract text, citation counts may lag
+  - Best for: Cross-publisher networks, DOI resolution
 ```
 
 ### Data Cleaning for Network Construction

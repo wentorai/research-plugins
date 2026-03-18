@@ -225,7 +225,7 @@ package "Data Layer" {
 }
 
 package "External APIs" {
-  [Semantic Scholar] as S2
+  [Unpaywall] as UP
   [CrossRef] as CR
   [OpenAlex] as OA
 }

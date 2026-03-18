@@ -3554,7 +3554,7 @@
       "id": "semantic-scholar-recs-guide",
       "type": "skill",
       "name": "semantic-scholar-recs-guide",
-      "description": "Using Semantic Scholar recommendations API for paper discovery",
+      "description": "Paper discovery via recommendation APIs (OpenAlex, CrossRef citation networks)",
       "category": "literature",
       "subcategory": "discovery",
       "keywords": [
@@ -4758,7 +4758,7 @@
       "id": "semantic-scholar-api",
       "type": "skill",
       "name": "semantic-scholar-api",
-      "description": "Search papers and analyze citation graphs via Semantic Scholar",
+      "description": "Search papers and analyze citation graphs via OpenAlex and CrossRef APIs",
       "category": "literature",
       "subcategory": "search",
       "keywords": [
@@ -4769,7 +4769,7 @@
         "citation network"
       ],
       "path": "skills/literature/search/semantic-scholar-api",
-      "source": "https://api.semanticscholar.org/"
+      "source": "https://api.openalex.org/"
     },
     {
       "id": "share-research-api",
@@ -6588,12 +6588,12 @@
       "id": "citation-assistant-skill",
       "type": "skill",
       "name": "citation-assistant-skill",
-      "description": "Claude Code skill for citation workflow via Semantic Scholar",
+      "description": "Claude Code skill for citation workflow via OpenAlex and CrossRef",
       "category": "writing",
       "subcategory": "citation",
       "keywords": [
         "citation assistant",
-        "Semantic Scholar",
+        "OpenAlex",
         "Claude Code skill",
         "reference lookup",
         "academic citation"

@@ -24,6 +24,9 @@ export function createCrossRefTools(
         }),
       }),
       execute: async (input: { doi: string }) => {
+        if (!input?.doi) {
+          return toolResult({ error: 'doi parameter is required (e.g., "10.1038/nature12373")' });
+        }
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
         const tracked = await trackedFetch("crossref", `${BASE}/works/${encodeURIComponent(doi)}`, { headers });
         if (isTrackedError(tracked)) return tracked;

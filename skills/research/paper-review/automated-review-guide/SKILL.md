@@ -274,7 +274,7 @@ Plagiarism and integrity:
 
 Reference management:
   - scite.ai: smart citation analysis (supporting/contrasting)
-  - Semantic Scholar: related work discovery
+  - OpenAlex: related work discovery
   - Connected Papers: citation graph visualization
 ```
 

@@ -118,6 +118,9 @@ export function createDataCiteTools(
         }),
       }),
       execute: async (input: { doi: string }) => {
+        if (!input?.doi) {
+          return toolResult({ error: 'doi parameter is required (e.g., "10.5281/zenodo.1234567")' });
+        }
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
 
         const tracked = await trackedFetch(

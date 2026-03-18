@@ -62,7 +62,7 @@ from scientific_agent import HypothesisGenerator
 
 generator = HypothesisGenerator(
     llm_provider="anthropic",
-    knowledge_sources=["pubmed", "semantic_scholar"],
+    knowledge_sources=["pubmed", "openalex"],
 )
 
 hypotheses = generator.generate(

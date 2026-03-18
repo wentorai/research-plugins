@@ -12,7 +12,7 @@
 |-------|-------------|
 | [academic-citation-manager](../../skills/writing/citation/academic-citation-manager/) | Manage academic citations across BibTeX, APA, MLA, and Chicago formats |
 | [bibtex-management-guide](../../skills/writing/citation/bibtex-management-guide/) | Clean, format, deduplicate, and manage BibTeX bibliography files for LaTeX |
-| [citation-assistant-skill](../../skills/writing/citation/citation-assistant-skill/) | Claude Code skill for citation workflow via Semantic Scholar |
+| [citation-assistant-skill](../../skills/writing/citation/citation-assistant-skill/) | Claude Code skill for citation workflow via OpenAlex and CrossRef |
 | [citation-style-guide](../../skills/writing/citation/citation-style-guide/) | APA, MLA, Chicago citation format guide with CSL configuration |
 | [jabref-reference-guide](../../skills/writing/citation/jabref-reference-guide/) | Guide to JabRef open-source BibTeX and BibLaTeX reference manager |
 | [jasminum-zotero-guide](../../skills/writing/citation/jasminum-zotero-guide/) | Guide to Jasminum for retrieving CNKI Chinese academic metadata in Zotero |

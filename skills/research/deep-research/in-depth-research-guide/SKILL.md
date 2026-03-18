@@ -52,7 +52,7 @@ Search systematically across source tiers:
 
 | Tier | Source Type | Examples | Purpose |
 |------|-----------|---------|---------|
-| **1** | Academic databases | Semantic Scholar, PubMed, Scopus, Web of Science | Peer-reviewed primary research |
+| **1** | Academic databases | OpenAlex, PubMed, Scopus, Web of Science | Peer-reviewed primary research |
 | **2** | Preprint servers | arXiv, bioRxiv, SSRN, medRxiv | Cutting-edge, not yet reviewed |
 | **3** | Grey literature | WHO reports, World Bank, NBER working papers | Policy and institutional knowledge |
 | **4** | Patents and standards | Google Patents, USPTO, IEEE standards | Technical implementations |

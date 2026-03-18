@@ -41,7 +41,7 @@ Ethical guidelines:
     OpenAlex could answer it instead
 
 Official and semi-official alternatives:
-  - Semantic Scholar API: free, 100 requests/sec, excellent coverage
+  - OpenAlex API: free, no key required, excellent coverage
   - OpenAlex API: free, comprehensive, well-documented
   - Crossref API: free, DOI-based metadata and citation counts
   - CORE API: free, full-text open access content
@@ -232,12 +232,12 @@ OpenAlex (openalex.org):
   - Data: titles, abstracts, citations, authors, institutions
   - Best for: large-scale bibliometric analysis
 
-Semantic Scholar (semanticscholar.org):
-  - Coverage: 200M+ papers
-  - API: REST, free key available
-  - Rate limit: 100 requests/sec with API key
-  - Data: titles, abstracts, citations, citation contexts, TLDR
-  - Best for: citation analysis, NLP on papers
+OpenAlex (openalex.org):
+  - Coverage: 250M+ works, all disciplines
+  - API: REST, no key required
+  - Rate limit: ~10 requests/sec polite
+  - Data: titles, abstracts, citations, concepts, author profiles
+  - Best for: cross-disciplinary analysis, open data research
 
 Crossref (crossref.org):
   - Coverage: 130M+ DOIs

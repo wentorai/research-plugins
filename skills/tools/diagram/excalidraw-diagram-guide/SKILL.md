@@ -86,7 +86,7 @@ For software or experimental system diagrams, use grouped rectangles with labele
 Input: "Draw a system architecture with three layers:
         Frontend (React dashboard),
         Backend (FastAPI + PostgreSQL),
-        External (Semantic Scholar API, CrossRef API)"
+        External (OpenAlex API, CrossRef API)"
 ```
 
 The output places each layer as a dashed-border container with internal component boxes and inter-layer arrows.

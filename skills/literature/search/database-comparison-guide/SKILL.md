@@ -96,5 +96,5 @@ A robust literature search should query multiple databases to maximize recall:
 
 - **Scopus vs. Web of Science**: Scopus has broader coverage (especially post-2000 and non-English journals); WoS has deeper historical archives and the Journal Impact Factor.
 - **Google Scholar** finds the most results but lacks advanced filtering. Use it for snowball searches and finding grey literature, not as your primary systematic search tool.
-- **API access**: PubMed (E-utilities), Semantic Scholar, OpenAlex, and Crossref all offer free APIs for programmatic searching. Scopus and WoS require institutional API keys.
+- **API access**: PubMed (E-utilities), OpenAlex, and Crossref all offer free APIs for programmatic searching. Scopus and WoS require institutional API keys.
 - **Alert services**: Set up saved search alerts on PubMed, Scopus, and Google Scholar to stay current in fast-moving fields.

@@ -32,7 +32,7 @@ Both modes begin by parsing the paper's structure from its PDF or HTML source, e
 | DOI | Resolve via CrossRef/Unpaywall | Auto-fetches open access version |
 | arXiv ID | `https://arxiv.org/pdf/{id}` | Always available |
 | URL | Direct download | May require institutional access |
-| Semantic Scholar ID | S2 API + PDF link | Includes metadata |
+| OpenAlex ID | OpenAlex API + OA link | Includes metadata |
 
 ### PDF Parsing Pipeline
 
@@ -238,6 +238,6 @@ comparison = create_comparison_table(summaries,
 
 - GROBID: https://github.com/kermitt2/grobid
 - PyMuPDF: https://pymupdf.readthedocs.io
-- Semantic Scholar API: https://api.semanticscholar.org
+- OpenAlex API: https://api.openalex.org
 - Unpaywall API: https://unpaywall.org/products/api
 - S. Keshav, "How to Read a Paper" (2007): http://ccr.sigcomm.org/online/files/p83-keshavA.pdf

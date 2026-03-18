@@ -14,7 +14,7 @@ metadata:
 
 ## Overview
 
-OneCite is an AI-powered toolkit for parsing, completing, and formatting academic references. Given incomplete or messy citation strings, it extracts structured metadata, fills in missing fields via API lookups (CrossRef, Semantic Scholar), and outputs clean formatted references in any style (APA, MLA, BibTeX, Chicago). Available as a Python library and MCP server for agent integration.
+OneCite is an AI-powered toolkit for parsing, completing, and formatting academic references. Given incomplete or messy citation strings, it extracts structured metadata, fills in missing fields via API lookups (CrossRef, OpenAlex), and outputs clean formatted references in any style (APA, MLA, BibTeX, Chicago). Available as a Python library and MCP server for agent integration.
 
 ## Installation
 

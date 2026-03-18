@@ -293,7 +293,7 @@ Provide a detailed answer citing specific papers, methods, and findings from the
 - **Start with a clear schema.** Define your entity types and relations before extracting data. A schema change later requires re-processing.
 - **Use persistent identifiers.** DOIs for papers, ORCIDs for authors, and canonical names for methods prevent duplicate nodes.
 - **Validate extracted triples.** LLM extraction is imperfect. Sample and manually verify 5-10% of extractions.
-- **Enrich with external data.** Link your KG to OpenAlex, Semantic Scholar, or Wikidata for additional metadata.
+- **Enrich with external data.** Link your KG to OpenAlex, CrossRef, or Wikidata for additional metadata.
 - **Version your graph.** Export snapshots regularly and track changes over time.
 - **Design queries before building.** Know what questions you want to answer before deciding on the schema.
 

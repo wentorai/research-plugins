@@ -83,7 +83,7 @@ The skill supports building knowledge graphs from processed papers:
 
 - Extract entities (methods, datasets, metrics, tools, concepts)
 - Map relationships between entities (uses, extends, contradicts, supports)
-- Link to external knowledge bases (Semantic Scholar, OpenAlex, DOI)
+- Link to external knowledge bases (OpenAlex, CrossRef, DOI)
 - Track citation chains for key claims
 - Identify research lineages and methodological evolution
 

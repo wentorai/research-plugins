@@ -16,7 +16,7 @@ metadata:
 
 Academic PDFs are the primary format for distributing research, yet extracting structured data from them remains challenging. PDFs encode visual layout, not semantic structure -- headings, paragraphs, equations, tables, and citations are all just positioned text and graphics. GROBID (GeneRation Of BIbliographic Data) is the leading open-source tool for parsing academic PDFs into structured XML/TEI format, extracting metadata, body text, references, and figures with high accuracy.
 
-GROBID is used by major academic platforms including Semantic Scholar, CORE, and ResearchGate for large-scale document processing. It combines machine learning models (CRF and deep learning) with heuristic rules to handle the diverse formatting of academic papers across publishers and disciplines.
+GROBID is used by major academic platforms including CORE, ResearchGate, and others for large-scale document processing. It combines machine learning models (CRF and deep learning) with heuristic rules to handle the diverse formatting of academic papers across publishers and disciplines.
 
 This guide covers installing and running GROBID, using its REST API for batch processing, extracting specific elements (metadata, references, body sections), and integrating GROBID output into downstream workflows such as knowledge bases, systematic reviews, and literature analysis pipelines.
 

@@ -29,6 +29,9 @@ export function createOpenCitationsTools(
         }),
       }),
       execute: async (input: { doi: string }) => {
+        if (!input?.doi) {
+          return toolResult({ error: 'doi parameter is required (e.g., "10.1038/nature12373")' });
+        }
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
         const tracked = await trackedFetch("opencitations", `${BASE}/index/v2/citations/doi:${encodeURIComponent(doi)}`);
         if (isTrackedError(tracked)) return tracked;
@@ -58,6 +61,9 @@ export function createOpenCitationsTools(
         }),
       }),
       execute: async (input: { doi: string }) => {
+        if (!input?.doi) {
+          return toolResult({ error: 'doi parameter is required (e.g., "10.1038/nature12373")' });
+        }
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
         const tracked = await trackedFetch("opencitations", `${BASE}/index/v2/references/doi:${encodeURIComponent(doi)}`);
         if (isTrackedError(tracked)) return tracked;
@@ -87,6 +93,9 @@ export function createOpenCitationsTools(
         }),
       }),
       execute: async (input: { doi: string }) => {
+        if (!input?.doi) {
+          return toolResult({ error: 'doi parameter is required (e.g., "10.1038/nature12373")' });
+        }
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
         const tracked = await trackedFetch("opencitations", `${BASE}/index/v2/citation-count/doi:${encodeURIComponent(doi)}`);
         if (isTrackedError(tracked)) return tracked;

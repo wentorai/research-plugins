@@ -16,5 +16,5 @@ Select the skill matching the user's need, then `read` its SKILL.md.
 | [papers-we-love-guide](./papers-we-love-guide/SKILL.md) | Community-curated directory of influential CS research papers |
 | [rss-paper-feeds](./rss-paper-feeds/SKILL.md) | Set up RSS feeds and alerts to track new publications in your research area |
 | [semantic-paper-radar](./semantic-paper-radar/SKILL.md) | Semantic literature discovery and synthesis using embeddings |
-| [semantic-scholar-recs-guide](./semantic-scholar-recs-guide/SKILL.md) | Using Semantic Scholar recommendations API for paper discovery |
+| [semantic-scholar-recs-guide](./semantic-scholar-recs-guide/SKILL.md) | Paper discovery via recommendation APIs (OpenAlex, CrossRef citation networks) |
 | [zotero-arxiv-daily-guide](./zotero-arxiv-daily-guide/SKILL.md) | Guide to Zotero arXiv Daily for personalized daily paper recommendations |

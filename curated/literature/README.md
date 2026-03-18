@@ -17,7 +17,7 @@
 | [papers-we-love-guide](../../skills/literature/discovery/papers-we-love-guide/) | Community-curated directory of influential CS research papers |
 | [rss-paper-feeds](../../skills/literature/discovery/rss-paper-feeds/) | Set up RSS feeds and alerts to track new publications in your research area |
 | [semantic-paper-radar](../../skills/literature/discovery/semantic-paper-radar/) | Semantic literature discovery and synthesis using embeddings |
-| [semantic-scholar-recs-guide](../../skills/literature/discovery/semantic-scholar-recs-guide/) | Using Semantic Scholar recommendations API for paper discovery |
+| [semantic-scholar-recs-guide](../../skills/literature/discovery/semantic-scholar-recs-guide/) | Paper discovery via recommendation APIs (OpenAlex, CrossRef citation networks) |
 | [zotero-arxiv-daily-guide](../../skills/literature/discovery/zotero-arxiv-daily-guide/) | Guide to Zotero arXiv Daily for personalized daily paper recommendations |
 
 
@@ -107,7 +107,7 @@
 | [plos-open-access-api](../../skills/literature/search/plos-open-access-api/) | Search PLOS open access journals with full-text Solr-powered API |
 | [pubmed-api](../../skills/literature/search/pubmed-api/) | Search biomedical literature and retrieve records via PubMed E-utilities |
 | [scielo-api](../../skills/literature/search/scielo-api/) | Access Latin American and developing world research via SciELO API |
-| [semantic-scholar-api](../../skills/literature/search/semantic-scholar-api/) | Search papers and analyze citation graphs via Semantic Scholar |
+| [semantic-scholar-api](../../skills/literature/search/semantic-scholar-api/) | Search papers and analyze citation graphs via OpenAlex and CrossRef APIs |
 | [share-research-api](../../skills/literature/search/share-research-api/) | Discover open access research outputs via the SHARE notification API |
 | [systematic-search-strategy](../../skills/literature/search/systematic-search-strategy/) | Construct rigorous systematic search strategies for literature reviews |
 | [worldcat-search-api](../../skills/literature/search/worldcat-search-api/) | Search the world's largest library catalog via OCLC WorldCat API |

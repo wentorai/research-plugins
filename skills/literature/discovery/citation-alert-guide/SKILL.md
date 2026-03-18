@@ -24,7 +24,7 @@ A skill for setting up automated citation alerts and tracking systems that notif
 | Web of Science | Citation alert, search alert, journal ToC | WoS-indexed journals | Institutional |
 | Scopus | Citation alert, search alert, author alert | Scopus-indexed journals | Institutional |
 | PubMed | Email alert (My NCBI) | Biomedical literature | Free |
-| Semantic Scholar | Paper alert, author alert, topic feed | CS, biomedical, broad | Free |
+| OpenAlex | Work tracking, author profiles, concept feeds | All disciplines | Free |
 | ResearchGate | Author follow, recommendation | Member-uploaded papers | Free |
 
 ### Setting Up Google Scholar Alerts
@@ -76,7 +76,7 @@ def design_alert_system(research_topics: list[str],
             "frequency": "weekly"
         },
         "author_alerts": {
-            "platform": "Semantic Scholar + Scopus",
+            "platform": "OpenAlex + Scopus",
             "authors": key_authors,
             "frequency": "monthly"
         },

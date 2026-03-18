@@ -16,7 +16,7 @@ metadata:
 
 Local Deep Research is an open-source deep research tool with over 4,000 GitHub stars that conducts comprehensive multi-source research using either local LLMs (via Ollama, LM Studio, or vLLM) or cloud-based models. It searches across 10+ academic and web sources simultaneously, synthesizes the findings, and produces well-cited research reports. The project is designed for researchers who need thorough, multi-perspective research coverage while maintaining the option to keep everything running locally for privacy.
 
-What makes Local Deep Research stand out is its breadth of search integration. Rather than relying on a single search API, it queries multiple sources in parallel -- including Google Scholar, Semantic Scholar, arXiv, PubMed, Wikipedia, web search engines, and more -- then cross-references and synthesizes the results. This multi-source approach produces more comprehensive and balanced research outputs compared to single-source tools.
+What makes Local Deep Research stand out is its breadth of search integration. Rather than relying on a single search API, it queries multiple sources in parallel -- including Google Scholar, OpenAlex, arXiv, PubMed, Wikipedia, web search engines, and more -- then cross-references and synthesizes the results. This multi-source approach produces more comprehensive and balanced research outputs compared to single-source tools.
 
 The tool is particularly well-suited for academic researchers who need to conduct preliminary literature reviews, verify claims across multiple databases, or explore interdisciplinary topics where relevant work may be scattered across different platforms and publication venues.
 
@@ -94,7 +94,7 @@ from local_deep_research import DeepResearcher
 researcher = DeepResearcher(
     llm_provider="ollama",
     llm_model="llama3.1:70b",
-    search_sources=["google_scholar", "semantic_scholar",
+    search_sources=["google_scholar", "openalex",
                     "arxiv", "web"],
     max_iterations=10,
 )
@@ -114,7 +114,7 @@ Local Deep Research queries multiple sources in parallel for each research sub-q
 | Source | Type | API Key Required | Best For |
 |--------|------|-----------------|----------|
 | Google Scholar | Academic | No (via scraping) | Broad academic search |
-| Semantic Scholar | Academic | Optional | CS/AI papers, citation data |
+| OpenAlex | Academic | No | Cross-disciplinary, citation data |
 | arXiv | Academic | No | Preprints, ML/physics/math |
 | PubMed | Academic | No | Biomedical literature |
 | Wikipedia | Encyclopedia | No | Background and definitions |
@@ -128,12 +128,12 @@ Local Deep Research queries multiple sources in parallel for each research sub-q
 # Customize source priorities for your research domain
 researcher = DeepResearcher(
     search_sources={
-        "primary": ["semantic_scholar", "arxiv"],
+        "primary": ["openalex", "arxiv"],
         "secondary": ["google_scholar", "web"],
         "reference": ["wikipedia", "crossref"],
     },
     source_weights={
-        "semantic_scholar": 1.5,  # Prioritize academic sources
+        "openalex": 1.5,  # Prioritize academic sources
         "arxiv": 1.5,
         "web": 0.8,
     },
@@ -249,5 +249,5 @@ local-deep-research "Your sensitive research query here"
 - Repository: https://github.com/LearningCircuit/local-deep-research
 - Ollama: https://ollama.com/
 - SearXNG: https://github.com/searxng/searxng
-- Semantic Scholar API: https://api.semanticscholar.org/
+- OpenAlex API: https://api.openalex.org/
 - arXiv API: https://info.arxiv.org/help/api/

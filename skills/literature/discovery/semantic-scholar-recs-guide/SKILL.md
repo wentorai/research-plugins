@@ -1,6 +1,6 @@
 ---
 name: semantic-scholar-recs-guide
-description: "Using Semantic Scholar recommendations API for paper discovery"
+description: "Paper discovery via recommendation APIs (OpenAlex, CrossRef citation networks)"
 metadata:
   openclaw:
     emoji: "🤖"
@@ -10,70 +10,72 @@ metadata:
     source: "wentor-research-plugins"
 ---
 
-# Semantic Scholar Recommendations Guide
+# Paper Discovery via OpenAlex & CrossRef
 
-Leverage the Semantic Scholar (S2) API to discover related papers, traverse citation networks, and build comprehensive reading lists programmatically.
+Leverage the OpenAlex and CrossRef APIs to discover related papers, traverse citation networks, and build comprehensive reading lists programmatically.
 
 ## Overview
 
-Semantic Scholar indexes over 200 million academic papers and provides a free, rate-limited API that supports:
+OpenAlex indexes over 250 million academic works and provides a free, no-key-required API that supports:
 
-- Paper search by title, keyword, or DOI
-- Recommendations based on positive and negative seed papers
+- Work search by title, keyword, or DOI
 - Citation and reference graph traversal
 - Author profiles and publication histories
-- Bulk data access for large-scale analyses
+- Concept-based discovery across disciplines
+- Institutional and venue filtering
 
-Base URL: `https://api.semanticscholar.org/graph/v1`
-Recommendations endpoint: `https://api.semanticscholar.org/recommendations/v1`
+Base URL: `https://api.openalex.org`
+CrossRef URL: `https://api.crossref.org`
 
-## Getting Recommendations from Seed Papers
+## Finding Related Papers
 
-The recommendations endpoint accepts a list of positive (and optionally negative) paper IDs and returns related papers ranked by relevance.
+Use OpenAlex's concept graph and citation data to discover related work from seed papers.
 
-### Single-Paper Recommendations
+### Concept-Based Discovery
 
 ```python
 import requests
 
-PAPER_ID = "649def34f8be52c8b66281af98ae884c09aef38b"  # SHA or S2 ID
+HEADERS = {"User-Agent": "ResearchPlugins/1.0 (https://wentor.ai)"}
+WORK_ID = "W2741809807"  # OpenAlex work ID
 
+# Get the seed paper's concepts
 response = requests.get(
-    f"https://api.semanticscholar.org/recommendations/v1/papers/forpaper/{PAPER_ID}",
-    params={
-        "fields": "title,authors,year,citationCount,abstract,externalIds",
-        "limit": 20
-    },
-    headers={"x-api-key": "YOUR_API_KEY"}  # optional, increases rate limit
+    f"https://api.openalex.org/works/{WORK_ID}",
+    headers=HEADERS
 )
+paper = response.json()
+concepts = [c["id"] for c in paper.get("concepts", [])[:3]]
 
-for paper in response.json()["recommendedPapers"]:
-    print(f"[{paper['year']}] {paper['title']} (citations: {paper['citationCount']})")
+# Find works sharing the same concepts, sorted by citations
+for concept_id in concepts:
+    related = requests.get(
+        "https://api.openalex.org/works",
+        params={"filter": f"concepts.id:{concept_id}", "sort": "cited_by_count:desc", "per_page": 10},
+        headers=HEADERS
+    )
+    for w in related.json().get("results", []):
+        print(f"[{w.get('publication_year')}] {w.get('title')} (citations: {w.get('cited_by_count')})")
 ```
 
-### Multi-Paper Recommendations (Positive + Negative Seeds)
+### CrossRef Subject-Based Discovery
 
 ```python
 import requests
 
-payload = {
-    "positivePaperIds": [
-        "649def34f8be52c8b66281af98ae884c09aef38b",
-        "ARXIV:2005.14165"  # can use arXiv ID prefix
-    ],
-    "negativePaperIds": [
-        "ArXiv:1706.03762"  # exclude attention-is-all-you-need style papers
-    ]
-}
+def search_crossref(query, limit=10, sort="is-referenced-by-count"):
+    """Search CrossRef for papers sorted by citation count."""
+    resp = requests.get(
+        "https://api.crossref.org/works",
+        params={"query": query, "rows": limit, "sort": sort, "order": "desc"},
+        headers={"User-Agent": "ResearchPlugins/1.0 (https://wentor.ai; mailto:dev@wentor.ai)"}
+    )
+    return resp.json().get("message", {}).get("items", [])
 
-response = requests.post(
-    "https://api.semanticscholar.org/recommendations/v1/papers/",
-    json=payload,
-    params={"fields": "title,year,citationCount,url,abstract", "limit": 30}
-)
-
-results = response.json()["recommendedPapers"]
-print(f"Found {len(results)} recommended papers")
+results = search_crossref("transformer attention mechanism")
+for w in results:
+    title = w.get("title", [""])[0] if w.get("title") else ""
+    print(f"  {title} — Cited by: {w.get('is-referenced-by-count', 0)}")
 ```
 
 ## Citation Network Traversal
@@ -83,48 +85,49 @@ Walk the citation graph to discover foundational and derivative works.
 ### Forward Citations (Who Cited This Paper?)
 
 ```python
-paper_id = "649def34f8be52c8b66281af98ae884c09aef38b"
+work_id = "W2741809807"
 
 response = requests.get(
-    f"https://api.semanticscholar.org/graph/v1/paper/{paper_id}/citations",
+    "https://api.openalex.org/works",
     params={
-        "fields": "title,year,citationCount,authors",
-        "limit": 100,
-        "offset": 0
-    }
+        "filter": f"cites:{work_id}",
+        "sort": "cited_by_count:desc",
+        "per_page": 20
+    },
+    headers=HEADERS
 )
 
-citations = response.json()["data"]
-# Sort by citation count to find most influential derivative works
-citations.sort(key=lambda x: x["citingPaper"]["citationCount"], reverse=True)
-for c in citations[:10]:
-    p = c["citingPaper"]
-    print(f"  [{p['year']}] {p['title']} ({p['citationCount']} cites)")
+for w in response.json().get("results", []):
+    print(f"  [{w.get('publication_year')}] {w.get('title')} ({w.get('cited_by_count')} cites)")
 ```
 
 ### Backward References (What Did This Paper Cite?)
 
 ```python
 response = requests.get(
-    f"https://api.semanticscholar.org/graph/v1/paper/{paper_id}/references",
-    params={"fields": "title,year,citationCount,authors", "limit": 100}
+    f"https://api.openalex.org/works/{work_id}",
+    headers=HEADERS
 )
+paper = response.json()
+ref_ids = paper.get("referenced_works", [])
 
-refs = response.json()["data"]
-refs.sort(key=lambda x: x["citedPaper"]["citationCount"], reverse=True)
+# Fetch details for referenced works
+for ref_id in ref_ids[:20]:
+    ref = requests.get(f"https://api.openalex.org/works/{ref_id.split('/')[-1]}", headers=HEADERS).json()
+    print(f"  [{ref.get('publication_year')}] {ref.get('title')} ({ref.get('cited_by_count')} cites)")
 ```
 
 ## Building a Reading List Pipeline
 
-Combine search, recommendations, and citation traversal into a discovery pipeline:
+Combine search, concept discovery, and citation traversal into a discovery pipeline:
 
 | Step | Method | Purpose |
 |------|--------|---------|
 | 1. Seed selection | Manual or keyword search | Identify 3-5 highly relevant papers |
-| 2. Expand via recs | Multi-paper recommendations | Find thematically related work |
-| 3. Forward citation | Citations endpoint | Find recent derivative works |
-| 4. Backward citation | References endpoint | Find foundational papers |
-| 5. Deduplicate | S2 paper ID matching | Remove duplicates across steps |
+| 2. Expand via concepts | OpenAlex concept graph | Find thematically related work |
+| 3. Forward citation | OpenAlex cites filter | Find recent derivative works |
+| 4. Backward citation | referenced_works field | Find foundational papers |
+| 5. Deduplicate | OpenAlex work ID matching | Remove duplicates across steps |
 | 6. Rank & filter | Sort by year, citations, relevance | Prioritize reading order |
 
 ```python
@@ -133,32 +136,46 @@ def build_reading_list(seed_ids, max_papers=50):
     seen = set()
     candidates = []
 
-    # Step 1: Get recommendations
-    recs = get_recommendations(seed_ids)
-    for paper in recs:
-        if paper["paperId"] not in seen:
-            seen.add(paper["paperId"])
-            candidates.append(paper)
+    for seed_id in seed_ids:
+        # Get concepts from seed paper
+        paper = requests.get(f"https://api.openalex.org/works/{seed_id}", headers=HEADERS).json()
+        concept_ids = [c["id"] for c in paper.get("concepts", [])[:2]]
 
-    # Step 2: Get citations of seed papers
-    for sid in seed_ids:
-        cites = get_citations(sid, limit=50)
-        for c in cites:
-            pid = c["citingPaper"]["paperId"]
-            if pid not in seen:
-                seen.add(pid)
-                candidates.append(c["citingPaper"])
+        # Find related works via concepts
+        for cid in concept_ids:
+            related = requests.get(
+                "https://api.openalex.org/works",
+                params={"filter": f"concepts.id:{cid}", "sort": "cited_by_count:desc", "per_page": 20},
+                headers=HEADERS
+            ).json().get("results", [])
+            for w in related:
+                wid = w.get("id", "").split("/")[-1]
+                if wid not in seen:
+                    seen.add(wid)
+                    candidates.append(w)
 
-    # Step 3: Rank by citation count and recency
-    candidates.sort(key=lambda p: (p.get("year", 0), p.get("citationCount", 0)), reverse=True)
+        # Get citing works
+        citing = requests.get(
+            "https://api.openalex.org/works",
+            params={"filter": f"cites:{seed_id}", "sort": "cited_by_count:desc", "per_page": 20},
+            headers=HEADERS
+        ).json().get("results", [])
+        for w in citing:
+            wid = w.get("id", "").split("/")[-1]
+            if wid not in seen:
+                seen.add(wid)
+                candidates.append(w)
+
+    # Rank by citation count and recency
+    candidates.sort(key=lambda p: (p.get("publication_year", 0), p.get("cited_by_count", 0)), reverse=True)
     return candidates[:max_papers]
 ```
 
-## Rate Limits and Best Practices
+## Best Practices
 
-- **Without API key**: 100 requests per 5 minutes
-- **With API key**: 1 request/second sustained (request a key at semanticscholar.org/product/api)
-- Always include only the fields you need to reduce payload size
-- Use `offset` and `limit` for pagination on large result sets
+- OpenAlex is free with no API key required; use a polite `User-Agent` header
+- CrossRef requires a polite pool user agent with contact info for higher rate limits
+- Always include only the fields you need via `select` parameter to reduce payload size
+- Use `page` and `per_page` for pagination on large result sets
 - Cache responses locally to avoid redundant requests
-- Use DOI, arXiv ID, or PubMed ID as paper identifiers for cross-system compatibility (prefix with `DOI:`, `ARXIV:`, or `PMID:`)
+- Use DOI as the universal identifier for cross-system compatibility

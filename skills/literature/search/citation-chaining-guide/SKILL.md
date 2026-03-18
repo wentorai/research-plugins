@@ -40,24 +40,30 @@ Examine the reference list of each seed paper and identify which cited works are
 ```python
 import requests
 
-def get_references(paper_id, limit=100):
-    """Get all references of a paper via Semantic Scholar."""
-    url = f"https://api.semanticscholar.org/graph/v1/paper/{paper_id}/references"
-    response = requests.get(url, params={
-        "fields": "title,year,citationCount,externalIds,abstract",
-        "limit": limit
-    })
-    refs = response.json().get("data", [])
-    return [r["citedPaper"] for r in refs if r["citedPaper"].get("title")]
+HEADERS = {"User-Agent": "ResearchPlugins/1.0 (https://wentor.ai)"}
+
+def get_references(work_id):
+    """Get all references of a paper via OpenAlex."""
+    url = f"https://api.openalex.org/works/{work_id}"
+    response = requests.get(url, headers=HEADERS)
+    paper = response.json()
+    ref_ids = paper.get("referenced_works", [])
+
+    references = []
+    for ref_id in ref_ids:
+        ref = requests.get(f"https://api.openalex.org/works/{ref_id.split('/')[-1]}", headers=HEADERS).json()
+        if ref.get("title"):
+            references.append(ref)
+    return references
 
 # Get references of a seed paper
-seed_doi = "DOI:10.1038/s41586-021-03819-2"
-references = get_references(seed_doi)
+seed_id = "W2741809807"
+references = get_references(seed_id)
 
 # Sort by citation count to find the most influential foundations
-references.sort(key=lambda p: p.get("citationCount", 0), reverse=True)
+references.sort(key=lambda p: p.get("cited_by_count", 0), reverse=True)
 for ref in references[:15]:
-    print(f"[{ref.get('year', '?')}] {ref['title']} ({ref.get('citationCount', 0)} citations)")
+    print(f"[{ref.get('publication_year', '?')}] {ref['title']} ({ref.get('cited_by_count', 0)} citations)")
 ```
 
 ### Step 3: Forward Chaining (Citation Tracking)
@@ -65,28 +71,32 @@ for ref in references[:15]:
 Find all papers that have cited your seed paper.
 
 ```python
-def get_citations(paper_id, limit=200):
-    """Get papers citing a given paper via Semantic Scholar."""
-    url = f"https://api.semanticscholar.org/graph/v1/paper/{paper_id}/citations"
+def get_citations(work_id, limit=200):
+    """Get papers citing a given paper via OpenAlex."""
     all_citations = []
-    offset = 0
-    while offset < limit:
-        response = requests.get(url, params={
-            "fields": "title,year,citationCount,externalIds,abstract",
-            "limit": min(100, limit - offset),
-            "offset": offset
-        })
-        data = response.json().get("data", [])
-        if not data:
+    page = 1
+    while len(all_citations) < limit:
+        response = requests.get(
+            "https://api.openalex.org/works",
+            params={
+                "filter": f"cites:{work_id}",
+                "sort": "cited_by_count:desc",
+                "per_page": min(200, limit - len(all_citations)),
+                "page": page
+            },
+            headers=HEADERS
+        )
+        results = response.json().get("results", [])
+        if not results:
             break
-        all_citations.extend([c["citingPaper"] for c in data if c["citingPaper"].get("title")])
-        offset += len(data)
+        all_citations.extend(results)
+        page += 1
     return all_citations
 
-citations = get_citations(seed_doi)
+citations = get_citations(seed_id)
 # Filter for recent, well-cited papers
-recent_impactful = [c for c in citations if c.get("year", 0) >= 2022 and c.get("citationCount", 0) >= 5]
-recent_impactful.sort(key=lambda p: p.get("citationCount", 0), reverse=True)
+recent_impactful = [c for c in citations if c.get("publication_year", 0) >= 2022 and c.get("cited_by_count", 0) >= 5]
+recent_impactful.sort(key=lambda p: p.get("cited_by_count", 0), reverse=True)
 ```
 
 ### Step 4: Co-Citation and Bibliographic Coupling
@@ -134,7 +144,7 @@ Repeat the process with the most relevant papers discovered in each round:
 | Google Scholar "Cited by" | Forward chaining | Free |
 | Web of Science "Cited References" / "Times Cited" | Both directions | Subscription |
 | Scopus "References" / "Cited by" | Both directions | Subscription |
-| Semantic Scholar API | Programmatic, both directions | Free |
+| OpenAlex API | Programmatic, both directions | Free |
 | Connected Papers (connectedpapers.com) | Visual co-citation graph | Free (limited) |
 | Litmaps (litmaps.com) | Visual citation network | Free tier |
 | CoCites (cocites.com) | Co-citation analysis | Free |
@@ -145,4 +155,4 @@ Repeat the process with the most relevant papers discovered in each round:
 - **Citation bias**: Highly cited papers are not always the best or most relevant. Pay attention to less-cited but methodologically sound papers.
 - **Recency bias**: Forward chaining favors recent papers with fewer citations. Allow time for citation accumulation or use Mendeley readership as a proxy.
 - **Field boundaries**: Citation chains tend to stay within disciplinary silos. Combine with keyword searches in adjacent-field databases to break out.
-- **Incomplete coverage**: No single database indexes all citations. Cross-check with at least two sources (e.g., Semantic Scholar + Google Scholar).
+- **Incomplete coverage**: No single database indexes all citations. Cross-check with at least two sources (e.g., OpenAlex + Google Scholar).
