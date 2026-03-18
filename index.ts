@@ -10,6 +10,14 @@ import { createDoajTools } from "./src/tools/doaj.js";
 import { createDblpTools } from "./src/tools/dblp.js";
 import { createBiorxivTools } from "./src/tools/biorxiv.js";
 import { createOpenAireTools } from "./src/tools/openaire.js";
+import { createZenodoTools } from "./src/tools/zenodo.js";
+import { createOrcidTools } from "./src/tools/orcid.js";
+import { createInspireHepTools } from "./src/tools/inspire-hep.js";
+import { createHalTools } from "./src/tools/hal.js";
+import { createOsfPreprintsTools } from "./src/tools/osf-preprints.js";
+import { createDataCiteTools } from "./src/tools/datacite.js";
+import { createRorTools } from "./src/tools/ror.js";
+// ChemRxiv: REMOVED — blocked by Cloudflare WAF, returns HTML challenge instead of JSON
 
 export default function activate(api: OpenClawPluginApi) {
   // --- Existing tools ---
@@ -70,4 +78,45 @@ export default function activate(api: OpenClawPluginApi) {
     (ctx) => createOpenAireTools(ctx, api),
     { names: ["search_openaire"] },
   );
+
+  // --- Phase 2: Domain-specific tools ---
+
+  api.registerTool(
+    (ctx) => createZenodoTools(ctx, api),
+    { names: ["search_zenodo", "get_zenodo_record"] },
+  );
+
+  api.registerTool(
+    (ctx) => createOrcidTools(ctx, api),
+    { names: ["search_orcid", "get_orcid_works"] },
+  );
+
+  api.registerTool(
+    (ctx) => createInspireHepTools(ctx, api),
+    { names: ["search_inspire", "get_inspire_paper"] },
+  );
+
+  api.registerTool(
+    (ctx) => createHalTools(ctx, api),
+    { names: ["search_hal"] },
+  );
+
+  api.registerTool(
+    (ctx) => createOsfPreprintsTools(ctx, api),
+    { names: ["search_osf_preprints"] },
+  );
+
+  // --- Phase 3: Infrastructure tools ---
+
+  api.registerTool(
+    (ctx) => createDataCiteTools(ctx, api),
+    { names: ["search_datacite", "resolve_datacite_doi"] },
+  );
+
+  api.registerTool(
+    (ctx) => createRorTools(ctx, api),
+    { names: ["search_ror"] },
+  );
+
+  // ChemRxiv: blocked by Cloudflare — moved to Layer 2 (Browser RPA)
 }

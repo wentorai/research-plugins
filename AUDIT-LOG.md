@@ -115,10 +115,62 @@
 - **API Test**: 200 OK
 - **Notes**: Uniquely supports EU funder filtering (EC, NSF, NIH, etc.). Complex XML-in-JSON parsing handled by parseOpenAireResult helper. Extended timeout (15s).
 
+### [013-new] module:zenodo — search_zenodo, get_zenodo_record
+- **Verdict**: PASS
+- **Quality**: 4.3/5
+- **Type**: Agent Tool (TypeScript, 2 tools) — NEW
+- **API Free**: Yes (no key required)
+- **API Test**: 200 OK
+
+### [014-new] module:orcid — search_orcid, get_orcid_works
+- **Verdict**: PASS
+- **Quality**: 4.4/5
+- **Type**: Agent Tool (TypeScript, 2 tools) — NEW
+- **API Free**: Yes (public API, no key required)
+- **API Test**: 200 OK
+
+### [015-new] module:inspire-hep — search_inspire, get_inspire_paper
+- **Verdict**: PASS
+- **Quality**: 4.3/5
+- **Type**: Agent Tool (TypeScript, 2 tools) — NEW
+- **API Free**: Yes (no key required, high-energy physics literature)
+- **API Test**: 200 OK
+
+### [016-new] module:hal — search_hal
+- **Verdict**: PASS
+- **Quality**: 4.2/5
+- **Type**: Agent Tool (TypeScript, 1 tool) — NEW
+- **API Free**: Yes (French open archive, no key)
+- **API Test**: 200 OK
+
+### [017-new] module:osf-preprints — search_osf_preprints
+- **Verdict**: PASS
+- **Quality**: 4.2/5
+- **Type**: Agent Tool (TypeScript, 1 tool) — NEW
+- **API Free**: Yes (Center for Open Science, no key)
+- **API Test**: 200 OK
+
+### [018-new] module:datacite — search_datacite, resolve_datacite_doi
+- **Verdict**: PASS
+- **Quality**: 4.4/5
+- **Type**: Agent Tool (TypeScript, 2 tools) — NEW
+- **API Free**: Yes (no key required, dataset DOI resolution)
+- **API Test**: 200 OK
+
+### [019-new] module:ror — search_ror
+- **Verdict**: PASS
+- **Quality**: 4.2/5
+- **Type**: Agent Tool (TypeScript, 1 tool) — NEW
+- **API Free**: Yes (Research Organization Registry, no key)
+- **API Test**: 200 OK
+
+### [020-skipped] chemrxiv — SKIPPED (Cloudflare blocked)
+- **Notes**: ChemRxiv public API returns 403 (Cloudflare protection). Already identified and commented out in index.ts. Deferred to Layer 2 (Browser RPA).
+
 ### Phase 1 Summary
-- **11 active modules, 23 tools** (semantic-scholar pre-removed, 6 new modules added)
-- **10 PASS, 1 FIX** (crossref filter bug fixed)
-- All 11 APIs verified live and returning 200
+- **18 active modules, 34 tools** (semantic-scholar removed, 13 new modules added)
+- **17 PASS, 1 FIX** (crossref filter bug fixed)
+- All 18 APIs verified live (ChemRxiv deferred due to Cloudflare)
 - New modules use trackedFetch with source health monitoring, timeouts, and proper error handling
 - No hardcoded secrets, no security issues
 

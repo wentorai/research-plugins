@@ -3,10 +3,10 @@
   "generated": "2026-03-18",
   "stats": {
     "skills": 432,
-    "agent_tools": 11,
+    "agent_tools": 18,
     "mcp_configs": 0,
     "curated_lists": 6,
-    "total": 449
+    "total": 456
   },
   "items": [
     {
@@ -7755,6 +7755,126 @@
       "source": "https://github.com/wentorai/research-plugins/blob/main/src/tools/openaire.ts",
       "tools": [
         "search_openaire"
+      ]
+    },
+    {
+      "id": "agent-tool-zenodo",
+      "type": "agent_tool",
+      "name": "Zenodo",
+      "description": "Agent tools: search_zenodo, get_zenodo_record",
+      "category": "integrations",
+      "subcategory": "academic-db",
+      "keywords": [
+        "search_zenodo",
+        "get_zenodo_record"
+      ],
+      "path": "src/tools/zenodo.ts",
+      "source": "https://github.com/wentorai/research-plugins/blob/main/src/tools/zenodo.ts",
+      "tools": [
+        "search_zenodo",
+        "get_zenodo_record"
+      ]
+    },
+    {
+      "id": "agent-tool-orcid",
+      "type": "agent_tool",
+      "name": "Orcid",
+      "description": "Agent tools: search_orcid, get_orcid_works",
+      "category": "integrations",
+      "subcategory": "academic-db",
+      "keywords": [
+        "search_orcid",
+        "get_orcid_works"
+      ],
+      "path": "src/tools/orcid.ts",
+      "source": "https://github.com/wentorai/research-plugins/blob/main/src/tools/orcid.ts",
+      "tools": [
+        "search_orcid",
+        "get_orcid_works"
+      ]
+    },
+    {
+      "id": "agent-tool-inspire-hep",
+      "type": "agent_tool",
+      "name": "Inspire Hep",
+      "description": "Agent tools: search_inspire, get_inspire_paper",
+      "category": "integrations",
+      "subcategory": "academic-db",
+      "keywords": [
+        "search_inspire",
+        "get_inspire_paper"
+      ],
+      "path": "src/tools/inspire-hep.ts",
+      "source": "https://github.com/wentorai/research-plugins/blob/main/src/tools/inspire-hep.ts",
+      "tools": [
+        "search_inspire",
+        "get_inspire_paper"
+      ]
+    },
+    {
+      "id": "agent-tool-hal",
+      "type": "agent_tool",
+      "name": "Hal",
+      "description": "Agent tools: search_hal",
+      "category": "integrations",
+      "subcategory": "academic-db",
+      "keywords": [
+        "search_hal"
+      ],
+      "path": "src/tools/hal.ts",
+      "source": "https://github.com/wentorai/research-plugins/blob/main/src/tools/hal.ts",
+      "tools": [
+        "search_hal"
+      ]
+    },
+    {
+      "id": "agent-tool-osf-preprints",
+      "type": "agent_tool",
+      "name": "Osf Preprints",
+      "description": "Agent tools: search_osf_preprints",
+      "category": "integrations",
+      "subcategory": "academic-db",
+      "keywords": [
+        "search_osf_preprints"
+      ],
+      "path": "src/tools/osf-preprints.ts",
+      "source": "https://github.com/wentorai/research-plugins/blob/main/src/tools/osf-preprints.ts",
+      "tools": [
+        "search_osf_preprints"
+      ]
+    },
+    {
+      "id": "agent-tool-datacite",
+      "type": "agent_tool",
+      "name": "Datacite",
+      "description": "Agent tools: search_datacite, resolve_datacite_doi",
+      "category": "integrations",
+      "subcategory": "academic-db",
+      "keywords": [
+        "search_datacite",
+        "resolve_datacite_doi"
+      ],
+      "path": "src/tools/datacite.ts",
+      "source": "https://github.com/wentorai/research-plugins/blob/main/src/tools/datacite.ts",
+      "tools": [
+        "search_datacite",
+        "resolve_datacite_doi"
+      ]
+    },
+    {
+      "id": "agent-tool-ror",
+      "type": "agent_tool",
+      "name": "Ror",
+      "description": "Agent tools: search_ror",
+      "category": "integrations",
+      "subcategory": "academic-db",
+      "keywords": [
+        "search_ror"
+      ],
+      "path": "src/tools/ror.ts",
+      "source": "https://github.com/wentorai/research-plugins/blob/main/src/tools/ror.ts",
+      "tools": [
+        "search_ror"
       ]
     }
   ]
