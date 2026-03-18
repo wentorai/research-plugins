@@ -85,10 +85,10 @@ export function createCrossRefTools(
           query: input.query,
           rows: String(Math.min(input.limit ?? 10, 100)),
         });
-        if (input.from_year)
-          params.set("filter", `from-pub-date:${input.from_year}`);
-        if (input.type)
-          params.append("filter", `type:${input.type}`);
+        const filters: string[] = [];
+        if (input.from_year) filters.push(`from-pub-date:${input.from_year}`);
+        if (input.type) filters.push(`type:${input.type}`);
+        if (filters.length > 0) params.set("filter", filters.join(","));
         if (input.sort) params.set("sort", input.sort);
 
         const res = await fetch(`${BASE}/works?${params}`, { headers });
