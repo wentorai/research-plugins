@@ -67,11 +67,59 @@
 - **Verdict**: PRE-REMOVED
 - **Notes**: Module was deleted prior to audit (working tree change). semantic-scholar.ts removed, import removed from index.ts. API returns 429 without key, confirming removal was appropriate. The `semanticScholarApiKey` config field in openclaw.plugin.json should be cleaned up in Phase 6.
 
+### [007-new] module:europe-pmc — search_europe_pmc, get_epmc_citations, get_epmc_references
+- **Verdict**: PASS
+- **Quality**: 4.5/5
+- **Type**: Agent Tool (TypeScript, 3 tools) — NEW
+- **API Free**: Yes (no key required)
+- **API Test**: 200 OK
+- **Notes**: Uses trackedFetch with health monitoring. Supports cursor pagination for large result sets. Citation and reference tracking via PMID. Clean response mapping.
+
+### [008-new] module:opencitations — get_citations_open, get_references_open, get_citation_count
+- **Verdict**: PASS
+- **Quality**: 4.5/5
+- **Type**: Agent Tool (TypeScript, 3 tools) — NEW
+- **API Free**: Yes (fully open, 2B+ citation links)
+- **API Test**: 200 OK
+- **Notes**: DOI properly escaped. extractDoi helper parses OpenCitations multi-identifier format. Citations sliced to 100 for response size control.
+
+### [009-new] module:doaj — search_doaj
+- **Verdict**: PASS
+- **Quality**: 4.3/5
+- **Type**: Agent Tool (TypeScript, 1 tool) — NEW
+- **API Free**: Yes (no key required, 9M+ OA articles)
+- **API Test**: 200 OK
+- **Notes**: Guaranteed open access results. Proper bibjson parsing with identifier/link extraction. URL encoding for query.
+
+### [010-new] module:dblp — search_dblp, search_dblp_author
+- **Verdict**: PASS
+- **Quality**: 4.4/5
+- **Type**: Agent Tool (TypeScript, 2 tools) — NEW
+- **API Free**: Yes (no key required, 7M+ CS records)
+- **API Test**: 200 OK
+- **Notes**: Handles dblp's nested author format (both string and object variants). Pagination via offset. Author search for profile discovery.
+
+### [011-new] module:biorxiv — search_biorxiv, search_medrxiv, get_preprint_by_doi
+- **Verdict**: PASS
+- **Quality**: 4.5/5
+- **Type**: Agent Tool (TypeScript, 3 tools) — NEW
+- **API Free**: Yes (no key required)
+- **API Test**: 200 OK
+- **Notes**: Covers both bioRxiv and medRxiv. Flexible interval syntax (date range, count, days). DOI lookup with version support. Extended timeout (30s) for large date ranges.
+
+### [012-new] module:openaire — search_openaire
+- **Verdict**: PASS
+- **Quality**: 4.2/5
+- **Type**: Agent Tool (TypeScript, 1 tool) — NEW
+- **API Free**: Yes (no key required, 170M+ records)
+- **API Test**: 200 OK
+- **Notes**: Uniquely supports EU funder filtering (EC, NSF, NIH, etc.). Complex XML-in-JSON parsing handled by parseOpenAireResult helper. Extended timeout (15s).
+
 ### Phase 1 Summary
-- **5 active modules, 10 tools** (semantic-scholar pre-removed)
-- **4 PASS, 1 FIX** (crossref filter bug fixed)
-- All 5 APIs verified live and returning 200
-- Code quality consistently good: proper error handling, input escaping, response trimming
+- **11 active modules, 23 tools** (semantic-scholar pre-removed, 6 new modules added)
+- **10 PASS, 1 FIX** (crossref filter bug fixed)
+- All 11 APIs verified live and returning 200
+- New modules use trackedFetch with source health monitoring, timeouts, and proper error handling
 - No hardcoded secrets, no security issues
 
 ## Phase 2: MCP Configs
