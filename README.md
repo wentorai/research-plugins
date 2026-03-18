@@ -8,7 +8,7 @@
 
 ## Research Plugins for Research-Claw
 
-An open-source collection of **432 academic research skills**, **150 MCP configs**, **6 agent tools**, and **6 curated resource lists** for [Research-Claw](https://wentor.ai) and other AI coding agents.
+An open-source collection of **432 academic research skills**, **34 agent tools** (18 API modules), and **6 curated resource lists** for [Research-Claw](https://wentor.ai) and other AI coding agents.
 
 Built by [Wentor AI](https://wentor.ai) for the global research community.
 
@@ -17,9 +17,10 @@ Built by [Wentor AI](https://wentor.ai) for the global research community.
 | Component | Count | Description |
 |-----------|-------|-------------|
 | **Skills** | 432 | Practical SKILL.md guides covering literature search, academic writing, data analysis, research methods, 16 domain specialties, and productivity tools |
-| **Agent Tools** | 6 | TypeScript API wrappers for Semantic Scholar, OpenAlex, CrossRef, arXiv, PubMed, and Unpaywall |
-| **MCP Configs** | 150 | Ready-to-use MCP server configurations for reference managers, knowledge bases, research databases, and AI platforms |
+| **Agent Tools** | 34 | TypeScript API wrappers for 18 academic databases: OpenAlex, CrossRef, arXiv, PubMed, Unpaywall, Europe PMC, OpenCitations, DOAJ, DBLP, bioRxiv/medRxiv, OpenAIRE, Zenodo, ORCID, INSPIRE-HEP, HAL, OSF, DataCite, ROR |
 | **Curated Lists** | 6 | Hand-picked resource collections for each skill category |
+
+> **Note:** 150 MCP server configs were archived in the v1.4.0 audit. See `archived/mcp-configs/` for reference.
 
 ### Taxonomy
 
@@ -30,7 +31,7 @@ Skills are organized into **6 categories** with **40 subcategories**:
 | **literature** | search, discovery, fulltext, metadata | 80 | Paper search, citation tracking, open access |
 | **writing** | composition, polish, latex, templates, citation | 64 | Academic writing, LaTeX, reference management |
 | **analysis** | statistics, econometrics, wrangling, dataviz | 46 | Statistical methods, data cleaning, visualization |
-| **research** | methodology, deep-research, paper-review, automation, funding | 53 | Research design, systematic reviews, grant writing |
+| **research** | methodology, deep-research, paper-review, automation, funding | 54 | Research design, systematic reviews, grant writing |
 | **domains** | 16 disciplines (CS, AI/ML, biomedical, chemistry, economics, finance, law, physics, math, ecology, etc.) | 139 | Domain-specific research methods and tools |
 | **tools** | diagram, document, code-exec, scraping, knowledge-graph, ocr-translate | 49 | Diagrams, PDF parsing, reproducible code, OCR |
 
@@ -58,50 +59,43 @@ npx skills add wentorai/research-plugins
 npm install @wentorai/research-plugins
 ```
 
-### Configuration
-
-Optional: set a Semantic Scholar API key for higher rate limits:
-
-```json
-{
-  "plugins": {
-    "entries": {
-      "research-plugins": {
-        "semanticScholarApiKey": "your-key-here"
-      }
-    }
-  }
-}
-```
-
-Get a free API key at [semanticscholar.org/product/api](https://www.semanticscholar.org/product/api).
-
 ### Agent Tools
 
-13 tool functions across 6 academic API modules, registered automatically when used as an OpenClaw plugin:
+34 tool functions across 18 academic API modules, registered automatically when used as an OpenClaw plugin. All APIs are free and open:
 
 | Module | Tools | API |
 |--------|-------|-----|
-| `semantic-scholar` | `search_papers`, `get_paper`, `get_citations` | Semantic Scholar |
-| `openalex` | `search_openalex`, `get_work`, `get_author_openalex` | OpenAlex |
-| `crossref` | `resolve_doi`, `search_crossref` | CrossRef |
+| `openalex` | `search_openalex`, `get_work`, `get_author_openalex` | OpenAlex (250M+ works) |
+| `crossref` | `resolve_doi`, `search_crossref` | CrossRef (150M+ DOIs) |
 | `arxiv` | `search_arxiv`, `get_arxiv_paper` | arXiv |
 | `pubmed` | `search_pubmed`, `get_article` | PubMed / NCBI |
 | `unpaywall` | `find_oa_version` | Unpaywall |
+| `europe-pmc` | `search_europe_pmc`, `get_epmc_citations`, `get_epmc_references` | Europe PMC (33M+) |
+| `opencitations` | `get_citations_open`, `get_references_open`, `get_citation_count` | OpenCitations (2B+ links) |
+| `doaj` | `search_doaj` | DOAJ (9M+ OA articles) |
+| `dblp` | `search_dblp`, `search_dblp_author` | DBLP (7M+ CS records) |
+| `biorxiv` | `search_biorxiv`, `search_medrxiv`, `get_preprint_by_doi` | bioRxiv / medRxiv |
+| `openaire` | `search_openaire` | OpenAIRE (170M+, EU funder filter) |
+| `zenodo` | `search_zenodo`, `get_zenodo_record` | Zenodo |
+| `orcid` | `search_orcid`, `get_orcid_works` | ORCID |
+| `inspire-hep` | `search_inspire`, `get_inspire_paper` | INSPIRE-HEP (physics) |
+| `hal` | `search_hal` | HAL (French open archive) |
+| `osf-preprints` | `search_osf_preprints` | OSF Preprints |
+| `datacite` | `search_datacite`, `resolve_datacite_doi` | DataCite (dataset DOIs) |
+| `ror` | `search_ror` | ROR (research organizations) |
 
 ### Community Attribution
 
 This project curates, organizes, and enhances publicly available academic resources from across the open-source ecosystem. We are grateful to the researchers, developers, and open-source communities whose work makes this collection possible.
 
 - **Skills** are authored guides based on established research methodologies, public API documentation, and widely-used academic workflows. Where content is derived from specific open-source projects, the `source` field in each SKILL.md frontmatter links to the original.
-- **MCP Configs** reference third-party open-source MCP servers. Each config's `source` field links to the original GitHub repository. We do not host or redistribute these servers.
 - **Curated Lists** aggregate links to community resources and are provided for discovery purposes.
 
 All original content in this repository is released under the [MIT License](LICENSE). Third-party projects referenced retain their own licenses.
 
 ### Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, MCP configs, and curated resources.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills and curated resources.
 
 ### License
 
@@ -113,7 +107,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, MCP conf
 
 ## Research-Claw 科研插件集
 
-一个开源的学术科研资源集合，包含 **432 个科研技能**、**150 个 MCP 服务器配置**、**6 个智能体工具** 和 **6 个精选资源列表**，为 [Research-Claw (科研龙虾)](https://wentor.ai) 及其他 AI 编程助手而构建。
+一个开源的学术科研资源集合，包含 **432 个科研技能**、**34 个智能体工具**（18 个 API 模块）和 **6 个精选资源列表**，为 [Research-Claw (科研龙虾)](https://wentor.ai) 及其他 AI 编程助手而构建。
 
 由 [Wentor AI](https://wentor.ai) 为全球科研社区打造。
 
@@ -122,9 +116,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, MCP conf
 | 组件 | 数量 | 说明 |
 |------|------|------|
 | **技能 (Skills)** | 432 | 涵盖文献检索、学术写作、数据分析、研究方法、16 个学科领域及生产力工具的实用指南 |
-| **智能体工具** | 6 | 封装 Semantic Scholar、OpenAlex、CrossRef、arXiv、PubMed、Unpaywall 六大学术 API 的 TypeScript 工具 |
-| **MCP 配置** | 150 | 即用型 MCP 服务器配置，涵盖文献管理、知识库、学术数据库、AI 平台等 |
+| **智能体工具** | 34 | 封装 18 个学术数据库 API 的 TypeScript 工具：OpenAlex、CrossRef、arXiv、PubMed、Unpaywall、Europe PMC、OpenCitations、DOAJ、DBLP、bioRxiv/medRxiv、OpenAIRE、Zenodo、ORCID、INSPIRE-HEP、HAL、OSF、DataCite、ROR |
 | **精选列表** | 6 | 按分类整理的优质资源推荐 |
+
+> **注意**：150 个 MCP 服务器配置已在 v1.4.0 审计中归档。参见 `archived/mcp-configs/`。
 
 ### 分类体系
 
@@ -135,7 +130,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, MCP conf
 | **文献 (literature)** | 检索、发现、全文获取、元数据 | 80 | 论文搜索、引文追踪、开放获取 |
 | **写作 (writing)** | 写作、润色、LaTeX、模板、引用 | 64 | 学术写作、LaTeX 排版、参考文献管理 |
 | **分析 (analysis)** | 统计、计量经济、数据处理、可视化 | 46 | 统计方法、数据清洗、图表制作 |
-| **研究 (research)** | 方法论、深度研究、论文评审、自动化、基金 | 53 | 研究设计、系统综述、基金申请 |
+| **研究 (research)** | 方法论、深度研究、论文评审、自动化、基金 | 54 | 研究设计、系统综述、基金申请 |
 | **学科 (domains)** | 16 个学科方向 | 139 | 各学科专属研究方法与工具 |
 | **工具 (tools)** | 图表、文档、代码执行、爬虫、知识图谱、OCR | 49 | 流程图、PDF 解析、可复现代码、OCR 翻译 |
 
@@ -163,37 +158,18 @@ npx skills add wentorai/research-plugins
 npm install @wentorai/research-plugins
 ```
 
-### 配置
-
-可选：设置 Semantic Scholar API Key 以提高速率限制：
-
-```json
-{
-  "plugins": {
-    "entries": {
-      "research-plugins": {
-        "semanticScholarApiKey": "your-key-here"
-      }
-    }
-  }
-}
-```
-
-在 [semanticscholar.org/product/api](https://www.semanticscholar.org/product/api) 免费获取 API Key。
-
 ### 社区致谢与声明
 
 本项目对互联网上公开可用的学术资源进行了遴选、整理和增强。我们感谢所有使这个集合成为可能的研究者、开发者和开源社区。
 
 - **技能** 是基于成熟研究方法、公开 API 文档和广泛使用的学术工作流编写的实用指南。凡内容源自特定开源项目的，每个 SKILL.md 的 frontmatter 中 `source` 字段均标注了原始链接。
-- **MCP 配置** 引用第三方开源 MCP 服务器，每个配置的 `source` 字段链接到原始 GitHub 仓库。我们不托管或重新分发这些服务器。
 - **精选列表** 汇集社区资源链接，仅供发现和参考之用。
 
 本仓库中的所有原创内容均以 [MIT 许可证](LICENSE) 发布。引用的第三方项目保留其各自的许可证。
 
 ### 参与贡献
 
-请查阅 [CONTRIBUTING.md](CONTRIBUTING.md) 了解添加技能、MCP 配置和精选资源的指南。
+请查阅 [CONTRIBUTING.md](CONTRIBUTING.md) 了解添加技能和精选资源的指南。
 
 ### 许可证
 

@@ -62,20 +62,7 @@ const VALID_SUBCATEGORIES: Record<string, string[]> = {
 
 const ALL_SUBCATEGORIES = Object.values(VALID_SUBCATEGORIES).flat();
 
-const VALID_MCP_CATEGORIES = [
-  "reference-mgr",
-  "note-knowledge",
-  "communication",
-  "email",
-  "cloud-docs",
-  "ai-platform",
-  "data-platform",
-  "dev-platform",
-  "repository",
-  "academic-db",
-  "browser",
-  "database",
-];
+// MCP configs archived in v1.4.0 audit — validation removed
 
 const KEBAB_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const SECRET_RE =
@@ -455,80 +442,18 @@ function validateSkill(filePath: string, rootDir: string): ValidationError[] {
   return errors;
 }
 
-// ── MCP Config Validation ─────────────────────────────────────────────
-
-function validateMcpConfig(
-  filePath: string,
-  rootDir: string,
-): ValidationError[] {
-  const errors: ValidationError[] = [];
-  const rel = relative(rootDir, filePath);
-
-  try {
-    const content = readFileSync(filePath, "utf-8");
-    const config = JSON.parse(content);
-
-    for (const field of ["id", "name", "description", "category"]) {
-      if (!config[field] || typeof config[field] !== "string") {
-        errors.push({
-          file: rel,
-          check: `mcp-${field}`,
-          message: `Missing required field "${field}"`,
-        });
-      }
-    }
-
-    if (config.category && !VALID_MCP_CATEGORIES.includes(config.category)) {
-      errors.push({
-        file: rel,
-        check: "mcp-category",
-        message: `Invalid MCP category "${config.category}"`,
-      });
-    }
-
-    if (!config.install || typeof config.install !== "object") {
-      errors.push({
-        file: rel,
-        check: "mcp-install",
-        message: "Missing install object",
-      });
-    }
-
-    if (!config.source || typeof config.source !== "string") {
-      errors.push({
-        file: rel,
-        check: "mcp-source",
-        message: "Missing source URL",
-      });
-    }
-  } catch (e) {
-    errors.push({
-      file: rel,
-      check: "mcp-json",
-      message: `Invalid JSON: ${(e as Error).message}`,
-    });
-  }
-
-  return errors;
-}
-
 // ── Main ──────────────────────────────────────────────────────────────
 
 function main() {
   const rootDir = join(import.meta.dirname ?? ".", "..");
   const skillsDir = join(rootDir, "skills");
-  const mcpDir = join(rootDir, "mcp-configs");
 
   console.log("Research Plugins Validator\n");
 
   // Collect files
   const skillFiles = collectFiles(skillsDir, "SKILL.md");
-  const mcpFiles = collectFiles(mcpDir, ".json").filter(
-    (f) => !f.endsWith("registry.json"),
-  );
 
-  console.log(`Found ${skillFiles.length} skill files`);
-  console.log(`Found ${mcpFiles.length} MCP config files\n`);
+  console.log(`Found ${skillFiles.length} skill files\n`);
 
   let allErrors: ValidationError[] = [];
 
@@ -575,32 +500,6 @@ function main() {
         skillNames.set(meta.name, rel);
       }
     }
-  }
-
-  // Validate MCP configs
-  const mcpIds = new Map<string, string>();
-  for (const file of mcpFiles) {
-    const errors = validateMcpConfig(file, rootDir);
-    allErrors.push(...errors);
-
-    // Cross-file duplicate id check
-    try {
-      const content = readFileSync(file, "utf-8");
-      const config = JSON.parse(content);
-      if (typeof config.id === "string") {
-        const rel = relative(rootDir, file);
-        const existing = mcpIds.get(config.id);
-        if (existing) {
-          allErrors.push({
-            file: rel,
-            check: "unique-id",
-            message: `Duplicate MCP id "${config.id}" (also in ${existing})`,
-          });
-        } else {
-          mcpIds.set(config.id, rel);
-        }
-      }
-    } catch { /* parse errors already caught by validateMcpConfig */ }
   }
 
   // Report

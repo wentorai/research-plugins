@@ -1,8 +1,8 @@
 {
   "name": "@wentorai/research-plugins",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "type": "module",
-  "description": "432 academic research skills, 13 agent tools, 150 MCP configs (reference-only), and 6 curated lists for Research-Claw and AI agents",
+  "description": "432 academic research skills, 34 agent tools across 18 API modules, and 6 curated lists for Research-Claw and AI agents",
   "keywords": [
     "agent-skills",
     "claude",
@@ -17,7 +17,6 @@
   ],
   "files": [
     "skills/",
-    "mcp-configs/",
     "curated/",
     "src/",
     "index.ts",
@@ -27,8 +26,7 @@
   ],
   "scripts": {
     "validate": "node --experimental-strip-types scripts/validate.ts",
-    "catalog": "node --experimental-strip-types scripts/catalog.ts",
-    "sync-registry": "node --experimental-strip-types scripts/sync-registry.ts"
+    "catalog": "node --experimental-strip-types scripts/catalog.ts"
   },
   "engines": {
     "node": ">=22.6.0"

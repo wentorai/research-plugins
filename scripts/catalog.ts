@@ -19,7 +19,7 @@ import { join, relative, basename, dirname } from "node:path";
 
 interface CatalogItem {
   id: string;
-  type: "skill" | "mcp_config" | "curated" | "agent_tool";
+  type: "skill" | "curated" | "agent_tool";
   name: string;
   description: string;
   category: string;
@@ -27,8 +27,7 @@ interface CatalogItem {
   keywords: string[];
   path: string;
   source: string;
-  tools?: string[];          // mcp_config / agent_tool: registered tool names
-  install?: unknown;         // mcp_config: install instructions
+  tools?: string[];          // agent_tool: registered tool names
 }
 
 /* ---- Helpers ---- */
@@ -138,37 +137,7 @@ function collectSkills(rootDir: string): CatalogItem[] {
   return items;
 }
 
-function collectMcpConfigs(rootDir: string): CatalogItem[] {
-  const files = collectFiles(
-    join(rootDir, "mcp-configs"),
-    (n) => n.endsWith(".json") && n !== "registry.json",
-  );
-  const items: CatalogItem[] = [];
-
-  for (const f of files) {
-    try {
-      const data = JSON.parse(readFileSync(f, "utf-8"));
-      const relPath = relative(rootDir, f);            // mcp-configs/academic-db/foo.json
-      const parts = relPath.split("/");                // ["mcp-configs","academic-db","foo.json"]
-
-      items.push({
-        id: data.id || basename(f, ".json"),
-        type: "mcp_config",
-        name: data.name || data.id || basename(f, ".json"),
-        description: data.description || "",
-        category: "integrations",
-        subcategory: parts[1] || "",                     // directory name = subcategory under integrations
-        keywords: [],
-        path: relPath,
-        source: data.source || "",
-        tools: data.tools,
-        install: data.install,
-      });
-    } catch { /* skip invalid JSON */ }
-  }
-
-  return items;
-}
+// MCP config collection removed in v1.4.0 audit (all configs archived)
 
 function collectCurated(rootDir: string): CatalogItem[] {
   const files = collectFiles(join(rootDir, "curated"), (n) => n.endsWith(".md"));
@@ -268,19 +237,17 @@ function main() {
   const rootDir = join(import.meta.dirname ?? ".", "..");
 
   const skills = collectSkills(rootDir);
-  const mcpConfigs = collectMcpConfigs(rootDir);
   const curated = collectCurated(rootDir);
   const agentTools = collectAgentTools(rootDir);
 
-  const items = [...skills, ...mcpConfigs, ...curated, ...agentTools];
+  const items = [...skills, ...curated, ...agentTools];
 
   const catalog = {
-    version: "1.1.0",
+    version: "2.0.0",
     generated: new Date().toISOString().slice(0, 10),
     stats: {
       skills: skills.length,
       agent_tools: agentTools.length,
-      mcp_configs: mcpConfigs.length,
       curated_lists: curated.length,
       total: items.length,
     },
@@ -290,9 +257,9 @@ function main() {
   const outPath = join(rootDir, "catalog.json");
   writeFileSync(outPath, JSON.stringify(catalog, null, 2) + "\n");
   console.log(
-    `catalog.json: ${skills.length} skills, ${mcpConfigs.length} MCPs, ` +
+    `catalog.json: ${skills.length} skills, ` +
     `${curated.length} curated, ${agentTools.length} agent tool groups ` +
-    `(${catalog.stats.agent_tools} tools) — ${items.length} total items`,
+    `— ${items.length} total items`,
   );
 }
 
