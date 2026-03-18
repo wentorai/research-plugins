@@ -3,7 +3,7 @@
 /**
  * validate.ts — QA validation for research-plugins
  *
- * Checks all skills/**\/*.md and mcp-configs/**\/*.json against quality rules.
+ * Checks all skills/**\/*.md against quality rules.
  * Run: node scripts/validate.ts
  */
 

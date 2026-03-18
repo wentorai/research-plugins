@@ -8,13 +8,13 @@
 
 | Metric | Count |
 |--------|-------|
-| Total audited | 588 / 588 |
+| Total audited | 601 / 601 |
 | MCP → ARCHIVE | 150 |
 | MCP → CONVERT to skill | 0 |
-| Skill → PASS | 399 |
+| Skill → PASS | 398 |
 | Skill → FIX (applied) | 33 |
-| Skill → ARCHIVE | 0 |
-| Agent Tool → PASS | 4 |
+| Skill → ARCHIVE | 1 (mcp-server-guide — stale MCP reference) |
+| Agent Tool → PASS | 17 |
 | Agent Tool → FIX | 1 |
 | Agent Tool → PRE-REMOVED | 1 |
 

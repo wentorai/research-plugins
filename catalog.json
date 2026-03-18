@@ -2,10 +2,10 @@
   "version": "2.0.0",
   "generated": "2026-03-18",
   "stats": {
-    "skills": 432,
+    "skills": 431,
     "agent_tools": 18,
     "curated_lists": 6,
-    "total": 456
+    "total": 455
   },
   "items": [
     {
@@ -4777,24 +4777,6 @@
       ],
       "path": "skills/research/automation/kedro-pipeline-guide",
       "source": "https://github.com/kedro-org/kedro"
-    },
-    {
-      "id": "mcp-server-guide",
-      "type": "skill",
-      "name": "mcp-server-guide",
-      "description": "Index of 150 MCP server configs bundled with research-plugins",
-      "category": "research",
-      "subcategory": "automation",
-      "keywords": [
-        "MCP",
-        "model-context-protocol",
-        "mcp-server",
-        "tool-integration",
-        "external-services",
-        "research-automation"
-      ],
-      "path": "skills/research/automation/mcp-server-guide",
-      "source": "wentor-research-plugins"
     },
     {
       "id": "mle-agent-guide",

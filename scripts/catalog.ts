@@ -3,9 +3,8 @@
 /**
  * catalog.ts — Generate catalog.json with unified `items[]` array.
  *
- * Collects all 4 artifact types:
+ * Collects 3 artifact types:
  *   - skill      → skills/{cat}/{subcat}/{name}/SKILL.md  (YAML frontmatter)
- *   - mcp_config → mcp-configs/{cat}/{id}.json
  *   - curated    → curated/{cat}/README.md
  *   - agent_tool → parsed from index.ts registerTool() calls
  *

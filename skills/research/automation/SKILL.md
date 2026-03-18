@@ -1,9 +1,9 @@
 ---
 name: automation-skills
-description: "11 research automation skills. Trigger: automating experiments, tracking results, reproducible pipelines. Design: ML experiment management, workflow orchestration, and lab automation tools."
+description: "10 research automation skills. Trigger: automating experiments, tracking results, reproducible pipelines. Design: ML experiment management, workflow orchestration, and lab automation tools."
 ---
 
-# Research Automation — 11 Skills
+# Research Automation — 10 Skills
 
 Select the skill matching the user's need, then `read` its SKILL.md.
 
@@ -15,7 +15,6 @@ Select the skill matching the user's need, then `read` its SKILL.md.
 | [data-collection-automation](./data-collection-automation/SKILL.md) | Automate survey deployment, data collection, and pipeline management |
 | [datagen-research-guide](./datagen-research-guide/SKILL.md) | AI-driven multi-agent research assistant for end-to-end studies |
 | [kedro-pipeline-guide](./kedro-pipeline-guide/SKILL.md) | Build reproducible data science pipelines with Kedro for research projects |
-| [mcp-server-guide](./mcp-server-guide/SKILL.md) | Index of 150 MCP server configs bundled with research-plugins |
 | [mle-agent-guide](./mle-agent-guide/SKILL.md) | Intelligent companion for ML engineering with arXiv integration |
 | [paper-to-agent-guide](./paper-to-agent-guide/SKILL.md) | Transform research papers into interactive AI agents for exploration |
 | [rd-agent-guide](./rd-agent-guide/SKILL.md) | Microsoft AI-driven R&D agent for automated data and model development |
