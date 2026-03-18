@@ -35,36 +35,6 @@ metadata:
 - No API keys or secrets in content
 - Path must match frontmatter category/subcategory
 
-## Adding an MCP Config
-
-Create a JSON file in `mcp-configs/{category}/`:
-
-```json
-{
-  "id": "tool-name",
-  "name": "Display Name",
-  "description": "What it does",
-  "category": "reference-mgr",
-  "install": { "runtime": "node", "package": "package-name" },
-  "config": { "env": {} },
-  "tools": [],
-  "verified": false,
-  "source": "https://github.com/..."
-}
-```
-
-### MCP `verified` Field
-
-All MCP configs ship with `"verified": false` by default. This field indicates whether
-the MCP server has been tested end-to-end in a Research-Claw environment. Contributors
-and maintainers may set `"verified": true` after confirming:
-
-1. The `install.package` installs successfully and the server starts
-2. At least one tool listed in `tools[]` responds to a valid request
-3. The `config.env` variable names match the server's actual expectations
-
-The `verified` field is informational and does not affect plugin loading.
-
 ## Adding or Modifying Agent Tools
 
 Agent tools live in `src/tools/*.ts` and are registered via `index.ts`.
@@ -118,6 +88,7 @@ OpenClaw to crash or silently drop tool output.
 - [ ] Imported `toolResult` from `./util.js`
 - [ ] Registered in `index.ts` via `api.registerTool()`
 - [ ] Error paths also return `toolResult({ error: "..." })`
+- [ ] Uses `trackedFetch()` from `./util.js` instead of raw `fetch()` (provides health tracking + timeout)
 
 ## Running Validation
 
@@ -125,4 +96,4 @@ OpenClaw to crash or silently drop tool output.
 node scripts/validate.ts
 ```
 
-All skills and MCP configs must pass validation before merge.
+All skills must pass validation before merge.
