@@ -2,10 +2,10 @@
   "version": "2.0.0",
   "generated": "2026-03-18",
   "stats": {
-    "skills": 427,
+    "skills": 438,
     "agent_tools": 18,
     "curated_lists": 6,
-    "total": 451
+    "total": 462
   },
   "items": [
     {
@@ -996,6 +996,25 @@
       "source": "https://github.com/doujiang-zheng/Awesome-Graph-Learning-Papers-List"
     },
     {
+      "id": "huggingface-api",
+      "type": "skill",
+      "name": "huggingface-api",
+      "description": "Search and discover ML models, datasets, and Spaces on Hugging Face",
+      "category": "domains",
+      "subcategory": "ai-ml",
+      "keywords": [
+        "Hugging Face",
+        "ML models",
+        "datasets",
+        "model hub",
+        "transformers",
+        "NLP",
+        "computer vision"
+      ],
+      "path": "skills/domains/ai-ml/huggingface-api",
+      "source": "https://huggingface.co/docs/hub/api"
+    },
+    {
       "id": "huggingface-inference-guide",
       "type": "skill",
       "name": "huggingface-inference-guide",
@@ -1282,6 +1301,24 @@
       "source": "https://github.com/proroklab/VectorizedMultiAgentSimulator"
     },
     {
+      "id": "alphafold-api",
+      "type": "skill",
+      "name": "alphafold-api",
+      "description": "Query AlphaFold protein structure predictions by UniProt accession",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "protein structure",
+        "AlphaFold",
+        "structure prediction",
+        "UniProt",
+        "pLDDT",
+        "bioinformatics"
+      ],
+      "path": "skills/domains/biomedical/alphafold-api",
+      "source": "https://alphafold.ebi.ac.uk"
+    },
+    {
       "id": "bioagents-guide",
       "type": "skill",
       "name": "bioagents-guide",
@@ -1298,6 +1335,25 @@
       ],
       "path": "skills/domains/biomedical/bioagents-guide",
       "source": "https://github.com/SakanaAI/AI-Scientist"
+    },
+    {
+      "id": "biothings-api",
+      "type": "skill",
+      "name": "biothings-api",
+      "description": "Query gene, variant, and drug annotations via BioThings APIs",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "gene annotation",
+        "variant annotation",
+        "drug data",
+        "BioThings",
+        "mygene",
+        "myvariant",
+        "bioinformatics"
+      ],
+      "path": "skills/domains/biomedical/biothings-api",
+      "source": "https://biothings.io"
     },
     {
       "id": "clawbio-guide",
@@ -1370,6 +1426,24 @@
       "source": "https://clinicaltrials.gov/api/"
     },
     {
+      "id": "clinicaltrials-api-v2",
+      "type": "skill",
+      "name": "clinicaltrials-api-v2",
+      "description": "Search and analyze clinical trials via the ClinicalTrials.gov v2 API",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "clinical trials",
+        "ClinicalTrials.gov",
+        "medical research",
+        "study design",
+        "FDA",
+        "drug trials"
+      ],
+      "path": "skills/domains/biomedical/clinicaltrials-api-v2",
+      "source": "https://clinicaltrials.gov/data-api/about-api"
+    },
+    {
       "id": "ena-sequence-api",
       "type": "skill",
       "name": "ena-sequence-api",
@@ -1386,6 +1460,42 @@
       ],
       "path": "skills/domains/biomedical/ena-sequence-api",
       "source": "https://www.ebi.ac.uk/ena/"
+    },
+    {
+      "id": "enrichr-api",
+      "type": "skill",
+      "name": "enrichr-api",
+      "description": "Perform gene set enrichment analysis using the Enrichr API",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "gene set enrichment",
+        "pathway analysis",
+        "GO terms",
+        "KEGG",
+        "Enrichr",
+        "functional analysis"
+      ],
+      "path": "skills/domains/biomedical/enrichr-api",
+      "source": "https://maayanlab.cloud/Enrichr"
+    },
+    {
+      "id": "ensembl-rest-api",
+      "type": "skill",
+      "name": "ensembl-rest-api",
+      "description": "Query gene, sequence, and variant data via the Ensembl REST API",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "Ensembl",
+        "gene lookup",
+        "sequence retrieval",
+        "genomics",
+        "variant data",
+        "bioinformatics"
+      ],
+      "path": "skills/domains/biomedical/ensembl-rest-api",
+      "source": "https://rest.ensembl.org"
     },
     {
       "id": "epidemiology-guide",
@@ -1513,6 +1623,25 @@
       "source": "wentor-research-plugins"
     },
     {
+      "id": "medical-data-api",
+      "type": "skill",
+      "name": "medical-data-api",
+      "description": "Access FDA drug data and WHO global health statistics for research",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "FDA",
+        "drug safety",
+        "WHO",
+        "global health",
+        "adverse events",
+        "medical data",
+        "pharmacovigilance"
+      ],
+      "path": "skills/domains/biomedical/medical-data-api",
+      "source": "https://open.fda.gov"
+    },
+    {
       "id": "medical-imaging-guide",
       "type": "skill",
       "name": "medical-imaging-guide",
@@ -1565,6 +1694,24 @@
       ],
       "path": "skills/domains/biomedical/ncbi-datasets-api",
       "source": "https://www.ncbi.nlm.nih.gov/datasets/"
+    },
+    {
+      "id": "pdb-structure-api",
+      "type": "skill",
+      "name": "pdb-structure-api",
+      "description": "Search and retrieve 3D protein structures from the RCSB Protein Data Bank",
+      "category": "domains",
+      "subcategory": "biomedical",
+      "keywords": [
+        "protein structure",
+        "PDB",
+        "crystallography",
+        "structural biology",
+        "RCSB",
+        "molecular structure"
+      ],
+      "path": "skills/domains/biomedical/pdb-structure-api",
+      "source": "https://data.rcsb.org"
     },
     {
       "id": "quickgo-api",
@@ -1689,6 +1836,24 @@
       ],
       "path": "skills/domains/chemistry/cactus-cheminformatics-guide",
       "source": "https://github.com/pnnl/cactus"
+    },
+    {
+      "id": "catalysis-hub-api",
+      "type": "skill",
+      "name": "catalysis-hub-api",
+      "description": "Query computational catalysis reaction data via Catalysis Hub GraphQL",
+      "category": "domains",
+      "subcategory": "chemistry",
+      "keywords": [
+        "catalysis",
+        "DFT",
+        "reaction energy",
+        "surface chemistry",
+        "computational chemistry",
+        "GraphQL"
+      ],
+      "path": "skills/domains/chemistry/catalysis-hub-api",
+      "source": "https://www.catalysis-hub.org"
     },
     {
       "id": "chemeagle-guide",
@@ -2840,6 +3005,24 @@
       "source": "wentor"
     },
     {
+      "id": "uk-legislation-api",
+      "type": "skill",
+      "name": "uk-legislation-api",
+      "description": "Access UK laws and statutory instruments via the Legislation.gov.uk API",
+      "category": "domains",
+      "subcategory": "law",
+      "keywords": [
+        "UK law",
+        "legislation",
+        "statutory instruments",
+        "legal research",
+        "Parliament",
+        "regulatory analysis"
+      ],
+      "path": "skills/domains/law/uk-legislation-api",
+      "source": "https://www.legislation.gov.uk"
+    },
+    {
       "id": "lean-theorem-proving-guide",
       "type": "skill",
       "name": "lean-theorem-proving-guide",
@@ -3400,6 +3583,24 @@
       ],
       "path": "skills/literature/discovery/zotero-arxiv-daily-guide",
       "source": "wentor-research-plugins"
+    },
+    {
+      "id": "arxiv-latex-source",
+      "type": "skill",
+      "name": "arxiv-latex-source",
+      "description": "Download and parse LaTeX source files from arXiv preprints",
+      "category": "literature",
+      "subcategory": "fulltext",
+      "keywords": [
+        "arXiv",
+        "LaTeX source",
+        "paper parsing",
+        "formula extraction",
+        "full text",
+        "preprint"
+      ],
+      "path": "skills/literature/fulltext/arxiv-latex-source",
+      "source": "https://info.arxiv.org/help/bulk_data_s3.html"
     },
     {
       "id": "bioc-pmc-api",

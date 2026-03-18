@@ -1,9 +1,9 @@
 ---
 name: ai-ml-skills
-description: "26 ai & machine learning skills. Trigger: ML experiments, model training, deep learning, NLP, computer vision. Design: covers frameworks, benchmarks, paper reproduction, and AI research workflows."
+description: "27 ai & machine learning skills. Trigger: ML experiments, model training, deep learning, NLP, computer vision. Design: covers frameworks, benchmarks, paper reproduction, and AI research workflows."
 ---
 
-# AI & Machine Learning — 26 Skills
+# AI & Machine Learning — 27 Skills
 
 Select the skill matching the user's need, then `read` its SKILL.md.
 
@@ -19,6 +19,7 @@ Select the skill matching the user's need, then `read` its SKILL.md.
 | [domain-adaptation-papers-guide](./domain-adaptation-papers-guide/SKILL.md) | Comprehensive collection of domain adaptation research papers |
 | [generative-ai-guide](./generative-ai-guide/SKILL.md) | Curated guide to generative AI covering LLMs and diffusion models |
 | [graph-learning-papers-guide](./graph-learning-papers-guide/SKILL.md) | Conference papers on graph neural networks and graph learning |
+| [huggingface-api](./huggingface-api/SKILL.md) | Search and discover ML models, datasets, and Spaces on Hugging Face |
 | [huggingface-inference-guide](./huggingface-inference-guide/SKILL.md) | Run NLP and CV model inference via Hugging Face free-tier API |
 | [keras-deep-learning](./keras-deep-learning/SKILL.md) | Build and debug deep learning models with Keras and TensorFlow backend |
 | [kolmogorov-arnold-networks-guide](./kolmogorov-arnold-networks-guide/SKILL.md) | Papers and tutorials on KAN learnable activation networks |

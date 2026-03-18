@@ -1,9 +1,9 @@
 ---
 name: law-skills
-description: "8 legal research skills. Trigger: legal research, case law analysis, regulatory compliance. Design: legal databases, citation networks, and judicial analytics tools."
+description: "9 legal research skills. Trigger: legal research, case law analysis, regulatory compliance. Design: legal databases, citation networks, and judicial analytics tools."
 ---
 
-# Legal Research — 8 Skills
+# Legal Research — 9 Skills
 
 Select the skill matching the user's need, then `read` its SKILL.md.
 
@@ -17,3 +17,4 @@ Select the skill matching the user's need, then `read` its SKILL.md.
 | [opencontracts-guide](./opencontracts-guide/SKILL.md) | Legal document annotation, versioning, and analysis platform |
 | [patent-analysis-guide](./patent-analysis-guide/SKILL.md) | Patent search, classification, landscape analysis, and prior art mining |
 | [regulatory-compliance-guide](./regulatory-compliance-guide/SKILL.md) | Regulatory text mining, compliance research, and policy analysis tools |
+| [uk-legislation-api](./uk-legislation-api/SKILL.md) | Access UK laws and statutory instruments via the Legislation.gov.uk API |

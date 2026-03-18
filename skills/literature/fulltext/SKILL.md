@@ -1,14 +1,15 @@
 ---
 name: fulltext-skills
-description: "15 full-text access skills. Trigger: accessing paper PDFs, bulk downloading, open access, text mining. Design: legal full-text retrieval from open repositories, archives, and preprint servers."
+description: "16 full-text access skills. Trigger: accessing paper PDFs, bulk downloading, open access, text mining. Design: legal full-text retrieval from open repositories, archives, and preprint servers."
 ---
 
-# Full-Text Access — 15 Skills
+# Full-Text Access — 16 Skills
 
 Select the skill matching the user's need, then `read` its SKILL.md.
 
 | Skill | Description |
 |-------|-------------|
+| [arxiv-latex-source](./arxiv-latex-source/SKILL.md) | Download and parse LaTeX source files from arXiv preprints |
 | [bioc-pmc-api](./bioc-pmc-api/SKILL.md) | Access PMC Open Access articles in BioC format for text mining |
 | [core-api-guide](./core-api-guide/SKILL.md) | Search and retrieve open access research papers via CORE aggregator |
 | [dataverse-api](./dataverse-api/SKILL.md) | Deposit and discover research datasets via Harvard Dataverse API |
