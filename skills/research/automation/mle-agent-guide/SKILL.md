@@ -8,6 +8,7 @@ metadata:
   openclaw:
     category: "research"
     subcategory: "automation"
+    emoji: "🔬"
     keywords:
       - machine-learning
       - ml-engineering

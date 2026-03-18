@@ -8,6 +8,7 @@ metadata:
   openclaw:
     category: "writing"
     subcategory: "citation"
+    emoji: "📚"
     keywords:
       - obsidian
       - citations

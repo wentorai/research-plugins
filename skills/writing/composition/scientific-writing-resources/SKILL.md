@@ -8,6 +8,7 @@ metadata:
   openclaw:
     category: "writing"
     subcategory: "composition"
+    emoji: "✍️"
     keywords:
       - scientific-writing
       - writing-tools

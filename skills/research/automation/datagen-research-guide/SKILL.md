@@ -8,6 +8,7 @@ metadata:
   openclaw:
     category: "research"
     subcategory: "automation"
+    emoji: "⚙️"
     keywords:
       - multi-agent
       - research-assistant

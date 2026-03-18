@@ -8,6 +8,7 @@ metadata:
   openclaw:
     category: "writing"
     subcategory: "templates"
+    emoji: "🎓"
     keywords:
       - thesis-template
       - latex-thesis

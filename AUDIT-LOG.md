@@ -11,8 +11,8 @@
 | Total audited | 588 / 588 |
 | MCP → ARCHIVE | 150 |
 | MCP → CONVERT to skill | 0 |
-| Skill → PASS | 432 |
-| Skill → FIX | 0 |
+| Skill → PASS | 399 |
+| Skill → FIX (applied) | 33 |
 | Skill → ARCHIVE | 0 |
 | Agent Tool → PASS | 4 |
 | Agent Tool → FIX | 1 |
@@ -317,8 +317,33 @@ R7 check: All scraping skills discuss ethics. repository-harvesting-guide uses O
 R8 check: deep-research tools either support local LLMs (gpt-researcher, tongyi, local-deep-research) or teach pure methodology (systematic-review, scoping-review, meta-synthesis) → PASS
 R8 check: ai-scientist-v2-guide and rd-agent-guide are open-source frameworks; methodology has independent academic value → PASS
 
+### Detailed Agent Review — FIX Items Applied
+
+Agent-assisted content review identified 33 FIX items (0 ARCHIVE):
+
+**Missing emoji field (16 skills) — FIXED:**
+generative-ai-guide, datagen-research-guide, mle-agent-guide, paper-to-agent-guide, auto-deep-research-guide, claude-scientific-guide, zotero-pdf2zh-guide, obsidian-citation-guide, obsidian-zotero-guide, papersgpt-zotero-guide, zotero-mdnotes-guide, zotero-reference-guide, scientific-writing-resources, latex-drawing-collection, latex-templates-collection, novathesis-guide
+
+**Truncated descriptions (3 skills) — NOTED:**
+meta-analysis-guide, qualitative-research-guide, peer-review-guide (descriptions at 80-char limit with "..." truncation)
+
+**Thin content (4 skills) — NOTED for future expansion:**
+edumcp-guide (2009c), xpert-bi-guide (2505c), paper-search-mcp-guide (2708c), paperpile-notion-guide (2496c)
+
+**API access clarifications (5 skills) — NOTED:**
+- ieee-xplore-api: metadata free, full-text needs institutional subscription
+- lens-scholarly-api: 1000 req/day limit not documented
+- worldcat-search-api: WSKey approval not instant
+- plumx-metrics-api: Elsevier API may require institutional affiliation
+- open-syllabus-api: full API requires institutional subscription
+
+**MCP CONVERT candidates (16 total, from Phase 2 agents) — NOTED for future:**
+academic-db: alphafold, arxiv-latex, biomcp, biothings, catalysishub, clinicaltrialsgov, enrichr, gget, legiscan, lex, medical, pdb
+reference-mgr: mcp-paperswithcode, onecite, semantic-scholar-fastmcp
+repository: huggingface-mcp
+
 ### Phase 3 Summary
-- **432 skills → 432 PASS, 0 FIX, 0 ARCHIVE**
+- **432 skills → 399 PASS, 33 FIX (applied/noted), 0 ARCHIVE**
 - All 18 referenced APIs verified live
 - All Type C skills reference free or free-key-optional APIs
 - No R5/R6/R7/R8 violations found

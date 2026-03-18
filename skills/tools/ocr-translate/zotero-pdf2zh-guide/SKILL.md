@@ -8,6 +8,7 @@ metadata:
   openclaw:
     category: "tools"
     subcategory: "ocr-translate"
+    emoji: "🌐"
     keywords:
       - pdf-translation
       - zotero-plugin

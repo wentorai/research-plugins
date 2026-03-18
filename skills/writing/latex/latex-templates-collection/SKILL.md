@@ -8,6 +8,7 @@ metadata:
   openclaw:
     category: "writing"
     subcategory: "latex"
+    emoji: "📋"
     keywords:
       - latex-templates
       - paper-templates

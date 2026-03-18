@@ -8,6 +8,7 @@ metadata:
   openclaw:
     category: "research"
     subcategory: "methodology"
+    emoji: "🧪"
     keywords:
       - scientific-method
       - research-skills

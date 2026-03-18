@@ -8,6 +8,7 @@ metadata:
   openclaw:
     category: "research"
     subcategory: "deep-research"
+    emoji: "🔍"
     keywords:
       - deep-research
       - automated-investigation

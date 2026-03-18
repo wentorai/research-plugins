@@ -8,6 +8,7 @@ metadata:
   openclaw:
     category: "domains"
     subcategory: "ai-ml"
+    emoji: "🤖"
     keywords:
       - generative-ai
       - large-language-models
