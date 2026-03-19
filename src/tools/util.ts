@@ -150,3 +150,36 @@ export function isTrackedError(
 ): result is ReturnType<typeof toolResult> {
   return "content" in result && "details" in result;
 }
+
+// ── LLM Input Sanitization ──────────────────────────────────────────────
+
+const INVALID_PARAM_VALUES = new Set(["undefined", "null", "none", "None", ""]);
+
+/**
+ * Sanitize an optional string parameter from LLM tool calls.
+ *
+ * LLMs (especially weaker models) sometimes pass the literal string "undefined"
+ * or "null" instead of omitting the parameter. The nullish coalescing operator
+ * (`??`) does NOT catch these because they are truthy strings.
+ *
+ * Returns the value if valid, or `undefined` if it's a known non-value.
+ */
+export function validParam(value: string | undefined | null): string | undefined {
+  if (value == null) return undefined;
+  if (INVALID_PARAM_VALUES.has(value.trim())) return undefined;
+  return value;
+}
+
+/**
+ * Validate a string parameter against a whitelist of allowed values.
+ * Returns the value if it matches, or the fallback otherwise.
+ */
+export function validEnum<T extends string>(
+  value: string | undefined | null,
+  allowed: readonly T[],
+  fallback: T,
+): T {
+  const clean = validParam(value);
+  if (clean && (allowed as readonly string[]).includes(clean)) return clean as T;
+  return fallback;
+}

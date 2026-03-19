@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 const BASE = "https://api.archives-ouvertes.fr";
 
@@ -66,7 +66,8 @@ export function createHalTools(
           rows: String(Math.min(input.rows ?? 10, 100)),
           wt: "json",
         });
-        if (input.sort) params.set("sort", input.sort);
+        const sort = validParam(input.sort);
+        if (sort) params.set("sort", sort);
 
         const result = await trackedFetch(
           "hal",

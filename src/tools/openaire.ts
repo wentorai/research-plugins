@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 const BASE = "https://api.openaire.eu";
 
@@ -127,12 +127,17 @@ export function createOpenAireTools(
           format: "json",
           size: String(Math.min(input.max_results ?? 10, 50)),
         });
-        if (input.author) params.set("author", input.author);
-        if (input.doi) params.set("doi", input.doi);
-        if (input.from_date) params.set("fromDateAccepted", input.from_date);
-        if (input.to_date) params.set("toDateAccepted", input.to_date);
+        const author = validParam(input.author);
+        if (author) params.set("author", author);
+        const doi = validParam(input.doi);
+        if (doi) params.set("doi", doi);
+        const fromDate = validParam(input.from_date);
+        if (fromDate) params.set("fromDateAccepted", fromDate);
+        const toDate = validParam(input.to_date);
+        if (toDate) params.set("toDateAccepted", toDate);
         if (input.oa_only) params.set("OA", "true");
-        if (input.funder) params.set("funder", input.funder);
+        const funder = validParam(input.funder);
+        if (funder) params.set("funder", funder);
 
         const tracked = await trackedFetch("openaire", `${BASE}/search/publications?${params}`, undefined, 15_000);
         if (isTrackedError(tracked)) return tracked;

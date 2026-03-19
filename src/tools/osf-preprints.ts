@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 const BASE = "https://api.osf.io/v2";
 
@@ -36,7 +36,8 @@ export function createOsfPreprintsTools(
         const params = new URLSearchParams({
           "page[size]": String(Math.min(input.size ?? 10, 100)),
         });
-        if (input.provider) params.set("filter[provider]", input.provider);
+        const provider = validParam(input.provider);
+        if (provider) params.set("filter[provider]", provider);
         if (input.page) params.set("page", String(input.page));
 
         const result = await trackedFetch(

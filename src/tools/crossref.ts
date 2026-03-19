@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 const BASE = "https://api.crossref.org";
 
@@ -120,10 +120,12 @@ export function createCrossRefTools(
         if (filters.length > 0) params.set("filter", filters.join(","));
 
         // Journal name as query.container-title (separate from filter)
-        if (input.journal) params.set("query.container-title", input.journal);
+        const journal = validParam(input.journal);
+        if (journal) params.set("query.container-title", journal);
 
-        if (input.sort) {
-          params.set("sort", input.sort);
+        const sort = validParam(input.sort);
+        if (sort) {
+          params.set("sort", sort);
           params.set("order", "desc");
         }
 

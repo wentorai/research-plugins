@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam, validEnum } from "./util.js";
 
 const BASE = "https://api.openalex.org";
 
@@ -46,6 +46,12 @@ export function createOpenAlexTools(
         open_access?: boolean;
         sort_by?: string;
       }) => {
+        if (!input?.query || input.query.trim() === "" || input.query === "undefined") {
+          return toolResult({ error: "query parameter is required and must not be empty" });
+        }
+
+        const SORT_BY = ["cited_by_count", "publication_date", "relevance_score"] as const;
+
         const filters: string[] = [];
         if (input.from_year) filters.push(`from_publication_date:${input.from_year}-01-01`);
         if (input.to_year) filters.push(`to_publication_date:${input.to_year}-12-31`);
@@ -56,7 +62,10 @@ export function createOpenAlexTools(
           per_page: String(Math.min(input.limit ?? 10, 200)),
         });
         if (filters.length > 0) params.set("filter", filters.join(","));
-        if (input.sort_by) params.set("sort", input.sort_by);
+        const sortBy = validParam(input.sort_by);
+        if (sortBy && (SORT_BY as readonly string[]).includes(sortBy)) {
+          params.set("sort", sortBy);
+        }
 
         const tracked = await trackedFetch("openalex", `${BASE}/works?${params}`, { headers });
         if (isTrackedError(tracked)) return tracked;

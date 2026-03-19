@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 const BASE = "https://zenodo.org/api";
 
@@ -48,9 +48,12 @@ export function createZenodoTools(
           q: input.query,
           size: String(Math.min(input.size ?? 10, 100)),
         });
-        if (input.type) params.set("type", input.type);
-        if (input.sort) params.set("sort", input.sort);
-        if (input.access_right) params.set("access_right", input.access_right);
+        const type = validParam(input.type);
+        if (type) params.set("type", type);
+        const sort = validParam(input.sort);
+        if (sort) params.set("sort", sort);
+        const accessRight = validParam(input.access_right);
+        if (accessRight) params.set("access_right", accessRight);
 
         const result = await trackedFetch("zenodo", `${BASE}/records?${params}`, undefined, 10_000);
         if (isTrackedError(result)) return result;
