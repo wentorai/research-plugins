@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/logo.png" width="160" alt="科研龙虾 · Research-Claw" />
+
 # @wentorai/research-plugins
 
 **科研龙虾的大脑 — 438 个学术技能 + 34 个 API 工具**
