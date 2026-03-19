@@ -2,7 +2,7 @@
 
 <img src="assets/logo.png" width="160" alt="Research-Claw · 科研龙虾" />
 
-# @wentorai/research-plugins
+# The most comprehensive library of AI skills&plugins for academic research
 
 **The brain of Research-Claw — 438 academic skills + 34 API tools**
 
