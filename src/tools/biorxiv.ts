@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validEnum } from "./util.js";
 
 const BASE = "https://api.biorxiv.org";
 
@@ -128,7 +128,7 @@ export function createBiorxivTools(
         if (!input?.doi) {
           return toolResult({ error: 'doi parameter is required (e.g., "10.1101/2024.01.15.575123")' });
         }
-        const server = input.server ?? "biorxiv";
+        const server = validEnum(input.server, ["biorxiv", "medrxiv"] as const, "biorxiv");
         const doi = input.doi.replace(/^https?:\/\/doi\.org\//, "");
         const tracked = await trackedFetch(server, `${BASE}/details/${server}/${doi}/na/json`, undefined, 15_000);
         if (isTrackedError(tracked)) return tracked;

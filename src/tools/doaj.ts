@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 const BASE = "https://doaj.org/api";
 
@@ -39,7 +39,8 @@ export function createDoajTools(
         const page = input.page ?? 1;
 
         let url = `${BASE}/search/articles/${encodeURIComponent(input.query)}?page=${page}&pageSize=${pageSize}`;
-        if (input.sort) url += `&sort=${encodeURIComponent(input.sort)}`;
+        const sort = validParam(input.sort);
+        if (sort) url += `&sort=${encodeURIComponent(sort)}`;
 
         const tracked = await trackedFetch("doaj", url);
         if (isTrackedError(tracked)) return tracked;

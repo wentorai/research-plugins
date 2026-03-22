@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam, validEnum } from "./util.js";
 
 const BASE = "https://www.ebi.ac.uk/europepmc/webservices/rest";
 
@@ -45,7 +45,7 @@ export function createEuropePmcTools(
         });
         const sort = validParam(input.sort);
         if (sort) params.set("sort", sort);
-        params.set("cursorMark", input.cursor ?? "*");
+        params.set("cursorMark", validParam(input.cursor) ?? "*");
 
         const tracked = await trackedFetch("europe_pmc", `${BASE}/search?${params}`);
         if (isTrackedError(tracked)) return tracked;

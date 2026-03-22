@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam, validEnum } from "./util.js";
 
 const EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils";
 
@@ -41,17 +41,21 @@ export function createPubMedTools(
         min_date?: string;
         max_date?: string;
       }) => {
+        const sort = validEnum(input.sort, ["relevance", "pub_date"] as const, "relevance");
+        const minDate = validParam(input.min_date);
+        const maxDate = validParam(input.max_date);
+
         const searchParams = new URLSearchParams({
           db: "pubmed",
           term: input.query,
           retmax: String(Math.min(input.max_results ?? 10, 100)),
           retmode: "json",
-          sort: input.sort ?? "relevance",
+          sort,
           usehistory: "y",
         });
-        if (input.min_date) searchParams.set("mindate", input.min_date);
-        if (input.max_date) searchParams.set("maxdate", input.max_date);
-        if (input.min_date || input.max_date) searchParams.set("datetype", "pdat");
+        if (minDate) searchParams.set("mindate", minDate);
+        if (maxDate) searchParams.set("maxdate", maxDate);
+        if (minDate || maxDate) searchParams.set("datetype", "pdat");
 
         const searchTracked = await trackedFetch("pubmed", `${EUTILS}/esearch.fcgi?${searchParams}`);
         if (isTrackedError(searchTracked)) return searchTracked;

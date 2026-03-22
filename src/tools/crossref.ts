@@ -114,9 +114,11 @@ export function createCrossRefTools(
         const filters: string[] = [];
         if (input.from_year) filters.push(`from-pub-date:${input.from_year}`);
         if (input.until_year) filters.push(`until-pub-date:${input.until_year}`);
-        if (input.type) filters.push(`type:${input.type}`);
+        const type = validParam(input.type);
+        if (type) filters.push(`type:${type}`);
         if (input.has_abstract) filters.push("has-abstract:true");
-        if (input.issn) filters.push(`issn:${input.issn}`);
+        const issn = validParam(input.issn);
+        if (issn) filters.push(`issn:${issn}`);
         if (filters.length > 0) params.set("filter", filters.join(","));
 
         // Journal name as query.container-title (separate from filter)

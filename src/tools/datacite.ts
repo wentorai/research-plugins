@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 const BASE = "https://api.datacite.org";
 
@@ -42,8 +42,9 @@ export function createDataCiteTools(
           query: input.query,
           "page[size]": String(pageSize),
         });
-        if (input.resource_type) {
-          params.set("resource-type-id", input.resource_type.toLowerCase());
+        const resourceType = validParam(input.resource_type);
+        if (resourceType) {
+          params.set("resource-type-id", resourceType.toLowerCase());
         }
         if (input.from_year) {
           params.set("query", `${input.query} AND publicationYear:[${input.from_year} TO *]`);

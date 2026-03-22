@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam, validEnum } from "./util.js";
 
 const BASE = "https://api.archives-ouvertes.fr";
 
@@ -56,8 +56,9 @@ export function createHalTools(
         doc_type?: string;
       }) => {
         let q = input.query;
-        if (input.doc_type) {
-          q = `(${q}) AND docType_s:${input.doc_type}`;
+        const docType = validParam(input.doc_type);
+        if (docType) {
+          q = `(${q}) AND docType_s:${docType}`;
         }
 
         const params = new URLSearchParams({

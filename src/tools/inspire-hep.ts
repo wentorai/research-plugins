@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validEnum } from "./util.js";
 
 const BASE = "https://inspirehep.net/api";
 
@@ -99,10 +99,11 @@ export function createInspireHepTools(
         ),
       }),
       execute: async (input: { query: string; size?: number; sort?: string }) => {
+        const sort = validEnum(input.sort, ["mostrecent", "mostcited", "bestmatch"] as const, "bestmatch");
         const params = new URLSearchParams({
           q: input.query,
           size: String(Math.min(input.size ?? 10, 100)),
-          sort: input.sort ?? "bestmatch",
+          sort,
         });
 
         const result = await trackedFetch(
