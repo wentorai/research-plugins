@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 const BASE = "https://api.ror.org/v2";
 
@@ -23,8 +23,15 @@ export function createRorTools(
         ),
       }),
       execute: async (input: { query: string; max_results?: number }) => {
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error: "query parameter is required and must not be empty.",
+          });
+        }
+
         const params = new URLSearchParams({
-          query: input.query,
+          query,
         });
 
         const tracked = await trackedFetch("ror", `${BASE}/organizations?${params}`, undefined, 10_000);

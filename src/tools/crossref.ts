@@ -105,8 +105,17 @@ export function createCrossRefTools(
         sort?: string;
         limit?: number;
       }) => {
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error:
+              "query parameter is required and must not be empty. " +
+              "Example: search_crossref({ query: \"PFAS machine learning\", from_year: 2023 })",
+          });
+        }
+
         const params = new URLSearchParams({
-          query: input.query,
+          query,
           rows: String(Math.min(input.limit ?? 10, 100)),
         });
 

@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError, validEnum } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validEnum, validParam } from "./util.js";
 
 const BASE = "https://export.arxiv.org/api/query";
 
@@ -109,15 +109,21 @@ export function createArxivTools(
         sort_by?: string;
         sort_order?: string;
       }) => {
-        if (!input?.query || input.query.trim() === "" || input.query === "undefined") {
-          return toolResult({ error: "query parameter is required and must not be empty" });
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error:
+              "query parameter is required and must not be empty. " +
+              "Use the tool parameter 'query' (not 'search_query'). " +
+              "Example: search_arxiv({ query: \"ti:transformer AND cat:cs.CL\" })",
+          });
         }
 
         const SORT_BY = ["relevance", "lastUpdatedDate", "submittedDate"] as const;
         const SORT_ORDER = ["ascending", "descending"] as const;
 
         const params = new URLSearchParams({
-          search_query: input.query,
+          search_query: query,
           max_results: String(Math.min(input.max_results ?? 10, 50)),
           sortBy: validEnum(input.sort_by, SORT_BY, "relevance"),
           sortOrder: validEnum(input.sort_order, SORT_ORDER, "descending"),

@@ -41,13 +41,22 @@ export function createPubMedTools(
         min_date?: string;
         max_date?: string;
       }) => {
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error:
+              "query parameter is required and must not be empty. " +
+              "Example: search_pubmed({ query: \"CRISPR[Title] AND 2024[PDAT]\" })",
+          });
+        }
+
         const sort = validEnum(input.sort, ["relevance", "pub_date"] as const, "relevance");
         const minDate = validParam(input.min_date);
         const maxDate = validParam(input.max_date);
 
         const searchParams = new URLSearchParams({
           db: "pubmed",
-          term: input.query,
+          term: query,
           retmax: String(Math.min(input.max_results ?? 10, 100)),
           retmode: "json",
           sort,

@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 export function createDblpTools(
   _ctx: OpenClawPluginToolContext,
@@ -28,8 +28,15 @@ export function createDblpTools(
         max_results?: number;
         offset?: number;
       }) => {
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error: "query parameter is required and must not be empty.",
+          });
+        }
+
         const params = new URLSearchParams({
-          q: input.query,
+          q: query,
           format: "json",
           h: String(Math.min(input.max_results ?? 10, 1000)),
         });
@@ -91,8 +98,15 @@ export function createDblpTools(
         ),
       }),
       execute: async (input: { query: string; max_results?: number }) => {
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error: "query parameter is required and must not be empty.",
+          });
+        }
+
         const params = new URLSearchParams({
-          q: input.query,
+          q: query,
           format: "json",
           h: String(Math.min(input.max_results ?? 10, 100)),
         });

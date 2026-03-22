@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 const BASE = "https://pub.orcid.org/v3.0";
 
@@ -28,8 +28,15 @@ export function createOrcidTools(
         ),
       }),
       execute: async (input: { query: string; limit?: number }) => {
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error: "query parameter is required and must not be empty.",
+          });
+        }
+
         const params = new URLSearchParams({
-          q: input.query,
+          q: query,
           rows: String(Math.min(input.limit ?? 10, 100)),
         });
 

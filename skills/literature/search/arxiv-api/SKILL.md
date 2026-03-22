@@ -24,12 +24,21 @@ The API is free to use with no authentication required. It supports complex bool
 
 No authentication required. The arXiv API is fully open. However, users must respect the rate limit of 3 requests per second. Excessive usage may result in temporary IP-based blocking. Including a descriptive User-Agent header is considered good practice.
 
-## Core Endpoints
+## Using the `search_arxiv` Tool
+
+**IMPORTANT:** When calling the `search_arxiv` tool, use parameter name `query` (NOT
+`search_query`). The raw API uses `search_query`, but the tool wrapper accepts `query`.
+
+```
+search_arxiv({ query: "ti:transformer AND cat:cs.CL", sort_by: "submittedDate" })
+```
+
+## Core Endpoints (Raw API Reference)
 
 ### Query: Search for Articles
 
 - **URL**: `GET http://export.arxiv.org/api/query`
-- **Parameters**:
+- **Parameters** (raw API — the `search_arxiv` tool wraps these automatically):
   | Param | Type | Required | Description |
   |-------|------|----------|-------------|
   | search_query | string | Yes | Query string using arXiv field prefixes (ti, au, abs, cat, id) |

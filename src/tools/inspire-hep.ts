@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError, validEnum } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validEnum, validParam } from "./util.js";
 
 const BASE = "https://inspirehep.net/api";
 
@@ -99,9 +99,16 @@ export function createInspireHepTools(
         ),
       }),
       execute: async (input: { query: string; size?: number; sort?: string }) => {
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error: "query parameter is required and must not be empty.",
+          });
+        }
+
         const sort = validEnum(input.sort, ["mostrecent", "mostcited", "bestmatch"] as const, "bestmatch");
         const params = new URLSearchParams({
-          q: input.query,
+          q: query,
           size: String(Math.min(input.size ?? 10, 100)),
           sort,
         });
