@@ -1,6 +1,6 @@
 {
   "name": "@wentorai/research-plugins",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "type": "module",
   "description": "438 academic research skills, 34 agent tools across 18 API modules, and 6 curated lists for Research-Claw and AI agents",
   "keywords": [
