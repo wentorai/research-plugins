@@ -21,7 +21,7 @@ export function createUnpaywallTools(
           description: "DOI of the paper, e.g. '10.1038/nature12373'",
         }),
       }),
-      execute: async (input: { doi: string }) => {
+      execute: async (_toolCallId: string, input: { doi: string }) => {
         if (!input?.doi) {
           return toolResult({ error: 'doi parameter is required (e.g., "10.1038/nature12373")' });
         }

@@ -27,7 +27,7 @@ export function createOrcidTools(
           Type.Number({ description: "Max results (default 10, max 100)" }),
         ),
       }),
-      execute: async (input: { query: string; limit?: number }) => {
+      execute: async (_toolCallId: string, input: { query: string; limit?: number }) => {
         const query = validParam(input?.query);
         if (!query) {
           return toolResult({
@@ -78,7 +78,7 @@ export function createOrcidTools(
           description: "ORCID iD, e.g. '0000-0002-1825-0097'",
         }),
       }),
-      execute: async (input: { orcid: string }) => {
+      execute: async (_toolCallId: string, input: { orcid: string }) => {
         if (!input?.orcid) {
           return toolResult({ error: 'orcid parameter is required (e.g., "0000-0002-1825-0097")' });
         }

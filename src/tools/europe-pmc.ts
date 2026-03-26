@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError, validParam, validEnum } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validParam } from "./util.js";
 
 const BASE = "https://www.ebi.ac.uk/europepmc/webservices/rest";
 
@@ -31,14 +31,22 @@ export function createEuropePmcTools(
           Type.String({ description: "Pagination cursor (use value from previous response)" }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         query: string;
         max_results?: number;
         sort?: string;
         cursor?: string;
       }) => {
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error:
+              "query parameter is required and must not be empty. " +
+              "Example: search_europe_pmc({ query: \"CRISPR gene editing\" })",
+          });
+        }
         const params = new URLSearchParams({
-          query: input.query,
+          query,
           format: "json",
           pageSize: String(Math.min(input.max_results ?? 10, 1000)),
           resultType: "core",
@@ -92,11 +100,14 @@ export function createEuropePmcTools(
         ),
         page: Type.Optional(Type.Number({ description: "Page number (default 1)" })),
       }),
-      execute: async (input: { pmid: string; max_results?: number; page?: number }) => {
+      execute: async (_toolCallId: string, input: { pmid: string; max_results?: number; page?: number }) => {
+        if (!input?.pmid) {
+          return toolResult({ error: 'pmid parameter is required (PubMed ID, e.g., "33116299")' });
+        }
         const params = new URLSearchParams({
           format: "json",
-          pageSize: String(input.max_results ?? 25),
-          page: String(input.page ?? 1),
+          pageSize: String(input?.max_results ?? 25),
+          page: String(input?.page ?? 1),
         });
         const tracked = await trackedFetch("europe_pmc", `${BASE}/MED/${input.pmid}/citations?${params}`);
         if (isTrackedError(tracked)) return tracked;
@@ -130,10 +141,13 @@ export function createEuropePmcTools(
           Type.Number({ description: "Max references to return (default 25)" }),
         ),
       }),
-      execute: async (input: { pmid: string; max_results?: number }) => {
+      execute: async (_toolCallId: string, input: { pmid: string; max_results?: number }) => {
+        if (!input?.pmid) {
+          return toolResult({ error: 'pmid parameter is required (PubMed ID, e.g., "33116299")' });
+        }
         const params = new URLSearchParams({
           format: "json",
-          pageSize: String(input.max_results ?? 25),
+          pageSize: String(input?.max_results ?? 25),
         });
         const tracked = await trackedFetch("europe_pmc", `${BASE}/MED/${input.pmid}/references?${params}`);
         if (isTrackedError(tracked)) return tracked;

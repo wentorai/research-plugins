@@ -23,7 +23,7 @@ export function createDblpTools(
           Type.Number({ description: "Result offset for pagination" }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         query: string;
         max_results?: number;
         offset?: number;
@@ -97,7 +97,7 @@ export function createDblpTools(
           Type.Number({ description: "Max results (default 10)" }),
         ),
       }),
-      execute: async (input: { query: string; max_results?: number }) => {
+      execute: async (_toolCallId: string, input: { query: string; max_results?: number }) => {
         const query = validParam(input?.query);
         if (!query) {
           return toolResult({

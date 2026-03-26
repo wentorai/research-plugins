@@ -28,17 +28,17 @@ export function createOsfPreprintsTools(
           Type.Number({ description: "Page number (default 1)" }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         provider?: string;
         size?: number;
         page?: number;
       }) => {
         const params = new URLSearchParams({
-          "page[size]": String(Math.min(input.size ?? 10, 100)),
+          "page[size]": String(Math.min(input?.size ?? 10, 100)),
         });
-        const provider = validParam(input.provider);
+        const provider = validParam(input?.provider);
         if (provider) params.set("filter[provider]", provider);
-        if (input.page) params.set("page", String(input.page));
+        if (input?.page) params.set("page", String(input.page));
 
         const result = await trackedFetch(
           "osf_preprints",
@@ -58,7 +58,7 @@ export function createOsfPreprintsTools(
 
         return toolResult({
           total_results: linksMeta?.total,
-          page: input.page ?? 1,
+          page: input?.page ?? 1,
           source: "osf_preprints",
           preprints: (items ?? []).map((item) => {
             const attrs = item.attributes as Record<string, unknown> | undefined;

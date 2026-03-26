@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
-import { toolResult, trackedFetch, isTrackedError, validEnum } from "./util.js";
+import { toolResult, trackedFetch, isTrackedError, validEnum, validParam } from "./util.js";
 
 const BASE = "https://api.biorxiv.org";
 
@@ -23,16 +23,17 @@ export function createBiorxivTools(
           Type.Number({ description: "Pagination offset (default 0, each page returns up to 100)" }),
         ),
       }),
-      execute: async (input: { interval: string; cursor?: number }) => {
-        if (!input?.interval) {
+      execute: async (_toolCallId: string, input: { interval: string; cursor?: number }) => {
+        const interval = validParam(input?.interval);
+        if (!interval) {
           return toolResult({ error: 'interval parameter is required (date range in YYYY-MM-DD/YYYY-MM-DD format, e.g. "2026-03-01/2026-03-18")' });
         }
         // Validate date range format — bioRxiv API only accepts YYYY-MM-DD/YYYY-MM-DD
-        if (!/^\d{4}-\d{2}-\d{2}\/\d{4}-\d{2}-\d{2}$/.test(input.interval)) {
-          return toolResult({ error: `Invalid interval format "${input.interval}". Must be YYYY-MM-DD/YYYY-MM-DD (e.g. "2026-03-01/2026-03-18")` });
+        if (!/^\d{4}-\d{2}-\d{2}\/\d{4}-\d{2}-\d{2}$/.test(interval)) {
+          return toolResult({ error: `Invalid interval format "${interval}". Must be YYYY-MM-DD/YYYY-MM-DD (e.g. "2026-03-01/2026-03-18")` });
         }
-        const cursor = input.cursor ?? 0;
-        const tracked = await trackedFetch("biorxiv", `${BASE}/details/biorxiv/${input.interval}/${cursor}/json`, undefined, 30_000);
+        const cursor = input?.cursor ?? 0;
+        const tracked = await trackedFetch("biorxiv", `${BASE}/details/biorxiv/${interval}/${cursor}/json`, undefined, 30_000);
         if (isTrackedError(tracked)) return tracked;
         const data = await tracked.res.json();
 
@@ -76,15 +77,16 @@ export function createBiorxivTools(
           Type.Number({ description: "Pagination offset (default 0)" }),
         ),
       }),
-      execute: async (input: { interval: string; cursor?: number }) => {
-        if (!input?.interval) {
+      execute: async (_toolCallId: string, input: { interval: string; cursor?: number }) => {
+        const interval = validParam(input?.interval);
+        if (!interval) {
           return toolResult({ error: 'interval parameter is required (date range in YYYY-MM-DD/YYYY-MM-DD format, e.g. "2026-03-01/2026-03-18")' });
         }
-        if (!/^\d{4}-\d{2}-\d{2}\/\d{4}-\d{2}-\d{2}$/.test(input.interval)) {
-          return toolResult({ error: `Invalid interval format "${input.interval}". Must be YYYY-MM-DD/YYYY-MM-DD (e.g. "2026-03-01/2026-03-18")` });
+        if (!/^\d{4}-\d{2}-\d{2}\/\d{4}-\d{2}-\d{2}$/.test(interval)) {
+          return toolResult({ error: `Invalid interval format "${interval}". Must be YYYY-MM-DD/YYYY-MM-DD (e.g. "2026-03-01/2026-03-18")` });
         }
-        const cursor = input.cursor ?? 0;
-        const tracked = await trackedFetch("medrxiv", `${BASE}/details/medrxiv/${input.interval}/${cursor}/json`, undefined, 30_000);
+        const cursor = input?.cursor ?? 0;
+        const tracked = await trackedFetch("medrxiv", `${BASE}/details/medrxiv/${interval}/${cursor}/json`, undefined, 30_000);
         if (isTrackedError(tracked)) return tracked;
         const data = await tracked.res.json();
 
@@ -124,7 +126,7 @@ export function createBiorxivTools(
           Type.String({ description: "Server: 'biorxiv' or 'medrxiv' (default: biorxiv)" }),
         ),
       }),
-      execute: async (input: { doi: string; server?: string }) => {
+      execute: async (_toolCallId: string, input: { doi: string; server?: string }) => {
         if (!input?.doi) {
           return toolResult({ error: 'doi parameter is required (e.g., "10.1101/2024.01.15.575123")' });
         }

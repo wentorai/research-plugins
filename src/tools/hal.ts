@@ -49,13 +49,21 @@ export function createHalTools(
           }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         query: string;
         rows?: number;
         sort?: string;
         doc_type?: string;
       }) => {
-        let q = input.query;
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error:
+              "query parameter is required and must not be empty. " +
+              "Example: search_hal({ query: \"machine learning\" })",
+          });
+        }
+        let q = query;
         const docType = validParam(input.doc_type);
         if (docType) {
           q = `(${q}) AND docType_s:${docType}`;

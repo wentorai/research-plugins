@@ -112,7 +112,7 @@ export function createOpenAireTools(
           Type.Number({ description: "Max results (default 10, max 50)" }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         keywords: string;
         author?: string;
         doi?: string;
@@ -122,8 +122,16 @@ export function createOpenAireTools(
         funder?: string;
         max_results?: number;
       }) => {
+        const keywords = validParam(input?.keywords);
+        if (!keywords) {
+          return toolResult({
+            error:
+              "keywords parameter is required and must not be empty. " +
+              "Example: search_openaire({ keywords: \"machine learning\" })",
+          });
+        }
         const params = new URLSearchParams({
-          keywords: input.keywords,
+          keywords,
           format: "json",
           size: String(Math.min(input.max_results ?? 10, 50)),
         });

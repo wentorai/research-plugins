@@ -31,23 +31,31 @@ export function createDataCiteTools(
           Type.Number({ description: "Published from this year onward" }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         query: string;
         max_results?: number;
         resource_type?: string;
         from_year?: number;
       }) => {
-        const pageSize = Math.min(input.max_results ?? 10, 100);
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error:
+              "query parameter is required and must not be empty. " +
+              "Example: search_datacite({ query: \"climate dataset\" })",
+          });
+        }
+        const pageSize = Math.min(input?.max_results ?? 10, 100);
         const params = new URLSearchParams({
-          query: input.query,
+          query,
           "page[size]": String(pageSize),
         });
         const resourceType = validParam(input.resource_type);
         if (resourceType) {
           params.set("resource-type-id", resourceType.toLowerCase());
         }
-        if (input.from_year) {
-          params.set("query", `${input.query} AND publicationYear:[${input.from_year} TO *]`);
+        if (input?.from_year) {
+          params.set("query", `${query} AND publicationYear:[${input.from_year} TO *]`);
         }
 
         const tracked = await trackedFetch("datacite", `${BASE}/dois?${params}`, undefined, 15_000);
@@ -118,7 +126,7 @@ export function createDataCiteTools(
           description: "DOI to resolve, e.g. '10.5281/zenodo.1234567'",
         }),
       }),
-      execute: async (input: { doi: string }) => {
+      execute: async (_toolCallId: string, input: { doi: string }) => {
         if (!input?.doi) {
           return toolResult({ error: 'doi parameter is required (e.g., "10.5281/zenodo.1234567")' });
         }

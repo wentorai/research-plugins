@@ -38,7 +38,7 @@ export function createOpenAlexTools(
           }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         query: string;
         limit?: number;
         from_year?: number;
@@ -46,7 +46,8 @@ export function createOpenAlexTools(
         open_access?: boolean;
         sort_by?: string;
       }) => {
-        if (!input?.query || input.query.trim() === "" || input.query === "undefined") {
+        const query = validParam(input?.query);
+        if (!query) {
           return toolResult({ error: "query parameter is required and must not be empty" });
         }
 
@@ -58,7 +59,7 @@ export function createOpenAlexTools(
         if (input.open_access) filters.push("is_oa:true");
 
         const params = new URLSearchParams({
-          search: input.query,
+          search: query,
           per_page: String(Math.min(input.limit ?? 10, 200)),
         });
         if (filters.length > 0) params.set("filter", filters.join(","));
@@ -102,7 +103,7 @@ export function createOpenAlexTools(
             "Work identifier: OpenAlex ID (e.g. 'W2741809807'), DOI URL, or PMID",
         }),
       }),
-      execute: async (input: { work_id: string }) => {
+      execute: async (_toolCallId: string, input: { work_id: string }) => {
         if (!input?.work_id) {
           return toolResult({ error: 'work_id parameter is required (e.g., "W2741809807" or a DOI like "10.1234/example")' });
         }
@@ -146,7 +147,7 @@ export function createOpenAlexTools(
             "Author identifier: OpenAlex ID (e.g. 'A5023888391'), ORCID, or name search",
         }),
       }),
-      execute: async (input: { author_id: string }) => {
+      execute: async (_toolCallId: string, input: { author_id: string }) => {
         if (!input?.author_id) {
           return toolResult({ error: 'author_id parameter is required (OpenAlex ID e.g. "A5023888391", ORCID, or author name)' });
         }

@@ -37,15 +37,23 @@ export function createZenodoTools(
           }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         query: string;
         type?: string;
         size?: number;
         sort?: string;
         access_right?: string;
       }) => {
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error:
+              "query parameter is required and must not be empty. " +
+              "Example: search_zenodo({ query: \"climate dataset\" })",
+          });
+        }
         const params = new URLSearchParams({
-          q: input.query,
+          q: query,
           size: String(Math.min(input.size ?? 10, 100)),
         });
         const type = validParam(input.type);
@@ -105,7 +113,7 @@ export function createZenodoTools(
           description: "Zenodo record ID (numeric), e.g. '7042164'",
         }),
       }),
-      execute: async (input: { record_id: string }) => {
+      execute: async (_toolCallId: string, input: { record_id: string }) => {
         if (!input?.record_id) {
           return toolResult({ error: 'record_id parameter is required (e.g., "1234567")' });
         }

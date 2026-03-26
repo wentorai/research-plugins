@@ -34,7 +34,7 @@ export function createPubMedTools(
           Type.String({ description: "Max publication date (YYYY/MM/DD)" }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         query: string;
         max_results?: number;
         sort?: string;
@@ -121,7 +121,7 @@ export function createPubMedTools(
       parameters: Type.Object({
         pmid: Type.String({ description: "PubMed ID (numeric string)" }),
       }),
-      execute: async (input: { pmid: string }) => {
+      execute: async (_toolCallId: string, input: { pmid: string }) => {
         if (!input?.pmid) {
           return toolResult({ error: 'pmid parameter is required (numeric PubMed ID, e.g., "33116299")' });
         }

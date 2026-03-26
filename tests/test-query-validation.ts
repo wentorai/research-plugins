@@ -48,7 +48,7 @@ console.log("=== Part 1: Invalid query rejection ===\n");
 
 for (const tool of searchTools) {
   for (const inv of INVALID_INPUTS) {
-    const result = await tool.execute({ query: inv.query } as any);
+    const result = await tool.execute("test-call-id", { query: inv.query } as any);
     const text = result?.content?.[0]?.text ?? "";
     const isError = text.includes("error") && text.includes("required");
     if (isError) {
@@ -97,7 +97,7 @@ for (const c of LIVE_CASES) {
     continue;
   }
   try {
-    const result = await tool.execute(c.input as any);
+    const result = await tool.execute("test-call-id", c.input as any);
     const text = result?.content?.[0]?.text ?? "";
     const parsed = JSON.parse(text);
     const hasResults = Array.isArray(parsed[c.check]) && parsed[c.check].length > 0;

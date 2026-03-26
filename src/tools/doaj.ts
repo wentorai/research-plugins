@@ -29,16 +29,24 @@ export function createDoajTools(
           Type.String({ description: "Sort field, e.g. 'created_date:desc'" }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         query: string;
         max_results?: number;
         page?: number;
         sort?: string;
       }) => {
-        const pageSize = Math.min(input.max_results ?? 10, 100);
-        const page = input.page ?? 1;
+        const query = validParam(input?.query);
+        if (!query) {
+          return toolResult({
+            error:
+              "query parameter is required and must not be empty. " +
+              "Example: search_doaj({ query: \"open access genomics\" })",
+          });
+        }
+        const pageSize = Math.min(input?.max_results ?? 10, 100);
+        const page = input?.page ?? 1;
 
-        let url = `${BASE}/search/articles/${encodeURIComponent(input.query)}?page=${page}&pageSize=${pageSize}`;
+        let url = `${BASE}/search/articles/${encodeURIComponent(query)}?page=${page}&pageSize=${pageSize}`;
         const sort = validParam(input.sort);
         if (sort) url += `&sort=${encodeURIComponent(sort)}`;
 

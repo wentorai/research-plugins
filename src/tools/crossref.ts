@@ -23,7 +23,7 @@ export function createCrossRefTools(
           description: "DOI to resolve, e.g. '10.1038/nature12373'",
         }),
       }),
-      execute: async (input: { doi: string }) => {
+      execute: async (_toolCallId: string, input: { doi: string }) => {
         if (!input?.doi) {
           return toolResult({ error: 'doi parameter is required (e.g., "10.1038/nature12373")' });
         }
@@ -94,7 +94,7 @@ export function createCrossRefTools(
           Type.Number({ description: "Max results (default 10, max 100)" }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         query: string;
         journal?: string;
         issn?: string;

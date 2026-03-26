@@ -103,7 +103,7 @@ export function createArxivTools(
           Type.String({ description: "Sort order: 'ascending' or 'descending'" }),
         ),
       }),
-      execute: async (input: {
+      execute: async (_toolCallId: string, input: {
         query: string;
         max_results?: number;
         sort_by?: string;
@@ -163,7 +163,7 @@ export function createArxivTools(
           description: "arXiv paper ID, e.g. '2301.00001' or '2301.00001v2'",
         }),
       }),
-      execute: async (input: { arxiv_id: string }) => {
+      execute: async (_toolCallId: string, input: { arxiv_id: string }) => {
         if (!input?.arxiv_id) {
           return toolResult({ error: 'arxiv_id parameter is required (e.g., "2301.00001" or "2301.00001v2")' });
         }

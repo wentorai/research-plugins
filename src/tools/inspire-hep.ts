@@ -98,7 +98,7 @@ export function createInspireHepTools(
           }),
         ),
       }),
-      execute: async (input: { query: string; size?: number; sort?: string }) => {
+      execute: async (_toolCallId: string, input: { query: string; size?: number; sort?: string }) => {
         const query = validParam(input?.query);
         if (!query) {
           return toolResult({
@@ -144,7 +144,10 @@ export function createInspireHepTools(
             "Paper identifier: arXiv ID (e.g. '1207.7214') or DOI (e.g. '10.1016/j.physletb.2012.08.020')",
         }),
       }),
-      execute: async (input: { identifier: string }) => {
+      execute: async (_toolCallId: string, input: { identifier: string }) => {
+        if (!input?.identifier) {
+          return toolResult({ error: 'identifier parameter is required (arXiv ID e.g. "1207.7214" or DOI e.g. "10.1016/j.physletb.2012.08.020")' });
+        }
         // Determine if it's a DOI or arXiv ID
         const id = input.identifier.trim();
         let url: string;

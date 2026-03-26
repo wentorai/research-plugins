@@ -22,7 +22,7 @@ export function createRorTools(
           Type.Number({ description: "Max results (default 10, max 50)" }),
         ),
       }),
-      execute: async (input: { query: string; max_results?: number }) => {
+      execute: async (_toolCallId: string, input: { query: string; max_results?: number }) => {
         const query = validParam(input?.query);
         if (!query) {
           return toolResult({
