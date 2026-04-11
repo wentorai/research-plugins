@@ -19,6 +19,8 @@ Plug-and-play research capabilities for [Research-Claw](https://github.com/wento
 
 ---
 
+**Complementary external resource:** [Paperzilla](https://github.com/paperzilla-ai/paperzilla-skills) ([ClawHub](https://clawhub.ai/pors/paperzilla)) is a useful addition for biology and medical literature monitoring. It currently supports project-based bioRxiv and medRxiv feeds, can fetch paper markdown for summarization and relevance assessment, and has PubMed support planned.
+
 ## Quick Start
 
 ### Install (Research-Claw / OpenClaw)
