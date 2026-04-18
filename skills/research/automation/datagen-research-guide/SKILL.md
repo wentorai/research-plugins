@@ -1,21 +1,13 @@
 ---
 name: datagen-research-guide
 description: "AI-driven multi-agent research assistant for end-to-end studies"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/DATAGEN-AI/DATAGEN
 metadata:
   openclaw:
     category: "research"
     subcategory: "automation"
     emoji: "⚙️"
-    keywords:
-      - multi-agent
-      - research-assistant
-      - data-generation
-      - study-automation
-      - pipeline-orchestration
-      - ai-research
+    keywords: [multi-agent, research-assistant, data-generation, study-automation, pipeline-orchestration, ai-research]
 ---
 
 # DATAGEN Research Guide

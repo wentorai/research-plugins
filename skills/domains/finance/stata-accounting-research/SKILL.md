@@ -6,7 +6,7 @@ metadata:
     emoji: "📒"
     category: "domains"
     subcategory: "finance"
-    keywords: ["STATA", "accounting", "empirical finance", "panel data", "earnings management", "audit"]
+    keywords: ["Stata", "accounting research", "empirical finance", "earnings management", "Compustat", "CRSP", "financial economics"]
     source: "wentor-research-plugins"
 ---
 
@@ -178,6 +178,84 @@ foreach y of local years {
 gen abs_da_kothari = abs(da_kothari)
 label var da_kothari "Discretionary accruals (Kothari)"
 label var abs_da_kothari "Absolute DA (Kothari)"
+```
+
+## Earnings Management Detection
+
+### Earnings Distribution Discontinuity (Burgstahler & Dichev 1997)
+
+```stata
+* Scaled earnings (earnings per share / price)
+gen earn_scaled = ib / (prcc_f * csho)
+
+* Histogram around zero
+twoway (histogram earn_scaled if inrange(earn_scaled, -0.10, 0.10), ///
+    width(0.005) color(navy%50)), ///
+    xline(0, lcolor(red)) ///
+    title("Distribution of Scaled Earnings Around Zero") ///
+    xtitle("Earnings / Market Cap") ytitle("Frequency") ///
+    graphregion(color(white))
+graph export "figures/earnings_discontinuity.pdf", replace
+
+* Burgstahler & Dichev (1997) test
+gen earn_bin = round(earn_scaled, 0.005)
+tab earn_bin if inrange(earn_scaled, -0.025, 0.025)
+
+* Test for discontinuity at zero
+gen just_above = (earn_scaled >= 0 & earn_scaled < 0.005)
+gen just_below = (earn_scaled >= -0.005 & earn_scaled < 0)
+prtest just_above == just_below
+```
+
+### Real Earnings Management (Roychowdhury 2006)
+
+```stata
+* Abnormal cash flow from operations
+gen da_cfo = .
+foreach ind of local industries {
+    foreach yr of local years {
+        capture {
+            reg cfo inv_at sale_scaled d_sale_scaled ///
+                if ff48 == `ind' & fyear == `yr', robust
+            predict resid if e(sample), resid
+            replace da_cfo = resid if ff48 == `ind' & fyear == `yr' & !missing(resid)
+            drop resid
+        }
+    }
+}
+
+* Abnormal production costs
+gen prod_costs = cogs + (xinv - l.xinv)
+gen prod_scaled = prod_costs / l.at
+
+gen da_prod = .
+foreach ind of local industries {
+    foreach yr of local years {
+        capture {
+            reg prod_scaled inv_at sale_scaled d_sale_scaled l.d_sale_scaled ///
+                if ff48 == `ind' & fyear == `yr', robust
+            predict resid if e(sample), resid
+            replace da_prod = resid if ff48 == `ind' & fyear == `yr' & !missing(resid)
+            drop resid
+        }
+    }
+}
+```
+
+## Instrumental Variables (Two-Stage Least Squares)
+
+```stata
+* IV regression for endogeneity concerns
+ivregress 2sls earnings_quality (board_independence = ///
+    state_governance_index peer_board_independence) ///
+    size leverage mb loss i.fyear, cluster(gvkey) first
+
+* First-stage diagnostics
+estat firststage
+estat endogenous
+
+* Weak instrument test
+estat firststage, forcenonrobust
 ```
 
 ## Event Study
@@ -369,4 +447,6 @@ ranksum abs_da, by(big4)
 - Kothari, S. P., Leone, A. J., & Wasley, C. E. (2005). Performance Matched Discretionary Accrual Measures. Journal of Accounting and Economics, 39(1), 163-197.
 - [WRDS (Wharton Research Data Services)](https://wrds-www.wharton.upenn.edu/) -- Standard data platform for accounting/finance research
 - [reghdfe documentation](https://github.com/sergiocorreia/reghdfe) -- Fast fixed-effects estimation in STATA
+- Roychowdhury, S. (2006). Earnings Management through Real Activities Manipulation. Journal of Accounting and Economics, 42(3), 335-370.
+- Burgstahler, D., & Dichev, I. (1997). Earnings Management to Avoid Earnings Decreases and Losses. Journal of Accounting and Economics, 24(1), 99-126.
 - Gow, I. D., Ormazabal, G., & Taylor, D. J. (2010). Correcting for Cross-Sectional and Time-Series Dependence in Accounting Research. The Accounting Review, 85(2), 483-512.

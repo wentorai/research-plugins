@@ -6,7 +6,7 @@ metadata:
     emoji: "🔓"
     category: "literature"
     subcategory: "fulltext"
-    keywords: ["OSF", "Open Science Framework", "preprints", "open data", "reproducibility", "COS"]
+    keywords: ["OSF", "Open Science Framework", "preprints", "open data", "reproducibility", "preregistration"]
     source: "https://osf.io/"
 ---
 
@@ -15,6 +15,20 @@ metadata:
 ## Overview
 
 The Open Science Framework by the Center for Open Science provides infrastructure for the entire research lifecycle — project management, file storage, preprint hosting, and registrations. The API enables search, project creation, file management, and preprint discovery across OSF Preprints, PsyArXiv, SocArXiv, and 25+ community preprint servers. Free, no auth for read access.
+
+## Authentication
+
+Public read access requires no authentication. For creating or modifying resources, generate a personal access token at https://osf.io/settings/tokens.
+
+```bash
+# Public access (no auth needed)
+curl "https://api.osf.io/v2/nodes/?filter[title]=reproducibility"
+
+# Authenticated access for write operations
+export OSF_TOKEN=$OSF_TOKEN
+curl -H "Authorization: Bearer $OSF_TOKEN" \
+  "https://api.osf.io/v2/users/me/"
+```
 
 ## API Endpoints
 
@@ -196,17 +210,27 @@ for r in regs[:5]:
     print(f"[{r['date_registered']}] {r['title']}")
 ```
 
-## Use Cases
+## Common Research Patterns
 
-1. **Preprint discovery**: Search across 25+ preprint servers
-2. **Pre-registration search**: Find registered study protocols
-3. **Open data access**: Download shared research datasets
-4. **Reproducibility**: Access materials, data, and code for published studies
-5. **Project management**: Programmatic project and file management
+- **Preregistration Review**: Search for preregistered studies in your field to understand how others formulate hypotheses, specify sample sizes, and plan analyses before data collection. Essential for meta-science and methodological research.
+- **Preprint Discovery**: Use the preprints endpoint to find the latest unrefereed manuscripts across multiple community servers, getting access to cutting-edge findings before formal publication.
+- **Open Data Access**: Retrieve datasets attached to OSF projects for replication attempts, secondary analyses, or meta-analyses. OSF projects often include raw data, analysis scripts, and materials.
+- **Collaboration Mapping**: Explore contributors and linked projects to understand research collaboration networks in specific domains.
+- **Reproducibility Audits**: Programmatically check whether published studies have associated preregistrations, open data, or open materials on OSF.
+
+## Rate Limits and Best Practices
+
+- **Rate limit**: 100 requests per minute for unauthenticated, higher limits for authenticated requests
+- **Pagination**: Use `page` and `page[size]` parameters; default page size is 10
+- **JSON:API format**: Responses follow JSON:API specification; data is under the `data` key, relationships are linked
+- **Sparse fieldsets**: Use `fields[nodes]=title,date_created` to request only needed fields
+- **Embedding**: Use `embed=contributors` to include related resources in a single request
+- **Respect the service**: Add delays between rapid sequential requests; use the `links.next` URL for pagination
 
 ## References
 
 - [OSF](https://osf.io/)
 - [OSF API Documentation](https://developer.osf.io/)
 - [OSF Preprints](https://osf.io/preprints/)
+- [OSF Registrations (Preregistration)](https://osf.io/registries/)
 - [Center for Open Science](https://cos.io/)

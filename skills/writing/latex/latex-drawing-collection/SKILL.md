@@ -1,21 +1,13 @@
 ---
 name: latex-drawing-collection
 description: "LaTeX drawing examples for Bayesian networks, tensors, and diagrams"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/xinychen/awesome-latex-drawing
 metadata:
   openclaw:
     category: "writing"
     subcategory: "latex"
     emoji: "🎨"
-    keywords:
-      - latex-drawing
-      - tikz
-      - bayesian-networks
-      - tensor-diagrams
-      - scientific-figures
-      - pgfplots
+    keywords: [latex-drawing, tikz, bayesian-networks, tensor-diagrams, scientific-figures, pgfplots]
 ---
 
 # LaTeX Drawing Collection

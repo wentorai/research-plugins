@@ -1,21 +1,13 @@
 ---
 name: obsidian-zotero-guide
 description: "Insert citations and notes from Zotero into Obsidian knowledge bases"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/mgmeyers/obsidian-zotero-integration
 metadata:
   openclaw:
     category: "writing"
     subcategory: "citation"
     emoji: "🔗"
-    keywords:
-      - obsidian
-      - zotero
-      - citation-management
-      - note-taking
-      - knowledge-base
-      - bibliography
+    keywords: [obsidian, zotero, citation-management, note-taking, knowledge-base, bibliography]
 ---
 
 # Obsidian-Zotero Guide

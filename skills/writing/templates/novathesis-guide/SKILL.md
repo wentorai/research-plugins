@@ -1,20 +1,13 @@
 ---
 name: novathesis-guide
 description: "LaTeX thesis template supporting multiple universities and formats"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/joaomlourenco/novathesis
 metadata:
   openclaw:
     category: "writing"
     subcategory: "templates"
     emoji: "🎓"
-    keywords:
-      - thesis-template
-      - latex-thesis
-      - dissertation
-      - university-formatting
-      - academic-typesetting
+    keywords: [thesis-template, latex-thesis, dissertation, university-formatting, academic-typesetting]
 ---
 
 # NovaThesis Guide

@@ -6,7 +6,7 @@ metadata:
     emoji: "🖊"
     category: "writing"
     subcategory: "composition"
-    keywords: ["academic writing style", "scientific writing", "formal English", "paper title writing", "abstract writing"]
+    keywords: ["scientific writing", "academic writing", "writing tools", "manuscript preparation", "AI writing workflow", "prose quality"]
     source: "https://github.com/writing-resources/awesome-scientific-writing"
 ---
 
@@ -125,6 +125,75 @@ format:
 | Quarto | Code + prose | Git | Native |
 | Google Docs | Non-technical coauthors | Real-time | Suggest mode |
 | Typst | Fast typesetting | Git | Native |
+
+## Grammar and Style Tools
+
+**Automated Checking**
+- LanguageTool: open-source grammar, style, and spell checker with academic English support
+- Vale: prose linter that enforces writing style guides (Microsoft, Google, academic custom)
+- textlint: pluggable text linting framework with rules for technical writing
+- write-good: naive linter for English prose focusing on common writing issues
+- proselint: linter for prose that checks for jargon, cliches, and logical errors
+
+**Style Guides for Science**
+- APA Publication Manual: standard for social sciences
+- Chicago Manual of Style: comprehensive general reference
+- ACS Style Guide: standard for chemistry publications
+- IEEE Editorial Style Manual: standard for engineering and computer science
+- Nature's guide for authors: concise scientific style reference
+
+## Reference Management
+
+- Zotero: free, open-source, with extensive plugin ecosystem
+- Mendeley: integrated with Elsevier databases, PDF annotation support
+- JabRef: open-source, BibTeX-native reference manager
+- Paperpile: lightweight, Google Docs and browser integration
+- citeproc: processes citations in any of 10,000+ CSL styles
+- Better BibTeX for Zotero: enhanced BibTeX export with stable citation keys
+
+## AI-Assisted Drafting Workflow
+
+### Recommended Drafting Order
+
+1. **Methods** -- Most straightforward; describe what you did
+2. **Results** -- Present findings; closely tied to your figures and tables
+3. **Discussion** -- Interpret results; requires the most original thinking
+4. **Introduction** -- Frame the paper; easier to write once you know what you are introducing
+5. **Abstract** -- Compress the whole paper; write last
+6. **Title** -- Refine based on the actual content
+
+### Prompting Strategy
+
+When using an LLM to draft sections, provide rich context: your outline, detailed notes, target venue, approximate word count, and explicit constraints (e.g., "Do not invent any details not present in my notes"). After generating any section, review for accuracy, completeness, consistency with the rest of the paper, and voice.
+
+### Iterative Revision Prompts
+
+- **Tighten prose**: "Reduce this paragraph by 30% while preserving all key information."
+- **Strengthen transitions**: "Add a transition sentence between these two paragraphs that connects [concept A] to [concept B]."
+- **Clarify technical content**: "Rewrite this paragraph for a reader who understands [field] but is not familiar with [specific technique]."
+- **Hedging calibration**: "Review this paragraph and ensure claims are appropriately hedged based on the strength of the evidence."
+
+### Self-Review Checklist
+
+Before submitting for peer review or to a journal, verify:
+
+- Title is specific and informative
+- Abstract contains all four elements (context, gap, approach, result)
+- All figures have descriptive captions
+- All acronyms defined at first use
+- Reference list is complete and correctly formatted
+- No placeholder text remains (search for "TODO", "XXX", "TBD")
+- Page limits and formatting requirements met
+- Author contributions and acknowledgments included
+- Supplementary materials organized and referenced
+
+### Common AI Writing Pitfalls
+
+- **Generic hedging**: AI models overuse phrases like "It is worth noting that" and "Interestingly." Remove these.
+- **Circular definitions**: AI sometimes defines a term using the term itself. Check all definitions.
+- **False confidence**: AI may present uncertain conclusions with unwarranted certainty. Calibrate claims to your evidence.
+- **Homogeneous sentence structure**: AI-generated text often falls into repetitive Subject-Verb-Object patterns. Vary your sentence structure.
+- **Missing specifics**: AI may write "significant improvement" without the actual numbers. Always insert your real data.
 
 ## Common Pitfalls and How to Avoid Them
 

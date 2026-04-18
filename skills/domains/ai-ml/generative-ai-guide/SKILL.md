@@ -1,21 +1,13 @@
 ---
 name: generative-ai-guide
 description: "Curated guide to generative AI covering LLMs and diffusion models"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/aishwaryanr/awesome-generative-ai-guide
 metadata:
   openclaw:
     category: "domains"
     subcategory: "ai-ml"
     emoji: "🤖"
-    keywords:
-      - generative-ai
-      - large-language-models
-      - diffusion-models
-      - transformers
-      - prompt-engineering
-      - ai-research
+    keywords: [generative-ai, large-language-models, diffusion-models, transformers, prompt-engineering, ai-research]
 ---
 
 # Generative AI Guide

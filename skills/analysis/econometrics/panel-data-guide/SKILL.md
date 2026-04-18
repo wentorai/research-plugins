@@ -6,7 +6,7 @@ metadata:
     emoji: "📋"
     category: "analysis"
     subcategory: "econometrics"
-    keywords: ["panel data", "fixed effects", "random effects", "Stata commands"]
+    keywords: ["panel data", "fixed effects", "random effects", "GMM", "Hausman test", "dynamic panel", "Stata econometrics"]
     source: "wentor-research-plugins"
 ---
 
@@ -78,6 +78,23 @@ xtset country_id year
 xtsum gdp_growth investment trade_openness
 ```
 
+### Panel Diagnostics (Stata)
+
+```stata
+* Check for gaps in panel
+gen gap = year - l.year if l.year != .
+tab gap  // Should be all 1's for balanced annual panels
+
+* Create balanced subsample
+by country_id: gen T_i = _N
+keep if T_i == max_T  // Keep only units observed in all periods
+
+* Attrition analysis
+gen in_panel = 1
+tsfill, full
+replace in_panel = 0 if missing(in_panel)
+```
+
 ### Fixed Effects
 
 ```stata
@@ -92,6 +109,18 @@ xtreg gdp_growth investment trade_openness, fe vce(cluster country_id)
 
 * Test joint significance of fixed effects
 testparm i.country_id
+```
+
+### Two-Way Fixed Effects with reghdfe
+
+```stata
+* Entity and time fixed effects (fast, memory-efficient)
+reghdfe gdp_growth investment trade_openness, ///
+    absorb(country_id year) cluster(country_id)
+
+* Two-way clustering (entity and year)
+reghdfe gdp_growth investment trade_openness, ///
+    absorb(country_id year) cluster(country_id year)
 ```
 
 ### Random Effects
@@ -112,6 +141,19 @@ hausman FE RE
 
 * If p < 0.05: reject RE, use FE
 * If p > 0.05: RE is consistent and efficient, prefer RE
+```
+
+### Robust Hausman Test (Mundlak Approach)
+
+```stata
+* Mundlak (1978): add group means to RE model (robust to heteroskedasticity)
+foreach var of varlist investment trade_openness {
+    bysort country_id: egen m_`var' = mean(`var')
+}
+xtreg gdp_growth investment trade_openness ///
+    m_investment m_trade_openness, re cluster(country_id)
+test m_investment m_trade_openness
+* Rejection => FE preferred; failure to reject => RE acceptable
 ```
 
 ### First Differences
@@ -230,15 +272,28 @@ xttest3
 When a lagged dependent variable is included as a regressor:
 
 ```stata
-* Arellano-Bond one-step GMM
-xtabond gdp_growth investment trade_openness, lags(1) vce(robust)
+* Difference GMM (Arellano & Bond 1991)
+xtabond gdp_growth l.gdp_growth investment trade_openness, ///
+    lags(1) twostep robust artests(2)
 
-* System GMM (Blundell-Bond) - more efficient
-xtdpdsys gdp_growth investment trade_openness, lags(1) vce(robust)
-
-* Sargan/Hansen test for overidentifying restrictions
-* AR(2) test for second-order serial correlation
+* System GMM (Blundell & Bond 1998) via xtabond2
+* More efficient than difference GMM, especially with persistent series
+xtabond2 gdp_growth l.gdp_growth investment trade_openness i.year, ///
+    gmm(l.gdp_growth, lag(2 4) collapse) ///
+    gmm(investment, lag(2 3) collapse) ///
+    iv(trade_openness i.year) ///
+    twostep robust orthogonal small
 ```
+
+### GMM Diagnostic Checklist
+
+| Test | Null Hypothesis | Desired Result | Stata Command |
+|------|----------------|----------------|---------------|
+| AR(1) | No first-order autocorrelation | Reject (p < 0.05) | Reported automatically |
+| AR(2) | No second-order autocorrelation | Fail to reject (p > 0.10) | Reported automatically |
+| Hansen J | Instruments are valid | Fail to reject (p > 0.10) | Reported automatically |
+| Diff-in-Hansen | Level instruments valid | Fail to reject (p > 0.10) | Reported automatically |
+| Instrument count | -- | N_instruments < N_groups | Check output |
 
 ### Difference-in-Differences (DID)
 
@@ -248,6 +303,32 @@ xtreg outcome treated##post, fe vce(cluster unit_id)
 
 * Event study specification
 xtreg outcome i.relative_time##treated, fe vce(cluster unit_id)
+```
+
+## Standard Error Options
+
+```stata
+* Entity-clustered (default choice for firm/country panels)
+xtreg gdp_growth investment trade_openness, fe cluster(country_id)
+
+* Driscoll-Kraay standard errors (cross-sectional dependence)
+xtscc gdp_growth investment trade_openness i.year, fe lag(3)
+
+* Diagnostic tests for SE selection
+xtreg gdp_growth investment trade_openness, fe
+xttest3           // Modified Wald test for heteroskedasticity
+xtserial gdp_growth investment trade_openness  // Wooldridge test for serial correlation
+xtcsd, pesaran abs  // Pesaran CD test for cross-sectional dependence
+```
+
+## Instrumental Variables in Panel Data
+
+```stata
+* IV with fixed effects (xtivreg)
+xtivreg gdp_growth (investment = tax_incentive foreign_aid) ///
+    trade_openness i.year, fe first
+
+* Report Kleibergen-Paap rk Wald F for weak instruments
 ```
 
 ## Reporting Results
@@ -272,3 +353,11 @@ Hausman test (p)       --        0.003        --
 Notes: Robust standard errors clustered at the country level in
 parentheses. * p<0.10, ** p<0.05, *** p<0.01.
 ```
+
+## References
+
+- Wooldridge, J.M. (2010), Econometric Analysis of Cross Section and Panel Data, 2nd ed., MIT Press
+- Arellano & Bond (1991), "Some Tests of Specification for Panel Data," RES 58(2)
+- Blundell & Bond (1998), "Initial Conditions and Moment Restrictions in Dynamic Panel Data Models," JoE 87(1)
+- Roodman (2009), "How to Do xtabond2: An Introduction to Difference and System GMM in Stata," SJ 9(1)
+- Cameron & Trivedi (2005), Microeconometrics: Methods and Applications, Cambridge University Press

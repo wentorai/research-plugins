@@ -1,21 +1,13 @@
 ---
 name: auto-deep-research-guide
 description: "Automated deep research tool for thorough topic investigation"
-version: 1.0.0
-author: wentor-community
 source: "wentor-research-plugins"
 metadata:
   openclaw:
     category: "research"
     subcategory: "deep-research"
     emoji: "🔍"
-    keywords:
-      - deep-research
-      - automated-investigation
-      - topic-exploration
-      - research-synthesis
-      - iterative-search
-      - knowledge-mapping
+    keywords: [deep-research, automated-investigation, topic-exploration, research-synthesis, iterative-search, knowledge-mapping]
 ---
 
 # Auto Deep Research Guide

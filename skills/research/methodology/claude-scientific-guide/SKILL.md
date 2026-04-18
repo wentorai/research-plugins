@@ -1,21 +1,13 @@
 ---
 name: claude-scientific-guide
 description: "Ready-to-use agent skills for scientific research and engineering"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/zyphlar/claude-scientific-skills
 metadata:
   openclaw:
     category: "research"
     subcategory: "methodology"
     emoji: "🧪"
-    keywords:
-      - scientific-method
-      - research-skills
-      - claude
-      - agent-prompting
-      - experiment-design
-      - engineering
+    keywords: [scientific-method, research-skills, claude, agent-prompting, experiment-design, engineering]
 ---
 
 # Claude Scientific Guide

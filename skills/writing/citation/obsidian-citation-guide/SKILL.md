@@ -1,21 +1,13 @@
 ---
 name: obsidian-citation-guide
 description: "Citation plugin for Obsidian note-taking with BibTeX support"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/hans/obsidian-citation-plugin
 metadata:
   openclaw:
     category: "writing"
     subcategory: "citation"
     emoji: "📚"
-    keywords:
-      - obsidian
-      - citations
-      - bibtex
-      - literature-notes
-      - reference-linking
-      - knowledge-management
+    keywords: [obsidian, citations, bibtex, literature-notes, reference-linking, knowledge-management]
 ---
 
 # Obsidian Citation Guide

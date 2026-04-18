@@ -1,9 +1,9 @@
 ---
 name: composition-skills
-description: "11 academic writing skills. Trigger: writing paper sections, structuring arguments, academic prose. Design: section-by-section guides (abstract, intro, methods, discussion) with templates."
+description: "9 academic writing skills. Trigger: writing paper sections, structuring arguments, academic prose. Design: section-by-section guides (abstract, intro, methods, discussion) with templates."
 ---
 
-# Academic Writing — 11 Skills
+# Academic Writing — 9 Skills
 
 Select the skill matching the user's need, then `read` its SKILL.md.
 
@@ -18,5 +18,3 @@ Select the skill matching the user's need, then `read` its SKILL.md.
 | [research-paper-writer](./research-paper-writer/SKILL.md) | Guide for writing formal academic papers following IEEE and ACM standards |
 | [response-to-reviewers](./response-to-reviewers/SKILL.md) | Write effective point-by-point responses to peer reviewer comments for revisions |
 | [scientific-writing-guide](./scientific-writing-guide/SKILL.md) | Curated tools and techniques for scientific writing beyond LaTeX |
-| [scientific-writing-resources](./scientific-writing-resources/SKILL.md) | Curated tools and resources for effective scientific writing |
-| [scientific-writing-wrapper](./scientific-writing-wrapper/SKILL.md) | AI-powered scientific writing workflow from outline to polished draft |

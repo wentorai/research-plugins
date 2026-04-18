@@ -42,7 +42,6 @@ Ethical guidelines:
 
 Official and semi-official alternatives:
   - OpenAlex API: free, no key required, excellent coverage
-  - OpenAlex API: free, comprehensive, well-documented
   - Crossref API: free, DOI-based metadata and citation counts
   - CORE API: free, full-text open access content
   - Google Scholar Alerts: manual but ToS-compliant monitoring
@@ -226,18 +225,11 @@ def save_results(results, output_dir, query_name):
 Use these free APIs instead when possible:
 
 OpenAlex (openalex.org):
-  - Coverage: 250M+ works
-  - API: REST, no key needed (polite pool with email)
-  - Rate limit: 10 requests/sec (polite pool), 100K/day
-  - Data: titles, abstracts, citations, authors, institutions
-  - Best for: large-scale bibliometric analysis
-
-OpenAlex (openalex.org):
   - Coverage: 250M+ works, all disciplines
-  - API: REST, no key required
-  - Rate limit: ~10 requests/sec polite
-  - Data: titles, abstracts, citations, concepts, author profiles
-  - Best for: cross-disciplinary analysis, open data research
+  - API: REST, no key needed (polite pool with email), 100K/day
+  - Rate limit: 10 requests/sec (polite pool)
+  - Data: titles, abstracts, citations, authors, institutions, concepts
+  - Best for: large-scale bibliometric and cross-disciplinary analysis
 
 Crossref (crossref.org):
   - Coverage: 130M+ DOIs

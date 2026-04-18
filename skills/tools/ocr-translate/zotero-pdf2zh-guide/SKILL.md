@@ -1,21 +1,13 @@
 ---
 name: zotero-pdf2zh-guide
 description: "PDF Chinese translation plugin for Zotero reference manager"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/guaguastandup/zotero-pdf2zh
 metadata:
   openclaw:
     category: "tools"
     subcategory: "ocr-translate"
     emoji: "🌐"
-    keywords:
-      - pdf-translation
-      - zotero-plugin
-      - chinese-translation
-      - ocr
-      - academic-papers
-      - bilingual-reading
+    keywords: [pdf-translation, zotero-plugin, chinese-translation, ocr, academic-papers, bilingual-reading]
 ---
 
 # Zotero PDF2ZH Guide

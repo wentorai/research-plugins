@@ -1,21 +1,13 @@
 ---
 name: zotero-reference-guide
 description: "PDF references add-on for enriching Zotero library metadata"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/MuiseDestiny/zotero-reference
 metadata:
   openclaw:
     category: "writing"
     subcategory: "citation"
     emoji: "📖"
-    keywords:
-      - zotero
-      - references
-      - pdf-parsing
-      - bibliography
-      - metadata-enrichment
-      - citation-linking
+    keywords: [zotero, references, pdf-parsing, bibliography, metadata-enrichment, citation-linking]
 ---
 
 # Zotero Reference Guide

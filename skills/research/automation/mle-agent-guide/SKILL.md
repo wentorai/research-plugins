@@ -1,21 +1,13 @@
 ---
 name: mle-agent-guide
 description: "Intelligent companion for ML engineering with arXiv integration"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/MLSys-Tools/MLE-agent
 metadata:
   openclaw:
     category: "research"
     subcategory: "automation"
     emoji: "🔬"
-    keywords:
-      - machine-learning
-      - ml-engineering
-      - arxiv-integration
-      - experiment-tracking
-      - model-development
-      - ai-engineering
+    keywords: [machine-learning, ml-engineering, arxiv-integration, experiment-tracking, model-development, ai-engineering]
 ---
 
 # MLE Agent Guide

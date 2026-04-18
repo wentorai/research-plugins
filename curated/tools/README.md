@@ -64,7 +64,6 @@
 | [notero-zotero-notion-guide](../../skills/tools/knowledge-graph/notero-zotero-notion-guide/) | Sync Zotero references and annotations to Notion databases |
 | [ontology-design-guide](../../skills/tools/knowledge-graph/ontology-design-guide/) | Design ontologies and knowledge graphs for research data modeling |
 | [openspg-guide](../../skills/tools/knowledge-graph/openspg-guide/) | Ant Group knowledge graph engine with SPG and KAG framework |
-| [paperpile-notion-guide](../../skills/tools/knowledge-graph/paperpile-notion-guide/) | Sync Paperpile references and annotations to Notion |
 | [rag-methodology-guide](../../skills/tools/knowledge-graph/rag-methodology-guide/) | RAG architecture for academic knowledge retrieval and synthesis |
 | [zotero-markdb-connect-guide](../../skills/tools/knowledge-graph/zotero-markdb-connect-guide/) | Sync Zotero references to Obsidian and Logseq markdown |
 

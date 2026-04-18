@@ -1,21 +1,13 @@
 ---
 name: zotero-mdnotes-guide
 description: "Export Zotero items and annotations to Markdown note files"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/argenos/zotero-mdnotes
 metadata:
   openclaw:
     category: "writing"
     subcategory: "citation"
     emoji: "📝"
-    keywords:
-      - zotero
-      - markdown
-      - note-export
-      - annotations
-      - knowledge-management
-      - literature-notes
+    keywords: [zotero, markdown, note-export, annotations, knowledge-management, literature-notes]
 ---
 
 # Zotero MDNotes Guide

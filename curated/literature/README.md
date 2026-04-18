@@ -103,7 +103,6 @@
 | [open-semantic-search-guide](../../skills/literature/search/open-semantic-search-guide/) | Self-hosted semantic search and text mining platform |
 | [openaire-api](../../skills/literature/search/openaire-api/) | Search EU-funded research outputs via the OpenAIRE Graph API |
 | [openalex-api](../../skills/literature/search/openalex-api/) | Query the OpenAlex catalog of scholarly works, authors, and institutions |
-| [paper-search-mcp-guide](../../skills/literature/search/paper-search-mcp-guide/) | MCP server for searching papers across arXiv, PubMed, bioRxiv |
 | [plos-open-access-api](../../skills/literature/search/plos-open-access-api/) | Search PLOS open access journals with full-text Solr-powered API |
 | [pubmed-api](../../skills/literature/search/pubmed-api/) | Search biomedical literature and retrieve records via PubMed E-utilities |
 | [scielo-api](../../skills/literature/search/scielo-api/) | Access Latin American and developing world research via SciELO API |

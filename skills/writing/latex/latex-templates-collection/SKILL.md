@@ -1,21 +1,13 @@
 ---
 name: latex-templates-collection
 description: "Collection of LaTeX templates for papers, presentations, and CVs"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/deedydas/latex-templates
 metadata:
   openclaw:
     category: "writing"
     subcategory: "latex"
     emoji: "📋"
-    keywords:
-      - latex-templates
-      - paper-templates
-      - presentation-templates
-      - cv-templates
-      - academic-formatting
-      - beamer
+    keywords: [latex-templates, paper-templates, presentation-templates, cv-templates, academic-formatting, beamer]
 ---
 
 # LaTeX Templates Collection

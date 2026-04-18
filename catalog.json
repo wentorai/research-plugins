@@ -1,11 +1,11 @@
 {
   "version": "2.0.0",
-  "generated": "2026-03-18",
+  "generated": "2026-04-18",
   "stats": {
-    "skills": 438,
+    "skills": 433,
     "agent_tools": 18,
     "curated_lists": 6,
-    "total": 462
+    "total": 457
   },
   "items": [
     {
@@ -328,24 +328,6 @@
       "source": "https://github.com/vikjam/mostly-harmless-replication"
     },
     {
-      "id": "panel-data-analyst",
-      "type": "skill",
-      "name": "panel-data-analyst",
-      "description": "Expert panel data regression analysis with fixed effects and GMM",
-      "category": "analysis",
-      "subcategory": "econometrics",
-      "keywords": [
-        "panel data",
-        "fixed effects",
-        "random effects",
-        "GMM",
-        "dynamic panel",
-        "Hausman test"
-      ],
-      "path": "skills/analysis/econometrics/panel-data-analyst",
-      "source": "https://www.stata.com/manuals/xt.pdf"
-    },
-    {
       "id": "panel-data-guide",
       "type": "skill",
       "name": "panel-data-guide",
@@ -356,7 +338,10 @@
         "panel data",
         "fixed effects",
         "random effects",
-        "Stata commands"
+        "GMM",
+        "Hausman test",
+        "dynamic panel",
+        "Stata econometrics"
       ],
       "path": "skills/analysis/econometrics/panel-data-guide",
       "source": "wentor-research-plugins"
@@ -396,24 +381,6 @@
       ],
       "path": "skills/analysis/econometrics/robustness-checks",
       "source": "wentor-research-plugins"
-    },
-    {
-      "id": "stata-accounting-guide",
-      "type": "skill",
-      "name": "stata-accounting-guide",
-      "description": "STATA code for empirical accounting and financial economics research",
-      "category": "analysis",
-      "subcategory": "econometrics",
-      "keywords": [
-        "Stata",
-        "accounting research",
-        "Compustat",
-        "CRSP",
-        "earnings management",
-        "financial economics"
-      ],
-      "path": "skills/analysis/econometrics/stata-accounting-guide",
-      "source": "https://www.stata.com"
     },
     {
       "id": "stata-analyst-guide",
@@ -973,7 +940,14 @@
       "description": "Curated guide to generative AI covering LLMs and diffusion models",
       "category": "domains",
       "subcategory": "ai-ml",
-      "keywords": [],
+      "keywords": [
+        "generative-ai",
+        "large-language-models",
+        "diffusion-models",
+        "transformers",
+        "prompt-engineering",
+        "ai-research"
+      ],
       "path": "skills/domains/ai-ml/generative-ai-guide",
       "source": "https://github.com/aishwaryanr/awesome-generative-ai-guide"
     },
@@ -2654,12 +2628,13 @@
       "category": "domains",
       "subcategory": "finance",
       "keywords": [
-        "STATA",
-        "accounting",
+        "Stata",
+        "accounting research",
         "empirical finance",
-        "panel data",
         "earnings management",
-        "audit"
+        "Compustat",
+        "CRSP",
+        "financial economics"
       ],
       "path": "skills/domains/finance/stata-accounting-research",
       "source": "wentor-research-plugins"
@@ -3773,7 +3748,7 @@
         "preprints",
         "open data",
         "reproducibility",
-        "COS"
+        "preregistration"
       ],
       "path": "skills/literature/fulltext/osf-api",
       "source": "https://osf.io/"
@@ -4903,7 +4878,14 @@
       "description": "AI-driven multi-agent research assistant for end-to-end studies",
       "category": "research",
       "subcategory": "automation",
-      "keywords": [],
+      "keywords": [
+        "multi-agent",
+        "research-assistant",
+        "data-generation",
+        "study-automation",
+        "pipeline-orchestration",
+        "ai-research"
+      ],
       "path": "skills/research/automation/datagen-research-guide",
       "source": "https://github.com/DATAGEN-AI/DATAGEN"
     },
@@ -4932,7 +4914,14 @@
       "description": "Intelligent companion for ML engineering with arXiv integration",
       "category": "research",
       "subcategory": "automation",
-      "keywords": [],
+      "keywords": [
+        "machine-learning",
+        "ml-engineering",
+        "arxiv-integration",
+        "experiment-tracking",
+        "model-development",
+        "ai-engineering"
+      ],
       "path": "skills/research/automation/mle-agent-guide",
       "source": "https://github.com/MLSys-Tools/MLE-agent"
     },
@@ -4943,7 +4932,13 @@
       "description": "Transform research papers into interactive AI agents for exploration",
       "category": "research",
       "subcategory": "automation",
-      "keywords": [],
+      "keywords": [
+        "paper-parsing",
+        "agent-generation",
+        "interactive-papers",
+        "research-automation",
+        "knowledge-extraction"
+      ],
       "path": "skills/research/automation/paper-to-agent-guide",
       "source": "https://github.com/paper2agent/Paper2Agent"
     },
@@ -4989,7 +4984,14 @@
       "description": "Automated deep research tool for thorough topic investigation",
       "category": "research",
       "subcategory": "deep-research",
-      "keywords": [],
+      "keywords": [
+        "deep-research",
+        "automated-investigation",
+        "topic-exploration",
+        "research-synthesis",
+        "iterative-search",
+        "knowledge-mapping"
+      ],
       "path": "skills/research/deep-research/auto-deep-research-guide",
       "source": "wentor-research-plugins"
     },
@@ -5384,7 +5386,14 @@
       "description": "Ready-to-use agent skills for scientific research and engineering",
       "category": "research",
       "subcategory": "methodology",
-      "keywords": [],
+      "keywords": [
+        "scientific-method",
+        "research-skills",
+        "claude",
+        "agent-prompting",
+        "experiment-design",
+        "engineering"
+      ],
       "path": "skills/research/methodology/claude-scientific-guide",
       "source": "https://github.com/zyphlar/claude-scientific-skills"
     },
@@ -5452,24 +5461,6 @@
       ],
       "path": "skills/research/methodology/mixed-methods-guide",
       "source": "wentor-research-plugins"
-    },
-    {
-      "id": "osf-api-guide",
-      "type": "skill",
-      "name": "osf-api-guide",
-      "description": "Access Open Science Framework for preregistrations, preprints, and data",
-      "category": "research",
-      "subcategory": "methodology",
-      "keywords": [
-        "osf",
-        "open-science",
-        "preregistration",
-        "preprints",
-        "reproducibility",
-        "collaboration"
-      ],
-      "path": "skills/research/methodology/osf-api-guide",
-      "source": "https://developer.osf.io/"
     },
     {
       "id": "parsifal-slr-guide",
@@ -6439,7 +6430,14 @@
       "description": "PDF Chinese translation plugin for Zotero reference manager",
       "category": "tools",
       "subcategory": "ocr-translate",
-      "keywords": [],
+      "keywords": [
+        "pdf-translation",
+        "zotero-plugin",
+        "chinese-translation",
+        "ocr",
+        "academic-papers",
+        "bilingual-reading"
+      ],
       "path": "skills/tools/ocr-translate/zotero-pdf2zh-guide",
       "source": "https://github.com/guaguastandup/zotero-pdf2zh"
     },
@@ -6678,7 +6676,14 @@
       "description": "Citation plugin for Obsidian note-taking with BibTeX support",
       "category": "writing",
       "subcategory": "citation",
-      "keywords": [],
+      "keywords": [
+        "obsidian",
+        "citations",
+        "bibtex",
+        "literature-notes",
+        "reference-linking",
+        "knowledge-management"
+      ],
       "path": "skills/writing/citation/obsidian-citation-guide",
       "source": "https://github.com/hans/obsidian-citation-plugin"
     },
@@ -6689,7 +6694,14 @@
       "description": "Insert citations and notes from Zotero into Obsidian knowledge bases",
       "category": "writing",
       "subcategory": "citation",
-      "keywords": [],
+      "keywords": [
+        "obsidian",
+        "zotero",
+        "citation-management",
+        "note-taking",
+        "knowledge-base",
+        "bibliography"
+      ],
       "path": "skills/writing/citation/obsidian-zotero-guide",
       "source": "https://github.com/mgmeyers/obsidian-zotero-integration"
     },
@@ -6718,7 +6730,14 @@
       "description": "AI plugin for Zotero with ChatGPT, Claude, and DeepSeek support",
       "category": "writing",
       "subcategory": "citation",
-      "keywords": [],
+      "keywords": [
+        "zotero",
+        "ai-assistant",
+        "paper-summarization",
+        "chatgpt",
+        "claude",
+        "research-reading"
+      ],
       "path": "skills/writing/citation/papersgpt-zotero-guide",
       "source": "https://github.com/papersgpt/papersgpt-for-zotero"
     },
@@ -6850,7 +6869,14 @@
       "description": "Export Zotero items and annotations to Markdown note files",
       "category": "writing",
       "subcategory": "citation",
-      "keywords": [],
+      "keywords": [
+        "zotero",
+        "markdown",
+        "note-export",
+        "annotations",
+        "knowledge-management",
+        "literature-notes"
+      ],
       "path": "skills/writing/citation/zotero-mdnotes-guide",
       "source": "https://github.com/argenos/zotero-mdnotes"
     },
@@ -6861,7 +6887,14 @@
       "description": "PDF references add-on for enriching Zotero library metadata",
       "category": "writing",
       "subcategory": "citation",
-      "keywords": [],
+      "keywords": [
+        "zotero",
+        "references",
+        "pdf-parsing",
+        "bibliography",
+        "metadata-enrichment",
+        "citation-linking"
+      ],
       "path": "skills/writing/citation/zotero-reference-guide",
       "source": "https://github.com/MuiseDestiny/zotero-reference"
     },
@@ -7046,43 +7079,15 @@
       "category": "writing",
       "subcategory": "composition",
       "keywords": [
-        "academic writing style",
         "scientific writing",
-        "formal English",
-        "paper title writing",
-        "abstract writing"
+        "academic writing",
+        "writing tools",
+        "manuscript preparation",
+        "AI writing workflow",
+        "prose quality"
       ],
       "path": "skills/writing/composition/scientific-writing-guide",
       "source": "https://github.com/writing-resources/awesome-scientific-writing"
-    },
-    {
-      "id": "scientific-writing-resources",
-      "type": "skill",
-      "name": "scientific-writing-resources",
-      "description": "Curated tools and resources for effective scientific writing",
-      "category": "writing",
-      "subcategory": "composition",
-      "keywords": [],
-      "path": "skills/writing/composition/scientific-writing-resources",
-      "source": "https://github.com/writing-resources/awesome-scientific-writing"
-    },
-    {
-      "id": "scientific-writing-wrapper",
-      "type": "skill",
-      "name": "scientific-writing-wrapper",
-      "description": "AI-powered scientific writing workflow from outline to polished draft",
-      "category": "writing",
-      "subcategory": "composition",
-      "keywords": [
-        "scientific writing",
-        "AI writing",
-        "draft generation",
-        "writing workflow",
-        "paper composition",
-        "manuscript"
-      ],
-      "path": "skills/writing/composition/scientific-writing-wrapper",
-      "source": "wentor-research-plugins"
     },
     {
       "id": "academic-writing-latex",
@@ -7127,7 +7132,14 @@
       "description": "LaTeX drawing examples for Bayesian networks, tensors, and diagrams",
       "category": "writing",
       "subcategory": "latex",
-      "keywords": [],
+      "keywords": [
+        "latex-drawing",
+        "tikz",
+        "bayesian-networks",
+        "tensor-diagrams",
+        "scientific-figures",
+        "pgfplots"
+      ],
       "path": "skills/writing/latex/latex-drawing-collection",
       "source": "https://github.com/xinychen/awesome-latex-drawing"
     },
@@ -7170,7 +7182,14 @@
       "description": "Collection of LaTeX templates for papers, presentations, and CVs",
       "category": "writing",
       "subcategory": "latex",
-      "keywords": [],
+      "keywords": [
+        "latex-templates",
+        "paper-templates",
+        "presentation-templates",
+        "cv-templates",
+        "academic-formatting",
+        "beamer"
+      ],
       "path": "skills/writing/latex/latex-templates-collection",
       "source": "https://github.com/deedydas/latex-templates"
     },
@@ -7509,7 +7528,13 @@
       "description": "LaTeX thesis template supporting multiple universities and formats",
       "category": "writing",
       "subcategory": "templates",
-      "keywords": [],
+      "keywords": [
+        "thesis-template",
+        "latex-thesis",
+        "dissertation",
+        "university-formatting",
+        "academic-typesetting"
+      ],
       "path": "skills/writing/templates/novathesis-guide",
       "source": "https://github.com/joaomlourenco/novathesis"
     },

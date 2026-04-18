@@ -2,7 +2,7 @@
   "id": "research-plugins",
   "version": "1.4.4",
   "name": "Research Plugins",
-  "description": "438 academic research skills, 34 agent tools across 18 API modules & 6 curated lists for Research-Claw",
+  "description": "433 academic research skills, 34 agent tools across 18 API modules & 6 curated lists for Research-Claw",
   "skills": [
     "./skills/analysis",
     "./skills/domains",

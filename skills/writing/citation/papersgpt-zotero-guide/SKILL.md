@@ -1,21 +1,13 @@
 ---
 name: papersgpt-zotero-guide
 description: "AI plugin for Zotero with ChatGPT, Claude, and DeepSeek support"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/papersgpt/papersgpt-for-zotero
 metadata:
   openclaw:
     category: "writing"
     subcategory: "citation"
     emoji: "📑"
-    keywords:
-      - zotero
-      - ai-assistant
-      - paper-summarization
-      - chatgpt
-      - claude
-      - research-reading
+    keywords: [zotero, ai-assistant, paper-summarization, chatgpt, claude, research-reading]
 ---
 
 # PapersGPT for Zotero Guide

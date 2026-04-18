@@ -72,7 +72,6 @@
 | [market-analysis-guide](../../skills/domains/business/market-analysis-guide/) | Structured frameworks for market sizing, competitive analysis, and strategic ... |
 | [operations-research-guide](../../skills/domains/business/operations-research-guide/) | Optimization and operations research methods for business and logistics |
 | [strategic-management-guide](../../skills/domains/business/strategic-management-guide/) | Frameworks for strategic planning, resource allocation, and organizational an... |
-| [xpert-bi-guide](../../skills/domains/business/xpert-bi-guide/) | AI business intelligence agent with NL-to-SQL and dashboards |
 
 
 ## Chemistry
@@ -144,7 +143,6 @@
 | [assessment-design-guide](../../skills/domains/education/assessment-design-guide/) | Psychometrics and educational assessment design for researchers |
 | [curriculum-design-guide](../../skills/domains/education/curriculum-design-guide/) | Systematic approaches to curriculum design using backward design and alignment |
 | [educational-research-methods](../../skills/domains/education/educational-research-methods/) | Quantitative and qualitative research methods for education studies |
-| [edumcp-guide](../../skills/domains/education/edumcp-guide/) | MCP server for educational content and learning management |
 | [learning-science-guide](../../skills/domains/education/learning-science-guide/) | Evidence-based learning science principles for educational research and practice |
 | [mooc-analytics-guide](../../skills/domains/education/mooc-analytics-guide/) | Analyzing MOOC data, learning analytics, and online education metrics |
 | [open-syllabus-api](../../skills/domains/education/open-syllabus-api/) | Analyze most-taught books and texts via Open Syllabus analytics |

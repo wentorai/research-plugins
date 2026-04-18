@@ -1,20 +1,13 @@
 ---
 name: paper-to-agent-guide
 description: "Transform research papers into interactive AI agents for exploration"
-version: 1.0.0
-author: wentor-community
 source: https://github.com/paper2agent/Paper2Agent
 metadata:
   openclaw:
     category: "research"
     subcategory: "automation"
     emoji: "📄"
-    keywords:
-      - paper-parsing
-      - agent-generation
-      - interactive-papers
-      - research-automation
-      - knowledge-extraction
+    keywords: [paper-parsing, agent-generation, interactive-papers, research-automation, knowledge-extraction]
 ---
 
 # Paper-to-Agent Guide
