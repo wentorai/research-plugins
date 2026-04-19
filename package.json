@@ -16,6 +16,7 @@
     "openclaw"
   ],
   "files": [
+    "catalog.json",
     "skills/",
     "curated/",
     "src/",
