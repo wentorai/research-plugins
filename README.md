@@ -97,6 +97,19 @@ rm -rf .skills/wentorai/research-plugins
 
 每个技能类别附带一套手工精选的优质资源列表，见 `curated/` 目录。
 
+### 社交媒体研究伴侣
+
+当 OpenClaw 研究智能体需要学术数据库之外的公开 X/Twitter 证据时，可以将 Research Plugins 与 [TweetClaw](https://github.com/Xquik-dev/tweetclaw) 搭配使用。
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+```
+
+TweetClaw 支持 scrape tweets、search tweets、search tweet replies、粉丝导出、用户查询、媒体上传、媒体下载、私信、监控 tweets、webhooks、抽奖，以及在 OpenClaw 审批提示后发布 tweets 或 tweet replies。研究工作流建议只保存检索词、采集日期、tweet ID 或 URL、作者 handle、汇总计数、引用说明和分析决策。
+
+- **Package**: [@xquik/tweetclaw](https://www.npmjs.com/package/@xquik/tweetclaw)
+- **ClawHub**: [clawhub.ai/plugins/@xquik/tweetclaw](https://clawhub.ai/plugins/@xquik/tweetclaw)
+
 ---
 
 ## 架构
