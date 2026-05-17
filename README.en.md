@@ -97,6 +97,19 @@ TypeScript wrappers for 18 free academic database APIs, auto-registered as OpenC
 
 Hand-picked resource collections for each skill category. See `curated/` directory.
 
+### Social Media Research Companion
+
+Pair Research Plugins with [TweetClaw](https://github.com/Xquik-dev/tweetclaw) when an OpenClaw research agent needs public X/Twitter evidence beyond academic databases.
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+```
+
+TweetClaw can scrape tweets, search tweets, search tweet replies, export followers, look up users, handle media upload and media download, send direct messages, monitor tweets, deliver webhooks, run giveaway draws, and keep post tweets or post tweet replies behind OpenClaw approval prompts. For research workflows, store only source queries, capture dates, tweet IDs or URLs, author handles, aggregate counts, citation notes, and analysis decisions.
+
+- **Package**: [@xquik/tweetclaw](https://www.npmjs.com/package/@xquik/tweetclaw)
+- **ClawHub**: [clawhub.ai/plugins/@xquik/tweetclaw](https://clawhub.ai/plugins/@xquik/tweetclaw)
+
 ---
 
 ## Architecture
