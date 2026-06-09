@@ -4,6 +4,8 @@ dist/
 *.d.ts
 *.js.map
 !scripts/*.ts
+# Hand-written build-time ambient declarations (source, not build output)
+!types/*.d.ts
 
 # IDE
 .vscode/
@@ -16,6 +18,7 @@ Thumbs.db
 
 # Dev artifacts
 status.html
+*.tgz
 
 # Archived audit items (MCP configs, skills)
 # Reference copies only — recoverable from git history
@@ -23,4 +26,4 @@ archived/
 
 # Secrets
 .env
-.npmrc
+.npmrc*

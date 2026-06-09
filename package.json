@@ -1,6 +1,6 @@
 {
   "name": "@wentorai/research-plugins",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "type": "module",
   "description": "433 academic research skills, 34 agent tools across 18 API modules, and 6 curated lists for Research-Claw and AI agents",
   "keywords": [
@@ -19,6 +19,7 @@
     "catalog.json",
     "skills/",
     "curated/",
+    "dist/",
     "src/",
     "index.ts",
     "openclaw.plugin.json",
@@ -26,6 +27,8 @@
     "LICENSE"
   ],
   "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "validate": "node --experimental-strip-types scripts/validate.ts",
     "catalog": "node --experimental-strip-types scripts/catalog.ts"
   },
@@ -53,5 +56,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/wentorai/research-plugins"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
   }
 }

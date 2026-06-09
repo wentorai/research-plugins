@@ -8,8 +8,10 @@ export function createOpenAlexTools(
   _ctx: OpenClawPluginToolContext,
   _api: OpenClawPluginApi,
 ) {
+  // mailto in the User-Agent puts requests into OpenAlex's polite pool
+  // (faster, more reliable rate limits than the anonymous common pool).
   const headers: Record<string, string> = {
-    "User-Agent": "ResearchPlugins/1.0 (https://wentor.ai)",
+    "User-Agent": "ResearchPlugins/1.0 (https://wentor.ai; mailto:research-plugins@wentor.ai)",
   };
 
   return [

@@ -4,13 +4,13 @@
 
 # The most comprehensive library of AI skills&plugins for academic research
 
-**The brain of Research-Claw — 438 academic skills + 34 API tools**
+**The brain of Research-Claw — 433 academic skills + 34 API tools**
 
 Plug-and-play research capabilities for [Research-Claw](https://github.com/wentorai/Research-Claw) and 40+ AI agent frameworks
 
 [![npm](https://img.shields.io/npm/v/@wentorai/research-plugins?style=flat-square&color=EF4444&logo=npm)](https://www.npmjs.com/package/@wentorai/research-plugins)
 [![License](https://img.shields.io/badge/license-MIT-3B82F6?style=flat-square)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-438-EF4444?style=flat-square)](https://www.npmjs.com/package/@wentorai/research-plugins)
+[![Skills](https://img.shields.io/badge/skills-433-EF4444?style=flat-square)](https://www.npmjs.com/package/@wentorai/research-plugins)
 [![Tools](https://img.shields.io/badge/API_tools-34-3B82F6?style=flat-square)](#agent-tools-34)
 
 [🌐 wentor.ai](https://wentor.ai) · [🇨🇳 中文](README.md) · [🦞 Research-Claw](https://github.com/wentorai/Research-Claw) · [🪲 Issues](https://github.com/wentorai/research-plugins/issues)
@@ -53,20 +53,20 @@ rm -rf .skills/wentorai/research-plugins
 
 ## What's Inside
 
-### Academic Skills (438)
+### Academic Skills (433)
 
 Structured SKILL.md guides covering the full research lifecycle, loaded on demand:
 
 | Category | Count | Coverage |
 |:--|:--|:--|
-| **Literature** | 87 | Multi-database search · Citation tracking · Full-text · Open access |
-| **Methodology** | 79 | DID · RDD · IV · Meta-analysis · Systematic review · Grant writing |
-| **Data Analysis** | 68 | Python · R · STATA · Visualization · Panel data · Econometrics |
-| **Writing** | 74 | Paper sections · LaTeX · References · Rebuttal generation |
-| **Domains** | 93 | 16 disciplines: CS · AI/ML · Biomedical · Economics · Law · Physics etc. |
-| **Tools** | 51 | Diagrams · PDF parsing · Knowledge graphs · OCR · Scraping |
+| **Literature** | 80 | Multi-database search · Citation tracking · Full-text · Open access |
+| **Methodology** | 52 | DID · RDD · IV · Meta-analysis · Systematic review · Grant writing |
+| **Data Analysis** | 44 | Python · R · STATA · Visualization · Panel data · Econometrics |
+| **Writing** | 62 | Paper sections · LaTeX · References · Rebuttal generation |
+| **Domains** | 147 | 16 disciplines: CS · AI/ML · Biomedical · Economics · Law · Physics etc. |
+| **Tools** | 48 | Diagrams · PDF parsing · Knowledge graphs · OCR · Scraping |
 
-Skills use **progressive disclosure**: 6 category entries → 40 subcategory indexes → 438 concrete skills. Agents load on demand, never injecting everything at once.
+Skills use **progressive disclosure**: 6 category entries → 40 subcategory indexes → 433 concrete skills. Agents load on demand, never injecting everything at once.
 
 ### Agent Tools (34)
 
@@ -103,7 +103,7 @@ Hand-picked resource collections for each skill category. See `curated/` directo
 
 ```
 @wentorai/research-plugins
-├── skills/                    ← 438 SKILL.md (6 categories × 40 subcategories)
+├── skills/                    ← 433 SKILL.md (6 categories × 40 subcategories)
 │   ├── literature/            ← Search, discovery, full-text, metadata
 │   ├── writing/               ← Composition, citation, LaTeX, polish
 │   ├── analysis/              ← Statistics, econometrics, dataviz
@@ -112,7 +112,7 @@ Hand-picked resource collections for each skill category. See `curated/` directo
 │   └── tools/                 ← Diagrams, documents, scraping, OCR
 ├── src/tools/                 ← 34 API tools (18 modules)
 ├── curated/                   ← 6 curated resource lists
-├── catalog.json               ← Full index (462 entries)
+├── catalog.json               ← Full index (457 entries)
 ├── index.ts                   ← Plugin entry (OpenClaw Plugin SDK)
 └── openclaw.plugin.json       ← Plugin manifest
 ```

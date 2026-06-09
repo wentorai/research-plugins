@@ -71,13 +71,34 @@ export interface TrackedResponse {
   source: string;
 }
 
+const sleep = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
+
+// Retryable transient statuses: 429 rate limit, 503/502/504 upstream hiccups.
+const RETRYABLE_STATUS = new Set([429, 502, 503, 504]);
+
 /**
- * Fetch with automatic source health tracking, timeout, and error handling.
+ * Backoff before retrying a rate-limited/unavailable response.
+ * Honours the server's Retry-After header when present (capped to avoid
+ * stalling the agent), else exponential 1s → 2s → 4s.
+ */
+function retryDelayMs(res: Response, attempt: number): number {
+  const retryAfter = res.headers.get("retry-after");
+  if (retryAfter) {
+    const secs = Number(retryAfter);
+    if (Number.isFinite(secs) && secs >= 0) return Math.min(secs * 1000, 10_000);
+  }
+  return Math.min(1000 * 2 ** attempt, 8000);
+}
+
+/**
+ * Fetch with automatic source health tracking, timeout, error handling, and
+ * exponential backoff on transient throttling (429) / upstream errors (5xx).
  *
  * @param source - Source identifier (e.g. "europe_pmc", "dblp")
  * @param url - Request URL
  * @param options - Fetch options
- * @param timeoutMs - Timeout in milliseconds (default: 10000)
+ * @param timeoutMs - Per-attempt timeout in milliseconds (default: 10000)
+ * @param maxRetries - Max retries for transient failures (default: 2)
  * @returns TrackedResponse on success, or a toolResult error on failure
  */
 export async function trackedFetch(
@@ -85,18 +106,29 @@ export async function trackedFetch(
   url: string,
   options?: RequestInit,
   timeoutMs = 10_000,
+  maxRetries = 2,
 ): Promise<TrackedResponse | ReturnType<typeof toolResult>> {
   const entry = getOrCreateEntry(source);
-  const start = Date.now();
 
-  try {
-    const res = await fetch(url, {
-      ...options,
-      signal: AbortSignal.timeout(timeoutMs),
-    });
-    const latency = Date.now() - start;
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    const start = Date.now();
+    try {
+      const res = await fetch(url, {
+        ...options,
+        signal: AbortSignal.timeout(timeoutMs),
+      });
+      const latency = Date.now() - start;
 
-    if (!res.ok) {
+      if (res.ok) {
+        recordSuccess(entry, res.status, latency);
+        return { res, latency_ms: latency, source };
+      }
+
+      if (RETRYABLE_STATUS.has(res.status) && attempt < maxRetries) {
+        await sleep(retryDelayMs(res, attempt));
+        continue;
+      }
+
       recordFailure(entry, `HTTP ${res.status} ${res.statusText}`, res.status);
       return toolResult({
         error: `${source} API error: ${res.status} ${res.statusText}`,
@@ -104,35 +136,48 @@ export async function trackedFetch(
           source,
           status: res.status,
           latency_ms: latency,
+          retries: attempt,
           success_rate: entry.total_calls > 0
             ? `${Math.round((entry.successes / entry.total_calls) * 100)}%`
             : "N/A",
         },
       });
+    } catch (err) {
+      const latency = Date.now() - start;
+      const message = err instanceof Error ? err.message : String(err);
+      const isTimeout = message.includes("abort") || message.includes("timeout");
+      recordFailure(entry, isTimeout ? `Timeout after ${timeoutMs}ms` : message);
+
+      return toolResult({
+        error: `${source} ${isTimeout ? "timeout" : "network error"}: ${message}`,
+        _source_health: {
+          source,
+          latency_ms: latency,
+          success_rate: entry.total_calls > 0
+            ? `${Math.round((entry.successes / entry.total_calls) * 100)}%`
+            : "N/A",
+          suggestion: isTimeout
+            ? "This source is slow. Try a different source or reduce result count."
+            : "This source may be temporarily unavailable. Try an alternative.",
+        },
+      });
     }
-
-    recordSuccess(entry, res.status, latency);
-    return { res, latency_ms: latency, source };
-  } catch (err) {
-    const latency = Date.now() - start;
-    const message = err instanceof Error ? err.message : String(err);
-    const isTimeout = message.includes("abort") || message.includes("timeout");
-    recordFailure(entry, isTimeout ? `Timeout after ${timeoutMs}ms` : message);
-
-    return toolResult({
-      error: `${source} ${isTimeout ? "timeout" : "network error"}: ${message}`,
-      _source_health: {
-        source,
-        latency_ms: latency,
-        success_rate: entry.total_calls > 0
-          ? `${Math.round((entry.successes / entry.total_calls) * 100)}%`
-          : "N/A",
-        suggestion: isTimeout
-          ? "This source is slow. Try a different source or reduce result count."
-          : "This source may be temporarily unavailable. Try an alternative.",
-      },
-    });
   }
+
+  // Exhausted retries on transient status (loop fell through after last sleep).
+  recordFailure(entry, `Rate limited after ${maxRetries + 1} attempts`, 429);
+  return toolResult({
+    error: `${source} API error: rate limited (429) after ${maxRetries + 1} attempts`,
+    _source_health: {
+      source,
+      status: 429,
+      retries: maxRetries,
+      success_rate: entry.total_calls > 0
+        ? `${Math.round((entry.successes / entry.total_calls) * 100)}%`
+        : "N/A",
+      suggestion: "This source is throttling requests. Try again later or use an alternative.",
+    },
+  });
 }
 
 /**

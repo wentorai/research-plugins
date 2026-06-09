@@ -4,6 +4,20 @@ import { toolResult, trackedFetch, isTrackedError, validParam, validEnum } from 
 
 const EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils";
 
+// NCBI requests should identify a tool + email; an optional API key raises the
+// anonymous 3 req/s limit to 10 req/s. Key is read from the environment so it
+// stays out of the package.
+const NCBI_TOOL = "research-plugins";
+const NCBI_EMAIL = "research-plugins@wentor.ai";
+const NCBI_API_KEY = process.env.NCBI_API_KEY;
+
+function withNcbiAuth(params: URLSearchParams): URLSearchParams {
+  params.set("tool", NCBI_TOOL);
+  params.set("email", NCBI_EMAIL);
+  if (NCBI_API_KEY) params.set("api_key", NCBI_API_KEY);
+  return params;
+}
+
 export function createPubMedTools(
   _ctx: OpenClawPluginToolContext,
   _api: OpenClawPluginApi,
@@ -66,6 +80,7 @@ export function createPubMedTools(
         if (maxDate) searchParams.set("maxdate", maxDate);
         if (minDate || maxDate) searchParams.set("datetype", "pdat");
 
+        withNcbiAuth(searchParams);
         const searchTracked = await trackedFetch("pubmed", `${EUTILS}/esearch.fcgi?${searchParams}`);
         if (isTrackedError(searchTracked)) return searchTracked;
         const searchData = await searchTracked.res.json();
@@ -84,6 +99,7 @@ export function createPubMedTools(
           id: ids.join(","),
           retmode: "json",
         });
+        withNcbiAuth(summaryParams);
         const summaryTracked = await trackedFetch("pubmed", `${EUTILS}/esummary.fcgi?${summaryParams}`);
         if (isTrackedError(summaryTracked)) return summaryTracked;
         const summaryData = await summaryTracked.res.json();
@@ -130,6 +146,7 @@ export function createPubMedTools(
           id: input.pmid,
           retmode: "xml",
         });
+        withNcbiAuth(params);
         const tracked = await trackedFetch("pubmed", `${EUTILS}/efetch.fcgi?${params}`);
         if (isTrackedError(tracked)) return tracked;
         const xml = await tracked.res.text();
